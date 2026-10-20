@@ -1,0 +1,37 @@
+POKER AI V5.9
+52-CARD FULL 4-STREET REGULAR HOLD'EM
+프리플롭부터 리버까지 4개 베팅 라운드 정규 텍사스 홀덤 구축
+
+연구 목표:
+52장 정규 홀덤의 프리플롭부터 리버까지 모든 의사결정을 스스로 학습할 수 있는가?
+
+작업 디렉터리: v59/
+
+PHASE 1. 정규 4-Street 환경
+- 5 Players, 52 Cards (13 ranks x 4 suits)
+- 50BB (5000 chips), SB 50, BB 100
+- 4 Betting Rounds:
+  1. Preflop (Hole 2 cards)
+  2. Flop (Board 3 cards)
+  3. Turn (Board 1 card)
+  4. River (Board 1 card)
+  -> 총 5장 공개 보드 카드
+- 4 Actions: Fold, Check/Call, Pot Raise, All-in
+- 환경 무결성 검증:
+  * 7장 중 최선의 5장 핸드 판정
+  * 칩 보존 법칙 (Zero-sum)
+  * 올인 시 쇼다운까지 보드 전개 및 정산
+
+PHASE 2. 초기 학습
+- 5개 독립 시드 (42, 101, 202, 303, 404)
+- 10,000 에피소드
+- 체크포인트: 0, 2000, 5000, 10000
+
+PHASE 3 & 4. 전략 검증 및 학습 성장 판정
+- 신규 홀드아웃 시드 3개 (총 4,500핸드) 전수 평가
+- Primary Comparison: 4-Street 10k vs 2k (Paired t-test)
+- 프리플롭, 플롭, 턴, 리버 스트리트별 행동 분포
+- 대표 핸드 (AA vs 72o) 전략 분화 측정
+
+PHASE 5. 최종 판정 및 공식 보고서
+- 산출물: v59_full_street_nfsp_report.md

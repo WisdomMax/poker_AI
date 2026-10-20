@@ -1,0 +1,107 @@
+{
+  "pool_standard": {
+    "pool_name": "Pool 1: Standard (CallingStation \ud3ec\ud568)",
+    "model_a": {
+      "mean": 783.25,
+      "se": 118.72
+    },
+    "model_b": {
+      "mean": 740.79,
+      "se": 118.66
+    },
+    "model_c": {
+      "mean": 740.79,
+      "se": 118.66
+    },
+    "diff_ba": {
+      "mean": -42.45,
+      "se": 73.43,
+      "p": 0.5632
+    },
+    "diff_ca": {
+      "mean": -42.45,
+      "se": 73.43,
+      "p": 0.5632
+    },
+    "diff_cb": {
+      "mean": 0.0,
+      "se": 0.0,
+      "p": 1.0
+    },
+    "controller_choices": {
+      "choice_a": 0,
+      "choice_b": 3116
+    },
+    "elapsed_s": 569.9
+  },
+  "pool_aggressive": {
+    "pool_name": "Pool 2: Aggressive Red-Team (CallingStation \ubc30\uc81c)",
+    "model_a": {
+      "mean": 550.64,
+      "se": 58.61
+    },
+    "model_b": {
+      "mean": 528.9,
+      "se": 55.78
+    },
+    "model_c": {
+      "mean": 626.25,
+      "se": 58.17
+    },
+    "diff_ba": {
+      "mean": -21.74,
+      "se": 60.3,
+      "p": 0.7185
+    },
+    "diff_ca": {
+      "mean": 75.61,
+      "se": 59.98,
+      "p": 0.2076
+    },
+    "diff_cb": {
+      "mean": 97.34,
+      "se": 61.67,
+      "p": 0.1146
+    },
+    "controller_choices": {
+      "choice_a": 3551,
+      "choice_b": 3
+    },
+    "elapsed_s": 557.9
+  },
+  "pool_dynamic": {
+    "pool_name": "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)",
+    "model_a": {
+      "mean": 820.6152000000001,
+      "se": 129.25262473572533
+    },
+    "model_b": {
+      "mean": 434.53,
+      "se": 140.8701334622172
+    },
+    "model_c": {
+      "mean": 438.40000000000003,
+      "se": 140.80856923316142
+    },
+    "diff_ba": {
+      "mean": -386.0852,
+      "se": 97.69535011939087,
+      "p": 7.967287326909165e-05
+    },
+    "diff_ca": {
+      "mean": -382.2152,
+      "se": 97.6247322492322,
+      "p": 9.276624929893538e-05
+    },
+    "diff_cb": {
+      "mean": 3.87,
+      "se": 3.869999999999999,
+      "p": 0.31740732519630754
+    },
+    "controller_choices": {
+      "choice_a": 640,
+      "choice_b": 3371
+    },
+    "elapsed_s": 604.4574568271637
+  }
+}

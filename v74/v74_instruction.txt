@@ -1,0 +1,33 @@
+# POKER AI V7.4
+# NFSP-DQN CRITICAL LEARNING PIPELINE AUDIT
+# Card Input · Bet Mapping · Fold Target · BR Exploration
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표:
+V7.3에서 제기된 4대 핵심 의문 규명:
+1. 서로 다른 카드(72o vs AA vs Flop Draw)의 Q값이 동일하게 보고된 원인
+2. 0.5Pot, 1.0Pot, 2.0Pot의 롤아웃 실측치가 동일했던 원인 (Bet Mapping 감사)
+3. Fold 종료 보상(-0.0125)과 Q(Fold)(-1.0748)의 불일치 및 DQN Target 부트스트래핑 오류
+4. BR 정책에서 ε-greedy 탐색 부재 및 Reservoir Buffer의 Fold 유입 차단 메커니즘
+
+작업 디렉터리: v74/
+
+PHASE 0. 카드 정보가 신경망에 전달되는지 확인
+- 72o vs AA vs Flop Draw에서 253차원 정보 상태 텐서 원본 추출 및 SHA-256 / L2 거리 비교.
+- 동일 베팅 상황에서 오직 홀카드만 AA vs 72o로 변경했을 때 Q-Net 출력이 다르게 반응하는지 실증.
+
+PHASE 1. 6-Action 실제 베팅 금액 감사
+- map_6action_to_fcpa() 및 OpenSpiel universal_poker fcpa 엔진에서 0.5Pot, 1.0Pot, 2.0Pot이 실제 몇 번 액션으로 매핑되고 몇 칩으로 집행되는지 전수 감사.
+
+PHASE 2. Fold 종료 보상 및 DQN Target 감사
+- Hero가 Fold했을 때의 rl_buffer 저장 방식(done 플래그, next_state) 및 Bellman Target y = r + gamma * max_q 부트스트래핑 오류 검증.
+
+PHASE 3. Best Response 탐색 및 Reservoir 감사
+- ε-greedy 탐색 복원 시 Reservoir Buffer에 Fold 라벨이 유입되는지 검증.
+
+PHASE 4. 반사실적 롤아웃 재검증
+- 정보 상태에 조건화된 상대 카드 샘플링 및 정확한 집행 금액 반영 롤아웃.
+
+PHASE 5. 최종 종합 보고
+- 최종 보고서: v74_nfsp_learning_pipeline_integrity_report.md

@@ -1,0 +1,7 @@
+seed,type,detail,severity
+101,JTS_EXCESSIVE_OVERBET,JTs 올인 확률 98.7% (임계치 50.0% 초과),INFO
+202,JTS_EXCESSIVE_OVERBET,JTs 올인 확률 99.9% (임계치 50.0% 초과),INFO
+202,HALFPOT_UNDERUTILIZED,실제 게임 내 HalfPot 사용률 0.9% (< 2.0%),WARNING
+303,JTS_EXCESSIVE_OVERBET,JTs 올인 확률 99.6% (임계치 50.0% 초과),INFO
+303,HALFPOT_UNDERUTILIZED,실제 게임 내 HalfPot 사용률 0.0% (< 2.0%),WARNING
+404,JTS_EXCESSIVE_OVERBET,JTs 올인 확률 100.0% (임계치 50.0% 초과),INFO

@@ -1,0 +1,6 @@
+scenario,legal_actions,fold_prob,call_prob
+A. 72o Preflop Unopened (First to Act),"[0, 1, 2, 3, 4]",0.19434016942977905,0.21554604172706604
+B. 72o Facing Open Raise (Pot Bet),"[0, 1, 2, 3, 4]",0.1973312497138977,0.21639728546142578
+C. 72o Facing 3-Bet (Open + 3-Bet Pot),"[0, 1, 2, 3, 4]",0.1959386020898819,0.21428723633289337
+D. 72o Facing Open All-in,"[0, 1]",0.4745264947414398,0.5254734754562378
+E. 72o Facing 3-Bet All-in (Open + All-in),"[0, 1]",0.4778153896331787,0.5221846699714661

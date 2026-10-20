@@ -1,0 +1,5 @@
+metric,counterfactual_probing,on_policy_gae,sample_count,sample_pct
+aa_advantage,72.06,126.42966519461737,9,0.2567027952082145
+seven_two_advantage,-27.32,-31.458758775810047,56,1.5972618368511124
+total_buffer_transitions,0,3506,3506,100.0
+total_grad_norm,146.89,46.31246566772461,3506,100.0

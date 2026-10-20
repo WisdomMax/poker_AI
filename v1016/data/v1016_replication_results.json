@@ -1,0 +1,43 @@
+{
+  "phase1_forensic_reconciliation": {
+    "v1015_recalculated_df4": {
+      "t_stat": 9.88,
+      "p_value": 0.00059,
+      "ci95": [221.31, 394.29],
+      "explanation": "V10.15's reported p=5.98e-23 used hand-level pooling (df=14999). When recalculated at the proper seed level (df=4), t=9.88, p=0.00059, which remains decisively statistically significant."
+    },
+    "phase2_table_alignment": "Corrected the copy-paste discrepancy in V10.15 Phase 2 table; all comparisons now report independent evaluations."
+  },
+  "phase2_ablation": {
+    "ac_10k": {"mean": 223.33, "se": 37.48, "seeds": [309.3, 244.2, 208.1, 266.5, 88.6]},
+    "ppo_10k": {"mean": 261.35, "se": 38.38, "seeds": [324.5, 207.8, 146.1, 357.5, 270.8]},
+    "ppo_50k": {"mean": 605.70, "se": 74.83, "seeds": [692.5, 481.5, 638.6, 817.6, 398.3]},
+    "algo_effect_p10_ac10": {"mean": 38.02, "se": 44.53, "ci95": [-85.59, 161.63], "p_value": 0.4413},
+    "scale_effect_p50_p10": {"mean": 344.35, "se": 66.30, "ci95": [160.29, 528.41], "p_value": 0.0065}
+  },
+  "phase4_allin_diagnostics": {
+    "allin_rate_pct": 5.2,
+    "street_breakdown": {
+      "Preflop": 95.7,
+      "Flop": 2.7,
+      "Turn": 1.2,
+      "River": 0.4
+    },
+    "fold_rate_pct": 81.7,
+    "half_pot_bet_pct": 9.5
+  },
+  "phase5_championship_df4": {
+    "model_a": {"mean": 728.12, "se": 64.94, "seeds": [556.9, 741.9, 788.3, 624.3, 929.2]},
+    "model_d": {"mean": 818.13, "se": 64.71, "seeds": [615.6, 822.1, 970.4, 745.2, 937.4]},
+    "model_e3": {"mean": 264.76, "se": 62.51, "seeds": [202.5, 424.5, 116.6, 177.1, 403.1]},
+    "model_e5": {"mean": 543.95, "se": 52.72, "seeds": [524.3, 738.8, 417.4, 523.8, 515.5]},
+    "model_e10": {"mean": 747.63, "se": 15.03, "seeds": [731.4, 805.0, 721.5, 731.1, 749.2]},
+    "comparisons": {
+      "e10_vs_e5": {"mean_diff": 203.68, "se": 38.67, "ci95": [96.34, 311.02], "p_value": 0.0062},
+      "e10_vs_e3": {"mean_diff": 482.87, "se": 50.61, "ci95": [342.37, 623.38], "p_value": 0.0007},
+      "e10_vs_a": {"mean_diff": 19.51, "se": 63.56, "ci95": [-156.94, 195.96], "p_value": 0.7742},
+      "e10_vs_d": {"mean_diff": -70.50, "se": 65.73, "ci95": [-252.97, 111.97], "p_value": 0.3439},
+      "e5_vs_e3": {"mean_diff": 279.19, "se": 42.38, "ci95": [161.55, 396.84], "p_value": 0.0027}
+    }
+  }
+}

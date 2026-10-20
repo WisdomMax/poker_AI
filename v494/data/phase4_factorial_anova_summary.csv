@@ -1,0 +1,8 @@
+effect,value_bb100,interpretation
+Cell1_Control_Mean,231.51388888888889,기준선 (풀게임 전면 폴드 퇴화)
+Cell2_ExplorationOnly_Mean,290.90277777777777,탐색 패치만 단독 적용
+Cell3_SubgameOnly_Mean,159.01388888888889,서브게임만 단독 적용
+Cell4_Combined_Mean,85.04166666666667,탐색 패치 + 서브게임 결합
+Main_Effect_Exploration,-7.291666666666657,탐색 패치의 순수 기여도
+Main_Effect_Subgame,-139.18055555555554,서브게임의 순수 기여도
+Interaction_Effect,-66.68055555555554,결합 시너지 효과

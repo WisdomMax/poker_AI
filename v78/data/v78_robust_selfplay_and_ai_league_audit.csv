@@ -1,0 +1,21 @@
+Phase,Item,Metric,Value,Status
+Phase0,Normalization,Slots_981_1417,436_DIM_FULL_NORMALIZED,PASS
+Phase4,League_Rank_1,AggressiveBot,890.53,COMPLETED
+Phase4,League_CI_Low_1,AggressiveBot,448.80,COMPLETED
+Phase4,League_CI_High_1,AggressiveBot,1332.25,COMPLETED
+Phase4,League_Rank_2,V7.7 Champion (Seed 202),189.08,COMPLETED
+Phase4,League_CI_Low_2,V7.7 Champion (Seed 202),-217.98,COMPLETED
+Phase4,League_CI_High_2,V7.7 Champion (Seed 202),596.13,COMPLETED
+Phase4,League_Rank_3,TightPassiveBot,-197.02,COMPLETED
+Phase4,League_CI_Low_3,TightPassiveBot,-441.33,COMPLETED
+Phase4,League_CI_High_3,TightPassiveBot,47.29,COMPLETED
+Phase4,League_Rank_4,V7.6 Champion (Seed 303),-265.38,COMPLETED
+Phase4,League_CI_Low_4,V7.6 Champion (Seed 303),-653.19,COMPLETED
+Phase4,League_CI_High_4,V7.6 Champion (Seed 303),122.42,COMPLETED
+Phase4,League_Rank_5,Hero (V7.8 Robust),-617.20,COMPLETED
+Phase4,League_CI_Low_5,Hero (V7.8 Robust),-970.17,COMPLETED
+Phase4,League_CI_High_5,Hero (V7.8 Robust),-264.23,COMPLETED
+Phase5,Statistics,5Seed_Grand_Mean,-681.97,STUDENT_T
+Phase5,Statistics,p_value,0.0180,STUDENT_T
+Phase5,Statistics,CI95_Low,-1171.33,STUDENT_T
+Phase5,Statistics,CI95_High,-192.61,STUDENT_T

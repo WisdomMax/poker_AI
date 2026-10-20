@@ -1,0 +1,29 @@
+================================================================================
+POKER AI V7.6 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: True 5-Seat Shared-Policy Self-Play Architecture Audit & 5-Seed 10k-50k Scaling
+================================================================================
+
+1. BACKGROUND & MOTIVATION:
+   - ChatGPT Insightful Inquiry:
+     "현재 제미나이에게 학습시키는 방식이 AI 5명이 모두 신경망으로 플레이하는 자기 대국인가?
+      아니면 학습 AI 1명과 규칙 기반 봇 4명이 대결하는 방식인가?
+      실제 훈련 테이블 구성을 코드로 확인할 필요가 있다."
+   - Forensic Code Audit Finding:
+     V7.5 파일럿 코드는 어댑터 검증의 신속성을 위해 Seat 0 (NFSP) vs Seat 1~4 (Calling Station)으로 구성되어 있었음.
+     이는 진정한 자기 대국(Self-Play)이 아닌 "1인 vs 4인 더미 봇" 환경이었으며, 상대를 레이즈하지 않는 호구로 학습하는 편향을 유발할 위험이 있음.
+   - Solution for V7.6:
+     진정한 "홀덤 알파고(Poker AlphaGo)"의 대칭적 균형(GTO 근사)을 달성하기 위해,
+     테이블의 5개 좌석 모두가 동일한 최신 True 6-Action NFSP 정책을 공유하여 플레이하고
+     테이블 전체(Seat 0~4)에서 경험을 수집하는 "True 5-Seat Shared-Policy Self-Play" 엔진으로 전면 전환.
+
+2. KEY OBJECTIVES & PHASES:
+   - Phase 0: 훈련 테이블 구조 감사 및 투명 보고 (V7.5 실태 규명 및 V7.6 진정한 Self-Play 엔진 선포)
+   - Phase 1: 1,417차원 정보 상태 텐서 정규화 (칩 수량 필드 991~1008을 10,000으로 나누어 [0, 1] 범위로 통일)
+   - Phase 2: True 5-Seat Shared-Policy Self-Play 파이프라인 구축 (5좌석 동시 의사결정 및 경험 수집)
+   - Phase 3: 5개 독립 시드(42, 101, 202, 303, 404) 10,000 에피소드 훈련 및 체크포인트 보관
+   - Phase 4: 학습 곡선 및 액션 분포(Fold, Call, 0.5P, 1.0P, 2.0P, All-in) 분화 분석
+   - Phase 5: Multi-Tier 교차 평가
+     * Tier 1: Self-Play 내부 밸런스 평가 (2,000핸드, 포지션별 수익 및 원장 합계 0.0 검증)
+     * Tier 2: vs Rule-Based 봇 4인 외부 평가 (1,000핸드, 실질 기대수익 bb/100 및 95% CI)
+   - Phase 6: 통계 검정 및 V7.6 공식 보고서 작성, ChatGPT 100% 전문 발송 및 180초 대기

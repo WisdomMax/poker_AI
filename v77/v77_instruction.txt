@@ -1,0 +1,25 @@
+================================================================================
+POKER AI V7.7 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: True 5-Player Self-Play Stability & Multi-Style AI Poker League
+================================================================================
+
+1. KEY AUDIT & OBJECTIVES FROM CHATGPT FEEDBACK:
+   - Phase 0: Explicit Chip Amount Slot Normalization
+     * 기존 `s / 10000 if s > 1` 휴리스틱 폐기.
+     * 1,417차원 중 베팅 금액 슬롯(991..1015) 24개 차원만 명시적으로 특정하여 10,000.0으로 정규화.
+     * 카드, 포지션, 액션 플래그 등 나머지 1,393개 바이너리 차원 보존.
+   - Phase 1: 5-Seat NFSP Learning Pipeline Integrity Audit
+     * 5좌석 독립 관측(Hole card masking), 좌석 내 단독 궤적 전이(No cross-seat contamination) 전수 검증.
+     * 매 핸드 제로섬 정산 불변성 재검증.
+   - Phase 2: Statistical Rigor Reform (Student-t Distribution)
+     * 시드 n=5 기준 df=4 Student-t 분포(t_crit=2.776) 기반 엄밀한 95% CI 및 p-value 산출.
+   - Phase 3: Hero Position Rotation Evaluation (5-Seat Rotation)
+     * Hero를 Seat 0(SB), Seat 1(BB), Seat 2(UTG), Seat 3(MP), Seat 4(CO)로 전 좌석 순환 배치 (각 1,000핸드, 총 5,000핸드).
+     * 포지션 편향을 제거한 균등 포지션 평균(Seat-Balanced EV) 산출.
+   - Phase 4: 5-Seed Self-Play Scaling Up (20,000 Episodes)
+     * 5개 독립 시드(42, 101, 202, 303, 404) x 20,000 에피소드 장기 학습.
+     * 피라미드 베팅 사이징 및 Fold 비율 추이 로깅.
+   - Phase 5: AI Poker League Multi-Style Arena
+     * 테이블 구성: Hero(NFSP) + V7.6 이전 챔피언(Seed 303) + AggressiveBot + TightPassiveBot + RuleBasedBot
+     * 5인 이종 전략 리그에서 Hero의 일반화 경쟁력 검증.

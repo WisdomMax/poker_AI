@@ -1,0 +1,31 @@
+================================================================================
+POKER AI V7.8 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: Information State Repair & Robust Multi-Style Self-Play AI League
+================================================================================
+
+1. BACKGROUND & CHATGPT KEY INQUIRIES:
+   - Critical Flaw Identified in Normalization:
+     OpenSpiel 공식 universal_poker.cc 소스 기반 정보 상태 텐서 구조 규명:
+     * 0..4 (5차원): 플레이어 포지션 원-핫
+     * 5..56 (52차원): 플레이어 홀카드 원-핫
+     * 57..108 (52차원): 공개 보드카드 원-핫
+     * 109..980 (872차원 = 2 * 436): 각 행동 종류 플래그
+     * 981..1416 (436차원 = max_game_length): 각 행동 직후 누적 칩 베팅 금액!
+     -> 기존 991:1015 (24개) 정규화는 전체 베팅 영역 중 극히 일부만 정규화한 것이었음!
+     -> V7.8에서 `inf_norm[981:1417] /= 10000.0`으로 436개 전 차원 완전 정규화 단행!
+
+   - AI Poker League Strategic Dilemma:
+     V7.7 리그에서 AggressiveBot이 +1192 bb/100으로 1위를 기록하고, Hero는 -5.15 bb/100을 기록함.
+     이는 동일 정책 자기 대국으로만 훈련된 AI가 광폭 베팅(Over-aggression)을 퍼붓는 상대를 역착취(Counter-exploit)하는 법을 아직 배우지 못했기 때문임.
+     -> V7.8에서는 테이블에 공격형 봇, 수비형 봇, 룰봇이 혼합된 실전 환경에서 학습하는
+        "Robust Multi-Style Self-Play"를 도입하여 전방위 적응력을 훈련!
+
+2. PHASES & OBJECTIVES:
+   - Phase 0: 1,417차원 텐서 전면 수리 (981:1417 436개 칩 금액 차원 완전 정규화)
+   - Phase 1: 기존 모델(V7.6, V7.7) 체크포인트 해시 및 전처리기 보존
+   - Phase 2: 5인 NFSP 학습 파이프라인 무결성 감사 (불완전정보 격리 및 원장 제로섬)
+   - Phase 3: Robust Multi-Style Self-Play 5개 시드 x 20,000 에피소드 학습
+   - Phase 4: Position-Balanced AI League 정규 챔피언십 (5개 포지션 순환 x 1,000핸드 = 5,000핸드)
+   - Phase 5: Student-t 통계 분석 (df=4) 및 AggressiveBot 극복 여부 실측
+   - Phase 6: V7.8 공식 보고서 작성 및 ChatGPT 발송

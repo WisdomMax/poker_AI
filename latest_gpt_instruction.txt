@@ -1,0 +1,65 @@
+POKER AI V5.3.4
+# FINAL EVALUATOR VALIDATION & 20BB GO/NO-GO
+
+목표:
+V5.3.3에서 칩 회계식과
+장기 학습 게인 재현은 확인됐다.
+
+그러나 평가 결과의 의미와
+결정론적 재현성에 미해결 문제가 있다.
+
+이번에는 새 알고리즘을 개발하지 않는다.
+기존 체크포인트를 사용한다.
+
+작업 디렉터리: v534/
+
+=====================================
+PHASE 1. AlwaysFold 19개 팟 실제 승리 방식
+=====================================
+
+AlwaysFold의 기록:
+
+500 Hands
+100회 BB 착석
+19회 팟 획득
+Total Payout 87.5 BB
+Net Return -62.5 BB
+
+회계 합계는 일치한다.
+
+하지만 팟 획득 경위가 의심스럽다.
+
+보고서에서는 상대들이
+림프, 레이즈, 3-Bet 이후
+폴드해서 Hero가 팟을 획득했다고 설명했다.
+
+Hero는 AlwaysFold 정책이므로
+공격적 베팅을 하지 않는다.
+
+그렇다면 상대의 3-Bet에
+다른 상대가 폴드한 팟을
+Hero가 획득했다는 설명은
+일반적인 포커 진행과 일치하지 않는다.
+
+다음 두 경우를 명확히 구별한다.
+
+A. Uncontested Win
+   상대가 모두 폴드하여 팟 획득
+
+B. Showdown Win
+   Hero가 Check 이후
+   쇼다운으로 팟 획득
+
+19개 팟 획득 핸드 전체에 대해:
+
+hand_id
+Hero Holecards
+Board
+Hero Position
+Action History
+Hero Actions
+Opponent Cont
+ChatGPT는 실수할 수 있습니다. 중요한 정보는 확인하세요.
+최신 응답
+ChatGPT에게 물어보세요
+Dragging was cancelled. Draggable item chatgpt:conversation:6ad12105-6404-83ec-b272-9a671bac23f9 was dropped.

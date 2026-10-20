@@ -1,0 +1,26 @@
+# POKER AI V5.6: 5-PLAYER 50BB NFSP-DQN DEEP-STACK SELF-PLAY INSTRUCTION
+
+[최종 결론]
+V5.6의 50BB 통제 연구 시작에 찬성. 100BB 확대는 아직 보류.
+
+게임 환경:
+- 5 Players, 24 Cards, 2 Rounds (Preflop, Flop)
+- SB 50, BB 100
+- Stack 5,000 Chips (50BB)
+- 4-Action: 0 Fold, 1 Check/Call, 2 Pot Raise, 3 All-in
+
+주요 비교 실험 (Primary Comparison):
+- 50BB Warm Start 50k vs 50BB Scratch 50k
+- 핵심 질문: 20BB 사전 학습이 50BB 최종 성능을 개선하는가?
+
+평가 스케줄:
+- 3개 이상 신규 홀드아웃 스케줄 (Seed 20261028, 20261029, 20261030)
+- 스케줄당 1,500핸드 이상 x 5개 좌석 균등 회전
+- Stochastic Average Policy 유지
+
+카드별 의사결정 검사:
+- AA, KK, QQ, JJ, TT, 99
+- 50BB에서의 과도한 올인 및 무분별한 콜 여부 검사
+
+최종 보고서:
+v56_50bb_selfplay_report.md

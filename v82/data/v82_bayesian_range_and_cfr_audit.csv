@@ -1,0 +1,29 @@
+Phase,Item,Metric,Value,Status
+Phase0,ZeroLeak1000States,Violations,0,ZERO_LEAK_PASS
+Phase4_5,CFR_10_iters,Latency_ms,4.45,PROFILED
+Phase4_5,CFR_10_iters,AvgRegret,5.5417,PROFILED
+Phase4_5,CFR_50_iters,Latency_ms,21.93,PROFILED
+Phase4_5,CFR_50_iters,AvgRegret,5.1083,PROFILED
+Phase4_5,CFR_100_iters,Latency_ms,43.70,PROFILED
+Phase4_5,CFR_100_iters,AvgRegret,5.0542,PROFILED
+Phase4_5,CFR_250_iters,Latency_ms,108.03,PROFILED
+Phase4_5,CFR_250_iters,AvgRegret,5.0217,PROFILED
+Phase4_5,CFR_500_iters,Latency_ms,224.70,PROFILED
+Phase4_5,CFR_500_iters,AvgRegret,5.0108,PROFILED
+Phase6_7,League_Rank_1,Uniform-Range Hybrid (V8.1),848.76,COMPLETED
+Phase6_7,League_CI_Low_1,Uniform-Range Hybrid (V8.1),641.33,COMPLETED
+Phase6_7,League_CI_High_1,Uniform-Range Hybrid (V8.1),1056.20,COMPLETED
+Phase6_7,League_Rank_2,Adaptive-Range Hybrid (V8.2),532.01,COMPLETED
+Phase6_7,League_CI_Low_2,Adaptive-Range Hybrid (V8.2),343.58,COMPLETED
+Phase6_7,League_CI_High_2,Adaptive-Range Hybrid (V8.2),720.44,COMPLETED
+Phase6_7,League_Rank_3,AggressiveBot,84.32,COMPLETED
+Phase6_7,League_CI_Low_3,AggressiveBot,-187.88,COMPLETED
+Phase6_7,League_CI_High_3,AggressiveBot,356.52,COMPLETED
+Phase6_7,League_Rank_4,TightPassiveBot,-481.79,COMPLETED
+Phase6_7,League_CI_Low_4,TightPassiveBot,-638.58,COMPLETED
+Phase6_7,League_CI_High_4,TightPassiveBot,-324.99,COMPLETED
+Phase6_7,League_Rank_5,RuleBasedBot,-983.30,COMPLETED
+Phase6_7,League_CI_Low_5,RuleBasedBot,-1200.89,COMPLETED
+Phase6_7,League_CI_High_5,RuleBasedBot,-765.72,COMPLETED
+Phase8,PairedDiff_Adaptive_vs_Uniform,Delta_EV,-316.75,ANALYZE_DONE
+Phase8,PairedDiff_Adaptive_vs_Uniform,p_value,0.0382,ANALYZE_DONE

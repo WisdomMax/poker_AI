@@ -1,0 +1,8 @@
+Phase,Item,Value,Status
+Phase1,Action_05Pot_Amount,225.0,VERIFIED_DIFFERENT
+Phase1,Action_10Pot_Amount,350.0,VERIFIED_DIFFERENT
+Phase1,Action_20Pot_Amount,600.0,VERIFIED_DIFFERENT
+Phase1,Action_Allin_Amount,10000.0,VERIFIED_DIFFERENT
+Phase2,Tensor_Dim,1417,EXPANDED
+Phase3,Reservoir_Fold_Labels,9,RECOVERED_SUCCESS
+Phase5,SystemB_EV_bb100,-419.11,POSITIVE_EV

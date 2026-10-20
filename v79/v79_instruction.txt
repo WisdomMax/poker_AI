@@ -1,0 +1,31 @@
+================================================================================
+POKER AI V7.9 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: Pure Self-Play vs Mixed Opponent vs Curriculum Controlled Causal Study
+================================================================================
+
+1. SCIENTIFIC PROBLEM & CHATGPT AUDIT FINDINGS:
+   - Issue 1: Confounding Variables in V7.8:
+     V7.7 Pure(Seed 202, 24-slot norm)와 V7.8 Mixed(Seed 42, 436-slot norm)는
+     정규화, 시드, 학습량, 그리고 "경험 수집량(5좌석 수집 vs 1좌석 수집으로 5배 차이)"이 달랐음.
+     따라서 V7.8의 하락 원인을 혼합 대국 자체로 단정할 수 없음.
+   - Issue 2: Table Ledger Column Sum Myth:
+     로테이션 결과표에서 전략별 전 포지션 평균의 합은 0(제로섬)이지만,
+     각 좌석 열(SB열, BB열 등)은 각 전략이 서로 다른 시점에 앉았던 합산이므로 0일 필요가 없음.
+     보고서의 "좌석 열도 0" 표기 오류를 정정하고, 매 핸드 5명 합계 = 0.0과 라운드별 제로섬을 투명하게 입증할 것.
+   - Issue 3: Equalized Decision Updates:
+     Pure Self-Play는 5개 좌석 전체에서 궤적을 모아 1핸드당 5개 경험을 수집하는 반면,
+     Mixed는 Hero(Seat 0) 1좌석만 수집하여 데이터량이 1/5에 불과했음.
+     V7.9에서는 Gradient Update 수와 Replay Buffer 경험량을 완전히 일치시켜 공정 통제할 것.
+
+2. EXPERIMENTAL DESIGN (CONTROLLED CAUSAL STUDY):
+   - All systems use the EXACT SAME corrected 436-slot normalization: `inf_norm[981:1417] /= 10000.0`.
+   - All systems evaluated across 5 independent seeds: 42, 101, 202, 303, 404.
+   - Three Training Paradigms:
+     * System A: Pure Symmetric 5-Seat Self-Play (모든 좌석 동일 최신 NFSP, 대칭적 균형 학습)
+     * System B: Mixed Opponent Training (공격/수비/룰 봇과 대결하되, 업데이트 횟수를 System A와 동일하게 5배 보정)
+     * System C: Curriculum Training (초반 10k Pure Self-Play -> 후반 10k Mixed Opponents 도입)
+   - Multi-Tier Evaluation:
+     * Tier 1: 5-Seat Rotation AI League (Hero A, Hero B, Hero C, AggressiveBot, TightPassiveBot 대결, 5,000핸드)
+     * Tier 2: 매 핸드 제로섬 불변성 검증 및 5인 합계 원장 공개
+     * Tier 3: Paired Differences (B - A, C - A, C - B) 및 Student-t 검정 (df=4)

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aside Blackjack AI Assistant (jev Engine)</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      --bg: #0d1117;
+      --panel-bg: #161b22;
+      --card-bg: #21262d;
+      --border: #30363d;
+      --accent: #58a6ff;
+      --green: #238636;
+      --red: #da3633;
+      --yellow: #d29922;
+      --purple: #8957e5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #c9d1d9;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    /* Split Layout */
+    #game-container {
+      flex: 1;
+      height: 100%;
+      background: #000;
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    #game-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    #aside-panel {
+      width: 440px;
+      min-width: 400px;
+      height: 100%;
+      overflow-y: auto;
+      background: var(--panel-bg);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    h2, h3, h4 { margin: 0 0 10px; color: #fff; }
+    .subtitle { font-size: 13px; color: #8b949e; margin-bottom: 18px; }
+    
+    .section-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    /* Button Grids */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .choice-btn {
+      background: #30363d;
+      border: 1px solid #484f58;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .choice-btn:hover { background: #484f58; border-color: #8b949e; }
+    .choice-btn.selected {
+      background: var(--accent);
+      color: #0d1117;
+      border-color: #79c0ff;
+      box-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
+    }
+    
+    /* Card Counting Widget */
+    .counter-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      background: #11151c;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .count-stat { text-align: center; }
+    .count-label { font-size: 11px; color: #8b949e; }
+    .count-val { font-size: 20px; font-weight: 800; color: #fff; }
+    .count-val.positive { color: #3fb950; }
+    .count-val.negative { color: #f85149; }
+    
+    .quick-count-btns {
+      display: flex;
+      gap: 6px;
+    }
+    .qc-btn {
+      flex: 1;
+      padding: 8px 4px;
+      font-size: 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #21262d;
+      color: #fff;
+      cursor: pointer;
+    }
+    .qc-btn:hover { background: #30363d; }
+    .qc-plus { color: #3fb950; font-weight: 700; }
+    .qc-minus { color: #f85149; font-weight: 700; }
+    
+    /* Decision Result Box */
+    #decision-container {
+      margin-top: 6px;
+    }
+    .action-badge {
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+      padding: 16px;
+      border-radius: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .action-badge .action-sub {
+      font-size: 13px;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+    .action-HIT { background: #1f6feb; color: #fff; }
+    .action-STAND { background: #da3633; color: #fff; }
+    .action-DOUBLE { background: #d29922; color: #fff; }
+    .action-SPLIT { background: #8957e5; color: #fff; }
+    .action-SURRENDER { background: #6e7681; color: #fff; }
+
+    /* Probability bars */
+    .prob-bar-container { margin-bottom: 8px; }
+    .prob-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .bar-bg {
+      height: 8px;
+      background: #30363d;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .status-row:last-child { border: none; }
+    .status-val { font-weight: 700; }
+    
+    .primary-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 0;
+      background: #238636;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .primary-btn:hover { background: #2ea043; }
+    .primary-btn:disabled { opacity: 0.5; cursor: wait; }
+  </style>
+</head>
+<body>
+  <!-- 좌측 247 Blackjack 게임 영역 -->
+  <div id="game-container">
+    <iframe id="game-frame" src="https://www.247blackjack.com/" title="247 Blackjack Game"></iframe>
+  </div>
+
+  <!-- 우측 Aside AI 판단 패널 -->
+  <aside id="aside-panel">
+    <h2>Aside Blackjack AI</h2>
+    <div class="subtitle">OpenAI Decisions (`gpt-6-luna`) + Hi-Lo 카드 카운팅 필승 엔진</div>
+
+    <!-- 1. 딜러 오픈카드 선택 -->
+    <div class="section-box">
+      <div class="section-title">1. 딜러 오픈 카드 (Dealer Upcard)</div>
+      <div class="btn-grid" id="dealer-grid">
+        <button class="choice-btn" data-val="2">2</button>
+        <button class="choice-btn" data-val="3">3</button>
+        <button class="choice-btn" data-val="4">4</button>
+        <button class="choice-btn" data-val="5">5</button>
+        <button class="choice-btn" data-val="6">6</button>
+        <button class="choice-btn" data-val="7">7</button>
+        <button class="choice-btn" data-val="8">8</button>
+        <button class="choice-btn" data-val="9">9</button>
+        <button class="choice-btn" data-val="10">10</button>
+        <button class="choice-btn" data-val="A">A</button>
+      </div>
+    </div>
+
+    <!-- 2. 내 핸드 선택 -->
+    <div class="section-box">
+      <div class="section-title">
+        <span>2. 내 핸드 점수 / 형태 (My Hand)</span>
+        <select id="hand-type-select" style="background:#21262d; color:#fff; border:1px solid #484f58; border-radius:4px; font-size:11px; padding:2px 6px;">
+          <option value="hard">Hard (일반 합계)</option>
+          <option value="soft">Soft (A 포함)</option>
+          <option value="pair">Pair (페어/스플릿)</option>
+        </select>
+      </div>
+      
+      <!-- Hard Totals -->
+      <div id="hand-hard" class="btn-grid">
+        <button class="choice-btn" data-val="8 이하">≤8</button>
+        <button class="choice-btn" data-val="9">9</button>
+        <button class="choice-btn" data-val="10">10</button>
+        <button class="choice-btn" data-val="11">11</button>
+        <button class="choice-btn" data-val="12">12</button>
+        <button class="choice-btn" data-val="13">13</button>
+        <button class="choice-btn" data-val="14">14</button>
+        <button class="choice-btn" data-val="15">15</button>
+        <button class="choice-btn" data-val="16">16</button>
+        <button class="choice-btn" data-val="17+">17+</button>
+      </div>
+
+      <!-- Soft Totals -->
+      <div id="hand-soft" class="btn-grid" style="display:none;">
+        <button class="choice-btn" data-val="A,2">A,2 (13)</button>
+        <button class="choice-btn" data-val="A,3">A,3 (14)</button>
+        <button class="choice-btn" data-val="A,4">A,4 (15)</button>
+        <button class="choice-btn" data-val="A,5">A,5 (16)</button>
+        <button class="choice-btn" data-val="A,6">A,6 (17)</button>
+        <button class="choice-btn" data-val="A,7">A,7 (18)</button>
+        <button class="choice-btn" data-val="A,8">A,8 (19)</button>
+        <button class="choice-btn" data-val="A,9">A,9 (20)</button>
+      </div>
+
+      <!-- Pair Totals -->
+      <div id="hand-pair" class="btn-grid" style="display:none;">
+        <button class="choice-btn" data-val="2,2">2,2</button>
+        <button class="choice-btn" data-val="3,3">3,3</button>
+        <button class="choice-btn" data-val="4,4">4,4</button>
+        <button class="choice-btn" data-val="5,5">5,5</button>
+        <button class="choice-btn" data-val="6,6">6,6</button>
+        <button class="choice-btn" data-val="7,7">7,7</button>
+        <button class="choice-btn" data-val="8,8">8,8</button>
+        <button class="choice-btn" data-val="9,9">9,9</button>
+        <button class="choice-btn" data-val="10,10">10,10</button>
+        <button class="choice-btn" data-val="A,A">A,A</button>
+      </div>
+    </div>
+
+    <!-- 3. 실시간 카드 카운터 (Hi-Lo Engine) -->
+    <div class="section-box">
+      <div class="section-title">
+        <span>3. 실시간 카드 카운팅 (Hi-Lo)</span>
+        <button id="reset-count-btn" style="background:transparent; border:none; color:#8b949e; cursor:pointer; font-size:11px;">초기화</button>
+      </div>
+      <div class="counter-row">
+        <div class="count-stat">
+          <div class="count-label">Running Count (RC)</div>
+          <div id="rc-val" class="count-val">0</div>
+        </div>
+        <div class="count-stat">
+          <div class="count-label">True Count (TC)</div>
+          <div id="tc-val" class="count-val">0.0</div>
+        </div>
+        <div class="count-stat">
+          <div class="count-label">남은 덱 (Decks)</div>
+          <div id="decks-val" class="count-val" style="font-size:16px;">6.0</div>
+        </div>
+      </div>
+      <div class="quick-count-btns">
+        <button class="qc-btn qc-plus" onclick="adjustCount(1)">+1 (2~6 카드)</button>
+        <button class="qc-btn" onclick="adjustCount(0)">0 (7~9 카드)</button>
+        <button class="qc-btn qc-minus" onclick="adjustCount(-1)">-1 (10,J,Q,K,A)</button>
+      </div>
+    </div>
+
+    <!-- 분석 실행 버튼 -->
+    <button id="decide-btn" class="primary-btn">jev 최적 액션 판단 (실시간 분석)</button>
+
+    <!-- 4. 판단 결과 영역 -->
+    <div id="decision-container" style="display:none;" class="section-box">
+      <div class="section-title">jev 실시간 판단 결과</div>
+      <div id="action-badge-box"></div>
+      
+      <div id="prob-bars" style="margin-top:14px;"></div>
+
+      <div style="margin-top:14px; background:#11151c; padding:12px; border-radius:8px;">
+        <div class="status-row">
+          <span style="color:#8b949e;">플레이어 통계적 우위</span>
+          <span id="res-advantage" class="status-val">-</span>
+        </div>
+        <div class="status-row">
+          <span style="color:#8b949e;">권장 베팅 배율 (Bet Unit)</span>
+          <span id="res-bet" class="status-val" style="color:var(--yellow);">-</span>
+        </div>
+        <div class="status-row">
+          <span style="color:#8b949e;">수학적 확신도</span>
+          <span id="res-conf" class="status-val">-</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    let selectedDealer = '10';
+    let selectedHand = '16';
+    let runningCount = 0;
+    let cardsSeen = 0;
+    const totalDecks = 6;
+
+    // UI elements
+    const dealerGrid = document.querySelector('#dealer-grid');
+    const handTypeSelect = document.querySelector('#hand-type-select');
+    const handHard = document.querySelector('#hand-hard');
+    const handSoft = document.querySelector('#hand-soft');
+    const handPair = document.querySelector('#hand-pair');
+    const decideBtn = document.querySelector('#decide-btn');
+    const decisionContainer = document.querySelector('#decision-container');
+    const actionBadgeBox = document.querySelector('#action-badge-box');
+    const probBars = document.querySelector('#prob-bars');
+
+    // Init defaults
+    dealerGrid.querySelector('[data-val="10"]').classList.add('selected');
+    handHard.querySelector('[data-val="16"]').classList.add('selected');
+
+    // Selection handlers
+    dealerGrid.addEventListener('click', (e) => {
+      if (!e.target.dataset.val) return;
+      dealerGrid.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+      e.target.classList.add('selected');
+      selectedDealer = e.target.dataset.val;
+    });
+
+    handTypeSelect.addEventListener('change', (e) => {
+      handHard.style.display = e.target.value === 'hard' ? 'grid' : 'none';
+      handSoft.style.display = e.target.value === 'soft' ? 'grid' : 'none';
+      handPair.style.display = e.target.value === 'pair' ? 'grid' : 'none';
+      
+      const activeGrid = e.target.value === 'hard' ? handHard : (e.target.value === 'soft' ? handSoft : handPair);
+      const firstBtn = activeGrid.querySelector('.choice-btn');
+      if (firstBtn) {
+        activeGrid.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+        firstBtn.classList.add('selected');
+        selectedHand = firstBtn.dataset.val;
+      }
+    });
+
+    [handHard, handSoft, handPair].forEach(grid => {
+      grid.addEventListener('click', (e) => {
+        if (!e.target.dataset.val) return;
+        grid.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+        e.target.classList.add('selected');
+        selectedHand = e.target.dataset.val;
+      });
+    });
+
+    // Card Counting logic
+    function updateCountDisplay() {
+      const remainingCards = (totalDecks * 52) - cardsSeen;
+      const remainingDecks = Math.max(0.5, (remainingCards / 52)).toFixed(1);
+      const trueCount = (runningCount / remainingDecks).toFixed(1);
+
+      const rcEl = document.querySelector('#rc-val');
+      const tcEl = document.querySelector('#tc-val');
+      const decksEl = document.querySelector('#decks-val');
+
+      rcEl.textContent = (runningCount > 0 ? '+' : '') + runningCount;
+      rcEl.className = 'count-val ' + (runningCount > 0 ? 'positive' : (runningCount < 0 ? 'negative' : ''));
+
+      tcEl.textContent = (trueCount > 0 ? '+' : '') + trueCount;
+      tcEl.className = 'count-val ' + (trueCount >= 2 ? 'positive' : (trueCount < 0 ? 'negative' : ''));
+
+      decksEl.textContent = remainingDecks;
+    }
+
+    window.adjustCount = function(delta) {
+      runningCount += delta;
+      cardsSeen++;
+      updateCountDisplay();
+    };
+
+    document.querySelector('#reset-count-btn').addEventListener('click', () => {
+      runningCount = 0;
+      cardsSeen = 0;
+      updateCountDisplay();
+    });
+
+    // Call jev (Decisions API)
+    decideBtn.addEventListener('click', async () => {
+      decideBtn.disabled = true;
+      decideBtn.textContent = 'jev 확률 계산 중...';
+      decisionContainer.style.display = 'none';
+
+      const remainingDecks = Math.max(0.5, ((totalDecks * 52 - cardsSeen) / 52));
+
+      try {
+        const response = await fetch('/api/blackjack-decide', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            playerHand: selectedHand,
+            dealerUpCard: selectedDealer,
+            runningCount,
+            decksRemaining: Number(remainingDecks.toFixed(1))
+          })
+        });
+
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || '호출 실패');
+
+        renderDecision(data);
+      } catch (err) {
+        alert('에러 발생: ' + err.message);
+      } finally {
+        decideBtn.disabled = false;
+        decideBtn.textContent = 'jev 최적 액션 판단 (실시간 분석)';
+      }
+    });
+
+    function renderDecision(data) {
+      decisionContainer.style.display = 'block';
+
+      const actionAns = data.answers.find(a => a.name === 'best_action');
+      const advAns = data.answers.find(a => a.name === 'player_advantage');
+      const betAns = data.answers.find(a => a.name === 'bet_multiplier');
+      const confAns = data.answers.find(a => a.name === 'confidence');
+
+      const action = actionAns?.choice || 'STAND';
+      const actionMap = {
+        'HIT': { label: 'HIT (카드 받기)', color: 'action-HIT', icon: '🟢' },
+        'STAND': { label: 'STAND (차례 마치기)', color: 'action-STAND', icon: '🔴' },
+        'DOUBLE': { label: 'DOUBLE DOWN (더블다운)', color: 'action-DOUBLE', icon: '⚡' },
+        'SPLIT': { label: 'SPLIT (스플릿 분리)', color: 'action-SPLIT', icon: '✂️' },
+        'SURRENDER': { label: 'SURRENDER (포기)', color: 'action-SURRENDER', icon: '🏳️' }
+      };
+
+      const meta = actionMap[action] || actionMap['STAND'];
+      actionBadgeBox.innerHTML = `
+        <div class="action-badge ${meta.color}">
+          <span>${meta.icon} ${action}</span>
+          <span class="action-sub">${meta.label}</span>
+        </div>
+      `;
+
+      // Probabilities
+      probBars.innerHTML = '';
+      if (actionAns?.probabilities) {
+        actionAns.probabilities.forEach(p => {
+          const pct = Math.round(p.probability * 100);
+          probBars.innerHTML += `
+            <div class="prob-bar-container">
+              <div class="prob-header">
+                <span>${p.value}</span>
+                <span>${pct}%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width: ${pct}%;"></div>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      document.querySelector('#res-advantage').textContent = advAns?.predicate ? '🔥 유리함 (TC 양수/버스트 확률 높음)' : '❄️ 보통/중립 (하우스 기본)';
+      document.querySelector('#res-advantage').style.color = advAns?.predicate ? '#3fb950' : '#8b949e';
+      
+      document.querySelector('#res-bet').textContent = betAns?.choice || '1x 기본';
+      document.querySelector('#res-conf').textContent = (confAns?.level || '높음') + ' (' + Math.round((confAns?.confidence || 0.9) * 100) + '%)';
+    }
+  </script>
+</body>
+</html>

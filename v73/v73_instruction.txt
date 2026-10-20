@@ -1,0 +1,42 @@
+# POKER AI V7.3
+# FOLD Q-VALUE CALIBRATION & COUNTERFACTUAL ACTION AUDIT
+# 100BB · 5인 · 52장 · 4-Street · 6-Action
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표:
+V7.2에서 3,000핸드 손익 원장의 산술 정합성이 보고되었다.
+또한 2,400회 Facing Bet에서 실제 Fold 0회를 관측했다.
+그러나 Fold Q값이 음수인 것만으로 보상 설계 오류라고 판단할 수 없다.
+V7.3에서는 Fold 보상을 변경하기 전에 행동별 Q값과 실제 기대수익을 비교한다.
+기존 체크포인트를 보존하고, 연구 초기에는 새로운 보상 셰이핑을 적용하지 않는다.
+
+PHASE 0. 원장 및 평가 재현성
+- V7.1 Hero 총손익(-312.67BB) vs V7.2 Hero 총손익(-632.7BB) 수치 차이 원인 해명.
+- 강제 리레이즈 테스트에서 5명 각각의 블라인드(SB=50, BB=100, 기타=0), 투자액, 최종 손익 명시.
+
+PHASE 1. Fold의 정확한 보상 정의
+- 현재 게임의 학습 보상 기준 확인 (핸드 시작 기준 최종 순손익 vs 의사결정 증분 손익).
+- Facing Bet 상태에서 Fold 강제 실행 시 실제 종료 보상 측정.
+- Q-Network의 Q(Fold)와 실제 Fold 보상 간 오차 계산.
+
+PHASE 2. Fold vs Call vs Raise 반사실적 평가 (Counterfactual Audit)
+- 서로 다른 카드 강도, 팟 크기, 스트리트, 포지션, 유효 스택 상태 선정.
+- 각 상태에서 Fold, Call, 0.5Pot, 1.0Pot, 2.0Pot, All-in 강제 분기 롤아웃 수행.
+- Q-Network의 예측 순위와 실제 롤아웃 추정 기대치 순위 비교.
+- Fold가 최선인 상황에서 Q-Network가 Fold를 최하위로 과소평가하는지 실증.
+
+PHASE 3. Fold 데이터가 Reservoir Buffer에 없는 이유
+- 학습 시 BR 행동 및 Reservoir 저장 로직 전수 코드 감사:
+  * Fold가 합법인 BR 의사결정 수
+  * Reservoir Buffer 저장 조건 (`current_ep_is_br == True` 시점)
+  * Q-Net argmax에 Fold가 선택된 적이 있는지 여부
+  * 탐색 행동(epsilon-greedy)의 버퍼 저장 여부
+
+PHASE 4. 2.0Pot 선택 원인 및 상태 편향 분리
+- 전체 Facing Bet 2,400개 상태에서 2.0Pot 실제 선택 비율 재계산 (특정 대표 상태의 99.92%와 전체 빈도 20.7% 명확 분리).
+- 2.0Pot의 상태 편향(Confounding by State)과 행동 자체의 인과적 효과 분리.
+
+PHASE 5. 최종 판정 및 종합 보고
+- 최종 보고서: v73_fold_qvalue_counterfactual_audit.md
+- 목표: AI가 폴드를 더 자주 하도록 강제하는 것이 아니라, 폴드가 최선인 상태에서 스스로 폴드를 선택하도록 가치 추정의 정확성을 높인다.

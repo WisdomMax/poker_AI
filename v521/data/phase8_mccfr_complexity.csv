@@ -1,0 +1,5 @@
+game,deck,players,stack,info_states,memory_bytes,memory_str,mccfr_feasible,notes
+Kuhn Poker (2p),3,2,1 BB,12,192,192 Bytes,가능 (0.01초 소요),타뷸러 완벽 수렴
+Leduc Poker (2p),6,2,13 BB,936,22464,22.5 KB,가능 (1초 소요),타뷸러 수렴 가능
+5-Player Reduced Holdem (10BB),24,5,10 BB,450000000000.0,14400000000000.0,14.4 TB,절대 불가 (메모리 폭발),"RAM 수십 TB 필요, 1회 순회에 수일"
+5-Player Full Holdem (100BB),52,5,100 BB,1e+160,4.8e+161,> 10^150 YB (우주 원자 수 초과),원천 불가,신경망 함수 근사(NFSP/Deep CFR) 필수

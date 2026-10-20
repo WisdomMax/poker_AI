@@ -1,0 +1,40 @@
+# POKER AI V7.5
+# TRUE 6-ACTION ENGINE & NFSP FOLD RECOVERY
+# 100BB · 5 Players · 52 Cards · 4 Streets
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목적:
+V7.4에서 발견된 구조적 버그(0.5Pot, 1.0Pot, 2.0Pot이 모두 fcpa Action 2로 단일화되어 실행된 문제)를 해결하고,
+OpenSpiel fullgame 설정을 이용한 진짜 6개 베팅 행동 구현 및 NFSP Fold 학습 경로 정상화를 달성한다.
+작업 디렉터리: v75/
+
+PHASE 0. 기존 모델 및 실험 기록 보존
+- 기존 6-Action 모델을 "6-output / 4-effective-actions"로 공식 분류.
+- 과거 하프팟/2배팟 성능 주장을 실제 사이징 실험이 아닌 액션 중복 모델의 관측 결과로 재해석.
+
+PHASE 1. OpenSpiel FULLGAME 조사 및 6-Action 어댑터 구현
+- bettingAbstraction = 'fullgame' (또는 'fchpa') 설정 조사.
+- 0.5Pot, 1.0Pot, 2.0Pot, All-in이 실제 서로 다른 합법 칩 금액으로 집행되는 어댑터 구축.
+- 모든 상태에서 Abstract Action -> Engine Action ID -> Actual Bet Amount 로그 및 검증.
+
+PHASE 2. 신경망 입력과 정보 상태 텐서 검증
+- fullgame 설정에서 Information State Tensor 크기(차원) 확인.
+- 4-Action 가중치 전이 및 새로운 6-Action 헤드 초기화.
+
+PHASE 3. Fold Q값과 BR 탐색 복구
+- Fold 실제 종료 보상(-0.0125)과 Q(Fold) 캘리브레이션.
+- BR 정책에 ε-greedy 탐색 복원 (ε = 0.1 -> 0.05 단계적 스케줄링).
+- Reservoir Buffer 내 Fold 라벨 유입 및 Q값 편향 완화 확인.
+
+PHASE 4. 반사실적 평가 재검증
+- 72o vs AA에서 분산 및 신뢰구간을 포함한 몬테카를로 평가.
+
+PHASE 5. 초기 학습 실험 (10,000 에피소드)
+- System A: 기존 4-Action + Fold 복구 (ε-greedy)
+- System B: FULLGAME 기반 진짜 6-Action + Fold 복구
+- 5개 학습 시드 (42, 101, 202, 303, 404) 10,000 에피소드 학습 및 평가.
+
+PHASE 6. 실제 전략 비교 및 최종 판정
+- 최종 보고서: v75_true_6action_and_fold_recovery_report.md
+- 목표: 실제 포커 엔진에서 6가지 서로 다른 의사결정을 실행하고 올바른 보상으로 학습하는 AI 구축.

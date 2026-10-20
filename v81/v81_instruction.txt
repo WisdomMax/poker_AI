@@ -1,0 +1,27 @@
+================================================================================
+POKER AI V8.1 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: Zero-Leak Information-Set Search Integrity & Causal Ablation Study
+================================================================================
+
+1. CRITICAL AUDIT MOTIVATION & CHATGPT INQUIRY:
+   - ChatGPT Penetrating Question:
+     "V8.0의 Hybrid 에쿼티 계산이 `st.clone()` 과정에서 상대의 실제 비공개 카드를 읽은 것은 아닌가?
+      만약 상대 패를 보고 플레이했다면 그것은 불완전정보 AI가 아니라 맵핵(Maphack)이다!
+      상대 패를 모르는 상태에서 나온 진짜 실력임을 증명하라!"
+   - Code Audit Finding:
+     V8.0 파일럿의 `estimate_equity`는 `st.clone()`으로 전체 상태를 복제하여 롤아웃했기 때문에,
+     상대의 실제 딜링된 비공개 카드가 롤아웃에 유지되는 '정보 누출(Information Leak)' 결함이 존재했음.
+   - V8.1 Solution:
+     순수 불완전정보 에쿼티 시뮬레이터(Independent Information-Set Equity Evaluator)를 독립 구축.
+     Hero의 관측 가능한 카드(자신의 카드 2장 + 공개 보드) 외의 모든 상대 카드는
+     남은 미확인 덱(Unknown Deck)에서 완전히 새롭게 무작위 리샘플링하여 시뮬레이션!
+     상대의 실제 카드를 1비트도 읽지 않는 "Zero Information Leak" 아키텍처 확립.
+
+2. KEY OBJECTIVES & PHASES:
+   - Phase 0: V8.0 모델 및 실험 재현성 보존
+   - Phase 1: 비공개 카드 정보 누출 전수 검사 (상대 패 변경 시 Hero 의사결정 불변성 실측)
+   - Phase 2: Pot Odds vs Equity 수학적 의사결정 정밀화
+   - Phase 3: Hybrid 요인 분리 절제 실험 (NFSP Blueprint vs Zero-Leak Hybrid vs Random Control)
+   - Phase 4: Position-Balanced AI League 정규 챔피언십 (5,000핸드 순환 실측)
+   - Phase 5: 5개 독립 시드 Paired Differences 통계 검정 및 원장 무결성 전수 통과

@@ -1,0 +1,4 @@
+model_name,old_reported_bb100,mean_bb100,std_bb100,ci95,trash_allin_pct,trash_fold_pct
+Step 10k,-24.45,131.37,927.02,574.57,26.1,3.4
+Step 50k,499.68,-259.25,470.11,291.38,29.0,6.3
+Step 100k,1037.04,241.36,876.51,543.27,72.7,11.3

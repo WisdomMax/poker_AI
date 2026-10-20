@@ -1,0 +1,38 @@
+# POKER AI V6.6: NFSP 100BB Reward Scaling vs Gradient Clipping
+# 장기 자기대국 안정성 및 전략 성능 검증 (50k -> 100k)
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표
+- V6.5에서 선형 보상 정규화가 정책 붕괴 방지에 도움이 될 가능성을 확인했다.
+- 하지만 Scale + GradClip(D안)은 5개 학습 시드의 평균 수익률에서 Baseline(A안)을 능가하지 못했다.
+- Seed 303 단일 시드 Ablation에서는 Scale Only(B안)가 D안보다 높은 성적(+496.67 vs +249.42)을 기록했다.
+- 따라서 V6.6에서는 B안(Linear Scale Only)과 D안(Linear Scale + GradClip)의 장기 학습 성능을 5개 시드에서 100k까지 공정하게 비교한다.
+
+PHASE 0. 실험 재현성 게이트
+- Seed 303에서 기존 A안의 50k 결과가 서로 다르게 보고된 원인 규명:
+  * Ablation A안: +109.02 bb/100, All-in 19.2%
+  * Primary A안: -90.91 bb/100, All-in 97.8%
+- 원인 규명: V6.2 원본 연속 학습 체크포인트(버퍼 누적) vs 10k 체크포인트 분기 재학습(버퍼 초기화)의 차이 명확화.
+
+PHASE 1. 5시드 2x2 요인 실험 및 B안 vs D안 100k 장기 학습
+- 학습 시드: 42, 101, 202, 303, 404
+- 주요 비교군:
+  * B안: Linear Scale Only (raw_bb / 100)
+  * D안: Linear Scale + GradClip (max_norm = 1.0)
+- 10k 체크포인트에서 50k, 75k, 100k까지 학습 진행.
+- 체크포인트: 10k / 20k / 35k / 50k / 75k / 100k
+
+PHASE 2. 행동 붕괴 검사
+- All-in 선택률과 실제 올인 빈도
+- Facing Bet Fold 및 유료 Call
+- Q값, TD Error, Gradient Norm, Average Policy Entropy
+- Reservoir Buffer 내 행동 분포
+
+PHASE 3. 실제 전략 강도 평가 (10개 시드 15,000핸드)
+- B안 vs D안 주요 비교 (5시드 대응 t-Test)
+- 평균 수익률, 대응 차이, Student-t 95% CI, p값 산출.
+
+PHASE 4. 100k 최종 진입 및 성과 분석
+- 100k 모델이 50k보다 실제로 더 강해졌는지 확인.
+- 최종 보고서: v66_100bb_100k_stability_comparison.md

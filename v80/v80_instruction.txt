@@ -1,0 +1,21 @@
+================================================================================
+POKER AI V8.0 RESEARCH INSTRUCTION
+- Project Vision: Poker AlphaGo (52-Card, 5-Player, 100BB Full-Stack, Full-Street)
+- Core Topic: NFSP Blueprint vs CFR Research Prototype & Pluribus Hybrid Search Engine
+================================================================================
+
+1. SCIENTIFIC MOTIVATION & CHATGPT DIRECTIVES:
+   - ChatGPT Insight:
+     "포커 AI의 양대 산맥인 Pluribus(Science 2019)와 Libratus는 오프라인 CFR 블루프린트와
+      실시간 제한 깊이 서브게임 탐색(Depth-Limited Search / Re-solving)을 결합하여 인간 고수를 이겼다.
+      단순 정적 신경망(DQN)만으로는 광폭 공격자의 과도한 베팅을 상대로 실시간 익스플로잇에 한계가 있다.
+      V8.0에서는 기존 NFSP를 안정적 기준선으로 삼고, CFR 수렴성 검증 및 Pluribus 하이브리드 탐색 엔진을 도입할 것."
+
+2. KEY OBJECTIVES & PHASES:
+   - Phase 0: V7.9 재현성 감사 및 체크포인트 SHA256 메타데이터 보존
+   - Phase 1: AggressiveBot 칩 흐름 인과 감사 (손익 전이 매트릭스 및 프리플랍/포스트플랍 칩 흡수 규명)
+   - Phase 2: CFR 기초 알고리즘 수렴성 실증 (Kuhn & Leduc Poker Exploitability 수렴 검증)
+   - Phase 3: 5인 다인 포커 MCCFR 적용 가능성 및 연산 복잡도 분석
+   - Phase 4: Pluribus 스타일 Hybrid Engine (NFSP Blueprint + 실시간 팟오즈/에쿼티 서브게임 탐색) 구현
+   - Phase 5: Position-Balanced AI League 정규 결전 (5개 전략 x 5개 좌석 순환 = 5,000핸드)
+   - Phase 6: Student-t 통계 분석 및 최종 승격 검증

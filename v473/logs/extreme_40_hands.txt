@@ -1,0 +1,523 @@
+================================================================================
+🃏 [V4.7.3 PHASE 4] 극단적 승패 40판 상세 텍스트 복원 감사 로그
+================================================================================
+
+================================================================================
+🏆 [TOP 20 최대 승리 핸드 (Max Wins)]
+================================================================================
+
+[WIN #01] Hand #3 | Hero Profit: +40,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: 8c4s | Board Cards: Qd8h8d6c4h
+  Final Returns: [-10000.0, -10000.0, 40000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[WIN #02] Hand #5 | Hero Profit: +40,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: ThTc | Board Cards: KdTd9h4d4c
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Bet (Action 2)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[WIN #03] Hand #18 | Hero Profit: +40,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: 5h4d | Board Cards: Qs6s5c4h2s
+  Final Returns: [-10000.0, -10000.0, 40000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[WIN #04] Hand #31 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: JsJd | Board Cards: AdKhQhTs8s
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #05] Hand #34 | Hero Profit: +40,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: AcQh | Board Cards: AdTh6h2d2c
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[WIN #06] Hand #42 | Hero Profit: +40,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: AdQs | Board Cards: AsAh8s5h5c
+  Final Returns: [-10000.0, -10000.0, -10000.0, 40000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[WIN #07] Hand #47 | Hero Profit: +40,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: 9h2s | Board Cards: Td8s7h6h5s
+  Final Returns: [-10000.0, -10000.0, -10000.0, 40000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[WIN #08] Hand #70 | Hero Profit: +40,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: Qc2d | Board Cards: 7d6h3h3d2s
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[WIN #09] Hand #91 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: Jh2c | Board Cards: Jd9d8s4c2s
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #10] Hand #101 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: QhJh | Board Cards: KsQc7c2h2d
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #11] Hand #110 | Hero Profit: +40,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: AsQd | Board Cards: Ad8s4c2s2h
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[WIN #12] Hand #116 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: Kd8c | Board Cards: AcKhKc9c8s
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #13] Hand #144 | Hero Profit: +40,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: 7c5d | Board Cards: QhQd9h5h5c
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[WIN #14] Hand #154 | Hero Profit: +40,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: Ad9s | Board Cards: AhQc8h3h3d
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[WIN #15] Hand #186 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: 7c3s | Board Cards: AcKd9d3h3c
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+    - Opp(Seat 0): Bet (Action 2)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #16] Hand #207 | Hero Profit: +40,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: 5c3h | Board Cards: Qh9c8h5s3d
+  Final Returns: [-10000.0, -10000.0, -10000.0, 40000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[WIN #17] Hand #214 | Hero Profit: +40,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: Ah5d | Board Cards: AsTd9d7h3h
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Bet (Action 2)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+
+[WIN #18] Hand #224 | Hero Profit: +40,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: Kh8d | Board Cards: Ks8s7d6h2h
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Bet (Action 2)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Bet (Action 2)
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[WIN #19] Hand #231 | Hero Profit: +40,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: Ad3c | Board Cards: AsKh9d2d2c
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[WIN #20] Hand #235 | Hero Profit: +40,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: AsAc | Board Cards: JhTh7d3c2d
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Bet (Action 2)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+================================================================================
+💀 [TOP 20 최대 패배 핸드 (Max Losses)]
+================================================================================
+
+[LOSS #01] Hand #2498 | Hero Loss: -10,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: Kc2h | Board Cards: Ts9c7s5h3c
+  Final Returns: [-10000.0, -10000.0, -10000.0, 0.0, 30000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Fold (Action 0)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[LOSS #02] Hand #2496 | Hero Loss: -10,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: Th8c | Board Cards: KdQc8s5s4h
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[LOSS #03] Hand #2495 | Hero Loss: -10,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: Th7c | Board Cards: AcKcJh5c2h
+  Final Returns: [-10000.0, -10000.0, -10000.0, 40000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[LOSS #04] Hand #2494 | Hero Loss: -10,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: 5s2s | Board Cards: Ad9h8c6s3s
+  Final Returns: [30100.0, -10000.0, -100.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 2): Fold (Action 0)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+
+[LOSS #05] Hand #2493 | Hero Loss: -10,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: 6c2c | Board Cards: KsKdJc8h5h
+  Final Returns: [-10000.0, -10000.0, -10000.0, 40000.0, -10000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[LOSS #06] Hand #2492 | Hero Loss: -10,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: Ah4d | Board Cards: AdKsKcJcTd
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[LOSS #07] Hand #2491 | Hero Loss: -10,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: KhTs | Board Cards: As6s6h4h3h
+  Final Returns: [-50.0, -10000.0, 30050.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Fold (Action 0)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[LOSS #08] Hand #2490 | Hero Loss: -10,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: Th7c | Board Cards: KdQdTd9d2c
+  Final Returns: [-10000.0, -100.0, 30100.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Fold (Action 0)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[LOSS #09] Hand #2489 | Hero Loss: -10,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: 9c3d | Board Cards: QsJs6h5h2d
+  Final Returns: [-10000.0, -10000.0, 40000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[LOSS #10] Hand #2488 | Hero Loss: -10,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: 6d4c | Board Cards: AhQc9h7d3s
+  Final Returns: [-10000.0, -10000.0, -10000.0, 0.0, 30000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Fold (Action 0)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[LOSS #11] Hand #2487 | Hero Loss: -10,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: Qh2c | Board Cards: AhJc9s5h3h
+  Final Returns: [30000.0, -10000.0, -10000.0, -10000.0, 0.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Fold (Action 0)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[LOSS #12] Hand #2486 | Hero Loss: -10,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: 6s4d | Board Cards: Td9s7c6c5c
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Bet (Action 2)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[LOSS #13] Hand #2484 | Hero Loss: -10,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: 8s3s | Board Cards: KdQd7h6c2c
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): Call (Action 1)
+
+[LOSS #14] Hand #2483 | Hero Loss: -10,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: Kc8c | Board Cards: AcJcTs9s9d
+  Final Returns: [30000.0, -10000.0, -10000.0, 0.0, -10000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Fold (Action 0)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[LOSS #15] Hand #2481 | Hero Loss: -10,000.000000 chips
+  Position: Seat 4 (BTN (Button))
+  Hole Cards: 9c5d | Board Cards: TdTc9s8c7d
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+
+[LOSS #16] Hand #2479 | Hero Loss: -10,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: Th5h | Board Cards: KsJcTs4h3h
+  Final Returns: [40000.0, -10000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+
+[LOSS #17] Hand #2478 | Hero Loss: -10,000.000000 chips
+  Position: Seat 2 (UTG (Under the Gun))
+  Hole Cards: Js7d | Board Cards: KcJh8c5h5c
+  Final Returns: [-10000.0, -10000.0, -10000.0, -10000.0, 40000.0]
+  Action Sequence:
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+
+[LOSS #18] Hand #2477 | Hero Loss: -10,000.000000 chips
+  Position: Seat 3 (CO (Cutoff))
+  Hole Cards: Tc4s | Board Cards: KdJh5h4h3d
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+
+[LOSS #19] Hand #2475 | Hero Loss: -10,000.000000 chips
+  Position: Seat 0 (SB (Small Blind))
+  Hole Cards: 8s3c | Board Cards: QsJc5d3s2s
+  Final Returns: [-10000.0, 40000.0, -10000.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 1): Call (Action 1)
+    - Opp(Seat 2): Call (Action 1)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+
+[LOSS #20] Hand #2474 | Hero Loss: -10,000.000000 chips
+  Position: Seat 1 (BB (Big Blind))
+  Hole Cards: Qc2d | Board Cards: KcJc9d5s5h
+  Final Returns: [30000.0, -10000.0, 0.0, -10000.0, -10000.0]
+  Action Sequence:
+    - Opp(Seat 2): Fold (Action 0)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Bet (Action 2)
+    - Opp(Seat 0): Call (Action 1)
+    - Hero(AI): All-in (Action 3)
+    - Opp(Seat 3): Call (Action 1)
+    - Opp(Seat 4): Call (Action 1)
+    - Opp(Seat 0): Call (Action 1)

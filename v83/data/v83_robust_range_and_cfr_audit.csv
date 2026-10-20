@@ -1,0 +1,18 @@
+Phase,Item,Metric,Value,Status
+Phase6_7,League_Rank_1,Uniform-Hybrid (V8.1),310.99,COMPLETED
+Phase6_7,League_CI_Low_1,Uniform-Hybrid (V8.1),165.08,COMPLETED
+Phase6_7,League_CI_High_1,Uniform-Hybrid (V8.1),456.90,COMPLETED
+Phase6_7,League_Rank_2,Temp-Hybrid (V8.3),253.53,COMPLETED
+Phase6_7,League_CI_Low_2,Temp-Hybrid (V8.3),113.31,COMPLETED
+Phase6_7,League_CI_High_2,Temp-Hybrid (V8.3),393.76,COMPLETED
+Phase6_7,League_Rank_3,Adaptive-Hybrid (V8.2),166.51,COMPLETED
+Phase6_7,League_CI_Low_3,Adaptive-Hybrid (V8.2),24.54,COMPLETED
+Phase6_7,League_CI_High_3,Adaptive-Hybrid (V8.2),308.47,COMPLETED
+Phase6_7,League_Rank_4,Mixture-Hybrid (V8.3),139.25,COMPLETED
+Phase6_7,League_CI_Low_4,Mixture-Hybrid (V8.3),10.36,COMPLETED
+Phase6_7,League_CI_High_4,Mixture-Hybrid (V8.3),268.15,COMPLETED
+Phase6_7,League_Rank_5,AggressiveBot,-870.28,COMPLETED
+Phase6_7,League_CI_Low_5,AggressiveBot,-1088.49,COMPLETED
+Phase6_7,League_CI_High_5,AggressiveBot,-652.08,COMPLETED
+Phase8,PairedDiff_Mixture_vs_Uniform,Delta_EV,-171.74,ANALYZE_DONE
+Phase8,PairedDiff_Mixture_vs_Uniform,p_value,0.0973,ANALYZE_DONE

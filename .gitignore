@@ -1,0 +1,11 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+*.png
+*.jpg
+*.jpeg
+*.pt
+*.pth
+__pycache__/
+*.log

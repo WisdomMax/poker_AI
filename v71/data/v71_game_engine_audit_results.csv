@@ -1,0 +1,7 @@
+Metric,Value,Status
+ZeroSum_Integrity,100.000% Pass,PASS
+Street_Flop_Actions_3000Hands,2983,VERIFIED
+Street_Turn_Actions_3000Hands,2797,VERIFIED
+Street_River_Actions_3000Hands,2677,VERIFIED
+Facing_Bet_Fold_Rate,0.00%,FOLD_COLLAPSED
+150k_4Act_vs_6Act_PValue,0.7429,INCONCLUSIVE

@@ -1,0 +1,4 @@
+seed,episodes,elapsed_sec,rl_buffer_size,sl_buffer_size,q_weight_delta,sl_weight_delta,nan_detected,illegal_action_detected,avg_q_loss,avg_sl_loss,ckpt_hash
+42,1000,1.73,8344,933,17.5748,18.0263,False,False,398.6415,0.2768,4eddeff92ae224ff
+101,1000,2.4,7297,595,39.1171,16.7847,False,False,737.3086,0.382,f031c28abed58025
+202,1000,2.0,8132,790,22.7281,15.3564,False,False,317.1242,0.3502,244e2feecac49e67

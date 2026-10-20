@@ -1,0 +1,21 @@
+Phase,Item,Metric,Value,Status
+Phase0,Normalization,Explicit_Slots_991_1015,VERIFIED,PASS
+Phase3,Seed_42,Seat_Balanced_EV,1248.35,ROTATION_DONE
+Phase3,Seed_42,Seat_Balanced_SE,134.71,ROTATION_DONE
+Phase3,Seed_101,Seat_Balanced_EV,1064.89,ROTATION_DONE
+Phase3,Seed_101,Seat_Balanced_SE,135.17,ROTATION_DONE
+Phase3,Seed_202,Seat_Balanced_EV,1340.73,ROTATION_DONE
+Phase3,Seed_202,Seat_Balanced_SE,152.28,ROTATION_DONE
+Phase3,Seed_303,Seat_Balanced_EV,1020.81,ROTATION_DONE
+Phase3,Seed_303,Seat_Balanced_SE,151.10,ROTATION_DONE
+Phase3,Seed_404,Seat_Balanced_EV,1013.02,ROTATION_DONE
+Phase3,Seed_404,Seat_Balanced_SE,134.26,ROTATION_DONE
+Phase2,Statistics,5Seed_Grand_Mean,1137.56,STUDENT_T
+Phase2,Statistics,Student_t_p_value,0.0001,STUDENT_T
+Phase2,Statistics,CI95_Low,953.42,STUDENT_T
+Phase2,Statistics,CI95_High,1321.70,STUDENT_T
+Phase5,League_Arena,Seat 0: Hero (V7.7),-5.15,COMPLETED
+Phase5,League_Arena,Seat 1: V7.6 Champion (Seed 303),-104.62,COMPLETED
+Phase5,League_Arena,Seat 2: AggressiveBot,1192.81,COMPLETED
+Phase5,League_Arena,Seat 3: TightPassiveBot,-369.38,COMPLETED
+Phase5,League_Arena,Seat 4: RuleBasedBot,-713.66,COMPLETED

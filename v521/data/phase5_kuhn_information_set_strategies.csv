@@ -1,0 +1,4 @@
+info_state,theory,mccfr,nfsp,ppo
+P0 with J (Initial),"Pass 67~100%, Bet 0~33%",P:0.81 / B:0.19,P:0.66 / B:0.34,P:0.86 / B:0.14
+P0 with Q (Initial),"Pass 100%, Bet 0%",P:1.00 / B:0.00,P:0.31 / B:0.69,P:0.00 / B:1.00
+P0 with K (Initial),Bet 3*alpha (Pass/Bet 혼합),P:0.37 / B:0.63,P:0.33 / B:0.67,P:0.00 / B:1.00

@@ -1,0 +1,25 @@
+Phase,Item,Metric,Value,Status
+Phase0,TensorDim,Dimension,1417,VERIFIED
+Phase0,ZeroLeak,Errors,0,ZERO_LEAK_PASS
+Phase5,Policy_A (Temp_Only),EV_bb100,894.14,PILOT_DONE
+Phase5,Policy_B (CFR_Only),EV_bb100,390.63,PILOT_DONE
+Phase5,Policy_C (Fixed_Mix_0.5),EV_bb100,255.39,PILOT_DONE
+Phase5,Policy_D (Type_Based_Meta),EV_bb100,647.65,PILOT_DONE
+Phase5,Policy_E (Uncertainty_Meta),EV_bb100,423.51,PILOT_DONE
+Phase6,Rank_1,Meta-Controller (V8.6),610.46,COMPLETED
+Phase6,CI_Low_1,Meta-Controller (V8.6),442.20,COMPLETED
+Phase6,CI_High_1,Meta-Controller (V8.6),778.72,COMPLETED
+Phase6,Rank_2,Temp-Hybrid (V8.5 Baseline),400.04,COMPLETED
+Phase6,CI_Low_2,Temp-Hybrid (V8.5 Baseline),231.56,COMPLETED
+Phase6,CI_High_2,Temp-Hybrid (V8.5 Baseline),568.51,COMPLETED
+Phase6,Rank_3,BalancedBot (GTO Approx),-137.65,COMPLETED
+Phase6,CI_Low_3,BalancedBot (GTO Approx),-162.70,COMPLETED
+Phase6,CI_High_3,BalancedBot (GTO Approx),-112.60,COMPLETED
+Phase6,Rank_4,AggressiveBot,-314.00,COMPLETED
+Phase6,CI_Low_4,AggressiveBot,-540.96,COMPLETED
+Phase6,CI_High_4,AggressiveBot,-87.04,COMPLETED
+Phase6,Rank_5,TightPassiveBot,-558.84,COMPLETED
+Phase6,CI_Low_5,TightPassiveBot,-682.19,COMPLETED
+Phase6,CI_High_5,TightPassiveBot,-435.50,COMPLETED
+Phase6,Meta_vs_Temp_Delta,bb100,210.42,TEST_DONE
+Phase6,Meta_vs_Temp_p_value,p_val,0.1057,TEST_DONE

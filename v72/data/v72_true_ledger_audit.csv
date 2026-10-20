@@ -1,0 +1,9 @@
+Metric,Value,Unit,Audit_Status
+Total_Preflop_Invested,15507.00,BB,EXACT
+Total_Flop_Invested,60980.50,BB,EXACT
+Total_Turn_Invested,11246.50,BB,EXACT
+Total_River_Invested,268.00,BB,EXACT
+Total_Pot_Won,87369.33,BB,EXACT
+Hero_Net_Profit,-632.67,BB,MATCHES_FINAL_STACK
+Ledger_Formula_Pass_Rate,100.0%,%,100.0% Pass
+Reservoir_Buffer_Fold_Pct,0.00%,%,ZERO_LABELS

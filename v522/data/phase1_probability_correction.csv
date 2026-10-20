@@ -1,0 +1,6 @@
+metric,value,unit,notes
+single_opponent_prob,14.7186,%,34 / 231
+union_bound_upper_limit,58.8745,%,4 * (34/231)
+exact_mc_target_prob,47.0951,%,"1M sims, CI: 0.0978"
+equity_vs_4_random,20.19,%,100k rollouts
+equity_vs_facing_allin,19.06,%,100k rollouts

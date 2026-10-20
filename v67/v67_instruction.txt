@@ -1,0 +1,49 @@
+# POKER AI V6.7: 100BB NFSP CHAMPIONSHIP & POLICY GENERALIZATION
+# 100k 자기대국 모델의 실제 전략 강도 및 장기 학습 가치 검증
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표
+- V6.6에서 100k 장기 자기대국을 완료했다.
+- 산술평균 오류 수정: D안 50k 올바른 평균은 +108.25 bb/100이며, 50k -> 100k 성장률은 +24.81 bb/100이다.
+- V6.7은 추가 훈련보다 기존 100k 모델들의 실제 전략적 강도를 AI 상호 리그전으로 검증한다.
+- 작업 디렉터리: v67/
+
+PHASE 0. V6.6 데이터 무결성 및 고착 감사
+- D안 50k 평균 집계 오류(+138.25 -> +108.25) 공식 수정.
+- Seed 202가 모든 체크포인트에서 -1.28 bb/100 (All-in 0.0%)을 기록한 원인 (패시브 고착 정밀 분석).
+- Seed 404의 50k/100k 동일 수치 원인 확인 (체크포인트 가중치 변경량 분석).
+- 모든 체크포인트의 실제 SHA-256 64자리 및 신경망 파라미터 변위(Weight Delta Norm) 측정.
+
+PHASE 1. 100BB 챔피언십 참가 모델
+- B안 100k (5시드: 42, 101, 202, 303, 404)
+- D안 100k (5시드: 42, 101, 202, 303, 404)
+- B안 50k (5시드)
+- D안 50k (5시드)
+- Frozen 50k (5시드)
+- Stochastic Average Policy 사용.
+
+PHASE 2. 공통 상대 풀 평가 (동일 환경 대조)
+- RuleBased 상대 풀 평가 (10개 시드, 15,000핸드)
+- Frozen NFSP 4인 상대 풀 평가 (10개 시드, 15,000핸드)
+
+PHASE 3. 5인 AI 상호 리그전 (AI vs AI 대결)
+- A. B안 Hero vs D안 4인
+- B. D안 Hero vs B안 4인
+- C. B안/D안 혼합 5인 테이블
+- D. 50k vs 100k 혼합 테이블
+
+PHASE 4. 정책 고착 및 붕괴 정밀 검사
+- Seed 202의 행동 분포(Fold/Check/Call/Raise) 및 Q값 격차.
+- Seed 303의 100k 정책 안정성 및 올인 붕괴 미발생 재확인.
+- Seed 404의 전략 특성.
+
+PHASE 5. 통계 평가
+- Primary: D안 100k vs B안 100k (동일 AI 상대 풀 대응 t-Test)
+- Secondary: 100k vs 50k 성장률 분석
+- 95% CI, p값 산출.
+
+PHASE 6. Bet Sizing 확장 준비
+- 4-Action(FCPA) -> 6-Action(Fold, Check-Call, Half-Pot, Pot, 2x Pot, All-in) 액션 공간 정의 및 마스크 파일럿 테스트.
+
+최종 보고서: v67_100bb_nfsp_championship_report.md

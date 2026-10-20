@@ -1,0 +1,5 @@
+state,r,done,next_max_q,target
+1. 중간 턴 (Intermediate Turn),0.0,0,1.5,1.4849999999999999
+2. 쇼다운 승리 (Showdown Win),10.5,1,2.0,10.5
+3. 폴드 패배 (Fold Loss),-3.5,1,1.0,-3.5
+4. 올인 패배 (All-in Loss),-10.0,1,0.0,-10.0

@@ -1,0 +1,17 @@
+config,ep,ev,sd,allin_pct,buf_allin_pct
+A_Baseline_NoScale_NoClip,15000,58.46,1063.39,23.1,25.1
+A_Baseline_NoScale_NoClip,20000,210.49,1408.19,21.1,24.3
+A_Baseline_NoScale_NoClip,35000,-36.34,847.32,19.4,23.4
+A_Baseline_NoScale_NoClip,50000,109.02,861.45,19.2,21.5
+B_LinearScale_Only,15000,221.28,1272.54,26.1,27.3
+B_LinearScale_Only,20000,322.74,1473.76,15.3,20.9
+B_LinearScale_Only,35000,358.92,1396.05,16.5,22.9
+B_LinearScale_Only,50000,496.67,1126.11,14.0,22.9
+C_GradClip_Only,15000,395.78,1273.17,31.1,30.6
+C_GradClip_Only,20000,261.89,1356.36,27.4,27.8
+C_GradClip_Only,35000,386.67,1050.46,25.7,23.0
+C_GradClip_Only,50000,-7.96,1502.4,27.0,20.4
+D_LinearScale_GradClip,15000,261.2,1103.01,23.8,32.0
+D_LinearScale_GradClip,20000,380.11,1153.51,18.1,31.5
+D_LinearScale_GradClip,35000,434.58,792.7,17.6,25.9
+D_LinearScale_GradClip,50000,249.42,659.51,10.1,22.0

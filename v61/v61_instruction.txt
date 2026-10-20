@@ -1,0 +1,34 @@
+POKER AI V6.1
+100BB FULL-STACK NFSP-DQN BENCHMARK
+52장 4-Street 100BB 캐시게임 표준 스택 완전 정복
+
+연구 목표:
+100BB 정규 홀덤 환경에서 자기 대국을 통해 전략이 성장하는 AI를 검증한다.
+
+작업 디렉터리: v61/
+
+PHASE 1. 100BB 정규 환경 검증
+- 5 Players, 52 Cards
+- 100BB = 10,000 Chips (SB: 50, BB: 100)
+- 4-Streets: Preflop, Flop, Turn, River
+- 4 Actions: Fold, Check/Call, Pot Raise, All-in
+- 정보 상태: 253차원
+- 무결성 검증: Zero-sum, 손익 한계(-100BB ~ +400BB)
+
+PHASE 2. 세 가지 비교 실험군
+- Group A: 100BB Scratch 10k (5개 시드)
+- Group B: 100BB Warm Start 10k (50BB 50k 모델 승계)
+- Group C: 50BB Frozen 50k (추가 학습 없이 100BB에서 평가)
+
+PHASE 3 & 4. 100BB 자기대국 및 딥스택 전략 정밀 분석
+- 5개 독립 시드 (42, 101, 202, 303, 404)
+- 10,000 에피소드
+- Facing Bet 실제 Fold 비율, 100BB 딥스택 올인 비율
+
+PHASE 5 & 6. 전수 평가 및 Primary Comparison
+- 신규 홀드아웃 시드 3개 (총 4,500핸드)
+- Primary Comparison: 100BB Warm Start vs 100BB Scratch (Paired t-test)
+- RuleBased, Baselines, Frozen 50BB 비교
+
+FINAL REPORT
+- 산출물: v61_100bb_fullstack_nfsp_report.md

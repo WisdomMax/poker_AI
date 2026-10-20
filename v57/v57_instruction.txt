@@ -1,0 +1,60 @@
+POKER AI V5.7
+50BB NFSP CROSS-PLAY LEAGUE & STRATEGIC ROBUSTNESS
+자기 대국 AI의 상대별 강건성 및 전이 학습 가치 검증
+
+연구 목표:
+V5.6에서 50BB 자기 대국 학습을 완료했다.
+Scratch 50k: +165.48 bb/100
+Warm Start 50k: +176.62 bb/100
+Warm Start 추가 이득: +11.14 bb/100
+대응 차이 95% CI: [-144.11, +166.38]
+대응 t-검정: p≈0.8519
+
+두 방식 모두 RuleBased 상대에게 양수 수익률을 기록했지만, Warm Start가 더 좋다는 통계적 증거는 확보되지 않았다.
+이번에는 더 깊은 스택으로 확장하는 대신 기존 NFSP 모델들끼리 실제로 대결시킨다.
+핵심 질문: RuleBased를 가장 잘 이기는 AI가 실제로 다른 학습 AI에게도 가장 강한가?
+
+작업 디렉터리: v57/
+기존 모델은 보존한다.
+새로운 신경망 구조나 학습 알고리즘을 추가하지 않는다.
+
+PHASE 0. 모델 및 입력 호환성 검증
+20BB 정보 상태는 149차원, 50BB는 161차원으로 보고됐다.
+다음 사항을 확인한다:
+- 기존 149개 입력 특성의 이름, 순서 및 의미
+- 새로 추가된 12개 입력 특성의 정의
+- 첫 번째 Linear Layer에서 실제 가중치가 복사된 위치
+- Q-Network와 Average Policy Network의 전이 방식
+- 새 입력 차원의 초기화 방식
+- 전이한 각 체크포인트의 완전한 SHA256
+- 전이 전후 동일한 게임 상태에서 공통 특성의 해석 일치 여부
+
+PHASE 1. AI 리그 구성
+기존 저장 체크포인트로 다음 모델 풀을 구성한다:
+- 50BB Scratch 50k: 5개 시드 (42, 101, 202, 303, 404)
+- 50BB Warm Start 50k: 5개 시드 (42, 101, 202, 303, 404)
+- 50BB 이전 체크포인트 (20k/30k)
+- RuleBased 및 Random: 외부 강도 비교용
+모든 모델은 평가 중 가중치를 고정한다.
+평가 정책은 Stochastic Average Policy를 사용하고 행동 샘플링 난수를 명시적으로 고정한다.
+
+PHASE 2. 5인 AI 리그전
+A. 특정 모델 대 다수 상대 (1 Hero vs 4 Opponents):
+   - Scratch 50k vs Warm Start 50k 4명
+   - Warm Start 50k vs Scratch 50k 4명
+B. 혼합 모델 5인 테이블 (Scratch & Warm Start 혼합)
+C. 기존 RuleBased 재평가 (비교 기준선)
+
+PHASE 3. 독립 평가 조건
+- 최소 5개 학습 시드
+- 사전 고정 신규 평가 스케줄 3개 이상
+- 스케줄당 1,500핸드 이상 (총 4,500핸드)
+- 5개 좌석 균등 회전, 제로섬 및 칩 원장 검증
+
+PHASE 4 & 5. 전략적 강건성 및 통계 검정
+- Scratch 상대 bb/100 vs Warm Start 상대 bb/100
+- Fold facing bet, Check vs Call, Pot Raise, All-in 세부 빈도
+- Paired t-test (Warm Start vs Scratch)
+
+PHASE 7. 최종 판정 및 공식 보고서
+- 산출물: v57_crossplay_league_report.md

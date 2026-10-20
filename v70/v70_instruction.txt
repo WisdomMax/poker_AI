@@ -1,0 +1,39 @@
+# POKER AI V7.0: 100BB 6-ACTION STRATEGY VALIDATION & FAILURE ANALYSIS
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표:
+- V6.9 결과 확인: 6-Action 100k 평균 -246.07 bb/100 (4-Action 대비 우열 미입증, Seed 404 -537.77 bb 손실).
+- V7.0의 목적은 추가 액션의 실질적인 효과를 확인하고, Seed 404의 붕괴 원인 및 Seed 202 복구 정책의 실질 수익성을 검증하는 것이다.
+- 작업 디렉터리: v70/
+
+PHASE 0. 데이터 및 전이 무결성 (1,000개 상태 전수 검증)
+- 4-Action -> 6-Action 가중치 전이를 1,000개 이상의 다양한 게임 상태에서 검증.
+- 구 액션만 허용했을 때의 Softmax 확률 및 Q값 오차 전수 검증.
+- 추상 액션 ID와 집행된 칩 금액 일치 확인.
+
+PHASE 1. Seed 404 손실 원인 정밀 해부
+- 50% Pot, 100% Pot, 200% Pot, All-in, Call의 액션별 횟수 및 실질 손익 분리.
+- 스트리트별(Preflop, Flop, Turn, River) 손익 및 큰 팟 상위 손실 핸드 역추적.
+- 200% Pot 오버베팅의 기여도 규명.
+
+PHASE 2. Seed 202 엔트로피 복구 검증 (실질 수익성)
+- 4개 비교군:
+  * A. 기존 Seed 202 정책
+  * B. Average Policy 엔트로피 정규화
+  * C. BR 탐색 강화
+  * D. BR 탐색 + 엔트로피 정규화
+- 행동 다양성뿐 아니라 실제 수익성(bb/100) 개선 여부 검정.
+
+PHASE 3. 4-Action vs 6-Action 공정 분기 비교
+- 4-Action 100k 체크포인트에서 동일하게 50k 추가 학습:
+  * A. 4-Action 150k
+  * B. 6-Action 50k 추가 학습 (누적 150k)
+- 동일한 학습 예산에서 액션 공간 확대 효과 분리.
+
+PHASE 4. 완전 신규 홀드아웃 시드 챔피언십
+- 기존 개발 시드를 배제하고 신규 독립 홀드아웃 시드(20261181 ~ 20261190, 15,000핸드) 투입.
+- Frozen 4인 풀 및 혼합 풀에서 공정 평가.
+
+PHASE 5. 최종 판정 및 종합 보고
+- 결과 파일: v70_100bb_6action_championship_and_failure_analysis.md

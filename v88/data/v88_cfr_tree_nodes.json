@@ -1,0 +1,27 @@
+{
+  "turn_action_sequences": 6,
+  "river_cards_evaluated": 46,
+  "river_action_branches": 12,
+  "total_potential_branch_combinations": 3312,
+  "total_decision_nodes_instrumented": 9936,
+  "total_terminal_nodes_instrumented": 3312,
+  "unique_hero_info_sets": 36,
+  "unique_opp_info_sets": 90,
+  "total_unique_info_sets": 126,
+  "sample_hero_info_sets": [
+    "P0:Turn_b_half-c:Riv_FlushBoard:Air:b",
+    "P0:Turn_b_half-c:Riv_FlushBoard:Air:k",
+    "P0:Turn_b_half-c:Riv_FlushBoard:Medium:b",
+    "P0:Turn_b_half-c:Riv_FlushBoard:Medium:k",
+    "P0:Turn_b_half-c:Riv_FlushBoard:Monster:b",
+    "P0:Turn_b_half-c:Riv_FlushBoard:Monster:k"
+  ],
+  "sample_opp_info_sets": [
+    "P1:Turn_b_half-c:Riv_FlushBoard:Air:b-c",
+    "P1:Turn_b_half-c:Riv_FlushBoard:Air:b-f",
+    "P1:Turn_b_half-c:Riv_FlushBoard:Air:b-r",
+    "P1:Turn_b_half-c:Riv_FlushBoard:Air:k-b",
+    "P1:Turn_b_half-c:Riv_FlushBoard:Air:k-k",
+    "P1:Turn_b_half-c:Riv_FlushBoard:Medium:b-c"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "phase1_regression_pass": false,
+  "phase2_diverged_hands": 770,
+  "phase2_free_divergences": 0,
+  "phase2_facing_divergences": 578,
+  "phase2_identical_hands": 4230,
+  "phase2_identical_delta": -101.25,
+  "phase2_diverged_delta": -1406.625,
+  "phase2_total_delta": -1507.875,
+  "phase3_causal_states": 578,
+  "phase3_mean_causal_gain": 9.980320069204152,
+  "phase3_se_causal_gain": 5.4670948919641456,
+  "phase3_total_causal_bb": 5768.625,
+  "phase3_t_stat": 1.8255253048330673,
+  "phase3_p_val": 0.06843854549775212,
+  "phase4_winrate_a": 750.8926,
+  "phase4_winrate_b": 614.7984,
+  "phase4_delta_ev": -136.0942,
+  "phase4_se_diff": 81.09794423728847,
+  "phase4_ci_diff": [
+    -295.0461707050854,
+    22.857770705085414
+  ],
+  "phase4_t_stat": -1.6781461143058731,
+  "phase4_p_val": 0.09344361468011328,
+  "phase4_uncontested_a_count": 116,
+  "phase4_uncontested_a_pct": 4.64,
+  "phase4_uncontested_b_count": 198,
+  "phase4_uncontested_b_pct": 7.920000000000001
+}

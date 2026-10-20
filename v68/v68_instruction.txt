@@ -1,0 +1,39 @@
+# POKER AI V6.8: 100BB FAIR LEAGUE & 6-ACTION BET SIZING
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목표:
+- V6.7의 수치 오류 수정:
+  * Seed 101 리그전 격차: -76.32 bb/100으로 부호 정정.
+  * D안 50k 올바른 평균: +107.37 bb/100, 100k까지 순성장 +25.69 bb/100.
+  * Seed 202 정밀 Softmax: Call 99.9866%, Raise 0.0134%.
+- 공정한 동일 상대 풀 AI 챔피언십 수행 (동일한 4인 상대 풀에 B안/D안 각각 투입).
+- 6-Action Bet Sizing 엔진 구현 (Fold, Check-Call, 50% Pot, 100% Pot, 200% Pot, All-in) 및 NFSP 학습.
+
+PHASE 0. 기존 결과 정밀 수정
+- Seed 101 리그 격차 -76.32 정정.
+- D안 50k 평균 +107.37 정정.
+- Seed 202 콜 고착 원인(RL 경험 데이터 유입 분포 분석).
+
+PHASE 1. 공정한 AI 챔피언십 (동일 상대 풀 대조)
+- 동일한 고정 4인 상대 풀에:
+  * B안 100k
+  * D안 100k
+  * B안 50k
+  * D안 50k
+  * Frozen 50k
+  각각 투입하여 15,000핸드 대응 비교.
+
+PHASE 2. 6-Action 엔진 구현 및 액션 어댑터
+- 0: Fold, 1: Check-Call, 2: 50% Pot, 3: 100% Pot, 4: 200% Pot, 5: All-in
+- 베팅/레이즈 금액 계산 및 마스크 검증.
+
+PHASE 3. 6-Action NFSP 학습
+- 6차원 출력층 Q-Net 및 SL-Net.
+- 4-Action 가중치 전이 및 5시드 10k Smoke Test & 50k 학습.
+
+PHASE 4. 정책 고착 검사 (Seed 202 포함)
+- 6-Action 도입 시 Check/Call 고착 완화 여부.
+
+PHASE 5. 최종 판정 및 보고서 작성
+- v68_100bb_fair_league_6action_report.md

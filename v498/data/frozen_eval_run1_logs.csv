@@ -1,0 +1,1001 @@
+game_id,model_sha256,hero_seat,hero_cards,board,tier,hero_actions,ret_chips,ret_bb
+0,ed5dd257c1ef31e7,0,KhTc,Td9h9c5h2s,marginal,[3],-10000.0,-100.0
+1,ed5dd257c1ef31e7,4,As8s,Qs9h7d2d2c,trash,[3],-10000.0,-100.0
+2,ed5dd257c1ef31e7,3,Js8s,Jh9d8c4h2s,trash,"[2, 3]",30000.0,300.0
+3,ed5dd257c1ef31e7,2,8d5h,,trash,[3],150.0,1.5
+4,ed5dd257c1ef31e7,1,9d6d,AhAdJcTd7d,trash,"[2, 1]",20700.0,207.0
+5,ed5dd257c1ef31e7,0,AsJh,Js9c8d3c2c,marginal,"[2, 3]",26350.0,263.5
+6,ed5dd257c1ef31e7,4,Qh8d,Jd7s7c5h4d,trash,"[1, 3]",-10000.0,-100.0
+7,ed5dd257c1ef31e7,3,Js5d,KcQsQcJc2c,trash,[3],-10000.0,-100.0
+8,ed5dd257c1ef31e7,2,Kc3h,JcTd8s4s4d,trash,[3],-10000.0,-100.0
+9,ed5dd257c1ef31e7,1,9s5s,9d6h6d5h2s,trash,[3],-10000.0,-100.0
+10,ed5dd257c1ef31e7,0,7c4c,,trash,[3],325.0,3.25
+11,ed5dd257c1ef31e7,4,Qh6s,QdQcJh7h4d,trash,"[2, 1]",20050.0,200.5
+12,ed5dd257c1ef31e7,3,AhTd,AcKsKh8d2s,marginal,"[2, 3]",20100.0,201.0
+13,ed5dd257c1ef31e7,2,9s2c,KhKcQsJsTs,trash,"[2, 1]",20100.0,201.0
+14,ed5dd257c1ef31e7,1,Ks7h,9h8d5s5c2c,trash,"[2, 1]",-10000.0,-100.0
+15,ed5dd257c1ef31e7,0,Th9d,9c8c7c5c2h,trash,"[2, 3]",-10000.0,-100.0
+16,ed5dd257c1ef31e7,4,Qd8h,AdKcJs6c3c,trash,"[2, 3]",-10000.0,-100.0
+17,ed5dd257c1ef31e7,3,4d3s,KdQc9h6d4s,trash,[3],-10000.0,-100.0
+18,ed5dd257c1ef31e7,2,Jc7s,As9c6d4d3d,trash,"[2, 3]",-10000.0,-100.0
+19,ed5dd257c1ef31e7,1,Kc7c,Kh8h7h5c2d,trash,"[2, 1, 3]",10050.0,100.5
+20,ed5dd257c1ef31e7,0,Ac9h,AhJs8h4c3d,trash,"[4, 0]",-750.0,-7.5
+21,ed5dd257c1ef31e7,4,8d6d,AhAcTd5d4h,trash,"[1, 2, 1]",-10000.0,-100.0
+22,ed5dd257c1ef31e7,3,Kd8d,Ac7d6c4d3s,trash,[3],10050.0,100.5
+23,ed5dd257c1ef31e7,2,Jh4d,JcTh7d5h3s,trash,"[2, 3]",20100.0,201.0
+24,ed5dd257c1ef31e7,1,9s6c,Ks5h3s3h2d,trash,[3],-10000.0,-100.0
+25,ed5dd257c1ef31e7,0,Jd6d,QdJh7s6s5d,trash,"[2, 2, 3]",22500.0,225.0
+26,ed5dd257c1ef31e7,4,Ks3d,Jh6h4h2h2c,trash,[3],-10000.0,-100.0
+27,ed5dd257c1ef31e7,3,7c6h,KhKdJsTh9d,trash,[3],-10000.0,-100.0
+28,ed5dd257c1ef31e7,2,Qc8d,Qs9h7c5d4d,trash,"[4, 1, 4, 1, 3]",-10000.0,-100.0
+29,ed5dd257c1ef31e7,1,9h6s,JsJh8s8h2c,trash,"[4, 3]",-10000.0,-100.0
+30,ed5dd257c1ef31e7,0,Kh9d,QhJs8h7d5c,trash,"[1, 3]",-10000.0,-100.0
+31,ed5dd257c1ef31e7,4,Ks3d,Ts4s4c3h3c,trash,"[2, 4, 1]",30000.0,300.0
+32,ed5dd257c1ef31e7,3,8h3h,Kd8s8d7c6h,trash,[0],0.0,0.0
+33,ed5dd257c1ef31e7,2,3s2c,KdQsTs6d4c,trash,[3],-10000.0,-100.0
+34,ed5dd257c1ef31e7,1,Js8h,Ah9h9c5c2s,trash,[3],10400.0,104.0
+35,ed5dd257c1ef31e7,0,7h7d,QsQc9h8c5d,marginal,"[2, 3]",-10000.0,-100.0
+36,ed5dd257c1ef31e7,4,Kh3s,Ah8s8h6h2c,trash,"[2, 3]",-10000.0,-100.0
+37,ed5dd257c1ef31e7,3,6h4h,9d4c3c2h2d,trash,"[2, 3]",10350.0,103.5
+38,ed5dd257c1ef31e7,2,KsKh,AsTd9s7h4d,premium,[3],20050.0,200.5
+39,ed5dd257c1ef31e7,1,Qc3s,AcJcTh7c3d,trash,"[2, 1]",-10000.0,-100.0
+40,ed5dd257c1ef31e7,0,Ad5s,KcQd9c4c3s,trash,[3],-10000.0,-100.0
+41,ed5dd257c1ef31e7,4,KhKd,QdTc6h3s2s,premium,[3],20100.0,201.0
+42,ed5dd257c1ef31e7,3,Ah3s,AsJh7h7c3h,trash,"[2, 2, 3]",28100.0,281.0
+43,ed5dd257c1ef31e7,2,Jd5c,Tc9h9c6s4s,trash,"[1, 3]",-10000.0,-100.0
+44,ed5dd257c1ef31e7,1,Jh8h,AsKdQs5c4s,trash,"[1, 2, 2, 1, 3]",16100.0,161.0
+45,ed5dd257c1ef31e7,0,Js9d,JhTh4h4c3h,trash,"[2, 3]",15650.0,156.5
+46,ed5dd257c1ef31e7,4,9d5h,KhKd7c3c2s,trash,"[4, 1, 1]",-10000.0,-100.0
+47,ed5dd257c1ef31e7,3,Ah4s,KdTdTc3s2d,trash,[3],-10000.0,-100.0
+48,ed5dd257c1ef31e7,2,Tc4s,AdQdTd4d2h,trash,[3],20050.0,200.5
+49,ed5dd257c1ef31e7,1,Ks9d,KhQh6h4s4d,trash,"[2, 1]",20050.0,200.5
+50,ed5dd257c1ef31e7,0,4s3h,QhJs6h5h2d,trash,[3],22400.0,224.0
+51,ed5dd257c1ef31e7,4,4s3h,AdJs5s5c2h,trash,[1],20100.0,201.0
+52,ed5dd257c1ef31e7,3,Jd3h,8d6c3d2s2h,trash,"[2, 1]",24200.0,242.0
+53,ed5dd257c1ef31e7,2,Kd7s,9h8s8h4c3d,trash,"[2, 3]",-10000.0,-100.0
+54,ed5dd257c1ef31e7,1,Ac3d,KcTd7s5h4h,trash,[1],-10000.0,-100.0
+55,ed5dd257c1ef31e7,0,9d4h,TsTd8d6c2h,trash,"[1, 2, 3]",-10000.0,-100.0
+56,ed5dd257c1ef31e7,4,Tc2h,KdQh9s7s2c,trash,"[4, 2, 1]",-10000.0,-100.0
+57,ed5dd257c1ef31e7,3,Kh6d,Qh5d4h3s2c,trash,"[4, 3]",10775.0,107.75
+58,ed5dd257c1ef31e7,2,Th2c,JsJd7d6h3s,trash,"[4, 4, 3]",-10000.0,-100.0
+59,ed5dd257c1ef31e7,1,Jc4d,AhKh8s8c6d,trash,"[1, 2, 3]",14550.0,145.5
+60,ed5dd257c1ef31e7,0,AsQh,KsKdJh9d8c,marginal,[3],-10000.0,-100.0
+61,ed5dd257c1ef31e7,4,5h3d,AhJhTh4h2s,trash,"[2, 1]",24150.0,241.5
+62,ed5dd257c1ef31e7,3,QsQd,AsKdJs7h4h,premium,"[4, 1]",-10000.0,-100.0
+63,ed5dd257c1ef31e7,2,Ad9h,As6s6c5d4d,trash,[0],0.0,0.0
+64,ed5dd257c1ef31e7,1,JsTc,QsTh9s9c4s,trash,"[4, 3]",5025.0,50.25
+65,ed5dd257c1ef31e7,0,QhTs,Ks7d5d2d2c,marginal,[1],-10000.0,-100.0
+66,ed5dd257c1ef31e7,4,AdQc,Js8c6h3h3d,marginal,"[2, 3]",-10000.0,-100.0
+67,ed5dd257c1ef31e7,3,9s6h,KhQsJc4d3h,trash,"[4, 1, 1]",-10000.0,-100.0
+68,ed5dd257c1ef31e7,2,Tc9c,AdAcJs9s5d,marginal,[3],20100.0,201.0
+69,ed5dd257c1ef31e7,1,4s3d,AhKh9d9c3s,trash,[3],112.5,1.125
+70,ed5dd257c1ef31e7,0,7c2s,,trash,[3],300.0,3.0
+71,ed5dd257c1ef31e7,4,7c4h,KcTd8c4c3h,trash,"[4, 3]",-10000.0,-100.0
+72,ed5dd257c1ef31e7,3,AhJc,AsKsQc5h3d,marginal,"[1, 3]",-10000.0,-100.0
+73,ed5dd257c1ef31e7,2,Qc5s,ThTdTc9d6d,trash,"[1, 2, 1, 0]",-8500.0,-85.0
+74,ed5dd257c1ef31e7,1,Kd6d,AcQd4h3s2c,trash,"[2, 3]",-10000.0,-100.0
+75,ed5dd257c1ef31e7,0,Jd4s,QdJh9c5c3h,trash,[3],-10000.0,-100.0
+76,ed5dd257c1ef31e7,4,Jd6s,AhQh4s3h2s,trash,"[2, 2, 3]",-10000.0,-100.0
+77,ed5dd257c1ef31e7,3,KcJs,AsJh7h7c5d,marginal,"[4, 2, 1]",11125.0,111.25
+78,ed5dd257c1ef31e7,2,Ac6s,As9c8h8c6c,trash,"[2, 3]",10100.0,101.0
+79,ed5dd257c1ef31e7,1,6s4c,AdKdQc3s2h,trash,[3],-10000.0,-100.0
+80,ed5dd257c1ef31e7,0,Jh7h,AhQd9h5d4h,trash,"[4, 3]",11100.0,111.0
+81,ed5dd257c1ef31e7,4,Qh2c,AdTc8s8h5c,trash,[0],0.0,0.0
+82,ed5dd257c1ef31e7,3,QsJc,AsKsQc6s5s,marginal,[3],30000.0,300.0
+83,ed5dd257c1ef31e7,2,9c6h,Th9s8s8d7h,trash,"[1, 2, 1]",30050.0,300.5
+84,ed5dd257c1ef31e7,1,4d2d,AdAcTc6h2h,trash,[1],-10000.0,-100.0
+85,ed5dd257c1ef31e7,0,7d2s,AsAdQhTsTh,trash,[0],-50.0,-0.5
+86,ed5dd257c1ef31e7,4,Td9h,AsTs5d3d3c,trash,"[2, 3]",25550.0,255.5
+87,ed5dd257c1ef31e7,3,Th8d,9s6s5d4d2d,trash,"[1, 0]",-100.0,-1.0
+88,ed5dd257c1ef31e7,2,Td6d,Ac7h5s3h3c,trash,[3],-10000.0,-100.0
+89,ed5dd257c1ef31e7,1,4s4d,AcTd8d7h5h,trash,[1],-10000.0,-100.0
+90,ed5dd257c1ef31e7,0,AhAc,KcJc7d6d6c,premium,"[2, 1]",23375.0,233.75
+91,ed5dd257c1ef31e7,4,9s9h,Qs9d8d5c2h,marginal,[3],20050.0,200.5
+92,ed5dd257c1ef31e7,3,4c2s,Qs9s9h7s2d,trash,"[4, 2, 1]",-10000.0,-100.0
+93,ed5dd257c1ef31e7,2,Td6s,AdKdQs8h4d,trash,"[4, 4, 3]",-10000.0,-100.0
+94,ed5dd257c1ef31e7,1,Kh7c,Jc9d7d4h4d,trash,"[2, 3]",-10000.0,-100.0
+95,ed5dd257c1ef31e7,0,Jd3c,QhTs6s4s3h,trash,[3],-10000.0,-100.0
+96,ed5dd257c1ef31e7,4,Ks4h,AcKdTs3d2s,trash,[3],20100.0,201.0
+97,ed5dd257c1ef31e7,3,Qh3h,Qs9s9d7c4c,trash,"[2, 3]",20000.0,200.0
+98,ed5dd257c1ef31e7,2,8h2c,QhTs7s7h4c,trash,"[2, 3]",-10000.0,-100.0
+99,ed5dd257c1ef31e7,1,AdJs,Ac8d7d6d3s,marginal,"[2, 3]",10400.0,104.0
+100,ed5dd257c1ef31e7,0,Qd9h,JdTs8s7d4d,trash,[3],20000.0,200.0
+101,ed5dd257c1ef31e7,4,9d5c,Js7s7c4d2s,trash,"[2, 2, 3]",-10000.0,-100.0
+102,ed5dd257c1ef31e7,3,Th2s,KsTsTd8c6s,trash,[3],10200.0,102.0
+103,ed5dd257c1ef31e7,2,Jc6c,KcQh8h5s4d,trash,[3],-10000.0,-100.0
+104,ed5dd257c1ef31e7,1,5s5c,Qd8d8c7h7c,trash,"[2, 3]",-10000.0,-100.0
+105,ed5dd257c1ef31e7,0,JsTc,AsQc7s6h6d,trash,[1],-10000.0,-100.0
+106,ed5dd257c1ef31e7,4,Jd7c,Ac9c8s7h2s,trash,"[2, 1, 1]",-10000.0,-100.0
+107,ed5dd257c1ef31e7,3,JcTs,9s6d5s4s4h,trash,"[2, 3]",-10000.0,-100.0
+108,ed5dd257c1ef31e7,2,Ah6c,KdJs7h7c4d,trash,[3],-10000.0,-100.0
+109,ed5dd257c1ef31e7,1,KhJh,QsQhJc9h3s,marginal,"[2, 1]",20050.0,200.5
+110,ed5dd257c1ef31e7,0,7h2d,AcKh8c6s3c,trash,"[4, 2, 1]",-10000.0,-100.0
+111,ed5dd257c1ef31e7,4,3s2c,8c5c4h3h2h,trash,"[4, 2, 1, 2]",-2225.0,-22.25
+112,ed5dd257c1ef31e7,3,Qc6c,Jd7d6d5h3c,trash,"[2, 1]",-10000.0,-100.0
+113,ed5dd257c1ef31e7,2,As5d,AcQsJh8d3h,trash,"[4, 3]",-10000.0,-100.0
+114,ed5dd257c1ef31e7,1,Kd3d,AdAc9c8h3s,trash,[3],-10000.0,-100.0
+115,ed5dd257c1ef31e7,0,AcKc,8d7h6h5s3d,premium,[3],-10000.0,-100.0
+116,ed5dd257c1ef31e7,4,5c4d,Jc8c7c5d2d,trash,"[1, 2, 1, 3]",-10000.0,-100.0
+117,ed5dd257c1ef31e7,3,Qd4h,Tc9h8d7d6d,trash,"[1, 2, 3]",-10000.0,-100.0
+118,ed5dd257c1ef31e7,2,8d7s,KdQc7d6d4s,trash,[3],10050.0,100.5
+119,ed5dd257c1ef31e7,1,QcJc,Jd8h7d3s2c,marginal,"[2, 1, 3]",16100.0,161.0
+120,ed5dd257c1ef31e7,0,Qc9d,Ac9s9h9c7s,trash,"[1, 3]",10100.0,101.0
+121,ed5dd257c1ef31e7,4,QdTh,Ks7c6s3h2c,marginal,"[2, 1]",-10000.0,-100.0
+122,ed5dd257c1ef31e7,3,5s5h,JhTs8c4d3h,trash,[3],-10000.0,-100.0
+123,ed5dd257c1ef31e7,2,AhQs,Js7d7c3d3c,marginal,"[2, 1, 3]",21500.0,215.0
+124,ed5dd257c1ef31e7,1,Kh4c,AcKd8h7s5h,trash,[3],20050.0,200.5
+125,ed5dd257c1ef31e7,0,Qc9h,JcTs9d8d3c,trash,"[2, 3]",-10000.0,-100.0
+126,ed5dd257c1ef31e7,4,8d8c,Ts6h4h3d2s,marginal,[0],0.0,0.0
+127,ed5dd257c1ef31e7,3,Qs9h,AdQc7s5s,trash,[0],0.0,0.0
+128,ed5dd257c1ef31e7,2,Ac6c,AhTd7c3s3h,trash,"[4, 2, 3]",12925.0,129.25
+129,ed5dd257c1ef31e7,1,5d3s,AdQs9d6s5h,trash,[1],-10000.0,-100.0
+130,ed5dd257c1ef31e7,0,Ah9c,KsTc9s9d5d,trash,[3],10450.0,104.5
+131,ed5dd257c1ef31e7,4,Ks4d,QdJdTd6c3s,trash,"[1, 2, 1, 3]",-10000.0,-100.0
+132,ed5dd257c1ef31e7,3,KcTd,AdKh5d3h2s,marginal,"[4, 1, 1]",-10000.0,-100.0
+133,ed5dd257c1ef31e7,2,5h2c,AdAcQhQc9s,trash,[3],-10000.0,-100.0
+134,ed5dd257c1ef31e7,1,5c4d,Tc5s5h3h3d,trash,[3],20000.0,200.0
+135,ed5dd257c1ef31e7,0,9c3d,Jh7h7c5c3h,trash,[1],-10000.0,-100.0
+136,ed5dd257c1ef31e7,4,7d3s,KdQhJh3h2d,trash,[3],-10000.0,-100.0
+137,ed5dd257c1ef31e7,3,KdQh,Js6h5h3s2h,marginal,"[2, 4, 1]",-10000.0,-100.0
+138,ed5dd257c1ef31e7,2,Qh8d,KsJh9d7s6d,trash,"[1, 1, 3]",-10000.0,-100.0
+139,ed5dd257c1ef31e7,1,Kc8s,AsKdQs7h6h,trash,"[2, 2, 2, 3]",19700.0,197.0
+140,ed5dd257c1ef31e7,0,As9d,JsJd9s3s2d,trash,"[1, 3]",20350.0,203.5
+141,ed5dd257c1ef31e7,4,8s6c,Qh8h5s4d2s,trash,[3],20275.0,202.75
+142,ed5dd257c1ef31e7,3,As4h,QcTc7d2h2c,trash,[3],10150.0,101.5
+143,ed5dd257c1ef31e7,2,8c2h,AdQhTd5s4c,trash,[3],-10000.0,-100.0
+144,ed5dd257c1ef31e7,1,Ah4s,8s7d7c5s4c,trash,[3],-10000.0,-100.0
+145,ed5dd257c1ef31e7,0,Kd7d,AsJdTd5s3h,trash,"[1, 1, 2, 1]",-10000.0,-100.0
+146,ed5dd257c1ef31e7,4,8d3h,KdQh8h6c3d,trash,[3],10150.0,101.5
+147,ed5dd257c1ef31e7,3,8c5s,QsJh9s5d5c,trash,"[2, 3]",31600.0,316.0
+148,ed5dd257c1ef31e7,2,8h7h,QcJdTc2h2c,marginal,[3],-10000.0,-100.0
+149,ed5dd257c1ef31e7,1,7s4s,,trash,[3],150.0,1.5
+150,ed5dd257c1ef31e7,0,Jd8h,JsTd6d5c4h,trash,"[4, 1]",30000.0,300.0
+151,ed5dd257c1ef31e7,4,Ah8s,Kh9h7s6c2s,trash,"[2, 1, 3]",15000.0,150.0
+152,ed5dd257c1ef31e7,3,Qs4d,KhKdJc7c3d,trash,"[2, 3]",-10000.0,-100.0
+153,ed5dd257c1ef31e7,2,3d2c,QsTsTh8d4d,trash,[3],-10000.0,-100.0
+154,ed5dd257c1ef31e7,1,Td5s,KsJh7d6d5d,trash,"[4, 1]",-10000.0,-100.0
+155,ed5dd257c1ef31e7,0,AsQs,TsTdTc5s5c,marginal,"[2, 3]",1783.3333333333335,17.833333333333336
+156,ed5dd257c1ef31e7,4,3s2c,QhQcJc6d4c,trash,"[1, 3]",-10000.0,-100.0
+157,ed5dd257c1ef31e7,3,5s4d,JsTsTh5d2s,trash,[3],-10000.0,-100.0
+158,ed5dd257c1ef31e7,2,Js8d,Ts9s9h6c5h,trash,"[2, 3]",-10000.0,-100.0
+159,ed5dd257c1ef31e7,1,7h4c,AsAd8d4d2c,trash,"[2, 3]",5000.0,50.0
+160,ed5dd257c1ef31e7,0,Qh3d,QsTd4c3h2c,trash,[3],20000.0,200.0
+161,ed5dd257c1ef31e7,4,8h8c,AsJh5h4c2d,marginal,"[2, 1, 1]",-10000.0,-100.0
+162,ed5dd257c1ef31e7,3,7d4c,QdJd6d5c3c,trash,[0],0.0,0.0
+163,ed5dd257c1ef31e7,2,Kh2h,Jc9s9c6s2c,trash,[3],-10000.0,-100.0
+164,ed5dd257c1ef31e7,1,JsTs,6s6d4s3c2d,marginal,[3],10100.0,101.0
+165,ed5dd257c1ef31e7,0,Js7d,Qc9c4h2h2c,trash,[1],-10000.0,-100.0
+166,ed5dd257c1ef31e7,4,Jh7s,AcQcTh8s6h,trash,[3],-10000.0,-100.0
+167,ed5dd257c1ef31e7,3,Qh9d,KdKcTh5s3s,trash,"[2, 1, 0]",-1750.0,-17.5
+168,ed5dd257c1ef31e7,2,Th7c,Ks8s5d5c3s,trash,[3],-10000.0,-100.0
+169,ed5dd257c1ef31e7,1,9s3s,AdQd9c8d2d,trash,"[2, 2, 2, 3]",-10000.0,-100.0
+170,ed5dd257c1ef31e7,0,Th8s,QcJh7c5c4c,trash,"[2, 1, 3]",-10000.0,-100.0
+171,ed5dd257c1ef31e7,4,6d2d,Qh9s8h7h3c,trash,[3],-10000.0,-100.0
+172,ed5dd257c1ef31e7,3,8c6c,KcQdJs6s5s,trash,"[2, 3]",-10000.0,-100.0
+173,ed5dd257c1ef31e7,2,8d7d,KcJd7s6c4s,marginal,"[2, 2, 3]",15050.0,150.5
+174,ed5dd257c1ef31e7,1,Ks9s,AhKcQs7c3s,trash,"[2, 1]",-10000.0,-100.0
+175,ed5dd257c1ef31e7,0,Kd8h,AsKh5s3h2h,trash,"[1, 3]",-10000.0,-100.0
+176,ed5dd257c1ef31e7,4,Ah2h,Qh5c4s4h4d,trash,"[2, 1]",20150.0,201.5
+177,ed5dd257c1ef31e7,3,AsKd,Ks6s4h3c2s,premium,"[2, 3]",-10000.0,-100.0
+178,ed5dd257c1ef31e7,2,8h6h,AsJhTc4s2s,trash,"[1, 1, 4, 3]",-10000.0,-100.0
+179,ed5dd257c1ef31e7,1,7h7d,AsQd7c5h4s,marginal,[1],30050.0,300.5
+180,ed5dd257c1ef31e7,0,8d7h,Qd8h6h6c2c,trash,"[2, 0]",-2800.0,-28.0
+181,ed5dd257c1ef31e7,4,4s2s,AsQh7s7d2d,trash,[3],-10000.0,-100.0
+182,ed5dd257c1ef31e7,3,Ks6c,KhQcTd8d7s,trash,[3],10150.0,101.5
+183,ed5dd257c1ef31e7,2,Qc9h,KsTdTc7c5d,trash,"[1, 1, 3]",-10000.0,-100.0
+184,ed5dd257c1ef31e7,1,7s6c,AsQh8s8h8c,trash,"[1, 1]",-10000.0,-100.0
+185,ed5dd257c1ef31e7,0,4s2h,AhKdJh8s3d,trash,[3],-10000.0,-100.0
+186,ed5dd257c1ef31e7,4,Jd3s,6s6h5s4d2d,trash,"[1, 2, 2, 2]",17100.0,171.0
+187,ed5dd257c1ef31e7,3,Ah8c,TsTh8d7d5d,trash,"[2, 1, 1]",-10000.0,-100.0
+188,ed5dd257c1ef31e7,2,7s7d,QsQdJs8s5s,marginal,"[1, 1, 3]",-10000.0,-100.0
+189,ed5dd257c1ef31e7,1,Td9c,JsTc7d6c5s,trash,[3],-10000.0,-100.0
+190,ed5dd257c1ef31e7,0,QcTc,AsKh7d6h5s,marginal,"[2, 3]",-10000.0,-100.0
+191,ed5dd257c1ef31e7,4,Tc8c,Ts8s7s7d6c,trash,"[1, 4, 3]",-10000.0,-100.0
+192,ed5dd257c1ef31e7,3,KdTc,Td9h8c7s2d,marginal,[3],-10000.0,-100.0
+193,ed5dd257c1ef31e7,2,Kd4c,AcJc7s5c2h,trash,"[2, 3]",11300.0,113.0
+194,ed5dd257c1ef31e7,1,4d2s,Kd7s6s5c4s,trash,[1],-10000.0,-100.0
+195,ed5dd257c1ef31e7,0,Ad8c,Qd9c7s5s2h,trash,"[4, 3]",-10000.0,-100.0
+196,ed5dd257c1ef31e7,4,3d3c,Ac8s6s,trash,"[2, 3]",600.0,6.0
+197,ed5dd257c1ef31e7,3,KcQs,AdJd5h5c2h,marginal,"[2, 0]",-350.0,-3.5
+198,ed5dd257c1ef31e7,2,9c8c,KsJd6s5h3s,marginal,[3],-10000.0,-100.0
+199,ed5dd257c1ef31e7,1,Tc5c,KhKc6s5d4c,trash,[3],-10000.0,-100.0
+200,ed5dd257c1ef31e7,0,Kh6h,AhKc9c8c7c,trash,"[2, 2, 2, 2]",-8100.0,-81.0
+201,ed5dd257c1ef31e7,4,Ad3s,7s4s2s2h2c,trash,[3],20100.0,201.0
+202,ed5dd257c1ef31e7,3,9d8s,Jh7s6d4s3c,trash,"[1, 3]",-10000.0,-100.0
+203,ed5dd257c1ef31e7,2,Kc3c,QdTc9s8d2s,trash,"[2, 3]",-10000.0,-100.0
+204,ed5dd257c1ef31e7,1,QhQc,KcTh8h7c4d,premium,"[1, 3]",11700.0,117.0
+205,ed5dd257c1ef31e7,0,Js5c,KdJdJcTs4h,trash,[3],10450.0,104.5
+206,ed5dd257c1ef31e7,4,Qh3d,AsAd8h6s6d,trash,"[2, 3]",-10000.0,-100.0
+207,ed5dd257c1ef31e7,3,Tc4h,AsQc8d7h4s,trash,[3],10250.0,102.5
+208,ed5dd257c1ef31e7,2,Ts9h,Jc8d8c7s7c,trash,"[2, 2, 1]",30000.0,300.0
+209,ed5dd257c1ef31e7,1,Jc3s,QsQh9d7s4h,trash,"[2, 1]",-10000.0,-100.0
+210,ed5dd257c1ef31e7,0,Ts6d,QsQd9s3s2d,trash,[3],-10000.0,-100.0
+211,ed5dd257c1ef31e7,4,TsTc,QcJc8d5s5d,marginal,"[2, 3]",10050.0,100.5
+212,ed5dd257c1ef31e7,3,Td8d,KdJd7h6d4s,trash,"[1, 1]",10150.0,101.5
+213,ed5dd257c1ef31e7,2,Qd4h,Kc9s7h6h5d,trash,"[2, 0]",-350.0,-3.5
+214,ed5dd257c1ef31e7,1,9h5d,QsTd7s5c2h,trash,[3],-10000.0,-100.0
+215,ed5dd257c1ef31e7,0,AhJc,AsKcQcTc5h,marginal,[1],20000.0,200.0
+216,ed5dd257c1ef31e7,4,6s4h,QsJd8s6c5h,trash,[1],20050.0,200.5
+217,ed5dd257c1ef31e7,3,JsJh,KcQdQc4d2c,premium,[3],-10000.0,-100.0
+218,ed5dd257c1ef31e7,2,7h2h,AdTs8h2d2c,trash,[3],-10000.0,-100.0
+219,ed5dd257c1ef31e7,1,Kc3c,Kd7s6s5s3h,trash,[3],-10000.0,-100.0
+220,ed5dd257c1ef31e7,0,9s2s,AcKsQd9c6c,trash,"[1, 3]",-10000.0,-100.0
+221,ed5dd257c1ef31e7,4,Kh4h,AsKdThTc3s,trash,[1],20150.0,201.5
+222,ed5dd257c1ef31e7,3,QsTh,AdAc8s6h5s,marginal,[3],10150.0,101.5
+223,ed5dd257c1ef31e7,2,Ks8c,AsAdJs6h4d,trash,"[4, 3]",-10000.0,-100.0
+224,ed5dd257c1ef31e7,1,AsJc,6s5s4h3h2s,marginal,"[2, 1, 3]",250.0,2.5
+225,ed5dd257c1ef31e7,0,Th4h,KsKcJd3d2c,trash,[0],-50.0,-0.5
+226,ed5dd257c1ef31e7,4,QhTc,AcKsQdJh6h,marginal,"[1, 1]",40000.0,400.0
+227,ed5dd257c1ef31e7,3,Ts7d,Js6d6c3h2c,trash,"[4, 2, 3]",15000.0,150.0
+228,ed5dd257c1ef31e7,2,Ah5d,AcJd9h6c4h,trash,"[2, 3]",10000.0,100.0
+229,ed5dd257c1ef31e7,1,Td9c,AsKs9s8s4h,trash,"[4, 3]",-10000.0,-100.0
+230,ed5dd257c1ef31e7,0,Qc5c,KdJc7d5s4h,trash,[3],-10000.0,-100.0
+231,ed5dd257c1ef31e7,4,Qs5c,AsKsKhJhTs,trash,[3],30000.0,300.0
+232,ed5dd257c1ef31e7,3,9s3d,Td8c7h7d6c,trash,"[1, 1, 3]",20100.0,201.0
+233,ed5dd257c1ef31e7,2,As4d,QhJhTc9d3s,trash,"[2, 4, 0]",-3350.0,-33.5
+234,ed5dd257c1ef31e7,1,Jh2d,KsTd5s2s2c,trash,[3],20100.0,201.0
+235,ed5dd257c1ef31e7,0,Qh8c,JdTc9h7c2d,trash,"[2, 2, 3]",12200.0,122.0
+236,ed5dd257c1ef31e7,4,Qc8s,AcJsJh7h4c,trash,[3],-10000.0,-100.0
+237,ed5dd257c1ef31e7,3,Ks4h,JdTs9h7s6h,trash,"[1, 2, 2, 2]",-4650.0,-46.5
+238,ed5dd257c1ef31e7,2,Ad9c,QsTc9d5h2d,trash,[3],20150.0,201.5
+239,ed5dd257c1ef31e7,1,Qd5c,KhJc9d7h4c,trash,"[2, 3]",-10000.0,-100.0
+240,ed5dd257c1ef31e7,0,Jd3s,KhJc4h3d2c,trash,"[2, 3]",20000.0,200.0
+241,ed5dd257c1ef31e7,4,QhJd,Ad8d7h6c5c,marginal,"[2, 3]",-10000.0,-100.0
+242,ed5dd257c1ef31e7,3,9c3s,KsKcQh8d2d,trash,"[4, 3]",-10000.0,-100.0
+243,ed5dd257c1ef31e7,2,6d2s,AsAhJh5d3h,trash,[3],-10000.0,-100.0
+244,ed5dd257c1ef31e7,1,Kc6h,,trash,[],50.0,0.5
+245,ed5dd257c1ef31e7,0,9d3c,Js9s8d7h6h,trash,[3],-10000.0,-100.0
+246,ed5dd257c1ef31e7,4,Kh9h,,trash,[3],150.0,1.5
+247,ed5dd257c1ef31e7,3,6h2s,QsJc8d7s2h,trash,[3],-10000.0,-100.0
+248,ed5dd257c1ef31e7,2,Td8d,JsJd8s7s5s,trash,"[2, 3]",20050.0,200.5
+249,ed5dd257c1ef31e7,1,Kd3d,As5c4s3h3c,trash,"[2, 2, 3]",-10000.0,-100.0
+250,ed5dd257c1ef31e7,0,Qh3h,Jc5h5d2s2d,trash,[3],-10000.0,-100.0
+251,ed5dd257c1ef31e7,4,7s2d,KcJhThTd4s,trash,[3],-10000.0,-100.0
+252,ed5dd257c1ef31e7,3,Qd9c,AhKd8s4s3h,trash,[3],-10000.0,-100.0
+253,ed5dd257c1ef31e7,2,4h4d,KdKcQd3s2c,trash,[3],20150.0,201.5
+254,ed5dd257c1ef31e7,1,6h5d,QdTd9d8c2s,trash,[0],-100.0,-1.0
+255,ed5dd257c1ef31e7,0,KsQh,QdJs6d5d2d,marginal,[3],20100.0,201.0
+256,ed5dd257c1ef31e7,4,AsTh,Ts9s8d5c4s,marginal,"[4, 1, 3]",20050.0,200.5
+257,ed5dd257c1ef31e7,3,4d3d,AdKh9s8h7c,trash,[3],-10000.0,-100.0
+258,ed5dd257c1ef31e7,2,KhTh,Ah9s5d4c3s,marginal,"[2, 0]",-350.0,-3.5
+259,ed5dd257c1ef31e7,1,Qc3h,AcQs9s9h8c,trash,"[2, 1]",-10000.0,-100.0
+260,ed5dd257c1ef31e7,0,7c2s,AhAdQcJc6h,trash,[3],-10000.0,-100.0
+261,ed5dd257c1ef31e7,4,Kc9d,KsQdTd8h3d,trash,"[1, 1]",20000.0,200.0
+262,ed5dd257c1ef31e7,3,9h6s,KdQd8c7h6c,trash,[3],-10000.0,-100.0
+263,ed5dd257c1ef31e7,2,6c3c,KcTh7s4d2s,trash,"[2, 3]",-10000.0,-100.0
+264,ed5dd257c1ef31e7,1,Jc4c,KcTsTh9s8s,trash,[3],-10000.0,-100.0
+265,ed5dd257c1ef31e7,0,Kd2s,AdKs8c5h5d,trash,[3],-10000.0,-100.0
+266,ed5dd257c1ef31e7,4,6d5h,Jd8d7s7h7d,trash,"[1, 3]",-10000.0,-100.0
+267,ed5dd257c1ef31e7,3,AcQh,QcTs8h7h4d,marginal,"[4, 1, 3]",20050.0,200.5
+268,ed5dd257c1ef31e7,2,AcJs,AdTsTc3c2c,marginal,[3],30050.0,300.5
+269,ed5dd257c1ef31e7,1,4h4c,JdThTd7c5s,trash,"[4, 1]",-10000.0,-100.0
+270,ed5dd257c1ef31e7,0,6h4h,Qd8c6c3d2s,trash,"[2, 3]",-10000.0,-100.0
+271,ed5dd257c1ef31e7,4,As8d,,trash,"[4, 3]",600.0,6.0
+272,ed5dd257c1ef31e7,3,3c2c,KdQsTc7s4c,trash,"[2, 3]",-10000.0,-100.0
+273,ed5dd257c1ef31e7,2,Js8c,AcQsQh8h4c,trash,"[4, 2, 3]",24125.0,241.25
+274,ed5dd257c1ef31e7,1,KhQs,QdTd5d3c2d,marginal,[3],20150.0,201.5
+275,ed5dd257c1ef31e7,0,Ad2d,QhQd9d8d2h,trash,"[4, 1, 3]",10000.0,100.0
+276,ed5dd257c1ef31e7,4,AhAd,KcQsJd6s4c,premium,[3],-10000.0,-100.0
+277,ed5dd257c1ef31e7,3,JsJc,Kc8d7c5d3s,premium,"[1, 2, 1]",-10000.0,-100.0
+278,ed5dd257c1ef31e7,2,Th2h,AdJc7s5h3c,trash,[3],-10000.0,-100.0
+279,ed5dd257c1ef31e7,1,3s2h,AcKcJsTc5c,trash,[3],-10000.0,-100.0
+280,ed5dd257c1ef31e7,0,Tc5c,AcJcTs8h5s,trash,"[4, 3]",13325.0,133.25
+281,ed5dd257c1ef31e7,4,TsTd,QdJd9h4c2s,marginal,"[2, 2, 1]",-10000.0,-100.0
+282,ed5dd257c1ef31e7,3,8s5c,9d7s6s4d2s,trash,"[2, 1]",30100.0,301.0
+283,ed5dd257c1ef31e7,2,8c7c,KsQsQc8s4c,marginal,"[1, 2, 1, 1]",17000.0,170.0
+284,ed5dd257c1ef31e7,1,3s3d,AcJs8s6s2d,trash,[3],-10000.0,-100.0
+285,ed5dd257c1ef31e7,0,Th8d,JsTdTc8c7s,trash,[0],-50.0,-0.5
+286,ed5dd257c1ef31e7,4,Qd7h,AsQs6d5d3s,trash,"[2, 1, 3]",-10000.0,-100.0
+287,ed5dd257c1ef31e7,3,KsTd,JcTc9d9c6d,marginal,[3],10050.0,100.5
+288,ed5dd257c1ef31e7,2,KcTh,AcJd8s3d3c,marginal,[3],-10000.0,-100.0
+289,ed5dd257c1ef31e7,1,8d8c,QcJh6h5c3d,marginal,"[4, 2, 2, 3]",-10000.0,-100.0
+290,ed5dd257c1ef31e7,0,Kc6c,KsQd8h3h2d,trash,"[2, 2, 1]",20000.0,200.0
+291,ed5dd257c1ef31e7,4,Ad5c,KhQh8d6s3s,trash,[3],-10000.0,-100.0
+292,ed5dd257c1ef31e7,3,Ts6s,KsTd9s8d4s,trash,"[4, 3]",10825.0,108.25
+293,ed5dd257c1ef31e7,2,Jc5d,AcKh7d5c3s,trash,[3],-10000.0,-100.0
+294,ed5dd257c1ef31e7,1,AsAd,Th8h8c6c2h,premium,"[2, 3]",14550.0,145.5
+295,ed5dd257c1ef31e7,0,Ad6c,AcTs8s6s5h,trash,[3],20775.0,207.75
+296,ed5dd257c1ef31e7,4,Kc5d,QdJcTd5c2s,trash,[3],-10000.0,-100.0
+297,ed5dd257c1ef31e7,3,4d2s,Kd7h4h3c2h,trash,[3],10150.0,101.5
+298,ed5dd257c1ef31e7,2,Js5d,KsQc6h4c2h,trash,"[4, 2, 2, 3]",14200.0,142.0
+299,ed5dd257c1ef31e7,1,6h2h,JcTs4c,trash,"[1, 3]",275.0,2.75
+300,ed5dd257c1ef31e7,0,Qd7d,QcJsJc5h4d,trash,[0],-50.0,-0.5
+301,ed5dd257c1ef31e7,4,8h2s,KdJh8s8c4d,trash,[3],30100.0,301.0
+302,ed5dd257c1ef31e7,3,Qh5s,JhTd7s7h5c,trash,[0],0.0,0.0
+303,ed5dd257c1ef31e7,2,Qd6c,AhKhJh5s4d,trash,"[2, 0]",-350.0,-3.5
+304,ed5dd257c1ef31e7,1,Kc7s,Th6c5d4d2d,trash,"[2, 1]",-10000.0,-100.0
+305,ed5dd257c1ef31e7,0,8s6d,AcKhTsTc6s,trash,"[1, 2, 3]",-10000.0,-100.0
+306,ed5dd257c1ef31e7,4,Kh2s,Qs9h7h7c5d,trash,"[2, 1]",-10000.0,-100.0
+307,ed5dd257c1ef31e7,3,Qc4h,KsJh5c,trash,[0],0.0,0.0
+308,ed5dd257c1ef31e7,2,9h6d,KdQdTh9c4h,trash,"[1, 3]",-10000.0,-100.0
+309,ed5dd257c1ef31e7,1,Th3d,AsAd7s7d4d,trash,"[2, 1]",-10000.0,-100.0
+310,ed5dd257c1ef31e7,0,QsQd,KhJd8h7c2s,premium,[3],20100.0,201.0
+311,ed5dd257c1ef31e7,4,Qd8d,Th8s7s7c3d,trash,[3],20100.0,201.0
+312,ed5dd257c1ef31e7,3,Jc9s,Ad9h8h8d3c,trash,[3],10150.0,101.5
+313,ed5dd257c1ef31e7,2,Ts4d,QhJd9s4h3h,trash,"[2, 3]",-10000.0,-100.0
+314,ed5dd257c1ef31e7,1,KdJh,JdTc9h8s7h,marginal,"[1, 3]",75.0,0.75
+315,ed5dd257c1ef31e7,0,Ts9h,KdTc6d5s5c,trash,"[2, 3]",21025.0,210.25
+316,ed5dd257c1ef31e7,4,Qc7d,AdKsTh6c2d,trash,"[2, 1]",-10000.0,-100.0
+317,ed5dd257c1ef31e7,3,5d3h,QhTh8d7s6s,trash,[3],-10000.0,-100.0
+318,ed5dd257c1ef31e7,2,2s2h,7h7d6d5c4s,trash,"[1, 3]",-10000.0,-100.0
+319,ed5dd257c1ef31e7,1,Th7h,JhJd7c6s5s,trash,[3],10100.0,101.0
+320,ed5dd257c1ef31e7,0,7h4h,AdKcQhTc5c,trash,"[2, 3]",-10000.0,-100.0
+321,ed5dd257c1ef31e7,4,As8c,QhJh9c6h5d,trash,[3],-10000.0,-100.0
+322,ed5dd257c1ef31e7,3,8c5s,9s8s7h,trash,"[2, 3]",500.0,5.0
+323,ed5dd257c1ef31e7,2,Kd2s,JhTh8d6h2h,trash,"[2, 2, 1]",-10000.0,-100.0
+324,ed5dd257c1ef31e7,1,Ah5s,QsTs9s7h,trash,"[2, 1, 3]",400.0,4.0
+325,ed5dd257c1ef31e7,0,9d8s,9h8d8c6c5s,trash,"[4, 3]",20100.0,201.0
+326,ed5dd257c1ef31e7,4,Kc8h,Jd6d6c3h2d,trash,"[2, 3]",-10000.0,-100.0
+327,ed5dd257c1ef31e7,3,6c2d,AsKcQcJhTd,trash,"[4, 3]",333.3333333333333,3.333333333333333
+328,ed5dd257c1ef31e7,2,6d2c,QcJd9h9c5d,trash,[3],-10000.0,-100.0
+329,ed5dd257c1ef31e7,1,Ac4h,Jc8s6s6d2c,trash,[3],-10000.0,-100.0
+330,ed5dd257c1ef31e7,0,AcKd,Qs8h7s7d2s,premium,"[2, 1]",-10000.0,-100.0
+331,ed5dd257c1ef31e7,4,3d2h,KcQs6c5d4d,trash,"[2, 3]",25200.0,252.0
+332,ed5dd257c1ef31e7,3,6d5h,,trash,[0],0.0,0.0
+333,ed5dd257c1ef31e7,2,3h3c,9h7h7d5c4d,trash,"[1, 3]",-10000.0,-100.0
+334,ed5dd257c1ef31e7,1,8s7h,AhKsJd5h,trash,"[2, 1, 3]",400.0,4.0
+335,ed5dd257c1ef31e7,0,6h6c,QcJsJd7s5d,trash,[3],-10000.0,-100.0
+336,ed5dd257c1ef31e7,4,KdJs,AcQs9d8h5d,marginal,[3],-10000.0,-100.0
+337,ed5dd257c1ef31e7,3,Js4c,KdKc6h6c4s,trash,"[1, 4, 2, 3]",10100.0,101.0
+338,ed5dd257c1ef31e7,2,AcJd,Kc9s9d6c3h,marginal,"[2, 1]",20000.0,200.0
+339,ed5dd257c1ef31e7,1,Jc7d,KdTs3s,trash,"[2, 3]",400.0,4.0
+340,ed5dd257c1ef31e7,0,9c3h,AdAcJd8s4h,trash,"[1, 1]",-10000.0,-100.0
+341,ed5dd257c1ef31e7,4,5s2d,AcQs7c5c4d,trash,[3],-10000.0,-100.0
+342,ed5dd257c1ef31e7,3,Jh4s,Ac9s6h4d2d,trash,"[2, 2, 1]",-10000.0,-100.0
+343,ed5dd257c1ef31e7,2,7h7c,KsQhQd6h5d,marginal,"[2, 1]",30350.0,303.5
+344,ed5dd257c1ef31e7,1,Kh9h,KsQd6h4c3d,trash,[0],-100.0,-1.0
+345,ed5dd257c1ef31e7,0,Kd5h,Qs8h8c3c2c,trash,"[4, 1]",-10000.0,-100.0
+346,ed5dd257c1ef31e7,4,9h2d,JsJdTs6s5h,trash,[3],-10000.0,-100.0
+347,ed5dd257c1ef31e7,3,Jd7d,JcTd8s4d3c,trash,[3],20150.0,201.5
+348,ed5dd257c1ef31e7,2,9s8s,Kc8h8c4c3h,marginal,"[1, 4, 3]",20000.0,200.0
+349,ed5dd257c1ef31e7,1,Tc6h,TsTd9c8h5d,trash,"[2, 1]",-10000.0,-100.0
+350,ed5dd257c1ef31e7,0,3c2d,,trash,"[1, 3]",300.0,3.0
+351,ed5dd257c1ef31e7,4,8h2c,KhTsTh7c3d,trash,[3],10150.0,101.5
+352,ed5dd257c1ef31e7,3,Kc8h,Qh9s9c4h4d,trash,"[4, 1, 3]",25575.0,255.75
+353,ed5dd257c1ef31e7,2,As4d,Jh7s6d5c4s,trash,"[2, 3]",-10000.0,-100.0
+354,ed5dd257c1ef31e7,1,JhJd,Kc9s3d2s2h,premium,"[2, 1]",30000.0,300.0
+355,ed5dd257c1ef31e7,0,9h4c,AsQs9c5h5d,trash,"[2, 3]",20100.0,201.0
+356,ed5dd257c1ef31e7,4,Qs6s,AdTc6d5h4s,trash,[3],-10000.0,-100.0
+357,ed5dd257c1ef31e7,3,8c7c,KsKh9d7h3s,marginal,"[2, 1]",5025.0,50.25
+358,ed5dd257c1ef31e7,2,9s7s,KdKc9h7h4c,trash,"[4, 3]",-10000.0,-100.0
+359,ed5dd257c1ef31e7,1,Jd7d,Qs8c5h4h4d,trash,"[2, 3]",-10000.0,-100.0
+360,ed5dd257c1ef31e7,0,AdJs,AsTh9h6h6d,marginal,[3],20100.0,201.0
+361,ed5dd257c1ef31e7,4,Tc7h,AsAh8d6s5d,trash,[3],-10000.0,-100.0
+362,ed5dd257c1ef31e7,3,Ks6s,8d7d6c5d3c,trash,[3],-10000.0,-100.0
+363,ed5dd257c1ef31e7,2,7d6h,Ah9s6d5d4s,trash,"[2, 1]",20150.0,201.5
+364,ed5dd257c1ef31e7,1,AcJs,KdTs9d8s8h,marginal,[3],-10000.0,-100.0
+365,ed5dd257c1ef31e7,0,5c3s,AdKs8h7s5d,trash,"[2, 3]",-10000.0,-100.0
+366,ed5dd257c1ef31e7,4,KsTc,Kd9s8d5h3h,marginal,"[1, 2, 3]",-10000.0,-100.0
+367,ed5dd257c1ef31e7,3,Td2d,QsJc9c5s5c,trash,[3],-10000.0,-100.0
+368,ed5dd257c1ef31e7,2,8h4s,KcJh9s6d3c,trash,"[2, 1, 1]",-10000.0,-100.0
+369,ed5dd257c1ef31e7,1,Jc7d,KhQhJd8d7c,trash,[3],20100.0,201.0
+370,ed5dd257c1ef31e7,0,Th4s,JhJcTd6c3c,trash,"[2, 0]",-1550.0,-15.5
+371,ed5dd257c1ef31e7,4,Th5d,KhQh9c8h3h,trash,[3],20150.0,201.5
+372,ed5dd257c1ef31e7,3,Ad7s,QdJhJd9s6h,trash,"[1, 2, 2, 2]",-4650.0,-46.5
+373,ed5dd257c1ef31e7,2,KhTd,8h5s4s4h4d,marginal,"[4, 1]",-10000.0,-100.0
+374,ed5dd257c1ef31e7,1,Kh8h,Ac5h4d4c3d,trash,[1],-10000.0,-100.0
+375,ed5dd257c1ef31e7,0,Ks5h,Ts6s5d4c3h,trash,[3],20100.0,201.0
+376,ed5dd257c1ef31e7,4,5h4h,AdKsKc9d2d,trash,"[2, 2, 3]",-10000.0,-100.0
+377,ed5dd257c1ef31e7,3,5d5c,AsQdJhJd2c,trash,[3],20100.0,201.0
+378,ed5dd257c1ef31e7,2,7s3s,Ah9s9c8d3c,trash,[3],-10000.0,-100.0
+379,ed5dd257c1ef31e7,1,QsTd,9s9c8c6c5d,marginal,"[2, 3]",-10000.0,-100.0
+380,ed5dd257c1ef31e7,0,Tc3d,Kh8s7d5h2d,trash,"[4, 3]",-10000.0,-100.0
+381,ed5dd257c1ef31e7,4,Ac8s,QsQh3d2s2h,trash,[3],11350.0,113.5
+382,ed5dd257c1ef31e7,3,9d3d,Kc8s6d3s3c,trash,"[1, 1, 1, 3]",12000.0,120.0
+383,ed5dd257c1ef31e7,2,9c6d,AsAdQcJd6h,trash,"[4, 3]",10375.0,103.75
+384,ed5dd257c1ef31e7,1,KsQc,AcTc8h7s2h,marginal,[3],-10000.0,-100.0
+385,ed5dd257c1ef31e7,0,KsTd,9d6d5d5c2s,marginal,"[4, 3]",23475.0,234.75
+386,ed5dd257c1ef31e7,4,Tc6h,KhQh5c3c2s,trash,[3],-10000.0,-100.0
+387,ed5dd257c1ef31e7,3,7s5h,Kh8c5d3s3h,trash,[0],0.0,0.0
+388,ed5dd257c1ef31e7,2,6s5h,AhKs9d7c2h,trash,"[2, 3]",-10000.0,-100.0
+389,ed5dd257c1ef31e7,1,AhJc,,marginal,[3],150.0,1.5
+390,ed5dd257c1ef31e7,0,Kd5d,QhJh7d5s2c,trash,"[2, 3]",20225.0,202.25
+391,ed5dd257c1ef31e7,4,8s2d,JhJcTs9h5c,trash,"[1, 2, 3]",11300.0,113.0
+392,ed5dd257c1ef31e7,3,4d2d,Ac8d7d7c2c,trash,[3],-10000.0,-100.0
+393,ed5dd257c1ef31e7,2,Th6d,Qd8s8h7d3h,trash,[3],-10000.0,-100.0
+394,ed5dd257c1ef31e7,1,6s3c,AsKs8h7h3h,trash,[3],11150.0,111.5
+395,ed5dd257c1ef31e7,0,5h3d,AdTd4d4c3s,trash,"[2, 3]",10100.0,101.0
+396,ed5dd257c1ef31e7,4,8d6c,8c7d5h4c3c,trash,"[4, 1]",10200.0,102.0
+397,ed5dd257c1ef31e7,3,QhJs,TsTc7h5s3h,marginal,[3],-10000.0,-100.0
+398,ed5dd257c1ef31e7,2,Js5s,9h8s5h4d2h,trash,[3],-10000.0,-100.0
+399,ed5dd257c1ef31e7,1,7s7h,Js9d8c7d3d,marginal,"[1, 3]",-10000.0,-100.0
+400,ed5dd257c1ef31e7,0,Th8h,Ah4h4c3c2h,trash,"[2, 3]",10400.0,104.0
+401,ed5dd257c1ef31e7,4,AdJd,9d8s7d6c3c,marginal,[3],-10000.0,-100.0
+402,ed5dd257c1ef31e7,3,Ks2s,AdQcJsTh5s,trash,"[4, 3]",20875.0,208.75
+403,ed5dd257c1ef31e7,2,Jd6c,KdQs8c5s5d,trash,"[4, 3]",-10000.0,-100.0
+404,ed5dd257c1ef31e7,1,Qd5h,AsKh8d6s3d,trash,"[4, 1, 3]",-10000.0,-100.0
+405,ed5dd257c1ef31e7,0,Ad7d,Ks9c5d4d3h,trash,"[2, 1, 3]",10450.0,104.5
+406,ed5dd257c1ef31e7,4,4s2s,Ts8c7s6d3h,trash,[3],-10000.0,-100.0
+407,ed5dd257c1ef31e7,3,4d2h,Ah9h8c7c6s,trash,[3],-10000.0,-100.0
+408,ed5dd257c1ef31e7,2,AsAc,Qc9s9h9d4h,premium,"[2, 3]",-10000.0,-100.0
+409,ed5dd257c1ef31e7,1,Jc7d,Kh6s5d4d2d,trash,"[2, 3]",-10000.0,-100.0
+410,ed5dd257c1ef31e7,0,Jh3d,QcJsJd7s4c,trash,"[4, 3]",20100.0,201.0
+411,ed5dd257c1ef31e7,4,AhKc,KsKdQs4h3s,premium,[1],30100.0,301.0
+412,ed5dd257c1ef31e7,3,8h4c,AdKh9d6d3h,trash,[3],-10000.0,-100.0
+413,ed5dd257c1ef31e7,2,QsTc,KsTd8c5d2c,marginal,[3],20000.0,200.0
+414,ed5dd257c1ef31e7,1,Td4d,AhJh8s8d5c,trash,[3],-10000.0,-100.0
+415,ed5dd257c1ef31e7,0,Ac8c,QcTd8s7h4h,trash,"[1, 1, 3]",-10000.0,-100.0
+416,ed5dd257c1ef31e7,4,AcQc,AsKhQd6s4s,marginal,"[1, 1, 3]",-10000.0,-100.0
+417,ed5dd257c1ef31e7,3,Ts9s,AsKd6d5s3s,marginal,[3],10150.0,101.5
+418,ed5dd257c1ef31e7,2,Kc3s,Kh7h3d3c2d,trash,[3],20150.0,201.5
+419,ed5dd257c1ef31e7,1,Ac9s,QdTh8h8d5d,trash,"[2, 3]",-10000.0,-100.0
+420,ed5dd257c1ef31e7,0,Ah3s,KdJc5s4d4c,trash,"[2, 1]",-10000.0,-100.0
+421,ed5dd257c1ef31e7,4,8c4c,9h8s6d3s2d,trash,"[1, 4, 3]",13325.0,133.25
+422,ed5dd257c1ef31e7,3,JhTh,Jd9c7d4c2d,marginal,"[4, 2, 1]",10875.0,108.75
+423,ed5dd257c1ef31e7,2,9d8h,Qh9s7s5s4d,trash,"[2, 2, 3]",13150.0,131.5
+424,ed5dd257c1ef31e7,1,Th6d,9h8d5s2s2h,trash,"[2, 1, 3]",-10000.0,-100.0
+425,ed5dd257c1ef31e7,0,9c5s,Kc8s4s4h3s,trash,"[4, 3]",-10000.0,-100.0
+426,ed5dd257c1ef31e7,4,KhJh,AcQcJcTc9h,marginal,"[1, 3]",20500.0,205.0
+427,ed5dd257c1ef31e7,3,Js5d,KdTc5c3h2h,trash,"[2, 1]",-10000.0,-100.0
+428,ed5dd257c1ef31e7,2,6s3s,AhAdJsTd4s,trash,[3],-10000.0,-100.0
+429,ed5dd257c1ef31e7,1,Ad4d,KhTs6c3c2d,trash,[3],-10000.0,-100.0
+430,ed5dd257c1ef31e7,0,6d2d,Kd7s5h5c4h,trash,[3],-10000.0,-100.0
+431,ed5dd257c1ef31e7,4,QhJs,QsTsTc7s4s,marginal,[3],20050.0,200.5
+432,ed5dd257c1ef31e7,3,9h4d,KdTh6c4s3d,trash,"[1, 3]",10150.0,101.5
+433,ed5dd257c1ef31e7,2,Qh8h,Ad8s8d3h2d,trash,"[1, 1, 1]",21700.0,217.0
+434,ed5dd257c1ef31e7,1,5h3s,AcQc6h6c4d,trash,"[1, 1, 3]",-10000.0,-100.0
+435,ed5dd257c1ef31e7,0,7c3h,KsQs7h4s4h,trash,[3],10100.0,101.0
+436,ed5dd257c1ef31e7,4,6s6d,Ac7h4h3s2s,trash,[1],-10000.0,-100.0
+437,ed5dd257c1ef31e7,3,7d4c,Jh7s5h4d2h,trash,"[2, 2, 3]",28650.0,286.5
+438,ed5dd257c1ef31e7,2,8s8h,JdTs5s5c3d,marginal,[3],-10000.0,-100.0
+439,ed5dd257c1ef31e7,1,Qd4h,Jd8h7c6d5d,trash,[3],20050.0,200.5
+440,ed5dd257c1ef31e7,0,Tc8c,,trash,[3],200.0,2.0
+441,ed5dd257c1ef31e7,4,9c8c,Th5c4h3c2d,marginal,[3],-10000.0,-100.0
+442,ed5dd257c1ef31e7,3,7h2c,AcQhJh6h4d,trash,[3],-10000.0,-100.0
+443,ed5dd257c1ef31e7,2,Td2s,,trash,"[1, 0]",-100.0,-1.0
+444,ed5dd257c1ef31e7,1,5s2h,,trash,[3],400.0,4.0
+445,ed5dd257c1ef31e7,0,3h2s,KdQd8h8c3c,trash,[3],10450.0,104.5
+446,ed5dd257c1ef31e7,4,As2c,KcTd7h6h4c,trash,"[2, 3]",-10000.0,-100.0
+447,ed5dd257c1ef31e7,3,Jd8c,,trash,[3],150.0,1.5
+448,ed5dd257c1ef31e7,2,8s8d,QcTsTd6h5s,marginal,"[1, 3]",10100.0,101.0
+449,ed5dd257c1ef31e7,1,Qd7c,Ts7d6h5d2h,trash,"[2, 1, 2, 1]",-10000.0,-100.0
+450,ed5dd257c1ef31e7,0,8s2s,AdQsJsTd8h,trash,"[1, 2, 1, 3]",10400.0,104.0
+451,ed5dd257c1ef31e7,4,9c3s,QhQd7d6s5s,trash,[1],-10000.0,-100.0
+452,ed5dd257c1ef31e7,3,JhTc,AhJdTh6c5c,trash,"[4, 2, 1, 3]",11025.0,110.25
+453,ed5dd257c1ef31e7,2,AhJh,Ad9c6d4h3h,marginal,"[1, 2, 3]",21950.0,219.5
+454,ed5dd257c1ef31e7,1,Th2c,QdQcJdTc9c,trash,[3],-10000.0,-100.0
+455,ed5dd257c1ef31e7,0,KsTd,Tc7s5c2d2c,marginal,[1],20000.0,200.0
+456,ed5dd257c1ef31e7,4,AdKc,AsKdTs7h2h,premium,"[2, 1]",-10000.0,-100.0
+457,ed5dd257c1ef31e7,3,6d3s,Qc8d5d5c2h,trash,[3],-10000.0,-100.0
+458,ed5dd257c1ef31e7,2,4h2d,Qc8h6d4s2s,trash,[3],30000.0,300.0
+459,ed5dd257c1ef31e7,1,8h4s,9d8d3c2h2c,trash,[3],10225.0,102.25
+460,ed5dd257c1ef31e7,0,3h2s,AdQh7s6s2d,trash,[3],-10000.0,-100.0
+461,ed5dd257c1ef31e7,4,QdJd,AsKcQsTh6h,marginal,"[2, 3]",10150.0,101.5
+462,ed5dd257c1ef31e7,3,7c6s,9s7h6h5d2d,trash,"[4, 3]",11875.0,118.75
+463,ed5dd257c1ef31e7,2,Jc9s,AcKc9h8s3h,trash,[3],10100.0,101.0
+464,ed5dd257c1ef31e7,1,8d5d,AhQcJs8c7h,trash,[3],-10000.0,-100.0
+465,ed5dd257c1ef31e7,0,8d4c,Kh7h5d4s2c,trash,[1],20100.0,201.0
+466,ed5dd257c1ef31e7,4,Tc7s,Qc9d3d2h2c,trash,"[2, 1]",-10000.0,-100.0
+467,ed5dd257c1ef31e7,3,8d2c,Jd9d5d4s2d,trash,"[1, 1, 1, 3]",20050.0,200.5
+468,ed5dd257c1ef31e7,2,4c3s,AhKcQh7s3c,trash,"[2, 3]",-10000.0,-100.0
+469,ed5dd257c1ef31e7,1,AhTd,Jc8c7s7d2c,marginal,[3],-10000.0,-100.0
+470,ed5dd257c1ef31e7,0,7h3h,AsAhTs7d6c,trash,"[2, 3]",-10000.0,-100.0
+471,ed5dd257c1ef31e7,4,9d8d,KsQsQd7s5d,marginal,[3],-10000.0,-100.0
+472,ed5dd257c1ef31e7,3,Js7h,Qh4s4h2s2h,trash,"[1, 2, 1]",-10000.0,-100.0
+473,ed5dd257c1ef31e7,2,QsQc,Kc7c6c5h2s,premium,[3],-10000.0,-100.0
+474,ed5dd257c1ef31e7,1,Ah3d,AsKhQsTd9h,trash,"[2, 2, 3]",9800.0,98.0
+475,ed5dd257c1ef31e7,0,9h5s,AhJh6d6c2c,trash,"[2, 3]",-10000.0,-100.0
+476,ed5dd257c1ef31e7,4,9h2d,JdThTc5d4c,trash,[1],-10000.0,-100.0
+477,ed5dd257c1ef31e7,3,Jd8h,Jc9h8s3h2d,trash,"[4, 1]",-10000.0,-100.0
+478,ed5dd257c1ef31e7,2,TdTc,AsJh9s5c2c,marginal,"[2, 3]",-10000.0,-100.0
+479,ed5dd257c1ef31e7,1,Kh9s,Kd7h6d5s4c,trash,[0],-100.0,-1.0
+480,ed5dd257c1ef31e7,0,Qs4h,Jd8s5d4s3d,trash,[3],-10000.0,-100.0
+481,ed5dd257c1ef31e7,4,Ts4s,QcTc7c5s4d,trash,[3],20100.0,201.0
+482,ed5dd257c1ef31e7,3,7d3h,Td6c5s4h2c,trash,"[2, 1]",30100.0,301.0
+483,ed5dd257c1ef31e7,2,6s5d,Qs6h5s5h2h,trash,"[2, 3]",20450.0,204.5
+484,ed5dd257c1ef31e7,1,QdJd,Js8c5c3h2h,marginal,"[1, 3]",38100.0,381.0
+485,ed5dd257c1ef31e7,0,8h4h,QsQh9s9h2c,trash,[1],-10000.0,-100.0
+486,ed5dd257c1ef31e7,4,QhTh,AsQd9c8s5d,marginal,[3],-10000.0,-100.0
+487,ed5dd257c1ef31e7,3,Qs9d,Qh8h4s4d2d,trash,"[2, 1, 3]",10400.0,104.0
+488,ed5dd257c1ef31e7,2,Kd2s,9h5h5d3h3c,trash,"[2, 3]",-10000.0,-100.0
+489,ed5dd257c1ef31e7,1,8d7h,AcQs8h6h4s,trash,[3],10400.0,104.0
+490,ed5dd257c1ef31e7,0,Ah6d,JhTh8h7c4s,trash,[1],-10000.0,-100.0
+491,ed5dd257c1ef31e7,4,QsQc,Th7c5s3s2h,premium,"[2, 3]",10600.0,106.0
+492,ed5dd257c1ef31e7,3,6s6d,Jd9d7s4d2c,trash,[3],30050.0,300.5
+493,ed5dd257c1ef31e7,2,Qd6d,7h4s3s3h2c,trash,"[2, 3]",-10000.0,-100.0
+494,ed5dd257c1ef31e7,1,6c5c,4d3h3c2h2d,trash,[3],-10000.0,-100.0
+495,ed5dd257c1ef31e7,0,Qs7h,Jc7s5s4h3d,trash,"[4, 1]",-10000.0,-100.0
+496,ed5dd257c1ef31e7,4,Js9c,8h6h5c3h2s,trash,"[1, 1, 3]",-10000.0,-100.0
+497,ed5dd257c1ef31e7,3,Js9h,Ad7s6s5h5d,trash,"[2, 2, 0]",-4850.0,-48.5
+498,ed5dd257c1ef31e7,2,8c6s,AdKdJc7c2h,trash,"[2, 3]",-10000.0,-100.0
+499,ed5dd257c1ef31e7,1,4s3h,Tc9h8h6s2h,trash,[0],-100.0,-1.0
+500,ed5dd257c1ef31e7,0,Qh6s,QsTs8h3h2h,trash,"[1, 3]",-10000.0,-100.0
+501,ed5dd257c1ef31e7,4,KhKc,Qc9s5h3h3d,premium,[1],20100.0,201.0
+502,ed5dd257c1ef31e7,3,Qs8h,Qd9s6s6d3d,trash,"[4, 2, 3]",20050.0,200.5
+503,ed5dd257c1ef31e7,2,Kc9h,AcQhTsTd3h,trash,"[2, 3]",-10000.0,-100.0
+504,ed5dd257c1ef31e7,1,Ts8h,Jc9h6d5h3c,trash,"[2, 3]",10500.0,105.0
+505,ed5dd257c1ef31e7,0,AsQs,Td9c7h7d7c,marginal,"[4, 3]",-10000.0,-100.0
+506,ed5dd257c1ef31e7,4,Qd6h,QhTc8s8d5s,trash,"[2, 0]",-1200.0,-12.0
+507,ed5dd257c1ef31e7,3,Qs5c,AdKhQh8c2d,trash,[3],20150.0,201.5
+508,ed5dd257c1ef31e7,2,Ks5s,,trash,[3],150.0,1.5
+509,ed5dd257c1ef31e7,1,Kc5d,Qc9c6d4d3h,trash,[3],-10000.0,-100.0
+510,ed5dd257c1ef31e7,0,9d5s,Js9h9c7s6s,trash,"[1, 1]",20000.0,200.0
+511,ed5dd257c1ef31e7,4,Qd5c,KdThTc8d8c,trash,"[2, 1, 3]",-10000.0,-100.0
+512,ed5dd257c1ef31e7,3,Th5s,AsAhQd7s2h,trash,"[4, 3]",-10000.0,-100.0
+513,ed5dd257c1ef31e7,2,3h2h,8c6s5c4s4h,trash,[3],20100.0,201.0
+514,ed5dd257c1ef31e7,1,Kc4c,Ad9h8c5c3s,trash,"[2, 1]",-10000.0,-100.0
+515,ed5dd257c1ef31e7,0,9c3s,JhThTd5d4h,trash,[3],-10000.0,-100.0
+516,ed5dd257c1ef31e7,4,KsJc,Js7d5s3h2s,marginal,[0],0.0,0.0
+517,ed5dd257c1ef31e7,3,Td3s,TsTh9s5c4s,trash,[3],10150.0,101.5
+518,ed5dd257c1ef31e7,2,Qh6s,AhQs9d8c4c,trash,[0],0.0,0.0
+519,ed5dd257c1ef31e7,1,4d4c,Jc7s5d4s2d,trash,"[2, 3]",26200.0,262.0
+520,ed5dd257c1ef31e7,0,4h3s,JhJd8c7h5c,trash,"[2, 3]",-10000.0,-100.0
+521,ed5dd257c1ef31e7,4,Kd4s,KcQsJd5h2c,trash,"[2, 3]",-10000.0,-100.0
+522,ed5dd257c1ef31e7,3,Td5c,AcQh9c6h2s,trash,"[2, 2, 1]",-10000.0,-100.0
+523,ed5dd257c1ef31e7,2,8s7d,Qc9d8c6h5d,trash,"[1, 3]",20500.0,205.0
+524,ed5dd257c1ef31e7,1,Jh9h,TsTc6s4d2s,trash,[3],-10000.0,-100.0
+525,ed5dd257c1ef31e7,0,Kd6s,TsTd3c2h2c,trash,[3],10650.0,106.5
+526,ed5dd257c1ef31e7,4,KdKc,JdTsTd6c5d,premium,[3],-10000.0,-100.0
+527,ed5dd257c1ef31e7,3,Jd6d,KcQd8s8h2s,trash,"[1, 2, 1, 3]",-10000.0,-100.0
+528,ed5dd257c1ef31e7,2,Qc4c,AsTh9d4d2h,trash,"[4, 3]",-10000.0,-100.0
+529,ed5dd257c1ef31e7,1,Kc4c,QdQcTsTh9h,trash,[1],-10000.0,-100.0
+530,ed5dd257c1ef31e7,0,Ad4h,KdQsTh9c4s,trash,"[1, 2, 2, 1]",900.0,9.0
+531,ed5dd257c1ef31e7,4,8c5s,9s9d7c6s2d,trash,[3],10100.0,101.0
+532,ed5dd257c1ef31e7,3,Qs6d,KsKhTc5s4c,trash,[3],-10000.0,-100.0
+533,ed5dd257c1ef31e7,2,4d2h,KhJsTc5d4c,trash,[3],-10000.0,-100.0
+534,ed5dd257c1ef31e7,1,KcQd,QsJh5h5c3s,marginal,"[2, 3]",-10000.0,-100.0
+535,ed5dd257c1ef31e7,0,Js2c,AhQsTd7c5d,trash,"[2, 3]",-10000.0,-100.0
+536,ed5dd257c1ef31e7,4,4s2h,KdTc6c4h3c,trash,"[2, 1]",-10000.0,-100.0
+537,ed5dd257c1ef31e7,3,8d3s,AsAh9h9c4s,trash,"[1, 3]",-10000.0,-100.0
+538,ed5dd257c1ef31e7,2,8h3h,AhTs7s7d6d,trash,"[1, 3]",-10000.0,-100.0
+539,ed5dd257c1ef31e7,1,8d8c,Qs9c6s5s2h,marginal,[3],20100.0,201.0
+540,ed5dd257c1ef31e7,0,AhTc,KdJs7c6s6c,marginal,[3],100.0,1.0
+541,ed5dd257c1ef31e7,4,7c2c,Ks6s4c2s2h,trash,[3],10150.0,101.5
+542,ed5dd257c1ef31e7,3,Ks3s,JhTc5h5c4d,trash,"[2, 3]",10500.0,105.0
+543,ed5dd257c1ef31e7,2,Jh8s,Qs5d3h3d2c,trash,"[2, 3]",-10000.0,-100.0
+544,ed5dd257c1ef31e7,1,Qc2c,AsTdTc6d3s,trash,"[1, 3]",20450.0,204.5
+545,ed5dd257c1ef31e7,0,Qc7h,JdTsTc5c3s,trash,"[1, 3]",-10000.0,-100.0
+546,ed5dd257c1ef31e7,4,6h6c,9d8s8d5s4d,trash,"[2, 3]",-10000.0,-100.0
+547,ed5dd257c1ef31e7,3,9s5h,Th6c5d4s2c,trash,[3],-10000.0,-100.0
+548,ed5dd257c1ef31e7,2,8s5h,AhAc8c6d6c,trash,"[2, 3]",-10000.0,-100.0
+549,ed5dd257c1ef31e7,1,Jd4s,AsAdQs5h2s,trash,[3],-10000.0,-100.0
+550,ed5dd257c1ef31e7,0,7h7d,KdQhTd9h6s,marginal,"[1, 3]",-10000.0,-100.0
+551,ed5dd257c1ef31e7,4,8c3h,JhTs9h6c4s,trash,"[2, 3]",-10000.0,-100.0
+552,ed5dd257c1ef31e7,3,8s3d,AsKsKd5h3c,trash,[3],-10000.0,-100.0
+553,ed5dd257c1ef31e7,2,Jh5d,JcTh9c8h3c,trash,"[2, 1]",-10000.0,-100.0
+554,ed5dd257c1ef31e7,1,Qd4s,AdJh9c6d3h,trash,"[2, 2, 3]",11900.0,119.0
+555,ed5dd257c1ef31e7,0,Qh6s,AcKcJd7s6d,trash,[3],-10000.0,-100.0
+556,ed5dd257c1ef31e7,4,5d2h,JhJd8d4d3h,trash,"[2, 1, 1]",-10000.0,-100.0
+557,ed5dd257c1ef31e7,3,Ad9h,QsQc9s7c6d,trash,[3],-10000.0,-100.0
+558,ed5dd257c1ef31e7,2,Ad4s,QhTs7d6c3c,trash,"[2, 2, 1, 3]",-10000.0,-100.0
+559,ed5dd257c1ef31e7,1,Qc4s,AhQsTs8d5c,trash,"[2, 3]",11550.0,115.5
+560,ed5dd257c1ef31e7,0,9d3d,AhJsTc8h7s,trash,"[2, 3]",8175.0,81.75
+561,ed5dd257c1ef31e7,4,8c6h,JsJc7c6c5c,trash,"[2, 3]",20100.0,201.0
+562,ed5dd257c1ef31e7,3,5c3c,AsKhKcTs2h,trash,"[2, 1]",-10000.0,-100.0
+563,ed5dd257c1ef31e7,2,8s7c,KsQd9s9h6d,trash,"[4, 1, 1]",-10000.0,-100.0
+564,ed5dd257c1ef31e7,1,Jc9h,AsAd8c5h3h,trash,[3],-10000.0,-100.0
+565,ed5dd257c1ef31e7,0,5s3c,AsKsQcTh5c,trash,[3],10100.0,101.0
+566,ed5dd257c1ef31e7,4,2s2d,Qd8h7h4s4h,trash,[3],10150.0,101.5
+567,ed5dd257c1ef31e7,3,Tc4d,AdJs8s6d4s,trash,"[4, 2, 1]",20888.0,208.88
+568,ed5dd257c1ef31e7,2,7c6s,AhKsQsQcTh,trash,[0],0.0,0.0
+569,ed5dd257c1ef31e7,1,Qd4h,8c7c5c2s2d,trash,"[1, 3]",-10000.0,-100.0
+570,ed5dd257c1ef31e7,0,5c2h,AsJcTh8d6c,trash,[3],-10000.0,-100.0
+571,ed5dd257c1ef31e7,4,Js9d,Kc9h7c5c2d,trash,"[1, 2, 3]",22100.0,221.0
+572,ed5dd257c1ef31e7,3,Qh3d,AsTs8h5c2h,trash,[3],-10000.0,-100.0
+573,ed5dd257c1ef31e7,2,Ad4h,9h5d3s2d2c,trash,[3],-10000.0,-100.0
+574,ed5dd257c1ef31e7,1,Tc6c,KsQs9s5d3d,trash,[3],-10000.0,-100.0
+575,ed5dd257c1ef31e7,0,KsTh,8s7h7d6c3c,marginal,[3],-10000.0,-100.0
+576,ed5dd257c1ef31e7,4,Td3h,AhJsJhTh9s,trash,"[1, 2, 1, 3]",28500.0,285.0
+577,ed5dd257c1ef31e7,3,8c6h,Jc9s6d4c3c,trash,"[2, 3]",-10000.0,-100.0
+578,ed5dd257c1ef31e7,2,Ac8d,Qd9c6d5s5c,trash,"[1, 1]",-10000.0,-100.0
+579,ed5dd257c1ef31e7,1,5s3d,QcJhTc7c4c,trash,"[2, 3]",-10000.0,-100.0
+580,ed5dd257c1ef31e7,0,AsTc,Ks9h7d5h4h,marginal,[3],-10000.0,-100.0
+581,ed5dd257c1ef31e7,4,Ah8h,Jc8c4s2d2c,trash,"[1, 3]",10200.0,102.0
+582,ed5dd257c1ef31e7,3,Jc2s,KcQhQdQcTd,trash,[3],-10000.0,-100.0
+583,ed5dd257c1ef31e7,2,6h4c,AsAh8d5c4d,trash,[3],20100.0,201.0
+584,ed5dd257c1ef31e7,1,6c2c,Ah7s5d4s4c,trash,[3],-10000.0,-100.0
+585,ed5dd257c1ef31e7,0,8h8c,JhJc5h5d2s,marginal,"[2, 2, 3]",17000.0,170.0
+586,ed5dd257c1ef31e7,4,7c5s,JsTc4c3s2c,trash,[3],-10000.0,-100.0
+587,ed5dd257c1ef31e7,3,7h3d,KsQdQc2s2d,trash,[3],-10000.0,-100.0
+588,ed5dd257c1ef31e7,2,Jd7h,Qh6c3s3d2s,trash,"[2, 3]",10100.0,101.0
+589,ed5dd257c1ef31e7,1,Kd4s,QsJcTs5d2c,trash,"[2, 1, 3]",-10000.0,-100.0
+590,ed5dd257c1ef31e7,0,KdQh,KsJsTc7s2s,marginal,[3],-10000.0,-100.0
+591,ed5dd257c1ef31e7,4,QcJs,AhQd8h7h6d,marginal,"[1, 1, 1, 3]",-10000.0,-100.0
+592,ed5dd257c1ef31e7,3,9c2h,Td9d7d5c2d,trash,[3],20100.0,201.0
+593,ed5dd257c1ef31e7,2,QdTc,JsTs9d3d2s,marginal,[3],-10000.0,-100.0
+594,ed5dd257c1ef31e7,1,7d4d,Qc7s7h5h2h,trash,[3],20450.0,204.5
+595,ed5dd257c1ef31e7,0,As6d,9c7h5c4s4c,trash,"[2, 1]",7025.0,70.25
+596,ed5dd257c1ef31e7,4,Tc4c,JcTd6s5d2d,trash,[3],10925.0,109.25
+597,ed5dd257c1ef31e7,3,6h5h,KhJd9h7d2c,trash,"[2, 1, 1, 3]",300.0,3.0
+598,ed5dd257c1ef31e7,2,8c3h,AsTs5h2d2c,trash,[3],-10000.0,-100.0
+599,ed5dd257c1ef31e7,1,Kd9h,QcTs9s8c5h,trash,"[2, 3]",-10000.0,-100.0
+600,ed5dd257c1ef31e7,0,8s3h,AsTs6c5s2s,trash,"[1, 3]",21900.0,219.0
+601,ed5dd257c1ef31e7,4,Qs4c,AdQh9s8d7h,trash,[3],20100.0,201.0
+602,ed5dd257c1ef31e7,3,AsTc,9s7h7d6d4h,marginal,"[4, 3]",-10000.0,-100.0
+603,ed5dd257c1ef31e7,2,JdTc,Js8s8d7s3h,trash,"[1, 3]",-10000.0,-100.0
+604,ed5dd257c1ef31e7,1,AhJs,KdJd4s2s2h,marginal,"[4, 1]",-10000.0,-100.0
+605,ed5dd257c1ef31e7,0,8s3d,QhQdJs2h2d,trash,[3],-10000.0,-100.0
+606,ed5dd257c1ef31e7,4,7s5d,Qd8h7d4d2h,trash,"[1, 2, 3]",-10000.0,-100.0
+607,ed5dd257c1ef31e7,3,KdQc,AhTh9c4d4c,marginal,"[2, 1, 3]",26000.0,260.0
+608,ed5dd257c1ef31e7,2,Js5s,AhJcTd2h,trash,"[4, 2, 3]",975.0,9.75
+609,ed5dd257c1ef31e7,1,8s3s,QhQd9s6c4h,trash,"[2, 1]",19000.0,190.0
+610,ed5dd257c1ef31e7,0,Kd3s,7c6s5s2d2c,trash,"[2, 3]",-10000.0,-100.0
+611,ed5dd257c1ef31e7,4,AhQs,,marginal,"[2, 0]",-350.0,-3.5
+612,ed5dd257c1ef31e7,3,Td6c,KdQd6h6d5c,trash,[3],20100.0,201.0
+613,ed5dd257c1ef31e7,2,Ad3s,KsQcJc9d5s,trash,"[2, 3]",-10000.0,-100.0
+614,ed5dd257c1ef31e7,1,5h3d,AdKsKd5d2s,trash,[3],10050.0,100.5
+615,ed5dd257c1ef31e7,0,8h3s,Ah9c8s8d2d,trash,"[2, 3]",11300.0,113.0
+616,ed5dd257c1ef31e7,4,Tc4c,KhJhJd4h2d,trash,"[4, 3]",30000.0,300.0
+617,ed5dd257c1ef31e7,3,8c3s,QsJs8h5s2s,trash,"[2, 1, 3]",-10000.0,-100.0
+618,ed5dd257c1ef31e7,2,KdJs,Kh8h8c6c5s,marginal,[3],-10000.0,-100.0
+619,ed5dd257c1ef31e7,1,5h3d,Jc7h6s5s3h,trash,"[2, 3]",-10000.0,-100.0
+620,ed5dd257c1ef31e7,0,Kh3c,QdJhTd8h2h,trash,[3],-10000.0,-100.0
+621,ed5dd257c1ef31e7,4,Ts2s,JsJd9c7s5h,trash,[3],-10000.0,-100.0
+622,ed5dd257c1ef31e7,3,9s4d,Js9c8h5h,trash,[0],0.0,0.0
+623,ed5dd257c1ef31e7,2,Td9h,QdJdJc4c2s,trash,[3],-10000.0,-100.0
+624,ed5dd257c1ef31e7,1,Th6h,QhQcTc8d3c,trash,"[2, 3]",10225.0,102.25
+625,ed5dd257c1ef31e7,0,Js5s,AdAc6d5h3d,trash,"[2, 3]",10400.0,104.0
+626,ed5dd257c1ef31e7,4,9s3d,KsKhTdTc7h,trash,[3],-10000.0,-100.0
+627,ed5dd257c1ef31e7,3,9h5h,QsTh9c8s7h,trash,"[1, 1]",-10000.0,-100.0
+628,ed5dd257c1ef31e7,2,Ac6d,AsKs8h4h3c,trash,"[2, 1]",-10000.0,-100.0
+629,ed5dd257c1ef31e7,1,Ks2h,AdKcTh9h6c,trash,[3],-10000.0,-100.0
+630,ed5dd257c1ef31e7,0,6c4h,QsJdTc7h5d,trash,"[1, 3]",-10000.0,-100.0
+631,ed5dd257c1ef31e7,4,Th4c,AdKdQd7s4s,trash,"[1, 3]",-10000.0,-100.0
+632,ed5dd257c1ef31e7,3,Qh4h,KdJs5d4s3h,trash,[3],-10000.0,-100.0
+633,ed5dd257c1ef31e7,2,6d3h,QdJdTs7c5h,trash,"[1, 3]",-10000.0,-100.0
+634,ed5dd257c1ef31e7,1,8d2h,KhQs4h3d2s,trash,[3],-10000.0,-100.0
+635,ed5dd257c1ef31e7,0,4h2h,KsJhTd8d8c,trash,[3],-10000.0,-100.0
+636,ed5dd257c1ef31e7,4,Th6d,KsKc8h4s3h,trash,[0],0.0,0.0
+637,ed5dd257c1ef31e7,3,Kc9d,KhTc8c6h6c,trash,"[2, 3]",-10000.0,-100.0
+638,ed5dd257c1ef31e7,2,KhQs,9h5d3h2s2d,marginal,"[1, 1, 3]",-10000.0,-100.0
+639,ed5dd257c1ef31e7,1,Ad4c,JsTd9d3h3c,trash,[3],-10000.0,-100.0
+640,ed5dd257c1ef31e7,0,Kc5s,KhJc8s6s5d,trash,[3],-10000.0,-100.0
+641,ed5dd257c1ef31e7,4,Kc7d,Ac9s7s6s2h,trash,[1],-10000.0,-100.0
+642,ed5dd257c1ef31e7,3,KdQc,AcQhQdJdJc,marginal,[3],10500.0,105.0
+643,ed5dd257c1ef31e7,2,Js5d,Td9c5h3c2c,trash,"[2, 3]",-10000.0,-100.0
+644,ed5dd257c1ef31e7,1,9h5s,KsKd7c6s4d,trash,"[2, 1]",-10000.0,-100.0
+645,ed5dd257c1ef31e7,0,Jc3c,Qs6d5h4h2h,trash,"[1, 3]",20000.0,200.0
+646,ed5dd257c1ef31e7,4,Tc7c,Kc9s5s5d5c,trash,"[2, 1, 3]",-10000.0,-100.0
+647,ed5dd257c1ef31e7,3,Kc6h,AcQs7h4s3d,trash,"[1, 1, 1]",-10000.0,-100.0
+648,ed5dd257c1ef31e7,2,AdQd,AhJh7h5h2d,marginal,[3],10100.0,101.0
+649,ed5dd257c1ef31e7,1,9s6d,Kc7d7c5d3d,trash,"[1, 3]",-10000.0,-100.0
+650,ed5dd257c1ef31e7,0,Ac3s,Jd9h8h2d2c,trash,"[1, 2, 3]",-10000.0,-100.0
+651,ed5dd257c1ef31e7,4,ThTc,AsQdJd7c4c,marginal,"[1, 3]",-10000.0,-100.0
+652,ed5dd257c1ef31e7,3,6s4d,Ts9s8d7h7c,trash,"[1, 2, 3]",-10000.0,-100.0
+653,ed5dd257c1ef31e7,2,Th5c,Ks7s5s5h4s,trash,"[1, 1]",-10000.0,-100.0
+654,ed5dd257c1ef31e7,1,Tc7d,JsThTd5s3h,trash,[3],10400.0,104.0
+655,ed5dd257c1ef31e7,0,Qc4h,Kd6d2s2h2c,trash,"[1, 2, 1, 3]",-10000.0,-100.0
+656,ed5dd257c1ef31e7,4,6h2c,KhQc8d6s5h,trash,"[2, 1]",-10000.0,-100.0
+657,ed5dd257c1ef31e7,3,3s2s,KcQhQc8s7h,trash,"[4, 3]",-10000.0,-100.0
+658,ed5dd257c1ef31e7,2,4c2d,Kc8c7s5d3s,trash,[0],0.0,0.0
+659,ed5dd257c1ef31e7,1,9h7d,AdKsJsTs2h,trash,"[1, 3]",-10000.0,-100.0
+660,ed5dd257c1ef31e7,0,Ah4h,KsQh9s3s3c,trash,[3],-10000.0,-100.0
+661,ed5dd257c1ef31e7,4,Ah4s,AcQsQc8h3c,trash,"[2, 3]",10100.0,101.0
+662,ed5dd257c1ef31e7,3,Qh2d,AdAc7d4s3s,trash,"[2, 2, 3]",-10000.0,-100.0
+663,ed5dd257c1ef31e7,2,Ah4h,QhJsJhTh2c,trash,[3],10050.0,100.5
+664,ed5dd257c1ef31e7,1,Qh3h,Ks9s6h4h3s,trash,"[1, 3]",-10000.0,-100.0
+665,ed5dd257c1ef31e7,0,Kc5d,QhTc9h2h2d,trash,"[1, 1, 2, 3]",-10000.0,-100.0
+666,ed5dd257c1ef31e7,4,Ks6c,,trash,[3],700.0,7.0
+667,ed5dd257c1ef31e7,3,Qs6h,KsQcJd9h5d,trash,[0],0.0,0.0
+668,ed5dd257c1ef31e7,2,Kh4h,AsQd8s8h5c,trash,"[2, 1, 3]",-10000.0,-100.0
+669,ed5dd257c1ef31e7,1,JdTh,Jh9d6c5d5c,trash,"[1, 2, 1]",-10000.0,-100.0
+670,ed5dd257c1ef31e7,0,Ah9c,KsTc9s9h5c,trash,[3],20100.0,201.0
+671,ed5dd257c1ef31e7,4,5h3c,7h6s6d4h2s,trash,[1],30050.0,300.5
+672,ed5dd257c1ef31e7,3,6s3d,,trash,[3],250.0,2.5
+673,ed5dd257c1ef31e7,2,8c7c,QcTs5d2d2c,marginal,[3],-10000.0,-100.0
+674,ed5dd257c1ef31e7,1,As5d,KdQs6d4s2c,trash,[3],-10000.0,-100.0
+675,ed5dd257c1ef31e7,0,Ah7s,AdQdQc7c2h,trash,[3],20450.0,204.5
+676,ed5dd257c1ef31e7,4,Ah6s,Jd9s9c8c4d,trash,[3],30100.0,301.0
+677,ed5dd257c1ef31e7,3,QcJs,KcTh9h4d2h,marginal,[0],0.0,0.0
+678,ed5dd257c1ef31e7,2,Kh7c,KcTc9h9c6s,trash,[0],0.0,0.0
+679,ed5dd257c1ef31e7,1,8h5s,AdQhTs8c4h,trash,"[2, 3]",-10000.0,-100.0
+680,ed5dd257c1ef31e7,0,Td8s,Ks9h6s4d2s,trash,[3],-10000.0,-100.0
+681,ed5dd257c1ef31e7,4,3d2d,9s7s5d3h2h,trash,[3],20100.0,201.0
+682,ed5dd257c1ef31e7,3,Jd4d,Ac8s7h2s2h,trash,[3],-10000.0,-100.0
+683,ed5dd257c1ef31e7,2,TsTc,KcJd8d4h4d,marginal,"[2, 1, 1]",-10000.0,-100.0
+684,ed5dd257c1ef31e7,1,9c3s,Jh8h8d7c6s,trash,[3],-10000.0,-100.0
+685,ed5dd257c1ef31e7,0,KhJd,Jc8s8c6h5h,marginal,"[4, 2, 3]",16000.0,160.0
+686,ed5dd257c1ef31e7,4,JdTc,Qh7d6h3s2c,trash,"[1, 2, 1]",-10000.0,-100.0
+687,ed5dd257c1ef31e7,3,7d2c,AsQhJs4h3h,trash,[3],-10000.0,-100.0
+688,ed5dd257c1ef31e7,2,QdTs,AsAdKhKd5d,marginal,[3],-10000.0,-100.0
+689,ed5dd257c1ef31e7,1,Td4h,Tc7c6h5h3d,trash,"[2, 1]",21100.0,211.0
+690,ed5dd257c1ef31e7,0,9c5s,AcKhJh5h2d,trash,[1],10100.0,101.0
+691,ed5dd257c1ef31e7,4,9s5c,QsQdJc9c6h,trash,"[4, 3]",-10000.0,-100.0
+692,ed5dd257c1ef31e7,3,Kd8s,KhQdTc4c2d,trash,"[2, 3]",20150.0,201.5
+693,ed5dd257c1ef31e7,2,Ks9d,KcTs7c6d4h,trash,[3],30000.0,300.0
+694,ed5dd257c1ef31e7,1,As6c,Ts7h6s6d3c,trash,"[2, 3]",20050.0,200.5
+695,ed5dd257c1ef31e7,0,5h2h,,trash,[3],300.0,3.0
+696,ed5dd257c1ef31e7,4,Ks5d,AhAc9d9c6h,trash,"[2, 1, 1]",-10000.0,-100.0
+697,ed5dd257c1ef31e7,3,Tc3c,As8d4c3s2h,trash,"[2, 3]",-10000.0,-100.0
+698,ed5dd257c1ef31e7,2,Tc2h,KcThTd4s4c,trash,"[2, 0]",-350.0,-3.5
+699,ed5dd257c1ef31e7,1,KsQh,QcTc9s9h9c,marginal,"[2, 3]",11550.0,115.5
+700,ed5dd257c1ef31e7,0,Qs3h,Td6h5d5c2h,trash,[3],-10000.0,-100.0
+701,ed5dd257c1ef31e7,4,3s3d,QcJdTc7c5h,trash,[3],-10000.0,-100.0
+702,ed5dd257c1ef31e7,3,5s3s,Tc8s7h7c6c,trash,[3],-10000.0,-100.0
+703,ed5dd257c1ef31e7,2,Ks5h,KcTh9h6d4h,trash,"[2, 1, 1]",24150.0,241.5
+704,ed5dd257c1ef31e7,1,AcKs,KhJsJhTh6d,premium,[3],10225.0,102.25
+705,ed5dd257c1ef31e7,0,2s2c,JsJcTc8h7h,trash,"[2, 3]",-10000.0,-100.0
+706,ed5dd257c1ef31e7,4,5h5c,AcQsQd6c4h,trash,[0],0.0,0.0
+707,ed5dd257c1ef31e7,3,5c4h,KsKhQh9c4s,trash,"[4, 3]",5050.0,50.5
+708,ed5dd257c1ef31e7,2,3d3c,JhTc9c7d5h,trash,[3],-10000.0,-100.0
+709,ed5dd257c1ef31e7,1,4c2s,AcQh9d8s5c,trash,[3],-10000.0,-100.0
+710,ed5dd257c1ef31e7,0,5h4c,KsKdTsTc5c,trash,"[4, 3]",-10000.0,-100.0
+711,ed5dd257c1ef31e7,4,KhQc,JcTdTc7s2s,marginal,"[2, 3]",-10000.0,-100.0
+712,ed5dd257c1ef31e7,3,7h5h,JsThTd8h3c,trash,"[2, 3]",-10000.0,-100.0
+713,ed5dd257c1ef31e7,2,Qc8d,QdTc8h5h4c,trash,[0],0.0,0.0
+714,ed5dd257c1ef31e7,1,Td3c,7h4s4h2s2d,trash,[3],-10000.0,-100.0
+715,ed5dd257c1ef31e7,0,Jh9c,QhTc6c3c2d,trash,"[2, 3]",-10000.0,-100.0
+716,ed5dd257c1ef31e7,4,Kd8d,8c7h6h6d4d,trash,"[1, 1]",-10000.0,-100.0
+717,ed5dd257c1ef31e7,3,8h7c,JsTsTd9d2s,trash,[3],10150.0,101.5
+718,ed5dd257c1ef31e7,2,6s5d,KdTc8d6d6c,trash,"[4, 0]",-225.0,-2.25
+719,ed5dd257c1ef31e7,1,Ac8h,Ad9d7d6s2c,trash,"[2, 1]",-10000.0,-100.0
+720,ed5dd257c1ef31e7,0,Qd8s,AsAdKhJd8h,trash,[3],-10000.0,-100.0
+721,ed5dd257c1ef31e7,4,Ks5h,Qs8d7d3h3d,trash,[3],-10000.0,-100.0
+722,ed5dd257c1ef31e7,3,5s3h,AhAdJd9h2c,trash,"[1, 2, 1]",-10000.0,-100.0
+723,ed5dd257c1ef31e7,2,AhQc,As9h6s5h3d,marginal,"[1, 3]",-10000.0,-100.0
+724,ed5dd257c1ef31e7,1,AsAc,AdKsQh9d4s,premium,[1],30050.0,300.5
+725,ed5dd257c1ef31e7,0,AsQh,Ks9h9d6s2s,marginal,[3],-10000.0,-100.0
+726,ed5dd257c1ef31e7,4,Kh2h,AhKs9h8d4h,trash,"[2, 1]",20100.0,201.0
+727,ed5dd257c1ef31e7,3,JhTh,Ts9c7s3s2h,marginal,[3],-10000.0,-100.0
+728,ed5dd257c1ef31e7,2,7h3h,Qs9d7s6c3c,trash,"[1, 1, 1]",20050.0,200.5
+729,ed5dd257c1ef31e7,1,8c5d,QsTd9s9c6c,trash,"[1, 1]",-10000.0,-100.0
+730,ed5dd257c1ef31e7,0,6d5h,Th8d7s2s2h,trash,[3],-10000.0,-100.0
+731,ed5dd257c1ef31e7,4,Ks6d,9h8s7c4c3c,trash,"[1, 2, 3]",15050.0,150.5
+732,ed5dd257c1ef31e7,3,9s7h,KdTs6d4s3c,trash,"[2, 1, 1, 1]",-10000.0,-100.0
+733,ed5dd257c1ef31e7,2,9d8s,9c6s5d3s2s,trash,"[1, 1, 3]",-10000.0,-100.0
+734,ed5dd257c1ef31e7,1,Kc8h,,trash,[0],-100.0,-1.0
+735,ed5dd257c1ef31e7,0,As6d,KhQs9s7s5c,trash,[1],-10000.0,-100.0
+736,ed5dd257c1ef31e7,4,Jh2c,AsQc6d6c5s,trash,"[1, 4, 3]",-10000.0,-100.0
+737,ed5dd257c1ef31e7,3,Kh5s,KsJcTc7d6h,trash,"[1, 2, 3]",10150.0,101.5
+738,ed5dd257c1ef31e7,2,Th4s,AdKsQd7s4h,trash,"[4, 2, 1]",5075.0,50.75
+739,ed5dd257c1ef31e7,1,Kh5s,Ah9h4c3s3c,trash,[3],-10000.0,-100.0
+740,ed5dd257c1ef31e7,0,Ks2c,9d8c7h7d3c,trash,[3],-10000.0,-100.0
+741,ed5dd257c1ef31e7,4,7h6h,QsQdTs9s7s,trash,"[2, 1]",10550.0,105.5
+742,ed5dd257c1ef31e7,3,9h5c,AsKcQh8s7d,trash,"[2, 1, 2, 1]",-10000.0,-100.0
+743,ed5dd257c1ef31e7,2,AdTs,KhQc7d4s2h,marginal,"[2, 2, 1, 2]",-6100.0,-61.0
+744,ed5dd257c1ef31e7,1,6c3s,Td8s8d8c4h,trash,[3],-10000.0,-100.0
+745,ed5dd257c1ef31e7,0,9c2s,AsJd6h,trash,"[1, 3]",200.0,2.0
+746,ed5dd257c1ef31e7,4,8s5c,Ah4s4h,trash,"[1, 2, 3]",3400.0,34.0
+747,ed5dd257c1ef31e7,3,6s3c,Kh8c7d4c3s,trash,[0],0.0,0.0
+748,ed5dd257c1ef31e7,2,7h2s,KhJh9d8d2c,trash,[0],0.0,0.0
+749,ed5dd257c1ef31e7,1,Kd2s,7h6s5d3c2h,trash,[3],-10000.0,-100.0
+750,ed5dd257c1ef31e7,0,5d4c,9s9h8s6s2h,trash,"[1, 3]",-10000.0,-100.0
+751,ed5dd257c1ef31e7,4,KcQd,9c8s8h7d4c,marginal,[3],-10000.0,-100.0
+752,ed5dd257c1ef31e7,3,6d6c,KcQd9c8s5h,trash,"[2, 3]",-10000.0,-100.0
+753,ed5dd257c1ef31e7,2,8s7d,AdTs7c5c2h,trash,"[2, 3]",21200.0,212.0
+754,ed5dd257c1ef31e7,1,5h2d,9h8s7d4d2c,trash,"[1, 3]",-10000.0,-100.0
+755,ed5dd257c1ef31e7,0,Kh4d,9d7h5s3h2h,trash,"[4, 4, 2, 3]",-10000.0,-100.0
+756,ed5dd257c1ef31e7,4,7d2s,QdJs8d7s4c,trash,[3],-10000.0,-100.0
+757,ed5dd257c1ef31e7,3,Jd4s,Kh9c7s5c2c,trash,[0],0.0,0.0
+758,ed5dd257c1ef31e7,2,8h2d,KdTd7c6c3s,trash,[3],-10000.0,-100.0
+759,ed5dd257c1ef31e7,1,Ts3c,Ad9h8s4s2d,trash,[3],-10000.0,-100.0
+760,ed5dd257c1ef31e7,0,Td2s,AcKhTh5c2c,trash,"[1, 1]",40000.0,400.0
+761,ed5dd257c1ef31e7,4,Kd2s,QcJd5h3d3c,trash,"[2, 2, 3]",-10000.0,-100.0
+762,ed5dd257c1ef31e7,3,Kh2s,AhTd7h6c2d,trash,"[4, 3]",-10000.0,-100.0
+763,ed5dd257c1ef31e7,2,Ad9c,AcKhJdTd4s,trash,"[2, 2, 3]",-10000.0,-100.0
+764,ed5dd257c1ef31e7,1,9h3s,AdJd6h5h3c,trash,"[2, 3]",21700.0,217.0
+765,ed5dd257c1ef31e7,0,9c3s,AhKs7d7c6h,trash,[1],10100.0,101.0
+766,ed5dd257c1ef31e7,4,Jh2d,KhJc8d6c4c,trash,[3],-10000.0,-100.0
+767,ed5dd257c1ef31e7,3,Tc4d,AdTs4h3d2h,trash,"[1, 2, 3]",28900.0,289.0
+768,ed5dd257c1ef31e7,2,Jd6h,Td9h9d8c2h,trash,"[4, 4, 3]",-10000.0,-100.0
+769,ed5dd257c1ef31e7,1,9s6c,KsQd9c6h5d,trash,"[1, 1, 3]",21500.0,215.0
+770,ed5dd257c1ef31e7,0,Ad9s,9d9c7h5c3d,trash,"[1, 3]",20000.0,200.0
+771,ed5dd257c1ef31e7,4,Kh7c,AsAdJdJc3s,trash,"[2, 1]",-10000.0,-100.0
+772,ed5dd257c1ef31e7,3,Kd6c,7c6s5d5c2c,trash,"[2, 1]",-10000.0,-100.0
+773,ed5dd257c1ef31e7,2,Jc2c,9d8h7d7c4c,trash,"[2, 1]",-10000.0,-100.0
+774,ed5dd257c1ef31e7,1,Kh9c,AhAc3s2h2d,trash,"[2, 3]",5025.0,50.25
+775,ed5dd257c1ef31e7,0,Tc7h,Kc7s7c4h2s,trash,[3],20100.0,201.0
+776,ed5dd257c1ef31e7,4,Kh4c,Jd7s7h7c6h,trash,[3],20100.0,201.0
+777,ed5dd257c1ef31e7,3,QcTd,AcQhTs3d2d,marginal,[3],-10000.0,-100.0
+778,ed5dd257c1ef31e7,2,9h2s,Td9d7h7c5s,trash,"[4, 3]",-10000.0,-100.0
+779,ed5dd257c1ef31e7,1,9c5s,KcQsTh3h3d,trash,[3],-10000.0,-100.0
+780,ed5dd257c1ef31e7,0,6h5d,AsAhQsJs7s,trash,[3],-10000.0,-100.0
+781,ed5dd257c1ef31e7,4,KdJh,Tc8c6s3h3d,marginal,"[1, 2, 3]",-10000.0,-100.0
+782,ed5dd257c1ef31e7,3,7h3c,7d5d5c3h2h,trash,"[2, 1]",21200.0,212.0
+783,ed5dd257c1ef31e7,2,2s2h,AhAcJd9c3h,trash,"[1, 3]",-10000.0,-100.0
+784,ed5dd257c1ef31e7,1,Ks7h,AdQh8s7d3s,trash,[3],10100.0,101.0
+785,ed5dd257c1ef31e7,0,7c3s,Ts9h7h7d6d,trash,[3],-10000.0,-100.0
+786,ed5dd257c1ef31e7,4,Ah7c,Kh9h8d5s2s,trash,"[4, 3]",-10000.0,-100.0
+787,ed5dd257c1ef31e7,3,Qc7d,Ks6d4c3h2s,trash,[3],-10000.0,-100.0
+788,ed5dd257c1ef31e7,2,Kc7h,QcTh5h3s3c,trash,[3],-10000.0,-100.0
+789,ed5dd257c1ef31e7,1,Jh9s,QhJs7d6d6c,trash,"[4, 3]",10250.0,102.5
+790,ed5dd257c1ef31e7,0,9h3h,QsQhQc8s8h,trash,"[2, 1]",0.0,0.0
+791,ed5dd257c1ef31e7,4,Qc6c,Qd9d6d5d4s,trash,"[2, 3]",-10000.0,-100.0
+792,ed5dd257c1ef31e7,3,4h2d,Th8h6s5s5h,trash,"[2, 3]",-10000.0,-100.0
+793,ed5dd257c1ef31e7,2,7s2h,KsTc8h6d4d,trash,[0],0.0,0.0
+794,ed5dd257c1ef31e7,1,8c2c,QhJc9d5d2s,trash,"[1, 3]",-10000.0,-100.0
+795,ed5dd257c1ef31e7,0,9h2d,KcQdQc6c4d,trash,[3],-10000.0,-100.0
+796,ed5dd257c1ef31e7,4,Td7c,8s8c7s6h4c,trash,"[4, 3]",-10000.0,-100.0
+797,ed5dd257c1ef31e7,3,8s8h,KcQd7s6c5d,marginal,"[2, 3]",20050.0,200.5
+798,ed5dd257c1ef31e7,2,Kc6h,AsAd8s8h5h,trash,[3],-10000.0,-100.0
+799,ed5dd257c1ef31e7,1,Ad8s,AhTd6h5c4d,trash,[3],10150.0,101.5
+800,ed5dd257c1ef31e7,0,8d5c,AsJsJc4s4h,trash,"[2, 1]",-10000.0,-100.0
+801,ed5dd257c1ef31e7,4,Tc2h,Jd9c7d6d2d,trash,"[1, 3]",10150.0,101.5
+802,ed5dd257c1ef31e7,3,Qc4s,QhTs8d8c4d,trash,[3],20100.0,201.0
+803,ed5dd257c1ef31e7,2,7h3s,AdKhKc9h7d,trash,[3],10150.0,101.5
+804,ed5dd257c1ef31e7,1,Ac9h,AdQhJc4c3s,trash,[3],10400.0,104.0
+805,ed5dd257c1ef31e7,0,Js7d,Qh5s5c4s3d,trash,"[1, 1]",-10000.0,-100.0
+806,ed5dd257c1ef31e7,4,As6h,6c5d3h3c2d,trash,"[1, 3]",-10000.0,-100.0
+807,ed5dd257c1ef31e7,3,6s5s,AcJsTh4c,trash,"[4, 0]",-225.0,-2.25
+808,ed5dd257c1ef31e7,2,Ks3d,QsTh9h9c7d,trash,"[1, 3]",-10000.0,-100.0
+809,ed5dd257c1ef31e7,1,Td3c,JsJdTs9d8h,trash,"[1, 3]",30000.0,300.0
+810,ed5dd257c1ef31e7,0,KsJh,AdKd7d6d4s,marginal,"[2, 1, 3]",10100.0,101.0
+811,ed5dd257c1ef31e7,4,6h3h,Ts9s9d8s7c,trash,[3],-10000.0,-100.0
+812,ed5dd257c1ef31e7,3,Ac6d,QdTs9s8h7s,trash,"[2, 1]",-10000.0,-100.0
+813,ed5dd257c1ef31e7,2,Qs6d,KsJd8c7d4c,trash,[3],-10000.0,-100.0
+814,ed5dd257c1ef31e7,1,Ad3h,AcQc8s6c5c,trash,[3],-10000.0,-100.0
+815,ed5dd257c1ef31e7,0,Qh4c,KhQd8s6s2s,trash,"[2, 3]",5000.0,50.0
+816,ed5dd257c1ef31e7,4,6d5c,AcJc4s4d2h,trash,[3],-10000.0,-100.0
+817,ed5dd257c1ef31e7,3,7c2h,AhQs7s4d3h,trash,"[4, 2, 3]",14000.0,140.0
+818,ed5dd257c1ef31e7,2,7h2d,KsQc6d5c2c,trash,[3],-10000.0,-100.0
+819,ed5dd257c1ef31e7,1,Ad4d,Kd9d8s8h2s,trash,"[2, 3]",20050.0,200.5
+820,ed5dd257c1ef31e7,0,6s6h,AsJh7d7c5c,trash,[3],-10000.0,-100.0
+821,ed5dd257c1ef31e7,4,8h3d,KhKd5h3h2s,trash,[0],0.0,0.0
+822,ed5dd257c1ef31e7,3,Tc5c,AhAcTd4c2d,trash,[3],10150.0,101.5
+823,ed5dd257c1ef31e7,2,9c7d,JsJc9h8d5h,trash,[3],10150.0,101.5
+824,ed5dd257c1ef31e7,1,Ad8h,9d7s7d4s2s,trash,"[2, 3]",25950.0,259.5
+825,ed5dd257c1ef31e7,0,Ts2d,KsKh9s6c5h,trash,[3],-10000.0,-100.0
+826,ed5dd257c1ef31e7,4,7h3s,AdJh9c5c2d,trash,[0],0.0,0.0
+827,ed5dd257c1ef31e7,3,KsKc,QdQcJs9d7d,premium,"[2, 3]",-10000.0,-100.0
+828,ed5dd257c1ef31e7,2,4c2s,AdAc9d6d2d,trash,[3],-10000.0,-100.0
+829,ed5dd257c1ef31e7,1,Qc6d,Kc9s4c3d3c,trash,"[2, 3]",-10000.0,-100.0
+830,ed5dd257c1ef31e7,0,9s5d,KsQs8d3d2h,trash,[3],-10000.0,-100.0
+831,ed5dd257c1ef31e7,4,Kh9c,Td8s7d4d3s,trash,[3],-10000.0,-100.0
+832,ed5dd257c1ef31e7,3,Tc7h,Th5h5d3d2d,trash,"[1, 3]",-10000.0,-100.0
+833,ed5dd257c1ef31e7,2,8d2h,AcQdJd4s3c,trash,"[1, 3]",-10000.0,-100.0
+834,ed5dd257c1ef31e7,1,9d7h,AdKsQd8h6h,trash,"[2, 1]",-10000.0,-100.0
+835,ed5dd257c1ef31e7,0,Jc8h,AsQsQc9d3s,trash,[3],-10000.0,-100.0
+836,ed5dd257c1ef31e7,4,4d2h,QcJd9h8s2c,trash,"[2, 2, 3]",-10000.0,-100.0
+837,ed5dd257c1ef31e7,3,8s8d,,marginal,"[2, 0]",-350.0,-3.5
+838,ed5dd257c1ef31e7,2,8c2s,JsJc7h5d2h,trash,"[1, 1, 2, 3]",20150.0,201.5
+839,ed5dd257c1ef31e7,1,Jc8c,KdJh9c7d4s,trash,"[2, 3]",-10000.0,-100.0
+840,ed5dd257c1ef31e7,0,KdQs,As8c7d5c3d,marginal,"[1, 3]",-10000.0,-100.0
+841,ed5dd257c1ef31e7,4,8c7h,QcTd8s5s5c,trash,"[2, 3]",-10000.0,-100.0
+842,ed5dd257c1ef31e7,3,AsQd,Ks9d8h5c2s,marginal,"[4, 3]",-10000.0,-100.0
+843,ed5dd257c1ef31e7,2,8c3d,AdKd5d3c2h,trash,"[4, 0]",-225.0,-2.25
+844,ed5dd257c1ef31e7,1,9s8s,JhJd9h5s2c,marginal,[3],5075.0,50.75
+845,ed5dd257c1ef31e7,0,Kc4h,Th8s8h4d3c,trash,"[1, 2, 3]",12000.0,120.0
+846,ed5dd257c1ef31e7,4,Jd9s,Ks7h5h4s3s,trash,"[1, 3]",-10000.0,-100.0
+847,ed5dd257c1ef31e7,3,AcJs,Td8h6s3d2s,marginal,"[1, 1]",-10000.0,-100.0
+848,ed5dd257c1ef31e7,2,Ad4d,ThTd9h6c3h,trash,[3],-10000.0,-100.0
+849,ed5dd257c1ef31e7,1,Th4h,AcQsQd8d2h,trash,"[2, 3]",-10000.0,-100.0
+850,ed5dd257c1ef31e7,0,Tc9h,QsJsTh9c5s,trash,[3],-10000.0,-100.0
+851,ed5dd257c1ef31e7,4,9s8s,KsQhJd6d3h,marginal,"[2, 3]",10000.0,100.0
+852,ed5dd257c1ef31e7,3,Ks8h,Ac7s5s3s2h,trash,"[1, 3]",10100.0,101.0
+853,ed5dd257c1ef31e7,2,3s2d,Qs7s4c2s2c,trash,"[4, 3]",20150.0,201.5
+854,ed5dd257c1ef31e7,1,Qh5c,Ac8s8c7s7h,trash,"[2, 0]",-1450.0,-14.5
+855,ed5dd257c1ef31e7,0,3d2h,KcJcTc3s3c,trash,[3],10100.0,101.0
+856,ed5dd257c1ef31e7,4,Qc5h,KdTc8h3d2d,trash,"[2, 2, 3]",-10000.0,-100.0
+857,ed5dd257c1ef31e7,3,Ah2c,Qd9d5h3s2h,trash,"[2, 3]",-10000.0,-100.0
+858,ed5dd257c1ef31e7,2,6d5d,KdJdTh7c3d,trash,"[1, 2, 3]",10700.0,107.0
+859,ed5dd257c1ef31e7,1,4s2s,,trash,[3],150.0,1.5
+860,ed5dd257c1ef31e7,0,Ad8c,Jc8s7h6s3c,trash,"[4, 1, 3]",-10000.0,-100.0
+861,ed5dd257c1ef31e7,4,Qd2s,Jh8d3s2h2c,trash,[3],10050.0,100.5
+862,ed5dd257c1ef31e7,3,Ac3d,AhJh9h9d4d,trash,"[1, 3]",5050.0,50.5
+863,ed5dd257c1ef31e7,2,Jd6h,KdQsQh9s7s,trash,"[1, 3]",-10000.0,-100.0
+864,ed5dd257c1ef31e7,1,Jh5d,KdTdTc7h6s,trash,[1],-10000.0,-100.0
+865,ed5dd257c1ef31e7,0,Qc4h,KsThTc9s3h,trash,[0],-50.0,-0.5
+866,ed5dd257c1ef31e7,4,Kc3h,Ts9c6h4d3c,trash,"[4, 1]",-10000.0,-100.0
+867,ed5dd257c1ef31e7,3,Th5s,JhJdJc4h3c,trash,"[2, 2, 3]",-10000.0,-100.0
+868,ed5dd257c1ef31e7,2,AhKs,KdJdJc7s5d,premium,"[2, 4, 2, 1]",7350.0,73.5
+869,ed5dd257c1ef31e7,1,8h7s,QsQhTh3d2h,trash,[1],-10000.0,-100.0
+870,ed5dd257c1ef31e7,0,Qh5s,KdTc8c3h2c,trash,[3],10200.0,102.0
+871,ed5dd257c1ef31e7,4,Jh8d,KhTs6h4c3d,trash,"[2, 3]",-10000.0,-100.0
+872,ed5dd257c1ef31e7,3,Jc5d,Kd9h7h6s5h,trash,[3],-10000.0,-100.0
+873,ed5dd257c1ef31e7,2,4h2d,Jh9h5h4c3s,trash,[3],20150.0,201.5
+874,ed5dd257c1ef31e7,1,9d3d,KdJd9h8d2c,trash,[3],20150.0,201.5
+875,ed5dd257c1ef31e7,0,Jh4d,Qh9h6d5h2c,trash,"[4, 1]",-10000.0,-100.0
+876,ed5dd257c1ef31e7,4,5d4s,QcJs6d5s2s,trash,"[1, 1, 3]",-10000.0,-100.0
+877,ed5dd257c1ef31e7,3,4c3s,KcTh6h6d2h,trash,"[2, 3]",-10000.0,-100.0
+878,ed5dd257c1ef31e7,2,Jc7h,AhAc9d8h4h,trash,[0],0.0,0.0
+879,ed5dd257c1ef31e7,1,9h8h,Kh7d7c6h2c,marginal,[1],-10000.0,-100.0
+880,ed5dd257c1ef31e7,0,Js8d,9d7c5s4c3c,trash,"[2, 2, 3]",-10000.0,-100.0
+881,ed5dd257c1ef31e7,4,KcJd,QcTs4h4c2c,marginal,"[2, 1]",-10000.0,-100.0
+882,ed5dd257c1ef31e7,3,8s2c,KdQcJd9h4d,trash,[0],0.0,0.0
+883,ed5dd257c1ef31e7,2,Td8s,KsKd7d6d5c,trash,[0],0.0,0.0
+884,ed5dd257c1ef31e7,1,7h3h,TsTd7c6h2c,trash,"[1, 1]",-10000.0,-100.0
+885,ed5dd257c1ef31e7,0,8s4c,AdTs9c4h2s,trash,[3],-10000.0,-100.0
+886,ed5dd257c1ef31e7,4,Td2d,Th7d6h6d2c,trash,"[1, 1, 3]",20500.0,205.0
+887,ed5dd257c1ef31e7,3,Ad5s,KcQhTs7c2d,trash,[3],-10000.0,-100.0
+888,ed5dd257c1ef31e7,2,Qc6h,KhThTd6d3c,trash,"[1, 2, 1, 3]",16100.0,161.0
+889,ed5dd257c1ef31e7,1,KsTs,AhKhQh6s6d,marginal,"[2, 2, 3]",17800.0,178.0
+890,ed5dd257c1ef31e7,0,Ad6s,KsQsTh3s3c,trash,"[2, 1, 3]",-10000.0,-100.0
+891,ed5dd257c1ef31e7,4,3c2d,AsQdTh6h5s,trash,[3],-10000.0,-100.0
+892,ed5dd257c1ef31e7,3,8s8h,AsTd8c7c5s,marginal,"[1, 3]",-10000.0,-100.0
+893,ed5dd257c1ef31e7,2,5d2h,KdQh9s9h4s,trash,[3],-10000.0,-100.0
+894,ed5dd257c1ef31e7,1,6d4c,8c5d4s3c2h,trash,[1],5000.0,50.0
+895,ed5dd257c1ef31e7,0,9c4h,AhKhJh8c7s,trash,"[2, 1]",-10000.0,-100.0
+896,ed5dd257c1ef31e7,4,Kh3d,KsJh7h4s4c,trash,[3],-10000.0,-100.0
+897,ed5dd257c1ef31e7,3,8c4c,QcJsTh9h2h,trash,[3],5050.0,50.5
+898,ed5dd257c1ef31e7,2,Ah4h,KcQs6d,trash,"[2, 3]",500.0,5.0
+899,ed5dd257c1ef31e7,1,5c4c,KsJdJcTd3c,trash,[3],-10000.0,-100.0
+900,ed5dd257c1ef31e7,0,Qs2d,AhQdThTc3d,trash,[3],30100.0,301.0
+901,ed5dd257c1ef31e7,4,3c2h,AcTh8s8c7c,trash,[3],137.5,1.375
+902,ed5dd257c1ef31e7,3,7c4s,8h6c5d5c3s,trash,[3],20150.0,201.5
+903,ed5dd257c1ef31e7,2,Ac2s,QdQcTs7c2h,trash,"[2, 4, 1]",-10000.0,-100.0
+904,ed5dd257c1ef31e7,1,Td7d,AsJh8s7s7h,trash,[3],10350.0,103.5
+905,ed5dd257c1ef31e7,0,5s2d,QdJhJc8c5c,trash,"[2, 1, 2, 3]",2000.0,20.0
+906,ed5dd257c1ef31e7,4,8s4c,JsJd8h7d6d,trash,"[2, 1, 3]",16100.0,161.0
+907,ed5dd257c1ef31e7,3,KsTc,Ts7c4d3s2h,marginal,[1],30100.0,301.0
+908,ed5dd257c1ef31e7,2,Ts7d,KdTd5c4c2c,trash,"[2, 1, 3]",20100.0,201.0
+909,ed5dd257c1ef31e7,1,9h4c,KcJd8d8c5h,trash,"[2, 1, 3]",-10000.0,-100.0
+910,ed5dd257c1ef31e7,0,Jh6h,Kh8c2d,trash,"[2, 3]",300.0,3.0
+911,ed5dd257c1ef31e7,4,4c2c,KdTd7c3h3d,trash,[0],0.0,0.0
+912,ed5dd257c1ef31e7,3,5s2s,7d6s5c3s3d,trash,"[4, 3]",-10000.0,-100.0
+913,ed5dd257c1ef31e7,2,8h7s,,trash,[0],0.0,0.0
+914,ed5dd257c1ef31e7,1,JsTd,As9h8h3s2c,trash,[3],-10000.0,-100.0
+915,ed5dd257c1ef31e7,0,6c3d,QsJs7d6d3c,trash,[1],20000.0,200.0
+916,ed5dd257c1ef31e7,4,Qc8c,AsQdTs7d7c,trash,"[2, 4, 3]",-10000.0,-100.0
+917,ed5dd257c1ef31e7,3,Js8h,Kh9c6h5s4h,trash,"[1, 4, 1]",-10000.0,-100.0
+918,ed5dd257c1ef31e7,2,Jc5s,AsKhQsTd3h,trash,[0],0.0,0.0
+919,ed5dd257c1ef31e7,1,Ad8c,KdQc9s6d4c,trash,[3],10400.0,104.0
+920,ed5dd257c1ef31e7,0,8c4d,AhKc7s7h3h,trash,"[2, 1]",-10000.0,-100.0
+921,ed5dd257c1ef31e7,4,Qc7s,QsJsJcTh7d,trash,[3],10050.0,100.5
+922,ed5dd257c1ef31e7,3,As7d,Ah9s9h8s6d,trash,"[4, 3]",212.5,2.125
+923,ed5dd257c1ef31e7,2,JsJd,Ts9c7h6d3c,premium,"[4, 1]",10150.0,101.5
+924,ed5dd257c1ef31e7,1,9h4c,Qs8s8c7s6c,trash,"[2, 1]",-10000.0,-100.0
+925,ed5dd257c1ef31e7,0,6h2h,QcJhTc5s5h,trash,"[2, 3]",-10000.0,-100.0
+926,ed5dd257c1ef31e7,4,Kd5d,QdTc9h9c7h,trash,[3],-10000.0,-100.0
+927,ed5dd257c1ef31e7,3,6d2d,KhQs8h3d2c,trash,"[2, 3]",-10000.0,-100.0
+928,ed5dd257c1ef31e7,2,Th4d,Ks9s8c6d4s,trash,"[4, 3]",-10000.0,-100.0
+929,ed5dd257c1ef31e7,1,8h4s,AsQcJc2s2h,trash,[3],-10000.0,-100.0
+930,ed5dd257c1ef31e7,0,3d3c,QsQhJd9h7h,trash,"[1, 3]",-10000.0,-100.0
+931,ed5dd257c1ef31e7,4,6d2s,Qh9s9c7d2d,trash,"[2, 0]",-450.0,-4.5
+932,ed5dd257c1ef31e7,3,Jh3h,KcQh8s6s6c,trash,[0],0.0,0.0
+933,ed5dd257c1ef31e7,2,Ac2h,Ts6s5h4s3s,trash,[0],0.0,0.0
+934,ed5dd257c1ef31e7,1,4d4c,KhJsJhTs9h,trash,[3],-10000.0,-100.0
+935,ed5dd257c1ef31e7,0,5d5c,Ah8d6c5h3d,trash,"[2, 3]",11650.0,116.5
+936,ed5dd257c1ef31e7,4,Kh2d,JhJd7s7d4h,trash,[3],20050.0,200.5
+937,ed5dd257c1ef31e7,3,8s2c,Kh9c8d6h2s,trash,[3],-10000.0,-100.0
+938,ed5dd257c1ef31e7,2,Jd6h,Kd5h4h,trash,"[2, 3]",450.0,4.5
+939,ed5dd257c1ef31e7,1,Jd3d,7s6d5d3c2c,trash,"[2, 3]",-10000.0,-100.0
+940,ed5dd257c1ef31e7,0,Ad5c,KdTh5h4c2s,trash,"[2, 2, 3]",20100.0,201.0
+941,ed5dd257c1ef31e7,4,6d5d,AhQd9d7h4d,trash,"[1, 2, 1]",20100.0,201.0
+942,ed5dd257c1ef31e7,3,4d3h,Js9d8h2h2c,trash,[0],0.0,0.0
+943,ed5dd257c1ef31e7,2,Jh2c,KcQcJs4c3h,trash,"[4, 3]",-10000.0,-100.0
+944,ed5dd257c1ef31e7,1,AsAh,Jh9c6d5s2d,premium,"[2, 3]",20050.0,200.5
+945,ed5dd257c1ef31e7,0,9c3d,KdJd8d7c4h,trash,[1],-10000.0,-100.0
+946,ed5dd257c1ef31e7,4,Ad6d,QhTs7s5c4c,trash,"[2, 3]",-10000.0,-100.0
+947,ed5dd257c1ef31e7,3,Ts2d,AsQh7s6s6h,trash,"[1, 3]",10400.0,104.0
+948,ed5dd257c1ef31e7,2,Ah8d,As6d5c4c2h,trash,"[1, 2, 3]",-10000.0,-100.0
+949,ed5dd257c1ef31e7,1,6s3s,KsJhTc4c3h,trash,[3],-10000.0,-100.0
+950,ed5dd257c1ef31e7,0,8s6c,AdKhTd2h2c,trash,"[4, 2, 1]",-10000.0,-100.0
+951,ed5dd257c1ef31e7,4,7s6d,Qd9h5h3c2s,trash,"[4, 2, 3]",-10000.0,-100.0
+952,ed5dd257c1ef31e7,3,9s4c,KcQs6c3d2d,trash,[3],-10000.0,-100.0
+953,ed5dd257c1ef31e7,2,Qh5d,Js6s6c3h2d,trash,[3],10100.0,101.0
+954,ed5dd257c1ef31e7,1,Tc3c,KsKhJh7d5d,trash,"[2, 3]",-10000.0,-100.0
+955,ed5dd257c1ef31e7,0,Jc3s,KdKcTh6h6d,trash,[1],-10000.0,-100.0
+956,ed5dd257c1ef31e7,4,8c4h,KcQhTd3s3c,trash,"[2, 1]",-10000.0,-100.0
+957,ed5dd257c1ef31e7,3,AdTh,JsTd7c4c2d,marginal,"[1, 3]",15225.0,152.25
+958,ed5dd257c1ef31e7,2,Jh2s,AcQs9h7d4d,trash,"[1, 1]",-10000.0,-100.0
+959,ed5dd257c1ef31e7,1,7s3h,AsJd7d7c5h,trash,"[2, 3]",14050.0,140.5
+960,ed5dd257c1ef31e7,0,8d5d,Js9d4d2s2h,trash,"[1, 3]",10100.0,101.0
+961,ed5dd257c1ef31e7,4,KcJd,Qc7s6d2h2d,marginal,[3],-10000.0,-100.0
+962,ed5dd257c1ef31e7,3,Kh5d,QsQdJs8h3c,trash,"[2, 2, 3]",-10000.0,-100.0
+963,ed5dd257c1ef31e7,2,9c5s,QsJcTs8s6d,trash,[3],30100.0,301.0
+964,ed5dd257c1ef31e7,1,Kc3h,AhKs5d4c3s,trash,"[2, 1, 1, 3]",-10000.0,-100.0
+965,ed5dd257c1ef31e7,0,QhJd,Kd9h7c3s3d,marginal,"[1, 3]",-10000.0,-100.0
+966,ed5dd257c1ef31e7,4,2s2c,Kc9d7s6c3c,trash,"[4, 3]",20000.0,200.0
+967,ed5dd257c1ef31e7,3,Js3c,Ac7s6d3h2d,trash,"[2, 2, 3]",-10000.0,-100.0
+968,ed5dd257c1ef31e7,2,8h6s,KcJhTh5s2d,trash,"[1, 2, 1, 1]",-10000.0,-100.0
+969,ed5dd257c1ef31e7,1,8d7c,KsTsTh9c8s,trash,[1],-10000.0,-100.0
+970,ed5dd257c1ef31e7,0,Th5h,Ts8s7s7c6s,trash,[3],-10000.0,-100.0
+971,ed5dd257c1ef31e7,4,AhTh,Ac9h7d5c2d,marginal,"[2, 3]",5600.0,56.0
+972,ed5dd257c1ef31e7,3,Qs4h,Th9s7c4c3d,trash,"[4, 3]",-10000.0,-100.0
+973,ed5dd257c1ef31e7,2,Qs2s,KhKdTh8s6d,trash,[3],-10000.0,-100.0
+974,ed5dd257c1ef31e7,1,AhJd,AsJc7h3h2c,marginal,[3],20100.0,201.0
+975,ed5dd257c1ef31e7,0,9c8s,AcQsJd9s5s,trash,"[1, 1]",-10000.0,-100.0
+976,ed5dd257c1ef31e7,4,7h4s,KhKd9c5s2c,trash,"[2, 2, 1]",-10000.0,-100.0
+977,ed5dd257c1ef31e7,3,4c3c,KcJd9c5s2c,trash,[3],10100.0,101.0
+978,ed5dd257c1ef31e7,2,Ad9s,QsQd9h7h6d,trash,"[4, 4, 3]",10150.0,101.5
+979,ed5dd257c1ef31e7,1,Qs9c,AsJs9s8d2c,trash,[0],-100.0,-1.0
+980,ed5dd257c1ef31e7,0,Qd9d,Kh8c6c3h3c,trash,"[1, 1, 0]",-450.0,-4.5
+981,ed5dd257c1ef31e7,4,8c5s,JdThTc9d5c,trash,"[2, 3]",-10000.0,-100.0
+982,ed5dd257c1ef31e7,3,9c5h,KdQhTc8h7d,trash,"[2, 3]",-10000.0,-100.0
+983,ed5dd257c1ef31e7,2,AdJh,AcKcQcTs6d,marginal,"[1, 2, 1]",5025.0,50.25
+984,ed5dd257c1ef31e7,1,6h4c,AdKd9c5s5c,trash,[3],-10000.0,-100.0
+985,ed5dd257c1ef31e7,0,Js9s,9c8c7d6s6d,trash,"[1, 2, 1, 3]",-10000.0,-100.0
+986,ed5dd257c1ef31e7,4,9h8d,8s5s4s4h2c,trash,[3],-10000.0,-100.0
+987,ed5dd257c1ef31e7,3,Ks9c,AdJdJcTd8s,trash,[3],-10000.0,-100.0
+988,ed5dd257c1ef31e7,2,Jc4c,AhQh6d4h3s,trash,[3],-10000.0,-100.0
+989,ed5dd257c1ef31e7,1,Ah9d,AsKhJd5d4s,trash,[3],20100.0,201.0
+990,ed5dd257c1ef31e7,0,AdKs,AhAcQsQd8c,premium,"[2, 3]",13400.0,134.0
+991,ed5dd257c1ef31e7,4,Tc2c,Kd9h7d4h4c,trash,[3],-10000.0,-100.0
+992,ed5dd257c1ef31e7,3,Qc9h,AhQd6s4s2h,trash,"[2, 2, 0]",-4850.0,-48.5
+993,ed5dd257c1ef31e7,2,Js2h,Qh9s9c4s2c,trash,"[2, 4, 3]",10150.0,101.5
+994,ed5dd257c1ef31e7,1,Ah2s,Js8h7c2d2c,trash,"[2, 1, 3]",34675.0,346.75
+995,ed5dd257c1ef31e7,0,9c6c,8c5s3s3c2h,trash,[3],-10000.0,-100.0
+996,ed5dd257c1ef31e7,4,6d4s,KsTh8s4c3h,trash,[3],-10000.0,-100.0
+997,ed5dd257c1ef31e7,3,Ad4d,7s5s5d3d3c,trash,"[1, 1, 3]",-10000.0,-100.0
+998,ed5dd257c1ef31e7,2,4h3s,AhQhJcTs6c,trash,"[4, 1, 3]",-10000.0,-100.0
+999,ed5dd257c1ef31e7,1,JhJc,7c6c3s,premium,"[2, 1, 1, 0]",-6050.0,-60.5

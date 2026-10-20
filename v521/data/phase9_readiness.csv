@@ -1,0 +1,11 @@
+id,condition,status,evidence
+1,NFSP 구현이 원 논문과 핵심 알고리즘 수준에서 일치한다,PASS,"Anticipatory eta=0.1 정확 일치(9.83%), Best Response만 Reservoir 격리 저장 100% 확인 (Phase 1)"
+2,Average Policy가 정상적으로 학습된다,PASS,"SL Buffer 교차엔트로피 손실 감소 및 Kuhn 내시 균형 혼합전략 수렴 확인(Exploitability 0.133, Phase 4 & 5)"
+3,5인 턴 기반 DQN이 정확한 Transition을 사용한다,PARTIAL PASS,"타 플레이어 카드 누출 0%, 터미널 분리 정상. 단, V5.2는 1-step TD가 아닌 Monte Carlo Q 사용 (Phase 2)"
+4,NFSP의 카드별 행동 분화가 실제 EV 개선으로 연결된다,PASS,AA 오픈 올인(+11.46 BB) 및 99 Facing All-in 폴드(손실 회피 -2.0 BB vs -5.5 BB) 정당성 증명 (Phase 3)
+5,여러 학습 시드에서 결과가 재현된다,PASS,"Seed 42, 101, 202 전반에서 TVD 0.94 수준의 카드 분화 및 안정적 수렴 일관 재현"
+6,PPO와 교차 대국에서 실제 성능을 비교했다,PASS,"8대 매치업 실측 완료: NFSP Hero vs 4 PPO (+99.40 bb/100, 승률 34.4%), 일방적 압도 가설 기각 (Phase 7)"
+7,All-Folder 및 Blind Caller 정책 붕괴가 감소했다,PASS,"AA 올인 98.4%, 99 폴드 93.2%로 72o/하위패 블라인드 콜러 및 전면 폴더 붕괴 원천 해소 확인"
+8,NFSP가 10BB 이상의 스택 환경에서도 학습 가능하다,PENDING (미검증),"현재 10BB 축소 홀덤에서만 검증되었으며, 100BB 딥스택에서는 아직 미실시"
+9,GPU 및 메모리 요구량을 정량적으로 추산했다,PASS,"100BB 5인 NFSP: Replay 8GB + Reservoir 16GB + 신경망 50MB -> RAM 32GB, RTX 4090 1장으로 충분"
+10,100BB 확장의 기술적 장애물을 파악했다,PASS,"4대 장애물 도출: (1) 연속 베팅 사이징 이산화, (2) 52장 상태공간 10^160, (3) 딥스택 탐험 저하, (4) 긴 궤적 분산"

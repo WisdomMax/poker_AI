@@ -1,0 +1,6 @@
+action_idx,name,sizing,desc
+0,Fold,0 BB,패 포기
+1,Check / Call,Current Bet,체크 또는 콜
+2,Min-Raise,2.2 BB (Preflop) / 2x (Postflop),소형 레이즈
+3,Pot-Raise,1.0 Pot,팟 사이즈 베팅
+4,All-in,20.0 BB,유효 스택 전액 셔브

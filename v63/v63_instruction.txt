@@ -1,0 +1,26 @@
+POKER AI V6.3
+100BB INTEGRITY & POLICY COLLAPSE RECOVERY
+100BB 평가 재현성 무결성 감사 및 Seed 303 올인 정책 붕괴 메커니즘 규명
+
+연구 목표:
+V6.2에서 관측된 100BB 장기 학습 불안정성(Seed 303 All-in 97.96%, Frozen 성적 변동)의 원인을 정밀 감사하고, 재현성 및 정책 안정성을 복구한다.
+
+작업 디렉터리: v63/
+
+Phase 0. Frozen 성적 변동 원인 감사 (최우선)
+- V6.1 시드(20261141~43) vs V6.2 시드(20261151~53) 동일 Frozen 50k 체크포인트 대조 평가
+- 덱 셔플, 좌석 순환, RNG 상태별 재현성 100% 검증
+
+Phase 1. Seed 303 올인 정책 붕괴 원인 규명
+- 10k, 20k, 35k, 50k 체크포인트별 Q-값 및 Average Policy 확률 추적
+- Q-Network 과대평가 vs SL-Network 지도학습 레이블 편향 분석
+
+Phase 2 & 3. 붕괴 복구 및 안정성 기법 검증
+- Q값 과대평가 완화 및 클리핑
+- 올인 억제 및 세분화 벳 사이징 효과 분석
+
+Phase 4. 강한 AI 상대 평가
+- RuleBased, Frozen 50k, Warm Start 10k, Warm Start 50k (Seed 404 등) 대결
+
+Phase 5. 최종 판정 및 공식 보고서
+- 산출물: v63_100bb_integrity_and_policy_recovery_report.md

@@ -1,0 +1,7 @@
+Audit_Item,Metric_Value,Status
+P4_No_Blind_Net_Chips,0.0,PASS
+Fold_Actual_Reward_Mean,0.0000,GROUND_TRUTH
+Fold_Q_Value_Mean,-1.0748,UNDERESTIMATED
+Q_Fold_Bias,-1.0748,SEVERE_BIAS
+Facing_Bet_2Pot_Actual_Pct,20.71%,MATCHES_THEORY
+Reservoir_Fold_Label_Count,0,ZERO_DUE_TO_ARGMAX

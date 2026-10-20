@@ -1,0 +1,30 @@
+POKER AI V6.2
+100BB CROSS-PLAY & LONG-HORIZON STAGE B
+100BB 크로스플레이 리그 및 50,000 에피소드 장기 학습
+
+연구 목표:
+점수만 높은 포커 AI가 아니라, 추가 자기 대국 학습을 통해 실제로 강해지는 100BB 포커 AI를 확보한다.
+
+작업 디렉터리: v62/
+
+PHASE 1. 모델 전이 호환성 정밀 감사
+- 50BB 모델과 100BB 모델의 253차원 입력 특성 정규화
+- Effective Stack 인식 및 체크포인트 SHA256 감사
+
+PHASE 2 & 3. 동일 상대 풀에서 3개 모델 비교 및 리그전
+- Group A: 100BB Scratch
+- Group B: 100BB Warm Start
+- Group C: 50BB Frozen
+- Primary Comparison: Warm Start vs Frozen (추가 학습 이득 검증)
+
+PHASE 4. 100BB 딥스택 올인 전략 분리
+- 잔여 스택별 올인 빈도 (1~5BB, 5~20BB, 20~50BB, 50~100BB)
+
+PHASE 5. 100BB 장기 학습 Stage B (50,000 에피소드)
+- Warm Start 및 Scratch 5개 독립 시드 (42, 101, 202, 303, 404)
+- 10k -> 50,000 에피소드 연장 훈련
+- Checkpoints: 10k, 20k, 35k, 50k
+- Primary Comparison: Warm Start 50k vs 10k vs Frozen 50BB
+
+FINAL REPORT
+- 산출물: v62_100bb_crossplay_and_long_training_report.md

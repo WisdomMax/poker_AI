@@ -1,0 +1,588 @@
+# POKER AI V5.4
+# 5-PLAYER 20BB NFSP-DQN LONG-HORIZON SELF-PLAY
+# 검증된 평가 시스템 기반 20BB 장기 자기 대국 학습
+
+[최종 결정]
+
+V5.3.4 결과를 근거로 20BB 자기 대국 연구 개시를 승인한다.
+
+단, 승인의 의미는 연구 진행 가능(GO)이지,
+실전 수익성의 통계적 입증이 아니다.
+
+V5.3.4 20BB 평가:
+
+5개 독립 학습 시드 평균 +47.27 bb/100
+95% CI [-14.29, +108.82]
+양측 p 약 0.100
+
+기술적 확장 가능성은 긍정적이나
+안정적인 양의 기대수익은 아직 미입증 상태다.
+
+작업 디렉터리:
+v54/
+v54/data/
+v54/models/
+v54/logs/
+
+기존 모델, CSV, 평가 결과는 모두 보존한다.
+
+학습에는 인간 포커 전략 정답 레이블을 사용하지 않는다.
+상대 행동 규칙을 베끼는 학습도 하지 않는다.
+새로운 신경망 아키텍처를 추가하지 않는다.
+100BB 학습은 아직 진행하지 않는다.
+
+
+====================================
+PHASE 0. 환경 및 평가 재현성 확정
+====================================
+
+현재 환경:
+
+5 Players
+24 Cards (9,T,J,Q,K,A / 4 suits)
+2 Hole Cards
+2 Betting Rounds (Preflop, Flop)
+Flop Board 3 Cards
+SB 50 Chips
+BB 100 Chips
+Stack 2000 Chips
+Ante 0
+
+4-Action:
+
+0 Fold
+1 Check/Call
+2 Pot Raise
+3 All-in
+
+게임 엔진에서 실제로 생성된
+각 액션의 합법 여부와 칩 변화를 검증한다.
+
+중요:
+현재 게임이 2개 베팅 라운드라면
+Turn 및 River 라운드가 존재하지 않는다.
+보고서에서 이를 혼동하지 않는다.
+
+게임 초기 상태,
+정보집합 텐서 크기,
+실제 포지션과 블라인드,
+종료 조건을 기록한다.
+
+평가 시 다음 RNG를 분리한다.
+
+1. Chance / Deck RNG
+2. Opponent Action RNG
+3. Hero Action Sampling RNG
+
+시드 생성에는 재현 가능한
+SeedSequence 또는 명시적 정수 해시를 사용한다.
+
+Python 내장 hash()의 비결정성을
+재현성 보장 수단으로 사용하지 않는다.
+
+중요:
+평가 정책은 Stochastic Average Policy를 유지한다.
+
+Argmax로 변경하지 않는다.
+
+같은 모델 체크포인트, 같은 시드,
+같은 설정에서 두 번 실행하여
+행동과 수익이 동일한지 확인한다.
+
+Argmax는 별도 진단 모드로만 허용한다.
+
+칩 회계 원장 검증:
+
+Ending Stack - Starting Stack = Net Return
+
+Total Payout - Total Contribution = Net Return
+
+Sum(All Player Returns) = 0
+
+모든 핸드에서 검증한다.
+
+게임 로그 및 평가 결과에는
+실제 체크포인트 SHA256을 포함한다.
+
+
+====================================
+PHASE 1. NFSP-DQN 설정 동결
+====================================
+
+기존 V5.2.2~V5.3 검증된
+NFSP-DQN의 신경망 구조와
+학습 알고리즘을 그대로 유지한다.
+
+Q Network:
+2 Hidden Layers × 128 Units
+
+Target Q Network:
+Q Network와 같은 구조
+
+Average Policy Network:
+2 Hidden Layers × 128 Units
+
+출력:
+4개 액션
+
+Activation:
+기존 구현과 동일하게 유지
+
+신경망 입력:
+기존 정보집합 텐서 사용
+
+상대 비공개 카드 입력 금지.
+인간의 프리플롭 핸드 차트 주입 금지.
+정답 행동 레이블 주입 금지.
+
+Hyperparameter 기본 후보:
+
+Q Optimizer: Adam
+Q Learning Rate: 0.0001
+
+Average Policy Optimizer: Adam
+SL Learning Rate: 0.0001
+
+Discount Gamma: 0.99
+Anticipatory Eta: 0.10
+
+Target Network Sync:
+200 Q Optimizer Updates
+
+RL Replay Buffer:
+20,000 Transitions
+
+Supervised Reservoir Buffer:
+20,000 Samples
+
+Batch Size:
+64
+
+Gradient Norm Clip:
+1.0
+
+Best Response Exploration:
+기존 NFSP-DQN의 Epsilon 설정 유지
+
+이 수치들은 신규 실험의 시작값이며
+성능이 검증된 최적값이라고 주장하지 않는다.
+
+기존 코드의 실제 값이 다르면
+먼저 전체 값을 출력하고,
+20BB의 1차 실험에서는
+기존 값을 우선 유지한다.
+
+하이퍼파라미터를 변경해야 한다면
+원본 설정과 변경 설정을
+별도 실험군으로 비교한다.
+
+특히 스택 변화와 학습률 변화를
+동시에 적용하지 않는다.
+
+Reward:
+Terminal Net Chips / 100
+
+즉, Terminal Net BB를 사용한다.
+
+게임 도중 임의적인 승리 보상이나
+핸드 강도 보너스를 추가하지 않는다.
+
+Best Response의 TD 학습,
+Target Network,
+Reservoir 저장 조건,
+에피소드 단위 정책 선택을
+기존 검증된 방식으로 유지한다.
+
+
+====================================
+PHASE 2. 20BB 학습 무결성 Smoke Test
+====================================
+
+본격 학습 전에
+3개 시드로 1,000에피소드씩 실행한다.
+
+검증 항목:
+
+- 실제 모델 가중치 업데이트 발생
+- Q Loss 유한
+- SL Loss 유한
+- NaN / Inf 없음
+- 불법 액션 없음
+- 5명 각각의 Terminal Reward 정확
+- Replay Buffer 정상 누적
+- Reservoir Buffer 정상 누적
+- Target Network 동기화 정상
+- 모델 저장 및 재로드 정상
+- 평가 결과 재현 정상
+
+5인 Self-Play에서
+특정 물리적 좌석만 학습하지 않도록
+플레이어별 데이터와 좌석 분포를 검사한다.
+
+모든 플레이어의 결정과 보상은
+해당 플레이어의 정보집합을 기준으로 저장한다.
+
+다른 플레이어의 턴을
+Hero의 다음 턴으로 잘못 처리하지 않는다.
+
+각 플레이어의 학습 Transition은
+해당 플레이어의 다음 의사결정 또는
+게임 종료로 연결되어야 한다.
+
+Smoke Test 실패 시
+본격 학습으로 넘어가지 않는다.
+
+
+====================================
+PHASE 3. 20BB 자기 대국 장기 학습
+====================================
+
+독립 학습 시드:
+
+42
+101
+202
+303
+404
+
+Primary:
+20BB From Scratch NFSP-DQN
+
+Training Checkpoints:
+
+0
+1,000
+2,000
+5,000
+10,000
+20,000
+35,000
+50,000 Episodes
+
+Stage A:
+5개 시드 × 10,000 Episodes
+
+먼저 학습 결과 및 엔진 정상성을 검증한다.
+
+Stage B:
+Stage A 결과와 비용을 확인한 후
+50,000 Episodes까지 연장한다.
+
+개선이 멈추거나 정책이 심하게 붕괴하면
+무조건 50,000회를 채우지 말고
+원인을 분석한다.
+
+모든 Checkpoint에 대해:
+
+- Q Loss
+- SL Loss
+- Policy Entropy
+- Q Value Distribution
+- Gradient Norm
+- Weight Delta
+- Replay Buffer Size
+- Reservoir Buffer Size
+- Actual Environment Decisions
+- Wall-clock Time
+- RAM Usage
+
+를 기록한다.
+
+새로운 학습 알고리즘을 추가하지 않는다.
+
+추가적인 상대 전략 혼합,
+리그 학습,
+하이퍼파라미터 탐색은
+1차 장기 학습 결과를 본 후
+독립 실험으로 진행한다.
+
+
+====================================
+PHASE 4. 10BB 전이 학습 비교
+====================================
+
+20BB From Scratch와
+기존 10BB 학습 모델 전이를 구분한다.
+
+Group A:
+20BB From Scratch
+
+Group B:
+10BB 10k Checkpoint를 초기값으로 사용하고
+20BB에서 추가 자기 대국 학습
+
+Group C:
+10BB 모델을 추가 학습하지 않고
+20BB에 직접 투입한 Frozen Baseline
+
+단, 입력 텐서 차원,
+스택 정규화,
+액션 의미가 호환되는 경우에만
+B와 C를 실행한다.
+
+호환되지 않으면 명시적으로 보류한다.
+
+두 학습군에 동일한
+20BB 추가 학습 에피소드 예산을 적용한다.
+
+총 누적 학습량과
+20BB 환경 학습량을 별도 기록한다.
+
+주요 연구 질문:
+
+"10BB에서 배운 전략이
+20BB 학습의 초기 성능과
+학습 속도를 개선하는가?"
+
+처음부터 새로 배우는 것과
+기존 학습을 이어받는 것 중
+어느 방식이 유리한지 검증한다.
+
+
+====================================
+PHASE 5. 20BB 절대 성능 평가
+====================================
+
+학습에 사용하지 않은
+새 평가 난수 스케줄을
+실험 시작 전에 확정한다.
+
+기존 20261019~20261021은
+이미 여러 평가에서 사용되었으므로
+새 최종 홀드아웃으로 재사용하지 않는다.
+
+학습 시드:
+5개
+
+개발 평가 스케줄:
+3개 이상
+
+스케줄당:
+최소 1,000 Hands
+
+최종 독립 홀드아웃은
+체크포인트 및 실험군을
+선정한 뒤 처음 사용한다.
+
+균등 좌석 회전 적용.
+
+동일 상대, 동일 평가 예산 적용.
+
+평가 상대:
+
+1. AlwaysFold
+2. CheckCall
+3. Random
+4. RuleBased
+5. PPO Baseline
+6. NFSP-MC
+7. NFSP-DQN 10BB Frozen
+
+학습은 순수 Self-Play로 유지한다.
+
+RuleBased 및 기타 기준선은
+외부 평가 목적으로만 사용한다.
+
+다음 값을 기록한다.
+
+Net BB
+bb/100
+Position EV
+Win Rate
+Showdown EV
+Fold Frequency
+Call Frequency
+Raise Frequency
+All-in Frequency
+
+학습 시드별 성적을 보존한다.
+
+서로 다른 평가 스케줄을
+서로 다른 학습 시드로 세지 않는다.
+
+
+====================================
+PHASE 6. 카드별 의사결정 품질
+====================================
+
+대표 핸드:
+
+AA
+KK
+QQ
+JJ
+TT
+99
+
+평가 상황:
+
+Unopened
+Facing Raise
+Facing All-in
+Multiway Pot
+BB Free Check
+
+각 상황에서:
+
+Policy Action Probabilities
+Legal Actions
+Action EV
+Best Action EV
+Policy Expected EV
+Policy Regret
+
+를 계산한다.
+
+99 Fold를 특정 확률 이상으로
+강제하는 규칙을 넣지 않는다.
+
+AA All-in을 특정 확률 이상으로
+강제하는 규칙도 넣지 않는다.
+
+상대의 베팅 레인지와
+게임 상태에 따른 실제 기대값으로
+평가한다.
+
+2k -> 10k -> 20k -> 50k
+진행 과정에서
+Policy Regret이 감소하는지 확인한다.
+
+특히:
+
+AA Facing All-in
+99 Facing All-in
+
+두 상황을 동시에 점검한다.
+
+TVD 증가만으로
+전략 품질 향상을 선언하지 않는다.
+
+
+====================================
+PHASE 7. 통계적 비교
+====================================
+
+5개 독립 학습 시드별로
+평균 성적을 산출한다.
+
+학습 시드 단위:
+
+Mean
+Median
+Sample SD
+Student-t 95% CI
+
+비교 대상:
+
+20BB Scratch vs Frozen 10BB
+
+20BB Scratch vs 20BB Warm-start
+
+20BB 10k vs 20BB 50k
+
+20BB NFSP-DQN vs PPO
+
+동일 학습 시드의
+대응 비교가 가능한 경우
+Paired Differences를 계산한다.
+
+평가 스케줄별 변동과
+학습 시드별 변동을 구분한다.
+
+서로 다른 상대 풀에서
+나온 bb/100을 합쳐서
+동일 성능 지표라고 주장하지 않는다.
+
+다중비교를 수행할 때는
+사전에 Primary Comparison을 정하고
+보조 비교와 구분한다.
+
+유의하지 않은 결과를
+동등성 증거로 표현하지 않는다.
+
+수익률이 양수여도
+신뢰구간이 0을 포함하면
+안정적인 수익성이 입증됐다고
+선언하지 않는다.
+
+
+====================================
+PHASE 8. 평가 엔진 자동 회귀 검사
+====================================
+
+지금까지 발견된 과거 오류가
+다시 발생하지 않게 만든다.
+
+Regression Tests:
+
+1. Hero Seat Fixed Bug
+2. AlwaysFold Blind Accounting
+3. Chip Ledger Double Counting
+4. Model Seed Variable Overwrite
+5. Argmax vs Sampling Mismatch
+6. Hero Next State Misalignment
+7. Illegal Action Mapping
+8. Terminal Reward Sign
+9. bb/100 Unit Conversion
+10. Checkpoint Hash Mismatch
+
+원시 게임 원장에서
+자동으로 최종 보고서를 생성한다.
+
+하드코딩된 수익률 입력 금지.
+
+회계 오류, 모델 식별 오류,
+평가 재현 오류 발생 시
+학습 성적의 PASS 판정을 중단한다.
+
+
+====================================
+PHASE 9. 다음 스택 진입 판정
+====================================
+
+이번 연구의 최종 목표는
+20BB 학습 가능성을 입증하는 것이다.
+
+아직 50BB, 100BB로 확장하지 않는다.
+
+다음 조건 확인:
+
+1. 20BB Self-Play 실제 장기 학습 완료
+2. 모든 게임 상태 전이 정확
+3. 학습 및 평가 완전 재현 가능
+4. 5시드 성능 측정 완료
+5. 20BB Absolute Baselines 비교 완료
+6. 주요 카드별 Regret 측정 완료
+7. 정책 붕괴율 측정 완료
+8. 10BB 모델 전이 효과 분석
+9. 훈련 시간과 RAM 소모량 실측
+10. 독립 홀드아웃 평가 완료
+
+그 후에만
+50BB 학습을 다음 연구로 제안한다.
+
+최종 보고서:
+
+v54_20bb_nfsp_long_training_report.md
+
+필수 산출물:
+
+- 실제 학습 코드
+- 실제 모델 체크포인트
+- Seed별 학습 곡선
+- Checkpoint별 성적
+- 독립 평가 CSV
+- 카드별 Policy Regret
+- 칩 원장
+- 통계 검정 코드
+- GPU/CPU/RAM 사용량
+- 실행 명령
+- 실패 및 중단 내역
+
+최종 연구 질문:
+
+"NFSP는 단지 10BB에서 배운 행동을
+20BB에서 재사용하는 수준인가?
+
+아니면 20BB 환경에서 자기 대국을 통해
+새로운 전략을 실제로 학습하고 발전하는가?"

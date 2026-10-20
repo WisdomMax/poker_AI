@@ -1,0 +1,305 @@
+{
+  "Model_A": {
+    "top30_mean_pot_bb": 401.25,
+    "top30_mean_hero_spent_bb": 100.0,
+    "top30_mean_hero_recovered_bb": 100.375,
+    "top30_mean_net_bb": 0.375,
+    "top30_total_net_bb": 11.25,
+    "top30_ev_bb100_contribution": 0.375,
+    "violations_count": 0,
+    "sample_top10": [
+      {
+        "hand_idx": 178,
+        "seed": 92178,
+        "seat": 2,
+        "pot_bb": 403.5,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 97,
+        "seed": 92097,
+        "seat": 1,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 1327,
+        "seed": 92129,
+        "seat": 1,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 402.25,
+        "net_ret_bb": 302.25
+      },
+      {
+        "hand_idx": 2941,
+        "seed": 92545,
+        "seat": 0,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 402.25,
+        "net_ret_bb": 302.25
+      },
+      {
+        "hand_idx": 2997,
+        "seed": 92601,
+        "seat": 1,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 402.25,
+        "net_ret_bb": 302.25
+      },
+      {
+        "hand_idx": 264,
+        "seed": 92264,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 414,
+        "seed": 92414,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 434,
+        "seed": 92434,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 478,
+        "seed": 92478,
+        "seat": 2,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 401.0,
+        "net_ret_bb": 301.0
+      },
+      {
+        "hand_idx": 529,
+        "seed": 92529,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      }
+    ]
+  },
+  "E_R1_100K": {
+    "top30_mean_pot_bb": 410.825,
+    "top30_mean_hero_spent_bb": 100.0,
+    "top30_mean_hero_recovered_bb": 115.175,
+    "top30_mean_net_bb": 15.175,
+    "top30_total_net_bb": 455.25,
+    "top30_ev_bb100_contribution": 15.175,
+    "violations_count": 0,
+    "sample_top10": [
+      {
+        "hand_idx": 499,
+        "seed": 92499,
+        "seat": 3,
+        "pot_bb": 500.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 934,
+        "seed": 92335,
+        "seat": 3,
+        "pot_bb": 476.5,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 335,
+        "seed": 92335,
+        "seat": 4,
+        "pot_bb": 472.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 995,
+        "seed": 92396,
+        "seat": 4,
+        "pot_bb": 444.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 444.0,
+        "net_ret_bb": 344.0
+      },
+      {
+        "hand_idx": 313,
+        "seed": 92313,
+        "seat": 2,
+        "pot_bb": 403.5,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 673,
+        "seed": 92074,
+        "seat": 2,
+        "pot_bb": 403.5,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 403.5,
+        "net_ret_bb": 303.5
+      },
+      {
+        "hand_idx": 931,
+        "seed": 92332,
+        "seat": 0,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 402.25,
+        "net_ret_bb": 302.25
+      },
+      {
+        "hand_idx": 119,
+        "seed": 92119,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 135,
+        "seed": 92135,
+        "seat": 4,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 169,
+        "seed": 92169,
+        "seat": 3,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 401.0,
+        "net_ret_bb": 301.0
+      }
+    ]
+  },
+  "E_R3_100K": {
+    "top30_mean_pot_bb": 404.46666666666664,
+    "top30_mean_hero_spent_bb": 100.0,
+    "top30_mean_hero_recovered_bb": 120.3,
+    "top30_mean_net_bb": 20.3,
+    "top30_total_net_bb": 609.0,
+    "top30_ev_bb100_contribution": 20.3,
+    "violations_count": 0,
+    "sample_top10": [
+      {
+        "hand_idx": 603,
+        "seed": 92004,
+        "seat": 2,
+        "pot_bb": 500.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 721,
+        "seed": 92122,
+        "seat": 0,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 1202,
+        "seed": 92004,
+        "seat": 1,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 1746,
+        "seed": 92548,
+        "seat": 0,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 2047,
+        "seed": 92250,
+        "seat": 1,
+        "pot_bb": 402.25,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 20,
+        "seed": 92020,
+        "seat": 4,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 135,
+        "seed": 92135,
+        "seat": 4,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 160,
+        "seed": 92160,
+        "seat": 4,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      },
+      {
+        "hand_idx": 163,
+        "seed": 92163,
+        "seat": 2,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 401.0,
+        "net_ret_bb": 301.0
+      },
+      {
+        "hand_idx": 220,
+        "seed": 92220,
+        "seat": 4,
+        "pot_bb": 401.0,
+        "hero_spent_bb": 100.0,
+        "hero_recovered_bb": 0.0,
+        "net_ret_bb": -100.0
+      }
+    ]
+  }
+}

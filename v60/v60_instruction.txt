@@ -1,0 +1,32 @@
+POKER AI V6.0
+52-CARD 4-STREET 50BB LONG-HORIZON & 100BB READINESS
+52장 4-Street 50BB 장기 학습 및 100BB 풀스택 준비
+
+연구 목표:
+52장 4-Street 환경에서 실제로 학습할수록 강해지는 AI를 확보하고, 100BB로 확장할 기반을 검증한다.
+
+작업 디렉터리: v60/
+
+PHASE 1. FOLD/CALL 행동 정밀 감사
+- 무료 Check 가능 횟수와 유료 Call 횟수 분리
+- 베팅에 직면했을 때의 실제 Fold 비율
+- Preflop / Flop / Turn / River 스트리트별 행동 분리
+- AA, KK, QQ, 72o 대표 핸드별 행동
+
+PHASE 2. 4-STREET 50BB 장기 학습 (50,000 에피소드)
+- 기존 10k 모델을 이어서 50,000 에피소드까지 확장
+- Train Seeds: 42, 101, 202, 303, 404
+- Checkpoints: 10k, 20k, 35k, 50k
+- Primary Comparison: 50k vs 10k Paired t-test
+
+PHASE 3. 다양한 AI 상대 평가 및 크로스플레이
+- 신규 홀드아웃 시드 3개 기반 4,500핸드 전수 평가
+- 50k 모델들 간 상호 대결 및 RuleBased 상대 평가
+
+PHASE 4. 100BB 환경 Pilot (Stack: 10,000 chips)
+- 52장 4-Street 100BB 환경 무결성 감사
+- 3개 시드 1,000 에피소드 Smoke Test
+- 100BB 학습 개시 GO/NO-GO 판정
+
+FINAL REPORT
+- 산출물: v60_50bb_long_and_100bb_readiness_report.md

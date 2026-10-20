@@ -1,0 +1,57 @@
+# POKER AI V7.2
+# 100BB TRUE LEDGER & FOLD DECISION AUDIT
+# 6-Action 전략의 실제 수익성 검증
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+연구 목적:
+V7.1에서 포스트플롭 0회 기록이 Python 로깅 오류였다는 강한 증거를 확보했다.
+그러나 아직 다음 문제가 남아 있다.
+1. 스트리트별 손실 합계 -68,804.4BB와 Hero 최종 손익 -312.67BB의 불일치
+2. Preflop 액션 수가 3,000핸드에서 정확히 3,000회인 이유 (재행동 추적 여부)
+3. Seed 404의 2.0Pot 이후 평균 수익이 음수인 원인 (상태 분포 vs 인과적 효과)
+4. Facing Bet 2,400회에서 Fold를 0회 선택한 원인 (Q-Net vs SL-Net vs Buffer)
+
+이번 연구에서는 Fold 보상 셰이핑, 오버베팅 페널티, 새로운 네트워크 구조를 도입하지 않는다.
+작업 디렉터리: v72/
+
+PHASE 0. 모든 행동 노드 추적 검증
+- 5인 홀덤의 프리플롭·플롭·턴·리버에서 Hero가 동일 스트리트에 여러 번 행동하는 상황을 강제로 생성.
+- Hero Bet -> Opponent Raise -> Hero Re-raise -> Opponent Call 검증.
+- 같은 스트리트에서 Hero의 재행동이 모두 기록되는가?
+- 최소 레이즈와 합법 액션이 정확한가?
+- 체크 및 콜 이후 스트리트가 정확히 전환되는가?
+
+PHASE 1. Hero 손익 원장 정합성 (True Ledger)
+동일한 3,000핸드 자료에서 각 핸드별로:
+- Initial Stack
+- 스트리트별 실제 투자 칩 (Preflop, Flop, Turn, River Chips Invested)
+- 반환된 미콜 베팅 (Uncalled bets returned)
+- 최종 팟 수령 금액 (Pot Won at Showdown)
+- Final Stack
+- 최종 순수익 = Final Stack - Initial Stack
+- 공식 검증: 최종 순수익 == 최종 팟 수령액 + 반환 칩 - 총 투자 칩
+- 각 핸드에서 전체 플레이어 순수익 합계 == 0 (제로섬) 확인.
+- 스트리트별 투자 칩과 최종 수령액을 완벽히 연결하여 스트리트별 합산 == 최종 순수익 (-312.67 BB)으로 완전 일치 증명.
+
+PHASE 2. Seed 404 2.0Pot 손실 원인 검증
+- 2.0Pot을 선택한 665개 의사결정 추적:
+  * 홀카드, 보드, 팟 크기, Facing Bet 여부, Call 비용, 유효 스택, 상대 인원, 포지션, 최종 핸드 손익.
+- 0.5Pot, 1.0Pot, 2.0Pot을 선택한 게임 상태의 차이 비교 (상태 분포 편향 분석).
+- 동일 게임 상태에서 다른 액션을 취했을 때의 반사실적(Counterfactual) 비교.
+
+PHASE 3. Fold 0% 원인 분석
+- Facing Bet 상태 2,400개의 정확한 법적 액션 마스크 검사:
+  * 실제 Fold가 합법인 상태
+  * Pot Odds 및 Hero 핸드 강도
+  * Q-Network의 Fold Q값 vs 타 액션 Q값
+  * Average Policy의 Fold 확률 vs 타 액션 확률
+  * Reservoir Buffer의 Fold 라벨 비율
+- Q-Net이 Fold를 기피하는지, Average Policy만 기피하는지 분리 규명.
+
+PHASE 4. 전략 실력 재평가
+- 4-Action 150k vs 6-Action 150k 우열 미입증 상태 유지 및 세부 액션(Fold Facing Bet, 2.0Pot) 손익 비교.
+
+PHASE 5. 최종 종합 보고
+- 최종 보고서: v72_true_ledger_and_fold_decision_audit.md
+- 실제 칩 이동과 선택 가능한 행동을 근거로 검증.

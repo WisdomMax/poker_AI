@@ -1,0 +1,56 @@
+# POKER AI V6.5: NFSP 100BB STABILITY VALIDATION
+# 지침 출처: ChatGPT ("홀덤 기계적 전략" 고정 세션)
+# 수신 시각: 2026-10-18 KST
+
+핵심 목표:
+V6.4에서 발견한 선형 보상 정규화와 Gradient Clipping의 효과를 독립 시드와 장기 학습으로 재검증한다.
+
+[PHASE 0: 평가 재현성 필수 통과]
+- V6.1 / V6.2 / V6.4 Frozen Seed 42 성적의 불일치를 먼저 해결한다.
+  * 기존 기록:
+    - V6.1 시드 세트: +563.55
+    - V6.2 시드 세트: -122.19
+  * V6.4 재실행:
+    - V6.1 시드 세트: -603.72
+    - V6.2 시드 세트: +383.31
+  * 평가 코드 A/B × 평가 시드 세트 1/2, 총 4개 조합을 전부 실행한다.
+  * 같은 모델 파일, 같은 상대 모델, 같은 좌석, 같은 RNG, 같은 평가 코드에서 동일한 핸드별 행동 및 손익을 재현한다.
+  * 기존 기록과 일치하지 않으면 평가 재현성 PASS를 선언하지 않는다.
+
+[PHASE 1: 학습 설정 감사]
+- 기존 코드에서 Gradient Clipping이 이미 max_norm=1.0으로 적용되어 있었는지 확인한다.
+- 보상 단위가 칩인지 BB인지 확인한다.
+- Q/Target Network, Optimizer, Replay, Reservoir 및 RNG의 연속성을 확인한다.
+- 변경 사항을 정확하게 기록한다.
+
+[PHASE 2: 4개 독립 실험군 2x2 요인 설계]
+- A. 기존 보상 + 기존 Gradient 처리 (Baseline)
+- B. 선형 보상 정규화만 적용 (Linear Scale)
+- C. Gradient Clipping만 적용 (Grad Clip)
+- D. 선형 보상 정규화 + Gradient Clipping (Scale + Grad Clip)
+- Double DQN은 별도 비교군으로 둔다.
+- 선형 보상 변환 중 학습된 Q값과 Target Network의 스케일 불일치가 발생하지 않도록 통제.
+- 10k 체크포인트 분기 및 50k 장기 학습을 통한 정책 붕괴 방지 검증.
+
+[PHASE 3: 5개 시드 장기 학습 재현]
+- 학습 시드: 42, 101, 202, 303, 404
+- 체크포인트: 10k / 15k / 20k / 35k / 50k
+- 50k까지 실제로 학습하여 장기 붕괴 억제 실증.
+- 체크포인트별 기록: Q값, TD Error, Gradient Norm, Reservoir 실제 액션 카운트, Average Policy 엔트로피, Facing Bet Fold율, All-in 선택률.
+- Reservoir Buffer 전체 표본 수와 행동별 비율을 실제 데이터로 보고.
+
+[PHASE 4: 통계 검증]
+- 평가 RNG 스케줄 10개 이상 사용.
+- 표기 표준화: EV ± SE (또는 95% CI)와 SD 명확히 구분.
+- Primary Comparison: D안 vs A안 50k 학습 후 대응 비교 (평균 차이, 95% CI, p값).
+
+[PHASE 5: 최종 GO/NO-GO]
+- 필수 확인:
+  1. 평가 재현성 해결 여부
+  2. 기존 Gradient Clipping 사용 여부
+  3. 5시드 장기 학습 안정성
+  4. Seed 303 붕괴 재발 여부
+  5. 다른 시드에서 새로운 붕괴 발생 여부
+  6. 100BB Frozen 및 학습 AI 상대 성적
+  7. 100k 학습 진입 가능 여부
+- 최종 보고서: v65_100bb_nfsp_stability_validation.md

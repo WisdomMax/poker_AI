@@ -1,0 +1,10 @@
+version,metric,reported,formula,valid,note
+V4.7.1,Step 100k Winrate,+1037.04 bb/100,chips/hand (결정론적 딜링 버그),False,V4.7.3에서 딜링 버그 규명 및 폐기
+V4.8.2,20k Benchmark,+437.46 bb/100,total_chips / N,True,"단일 핸드 return [-100, +400] BB 내 정상"
+V4.8.3,10 Seeds Avg,+370.97 bb/100,total_chips / N,True,chips/hand 기준 정상 bb/100
+V4.9,5A Scratch 20k,+221.98 bb/100,total_chips / N,True,chips/hand 기준 정상 bb/100
+V4.9,5A Transfer 20k,+257.61 bb/100,total_chips / N,True,chips/hand 기준 정상 bb/100
+V4.9.1,Transfer 1k Mixed,+292.3 bb/100,total_chips / N,True,정상
+V4.9.2,Phase 5 Treatment,+2.74 bb/100,ret_chips/100/N (100 누락),False,bb/hand를 bb/100으로 오기 (+273.8 bb/100)
+V4.9.3,Phase 1 보정치,+273.82 bb/100,100 * total_chips / (100*N),True,100배 스케일 보정 완료
+V4.9.3,Phase 7 Prem EV,+1768.9 BB,mean(bb/hand) * 100,False,bb/100 hands를 'BB'로 오기 (+17.69 BB/hand)

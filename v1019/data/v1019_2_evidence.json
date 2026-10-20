@@ -1,0 +1,246 @@
+{
+  "ledger_table": [
+    {
+      "cond": "Base_Seen",
+      "model": "Model_A",
+      "json_top1pct_ev_bb100": 113.725,
+      "n_top": 30,
+      "total_top_profit_bb": 3411.75,
+      "avg_profit_per_top_hand_bb": 113.725
+    },
+    {
+      "cond": "Base_Seen",
+      "model": "E_R1_100K",
+      "json_top1pct_ev_bb100": 84.2,
+      "n_top": 30,
+      "total_top_profit_bb": 2526.0,
+      "avg_profit_per_top_hand_bb": 84.2
+    },
+    {
+      "cond": "Base_Seen",
+      "model": "E_R2_100K",
+      "json_top1pct_ev_bb100": 111.54166666666667,
+      "n_top": 30,
+      "total_top_profit_bb": 3346.25,
+      "avg_profit_per_top_hand_bb": 111.54166666666667
+    },
+    {
+      "cond": "Base_Seen",
+      "model": "E_R3_100K",
+      "json_top1pct_ev_bb100": 85.36388888888888,
+      "n_top": 30,
+      "total_top_profit_bb": 2560.9166666666665,
+      "avg_profit_per_top_hand_bb": 85.36388888888888
+    },
+    {
+      "cond": "Single_Adaptive",
+      "model": "Model_A",
+      "json_top1pct_ev_bb100": 215.48333333333332,
+      "n_top": 30,
+      "total_top_profit_bb": 6464.5,
+      "avg_profit_per_top_hand_bb": 215.48333333333332
+    },
+    {
+      "cond": "Single_Adaptive",
+      "model": "E_R1_100K",
+      "json_top1pct_ev_bb100": 57.483333333333334,
+      "n_top": 30,
+      "total_top_profit_bb": 1724.5,
+      "avg_profit_per_top_hand_bb": 57.483333333333334
+    },
+    {
+      "cond": "Single_Adaptive",
+      "model": "E_R2_100K",
+      "json_top1pct_ev_bb100": 81.64166666666667,
+      "n_top": 30,
+      "total_top_profit_bb": 2449.25,
+      "avg_profit_per_top_hand_bb": 81.64166666666667
+    },
+    {
+      "cond": "Single_Adaptive",
+      "model": "E_R3_100K",
+      "json_top1pct_ev_bb100": 41.416666666666664,
+      "n_top": 30,
+      "total_top_profit_bb": 1242.5,
+      "avg_profit_per_top_hand_bb": 41.416666666666664
+    },
+    {
+      "cond": "Single_MultiSizing",
+      "model": "Model_A",
+      "json_top1pct_ev_bb100": 215.48333333333332,
+      "n_top": 30,
+      "total_top_profit_bb": 6464.5,
+      "avg_profit_per_top_hand_bb": 215.48333333333332
+    },
+    {
+      "cond": "Single_MultiSizing",
+      "model": "E_R1_100K",
+      "json_top1pct_ev_bb100": 57.483333333333334,
+      "n_top": 30,
+      "total_top_profit_bb": 1724.5,
+      "avg_profit_per_top_hand_bb": 57.483333333333334
+    },
+    {
+      "cond": "Single_MultiSizing",
+      "model": "E_R2_100K",
+      "json_top1pct_ev_bb100": 81.64166666666667,
+      "n_top": 30,
+      "total_top_profit_bb": 2449.25,
+      "avg_profit_per_top_hand_bb": 81.64166666666667
+    },
+    {
+      "cond": "Single_MultiSizing",
+      "model": "E_R3_100K",
+      "json_top1pct_ev_bb100": 41.416666666666664,
+      "n_top": 30,
+      "total_top_profit_bb": 1242.5,
+      "avg_profit_per_top_hand_bb": 41.416666666666664
+    },
+    {
+      "cond": "Single_Polarized",
+      "model": "Model_A",
+      "json_top1pct_ev_bb100": 106.61111111111113,
+      "n_top": 30,
+      "total_top_profit_bb": 3198.333333333334,
+      "avg_profit_per_top_hand_bb": 106.61111111111113
+    },
+    {
+      "cond": "Single_Polarized",
+      "model": "E_R1_100K",
+      "json_top1pct_ev_bb100": 81.26666666666667,
+      "n_top": 30,
+      "total_top_profit_bb": 2438.0,
+      "avg_profit_per_top_hand_bb": 81.26666666666667
+    },
+    {
+      "cond": "Single_Polarized",
+      "model": "E_R2_100K",
+      "json_top1pct_ev_bb100": 91.65,
+      "n_top": 30,
+      "total_top_profit_bb": 2749.5,
+      "avg_profit_per_top_hand_bb": 91.65
+    },
+    {
+      "cond": "Single_Polarized",
+      "model": "E_R3_100K",
+      "json_top1pct_ev_bb100": 56.45,
+      "n_top": 30,
+      "total_top_profit_bb": 1693.5,
+      "avg_profit_per_top_hand_bb": 56.45
+    },
+    {
+      "cond": "Single_Trap",
+      "model": "Model_A",
+      "json_top1pct_ev_bb100": 106.61111111111113,
+      "n_top": 30,
+      "total_top_profit_bb": 3198.333333333334,
+      "avg_profit_per_top_hand_bb": 106.61111111111113
+    },
+    {
+      "cond": "Single_Trap",
+      "model": "E_R1_100K",
+      "json_top1pct_ev_bb100": 81.26666666666667,
+      "n_top": 30,
+      "total_top_profit_bb": 2438.0,
+      "avg_profit_per_top_hand_bb": 81.26666666666667
+    },
+    {
+      "cond": "Single_Trap",
+      "model": "E_R2_100K",
+      "json_top1pct_ev_bb100": 91.65,
+      "n_top": 30,
+      "total_top_profit_bb": 2749.5,
+      "avg_profit_per_top_hand_bb": 91.65
+    },
+    {
+      "cond": "Single_Trap",
+      "model": "E_R3_100K",
+      "json_top1pct_ev_bb100": 56.45,
+      "n_top": 30,
+      "total_top_profit_bb": 1693.5,
+      "avg_profit_per_top_hand_bb": 56.45
+    }
+  ],
+  "unit_test_results": [
+    {
+      "hand_name": "AA (Pocket Aces - Monster)",
+      "chen_score": 20.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "KK (Pocket Kings - Monster)",
+      "chen_score": 16.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "AKs (Suited Big Slick - Strong)",
+      "chen_score": 13.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "JJ (Pocket Jacks - Medium Pair)",
+      "chen_score": 12.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "T9s (Suited Connector - Speculative)",
+      "chen_score": 8.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "77 (Mid Pair)",
+      "chen_score": 8.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "A3o (Weak Ace - Marginal)",
+      "chen_score": 5.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "Q7o (Medium Trash)",
+      "chen_score": 3.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "62o (Pure Trash)",
+      "chen_score": 0.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    },
+    {
+      "hand_name": "72o (Worst Starting Hand)",
+      "chen_score": 0.0,
+      "adaptive_act": "Check",
+      "multisizing_act": "Fold",
+      "polarized_act": "Fold",
+      "checktrap_act": "Fold"
+    }
+  ]
+}

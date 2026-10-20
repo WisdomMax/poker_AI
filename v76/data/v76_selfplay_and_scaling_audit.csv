@@ -1,0 +1,73 @@
+Seed,Tier,Metric,Value,Status
+ALL,Normalization,Min_Max_Range,"[0.0, 1.0]",VERIFIED_PASS
+42,Tier1_SelfPlay,Table_Net_Sum,0.0000,ZERO_SUM_PASS
+42,Tier1_SelfPlay,EV_SB (Seat 0),-442.63,STABLE
+42,Tier1_SelfPlay,EV_BB (Seat 1),89.10,STABLE
+42,Tier1_SelfPlay,EV_UTG (Seat 2),-356.14,STABLE
+42,Tier1_SelfPlay,EV_MP (Seat 3),187.71,STABLE
+42,Tier1_SelfPlay,EV_CO (Seat 4),521.96,STABLE
+42,Tier1_SelfPlay,Fold_Dist,11.33,ACTIVE
+42,Tier1_SelfPlay,Bet_05P_Dist,13.41,ACTIVE
+42,Tier1_SelfPlay,Bet_10P_Dist,8.57,ACTIVE
+42,Tier1_SelfPlay,Bet_20P_Dist,6.62,ACTIVE
+42,Tier1_SelfPlay,Allin_Dist,2.48,ACTIVE
+42,Tier2_Benchmark,EV_bb100,77.73,MEASURED
+42,Tier2_Benchmark,CI95_Low,-903.30,MEASURED
+42,Tier2_Benchmark,CI95_High,1058.77,MEASURED
+101,Tier1_SelfPlay,Table_Net_Sum,0.0000,ZERO_SUM_PASS
+101,Tier1_SelfPlay,EV_SB (Seat 0),-88.82,STABLE
+101,Tier1_SelfPlay,EV_BB (Seat 1),-191.33,STABLE
+101,Tier1_SelfPlay,EV_UTG (Seat 2),147.62,STABLE
+101,Tier1_SelfPlay,EV_MP (Seat 3),270.37,STABLE
+101,Tier1_SelfPlay,EV_CO (Seat 4),-137.83,STABLE
+101,Tier1_SelfPlay,Fold_Dist,13.11,ACTIVE
+101,Tier1_SelfPlay,Bet_05P_Dist,13.60,ACTIVE
+101,Tier1_SelfPlay,Bet_10P_Dist,6.60,ACTIVE
+101,Tier1_SelfPlay,Bet_20P_Dist,9.31,ACTIVE
+101,Tier1_SelfPlay,Allin_Dist,2.99,ACTIVE
+101,Tier2_Benchmark,EV_bb100,59.69,MEASURED
+101,Tier2_Benchmark,CI95_Low,-895.80,MEASURED
+101,Tier2_Benchmark,CI95_High,1015.19,MEASURED
+202,Tier1_SelfPlay,Table_Net_Sum,-0.0000,ZERO_SUM_PASS
+202,Tier1_SelfPlay,EV_SB (Seat 0),-361.82,STABLE
+202,Tier1_SelfPlay,EV_BB (Seat 1),484.02,STABLE
+202,Tier1_SelfPlay,EV_UTG (Seat 2),-371.05,STABLE
+202,Tier1_SelfPlay,EV_MP (Seat 3),218.66,STABLE
+202,Tier1_SelfPlay,EV_CO (Seat 4),30.19,STABLE
+202,Tier1_SelfPlay,Fold_Dist,8.95,ACTIVE
+202,Tier1_SelfPlay,Bet_05P_Dist,15.55,ACTIVE
+202,Tier1_SelfPlay,Bet_10P_Dist,6.49,ACTIVE
+202,Tier1_SelfPlay,Bet_20P_Dist,7.69,ACTIVE
+202,Tier1_SelfPlay,Allin_Dist,2.11,ACTIVE
+202,Tier2_Benchmark,EV_bb100,-115.90,MEASURED
+202,Tier2_Benchmark,CI95_Low,-978.47,MEASURED
+202,Tier2_Benchmark,CI95_High,746.68,MEASURED
+303,Tier1_SelfPlay,Table_Net_Sum,-0.0000,ZERO_SUM_PASS
+303,Tier1_SelfPlay,EV_SB (Seat 0),-279.91,STABLE
+303,Tier1_SelfPlay,EV_BB (Seat 1),523.99,STABLE
+303,Tier1_SelfPlay,EV_UTG (Seat 2),389.62,STABLE
+303,Tier1_SelfPlay,EV_MP (Seat 3),39.63,STABLE
+303,Tier1_SelfPlay,EV_CO (Seat 4),-673.33,STABLE
+303,Tier1_SelfPlay,Fold_Dist,13.89,ACTIVE
+303,Tier1_SelfPlay,Bet_05P_Dist,13.22,ACTIVE
+303,Tier1_SelfPlay,Bet_10P_Dist,10.34,ACTIVE
+303,Tier1_SelfPlay,Bet_20P_Dist,6.86,ACTIVE
+303,Tier1_SelfPlay,Allin_Dist,1.85,ACTIVE
+303,Tier2_Benchmark,EV_bb100,839.20,MEASURED
+303,Tier2_Benchmark,CI95_Low,17.85,MEASURED
+303,Tier2_Benchmark,CI95_High,1660.54,MEASURED
+404,Tier1_SelfPlay,Table_Net_Sum,0.0000,ZERO_SUM_PASS
+404,Tier1_SelfPlay,EV_SB (Seat 0),-74.05,STABLE
+404,Tier1_SelfPlay,EV_BB (Seat 1),259.27,STABLE
+404,Tier1_SelfPlay,EV_UTG (Seat 2),-761.03,STABLE
+404,Tier1_SelfPlay,EV_MP (Seat 3),916.55,STABLE
+404,Tier1_SelfPlay,EV_CO (Seat 4),-340.73,STABLE
+404,Tier1_SelfPlay,Fold_Dist,10.24,ACTIVE
+404,Tier1_SelfPlay,Bet_05P_Dist,16.29,ACTIVE
+404,Tier1_SelfPlay,Bet_10P_Dist,7.91,ACTIVE
+404,Tier1_SelfPlay,Bet_20P_Dist,5.56,ACTIVE
+404,Tier1_SelfPlay,Allin_Dist,2.57,ACTIVE
+404,Tier2_Benchmark,EV_bb100,619.16,MEASURED
+404,Tier2_Benchmark,CI95_Low,-217.04,MEASURED
+404,Tier2_Benchmark,CI95_High,1455.36,MEASURED
+ALL,Tier2_Benchmark,5Seed_Mean_EV,295.98,CONFIRMED

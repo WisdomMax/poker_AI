@@ -1,0 +1,13 @@
+condition,exploration_patch,subgame_ratio,seed,eval_bb100,aa_3bet_fold_pct,aa_3bet_call_pct,elapsed_sec
+Cond1_Control,False,0.0,42,-28.541666666666668,100.0,0.0,0.0
+Cond1_Control,False,0.0,101,-28.833333333333332,100.0,0.0,0.0
+Cond1_Control,False,0.0,202,751.9166666666666,100.0,0.0,0.0
+Cond2_ExplorationOnly,True,0.0,42,-11.458333333333334,100.0,0.0,0.0
+Cond2_ExplorationOnly,True,0.0,101,157.83333333333334,100.0,0.0,0.0
+Cond2_ExplorationOnly,True,0.0,202,726.3333333333334,100.0,0.0,0.0
+Cond3_SubgameOnly,False,0.3,42,-28.541666666666668,100.0,0.0,0.0
+Cond3_SubgameOnly,False,0.3,101,-28.833333333333332,100.0,0.0,0.0
+Cond3_SubgameOnly,False,0.3,202,534.4166666666666,100.0,0.0,0.0
+Cond4_Combined,True,0.3,42,-28.541666666666668,100.0,0.0,0.0
+Cond4_Combined,True,0.3,101,-28.833333333333332,100.0,0.0,0.0
+Cond4_Combined,True,0.3,202,312.5,100.0,0.0,0.0

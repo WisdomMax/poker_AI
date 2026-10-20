@@ -1,0 +1,8 @@
+metric,v496_evaluator,v497_evaluator,absolute_diff,is_bit_exact
+total_bb100,137.89883333333339,137.89883333333339,0.0,True
+premium_count,0,25,25,False
+marginal_count,0,131,131,False
+trash_count,1000,844,156,False
+premium_ev_bb,0.0,50.72,50.72,False
+marginal_ev_bb,0.0,19.282442748091604,19.282442748091604,False
+trash_ev_bb,1.3789883333333333,-2.8613882306477096,4.240376563981043,False

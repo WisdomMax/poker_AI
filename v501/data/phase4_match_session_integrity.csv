@@ -1,0 +1,5 @@
+agent_id,bot_name,external_allin,tracked_allin,vpip_opp,pfr_mean
+1,Tight,0,0,50,0.42105263157894735
+2,Aggressive,39,39,50,0.9807692307692307
+3,Always Call,0,0,50,0.02666666666666667
+4,Random,11,11,50,0.5068493150684932

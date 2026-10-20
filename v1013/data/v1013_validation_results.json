@@ -1,0 +1,346 @@
+{
+  "phase1_replay_audit": {
+    "total_hands": 1000,
+    "diverged_hands": 0,
+    "tot_a_ret_bb": 7016.459999999998,
+    "tot_d_ret_bb": 7016.459999999998,
+    "diff_bb": 0.0,
+    "d_choices": {
+      "a": 1419,
+      "b": 0
+    }
+  },
+  "phase3_semantic_metrics": {
+    "Pool 1: Standard": {
+      "stats": {
+        "Player_0": {
+          "n_facing": 50,
+          "facing_call_rate": 0.0,
+          "facing_fold_rate": 1.0,
+          "facing_raise_rate": 0.0,
+          "vol_bet_rate": 0.0
+        },
+        "Player_1": {
+          "n_facing": 37,
+          "facing_call_rate": 0.32432432432432434,
+          "facing_fold_rate": 0.6756756756756757,
+          "facing_raise_rate": 0.0,
+          "vol_bet_rate": 0.07692307692307693
+        },
+        "Player_2": {
+          "n_facing": 42,
+          "facing_call_rate": 0.8809523809523809,
+          "facing_fold_rate": 0.11904761904761904,
+          "facing_raise_rate": 0.0,
+          "vol_bet_rate": 0.0
+        },
+        "Player_3": {
+          "n_facing": 44,
+          "facing_call_rate": 0.8863636363636364,
+          "facing_fold_rate": 0.0,
+          "facing_raise_rate": 0.11363636363636363,
+          "vol_bet_rate": 0.5
+        }
+      },
+      "detected_calling_station": true
+    },
+    "Pool 2: Aggressive Red-Team": {
+      "stats": {
+        "Player_0": {
+          "n_facing": 50,
+          "facing_call_rate": 0.0,
+          "facing_fold_rate": 1.0,
+          "facing_raise_rate": 0.0,
+          "vol_bet_rate": 0.0
+        },
+        "Player_1": {
+          "n_facing": 50,
+          "facing_call_rate": 0.0,
+          "facing_fold_rate": 0.86,
+          "facing_raise_rate": 0.14,
+          "vol_bet_rate": 0.0
+        },
+        "Player_2": {
+          "n_facing": 47,
+          "facing_call_rate": 0.02127659574468085,
+          "facing_fold_rate": 0.5957446808510638,
+          "facing_raise_rate": 0.3829787234042553,
+          "vol_bet_rate": 1.0
+        },
+        "Player_3": {
+          "n_facing": 44,
+          "facing_call_rate": 0.0,
+          "facing_fold_rate": 0.4090909090909091,
+          "facing_raise_rate": 0.5909090909090909,
+          "vol_bet_rate": 0.6666666666666666
+        }
+      },
+      "detected_calling_station": false
+    },
+    "Pool 3: Dynamic Switching": {
+      "stats": {
+        "Player_0": {
+          "n_facing": 43,
+          "facing_call_rate": 0.11627906976744186,
+          "facing_fold_rate": 0.0,
+          "facing_raise_rate": 0.8837209302325582,
+          "vol_bet_rate": 1.0
+        },
+        "Player_1": {
+          "n_facing": 35,
+          "facing_call_rate": 0.11428571428571428,
+          "facing_fold_rate": 0.6857142857142857,
+          "facing_raise_rate": 0.2,
+          "vol_bet_rate": 0.6666666666666666
+        },
+        "Player_2": {
+          "n_facing": 50,
+          "facing_call_rate": 0.54,
+          "facing_fold_rate": 0.46,
+          "facing_raise_rate": 0.0,
+          "vol_bet_rate": 0.0
+        },
+        "Player_3": {
+          "n_facing": 49,
+          "facing_call_rate": 0.5510204081632653,
+          "facing_fold_rate": 0.42857142857142855,
+          "facing_raise_rate": 0.02040816326530612,
+          "vol_bet_rate": 0.0
+        }
+      },
+      "detected_calling_station": false
+    }
+  },
+  "seed_pool_details": {
+    "Seed_1": {
+      "Pool 1: Standard (CS \ud3ec\ud568)": {
+        "Model_A": 856.0,
+        "Model_B": 867.375,
+        "Model_D": 867.375,
+        "D_A_diff": 11.375
+      },
+      "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+        "Model_A": 589.2600000000001,
+        "Model_B": 501.13349999999997,
+        "Model_D": 589.2600000000001,
+        "D_A_diff": 0.0
+      },
+      "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+        "Model_A": 874.2749999999999,
+        "Model_B": 441.137,
+        "Model_D": 874.2749999999999,
+        "D_A_diff": 0.0
+      }
+    },
+    "Seed_2": {
+      "Pool 1: Standard (CS \ud3ec\ud568)": {
+        "Model_A": 853.2500000000001,
+        "Model_B": 840.1500000000001,
+        "Model_D": 840.1500000000001,
+        "D_A_diff": -13.100000000000023
+      },
+      "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+        "Model_A": 688.082,
+        "Model_B": 499.62800000000004,
+        "Model_D": 688.082,
+        "D_A_diff": 0.0
+      },
+      "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+        "Model_A": 671.5161666666667,
+        "Model_B": 473.8791666666666,
+        "Model_D": 671.5161666666667,
+        "D_A_diff": 0.0
+      }
+    },
+    "Seed_3": {
+      "Pool 1: Standard (CS \ud3ec\ud568)": {
+        "Model_A": 1034.275,
+        "Model_B": 1154.8,
+        "Model_D": 1169.45,
+        "D_A_diff": 135.17499999999995
+      },
+      "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+        "Model_A": 779.8455,
+        "Model_B": 666.7605,
+        "Model_D": 779.8455,
+        "D_A_diff": 0.0
+      },
+      "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+        "Model_A": 586.3833333333333,
+        "Model_B": 125.85833333333332,
+        "Model_D": 586.3833333333333,
+        "D_A_diff": 0.0
+      }
+    },
+    "Seed_4": {
+      "Pool 1: Standard (CS \ud3ec\ud568)": {
+        "Model_A": 566.3000000000001,
+        "Model_B": 690.975,
+        "Model_D": 690.975,
+        "D_A_diff": 124.67499999999995
+      },
+      "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+        "Model_A": 604.4675,
+        "Model_B": 572.118,
+        "Model_D": 604.4675,
+        "D_A_diff": 0.0
+      },
+      "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+        "Model_A": 877.5874999999999,
+        "Model_B": 451.8625,
+        "Model_D": 877.5874999999999,
+        "D_A_diff": 0.0
+      }
+    },
+    "Seed_5": {
+      "Pool 1: Standard (CS \ud3ec\ud568)": {
+        "Model_A": 781.575,
+        "Model_B": 807.25,
+        "Model_D": 807.25,
+        "D_A_diff": 25.674999999999955
+      },
+      "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+        "Model_A": 463.82500000000005,
+        "Model_B": 530.662,
+        "Model_D": 463.82500000000005,
+        "D_A_diff": 0.0
+      },
+      "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+        "Model_A": 294.44166666666666,
+        "Model_B": 196.21666666666664,
+        "Model_D": 294.44166666666666,
+        "D_A_diff": 0.0
+      }
+    }
+  },
+  "championship_pools": {
+    "Pool 1: Standard (CS \ud3ec\ud568)": {
+      "model_a": {
+        "mean": 818.28,
+        "se": 86.99600467427143
+      },
+      "model_b": {
+        "mean": 872.11,
+        "se": 88.02490333025797
+      },
+      "model_d": {
+        "mean": 875.0400000000001,
+        "se": 88.22377846531704
+      },
+      "diff_da": {
+        "mean": 56.76,
+        "se": 46.556675840238626,
+        "ci95": [
+          -34.49108464686771,
+          148.01108464686772
+        ],
+        "p": 0.22284129422167084
+      },
+      "diff_db": {
+        "mean": 2.93,
+        "se": 2.9299999999999997,
+        "ci95": [
+          -2.812799999999999,
+          8.672799999999999
+        ],
+        "p": 0.31735890926782706
+      },
+      "choices_d": {
+        "a": 90,
+        "b": 6219
+      }
+    },
+    "Pool 2: Aggressive Red-Team (CS \ubc30\uc81c)": {
+      "model_a": {
+        "mean": 625.096,
+        "se": 40.499975781529315
+      },
+      "model_b": {
+        "mean": 554.0604,
+        "se": 39.27385049211324
+      },
+      "model_d": {
+        "mean": 625.096,
+        "se": 40.499975781529315
+      },
+      "diff_da": {
+        "mean": 0.0,
+        "se": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "diff_db": {
+        "mean": 71.0356,
+        "se": 32.072856393685576,
+        "ci95": [
+          8.17280146837627,
+          133.89839853162374
+        ],
+        "p": 0.026817354552476202
+      },
+      "choices_d": {
+        "a": 7023,
+        "b": 0
+      }
+    },
+    "Pool 3: Dynamic Switching (\uc801\uc751\ud615 \uc0c1\ub300)": {
+      "model_a": {
+        "mean": 660.8407333333333,
+        "se": 91.70685118532082
+      },
+      "model_b": {
+        "mean": 337.7907333333333,
+        "se": 98.88608441846289
+      },
+      "model_d": {
+        "mean": 660.8407333333333,
+        "se": 91.70685118532082
+      },
+      "diff_da": {
+        "mean": 0.0,
+        "se": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "diff_db": {
+        "mean": 323.05,
+        "se": 66.60397084864057,
+        "ci95": [
+          192.5062171366645,
+          453.5937828633355
+        ],
+        "p": 1.2700938470209115e-06
+      },
+      "choices_d": {
+        "a": 9877,
+        "b": 0
+      }
+    }
+  },
+  "championship_total": {
+    "model_a": {
+      "mean": 701.4055777777778,
+      "se": 44.247505949637954
+    },
+    "model_b": {
+      "mean": 587.9870444444445,
+      "se": 46.06231386834922
+    },
+    "model_d": {
+      "mean": 720.3255777777778,
+      "se": 44.520608085155665
+    },
+    "diff_da": {
+      "mean": 18.92,
+      "se": 15.519395145485282,
+      "p": 0.22281794438562016
+    }
+  },
+  "total_runtime_seconds": 3025.686734199524
+}

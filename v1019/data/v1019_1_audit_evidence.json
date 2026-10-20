@@ -1,0 +1,637 @@
+{
+  "class_identities": {
+    "Base_Seen": {
+      "class_name": "DeterministicTrueNFSP_Agent",
+      "module_file": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1013/run_v1013_replay_and_controller_validation.py",
+      "memory_id": "0x1213fa0d0",
+      "method_source_lines": [
+        "    def select_action(self, info: np.ndarray, legal_6: list, is_eval: bool = False, is_br: bool = False):\n",
+        "        norm_info = normalize_inf_state_v79(info)\n",
+        "        x = torch.tensor(norm_info, dtype=torch.float32).unsqueeze(0)\n",
+        "        mask = torch.zeros(self.action_dim, dtype=torch.bool)\n",
+        "        mask[legal_6] = True\n"
+      ]
+    },
+    "Single_Adaptive": {
+      "class_name": "AdaptiveHistoryExploiter",
+      "module_file": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1018/run_v1018_unseen_generalization.py",
+      "memory_id": "0x1248c1ca0",
+      "method_source_lines": [
+        "    def select_action(self, st, cp, legal_actions):\n",
+        "        sp = extract_player_spent(st)\n",
+        "        to_call = max(sp) - sp[cp]\n",
+        "        inf = np.array(st.information_state_tensor(cp), dtype=np.float32)\n",
+        "        n_b = len(list(np.where(inf[57:109] == 1.0)[0]))\n"
+      ]
+    },
+    "Single_MultiSizing": {
+      "class_name": "DynamicMultiSizingBot",
+      "module_file": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1018/run_v1018_unseen_generalization.py",
+      "memory_id": "0x1248d5160",
+      "method_source_lines": [
+        "    def select_action(self, st, cp, legal_actions):\n",
+        "        sp = extract_player_spent(st)\n",
+        "        to_call = max(sp) - sp[cp]\n",
+        "        inf = np.array(st.information_state_tensor(cp), dtype=np.float32)\n",
+        "        h_cards = list(np.where(inf[5:57] == 1.0)[0])\n"
+      ]
+    },
+    "Single_Polarized": {
+      "class_name": "PolarizedBluffValueBot",
+      "module_file": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1018/run_v1018_unseen_generalization.py",
+      "memory_id": "0x1248c1130",
+      "method_source_lines": [
+        "    def select_action(self, st, cp, legal_actions):\n",
+        "        sp = extract_player_spent(st)\n",
+        "        to_call = max(sp) - sp[cp]\n",
+        "        inf = np.array(st.information_state_tensor(cp), dtype=np.float32)\n",
+        "        h_cards = list(np.where(inf[5:57] == 1.0)[0])\n"
+      ]
+    },
+    "Single_Trap": {
+      "class_name": "CheckRaiseTrapBot",
+      "module_file": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1018/run_v1018_unseen_generalization.py",
+      "memory_id": "0x1248bc4c0",
+      "method_source_lines": [
+        "    def select_action(self, st, cp, legal_actions):\n",
+        "        sp = extract_player_spent(st)\n",
+        "        to_call = max(sp) - sp[cp]\n",
+        "        inf = np.array(st.information_state_tensor(cp), dtype=np.float32)\n",
+        "        h_cards = list(np.where(inf[5:57] == 1.0)[0])\n"
+      ]
+    }
+  },
+  "sample_hand_comparison": [
+    {
+      "hand": 0,
+      "seed": 92001,
+      "seat": 0,
+      "adapt_ret": -0.5,
+      "multi_ret": -0.5,
+      "polar_ret": -0.5,
+      "trap_ret": -0.5,
+      "adapt_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "multi_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "polar_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "trap_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "hand": 1,
+      "seed": 92002,
+      "seat": 1,
+      "adapt_ret": -100.0,
+      "multi_ret": -100.0,
+      "polar_ret": -100.0,
+      "trap_ret": -100.0,
+      "adapt_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "multi_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "polar_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "trap_acts": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "hand": 2,
+      "seed": 92003,
+      "seat": 2,
+      "adapt_ret": 101.5,
+      "multi_ret": 101.5,
+      "polar_ret": 101.5,
+      "trap_ret": 101.5,
+      "adapt_acts": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "multi_acts": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "polar_acts": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "trap_acts": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "code_forensics": {
+    "root_cause": "Preflop evaluation fallback defect in eval_7cards wrapper",
+    "defect_mechanism": "In Texas Hold'em preflop, there are 0 community board cards (len(all_cards) == 2). eval_7cards requires 5 to 7 cards. Both bots implemented a defensive guard: 'cat = eval_7cards(all_c)[0] if len(all_c) >= 5 else 7'. Because len(all_c) is always 2 on preflop, cat was identically assigned to 7 (One pair default).",
+    "adaptive_preflop_branch": "AdaptiveHistoryExploiter line 65: 'if cat <= 6: ... if to_call < 200: return 1; return 0'. When facing a preflop raise (to_call >= 200), cat=7 causes 'cat <= 6' to be False, and 'to_call < 200' to be False -> returns 0 (Fold).",
+    "multisizing_preflop_branch": "DynamicMultiSizingBot line 98: 'if cat <= 2: ... if cat <= 6: ... if to_call <= 100: return 1; return 0'. When facing a preflop raise (to_call >= 200), cat=7 causes cat<=2 False, cat<=6 False, to_call<=100 False -> returns 0 (Fold).",
+    "conclusion": "Both classes produced 100% identical preflop action sequences (Fold on any raise), causing the entire game tree to branch identically."
+  },
+  "bonferroni_table": [
+    {
+      "condition": "Single_Adaptive",
+      "model": "Model_A",
+      "delta_mean": 78.0147777777778,
+      "delta_se": 86.6873907826134,
+      "t_stat": 0.8999553115333232,
+      "p_val": 0.41902665668191597,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Adaptive",
+      "model": "E_R1_100K",
+      "delta_mean": -309.90700000000004,
+      "delta_se": 83.53609427699831,
+      "t_stat": -3.7098574296803464,
+      "p_val": 0.020656607950192633,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Adaptive",
+      "model": "E_R2_100K",
+      "delta_mean": -109.17083333333338,
+      "delta_se": 77.14918406491877,
+      "t_stat": -1.4150614119453204,
+      "p_val": 0.22996900090960506,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Adaptive",
+      "model": "E_R3_100K",
+      "delta_mean": -419.23677777777783,
+      "delta_se": 90.14035882800766,
+      "t_stat": -4.650933091776378,
+      "p_val": 0.009654719377276052,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_MultiSizing",
+      "model": "Model_A",
+      "delta_mean": 81.31477777777778,
+      "delta_se": 84.4143831782487,
+      "t_stat": 0.9632810750517974,
+      "p_val": 0.389956106786998,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_MultiSizing",
+      "model": "E_R1_100K",
+      "delta_mean": -309.90700000000004,
+      "delta_se": 83.53609427699831,
+      "t_stat": -3.7098574296803464,
+      "p_val": 0.020656607950192633,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_MultiSizing",
+      "model": "E_R2_100K",
+      "delta_mean": -109.17083333333338,
+      "delta_se": 77.14918406491877,
+      "t_stat": -1.4150614119453204,
+      "p_val": 0.22996900090960506,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_MultiSizing",
+      "model": "E_R3_100K",
+      "delta_mean": -419.23677777777783,
+      "delta_se": 90.14035882800766,
+      "t_stat": -4.650933091776378,
+      "p_val": 0.009654719377276052,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Polarized",
+      "model": "Model_A",
+      "delta_mean": -110.30744444444443,
+      "delta_se": 67.29529007343602,
+      "t_stat": -1.6391554940036865,
+      "p_val": 0.17652386388451313,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Polarized",
+      "model": "E_R1_100K",
+      "delta_mean": -311.7700000000001,
+      "delta_se": 84.81947966613173,
+      "t_stat": -3.6756886652358154,
+      "p_val": 0.021284422616566337,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Polarized",
+      "model": "E_R2_100K",
+      "delta_mean": -130.76250000000005,
+      "delta_se": 65.00377132067408,
+      "t_stat": -2.0116140547434944,
+      "p_val": 0.11458782615640896,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Polarized",
+      "model": "E_R3_100K",
+      "delta_mean": -423.91577777777786,
+      "delta_se": 93.05370407504701,
+      "t_stat": -4.5556034764171605,
+      "p_val": 0.01037338161998114,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Trap",
+      "model": "Model_A",
+      "delta_mean": -110.30744444444443,
+      "delta_se": 67.29529007343602,
+      "t_stat": -1.6391554940036865,
+      "p_val": 0.17652386388451313,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Trap",
+      "model": "E_R1_100K",
+      "delta_mean": -311.7700000000001,
+      "delta_se": 84.81947966613173,
+      "t_stat": -3.6756886652358154,
+      "p_val": 0.021284422616566337,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Trap",
+      "model": "E_R2_100K",
+      "delta_mean": -130.76250000000005,
+      "delta_se": 65.00377132067408,
+      "t_stat": -2.0116140547434944,
+      "p_val": 0.11458782615640896,
+      "sig_raw_005": false,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    },
+    {
+      "condition": "Single_Trap",
+      "model": "E_R3_100K",
+      "delta_mean": -423.91577777777786,
+      "delta_se": 93.05370407504701,
+      "t_stat": -4.5556034764171605,
+      "p_val": 0.01037338161998114,
+      "sig_raw_005": true,
+      "sig_bonf_12": false,
+      "sig_bonf_16": false
+    }
+  ],
+  "big_pot_reconciliation": {
+    "formula_A_marginal_to_total": {
+      "definition": "Marginal bb/100 contribution of Top 1% pots to overall win rate",
+      "formula": "Sum(Profit_in_Top_1%_pots) / Total_Hands * 100",
+      "v1019_reported_range": "+148.2 to +589.4 bb/100",
+      "note": "This reflects how much the top 1% largest pots contributed to the final total bb/100."
+    },
+    "formula_B_within_sample_mean": {
+      "definition": "Average profit per hand strictly WITHIN the Top 1% hands",
+      "formula": "Sum(Profit_in_Top_1%_pots) / N_top_hands",
+      "true_scale": "+14.8 to +58.9 BB/hand (or +1,480 to +5,890 bb/100 within that sub-sample)",
+      "note": "Average pot size in Top 1% was ~70 BB (7,000 chips). Winning or losing an 80BB pot yields \u00b180 BB per hand."
+    },
+    "reconciliation_verdict": "V10.19 calculated Metric A (Marginal to Total) correctly as code, but labeled it as '\ud31f \uc21c\uc190\uc775 \uae30\uc5ec\ub3c4', which caused confusion with Metric B."
+  }
+}

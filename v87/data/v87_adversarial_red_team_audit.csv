@@ -1,0 +1,21 @@
+Phase,Item,Metric,Value,Status
+Phase5,TreeNodes,Count,3312,CALCULATED
+Phase6,Rank_1,Temp-Hybrid (V8.5 Baseline),540.73,COMPLETED
+Phase6,CI_Low_1,Temp-Hybrid (V8.5 Baseline),399.37,COMPLETED
+Phase6,CI_High_1,Temp-Hybrid (V8.5 Baseline),682.10,COMPLETED
+Phase6,Rank_2,Meta-Controller (V8.7),265.72,COMPLETED
+Phase6,CI_Low_2,Meta-Controller (V8.7),152.24,COMPLETED
+Phase6,CI_High_2,Meta-Controller (V8.7),379.21,COMPLETED
+Phase6,Rank_3,TightValueBot (Red-Team),2.38,COMPLETED
+Phase6,CI_Low_3,TightValueBot (Red-Team),-26.99,COMPLETED
+Phase6,CI_High_3,TightValueBot (Red-Team),31.75,COMPLETED
+Phase6,Rank_4,AdaptiveExploiter (Red-Team),-122.73,COMPLETED
+Phase6,CI_Low_4,AdaptiveExploiter (Red-Team),-400.15,COMPLETED
+Phase6,CI_High_4,AdaptiveExploiter (Red-Team),154.69,COMPLETED
+Phase6,Rank_5,UltraAggressiveBot (Red-Team),-686.10,COMPLETED
+Phase6,CI_Low_5,UltraAggressiveBot (Red-Team),-961.19,COMPLETED
+Phase6,CI_High_5,UltraAggressiveBot (Red-Team),-411.02,COMPLETED
+Phase6,Meta_vs_Temp_Delta,bb100,-275.01,TEST_DONE
+Phase6,Meta_vs_Temp_p_value,p_val,0.0042,TEST_DONE
+Phase6,Temp_Choices,Count,6170,LOGGED
+Phase6,CFR_Choices,Count,0,LOGGED

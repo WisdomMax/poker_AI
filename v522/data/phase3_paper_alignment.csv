@@ -1,0 +1,9 @@
+item,paper_spec,nfsp_mc,nfsp_dqn,alignment
+1. Best Response Q-Network,파라미터 theta_Q를 갖는 딥 Q-네트워크,"구현됨 (2-Layer MLP, lr=0.003)","구현됨 (2-Layer MLP, lr=0.003)",일치
+2. Target Q-Network,주기적(periodic) 복사되는 theta_Q^- 타겟 네트워크,미구현 (타겟 네트워크 없이 R_terminal 직접 회귀),"구현됨 (q_target 유지, 200스텝 주기적 동기화)",DQN Reference만 일치
+3. Average Policy Network,파라미터 theta_Pi를 갖는 지도학습 네트워크,"구현됨 (2-Layer MLP, lr=0.001)","구현됨 (2-Layer MLP, lr=0.001)",일치
+4. RL Replay Buffer,순환(Circular) 버퍼 M_RL,"구현됨 (deque, maxlen=20,000)","구현됨 (deque, maxlen=20,000)",일치
+5. Supervised Reservoir Buffer,저수지 샘플링(Reservoir Sampling) 버퍼 M_SL,구현됨 (ReservoirBuffer class),구현됨 (ReservoirBuffer class),일치
+6. Anticipatory Parameter (eta),eta = 0.1 (BR vs Average policy 혼합 가중치),0.1 사용,0.1 사용,일치
+7. Episode-Level Policy Selection,에피소드 시작 시 d ~ Bernoulli(eta) 샘플링 후 에피소드 전체 유지,불일치 (매 의사결정 스텝마다 random.random() < eta 독립 분기),일치 (reset_episode에서 d 샘플링 후 에피소드 내 일관 유지),DQN Reference만 일치 (핵심 차이)
+8. Legal Action Mask,불법 행동 로짓/Q값 -inf 마스킹,구현됨 (-1e9 마스킹),구현됨 (-1e9 마스킹),일치

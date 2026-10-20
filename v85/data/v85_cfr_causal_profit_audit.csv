@@ -1,0 +1,8 @@
+Item,Metric,Value,Status
+BluffShare,Ratio,0.1667,BALANCED
+CFR_OFF_Score,Mean_bb100,623.08,PROFILED
+CFR_ON_Score,Mean_bb100,483.26,PROFILED
+Causal_Delta_EV,Mean_Diff,-139.82,ANALYZE_DONE
+Causal_Delta_EV,p_value,0.2763,ANALYZE_DONE
+CFR_Calls,Count,154,LOGGED
+Action_Changes,Count,51,LOGGED

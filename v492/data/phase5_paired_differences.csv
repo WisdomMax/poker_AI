@@ -1,0 +1,4 @@
+treatment,control,mean_diff_bb100,ci95_diff_bb100,t_stat,significant
+Treatment_5A,Control_Masked,0.06824766666666669,1.3266702824678984,0.10082793625092258,유의미하지 않음 (0 포함)
+Curriculum_40k,Baseline_40k,-0.26543333333333335,0.7238517546242086,-0.7187235922408222,유의미하지 않음 (0 포함)
+Curriculum_40k,Treatment_5A,-2.3481059999999996,2.168742553650374,-2.122099625081613,유의미함 (p < 0.05)

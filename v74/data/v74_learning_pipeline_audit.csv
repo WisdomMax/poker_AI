@@ -1,0 +1,6 @@
+Audit_Item,Value,Conclusion
+Card_Input_L2_Distance,2.000000,VERIFIED_DIFFERENT
+Bet_Mapping_Fcpa_Action,2 (Pot Bet),ALL_SIZINGS_MAPPED_TO_POT
+Fold_Actual_Reward,0.0000,ACCURATE_TERMINAL
+Fold_Q_Network_Value,-1.0748,UNLEARNED_NEGATIVE_BIAS
+Eps_Greedy_Reservoir_Fold_Pct,0.00%,RECOVERED

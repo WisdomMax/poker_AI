@@ -1,0 +1,11 @@
+condition,seed,total_games,learner_decisions,transitions_collected,optimizer_updates,training_time_sec
+CondB_5A_Scratch,42,20000,87772,87772,312,14.0
+CondB_5A_Scratch,101,20000,74978,74978,312,12.01
+CondB_5A_Scratch,202,20000,42868,42868,312,9.12
+CondB_5A_Scratch,303,20000,57396,57396,312,10.75
+CondB_5A_Scratch,404,20000,45076,45076,312,8.31
+CondC_5A_Transfer,42,20000,36559,36559,312,8.61
+CondC_5A_Transfer,101,20000,41271,41271,312,8.33
+CondC_5A_Transfer,202,20000,34830,34830,312,8.66
+CondC_5A_Transfer,303,20000,35623,35623,312,7.71
+CondC_5A_Transfer,404,20000,37485,37485,312,9.08

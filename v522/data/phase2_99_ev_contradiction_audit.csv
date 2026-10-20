@@ -1,0 +1,4 @@
+scenario,hero_pos,hero_invested,call_cost,opp_range,trials,fold_ev_bb,call_ev_bb,call_ci_half,ev_diff,optimal_action
+시나리오 1: UTG 3.5BB Pot오픈 후 CO 올인 vs 상대 Random Range (Phase 3 재현),UTG (Seat 2),3.5 BB (350),6.5 BB (650),Random 2-Cards (비현실적 레인지),500,-3.5,-1.2875,0.8904098822461343,2.2125,Call
+시나리오 2: UTG 3.5BB Pot오픈 후 CO 올인 vs 상대 Realistic All-in Range (프리미엄),UTG (Seat 2),3.5 BB (350),6.5 BB (650),"Realistic All-in (TT~AA, AKs, KQs)",500,-3.5,-4.916,0.7786478538195267,-1.4160000000000004,Fold
+시나리오 3: Hero BB(1.0BB 투입)에서 UTG 10BB 오픈 올인 직면 vs Shove Range,BB (Seat 1),1.0 BB (100),9.0 BB (900),"Realistic Shove (TT~AA, AKs, AKo, KQs)",500,-1.0,-4.957,0.7765323566352649,-3.957,Fold

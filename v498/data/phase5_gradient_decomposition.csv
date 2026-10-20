@@ -1,0 +1,5 @@
+metric,value
+policy_grad_norm,146.8880615234375
+entropy_grad_norm,0.011266597546637058
+ratio_pol_to_ent,13037.481894192784
+cosine_similarity,-0.5827162861824036

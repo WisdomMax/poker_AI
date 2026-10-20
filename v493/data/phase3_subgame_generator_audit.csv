@@ -1,0 +1,8 @@
+situation,hand,hero_seat,private_cards,public_cards,legal_actions,sequence
+SitA_Facing_OpenRaise,AA,3,AsAc,,"[0, 1, 2, 3, 4]",r225
+SitB_Facing_3Bet_AllIn,AA,2,AsAc,,"[0, 1]",r225r10000fff
+SitB_Facing_3Bet_Pot,AA,2,AsAc,,"[0, 1, 2, 3, 4]",r225r825fff
+SitC_Facing_4Bet,AA,3,AsAc,,"[0, 1]",r225r825r10000fff
+SitD_Flop_Facing_Bet,AA,2,AsAc,Ks8s7h,"[0, 1, 2, 3, 4]",r225cfff|cr525
+SitE_Turn_Facing_Raise,AA,2,AsAc,JdTc4s4h,"[0, 1, 2, 3, 4]",r225cfff|cc|r525r1725
+SitF_River_Facing_AllIn,AA,2,AsAc,KsJc9s6h3s,"[0, 1]",r225cfff|cc|cc|cr10000

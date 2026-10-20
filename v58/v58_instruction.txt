@@ -1,0 +1,37 @@
+POKER AI V5.8
+52-CARD FULL DECK TRANSITION & 50BB BENCHMARK
+24장 축소 덱에서 52장 실제 풀 덱으로의 도약
+
+연구 목표:
+24장 축소 포커 AI에서 벗어나 실제 52장 홀덤을 학습할 수 있는 신경망 시스템을 확보한다.
+
+작업 디렉터리: v58/
+
+PHASE 3. 52장 풀 덱 환경 구축
+- 5 Players
+- 52 Cards (13 Ranks x 4 Suits)
+- 50BB (Stack: 5,000 chips, Blinds: 50 / 100)
+- 2 Betting Rounds (Preflop + Flop)
+- 4 Actions: Fold, Check/Call, Pot Raise, All-in
+- 환경 무결성 검증:
+  * 중복 카드 0회
+  * 칩 보존 (Zero-sum)
+  * 핸드 랭킹 (스트레이트, 플러시, 풀하우스, 팟 분할) 정확성
+  * 칩 반환 범위 (-50BB ~ +200BB)
+
+PHASE 4. 52장 NFSP Smoke Test 및 훈련
+- Q-Network: 128 x 128
+- Average Policy Network: 128 x 128
+- Learning Rate: 1e-4, Batch Size: 64
+- 3개 시드 1,000 에피소드 Smoke Test
+- 5개 독립 시드 (42, 101, 202, 303, 404) x 10,000 에피소드 훈련
+- 체크포인트: 0, 2,000, 5,000, 10,000
+
+PHASE 5. 52장 학습 성능 평가
+- 신규 평가 시드 3개 이상 (총 4,500핸드)
+- 좌석 균등 회전
+- 상대: AlwaysFold, CheckCall, Random, RuleBased
+- bb/100, 95% CI, Seed-wise Gain, 액션 빈도, AA/72o 카드별 행동 분석
+
+PHASE 6 & 7. 최종 판정 및 공식 보고서
+- 산출물: v58_full_deck_transition_report.md

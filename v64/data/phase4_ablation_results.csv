@@ -1,0 +1,5 @@
+mode,time_sec,ev,sd,allin_pct,buf_allin_pct
+A_Baseline_NoScaling,4.2,-238.98,21.46,26.9,18.7
+B_Linear_Reward_Scale,4.3,-18.92,330.2,3.9,7.5
+C_Linear_Scale_GradClip,5.0,213.73,482.08,8.3,11.6
+D_Double_DQN_Linear_Scale,4.8,21.44,362.31,11.6,13.8
