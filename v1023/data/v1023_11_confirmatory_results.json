@@ -1,0 +1,130 @@
+{
+  "eval_seeds": [
+    180000,
+    180499
+  ],
+  "run_hashes": {
+    "run1": "0705cf983d6f16eb192f7cd3ceca521310b1207a5c5540bf844e72ad0c218a0b",
+    "run2": "0705cf983d6f16eb192f7cd3ceca521310b1207a5c5540bf844e72ad0c218a0b",
+    "bit_exact": true
+  },
+  "model_a_instrumentation": {
+    "equity_calls": 89,
+    "fallback_calls": 97
+  },
+  "hand_103_repair": {
+    "pure_return": -100.0,
+    "hybrid_return": -30.25,
+    "net_diff_bb": 69.75,
+    "pure_trace": [
+      {
+        "round": 0,
+        "dec": 0,
+        "act": "Pot",
+        "raw_amt": 1200
+      },
+      {
+        "round": 1,
+        "dec": 1,
+        "act": "Allin",
+        "raw_amt": 10000
+      }
+    ],
+    "hybrid_trace": [
+      {
+        "round": 0,
+        "dec": 0,
+        "act": "Pot",
+        "raw_amt": 1200,
+        "meta": {
+          "branch": "PPO_Preflop"
+        }
+      },
+      {
+        "round": 1,
+        "dec": 1,
+        "act": "HalfPot",
+        "raw_amt": 3025,
+        "meta": {
+          "branch": "NFSP_Fallback",
+          "tc": 0.0,
+          "pot": 3650.0,
+          "act": 2
+        }
+      },
+      {
+        "round": 1,
+        "dec": 2,
+        "act": "Fold",
+        "raw_amt": 0,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "tc": 6975.0,
+          "pot": 16100.0,
+          "pot_odds": 0.30227518959913324,
+          "mc_equity": 0.17,
+          "active_opps": 2,
+          "act": 0
+        }
+      }
+    ]
+  },
+  "summary": {
+    "Pure_Ensemble": {
+      "mean_bb100": 1065.8313333333333,
+      "sem_bb100": 345.75886950961944,
+      "ci95": [
+        388.14394909447924,
+        1743.5187175721874
+      ]
+    },
+    "Hybrid_Ensemble": {
+      "mean_bb100": 1065.8313333333333,
+      "sem_bb100": 345.75886950961944,
+      "ci95": [
+        388.14394909447924,
+        1743.5187175721874
+      ]
+    },
+    "Pure_R2": {
+      "mean_bb100": 855.594,
+      "sem_bb100": 391.4319991495898,
+      "ci95": [
+        88.38728166680414,
+        1622.800718333196
+      ]
+    },
+    "Hybrid_R2": {
+      "mean_bb100": 895.094,
+      "sem_bb100": 391.1729350511882,
+      "ci95": [
+        128.3950472996712,
+        1661.792952700329
+      ]
+    }
+  },
+  "hypothesis_tests": {
+    "Primary_Hybrid_Ens_vs_Pure_Ens": {
+      "mean_diff_bb100": 0.0,
+      "sem_diff": 0.0,
+      "t_statistic": 0.0,
+      "nominal_p_value": 0.0,
+      "holm_bonferroni_p_value": 1.0,
+      "ci95_diff": [
+        0.0,
+        0.0
+      ]
+    },
+    "Secondary_Hybrid_R2_vs_Pure_R2": {
+      "mean_diff_bb100": 39.5,
+      "sem_diff": 58.77468355383725,
+      "t_statistic": 0.6720580632955385,
+      "nominal_p_value": 0.501857771461949,
+      "holm_bonferroni_p_value": 1.0,
+      "ci95_diff": [
+        -75.69837976552101,
+        154.698379765521
+      ]
+    }
+  }
+}
