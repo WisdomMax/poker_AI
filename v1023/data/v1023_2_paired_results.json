@@ -1,0 +1,519 @@
+{
+  "agents": {
+    "R1_Sample": {
+      "mean_bb100": 731.4499999999999,
+      "median_bb100": 0.0,
+      "std_bb100": 7389.102425024299,
+      "sem_bb100": 233.7808549381998,
+      "ci95": [
+        273.23952432112833,
+        1189.6604756788715
+      ],
+      "action_percentages": {
+        "Fold": 57.821229050279335,
+        "CheckCall": 29.88826815642458,
+        "HalfPot_0.5x": 6.424581005586592,
+        "Pot_1.0x": 0.0,
+        "DoublePot_2.0x": 0.37243947858473,
+        "Allin": 5.493482309124767
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 621,
+        "Fold": 621,
+        "PaidCall": 321,
+        "CheckCall": 321,
+        "Raise_Allin": 55,
+        "Allin": 59,
+        "Bet_HalfPot_0.5x": 33,
+        "HalfPot_0.5x": 69,
+        "Raise_HalfPot_0.5x": 36,
+        "Bet_Allin": 4,
+        "Raise_DoublePot_2.0x": 4,
+        "DoublePot_2.0x": 4,
+        "Pot_1.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 37,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 37,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1037,
+        "chose_call": 321,
+        "chose_raise": 95,
+        "chose_fold": 621
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "HalfPot_0.5x": 328.07246376811594,
+        "DoublePot_2.0x": 650.0
+      }
+    },
+    "R1_Argmax": {
+      "mean_bb100": 886.3385000000001,
+      "median_bb100": 0.0,
+      "std_bb100": 7161.5997642054635,
+      "sem_bb100": 226.58298928582755,
+      "ci95": [
+        442.2358409997781,
+        1330.4411590002221
+      ],
+      "action_percentages": {
+        "Fold": 58.81801125703565,
+        "CheckCall": 29.362101313320828,
+        "HalfPot_0.5x": 6.191369606003752,
+        "Pot_1.0x": 0.0,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 5.628517823639775
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 627,
+        "Fold": 627,
+        "PaidCall": 313,
+        "CheckCall": 313,
+        "Raise_Allin": 55,
+        "Allin": 60,
+        "Raise_HalfPot_0.5x": 22,
+        "HalfPot_0.5x": 66,
+        "Bet_HalfPot_0.5x": 44,
+        "Bet_Allin": 5,
+        "Pot_1.0x": 0,
+        "DoublePot_2.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 49,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 49,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1017,
+        "chose_call": 313,
+        "chose_raise": 77,
+        "chose_fold": 627
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "HalfPot_0.5x": 359.8333333333333
+      }
+    },
+    "R2_Sample": {
+      "mean_bb100": 1071.6083333333331,
+      "median_bb100": 0.0,
+      "std_bb100": 8303.791216428895,
+      "sem_bb100": 262.7203276044285,
+      "ci95": [
+        556.6764912286533,
+        1586.540175438013
+      ],
+      "action_percentages": {
+        "Fold": 50.140845070422536,
+        "CheckCall": 30.422535211267604,
+        "HalfPot_0.5x": 0.09389671361502347,
+        "Pot_1.0x": 6.009389671361502,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 13.333333333333334
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 534,
+        "Fold": 534,
+        "Raise_Pot_1.0x": 56,
+        "Pot_1.0x": 64,
+        "PaidCall": 324,
+        "CheckCall": 324,
+        "Bet_Pot_1.0x": 8,
+        "Bet_Allin": 36,
+        "Allin": 142,
+        "Raise_Allin": 106,
+        "Raise_HalfPot_0.5x": 1,
+        "HalfPot_0.5x": 1,
+        "DoublePot_2.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 44,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 44,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1021,
+        "chose_call": 324,
+        "chose_raise": 163,
+        "chose_fold": 534
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "Pot_1.0x": 589.0625,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "HalfPot_0.5x": 275.0
+      }
+    },
+    "R2_Argmax": {
+      "mean_bb100": 1045.7166666666667,
+      "median_bb100": 0.0,
+      "std_bb100": 8113.66228535754,
+      "sem_bb100": 256.7049144327534,
+      "ci95": [
+        542.57503437847,
+        1548.8582989548634
+      ],
+      "action_percentages": {
+        "Fold": 49.906890130353815,
+        "CheckCall": 28.957169459962756,
+        "HalfPot_0.5x": 0.0,
+        "Pot_1.0x": 6.983240223463687,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 14.152700186219738
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 536,
+        "Fold": 536,
+        "Raise_Pot_1.0x": 60,
+        "Pot_1.0x": 75,
+        "PaidCall": 311,
+        "CheckCall": 311,
+        "Bet_Pot_1.0x": 15,
+        "Raise_Allin": 111,
+        "Allin": 152,
+        "Bet_Allin": 41,
+        "HalfPot_0.5x": 0,
+        "DoublePot_2.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 56,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 56,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1018,
+        "chose_call": 311,
+        "chose_raise": 171,
+        "chose_fold": 536
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "Pot_1.0x": 844.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0
+      }
+    },
+    "R3_Sample": {
+      "mean_bb100": 1143.7166666666667,
+      "median_bb100": 0.0,
+      "std_bb100": 7509.205514844207,
+      "sem_bb100": 237.58074853877136,
+      "ci95": [
+        678.0583995306748,
+        1609.3749338026587
+      ],
+      "action_percentages": {
+        "Fold": 59.526066350710906,
+        "CheckCall": 25.971563981042657,
+        "HalfPot_0.5x": 0.18957345971563982,
+        "Pot_1.0x": 0.5687203791469194,
+        "DoublePot_2.0x": 4.644549763033176,
+        "Allin": 9.09952606635071
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 628,
+        "Fold": 628,
+        "PaidCall": 274,
+        "CheckCall": 274,
+        "Raise_Allin": 83,
+        "Allin": 96,
+        "Raise_DoublePot_2.0x": 25,
+        "DoublePot_2.0x": 49,
+        "Bet_DoublePot_2.0x": 24,
+        "Bet_Allin": 13,
+        "Bet_Pot_1.0x": 3,
+        "Pot_1.0x": 6,
+        "Bet_HalfPot_0.5x": 1,
+        "HalfPot_0.5x": 2,
+        "Raise_Pot_1.0x": 3,
+        "Raise_HalfPot_0.5x": 1
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 41,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 41,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1014,
+        "chose_call": 274,
+        "chose_raise": 112,
+        "chose_fold": 628
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "DoublePot_2.0x": 1700.0,
+        "Pot_1.0x": 500.0,
+        "HalfPot_0.5x": 275.0
+      }
+    },
+    "R3_Argmax": {
+      "mean_bb100": 1340.2749999999999,
+      "median_bb100": 0.0,
+      "std_bb100": 7604.110224041667,
+      "sem_bb100": 240.58340065774914,
+      "ci95": [
+        868.7315347108115,
+        1811.8184652891882
+      ],
+      "action_percentages": {
+        "Fold": 59.60076045627376,
+        "CheckCall": 26.71102661596958,
+        "HalfPot_0.5x": 0.0,
+        "Pot_1.0x": 0.0,
+        "DoublePot_2.0x": 4.942965779467681,
+        "Allin": 8.745247148288973
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 627,
+        "Fold": 627,
+        "PaidCall": 281,
+        "CheckCall": 281,
+        "Raise_Allin": 86,
+        "Allin": 92,
+        "Bet_DoublePot_2.0x": 32,
+        "DoublePot_2.0x": 52,
+        "Raise_DoublePot_2.0x": 20,
+        "Bet_Allin": 6,
+        "HalfPot_0.5x": 0,
+        "Pot_1.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 38,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 38,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1014,
+        "chose_call": 281,
+        "chose_raise": 106,
+        "chose_fold": 627
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "DoublePot_2.0x": 1600.9615384615386
+      }
+    },
+    "Ensemble_Sample": {
+      "mean_bb100": 1099.625,
+      "median_bb100": 0.0,
+      "std_bb100": 7830.4489058870895,
+      "sem_bb100": 247.744439645138,
+      "ci95": [
+        614.0458982955295,
+        1585.2041017044705
+      ],
+      "action_percentages": {
+        "Fold": 54.655493482309126,
+        "CheckCall": 28.398510242085663,
+        "HalfPot_0.5x": 2.700186219739292,
+        "Pot_1.0x": 2.3277467411545625,
+        "DoublePot_2.0x": 1.675977653631285,
+        "Allin": 10.242085661080075
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 587,
+        "Fold": 587,
+        "PaidCall": 304,
+        "CheckCall": 305,
+        "Raise_Allin": 86,
+        "Allin": 110,
+        "Bet_DoublePot_2.0x": 8,
+        "DoublePot_2.0x": 18,
+        "Bet_Allin": 24,
+        "Raise_DoublePot_2.0x": 10,
+        "Raise_Pot_1.0x": 24,
+        "Pot_1.0x": 25,
+        "Bet_HalfPot_0.5x": 16,
+        "HalfPot_0.5x": 29,
+        "Raise_HalfPot_0.5x": 13,
+        "FreeCheck": 1,
+        "Bet_Pot_1.0x": 1
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 50,
+        "chose_check": 1,
+        "chose_bet_when_can_check": 49,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1024,
+        "chose_call": 304,
+        "chose_raise": 133,
+        "chose_fold": 587
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "DoublePot_2.0x": 916.6666666666666,
+        "Pot_1.0x": 458.0,
+        "HalfPot_0.5x": 356.8965517241379
+      }
+    },
+    "Ensemble_Argmax": {
+      "mean_bb100": 1149.9750000000001,
+      "median_bb100": 0.0,
+      "std_bb100": 7780.56340340306,
+      "sem_bb100": 246.1661321933097,
+      "ci95": [
+        667.4893809011131,
+        1632.460619098887
+      ],
+      "action_percentages": {
+        "Fold": 59.183673469387756,
+        "CheckCall": 26.82215743440233,
+        "HalfPot_0.5x": 2.1379980563654035,
+        "Pot_1.0x": 0.6802721088435374,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 11.175898931000972
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 609,
+        "Fold": 609,
+        "PaidCall": 276,
+        "CheckCall": 276,
+        "Raise_Allin": 93,
+        "Allin": 115,
+        "Bet_Allin": 22,
+        "Bet_HalfPot_0.5x": 22,
+        "HalfPot_0.5x": 22,
+        "Raise_Pot_1.0x": 7,
+        "Pot_1.0x": 7,
+        "DoublePot_2.0x": 0
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 44,
+        "chose_check": 0,
+        "chose_bet_when_can_check": 44,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 985,
+        "chose_call": 276,
+        "chose_raise": 100,
+        "chose_fold": 609
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "HalfPot_0.5x": 325.0,
+        "Pot_1.0x": 392.85714285714283
+      }
+    },
+    "Model_A_MC300": {
+      "mean_bb100": 898.45,
+      "median_bb100": 0.0,
+      "std_bb100": 5203.062569054883,
+      "sem_bb100": 164.6176146606327,
+      "ci95": [
+        575.7994752651599,
+        1221.1005247348403
+      ],
+      "action_percentages": {
+        "Fold": 79.20277296360484,
+        "CheckCall": 15.337954939341422,
+        "HalfPot_0.5x": 1.386481802426343,
+        "Pot_1.0x": 0.9532062391681109,
+        "DoublePot_2.0x": 1.2998266897746966,
+        "Allin": 1.8197573656845754
+      },
+      "action_counts": {
+        "Fold_Facing_Bet": 914,
+        "Fold": 914,
+        "PaidCall": 166,
+        "CheckCall": 177,
+        "Bet_Allin": 21,
+        "Allin": 21,
+        "Bet_HalfPot_0.5x": 16,
+        "HalfPot_0.5x": 16,
+        "FreeCheck": 11,
+        "Bet_DoublePot_2.0x": 15,
+        "DoublePot_2.0x": 15,
+        "Bet_Pot_1.0x": 11,
+        "Pot_1.0x": 11
+      },
+      "check_call_audit": {
+        "opportunities_to_check": 74,
+        "chose_check": 11,
+        "chose_bet_when_can_check": 63,
+        "chose_fold_when_can_check": 0,
+        "opportunities_to_call": 1080,
+        "chose_call": 166,
+        "chose_raise": 0,
+        "chose_fold": 914
+      },
+      "avg_engine_amounts": {
+        "Fold": 0.0,
+        "CheckCall": 1.0,
+        "Allin": 10000.0,
+        "HalfPot_0.5x": 477.3125,
+        "DoublePot_2.0x": 1646.6666666666667,
+        "Pot_1.0x": 740.9090909090909
+      }
+    }
+  },
+  "paired_comparisons": {
+    "R1: Argmax vs Sample": {
+      "mean_diff_bb100": 154.8885,
+      "std_diff": 6005.75691706031,
+      "t_statistic": 0.8151436840524784,
+      "p_value": 0.4151843559473559,
+      "ci95_diff": [
+        -217.53843029374653,
+        527.3154302937465
+      ]
+    },
+    "R2: Argmax vs Sample": {
+      "mean_diff_bb100": -25.891666666666673,
+      "std_diff": 6286.8123853682355,
+      "t_statistic": -0.13017040355100443,
+      "p_value": 0.8964578151887836,
+      "ci95_diff": [
+        -415.74731190004934,
+        363.96397856671604
+      ]
+    },
+    "R3: Argmax vs Sample": {
+      "mean_diff_bb100": 196.5583333333333,
+      "std_diff": 5878.504123021009,
+      "t_statistic": 1.0568354630192436,
+      "p_value": 0.2908421788392011,
+      "ci95_diff": [
+        -167.97744050672233,
+        561.0941071733889
+      ]
+    },
+    "Ensemble: Argmax vs Sample": {
+      "mean_diff_bb100": 50.35,
+      "std_diff": 6640.871294052208,
+      "t_statistic": 0.23963881076775687,
+      "p_value": 0.8106594327437318,
+      "ci95_diff": [
+        -361.4614243841761,
+        462.16142438417614
+      ]
+    },
+    "Ensemble vs Mean(3 Ind) [Sample]": {
+      "mean_diff_bb100": 117.36666666666675,
+      "std_diff": 5448.171035061579,
+      "t_statistic": 0.6808897265717945,
+      "p_value": 0.49609905363700246,
+      "ci95_diff": [
+        -220.4834398768498,
+        455.21677321018325
+      ]
+    },
+    "Ensemble vs Mean(3 Ind) [Argmax]": {
+      "mean_diff_bb100": 59.198277777777754,
+      "std_diff": 4922.399271834384,
+      "t_statistic": 0.38011497421628565,
+      "p_value": 0.7039408694657414,
+      "ci95_diff": [
+        -246.04785119588408,
+        364.4444067514396
+      ]
+    }
+  }
+}
