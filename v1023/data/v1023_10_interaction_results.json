@@ -1,0 +1,262 @@
+{
+  "dynamic_hashes": {
+    "StrictAntiLimper_R1_100K.pt": "1e29ff9262f2649a96074022a57489fe56ede464168aef92b2d3e221cc67c580",
+    "StrictAntiLimper_R2_100K.pt": "42f0f6b9ff0fefaaab9e3214a0e97e22179b22560de844131aa8a3bba34b76f7",
+    "StrictAntiLimper_R3_100K.pt": "961174c8f0778002a9ace26a86b944d93a5d303c3d97ffe32aa0d131f0c67a56"
+  },
+  "eval_seeds_holdout": [
+    170000,
+    170499
+  ],
+  "hand_103_forensic": {
+    "hand_seed": 160103,
+    "hero_seat": 3,
+    "pure_return": -100.0,
+    "hybrid_return": -100.0,
+    "net_diff_bb": 0.0,
+    "pure_log": [
+      {
+        "round": 0,
+        "dec": 0,
+        "pot": 500.0,
+        "to_call": 350.0,
+        "action": "Pot",
+        "raw_amt": 1200,
+        "probs": [
+          0.1922675222158432,
+          0.01495856512337923,
+          0.025898665189743042,
+          0.36063647270202637,
+          0.10259977728128433,
+          0.3036389648914337
+        ]
+      },
+      {
+        "round": 1,
+        "dec": 1,
+        "pot": 3650.0,
+        "to_call": 0.0,
+        "action": "Pot",
+        "raw_amt": 4850,
+        "probs": [
+          0.0,
+          0.00021639559417963028,
+          0.3360300064086914,
+          0.3733261823654175,
+          0.2900010049343109,
+          0.0004264621820766479
+        ]
+      },
+      {
+        "round": 1,
+        "dec": 2,
+        "pot": 19750.0,
+        "to_call": 5150.0,
+        "action": "CheckCall",
+        "raw_amt": 1,
+        "probs": [
+          0.04376782476902008,
+          0.9562322497367859,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "hybrid_log": [
+      {
+        "round": 0,
+        "dec": 0,
+        "pot": 250.0,
+        "to_call": 100.0,
+        "action": "Pot",
+        "raw_amt": 450,
+        "branch": "PPO_Preflop",
+        "mc_equity": null
+      },
+      {
+        "round": 0,
+        "dec": 1,
+        "pot": 1575.0,
+        "to_call": 525.0,
+        "action": "Pot",
+        "raw_amt": 3075,
+        "branch": "PPO_Preflop",
+        "mc_equity": null
+      },
+      {
+        "round": 0,
+        "dec": 2,
+        "pot": 12600.0,
+        "to_call": 6300.0,
+        "action": "Pot",
+        "raw_amt": 10000,
+        "branch": "PPO_Preflop",
+        "mc_equity": null
+      }
+    ]
+  },
+  "summary": {
+    "Policy_A_Pure_R2": {
+      "mean_bb100": 960.68,
+      "sem_bb100": 400.88768588294795,
+      "ci95": [
+        174.94013566942203,
+        1746.4198643305779
+      ],
+      "total_hands": 500,
+      "postflop_hands": 50,
+      "total_postflop_decisions": 85
+    },
+    "Policy_B_Hybrid_R2_MA": {
+      "mean_bb100": 964.6840000000001,
+      "sem_bb100": 396.5309075489213,
+      "ci95": [
+        187.4834212041144,
+        1741.8845787958858
+      ],
+      "total_hands": 500,
+      "postflop_hands": 50,
+      "total_postflop_decisions": 107
+    },
+    "Policy_C_Inverted_MA_R2": {
+      "mean_bb100": 193.39699999999996,
+      "sem_bb100": 305.9512834316092,
+      "ci95": [
+        -406.2675155259542,
+        793.0615155259541
+      ],
+      "total_hands": 500,
+      "postflop_hands": 145,
+      "total_postflop_decisions": 219
+    },
+    "Policy_D_Pure_MA": {
+      "mean_bb100": 521.549,
+      "sem_bb100": 256.78013200905394,
+      "ci95": [
+        18.259941262254245,
+        1024.8380587377458
+      ],
+      "total_hands": 500,
+      "postflop_hands": 145,
+      "total_postflop_decisions": 326
+    },
+    "Policy_E_Pure_Ensemble": {
+      "mean_bb100": 748.126,
+      "sem_bb100": 346.88563871244065,
+      "ci95": [
+        68.23014812361635,
+        1428.0218518763836
+      ],
+      "total_hands": 500,
+      "postflop_hands": 14,
+      "total_postflop_decisions": 16
+    },
+    "Policy_F_Hybrid_Ens_MA": {
+      "mean_bb100": 797.7,
+      "sem_bb100": 345.0213382788599,
+      "ci95": [
+        121.45817697343466,
+        1473.9418230265655
+      ],
+      "total_hands": 500,
+      "postflop_hands": 14,
+      "total_postflop_decisions": 35
+    }
+  },
+  "simple_contrasts": {
+    "B_minus_A (Hybrid R2 vs Pure R2)": {
+      "mean_diff_bb100": 4.004,
+      "sem_diff": 51.17241232866659,
+      "t_statistic": 0.07824528525806812,
+      "p_value": 0.9376643052901696,
+      "ci95_diff": [
+        -96.29392816418651,
+        104.30192816418652
+      ]
+    },
+    "D_minus_C (Pure MA vs Inverted R2)": {
+      "mean_diff_bb100": 328.152,
+      "sem_diff": 176.6899453488136,
+      "t_statistic": 1.8572194323348543,
+      "p_value": 0.06386890780883589,
+      "ci95_diff": [
+        -18.160292883674686,
+        674.4642928836747
+      ]
+    },
+    "A_minus_C (Pure R2 vs Inverted R2)": {
+      "mean_diff_bb100": 767.283,
+      "sem_diff": 368.17186731822835,
+      "t_statistic": 2.0840348438051652,
+      "p_value": 0.037665124372626875,
+      "ci95_diff": [
+        45.66614005627241,
+        1488.8998599437277
+      ]
+    },
+    "B_minus_D (Hybrid R2 vs Pure MA)": {
+      "mean_diff_bb100": 443.135,
+      "sem_diff": 364.3106961801321,
+      "t_statistic": 1.2163656039922954,
+      "p_value": 0.22442072628630347,
+      "ci95_diff": [
+        -270.9139645130589,
+        1157.183964513059
+      ]
+    },
+    "F_minus_E (Hybrid Ens vs Pure Ens)": {
+      "mean_diff_bb100": 49.574,
+      "sem_diff": 42.28769337608922,
+      "t_statistic": 1.172303241018832,
+      "p_value": 0.24163469667761062,
+      "ci95_diff": [
+        -33.309879017134875,
+        132.45787901713487
+      ]
+    },
+    "F_minus_D (Hybrid Ens vs Pure MA)": {
+      "mean_diff_bb100": 276.151,
+      "sem_diff": 344.43251240642655,
+      "t_statistic": 0.8017564836450308,
+      "p_value": 0.4230754645179696,
+      "ci95_diff": [
+        -398.936724316596,
+        951.2387243165961
+      ]
+    }
+  },
+  "factorial_2x2_formal_tests": {
+    "preflop_main_effect_R2_over_MA": {
+      "mean_diff_bb100": 605.209,
+      "sem_diff": 354.7746719529971,
+      "t_statistic": 1.7058968631226923,
+      "p_value": 0.08864954669451797,
+      "ci95_diff": [
+        -90.14935702787432,
+        1300.567357027874
+      ]
+    },
+    "postflop_main_effect_MA_over_R2": {
+      "mean_diff_bb100": 166.078,
+      "sem_diff": 92.99269071752774,
+      "t_statistic": 1.7859253100275845,
+      "p_value": 0.07471846786835586,
+      "ci95_diff": [
+        -16.187673806354354,
+        348.34367380635433
+      ]
+    },
+    "interaction_effect_formal": {
+      "mean_diff_bb100": -324.148,
+      "sem_diff": 181.89376854158726,
+      "t_statistic": -1.7820731441159208,
+      "p_value": 0.07534528047410838,
+      "ci95_diff": [
+        -680.6597863415111,
+        32.363786341511
+      ]
+    }
+  }
+}
