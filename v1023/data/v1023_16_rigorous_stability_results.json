@@ -1,0 +1,367 @@
+{
+  "version": "V10.23.16",
+  "unit_tests": {
+    "all_passed": true,
+    "2p_tie": {
+      "value": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    "3p_tie": {
+      "value": 0.3333333333333329,
+      "expected": 0.333333,
+      "passed": true
+    },
+    "4p_tie": {
+      "value": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    "5p_tie": {
+      "value": 0.19999999999999962,
+      "expected": 0.2,
+      "passed": true
+    }
+  },
+  "seed_180158_forensic_trace": {
+    "seed": 180158,
+    "seat": 3,
+    "pure_return_bb": 108.75,
+    "hybrid_return_bb": -8.25,
+    "net_diff_bb": -117.0,
+    "pure_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 375.0,
+        "to_call": 225.0,
+        "act": "Pot",
+        "raw_amt": 825,
+        "ppo_probs": [
+          0.0005,
+          0.0116,
+          0.0403,
+          0.6426,
+          0.0003,
+          0.3047
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 3787.0,
+        "to_call": 1262.0,
+        "act": "Pot",
+        "raw_amt": 7136,
+        "ppo_probs": [
+          0.0,
+          0.0075,
+          0.0502,
+          0.9228,
+          0.0,
+          0.0195
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 2,
+        "pot": 18011.0,
+        "to_call": 2864.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "ppo_probs": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "hybrid_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 375.0,
+        "to_call": 225.0,
+        "act": "Pot",
+        "raw_amt": 825,
+        "meta": {
+          "branch": "PPO_Preflop"
+        }
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 3787.0,
+        "to_call": 1262.0,
+        "act": "Fold",
+        "raw_amt": 0,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Flop",
+          "tc": 1262.0,
+          "pot": 3787.0,
+          "pot_odds": 0.2499504852446029,
+          "mc_equity": 0.19833333333333333,
+          "active_opps": 2,
+          "act": 0
+        }
+      }
+    ]
+  },
+  "seed_180408_forensic_trace": {
+    "seed": 180408,
+    "seat": 3,
+    "pure_return_bb": -100.0,
+    "hybrid_return_bb": 149.0,
+    "net_diff_bb": 249.0,
+    "pure_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 500.0,
+        "to_call": 350.0,
+        "act": "Pot",
+        "raw_amt": 1200,
+        "ppo_probs": [
+          0.0002,
+          0.0204,
+          0.0476,
+          0.8302,
+          0.0004,
+          0.1013
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 7300.0,
+        "to_call": 3650.0,
+        "act": "Allin",
+        "raw_amt": 10000,
+        "ppo_probs": [
+          0.2658,
+          0.032,
+          0.0272,
+          0.099,
+          0.0089,
+          0.5671
+        ]
+      }
+    ],
+    "hybrid_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 500.0,
+        "to_call": 350.0,
+        "act": "Pot",
+        "raw_amt": 1200,
+        "meta": {
+          "branch": "PPO_Preflop"
+        }
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 7300.0,
+        "to_call": 3650.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Flop",
+          "tc": 3650.0,
+          "pot": 7300.0,
+          "pot_odds": 0.3333333333333333,
+          "mc_equity": 0.4483333333333333,
+          "active_opps": 2,
+          "act": 1
+        }
+      },
+      {
+        "round": 2,
+        "street": "Turn",
+        "dec": 2,
+        "pot": 19750.0,
+        "to_call": 5150.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Turn",
+          "tc": 5150.0,
+          "pot": 19750.0,
+          "pot_odds": 0.20682730923694778,
+          "mc_equity": 0.6,
+          "active_opps": 2,
+          "act": 1
+        }
+      }
+    ]
+  },
+  "stability_180158": {
+    "hand_label": "Seed 180158 (Worst Loser 핸드)",
+    "hero_cards": [
+      5,
+      34
+    ],
+    "board_cards": [
+      2,
+      48,
+      50
+    ],
+    "pot_odds": 0.2499504852446029,
+    "fold_threshold": 0.1999504852446029,
+    "original_equity": 0.19833333333333333,
+    "reproduced_equity": 0.19833333333333333,
+    "is_exact_match": true,
+    "sim_results": {
+      "300": {
+        "sims": 300,
+        "mean": 0.20290740740740745,
+        "std": 0.024747150699910098,
+        "sem": 0.004518190890773507,
+        "ci_95": [
+          0.19405175326149138,
+          0.21176306155332353
+        ],
+        "fold_rate": 0.3333333333333333,
+        "call_rate": 0.6666666666666666,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "1000": {
+        "sims": 1000,
+        "mean": 0.19861666666666672,
+        "std": 0.012937395553344725,
+        "sem": 0.0023620344599779787,
+        "ci_95": [
+          0.19398707912510987,
+          0.20324625420822356
+        ],
+        "fold_rate": 0.43333333333333335,
+        "call_rate": 0.5666666666666667,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "3000": {
+        "sims": 3000,
+        "mean": 0.19773518518518515,
+        "std": 0.0059133782086160085,
+        "sem": 0.001079630211972826,
+        "ci_95": [
+          0.1956191099697184,
+          0.1998512604006519
+        ],
+        "fold_rate": 0.7,
+        "call_rate": 0.3,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "10000": {
+        "sims": 10000,
+        "mean": 0.1983549999999995,
+        "std": 0.00387652037079452,
+        "sem": 0.0007077525505708164,
+        "ci_95": [
+          0.1969678050008807,
+          0.1997421949991183
+        ],
+        "fold_rate": 0.6333333333333333,
+        "call_rate": 0.36666666666666664,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      }
+    },
+    "diff_300_vs_10000": 0.004552407407407949
+  },
+  "stability_180408": {
+    "hand_label": "Seed 180408 (Top Gainer 핸드)",
+    "hero_cards": [
+      18,
+      49
+    ],
+    "board_cards": [
+      13,
+      19,
+      47
+    ],
+    "pot_odds": 0.3333333333333333,
+    "fold_threshold": 0.2833333333333333,
+    "original_equity": 0.4483333333333333,
+    "reproduced_equity": 0.4483333333333333,
+    "is_exact_match": true,
+    "sim_results": {
+      "300": {
+        "sims": 300,
+        "mean": 0.45399999999999996,
+        "std": 0.029503923154073627,
+        "sem": 0.0053866547487950315,
+        "ci_95": [
+          0.4434421566923617,
+          0.4645578433076382
+        ],
+        "fold_rate": 0.0,
+        "call_rate": 0.03333333333333333,
+        "raise_rate": 0.9666666666666667,
+        "decision_changed": true
+      },
+      "1000": {
+        "sims": 1000,
+        "mean": 0.44620555555555547,
+        "std": 0.012720767748008205,
+        "sem": 0.002322483814789429,
+        "ci_95": [
+          0.4416534872785682,
+          0.45075762383254275
+        ],
+        "fold_rate": 0.0,
+        "call_rate": 0.0,
+        "raise_rate": 1.0,
+        "decision_changed": false
+      },
+      "3000": {
+        "sims": 3000,
+        "mean": 0.44874629629629637,
+        "std": 0.009890529236957223,
+        "sem": 0.0018057553229152764,
+        "ci_95": [
+          0.4452070158633824,
+          0.4522855767292103
+        ],
+        "fold_rate": 0.0,
+        "call_rate": 0.0,
+        "raise_rate": 1.0,
+        "decision_changed": false
+      },
+      "10000": {
+        "sims": 10000,
+        "mean": 0.44975944444444443,
+        "std": 0.00560065254685713,
+        "sem": 0.0010225345788874697,
+        "ci_95": [
+          0.447755276669825,
+          0.45176361221906386
+        ],
+        "fold_rate": 0.0,
+        "call_rate": 0.0,
+        "raise_rate": 1.0,
+        "decision_changed": false
+      }
+    },
+    "diff_300_vs_10000": 0.004240555555555525
+  },
+  "elapsed_sec": 191.71
+}
