@@ -1,0 +1,97 @@
+{
+  "architecture_audit": "V10.23.12 Statistical Integrity and Multi-Process Reproducibility",
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "torch": "2.8.0",
+    "eval_seeds": [
+      180000,
+      180499
+    ]
+  },
+  "multi_process_reproducibility": {
+    "process1_returns_hash": "0705cf983d6f16eb192f7cd3ceca521310b1207a5c5540bf844e72ad0c218a0b",
+    "process2_returns_hash": "0705cf983d6f16eb192f7cd3ceca521310b1207a5c5540bf844e72ad0c218a0b",
+    "process1_action_traces_hash": "64a4fdf64052c7503dc4babe00441a6b0baf607910e02e6694fdbe8a42dfc3a8",
+    "process2_action_traces_hash": "64a4fdf64052c7503dc4babe00441a6b0baf607910e02e6694fdbe8a42dfc3a8",
+    "bit_exact_match": true
+  },
+  "isolated_street_stats": {
+    "Flop": {
+      "equity_calls": 27,
+      "fallback_calls": 30
+    },
+    "Turn": {
+      "equity_calls": 12,
+      "fallback_calls": 12
+    },
+    "River": {
+      "equity_calls": 4,
+      "fallback_calls": 5
+    }
+  },
+  "summary": {
+    "Pure_Ensemble": {
+      "mean_bb100": 1065.8313333333333,
+      "sem_bb100": 345.75886950961944,
+      "ci95": [
+        388.14394909447924,
+        1743.5187175721874
+      ]
+    },
+    "Hybrid_Ensemble": {
+      "mean_bb100": 1065.8313333333333,
+      "sem_bb100": 345.75886950961944,
+      "ci95": [
+        388.14394909447924,
+        1743.5187175721874
+      ]
+    },
+    "Pure_R2": {
+      "mean_bb100": 855.594,
+      "sem_bb100": 391.4319991495898,
+      "ci95": [
+        88.38728166680414,
+        1622.800718333196
+      ]
+    },
+    "Hybrid_R2": {
+      "mean_bb100": 895.094,
+      "sem_bb100": 391.1729350511882,
+      "ci95": [
+        128.3950472996712,
+        1661.792952700329
+      ]
+    }
+  },
+  "hypothesis_tests": {
+    "primary_hybrid_ensemble_vs_pure": {
+      "test_status": "zero_variance_no_observed_difference",
+      "mean_diff_bb100": 0.0,
+      "hands_with_difference": 0,
+      "total_hands": 500,
+      "sem_diff": 0.0,
+      "t_statistic": null,
+      "nominal_p_value": null,
+      "ci95_diff": [
+        0.0,
+        0.0
+      ],
+      "conclusion": "No observed profit difference in this 500-hand holdout set (all hands resolved identically preflop)."
+    },
+    "secondary_hybrid_r2_vs_pure": {
+      "test_status": "evaluated",
+      "mean_diff_bb100": 39.5,
+      "hands_with_difference": 6,
+      "total_hands": 500,
+      "sem_diff": 58.77468355383725,
+      "t_statistic": 0.6720580632955385,
+      "nominal_p_value": 0.501857771461949,
+      "ci95_diff": [
+        -75.69837976552101,
+        154.698379765521
+      ],
+      "conclusion": "Observed positive point estimate (+39.50 bb/100) but 95% CI includes zero; statistical superiority unconfirmed."
+    }
+  }
+}
