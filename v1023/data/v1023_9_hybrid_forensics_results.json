@@ -1,0 +1,639 @@
+{
+  "model_hashes": {
+    "StrictAntiLimper_R1_100K.pt": "1e29ff9262f2649a96074022a57489fe56ede464168aef92b2d3e221cc67c580",
+    "StrictAntiLimper_R2_100K.pt": "42f0f6b9ff0fefaaab9e3214a0e97e22179b22560de844131aa8a3bba34b76f7",
+    "StrictAntiLimper_R3_100K.pt": "961174c8f0778002a9ace26a86b944d93a5d303c3d97ffe32aa0d131f0c67a56"
+  },
+  "model_a_definition": "Monte Carlo Equity Heuristic (300 rollouts, deterministic NFSP fallback)",
+  "eval_seeds_range": [
+    160000,
+    160499
+  ],
+  "summary": {
+    "Policy_A_Pure_R2": {
+      "mean_bb100": 777.698,
+      "sem_bb100": 406.23081592267516,
+      "ci95": [
+        -18.514399208443365,
+        1573.9103992084433
+      ],
+      "total_hands": 500,
+      "postflop_hands": 56,
+      "total_postflop_decisions": 87
+    },
+    "Policy_B_Hybrid_R2_MA": {
+      "mean_bb100": 783.398,
+      "sem_bb100": 400.8211112674423,
+      "ci95": [
+        -2.21137808418689,
+        1569.007378084187
+      ],
+      "total_hands": 500,
+      "postflop_hands": 56,
+      "total_postflop_decisions": 112
+    },
+    "Policy_C_Inverted_MA_R2": {
+      "mean_bb100": 460.3593333333333,
+      "sem_bb100": 322.3051054267864,
+      "ci95": [
+        -171.35867330316796,
+        1092.0773399698346
+      ],
+      "total_hands": 500,
+      "postflop_hands": 157,
+      "total_postflop_decisions": 233
+    },
+    "Policy_D_Pure_MA": {
+      "mean_bb100": 888.4173333333334,
+      "sem_bb100": 282.3278402996418,
+      "ci95": [
+        335.0547663460354,
+        1441.7799003206314
+      ],
+      "total_hands": 500,
+      "postflop_hands": 157,
+      "total_postflop_decisions": 338
+    },
+    "Policy_E_Pure_Ensemble": {
+      "mean_bb100": 1041.6000000000001,
+      "sem_bb100": 364.94855634397993,
+      "ci95": [
+        326.3008295657995,
+        1756.8991704342006
+      ],
+      "total_hands": 500,
+      "postflop_hands": 7,
+      "total_postflop_decisions": 7
+    },
+    "Policy_F_Hybrid_Ens_MA": {
+      "mean_bb100": 1055.55,
+      "sem_bb100": 364.36889999775104,
+      "ci95": [
+        341.3869560044079,
+        1769.713043995592
+      ],
+      "total_hands": 500,
+      "postflop_hands": 7,
+      "total_postflop_decisions": 20
+    },
+    "Policy_G_Inverted_MA_Ens": {
+      "mean_bb100": 777.1833333333334,
+      "sem_bb100": 290.26389988717335,
+      "ci95": [
+        208.26608955447364,
+        1346.1005771121932
+      ],
+      "total_hands": 500,
+      "postflop_hands": 157,
+      "total_postflop_decisions": 209
+    }
+  },
+  "factorial_2x2": {
+    "mean_A_Pure_R2": 777.698,
+    "mean_B_Hybrid_R2_MA": 783.398,
+    "mean_C_Inverted_MA_R2": 460.3593333333333,
+    "mean_D_Pure_MA": 888.4173333333334,
+    "preflop_main_effect_R2_over_MA": 106.15966666666668,
+    "postflop_main_effect_MA_over_R2": 216.87900000000013,
+    "interaction_effect": -211.17900000000003
+  },
+  "paired_tests": {
+    "Hybrid_Ens_vs_Pure_Ens": {
+      "mean_diff_bb100": 13.95,
+      "sem_diff": 13.949999999999998,
+      "t_statistic": 1.0000000000000002,
+      "p_value": 0.3177951761118718,
+      "ci95_diff": [
+        -13.391999999999996,
+        41.291999999999994
+      ]
+    },
+    "Hybrid_R2_vs_Pure_R2": {
+      "mean_diff_bb100": 5.7,
+      "sem_diff": 54.11557412358712,
+      "t_statistic": 0.10533012154657279,
+      "p_value": 0.9161561881353546,
+      "ci95_diff": [
+        -100.36652528223075,
+        111.76652528223076
+      ]
+    },
+    "Hybrid_R2_vs_Inverted_R2": {
+      "mean_diff_bb100": 323.03866666666664,
+      "sem_diff": 359.6874401681043,
+      "t_statistic": 0.8981093877386731,
+      "p_value": 0.3695603650465836,
+      "ci95_diff": [
+        -381.9487160628177,
+        1028.026049396151
+      ]
+    },
+    "Hybrid_R2_vs_Pure_MA": {
+      "mean_diff_bb100": -105.01933333333338,
+      "sem_diff": 355.4499584230051,
+      "t_statistic": -0.2954546226401707,
+      "p_value": 0.7677695097627248,
+      "ci95_diff": [
+        -801.7012518424234,
+        591.6625851757566
+      ]
+    },
+    "Hybrid_Ens_vs_Pure_MA": {
+      "mean_diff_bb100": 167.1326666666667,
+      "sem_diff": 353.49404393016073,
+      "t_statistic": 0.47280193128144143,
+      "p_value": 0.6365612265288485,
+      "ci95_diff": [
+        -525.7156594364483,
+        859.9809927697818
+      ]
+    }
+  },
+  "phase2_forensics": {
+    "ensemble_discrepant_count": 1,
+    "ensemble_discrepant_hands": [
+      {
+        "hand_index": 103,
+        "seed": 160103,
+        "seat": 3,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -30.25,
+        "diff_bb": 69.75,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 1200
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 5,
+            "act_name": "Allin",
+            "raw_amt": 10000
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 1200
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 2,
+            "act_name": "HalfPot",
+            "raw_amt": 3025
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 0,
+            "act_name": "Fold",
+            "raw_amt": 0
+          }
+        ]
+      }
+    ],
+    "r2_discrepant_count": 8,
+    "r2_discrepant_hands": [
+      {
+        "hand_index": 24,
+        "seed": 160024,
+        "seat": 4,
+        "pure_return_bb": 201.5,
+        "hybrid_return_bb": -14.5,
+        "diff_bb": -216.0,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 550
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 2350
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 10000
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 550
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 2,
+            "act_name": "HalfPot",
+            "raw_amt": 1450
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 0,
+            "act_name": "Fold",
+            "raw_amt": 0
+          }
+        ]
+      },
+      {
+        "hand_index": 103,
+        "seed": 160103,
+        "seat": 3,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -30.25,
+        "diff_bb": 69.75,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 1200
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 4850
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 1200
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 2,
+            "act_name": "HalfPot",
+            "raw_amt": 3025
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 0,
+            "act_name": "Fold",
+            "raw_amt": 0
+          }
+        ]
+      },
+      {
+        "hand_index": 111,
+        "seed": 160111,
+        "seat": 1,
+        "pure_return_bb": 206.5,
+        "hybrid_return_bb": 167.87,
+        "diff_bb": -38.629999999999995,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 2325
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 9950
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 2325
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 2,
+            "act_name": "HalfPot",
+            "raw_amt": 6137
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ]
+      },
+      {
+        "hand_index": 123,
+        "seed": 160123,
+        "seat": 3,
+        "pure_return_bb": 161.0,
+        "hybrid_return_bb": 119.0,
+        "diff_bb": -42.0,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 450
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 6050
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 450
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 2,
+            "act_name": "HalfPot",
+            "raw_amt": 10000
+          }
+        ]
+      },
+      {
+        "hand_index": 229,
+        "seed": 160229,
+        "seat": 4,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -8.25,
+        "diff_bb": 91.75,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 5,
+            "act_name": "Allin",
+            "raw_amt": 10000
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 0,
+            "act_name": "Fold",
+            "raw_amt": 0
+          }
+        ]
+      },
+      {
+        "hand_index": 243,
+        "seed": 160243,
+        "seat": 3,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -20.87,
+        "diff_bb": 79.13,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 7136
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 0,
+            "act_name": "Fold",
+            "raw_amt": 0
+          }
+        ]
+      },
+      {
+        "hand_index": 389,
+        "seed": 160389,
+        "seat": 4,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -53.25,
+        "diff_bb": 46.75,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 5325
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 825
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 3,
+            "dec_idx": 3,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ]
+      },
+      {
+        "hand_index": 438,
+        "seed": 160438,
+        "seat": 3,
+        "pure_return_bb": -100.0,
+        "hybrid_return_bb": -62.25,
+        "diff_bb": 37.75,
+        "pure_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 450
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 4650
+          },
+          {
+            "round": 1,
+            "dec_idx": 2,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 10000
+          }
+        ],
+        "hybrid_actions": [
+          {
+            "round": 0,
+            "dec_idx": 0,
+            "act_id": 3,
+            "act_name": "Pot",
+            "raw_amt": 450
+          },
+          {
+            "round": 1,
+            "dec_idx": 1,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 2,
+            "dec_idx": 2,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          },
+          {
+            "round": 3,
+            "dec_idx": 3,
+            "act_id": 1,
+            "act_name": "CheckCall",
+            "raw_amt": 1
+          }
+        ]
+      }
+    ]
+  }
+}
