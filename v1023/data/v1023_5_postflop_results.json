@@ -1,0 +1,638 @@
+{
+  "League_A_Classic": {
+    "R1_Argmax": {
+      "overall_mean_bb100": 691.345,
+      "overall_sem_bb100": 346.3046468045636,
+      "overall_ci95": [
+        12.587892263055323,
+        1370.1021077369446
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 0,
+          "pct": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "PreflopAllin_Hero": {
+          "count": 27,
+          "pct": 6.75,
+          "mean_bb100": -675.0,
+          "sem_bb100": 2143.0397341146763
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 330,
+          "pct": 82.5,
+          "mean_bb100": 833.8636363636363,
+          "sem_bb100": 377.136109397096
+        },
+        "PostflopAllin": {
+          "count": 43,
+          "pct": 10.75,
+          "mean_bb100": 455.5348837209302,
+          "sem_bb100": 479.205447435049
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 5,
+        "hands_with_hero_postflop_decision_pct": 1.25,
+        "mean_bb100_in_postflop_hands": 4052.5999999999995,
+        "sem_bb100_in_postflop_hands": 4131.936804937849,
+        "total_postflop_decisions_made": 7,
+        "avg_postflop_decisions_per_hand": 0.0175
+      }
+    },
+    "R2_Argmax": {
+      "overall_mean_bb100": 1078.625,
+      "overall_sem_bb100": 395.25568715897856,
+      "overall_ci95": [
+        303.92385316840205,
+        1853.326146831598
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 1,
+          "pct": 0.25,
+          "mean_bb100": -450.0,
+          "sem_bb100": NaN
+        },
+        "PreflopAllin_Hero": {
+          "count": 55,
+          "pct": 13.750000000000002,
+          "mean_bb100": 2403.6363636363635,
+          "sem_bb100": 1588.049252550972
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 313,
+          "pct": 78.25,
+          "mean_bb100": 853.1150159744408,
+          "sem_bb100": 417.2470062002181
+        },
+        "PostflopAllin": {
+          "count": 31,
+          "pct": 7.75,
+          "mean_bb100": 1054.032258064516,
+          "sem_bb100": 593.4522844709661
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 4,
+        "hands_with_hero_postflop_decision_pct": 1.0,
+        "mean_bb100_in_postflop_hands": 8118.75,
+        "sem_bb100_in_postflop_hands": 2865.116617027423,
+        "total_postflop_decisions_made": 7,
+        "avg_postflop_decisions_per_hand": 0.0175
+      }
+    },
+    "R3_Argmax": {
+      "overall_mean_bb100": 794.1875,
+      "overall_sem_bb100": 352.47743276325906,
+      "overall_ci95": [
+        103.33173178401228,
+        1485.0432682159876
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 0,
+          "pct": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "PreflopAllin_Hero": {
+          "count": 41,
+          "pct": 10.25,
+          "mean_bb100": 1068.2926829268292,
+          "sem_bb100": 1855.303666632337
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 317,
+          "pct": 79.25,
+          "mean_bb100": 846.2933753943216,
+          "sem_bb100": 374.3583540036947
+        },
+        "PostflopAllin": {
+          "count": 42,
+          "pct": 10.5,
+          "mean_bb100": 133.33333333333331,
+          "sem_bb100": 267.0692373626917
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 2,
+        "hands_with_hero_postflop_decision_pct": 0.5,
+        "mean_bb100_in_postflop_hands": 2975.0,
+        "sem_bb100_in_postflop_hands": 7275.0,
+        "total_postflop_decisions_made": 4,
+        "avg_postflop_decisions_per_hand": 0.01
+      }
+    },
+    "Ensemble_Argmax": {
+      "overall_mean_bb100": 1033.8125,
+      "overall_sem_bb100": 353.0919043615608,
+      "overall_ci95": [
+        341.7523674513408,
+        1725.872632548659
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 0,
+          "pct": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "PreflopAllin_Hero": {
+          "count": 44,
+          "pct": 11.0,
+          "mean_bb100": 1136.9318181818182,
+          "sem_bb100": 1705.0163615731876
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 315,
+          "pct": 78.75,
+          "mean_bb100": 1127.3015873015875,
+          "sem_bb100": 379.7111502731879
+        },
+        "PostflopAllin": {
+          "count": 41,
+          "pct": 10.25,
+          "mean_bb100": 204.8780487804878,
+          "sem_bb100": 253.5889034348125
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 2,
+        "hands_with_hero_postflop_decision_pct": 0.5,
+        "mean_bb100_in_postflop_hands": 4400.0,
+        "sem_bb100_in_postflop_hands": 5849.999999999999,
+        "total_postflop_decisions_made": 3,
+        "avg_postflop_decisions_per_hand": 0.0075
+      }
+    },
+    "Model_A_MC300": {
+      "overall_mean_bb100": 468.75,
+      "overall_sem_bb100": 204.1216416262629,
+      "overall_ci95": [
+        68.67158241252469,
+        868.8284175874753
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 0,
+          "pct": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "PreflopAllin_Hero": {
+          "count": 3,
+          "pct": 0.75,
+          "mean_bb100": 125.0,
+          "sem_bb100": 5845.671475544961
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 334,
+          "pct": 83.5,
+          "mean_bb100": 308.5329341317365,
+          "sem_bb100": 151.129201429723
+        },
+        "PostflopAllin": {
+          "count": 63,
+          "pct": 15.75,
+          "mean_bb100": 1334.5238095238094,
+          "sem_bb100": 992.5916745518924
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 37,
+        "hands_with_hero_postflop_decision_pct": 9.25,
+        "mean_bb100_in_postflop_hands": 2272.297297297297,
+        "sem_bb100_in_postflop_hands": 1682.2463776666218,
+        "total_postflop_decisions_made": 62,
+        "avg_postflop_decisions_per_hand": 0.155
+      }
+    }
+  },
+  "League_B_Realistic": {
+    "R1_Argmax": {
+      "overall_mean_bb100": 781.1375,
+      "overall_sem_bb100": 343.59748604293065,
+      "overall_ci95": [
+        107.68642735585593,
+        1454.5885726441443
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 162,
+          "pct": 40.5,
+          "mean_bb100": -78.70370370370371,
+          "sem_bb100": 12.690202755861915
+        },
+        "PreflopAllin_Hero": {
+          "count": 123,
+          "pct": 30.75,
+          "mean_bb100": 2312.910569105691,
+          "sem_bb100": 1009.0904026687172
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 24,
+          "pct": 6.0,
+          "mean_bb100": -783.125,
+          "sem_bb100": 1741.0322705436208
+        },
+        "PostflopAllin": {
+          "count": 91,
+          "pct": 22.75,
+          "mean_bb100": 653.9780219780221,
+          "sem_bb100": 415.83528102725234
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 14,
+        "hands_with_hero_postflop_decision_pct": 3.5000000000000004,
+        "mean_bb100_in_postflop_hands": 4399.071428571428,
+        "sem_bb100_in_postflop_hands": 2550.1128578005373,
+        "total_postflop_decisions_made": 25,
+        "avg_postflop_decisions_per_hand": 0.0625
+      }
+    },
+    "R2_Argmax": {
+      "overall_mean_bb100": 1476.7024999999999,
+      "overall_sem_bb100": 428.0634521834612,
+      "overall_ci95": [
+        637.698133720416,
+        2315.7068662795837
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 113,
+          "pct": 28.249999999999996,
+          "mean_bb100": -27.43362831858407,
+          "sem_bb100": 3.7180555990689284
+        },
+        "PreflopAllin_Hero": {
+          "count": 164,
+          "pct": 41.0,
+          "mean_bb100": 4007.463414634146,
+          "sem_bb100": 901.4855232006472
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 32,
+          "pct": 8.0,
+          "mean_bb100": -1564.84375,
+          "sem_bb100": 1570.9974019437657
+        },
+        "PostflopAllin": {
+          "count": 91,
+          "pct": 22.75,
+          "mean_bb100": -146.90109890109898,
+          "sem_bb100": 627.9960181342047
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 34,
+        "hands_with_hero_postflop_decision_pct": 8.5,
+        "mean_bb100_in_postflop_hands": -362.294117647059,
+        "sem_bb100_in_postflop_hands": 1696.0141317188484,
+        "total_postflop_decisions_made": 51,
+        "avg_postflop_decisions_per_hand": 0.1275
+      }
+    },
+    "R3_Argmax": {
+      "overall_mean_bb100": 968.53,
+      "overall_sem_bb100": 366.23681171256317,
+      "overall_ci95": [
+        250.70584904337613,
+        1686.354150956624
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 163,
+          "pct": 40.75,
+          "mean_bb100": -93.09815950920245,
+          "sem_bb100": 23.364766399945598
+        },
+        "PreflopAllin_Hero": {
+          "count": 135,
+          "pct": 33.75,
+          "mean_bb100": 2704.162962962963,
+          "sem_bb100": 1019.6045921289693
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 14,
+          "pct": 3.5000000000000004,
+          "mean_bb100": 64.28571428571429,
+          "sem_bb100": 2367.9779277366665
+        },
+        "PostflopAllin": {
+          "count": 88,
+          "pct": 22.0,
+          "mean_bb100": 416.1931818181818,
+          "sem_bb100": 349.8726350055023
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 9,
+        "hands_with_hero_postflop_decision_pct": 2.25,
+        "mean_bb100_in_postflop_hands": 4261.111111111111,
+        "sem_bb100_in_postflop_hands": 3310.264211695883,
+        "total_postflop_decisions_made": 14,
+        "avg_postflop_decisions_per_hand": 0.035
+      }
+    },
+    "Ensemble_Argmax": {
+      "overall_mean_bb100": 1285.405,
+      "overall_sem_bb100": 368.14680892579133,
+      "overall_ci95": [
+        563.837254505449,
+        2006.972745494551
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 157,
+          "pct": 39.25,
+          "mean_bb100": -55.73248407643312,
+          "sem_bb100": 9.256605456817232
+        },
+        "PreflopAllin_Hero": {
+          "count": 141,
+          "pct": 35.25,
+          "mean_bb100": 3434.482269503546,
+          "sem_bb100": 970.2453298321398
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 17,
+          "pct": 4.25,
+          "mean_bb100": -636.7647058823529,
+          "sem_bb100": 2014.3078718066274
+        },
+        "PostflopAllin": {
+          "count": 85,
+          "pct": 21.25,
+          "mean_bb100": 582.0588235294117,
+          "sem_bb100": 355.8188793315766
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 7,
+        "hands_with_hero_postflop_decision_pct": 1.7500000000000002,
+        "mean_bb100_in_postflop_hands": 7364.285714285714,
+        "sem_bb100_in_postflop_hands": 3626.554909304984,
+        "total_postflop_decisions_made": 10,
+        "avg_postflop_decisions_per_hand": 0.025
+      }
+    },
+    "Model_A_MC300": {
+      "overall_mean_bb100": 504.5025,
+      "overall_sem_bb100": 291.6891671378083,
+      "overall_ci95": [
+        -67.20826759010419,
+        1076.2132675901041
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 197,
+          "pct": 49.25,
+          "mean_bb100": -70.93908629441624,
+          "sem_bb100": 35.821720666767355
+        },
+        "PreflopAllin_Hero": {
+          "count": 6,
+          "pct": 1.5,
+          "mean_bb100": 5287.5,
+          "sem_bb100": 3488.0734295596476
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 18,
+          "pct": 4.5,
+          "mean_bb100": 784.2222222222223,
+          "sem_bb100": 1179.9221408775425
+        },
+        "PostflopAllin": {
+          "count": 179,
+          "pct": 44.75,
+          "mean_bb100": 949.3575418994412,
+          "sem_bb100": 626.3341478710227
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 121,
+        "hands_with_hero_postflop_decision_pct": 30.25,
+        "mean_bb100_in_postflop_hands": 1325.9090909090908,
+        "sem_bb100_in_postflop_hands": 927.7453707052457,
+        "total_postflop_decisions_made": 272,
+        "avg_postflop_decisions_per_hand": 0.68
+      }
+    }
+  },
+  "League_C_Diverse": {
+    "R1_Argmax": {
+      "overall_mean_bb100": 284.0125,
+      "overall_sem_bb100": 219.09144007959264,
+      "overall_ci95": [
+        -145.40672255600157,
+        713.4317225560015
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 138,
+          "pct": 34.5,
+          "mean_bb100": -71.19565217391305,
+          "sem_bb100": 41.92259981433166
+        },
+        "PreflopAllin_Hero": {
+          "count": 98,
+          "pct": 24.5,
+          "mean_bb100": 1240.1020408163265,
+          "sem_bb100": 690.2197879429104
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 68,
+          "pct": 17.0,
+          "mean_bb100": 470.5882352941177,
+          "sem_bb100": 716.4624275648162
+        },
+        "PostflopAllin": {
+          "count": 96,
+          "pct": 24.0,
+          "mean_bb100": -313.54166666666663,
+          "sem_bb100": 260.04646932768634
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 21,
+        "hands_with_hero_postflop_decision_pct": 5.25,
+        "mean_bb100_in_postflop_hands": -1392.857142857143,
+        "sem_bb100_in_postflop_hands": 1204.6810273059923,
+        "total_postflop_decisions_made": 38,
+        "avg_postflop_decisions_per_hand": 0.095
+      }
+    },
+    "R2_Argmax": {
+      "overall_mean_bb100": 771.75,
+      "overall_sem_bb100": 274.51624430937466,
+      "overall_ci95": [
+        233.69816115362573,
+        1309.8018388463743
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 90,
+          "pct": 22.5,
+          "mean_bb100": -11.666666666666666,
+          "sem_bb100": 8.400478554824268
+        },
+        "PreflopAllin_Hero": {
+          "count": 138,
+          "pct": 34.5,
+          "mean_bb100": 1382.6086956521738,
+          "sem_bb100": 555.268695190482
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 102,
+          "pct": 25.5,
+          "mean_bb100": 852.6960784313726,
+          "sem_bb100": 741.0659814969881
+        },
+        "PostflopAllin": {
+          "count": 70,
+          "pct": 17.5,
+          "mean_bb100": 456.78571428571433,
+          "sem_bb100": 296.8480562268433
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 8,
+        "hands_with_hero_postflop_decision_pct": 2.0,
+        "mean_bb100_in_postflop_hands": 4090.625,
+        "sem_bb100_in_postflop_hands": 2339.4183185562233,
+        "total_postflop_decisions_made": 15,
+        "avg_postflop_decisions_per_hand": 0.0375
+      }
+    },
+    "R3_Argmax": {
+      "overall_mean_bb100": 485.095,
+      "overall_sem_bb100": 222.6556090480068,
+      "overall_ci95": [
+        48.69000626590673,
+        921.4999937340933
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 131,
+          "pct": 32.75,
+          "mean_bb100": -57.63358778625955,
+          "sem_bb100": 22.94375979344731
+        },
+        "PreflopAllin_Hero": {
+          "count": 114,
+          "pct": 28.499999999999996,
+          "mean_bb100": 1270.2894736842106,
+          "sem_bb100": 655.8969066625409
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 66,
+          "pct": 16.5,
+          "mean_bb100": 485.6060606060606,
+          "sem_bb100": 708.6232220340804
+        },
+        "PostflopAllin": {
+          "count": 89,
+          "pct": 22.25,
+          "mean_bb100": 277.80898876404495,
+          "sem_bb100": 109.86620017019663
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 10,
+        "hands_with_hero_postflop_decision_pct": 2.5,
+        "mean_bb100_in_postflop_hands": 2512.5,
+        "sem_bb100_in_postflop_hands": 657.0477954879352,
+        "total_postflop_decisions_made": 14,
+        "avg_postflop_decisions_per_hand": 0.035
+      }
+    },
+    "Ensemble_Argmax": {
+      "overall_mean_bb100": 468.97,
+      "overall_sem_bb100": 228.16351916211565,
+      "overall_ci95": [
+        21.769502442253383,
+        916.1704975577467
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 122,
+          "pct": 30.5,
+          "mean_bb100": -58.606557377049185,
+          "sem_bb100": 24.703173683809098
+        },
+        "PreflopAllin_Hero": {
+          "count": 121,
+          "pct": 30.25,
+          "mean_bb100": 1471.801652892562,
+          "sem_bb100": 607.477106850196
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 67,
+          "pct": 16.75,
+          "mean_bb100": 680.223880597015,
+          "sem_bb100": 710.2826963530314
+        },
+        "PostflopAllin": {
+          "count": 90,
+          "pct": 22.5,
+          "mean_bb100": -321.3888888888889,
+          "sem_bb100": 248.71472394337312
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 9,
+        "hands_with_hero_postflop_decision_pct": 2.25,
+        "mean_bb100_in_postflop_hands": -3108.333333333333,
+        "sem_bb100_in_postflop_hands": 2409.5981396167376,
+        "total_postflop_decisions_made": 13,
+        "avg_postflop_decisions_per_hand": 0.0325
+      }
+    },
+    "Model_A_MC300": {
+      "overall_mean_bb100": 471.80999999999995,
+      "overall_sem_bb100": 272.1665761260012,
+      "overall_ci95": [
+        -61.636489206962324,
+        1005.2564892069622
+      ],
+      "categories": {
+        "NoAllin": {
+          "count": 142,
+          "pct": 35.5,
+          "mean_bb100": -41.901408450704224,
+          "sem_bb100": 51.34877276892366
+        },
+        "PreflopAllin_Hero": {
+          "count": 8,
+          "pct": 2.0,
+          "mean_bb100": 1493.75,
+          "sem_bb100": 1237.0918338414263
+        },
+        "PreflopAllin_OppOnly": {
+          "count": 73,
+          "pct": 18.25,
+          "mean_bb100": 324.3150684931507,
+          "sem_bb100": 440.73412487207645
+        },
+        "PostflopAllin": {
+          "count": 177,
+          "pct": 44.25,
+          "mean_bb100": 898.5819209039548,
+          "sem_bb100": 582.8618538280408
+        }
+      },
+      "true_postflop": {
+        "hands_with_hero_postflop_decision_count": 112,
+        "hands_with_hero_postflop_decision_pct": 28.000000000000004,
+        "mean_bb100_in_postflop_hands": 1375.8839285714287,
+        "sem_bb100_in_postflop_hands": 921.941457881608,
+        "total_postflop_decisions_made": 258,
+        "avg_postflop_decisions_per_hand": 0.645
+      }
+    }
+  }
+}
