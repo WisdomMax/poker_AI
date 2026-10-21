@@ -1,0 +1,118 @@
+{
+  "eval_seeds_range": [
+    160000,
+    160499
+  ],
+  "num_hands": 500,
+  "experiment_b_fullgame": {
+    "summary": {
+      "R2_Argmax": {
+        "overall_mean_bb100": 777.698,
+        "overall_sem_bb100": 406.23081592267516,
+        "overall_ci95": [
+          -18.514399208443365,
+          1573.9103992084433
+        ],
+        "total_hands": 500,
+        "allin_hands_count": 379,
+        "allin_pct": 75.8,
+        "hands_with_postflop_decision": 56,
+        "hands_with_postflop_decision_pct": 11.200000000000001,
+        "total_postflop_decisions": 87,
+        "avg_postflop_decisions_per_hand": 0.174
+      },
+      "Ensemble_Argmax": {
+        "overall_mean_bb100": 1041.6000000000001,
+        "overall_sem_bb100": 364.94855634397993,
+        "overall_ci95": [
+          326.3008295657995,
+          1756.8991704342006
+        ],
+        "total_hands": 500,
+        "allin_hands_count": 324,
+        "allin_pct": 64.8,
+        "hands_with_postflop_decision": 7,
+        "hands_with_postflop_decision_pct": 1.4000000000000001,
+        "total_postflop_decisions": 7,
+        "avg_postflop_decisions_per_hand": 0.014
+      },
+      "Model_A_MC300": {
+        "overall_mean_bb100": 885.1173333333334,
+        "overall_sem_bb100": 282.04738639915234,
+        "overall_ci95": [
+          332.3044559909948,
+          1437.9302106756718
+        ],
+        "total_hands": 500,
+        "allin_hands_count": 251,
+        "allin_pct": 50.2,
+        "hands_with_postflop_decision": 157,
+        "hands_with_postflop_decision_pct": 31.4,
+        "total_postflop_decisions": 342,
+        "avg_postflop_decisions_per_hand": 0.684
+      },
+      "Hybrid_R2_ModelA": {
+        "overall_mean_bb100": 783.398,
+        "overall_sem_bb100": 400.8211112674423,
+        "overall_ci95": [
+          -2.21137808418689,
+          1569.007378084187
+        ],
+        "total_hands": 500,
+        "allin_hands_count": 376,
+        "allin_pct": 75.2,
+        "hands_with_postflop_decision": 56,
+        "hands_with_postflop_decision_pct": 11.200000000000001,
+        "total_postflop_decisions": 114,
+        "avg_postflop_decisions_per_hand": 0.228
+      },
+      "Hybrid_Ensemble_ModelA": {
+        "overall_mean_bb100": 1055.55,
+        "overall_sem_bb100": 364.36889999775104,
+        "overall_ci95": [
+          341.3869560044079,
+          1769.713043995592
+        ],
+        "total_hands": 500,
+        "allin_hands_count": 324,
+        "allin_pct": 64.8,
+        "hands_with_postflop_decision": 7,
+        "hands_with_postflop_decision_pct": 1.4000000000000001,
+        "total_postflop_decisions": 20,
+        "avg_postflop_decisions_per_hand": 0.04
+      }
+    },
+    "paired_tests": {
+      "Hybrid_R2_ModelA vs R2_Argmax": {
+        "mean_diff_bb100": 5.7,
+        "sem_diff": 54.11557412358712,
+        "t_statistic": 0.10533012154657279,
+        "p_value": 0.9161561881353546,
+        "ci95_diff": [
+          -100.36652528223075,
+          111.76652528223076
+        ]
+      },
+      "Hybrid_R2_ModelA vs Model_A_MC300": {
+        "mean_diff_bb100": -101.71933333333337,
+        "sem_diff": 355.5098769618998,
+        "t_statistic": -0.28612238344150054,
+        "p_value": 0.7749031324072502,
+        "ci95_diff": [
+          -798.5186921786569,
+          595.0800255119902
+        ]
+      },
+      "Hybrid_Ensemble_ModelA vs Ensemble_Argmax": {
+        "mean_diff_bb100": 13.95,
+        "sem_diff": 13.949999999999998,
+        "t_statistic": 1.0,
+        "p_value": 0.31779517611187186,
+        "ci95_diff": [
+          -13.391999999999996,
+          41.291999999999994
+        ]
+      }
+    }
+  }
+}
