@@ -1,0 +1,383 @@
+{
+  "League_A_Classic_StrictLimper": {
+    "R1_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 511.3416666666667,
+      "overall_sem_bb100": 364.412783172856,
+      "overall_ci95": [
+        -202.90738835213108,
+        1225.5907216854644
+      ],
+      "allin_hand_pct": 100.0,
+      "non_allin_hands_count": 0,
+      "non_allin_mean_bb100": 0.0,
+      "non_allin_sem_bb100": 0.0,
+      "non_allin_ci95": [
+        0.0,
+        0.0
+      ],
+      "allin_hands_count": 400,
+      "allin_mean_bb100": 511.3416666666667,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 8.75,
+        "Turn": 1.0,
+        "River": 0.0
+      }
+    },
+    "R2_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 1227.0833333333335,
+      "overall_sem_bb100": 418.75245222622254,
+      "overall_ci95": [
+        406.32852696993734,
+        2047.8381396967297
+      ],
+      "allin_hand_pct": 100.0,
+      "non_allin_hands_count": 0,
+      "non_allin_mean_bb100": 0.0,
+      "non_allin_sem_bb100": 0.0,
+      "non_allin_ci95": [
+        0.0,
+        0.0
+      ],
+      "allin_hands_count": 400,
+      "allin_mean_bb100": 1227.0833333333335,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 6.0,
+        "Turn": 1.0,
+        "River": 0.0
+      }
+    },
+    "R3_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 738.5416666666667,
+      "overall_sem_bb100": 394.0177979837002,
+      "overall_ci95": [
+        -33.73321738138554,
+        1510.8165507147191
+      ],
+      "allin_hand_pct": 100.0,
+      "non_allin_hands_count": 0,
+      "non_allin_mean_bb100": 0.0,
+      "non_allin_sem_bb100": 0.0,
+      "non_allin_ci95": [
+        0.0,
+        0.0
+      ],
+      "allin_hands_count": 400,
+      "allin_mean_bb100": 738.5416666666667,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 7.5,
+        "Turn": 1.0,
+        "River": 0.0
+      }
+    },
+    "Ensemble_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 602.4166666666667,
+      "overall_sem_bb100": 394.83716181013455,
+      "overall_ci95": [
+        -171.4641704811969,
+        1376.2975038145305
+      ],
+      "allin_hand_pct": 100.0,
+      "non_allin_hands_count": 0,
+      "non_allin_mean_bb100": 0.0,
+      "non_allin_sem_bb100": 0.0,
+      "non_allin_ci95": [
+        0.0,
+        0.0
+      ],
+      "allin_hands_count": 400,
+      "allin_mean_bb100": 602.4166666666667,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 6.75,
+        "Turn": 1.0,
+        "River": 0.0
+      }
+    },
+    "Model_A_MC300": {
+      "total_hands": 400,
+      "overall_mean_bb100": 712.5,
+      "overall_sem_bb100": 280.8679317985269,
+      "overall_ci95": [
+        161.9988536748873,
+        1263.0011463251126
+      ],
+      "allin_hand_pct": 100.0,
+      "non_allin_hands_count": 0,
+      "non_allin_mean_bb100": 0.0,
+      "non_allin_sem_bb100": 0.0,
+      "non_allin_ci95": [
+        0.0,
+        0.0
+      ],
+      "allin_hands_count": 400,
+      "allin_mean_bb100": 712.5,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 13.750000000000002,
+        "Turn": 1.25,
+        "River": 0.0
+      }
+    }
+  },
+  "League_B_Realistic_Sizing": {
+    "R1_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 692.1841666666667,
+      "overall_sem_bb100": 371.6522232142813,
+      "overall_ci95": [
+        -36.25419083332474,
+        1420.622524166658
+      ],
+      "allin_hand_pct": 59.75,
+      "non_allin_hands_count": 161,
+      "non_allin_mean_bb100": -95.0248447204969,
+      "non_allin_sem_bb100": 25.953986024348204,
+      "non_allin_ci95": [
+        -145.89465732821938,
+        -44.15503211277442
+      ],
+      "allin_hands_count": 239,
+      "allin_mean_bb100": 1222.4797768479777,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 45.0,
+        "Turn": 20.0,
+        "River": 8.5
+      }
+    },
+    "R2_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 1381.7720833333333,
+      "overall_sem_bb100": 449.0595623325584,
+      "overall_ci95": [
+        501.6153411615188,
+        2261.928825505148
+      ],
+      "allin_hand_pct": 72.25,
+      "non_allin_hands_count": 111,
+      "non_allin_mean_bb100": -22.972972972972975,
+      "non_allin_sem_bb100": 3.433215875302732,
+      "non_allin_ci95": [
+        -29.70207608856633,
+        -16.24386985737962
+      ],
+      "allin_hands_count": 289,
+      "allin_mean_bb100": 1921.3108419838522,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 36.25,
+        "Turn": 15.25,
+        "River": 6.25
+      }
+    },
+    "R3_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 745.5729166666667,
+      "overall_sem_bb100": 395.5557997723039,
+      "overall_ci95": [
+        -29.716450887048836,
+        1520.8622842203822
+      ],
+      "allin_hand_pct": 61.0,
+      "non_allin_hands_count": 156,
+      "non_allin_mean_bb100": -94.71153846153845,
+      "non_allin_sem_bb100": 33.20099579163668,
+      "non_allin_ci95": [
+        -159.78549021314635,
+        -29.63758670993056
+      ],
+      "allin_hands_count": 244,
+      "allin_mean_bb100": 1282.803961748634,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 38.0,
+        "Turn": 17.5,
+        "River": 7.249999999999999
+      }
+    },
+    "Ensemble_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 657.3541666666666,
+      "overall_sem_bb100": 398.7563629906192,
+      "overall_ci95": [
+        -124.20830479494703,
+        1438.9166381282803
+      ],
+      "allin_hand_pct": 62.0,
+      "non_allin_hands_count": 152,
+      "non_allin_mean_bb100": -53.7828947368421,
+      "non_allin_sem_bb100": 13.730716754290077,
+      "non_allin_ci95": [
+        -80.69509957525065,
+        -26.870689898433554
+      ],
+      "allin_hands_count": 248,
+      "allin_mean_bb100": 1093.2123655913979,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 37.75,
+        "Turn": 17.0,
+        "River": 7.249999999999999
+      }
+    },
+    "Model_A_MC300": {
+      "total_hands": 400,
+      "overall_mean_bb100": 1940.685,
+      "overall_sem_bb100": 380.1522630724566,
+      "overall_ci95": [
+        1195.586564377985,
+        2685.7834356220146
+      ],
+      "allin_hand_pct": 50.74999999999999,
+      "non_allin_hands_count": 197,
+      "non_allin_mean_bb100": -35.10659898477157,
+      "non_allin_sem_bb100": 69.55038090724024,
+      "non_allin_ci95": [
+        -171.42534556296243,
+        101.21214759341927
+      ],
+      "allin_hands_count": 203,
+      "allin_mean_bb100": 3858.0788177339896,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 74.0,
+        "Turn": 31.5,
+        "River": 14.499999999999998
+      }
+    }
+  },
+  "League_C_Unseen_Diverse": {
+    "R1_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 431.18749999999994,
+      "overall_sem_bb100": 229.3533060112828,
+      "overall_ci95": [
+        -18.344979782114308,
+        880.7199797821143
+      ],
+      "allin_hand_pct": 70.0,
+      "non_allin_hands_count": 120,
+      "non_allin_mean_bb100": -128.54166666666666,
+      "non_allin_sem_bb100": 57.60775422419597,
+      "non_allin_ci95": [
+        -241.45286494609076,
+        -15.630468387242558
+      ],
+      "allin_hands_count": 280,
+      "allin_mean_bb100": 671.0714285714286,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 28.499999999999996,
+        "Turn": 5.25,
+        "River": 1.7500000000000002
+      }
+    },
+    "R2_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 1025.0,
+      "overall_sem_bb100": 284.80377318964304,
+      "overall_ci95": [
+        466.7846045482996,
+        1583.2153954517003
+      ],
+      "allin_hand_pct": 75.75,
+      "non_allin_hands_count": 97,
+      "non_allin_mean_bb100": 7.216494845360824,
+      "non_allin_sem_bb100": 8.73156165798192,
+      "non_allin_ci95": [
+        -9.89736600428374,
+        24.330355695005387
+      ],
+      "allin_hands_count": 303,
+      "allin_mean_bb100": 1350.8250825082507,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 18.25,
+        "Turn": 3.75,
+        "River": 1.25
+      }
+    },
+    "R3_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 658.3125,
+      "overall_sem_bb100": 239.81940895053268,
+      "overall_ci95": [
+        188.26645845695595,
+        1128.358541543044
+      ],
+      "allin_hand_pct": 72.0,
+      "non_allin_hands_count": 112,
+      "non_allin_mean_bb100": -50.44642857142857,
+      "non_allin_sem_bb100": 26.371985787511786,
+      "non_allin_ci95": [
+        -102.13552071495167,
+        1.2426635720945285
+      ],
+      "allin_hands_count": 288,
+      "allin_mean_bb100": 933.9409722222222,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 23.0,
+        "Turn": 3.5000000000000004,
+        "River": 0.0
+      }
+    },
+    "Ensemble_Argmax": {
+      "total_hands": 400,
+      "overall_mean_bb100": 674.0625,
+      "overall_sem_bb100": 240.22842843542844,
+      "overall_ci95": [
+        203.21478026656024,
+        1144.9102197334398
+      ],
+      "allin_hand_pct": 73.75,
+      "non_allin_hands_count": 105,
+      "non_allin_mean_bb100": -37.61904761904762,
+      "non_allin_sem_bb100": 11.866375842366708,
+      "non_allin_ci95": [
+        -60.87714427008636,
+        -14.360950968008876
+      ],
+      "allin_hands_count": 295,
+      "allin_mean_bb100": 927.3728813559321,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 23.25,
+        "Turn": 3.25,
+        "River": 0.5
+      }
+    },
+    "Model_A_MC300": {
+      "total_hands": 400,
+      "overall_mean_bb100": 1734.4974999999997,
+      "overall_sem_bb100": 350.9157146623343,
+      "overall_ci95": [
+        1046.7026992618244,
+        2422.292300738175
+      ],
+      "allin_hand_pct": 66.0,
+      "non_allin_hands_count": 136,
+      "non_allin_mean_bb100": -42.279411764705884,
+      "non_allin_sem_bb100": 23.065861208443902,
+      "non_allin_ci95": [
+        -87.48849973325594,
+        2.92967620384416
+      ],
+      "allin_hands_count": 264,
+      "allin_mean_bb100": 2649.806818181818,
+      "street_reach_pct": {
+        "Preflop": 100.0,
+        "Flop": 46.75,
+        "Turn": 8.25,
+        "River": 1.5
+      }
+    }
+  }
+}
