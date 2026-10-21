@@ -1,0 +1,133 @@
+{
+  "version": "V10.23.16_HOTFIX",
+  "comprehensive_unit_tests": {
+    "2p_tie": {
+      "value": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    "3p_tie": {
+      "value": 0.3333333333333329,
+      "expected": 0.3333,
+      "passed": true
+    },
+    "4p_tie": {
+      "value": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    "5p_tie": {
+      "value": 0.19999999999999962,
+      "expected": 0.2,
+      "passed": true
+    },
+    "solo_win": {
+      "value": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    "solo_lose": {
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    "all_passed": true
+  },
+  "exact_policy_180158": {
+    "hand_label": "Seed 180158 (경계선 핸드)",
+    "pot_odds": 0.2499504852446029,
+    "fold_threshold": 0.1999504852446029,
+    "raise_threshold": 0.65,
+    "sim_results": {
+      "300": {
+        "sims": 300,
+        "mean": 0.20290740740740745,
+        "std": 0.024747150699910098,
+        "sem": 0.004518190890773507,
+        "fold_rate": 0.3333333333333333,
+        "call_rate": 0.6666666666666666,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "1000": {
+        "sims": 1000,
+        "mean": 0.19861666666666672,
+        "std": 0.012937395553344725,
+        "sem": 0.0023620344599779787,
+        "fold_rate": 0.43333333333333335,
+        "call_rate": 0.5666666666666667,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "3000": {
+        "sims": 3000,
+        "mean": 0.19773518518518515,
+        "std": 0.0059133782086160085,
+        "sem": 0.001079630211972826,
+        "fold_rate": 0.7,
+        "call_rate": 0.3,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      },
+      "10000": {
+        "sims": 10000,
+        "mean": 0.1983549999999995,
+        "std": 0.00387652037079452,
+        "sem": 0.0007077525505708164,
+        "fold_rate": 0.6333333333333333,
+        "call_rate": 0.36666666666666664,
+        "raise_rate": 0.0,
+        "decision_changed": true
+      }
+    }
+  },
+  "exact_policy_180408": {
+    "hand_label": "Seed 180408 (Call 대승 핸드)",
+    "pot_odds": 0.3333333333333333,
+    "fold_threshold": 0.2833333333333333,
+    "raise_threshold": 0.65,
+    "sim_results": {
+      "300": {
+        "sims": 300,
+        "mean": 0.45399999999999996,
+        "std": 0.029503923154073627,
+        "sem": 0.0053866547487950315,
+        "fold_rate": 0.0,
+        "call_rate": 1.0,
+        "raise_rate": 0.0,
+        "decision_changed": false
+      },
+      "1000": {
+        "sims": 1000,
+        "mean": 0.44620555555555547,
+        "std": 0.012720767748008205,
+        "sem": 0.002322483814789429,
+        "fold_rate": 0.0,
+        "call_rate": 1.0,
+        "raise_rate": 0.0,
+        "decision_changed": false
+      },
+      "3000": {
+        "sims": 3000,
+        "mean": 0.44874629629629637,
+        "std": 0.009890529236957223,
+        "sem": 0.0018057553229152764,
+        "fold_rate": 0.0,
+        "call_rate": 1.0,
+        "raise_rate": 0.0,
+        "decision_changed": false
+      },
+      "10000": {
+        "sims": 10000,
+        "mean": 0.44975944444444443,
+        "std": 0.00560065254685713,
+        "sem": 0.0010225345788874697,
+        "fold_rate": 0.0,
+        "call_rate": 1.0,
+        "raise_rate": 0.0,
+        "decision_changed": false
+      }
+    }
+  },
+  "elapsed_sec": 147.37
+}
