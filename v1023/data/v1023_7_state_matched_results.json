@@ -1,0 +1,129 @@
+{
+  "target_states_evaluated": 200,
+  "agents": {
+    "R1_Argmax": {
+      "mean_postflop_delta_bb100": 688.3825,
+      "sem_delta_bb100": 419.4305610915909,
+      "ci95_delta_bb100": [
+        -133.70139973951814,
+        1510.4663997395182
+      ],
+      "total_postflop_decisions": 332,
+      "postflop_action_percentages": {
+        "Fold": 46.68674698795181,
+        "CheckCall": 1.5060240963855422,
+        "HalfPot_0.5x": 42.46987951807229,
+        "Pot_1.0x": 0.0,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 9.33734939759036
+      }
+    },
+    "R2_Argmax": {
+      "mean_postflop_delta_bb100": 2813.65,
+      "sem_delta_bb100": 906.8067325170181,
+      "ci95_delta_bb100": [
+        1036.3088042666448,
+        4590.991195733355
+      ],
+      "total_postflop_decisions": 255,
+      "postflop_action_percentages": {
+        "Fold": 12.156862745098039,
+        "CheckCall": 7.0588235294117645,
+        "HalfPot_0.5x": 0.0,
+        "Pot_1.0x": 34.509803921568626,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 46.27450980392157
+      }
+    },
+    "R3_Argmax": {
+      "mean_postflop_delta_bb100": 1847.04,
+      "sem_delta_bb100": 786.8684891314047,
+      "ci95_delta_bb100": [
+        304.77776130244683,
+        3389.302238697553
+      ],
+      "total_postflop_decisions": 267,
+      "postflop_action_percentages": {
+        "Fold": 30.711610486891384,
+        "CheckCall": 5.617977528089887,
+        "HalfPot_0.5x": 0.0,
+        "Pot_1.0x": 0.0,
+        "DoublePot_2.0x": 29.213483146067414,
+        "Allin": 34.45692883895131
+      }
+    },
+    "Ensemble_Argmax": {
+      "mean_postflop_delta_bb100": 2700.325,
+      "sem_delta_bb100": 725.5263019844499,
+      "ci95_delta_bb100": [
+        1278.293448110478,
+        4122.356551889521
+      ],
+      "total_postflop_decisions": 267,
+      "postflop_action_percentages": {
+        "Fold": 34.831460674157306,
+        "CheckCall": 2.6217228464419478,
+        "HalfPot_0.5x": 20.224719101123593,
+        "Pot_1.0x": 6.741573033707865,
+        "DoublePot_2.0x": 0.0,
+        "Allin": 35.580524344569284
+      }
+    },
+    "Model_A_MC300": {
+      "mean_postflop_delta_bb100": 3805.48,
+      "sem_delta_bb100": 694.7084015715302,
+      "ci95_delta_bb100": [
+        2443.851532919801,
+        5167.108467080199
+      ],
+      "total_postflop_decisions": 417,
+      "postflop_action_percentages": {
+        "Fold": 24.700239808153476,
+        "CheckCall": 37.88968824940048,
+        "HalfPot_0.5x": 12.949640287769784,
+        "Pot_1.0x": 8.15347721822542,
+        "DoublePot_2.0x": 9.112709832134293,
+        "Allin": 7.194244604316546
+      }
+    },
+    "Hybrid_R2_ModelA": {
+      "mean_postflop_delta_bb100": 3805.48,
+      "sem_delta_bb100": 694.7084015715302,
+      "ci95_delta_bb100": [
+        2443.851532919801,
+        5167.108467080199
+      ],
+      "total_postflop_decisions": 417,
+      "postflop_action_percentages": {
+        "Fold": 24.700239808153476,
+        "CheckCall": 37.88968824940048,
+        "HalfPot_0.5x": 12.949640287769784,
+        "Pot_1.0x": 8.15347721822542,
+        "DoublePot_2.0x": 9.112709832134293,
+        "Allin": 7.194244604316546
+      }
+    }
+  },
+  "paired_hypotheses": {
+    "H2: Model A vs R2 Postflop Delta (Same States)": {
+      "mean_diff_bb100": 991.83,
+      "sem_diff": 572.6637775923423,
+      "t_statistic": 1.7319586794365862,
+      "p_value": 0.0848304868836759,
+      "ci95_diff": [
+        -130.59100408099073,
+        2114.2510040809907
+      ]
+    },
+    "H3: Hybrid (R2+ModelA) vs R2 Alone Postflop Delta": {
+      "mean_diff_bb100": 991.83,
+      "sem_diff": 572.6637775923423,
+      "t_statistic": 1.7319586794365862,
+      "p_value": 0.0848304868836759,
+      "ci95_diff": [
+        -130.59100408099073,
+        2114.2510040809907
+      ]
+    }
+  }
+}
