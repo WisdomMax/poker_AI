@@ -1,0 +1,63 @@
+{
+  "version": "POKER AI V10.23.14",
+  "eval_seeds": [
+    180000,
+    180499
+  ],
+  "rectified_hero_postflop_participation": {
+    "Pure_R2": {
+      "hands_participated": 35,
+      "participation_pct": 7.000000000000001,
+      "total_decisions": 55
+    },
+    "Hybrid_R2": {
+      "hands_participated": 35,
+      "participation_pct": 7.000000000000001,
+      "total_decisions": 70
+    },
+    "Pure_Ensemble": {
+      "hands_participated": 7,
+      "participation_pct": 1.4000000000000001,
+      "total_decisions": 7
+    },
+    "Hybrid_Ensemble": {
+      "hands_participated": 7,
+      "participation_pct": 1.4000000000000001,
+      "total_decisions": 20
+    }
+  },
+  "rectified_sensitivity_analysis_r2": {
+    "all_500_hands": {
+      "mean_bb100": 39.5,
+      "sem_bb100": 58.77468355383725,
+      "ci95_bb100": [
+        -75.69837976552101,
+        154.698379765521
+      ]
+    },
+    "top1_extreme_gainer": {
+      "hand_seed": 180408,
+      "value_bb": 249.0,
+      "mean_bb100_without_top1": -10.32064128256513,
+      "sem_bb100": 31.245355141514256
+    },
+    "worst1_extreme_loser": {
+      "hand_seed": 180158,
+      "value_bb": -117.0,
+      "mean_bb100_without_worst1": 63.02605210420842,
+      "sem_bb100": 53.96886931057968
+    },
+    "trimmed_both_extremes_excluded": {
+      "hands_count": 498,
+      "mean_bb100": 13.152610441767068,
+      "sem_bb100": 20.66373766744561,
+      "ci95_bb100": [
+        -27.34831538642633,
+        53.65353626996046
+      ],
+      "t_statistic": 0.6365068437007968,
+      "p_value": 0.5247391546632291,
+      "conclusion": "Observed trimmed mean (+13.15 bb/100) is statistically unconfirmed (p=0.525, 95% CI contains 0)."
+    }
+  }
+}
