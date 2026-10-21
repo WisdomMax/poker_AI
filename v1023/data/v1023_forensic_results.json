@@ -1,0 +1,114 @@
+{
+  "Control_R1 (Seed 101)": {
+    "mean_bb100": 595.6708333333333,
+    "fold_pct": 62.68115942028986,
+    "call_pct": 24.130434782608695,
+    "raise_pct": 13.18840579710145,
+    "action_counts": {
+      "Fold": 865,
+      "Check/Call": 333,
+      "MinRaise": 182,
+      "HalfPot": 0,
+      "Pot": 0,
+      "Allin": 0
+    }
+  },
+  "Control_R2 (Seed 202)": {
+    "mean_bb100": 435.3725,
+    "fold_pct": 71.27976190476191,
+    "call_pct": 13.169642857142858,
+    "raise_pct": 15.550595238095239,
+    "action_counts": {
+      "MinRaise": 138,
+      "Fold": 958,
+      "Check/Call": 177,
+      "Allin": 67,
+      "HalfPot": 4,
+      "Pot": 0
+    }
+  },
+  "Control_R3 (Seed 303)": {
+    "mean_bb100": 851.6674999999999,
+    "fold_pct": 63.99669694467383,
+    "call_pct": 20.644095788604456,
+    "raise_pct": 15.359207266721716,
+    "action_counts": {
+      "Fold": 775,
+      "Check/Call": 250,
+      "Allin": 175,
+      "MinRaise": 7,
+      "HalfPot": 4,
+      "Pot": 0
+    }
+  },
+  "AntiLimper_R1 (Seed 101 - Failed)": {
+    "mean_bb100": 567.6508333333333,
+    "fold_pct": 57.01078582434514,
+    "call_pct": 29.815100154083208,
+    "raise_pct": 13.174114021571647,
+    "action_counts": {
+      "MinRaise": 90,
+      "Check/Call": 387,
+      "Fold": 740,
+      "Allin": 73,
+      "Pot": 8,
+      "HalfPot": 0
+    }
+  },
+  "AntiLimper_R2 (Seed 202 - Success)": {
+    "mean_bb100": 566.875,
+    "fold_pct": 51.83450429352069,
+    "call_pct": 29.898516783762684,
+    "raise_pct": 18.26697892271663,
+    "action_counts": {
+      "Fold": 664,
+      "Check/Call": 383,
+      "Allin": 153,
+      "HalfPot": 81,
+      "MinRaise": 0,
+      "Pot": 0
+    }
+  },
+  "AntiLimper_R3 (Seed 303 - Success)": {
+    "mean_bb100": 1216.513888888889,
+    "fold_pct": 59.858044164037864,
+    "call_pct": 26.34069400630915,
+    "raise_pct": 13.801261829652997,
+    "action_counts": {
+      "Fold": 759,
+      "Pot": 53,
+      "Check/Call": 334,
+      "MinRaise": 2,
+      "Allin": 108,
+      "HalfPot": 12
+    }
+  },
+  "AntiLimper_Ensemble (3 Seeds)": {
+    "mean_bb100": 786.5625,
+    "fold_pct": 60.37428803905615,
+    "call_pct": 27.990235964198533,
+    "raise_pct": 11.635475996745322,
+    "action_counts": {
+      "Fold": 742,
+      "Check/Call": 344,
+      "Allin": 114,
+      "MinRaise": 21,
+      "HalfPot": 8,
+      "Pot": 0
+    }
+  },
+  "Model_A (Equity Baseline)": {
+    "mean_bb100": 860.6249999999999,
+    "fold_pct": 79.92673992673993,
+    "call_pct": 14.652014652014653,
+    "raise_pct": 5.4212454212454215,
+    "action_counts": {
+      "Check/Call": 200,
+      "Fold": 1091,
+      "HalfPot": 21,
+      "MinRaise": 15,
+      "Allin": 19,
+      "Pot": 19
+    }
+  }
+}
