@@ -1,0 +1,287 @@
+{
+  "audit_version": "POKER AI V10.23.13",
+  "forensic_seed_180408_top_gainer": {
+    "seed": 180408,
+    "seat": 3,
+    "pure_return_bb": -100.0,
+    "hybrid_return_bb": 149.0,
+    "net_diff_bb": 249.0,
+    "pure_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 500.0,
+        "to_call": 350.0,
+        "act": "Pot",
+        "raw_amt": 1200,
+        "ppo_probs": [
+          0.0002,
+          0.0204,
+          0.0476,
+          0.8302,
+          0.0004,
+          0.1013
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 7300.0,
+        "to_call": 3650.0,
+        "act": "Allin",
+        "raw_amt": 10000,
+        "ppo_probs": [
+          0.2658,
+          0.032,
+          0.0272,
+          0.099,
+          0.0089,
+          0.5671
+        ]
+      }
+    ],
+    "hybrid_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 500.0,
+        "to_call": 350.0,
+        "act": "Pot",
+        "raw_amt": 1200,
+        "meta": {
+          "branch": "PPO_Preflop"
+        }
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 7300.0,
+        "to_call": 3650.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Flop",
+          "tc": 3650.0,
+          "pot": 7300.0,
+          "pot_odds": 0.3333333333333333,
+          "mc_equity": 0.4483333333333333,
+          "active_opps": 2,
+          "act": 1
+        }
+      },
+      {
+        "round": 2,
+        "street": "Turn",
+        "dec": 2,
+        "pot": 19750.0,
+        "to_call": 5150.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Turn",
+          "tc": 5150.0,
+          "pot": 19750.0,
+          "pot_odds": 0.20682730923694778,
+          "mc_equity": 0.6,
+          "active_opps": 2,
+          "act": 1
+        }
+      }
+    ]
+  },
+  "forensic_seed_180158_worst_loser": {
+    "seed": 180158,
+    "seat": 3,
+    "pure_return_bb": 108.75,
+    "hybrid_return_bb": -8.25,
+    "net_diff_bb": -117.0,
+    "pure_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 375.0,
+        "to_call": 225.0,
+        "act": "Pot",
+        "raw_amt": 825,
+        "ppo_probs": [
+          0.0005,
+          0.0116,
+          0.0403,
+          0.6426,
+          0.0003,
+          0.3047
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 3787.0,
+        "to_call": 1262.0,
+        "act": "Pot",
+        "raw_amt": 7136,
+        "ppo_probs": [
+          0.0,
+          0.0075,
+          0.0502,
+          0.9228,
+          0.0,
+          0.0195
+        ]
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 2,
+        "pot": 18011.0,
+        "to_call": 2864.0,
+        "act": "CheckCall",
+        "raw_amt": 1,
+        "ppo_probs": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "hybrid_log": [
+      {
+        "round": 0,
+        "street": "Preflop",
+        "dec": 0,
+        "pot": 375.0,
+        "to_call": 225.0,
+        "act": "Pot",
+        "raw_amt": 825,
+        "meta": {
+          "branch": "PPO_Preflop"
+        }
+      },
+      {
+        "round": 1,
+        "street": "Flop",
+        "dec": 1,
+        "pot": 3787.0,
+        "to_call": 1262.0,
+        "act": "Fold",
+        "raw_amt": 0,
+        "meta": {
+          "branch": "Equity_Heuristic",
+          "street": "Flop",
+          "tc": 1262.0,
+          "pot": 3787.0,
+          "pot_odds": 0.2499504852446029,
+          "mc_equity": 0.19833333333333333,
+          "active_opps": 2,
+          "act": 0
+        }
+      }
+    ]
+  },
+  "dedicated_model_a_stats": {
+    "Hybrid_R2": {
+      "Flop": {
+        "equity_heuristic": 23,
+        "fallback_free_check": 23,
+        "fallback_facing_bet_nofold": 0
+      },
+      "Turn": {
+        "equity_heuristic": 11,
+        "fallback_free_check": 7,
+        "fallback_facing_bet_nofold": 0
+      },
+      "River": {
+        "equity_heuristic": 4,
+        "fallback_free_check": 2,
+        "fallback_facing_bet_nofold": 0
+      }
+    },
+    "Hybrid_Ensemble": {
+      "Flop": {
+        "equity_heuristic": 4,
+        "fallback_free_check": 7,
+        "fallback_facing_bet_nofold": 0
+      },
+      "Turn": {
+        "equity_heuristic": 1,
+        "fallback_free_check": 5,
+        "fallback_facing_bet_nofold": 0
+      },
+      "River": {
+        "equity_heuristic": 0,
+        "fallback_free_check": 3,
+        "fallback_facing_bet_nofold": 0
+      }
+    }
+  },
+  "activation_and_sensitivity": {
+    "Hybrid_R2_vs_Pure_R2": {
+      "postflop_reached_hands": 171,
+      "action_diverged_hands": 34,
+      "action_diverged_same_profit_hands": 28,
+      "profit_improved_hands": 3,
+      "profit_worsened_hands": 3,
+      "mean_diff_bb100_all": 39.5,
+      "sem_diff_all": 58.77468355383725,
+      "ci95_all": [
+        -75.69837976552101,
+        154.698379765521
+      ],
+      "sensitivity": {
+        "exclude_top1_max_gainer": {
+          "top1_value_bb": 24900.0,
+          "mean_bb100": -10.32064128256513,
+          "sem_bb100": 31.245355141514256
+        },
+        "exclude_worst1_max_loser": {
+          "worst1_value_bb": -11700.0,
+          "mean_bb100": 63.02605210420842,
+          "sem_bb100": 53.96886931057966
+        },
+        "trimmed_both_excluded": {
+          "mean_bb100": 13.152610441767068,
+          "sem_bb100": 20.663737667445606
+        }
+      }
+    },
+    "Hybrid_Ensemble_vs_Pure_Ensemble": {
+      "postflop_reached_hands": 187,
+      "action_diverged_hands": 6,
+      "action_diverged_same_profit_hands": 6,
+      "profit_improved_hands": 0,
+      "profit_worsened_hands": 0,
+      "mean_diff_bb100_all": 0.0,
+      "sem_diff_all": 0.0,
+      "ci95_all": [
+        0.0,
+        0.0
+      ],
+      "sensitivity": {
+        "exclude_top1_max_gainer": {
+          "top1_value_bb": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "exclude_worst1_max_loser": {
+          "worst1_value_bb": 0.0,
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        },
+        "trimmed_both_excluded": {
+          "mean_bb100": 0.0,
+          "sem_bb100": 0.0
+        }
+      }
+    }
+  }
+}
