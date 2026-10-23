@@ -15,6 +15,7 @@ from v79.run_v79_controlled_causal_study import (
     get_5p_fullgame, TrueNFSP_6Action_Agent, True6ActionAdapter,
     advance_chance_nodes, extract_player_spent, normalize_inf_state_v79,
 )
+from v71.run_v71_ledger_and_street_audit import get_round_from_state
 from v81.run_v81_zero_leak_hybrid_audit import eval_7cards
 from v83.run_v83_robust_range_and_cfr_audit import RobustBayesianRangeModel
 from v88.run_v88_adversarial_learning_and_hero_exploitation import CallingStationBot
@@ -160,11 +161,16 @@ class DeterministicTrueNFSP_Agent(TrueNFSP_6Action_Agent):
         return int(rng.choice(self.action_dim, p=probs))
 
 def estimate_equity_det(hero, board, combos, probs, n_opps, sims, rng):
+    """
+    [V10.24 정규 엔진] 다자간 동률 1/N 지분 수학적 무결성 반영 에쿼티 엔진
+    Hero 단독 승리: 1.0, 패배: 0.0, Hero 포함 k인 동률: 1.0 / k
+    """
     known = set(hero) | set(board)
     deck = list(set(range(52)) - known)
     need_board = 5 - len(board)
     if len(deck) < (2 * n_opps + need_board): return 0.50
-    wins = ties = 0
+    wins_sum = 0.0
+    valid_sims = 0
     nc = len(combos)
     if nc == 0: return 0.50
     for _ in range(sims):
@@ -178,25 +184,40 @@ def estimate_equity_det(hero, board, combos, probs, n_opps, sims, rng):
         sampled = rng.choice(rem, size=needed, replace=False)
         sim_board = list(board) + list(sampled[:need_board])
         hs = eval_7cards(list(hero) + sim_board)
-        won, tied = True, False
         os1 = eval_7cards(h1 + sim_board)
-        if os1 > hs: won = False
-        elif os1 == hs: tied = True
-        if won or tied:
-            for i in range(extra):
-                oh = list(sampled[need_board+2*i:need_board+2*i+2])
-                os2 = eval_7cards(oh + sim_board)
-                if os2 > hs: won = tied = False; break
-                elif os2 == hs: tied = True
-        if won and not tied: wins += 1
-        elif tied: ties += 1
-    return float(wins + 0.5 * ties) / sims
+        opp_scores = [os1]
+        for i in range(extra):
+            oh = list(sampled[need_board+2*i:need_board+2*i+2])
+            opp_scores.append(eval_7cards(oh + sim_board))
+        best_opp = max(opp_scores)
+        if hs > best_opp:
+            wins_sum += 1.0
+        elif hs == best_opp:
+            tie_count = 1 + sum(1 for s in opp_scores if s == hs)
+            wins_sum += 1.0 / tie_count
+        valid_sims += 1
+    if valid_sims == 0: return 0.50
+    return float(wins_sum) / valid_sims
 
 class ModelA:
-    def __init__(self, bp, sims=300):
-        self.bp = bp; self.sims = sims; self.temp = 2.0
+    """
+    [V10.24 정규 모델 A] Action Boundary 기반 Adaptive Sampling 몬테카를로 에쿼티 가드
+    - 기본 표본 크기: 300 sims
+    - 의사결정 경계선(Fold 또는 Raise 전환 임계값)과 2.5%p 이내로 인접할 경우 표본을 3,000회로 자동 확장(Adaptive Sampling)
+    """
+    def __init__(self, bp, sims=300, adaptive=True, adaptive_sims=3000, margin_threshold=0.025):
+        self.bp = bp
+        self.sims = sims
+        self.adaptive = adaptive
+        self.adaptive_sims = adaptive_sims
+        self.margin_threshold = margin_threshold
+        self.temp = 2.0
+        self.last_meta = {}
+
     def act(self, st, cp, l6, folded, hand_seed, dec_idx):
         sp = extract_player_spent(st); tc = max(sp)-sp[cp]; pot = sum(sp)
+        rnd = get_round_from_state(st)
+        street_name = ["Preflop", "Flop", "Turn", "River"][min(rnd, 3)]
         inf = np.array(st.information_state_tensor(cp), dtype=np.float32)
         if tc > 0 and 0 in l6:
             hc = list(np.where(inf[5:57]==1.0)[0])
@@ -206,15 +227,48 @@ class ModelA:
                 hc, bc, mode='temperature', temperature=self.temp,
                 opp_aggression_level=1.5, is_raised=(tc>=100))
             po = tc/float(pot+tc)
-            eq_rng = np.random.RandomState((hand_seed*10007+cp*101+dec_idx*17)&0xFFFFFFFF)
+            eq_seed = (hand_seed*10007+cp*101+dec_idx*17)&0xFFFFFFFF
+            eq_rng = np.random.RandomState(eq_seed)
             eq = estimate_equity_det(hc, bc, combos, probs, ao, self.sims, eq_rng)
+            sims_used = self.sims
+
+            # [V10.24] Action Decision Boundary 기반 Adaptive Sampling
+            if self.adaptive:
+                fold_thresh = po - 0.05
+                dist_fold = abs(eq - fold_thresh)
+                dist_raise1 = abs(eq - (po + 0.05))
+                dist_raise2 = abs(eq - 0.65)
+                dist_raise = min(dist_raise1, dist_raise2)
+                boundary_margin = min(dist_fold, dist_raise)
+
+                if boundary_margin <= self.margin_threshold:
+                    # 경계선 초근접 핸드: 3,000회로 표본 동적 확장
+                    adapt_rng = np.random.RandomState((eq_seed + 99991) & 0xFFFFFFFF)
+                    eq = estimate_equity_det(hc, bc, combos, probs, ao, self.adaptive_sims, adapt_rng)
+                    sims_used = self.adaptive_sims
+
             if eq > po+0.05:
                 r = [a for a in l6 if a in [2,3]]
-                return r[0] if (r and eq>0.65) else (1 if 1 in l6 else l6[0])
-            elif eq < po-0.05: return 0
-            else: return 1 if 1 in l6 else l6[0]
-        bp_rng = np.random.RandomState((hand_seed*20011+cp*307+dec_idx*31)&0xFFFFFFFF)
-        return self.bp.select_action_deterministic(inf, l6, bp_rng)
+                act = r[0] if (r and eq>0.65) else (1 if 1 in l6 else l6[0])
+            elif eq < po-0.05:
+                act = 0
+            else:
+                act = 1 if 1 in l6 else l6[0]
+
+            self.last_meta = {
+                "branch": "Equity_Heuristic", "street": street_name,
+                "tc": tc, "pot": pot, "pot_odds": po, "mc_equity": eq,
+                "active_opps": ao, "sims_used": sims_used, "act": act
+            }
+            return act
+        else:
+            bp_rng = np.random.RandomState((hand_seed*20011+cp*307+dec_idx*31)&0xFFFFFFFF)
+            act = self.bp.select_action_deterministic(inf, l6, bp_rng)
+            self.last_meta = {
+                "branch": "fallback_free_check" if tc == 0 else "fallback_facing_bet_nofold",
+                "street": street_name, "tc": tc, "pot": pot, "act": act
+            }
+            return act
 
 class ModelB:
     def __init__(self, bp, q, sims=300):

@@ -1,0 +1,53 @@
+{
+  "version": "V10.24_ARCH_VALIDATION",
+  "unit_tests": {
+    "2p_tie": {
+      "value": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    "3p_tie": {
+      "value": 0.3333333333333329,
+      "expected": 0.3333,
+      "passed": true
+    },
+    "4p_tie": {
+      "value": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    "5p_tie": {
+      "value": 0.19999999999999962,
+      "expected": 0.2,
+      "passed": true
+    },
+    "solo_win": {
+      "value": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    "solo_lose": {
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    "all_passed": true
+  },
+  "adaptive_sampling_test": {
+    "seed_180158": {
+      "pot_odds": 0.2499504852446029,
+      "mc_equity": 0.18811111111111112,
+      "sims_used": 3000,
+      "action": 0,
+      "adaptive_triggered": true
+    },
+    "seed_180408": {
+      "pot_odds": 0.3333333333333333,
+      "mc_equity": 0.4483333333333333,
+      "sims_used": 300,
+      "action": 1,
+      "adaptive_triggered": false
+    }
+  },
+  "elapsed_sec": 2.0
+}
