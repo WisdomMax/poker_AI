@@ -232,14 +232,17 @@ class ModelA:
             eq = estimate_equity_det(hc, bc, combos, probs, ao, self.sims, eq_rng)
             sims_used = self.sims
 
-            # [V10.24] Action Decision Boundary 기반 Adaptive Sampling
+            # [V10.24] ChatGPT 승인 Action Decision Boundary 기반 Adaptive Sampling
             if self.adaptive:
                 fold_thresh = po - 0.05
                 dist_fold = abs(eq - fold_thresh)
-                dist_raise1 = abs(eq - (po + 0.05))
-                dist_raise2 = abs(eq - 0.65)
-                dist_raise = min(dist_raise1, dist_raise2)
-                boundary_margin = min(dist_fold, dist_raise)
+                has_legal_raise = any(a in l6 for a in [2, 3])
+                if has_legal_raise:
+                    raise_thresh = max(po + 0.05, 0.65)
+                    dist_raise = abs(eq - raise_thresh)
+                    boundary_margin = min(dist_fold, dist_raise)
+                else:
+                    boundary_margin = dist_fold
 
                 if boundary_margin <= self.margin_threshold:
                     # 경계선 초근접 핸드: 3,000회로 표본 동적 확장
