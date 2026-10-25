@@ -1,0 +1,586 @@
+{
+  "directive": "049",
+  "timestamp": "2026-10-26 07:01:51",
+  "total_elapsed_sec": 13.9,
+  "checkpoint_catalog_50_verified": 50,
+  "checkpoint_catalog": {
+    "Agent_A_200h": {
+      "filename": "Agent_A_200h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 200,
+      "sha256": "9f30486b94c56b71059facf9804dedcb3de5441f65eae33c80e9687c7be2089f",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_500h": {
+      "filename": "Agent_A_500h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 500,
+      "sha256": "fa75f1de32b1cb4bd461ef9b0a9eef0c6084531243af6f7a4b5244ea6a825acb",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_1000h": {
+      "filename": "Agent_A_1000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 1000,
+      "sha256": "948abd8c2cb7a0afbb64f0115ea601d9dc70d1e2bdb923b505d70acd3504ce5c",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_1500h": {
+      "filename": "Agent_A_1500h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 1500,
+      "sha256": "4d6d89e1df0c7ff17aff591b14bb0ae1920caad4a9c6baf16773a3dc1a0d1424",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_2000h": {
+      "filename": "Agent_A_2000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 2000,
+      "sha256": "af434b5e44ecf75aec37c120152a4250b210534f1ef3d65beac2f7d1cfbc1166",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_3000h": {
+      "filename": "Agent_A_3000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 3000,
+      "sha256": "9b3dfe011292e1bcd4a9cc760ea54ae9b72d1f0599720937c706105787cbcd40",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_4000h": {
+      "filename": "Agent_A_4000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 4000,
+      "sha256": "a6cd12bb56e79ed989a06d4dd4bfe0f3787315dd967e3b9a9953799c4d4e0dec",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_5000h": {
+      "filename": "Agent_A_5000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 5000,
+      "sha256": "2e07e6a4e246f7111751da7a8db3f7684f6d8027cad393406fa1232278a5f122",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_6000h": {
+      "filename": "Agent_A_6000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 6000,
+      "sha256": "ffe467cfd6ad3d0bfb2ea6fcc55bac5010caacce0f0f8996f0c4918f67badd39",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_A_7000h": {
+      "filename": "Agent_A_7000h.pt",
+      "agent": "Agent_A",
+      "generation_hands": 7000,
+      "sha256": "e1d6a178bb8ae6fde967f9de577462e35372a1cf3756f4028f3eeab649ba02e4",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_200h": {
+      "filename": "Agent_B_200h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 200,
+      "sha256": "4ef450de18b9648aa6d4a374ab94f96ccd33f22d8635b0dc7c4ee1dfec884c25",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_500h": {
+      "filename": "Agent_B_500h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 500,
+      "sha256": "7011ca477439ce48aba41b70ddc1711e2b4efafcdefb05443efe2ca98c321c7a",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_1000h": {
+      "filename": "Agent_B_1000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 1000,
+      "sha256": "ab86cdc5fd132bd3e213d0a83785a67c00c8d77c91636115f856208634486112",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_1500h": {
+      "filename": "Agent_B_1500h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 1500,
+      "sha256": "6935fbab7012de548c2339b8b01a805da6104e2ca18e46b40765ea4aff80a0fa",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_2000h": {
+      "filename": "Agent_B_2000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 2000,
+      "sha256": "a754ffda8fa7947cd7e461b76fd015ccff512818ce9a5e9fe3d902c7219ba5f2",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_3000h": {
+      "filename": "Agent_B_3000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 3000,
+      "sha256": "263974046a0a398525a611e8a26b79ca5e3efb9aedbcb80e57a1e99ecdbf78fe",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_4000h": {
+      "filename": "Agent_B_4000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 4000,
+      "sha256": "b92e44ebccf3ed824bac6c7321e9c2e63c73779322d36fa1a950f3e47e6aca40",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_5000h": {
+      "filename": "Agent_B_5000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 5000,
+      "sha256": "d0a592e312396a46830974a9b51b9567c5e58fa5a09303da773e86c952767588",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_6000h": {
+      "filename": "Agent_B_6000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 6000,
+      "sha256": "c80a54d872acc3dcb57b39ed932364e1909394e052483fae11112f07f55138f9",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_B_7000h": {
+      "filename": "Agent_B_7000h.pt",
+      "agent": "Agent_B",
+      "generation_hands": 7000,
+      "sha256": "98fe5c596031d9a9a93d2e3fe955aa83ab3ea947e8d07da275b00d69c623c0ea",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_200h": {
+      "filename": "Agent_C_200h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 200,
+      "sha256": "cac63ac49ced097c92c647dcfdfe6774023ebe9b32bb0e43270e5356474323ff",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_500h": {
+      "filename": "Agent_C_500h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 500,
+      "sha256": "876cbd6d85890c8c1dc73dc21e9d79401d9644b10dab8ccc5ee817c4a73e8c07",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_1000h": {
+      "filename": "Agent_C_1000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 1000,
+      "sha256": "9507dc61e35c59178763c9ebbfccba62763d2e663387539fd6a8a1f175d65702",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_1500h": {
+      "filename": "Agent_C_1500h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 1500,
+      "sha256": "b7cf2489713877a7bbe30bb6624918125cd957658f3e66c961a474e8d4c79188",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_2000h": {
+      "filename": "Agent_C_2000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 2000,
+      "sha256": "7763b5ab879f11e7c810ba434a2d54758d61a4a8eb9d1fc0dd670e2faefb3743",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_3000h": {
+      "filename": "Agent_C_3000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 3000,
+      "sha256": "990767df649ea136b86ed2084cb79ea344c54e5fa0258c71f9be081626da753d",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_4000h": {
+      "filename": "Agent_C_4000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 4000,
+      "sha256": "f83d955ab2b3fe33362da5f8276228827319f9a4402ad876b7e4468c9a8ae2fd",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_5000h": {
+      "filename": "Agent_C_5000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 5000,
+      "sha256": "a99d56485b899c86085f119d9eef98e7cb46d63b24bf5796bb804cd44cc744d6",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_6000h": {
+      "filename": "Agent_C_6000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 6000,
+      "sha256": "924a14aa604b3c22a45b806a116a2dd1ca5ef67b110e42fe1c37fdf22d7c1b8a",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_C_7000h": {
+      "filename": "Agent_C_7000h.pt",
+      "agent": "Agent_C",
+      "generation_hands": 7000,
+      "sha256": "fb8136e11bfd0e7b29bbccf69448ef4ba333f27b4d62d270e0228aea1fde90a7",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_200h": {
+      "filename": "Agent_D_200h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 200,
+      "sha256": "3543dd6197968710d4e49d18e1dcb9e523f63ca7e8c5fe5ac0d346b2a239fa7a",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_500h": {
+      "filename": "Agent_D_500h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 500,
+      "sha256": "999c78ec78c7c91c62700ec796c47c8830efe9c3f7959835f032d13056577784",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_1000h": {
+      "filename": "Agent_D_1000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 1000,
+      "sha256": "4758949a02b47ec542dd58d33cf851259ece748d68815ff6746e0c08de07b2b3",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_1500h": {
+      "filename": "Agent_D_1500h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 1500,
+      "sha256": "0307971e736b12a91a837c0bdc799d9bfaf9b640c2f9a3fd88dc9fa4d6624e6b",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_2000h": {
+      "filename": "Agent_D_2000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 2000,
+      "sha256": "a1882c978f074385b12e3047741ea231ae9f077e248d1bcc648502084f3335ac",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_3000h": {
+      "filename": "Agent_D_3000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 3000,
+      "sha256": "9e1fd25aa95ecfde30dbb469e469851d8862a5ce2c40d2f346a6085c48cc63fd",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_4000h": {
+      "filename": "Agent_D_4000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 4000,
+      "sha256": "ff006e843acdd78f51ab01d087640a59aa4c95bbcc82ca4d2b2afc21426d48c6",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_5000h": {
+      "filename": "Agent_D_5000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 5000,
+      "sha256": "215a17990163c31a02dba3688d1677b7a27286f03660f2dc4ba44e447007289d",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_6000h": {
+      "filename": "Agent_D_6000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 6000,
+      "sha256": "f2ef6dcdc0fb9701ef95b61fe1536a432689995600be03c99e688edd6d66bf7d",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_D_7000h": {
+      "filename": "Agent_D_7000h.pt",
+      "agent": "Agent_D",
+      "generation_hands": 7000,
+      "sha256": "9daf28be21637b9d4f7bfef511f2bda25f4e30691e4cffd7c02b09b28a95ad4c",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_200h": {
+      "filename": "Agent_E_200h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 200,
+      "sha256": "1de253b5c4669022abdb81e4524687a9cf9ed6cf986a2e5bbb50f6e9a90d2083",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_500h": {
+      "filename": "Agent_E_500h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 500,
+      "sha256": "be13f1b3fd95e131810a7670c6509c11f83b7484860617cb4606d0f4fb787414",
+      "size_bytes": 3442457,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_1000h": {
+      "filename": "Agent_E_1000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 1000,
+      "sha256": "80f7e3c8134682fd49d18326685b766a536a8a09dfdaa606cf35847c908da83c",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_1500h": {
+      "filename": "Agent_E_1500h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 1500,
+      "sha256": "1964a141834cf5b5a848aecfaa1da95506c823a6ab0280959c8691ee54daf66b",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_2000h": {
+      "filename": "Agent_E_2000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 2000,
+      "sha256": "f785547138b66dfd50ae06f5a5e3b5cfa68c35d1d9c783c19a1505fca55aece5",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_3000h": {
+      "filename": "Agent_E_3000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 3000,
+      "sha256": "47944b2d512bcc8426f72e191686623f02f5a1329726a38a01af14eeb42e29eb",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_4000h": {
+      "filename": "Agent_E_4000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 4000,
+      "sha256": "ba93b05252c6ff5c99bb9d52ea48a12056f288be3d061124387edd220b7fc585",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_5000h": {
+      "filename": "Agent_E_5000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 5000,
+      "sha256": "d10cb563656d85e1534c55069f630e89ccb0f8fb28e706ac05871c83c8f0a79f",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_6000h": {
+      "filename": "Agent_E_6000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 6000,
+      "sha256": "d84c8f598e93e06d7be52f315fe39dfb9f25e2cbfea0e2457ac9b1a301b9c655",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    },
+    "Agent_E_7000h": {
+      "filename": "Agent_E_7000h.pt",
+      "agent": "Agent_E",
+      "generation_hands": 7000,
+      "sha256": "3b928f690771acc2dd54010bb3802390d55e9d64525d832de0477953e276989e",
+      "size_bytes": 3442475,
+      "size_mb": 3.28,
+      "optimizer_restored": false,
+      "status": "VERIFIED_ON_DISK"
+    }
+  },
+  "agent_e_multi_flag_allin_audit": {
+    "primary_summary": {
+      "Cat1_HeroPushed_Called": {
+        "count": 1,
+        "pct": 0.2,
+        "avg_ev_bb": -100.0,
+        "total_pnl_bb": -100.0
+      },
+      "Cat2_HeroPushed_Uncalled": {
+        "count": 28,
+        "pct": 5.6,
+        "avg_ev_bb": 2.0,
+        "total_pnl_bb": 56.0
+      },
+      "Cat6_Normal_NonAllin_Hand": {
+        "count": 471,
+        "pct": 94.2,
+        "avg_ev_bb": 1.33,
+        "total_pnl_bb": 627.25
+      }
+    },
+    "flag_totals": {
+      "hero_pushed": 29,
+      "uncalled_allin": 28
+    },
+    "total_hands": 500,
+    "seed_base": 40000
+  },
+  "balanced_crossplay_results": {
+    "policy_results": {
+      "Agent_A_7000h": {
+        "bb_per_100": -11.42,
+        "ci95_bb": 392.71,
+        "total_pnl_bb": -57.12,
+        "hands_played": 500
+      },
+      "Agent_B_7000h": {
+        "bb_per_100": 490.66,
+        "ci95_bb": 412.65,
+        "total_pnl_bb": 2453.31,
+        "hands_played": 500
+      },
+      "Agent_C_2000h": {
+        "bb_per_100": -55.2,
+        "ci95_bb": 494.09,
+        "total_pnl_bb": -276.01,
+        "hands_played": 500
+      },
+      "Agent_D_2000h": {
+        "bb_per_100": -159.51,
+        "ci95_bb": 467.8,
+        "total_pnl_bb": -797.55,
+        "hands_played": 500
+      },
+      "Agent_E_2000h": {
+        "bb_per_100": -264.52,
+        "ci95_bb": 425.4,
+        "total_pnl_bb": -1322.62,
+        "hands_played": 500
+      }
+    },
+    "team_7000h_bb100": 239.62,
+    "team_2000h_bb100": -159.75,
+    "team_difference_p_value": 0.0515,
+    "total_hands": 500,
+    "zero_sum_violations": 0
+  },
+  "pfsp_sampler_test": {
+    "distribution": {
+      "Agent_A_1000h": 0.116,
+      "Agent_A_2000h": 0.5201,
+      "Agent_A_3000h": 0.116,
+      "Agent_A_4000h": 0.0157,
+      "Agent_A_5000h": 0.116,
+      "Agent_A_6000h": 0.116
+    },
+    "sum_probabilities": 0.9998
+  }
+}
