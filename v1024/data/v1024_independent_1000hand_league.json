@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "title": "POKER AI V10.24 Independent 1,000-Hand Holdout Benchmark League",
+    "date": "2026-10-25 09:04:12",
+    "seed_range": [
+      300000,
+      300999
+    ],
+    "total_hands": 1000,
+    "seat_rotation": "0~4 equal 200 hands each",
+    "chip_conservation_verified": true,
+    "model_hashes": {
+      "Baseline": {
+        "path": "v1022/models/StrictAntiLimper_R2_100K.pt",
+        "sha256": "42f0f6b9ff0fefaaab9e3214a0e97e22179b22560de844131aa8a3bba34b76f7"
+      },
+      "Cycle_2_725k": {
+        "path": "v1024/models/V1024_PPO_Cycle_2_725353hands.pt",
+        "sha256": "90d24dafd401b94311955fa3f0201eb42e319fe881cb4c4e2122985d959d722c"
+      },
+      "Cycle_4_1211k": {
+        "path": "v1024/models/V1024_PPO_Cycle_4_1211670hands.pt",
+        "sha256": "0cd55d064c2042f8284a4f0cd85acd7aefc75c09f2e48ad02ab629a9e58e38ba"
+      },
+      "Cycle_7_1771k": {
+        "path": "v1024/models/V1024_PPO_Cycle_7_1771164hands.pt",
+        "sha256": "890065b4de4d61220e9c3dc80e9e672f1c31c6eca2756655e184bda7b5a273fd"
+      },
+      "Cycle_10_2289k": {
+        "path": "v1024/models/V1024_PPO_Cycle_10_2289023hands.pt",
+        "sha256": "1791c8873dee355704555864a05595bc9a8e8f1c07903cde0ba7ee6dba21812c"
+      },
+      "Cycle_13_2890k": {
+        "path": "v1024/models/V1024_PPO_Cycle_13_2890003hands.pt",
+        "sha256": "7c61431dfce3708529413ef22b9697742debf4aec6e6b42d2d1f3d2fbdea0ea0"
+      }
+    }
+  },
+  "summary": {
+    "Baseline_PurePPO": {
+      "mean_bb100": 866.7583333333332,
+      "std_bb100": 8160.987961361426,
+      "sem": 258.0730991511632,
+      "ci_95": [
+        360.9350589970533,
+        1372.581607669613
+      ],
+      "improvement_vs_base": 0.0,
+      "t_stat": 0.0,
+      "p_value_vs_base": 1.0,
+      "win_rate_pct": 24.0,
+      "actions_pct": {
+        "fold": 50.697674418604656,
+        "call": 31.16279069767442,
+        "raise": 18.13953488372093
+      },
+      "adaptive_interventions": 0
+    },
+    "Baseline_AdaptiveMC": {
+      "mean_bb100": 848.2125,
+      "std_bb100": 8181.501892140205,
+      "sem": 258.721806601403,
+      "ci_95": [
+        341.1177590612501,
+        1355.3072409387498
+      ],
+      "improvement_vs_base": -18.54583333333334,
+      "t_stat": -0.11321014780706001,
+      "p_value_vs_base": 0.9098866959626533,
+      "win_rate_pct": 23.1,
+      "actions_pct": {
+        "fold": 51.291512915129154,
+        "call": 29.704797047970477,
+        "raise": 19.00369003690037
+      },
+      "adaptive_interventions": 22
+    },
+    "Cycle_2_725k_PurePPO": {
+      "mean_bb100": 969.5916666666666,
+      "std_bb100": 8106.77828441782,
+      "sem": 256.3588386475261,
+      "ci_95": [
+        467.1283429175154,
+        1472.0549904158179
+      ],
+      "improvement_vs_base": 102.83333333333334,
+      "t_stat": 0.4773758075761576,
+      "p_value_vs_base": 0.633198957827956,
+      "win_rate_pct": 20.8,
+      "actions_pct": {
+        "fold": 57.636887608069166,
+        "call": 31.027857829010568,
+        "raise": 11.33525456292027
+      },
+      "adaptive_interventions": 0
+    },
+    "Cycle_2_725k_AdaptiveMC": {
+      "mean_bb100": 1092.325,
+      "std_bb100": 8222.149914674083,
+      "sem": 260.007209937292,
+      "ci_95": [
+        582.7108685229077,
+        1601.9391314770924
+      ],
+      "improvement_vs_base": 225.5666666666667,
+      "t_stat": 1.0346015380426952,
+      "p_value_vs_base": 0.3011054136044646,
+      "win_rate_pct": 22.0,
+      "actions_pct": {
+        "fold": 56.13026819923371,
+        "call": 32.56704980842912,
+        "raise": 11.302681992337165
+      },
+      "adaptive_interventions": 36
+    },
+    "Cycle_4_1211k_PurePPO": {
+      "mean_bb100": 1104.4,
+      "std_bb100": 8280.072804027752,
+      "sem": 261.8388925274471,
+      "ci_95": [
+        591.1957706462038,
+        1617.6042293537964
+      ],
+      "improvement_vs_base": 237.64166666666668,
+      "t_stat": 1.12950918924496,
+      "p_value_vs_base": 0.2589542308454986,
+      "win_rate_pct": 21.099999999999998,
+      "actions_pct": {
+        "fold": 49.303849303849304,
+        "call": 44.799344799344794,
+        "raise": 5.896805896805897
+      },
+      "adaptive_interventions": 0
+    },
+    "Cycle_4_1211k_AdaptiveMC": {
+      "mean_bb100": 922.4,
+      "std_bb100": 7901.048315888214,
+      "sem": 249.85308581244297,
+      "ci_95": [
+        432.68795180761174,
+        1412.112048192388
+      ],
+      "improvement_vs_base": 55.64166666666669,
+      "t_stat": 0.25792236285447595,
+      "p_value_vs_base": 0.7965199472112717,
+      "win_rate_pct": 19.5,
+      "actions_pct": {
+        "fold": 53.2258064516129,
+        "call": 37.351443123938886,
+        "raise": 9.422750424448218
+      },
+      "adaptive_interventions": 126
+    },
+    "Cycle_7_1771k_PurePPO": {
+      "mean_bb100": 938.1056666666667,
+      "std_bb100": 7624.385194423591,
+      "sem": 241.10422972844268,
+      "ci_95": [
+        465.54137639891906,
+        1410.6699569344144
+      ],
+      "improvement_vs_base": 71.34733333333334,
+      "t_stat": 0.34780602427218416,
+      "p_value_vs_base": 0.7280591335992075,
+      "win_rate_pct": 19.400000000000002,
+      "actions_pct": {
+        "fold": 59.90610328638498,
+        "call": 22.535211267605636,
+        "raise": 17.558685446009388
+      },
+      "adaptive_interventions": 0
+    },
+    "Cycle_7_1771k_AdaptiveMC": {
+      "mean_bb100": 783.925,
+      "std_bb100": 7585.698367281354,
+      "sem": 239.88084483629575,
+      "ci_95": [
+        313.7585441208603,
+        1254.0914558791396
+      ],
+      "improvement_vs_base": -82.83333333333331,
+      "t_stat": -0.4020324915639638,
+      "p_value_vs_base": 0.6877461114021193,
+      "win_rate_pct": 18.8,
+      "actions_pct": {
+        "fold": 60.341555977229596,
+        "call": 24.28842504743833,
+        "raise": 15.370018975332068
+      },
+      "adaptive_interventions": 24
+    },
+    "Cycle_10_2289k_PurePPO": {
+      "mean_bb100": 778.625,
+      "std_bb100": 8021.209306231511,
+      "sem": 253.6529099663061,
+      "ci_95": [
+        281.46529646604,
+        1275.78470353396
+      ],
+      "improvement_vs_base": -88.13333333333331,
+      "t_stat": -0.3862859657973607,
+      "p_value_vs_base": 0.6993671480666417,
+      "win_rate_pct": 20.3,
+      "actions_pct": {
+        "fold": 50.16722408026756,
+        "call": 38.54515050167224,
+        "raise": 11.2876254180602
+      },
+      "adaptive_interventions": 0
+    },
+    "Cycle_10_2289k_AdaptiveMC": {
+      "mean_bb100": 1117.4,
+      "std_bb100": 7719.049390307073,
+      "sem": 244.09777444704406,
+      "ci_95": [
+        638.9683620837937,
+        1595.8316379162065
+      ],
+      "improvement_vs_base": 250.64166666666668,
+      "t_stat": 1.2405556998662697,
+      "p_value_vs_base": 0.21506119074398625,
+      "win_rate_pct": 20.5,
+      "actions_pct": {
+        "fold": 54.435831180017225,
+        "call": 33.33333333333333,
+        "raise": 12.23083548664944
+      },
+      "adaptive_interventions": 109
+    },
+    "Cycle_13_2890k_PurePPO": {
+      "mean_bb100": 744.25,
+      "std_bb100": 7434.755422170927,
+      "sem": 235.1076098034685,
+      "ci_95": [
+        283.4390847852017,
+        1205.0609152147983
+      ],
+      "improvement_vs_base": -122.50833333333331,
+      "t_stat": -0.5709952363404973,
+      "p_value_vs_base": 0.5681312918913959,
+      "win_rate_pct": 18.9,
+      "actions_pct": {
+        "fold": 57.747747747747745,
+        "call": 28.01801801801802,
+        "raise": 14.234234234234233
+      },
+      "adaptive_interventions": 0
+    },
+    "Cycle_13_2890k_AdaptiveMC": {
+      "mean_bb100": 866.3,
+      "std_bb100": 7616.252067782422,
+      "sem": 240.8470376815958,
+      "ci_95": [
+        394.2398061440722,
+        1338.3601938559277
+      ],
+      "improvement_vs_base": -0.45833333333331394,
+      "t_stat": -0.0021837729751492405,
+      "p_value_vs_base": 0.9982580386258393,
+      "win_rate_pct": 18.9,
+      "actions_pct": {
+        "fold": 57.605760576057605,
+        "call": 27.09270927092709,
+        "raise": 15.301530153015303
+      },
+      "adaptive_interventions": 67
+    }
+  }
+}
