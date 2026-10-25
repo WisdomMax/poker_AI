@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker AI Human Arena Lite</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 상단 헤더 -->
+        <header class="arena-header">
+            <div class="logo-area">
+                <span class="logo-badge">V10.24</span>
+                <h1>POKER AI HUMAN ARENA <span class="lite-tag">Lite</span></h1>
+            </div>
+            <div class="header-stats">
+                <div class="stat-pill"><span>Hands:</span> <strong id="stat-hands">0</strong></div>
+                <div class="stat-pill"><span>Hero Net:</span> <strong id="stat-net">+0.0 BB</strong></div>
+                <div class="stat-pill"><span>bb/100:</span> <strong id="stat-bb100">0.0</strong></div>
+                <div class="stat-pill"><span>Win%:</span> <strong id="stat-winrate">0.0%</strong></div>
+                <button id="btn-reset" class="btn-secondary" title="스택 및 세션 기록 리셋">Reset</button>
+            </div>
+        </header>
+
+        <!-- 메인 콘텐츠 영역 (테이블 + 사이드바) -->
+        <main class="arena-main">
+            <!-- 포커 테이블 영역 -->
+            <div class="table-wrapper">
+                <div class="poker-table">
+                    <!-- 테이블 중앙 보드 & 팟 -->
+                    <div class="table-center">
+                        <div class="pot-badge">
+                            <span class="pot-label">TOTAL POT</span>
+                            <span class="pot-amount" id="pot-display">0.0 BB</span>
+                        </div>
+                        <div class="street-label" id="street-display">Preflop</div>
+                        <div class="board-cards" id="board-cards">
+                            <!-- JS로 커뮤니티 카드 렌더링 -->
+                        </div>
+                    </div>
+
+                    <!-- 5인 플레이어 좌석 (Seat 0~4) -->
+                    <!-- Seat 1: AI Cycle 4 (상단 좌측) -->
+                    <div class="player-seat seat-1" id="seat-1"></div>
+
+                    <!-- Seat 2: AI Cycle 13 (상단 중앙) -->
+                    <div class="player-seat seat-2" id="seat-2"></div>
+
+                    <!-- Seat 3: AI Cycle 10+MC (상단 우측) -->
+                    <div class="player-seat seat-3" id="seat-3"></div>
+
+                    <!-- Seat 4: AI Baseline (하단 우측) -->
+                    <div class="player-seat seat-4" id="seat-4"></div>
+
+                    <!-- Seat 0: Human Hero (하단 중앙) -->
+                    <div class="player-seat seat-0" id="seat-0"></div>
+                </div>
+
+                <!-- 하단 액션 컨트롤 패널 -->
+                <div class="control-panel">
+                    <div class="action-buttons-group" id="action-buttons">
+                        <button id="btn-fold" class="btn-action btn-fold" disabled>Fold</button>
+                        <button id="btn-call" class="btn-action btn-call" disabled>Check / Call</button>
+                        <button id="btn-raise-50" class="btn-action btn-raise" disabled>50% Pot</button>
+                        <button id="btn-raise-100" class="btn-action btn-raise" disabled>100% Pot</button>
+                        <button id="btn-raise-200" class="btn-action btn-raise" disabled>200% Pot</button>
+                        <button id="btn-allin" class="btn-action btn-allin" disabled>All-in</button>
+                    </div>
+                    <div class="hand-nav-group">
+                        <button id="btn-new-hand" class="btn-primary-action">Deal Next Hand (새 핸드 시작)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 우측 사이드바: 액션 로그 및 피드백 -->
+            <aside class="arena-sidebar">
+                <div class="sidebar-card">
+                    <h3>AI 모델 라인업 (5인 구성)</h3>
+                    <ul class="lineup-list">
+                        <li><span class="avatar">👤</span> <strong>Hero (You):</strong> 인간 도전자</li>
+                        <li><span class="avatar">🏆</span> <strong>AI Cycle 4:</strong> 기본 주력 챔피언 (121만)</li>
+                        <li><span class="avatar">⚡</span> <strong>AI Cycle 13:</strong> 극단 풀 1위 도전자 (289만)</li>
+                        <li><span class="avatar">🧠</span> <strong>AI Cycle 10+MC:</strong> 적응형 하이브리드 (228만)</li>
+                        <li><span class="avatar">🤖</span> <strong>AI Baseline:</strong> V10.22 사전학습 기준선 (10만)</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card log-card">
+                    <h3>실시간 플레이 로그</h3>
+                    <div class="log-stream" id="action-log">
+                        <div class="log-entry">아레나에 연결되었습니다. [새 핸드 시작]을 눌러 대결을 시작하세요!</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card feedback-card">
+                    <h3>연구용 피드백 / 버그 리포트</h3>
+                    <form id="feedback-form">
+                        <select id="fb-category" class="form-input">
+                            <option value="AI_Strategy">AI 플레이 전략 소감</option>
+                            <option value="Bug_Report">버그 / 룰 이상 리포트</option>
+                            <option value="UI_Feedback">UI / 반응속도 의견</option>
+                            <option value="Other">기타 제안</option>
+                        </select>
+                        <textarea id="fb-comment" class="form-input" rows="2" placeholder="AI 플레이에 대한 느낌이나 버그를 남겨주세요." required></textarea>
+                        <button type="submit" class="btn-secondary btn-full">피드백 전송</button>
+                    </form>
+                    <div id="fb-status" class="status-msg"></div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/js/poker.js"></script>
+</body>
+</html>
