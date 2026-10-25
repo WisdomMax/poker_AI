@@ -99,9 +99,25 @@ class PokerArenaClient {
         this.sidebarContent = document.getElementById('sidebar-content');
         this.sidebarArrow = document.getElementById('sidebar-arrow');
         
-        // 오디오 컨트롤러 (DIRECTIVE 025)
+        // 오디오 & UX 컨트롤러 (DIRECTIVE 028)
         this.btnAudioMute = document.getElementById('btn-audio-mute');
         this.audioVolume = document.getElementById('audio-volume');
+        this.btnSpeedToggle = document.getElementById('btn-speed-toggle');
+        this.btnGuideToggle = document.getElementById('btn-guide-toggle');
+        
+        this.streetHelpTip = document.getElementById('street-help-tip');
+        this.commStageText = document.getElementById('comm-stage-text');
+        
+        this.hintCall = document.getElementById('hint-call');
+        this.hintRaise50 = document.getElementById('hint-raise-50');
+        this.hintRaise100 = document.getElementById('hint-raise-100');
+        this.hintRaise200 = document.getElementById('hint-raise-200');
+        this.hintAllin = document.getElementById('hint-allin');
+        
+        this.gameSpeed = 1.0;
+        this.guideEnabled = true;
+        this.renderedBoardCards = [];
+        
         if (this.btnAudioMute && window.arenaAudio) {
             this.btnAudioMute.innerText = window.arenaAudio.isMuted() ? '🔇' : '🔊';
         }
@@ -273,19 +289,32 @@ class PokerArenaClient {
             });
         }
 
-        // 볼륨 슬라이더 조절
-        if (this.audioVolume) {
-            this.audioVolume.addEventListener('input', (e) => {
-                if (window.arenaAudio) {
-                    window.arenaAudio.setVolume(parseFloat(e.target.value));
+        // 초보자 가이드 토글
+        if (this.btnGuideToggle) {
+            this.btnGuideToggle.addEventListener('click', () => {
+                this.guideEnabled = !this.guideEnabled;
+                document.body.classList.toggle('guide-mode-off', !this.guideEnabled);
+                this.btnGuideToggle.innerText = this.guideEnabled ? '💡 가이드 ON' : '💡 가이드 OFF';
+                this.btnGuideToggle.classList.toggle('active', this.guideEnabled);
+            });
+        }
+
+        // 게임 속도 토글 (1.0x <-> 2.0x)
+        if (this.btnSpeedToggle) {
+            this.btnSpeedToggle.addEventListener('click', () => {
+                this.gameSpeed = this.gameSpeed === 1.0 ? 2.0 : 1.0;
+                this.btnSpeedToggle.innerText = this.gameSpeed === 1.0 ? '⚡ 속도: 보통' : '⚡ 속도: 빠름 (2x)';
+                this.btnSpeedToggle.classList.toggle('fast-mode', this.gameSpeed === 2.0);
+                if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+                    this.ws.send(JSON.stringify({ type: 'set_speed', speed: this.gameSpeed }));
                 }
             });
         }
     }
 
-    renderCard(cardStr) {
+    renderCard(cardStr, extraClass = '') {
         if (!cardStr || cardStr === '??') {
-            return `<div class="card hidden"></div>`;
+            return `<div class="card card-back ${extraClass}"></div>`;
         }
         const rank = cardStr[0];
         const suitChar = cardStr[1];
@@ -293,11 +322,70 @@ class PokerArenaClient {
         const colorClass = SUIT_COLORS[suitChar] || 'black';
         
         return `
-            <div class="card ${colorClass}">
-                <div class="card-rank">${rank}</div>
-                <div class="card-suit">${suitSymbol}</div>
+            <div class="card ${colorClass} ${extraClass}">
+                <div class="card-corner card-corner-top">
+                    <span class="corner-rank">${rank}</span>
+                    <span class="corner-suit">${suitSymbol}</span>
+                </div>
+                <div class="card-center-suit">${suitSymbol}</div>
+                <div class="card-corner card-corner-bottom">
+                    <span class="corner-rank">${rank}</span>
+                    <span class="corner-suit">${suitSymbol}</span>
+                </div>
             </div>
         `;
+    }
+
+    renderCommunityBoard(boardCards) {
+        if (!this.boardCardsContainer) return;
+        
+        const slotLabels = ["플랍 1", "플랍 2", "플랍 3", "턴 4", "리버 5"];
+        const cards = boardCards || [];
+        
+        let html = '';
+        for (let i = 0; i < 5; i++) {
+            const cardStr = cards[i];
+            const slotName = slotLabels[i];
+            const slotClass = i < 3 ? 'slot-flop' : (i === 3 ? 'slot-turn' : 'slot-river');
+            
+            if (cardStr) {
+                const isNew = !this.renderedBoardCards.includes(cardStr);
+                const anim = isNew ? 'animate-card-flip' : '';
+                html += `
+                    <div class="board-slot ${slotClass} active">
+                        <span class="slot-badge">${slotName}</span>
+                        ${this.renderCard(cardStr, anim)}
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="board-slot ${slotClass} empty">
+                        <span class="slot-badge">${slotName}</span>
+                        <div class="card-slot-placeholder">
+                            <span class="ph-icon">🂠</span>
+                            <span class="ph-text">${slotName}</span>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        this.boardCardsContainer.innerHTML = html;
+        this.renderedBoardCards = [...cards];
+        
+        // 공용 카드 상태 서브텍스트
+        if (this.commStageText) {
+            const cnt = cards.length;
+            if (cnt === 0) {
+                this.commStageText.innerText = "프리플랍 진행 중 (공용 카드 3장 오픈 대기)";
+            } else if (cnt === 3) {
+                this.commStageText.innerText = "플랍 3장 오픈됨 (턴 카드 대기)";
+            } else if (cnt === 4) {
+                this.commStageText.innerText = "턴 4번째 카드 오픈됨 (마지막 리버 대기)";
+            } else if (cnt === 5) {
+                this.commStageText.innerText = "리버 5장 전체 오픈 완료 (쇼다운 판정)";
+            }
+        }
     }
 
     formatMoney(amount, showSign = false) {
@@ -309,7 +397,7 @@ class PokerArenaClient {
     onStateUpdate(state) {
         this.state = state;
         
-        // 0. 실감형 음성 및 효과음 디스패치 (DIRECTIVE 025)
+        // 0. 실감형 음성 및 효과음 디스패치 (DIRECTIVE 028)
         this.handleGameAudioAndAnimations(state);
         
         // 1. 헤더 통계 (가상 달러 $ 단위, BB 노출 금지)
@@ -337,13 +425,29 @@ class PokerArenaClient {
             this.statWinrate.innerText = (stats.win_rate_pct || 0.0).toFixed(1) + '%';
         }
         
-        // 2. 테이블 중앙 (팟 & 스트리트 & 커뮤니티 카드)
+        // 2. 테이블 중앙 (팟 & 스트리트 & 5구 공용 카드 슬롯)
         const pot = state.pot_dollars !== undefined ? state.pot_dollars : Math.round((state.pot_bb || 0) * 100);
         this.potDisplay.innerText = `팟 ${this.formatMoney(pot)}`;
         this.streetDisplay.innerText = state.round_name || '프리플랍 (Preflop)';
         
-        const boardHtml = (state.board_cards || []).map(c => this.renderCard(c)).join('');
-        this.boardCardsContainer.innerHTML = boardHtml;
+        // 단계별 쉬운 한글 팁
+        if (this.streetHelpTip) {
+            const rName = state.round_name || '';
+            if (rName.includes('프리플랍')) {
+                this.streetHelpTip.innerText = "개인 카드 2장을 받았습니다. 베팅에 참여할지 결정하세요.";
+            } else if (rName.includes('플랍')) {
+                this.streetHelpTip.innerText = "모두가 공유하는 공용 카드 3장이 공개되었습니다!";
+            } else if (rName.includes('턴')) {
+                this.streetHelpTip.innerText = "4번째 공용 카드가 추가되었습니다.";
+            } else if (rName.includes('리버')) {
+                this.streetHelpTip.innerText = "마지막 5번째 공용 카드가 공개되었습니다. 최종 쇼다운을 준비하세요.";
+            } else if (rName.includes('쇼다운')) {
+                this.streetHelpTip.innerText = "모든 베팅 종료! 카드를 열어 승자를 확인합니다.";
+            }
+        }
+        
+        // 5구 공용 카드 슬롯 렌더링
+        this.renderCommunityBoard(state.board_cards);
         
         // 3. 5인 좌석 렌더링 ($ 단위 표시)
         (state.players || []).forEach(p => {
@@ -354,6 +458,8 @@ class PokerArenaClient {
             if (p.is_active) seatEl.classList.add('active');
             if (p.is_folded) seatEl.classList.add('folded');
             
+            const isHero = (p.seat === 0);
+            const handLabel = isHero ? `<div class="hero-hand-badge">내 개인 카드 2장</div>` : '';
             const cardsHtml = (p.cards || []).map(c => this.renderCard(c)).join('');
             const dealerBadge = p.is_dealer ? `<span class="dealer-button" title="딜러 버튼">D</span>` : '';
             
@@ -368,6 +474,7 @@ class PokerArenaClient {
                 </div>
                 <div class="player-stack">${this.formatMoney(stackVal)}</div>
                 ${betBadge}
+                ${handLabel}
                 <div class="player-cards">${cardsHtml}</div>
             `;
         });
@@ -400,25 +507,31 @@ class PokerArenaClient {
             if (aNum === 1) {
                 if (callCost > 0) {
                     this.lblCall.innerText = `콜 ${this.formatMoney(callCost)}`;
+                    if (this.hintCall) this.hintCall.innerText = `베팅 맞추기 (${this.formatMoney(callCost)})`;
                 } else {
                     this.lblCall.innerText = `체크 (Check)`;
+                    if (this.hintCall) this.hintCall.innerText = `차례 넘기기 (비용 $0)`;
                 }
             }
             if (aNum === 2) {
                 const amt = raises['2'] !== undefined ? raises['2'] : null;
                 this.lblRaise50.innerText = amt ? `50% 레이즈 (${this.formatMoney(amt)})` : `50% 팟 레이즈`;
+                if (this.hintRaise50) this.hintRaise50.innerText = amt ? `판돈 ${this.formatMoney(amt)}로 올리기` : `판돈 올리기`;
             }
             if (aNum === 3) {
                 const amt = raises['3'] !== undefined ? raises['3'] : null;
                 this.lblRaise100.innerText = amt ? `100% 레이즈 (${this.formatMoney(amt)})` : `100% 팟 레이즈`;
+                if (this.hintRaise100) this.hintRaise100.innerText = amt ? `판돈 2배 (${this.formatMoney(amt)})` : `판돈 2배 올리기`;
             }
             if (aNum === 4) {
                 const amt = raises['4'] !== undefined ? raises['4'] : null;
                 this.lblRaise200.innerText = amt ? `200% 레이즈 (${this.formatMoney(amt)})` : `200% 팟 레이즈`;
+                if (this.hintRaise200) this.hintRaise200.innerText = amt ? `판돈 3배 (${this.formatMoney(amt)})` : `판돈 3배 올리기`;
             }
             if (aNum === 5) {
                 const amt = raises['5'] !== undefined ? raises['5'] : null;
                 this.lblAllin.innerText = amt ? `올인 (${this.formatMoney(amt)})` : `올인 (All-In)`;
+                if (this.hintAllin) this.hintAllin.innerText = amt ? `남은 ${this.formatMoney(amt)} 전부 걸기` : `가진 돈 전부 걸기`;
             }
         });
         
@@ -445,15 +558,21 @@ class PokerArenaClient {
     handleGameAudioAndAnimations(state) {
         if (!window.arenaAudio) return;
 
+        // 핸드 변경 시 오디오 매니저 큐 즉시 동기화
+        if (state.hand_number) {
+            window.arenaAudio.setCurrentHand(state.hand_number);
+        }
+
         // A. 새 핸드 시작 감지
         if (state.hand_number !== this.prevHandNumber && state.hand_number > 0) {
             this.prevHandNumber = state.hand_number;
             this.prevRoundName = null;
+            this.renderedBoardCards = [];
             this.processedActionKeys.clear();
             
             window.arenaAudio.playSfx('card_shuffle');
-            window.arenaAudio.playDealerVoice('start', 250);
-            window.arenaAudio.playSfx('card_deal', 600);
+            window.arenaAudio.playDealerVoice('start', state.hand_number);
+            window.arenaAudio.playSfx('card_deal');
         }
 
         // B. 스트리트 전환 감지 (플랍, 턴, 리버, 쇼다운)
@@ -463,17 +582,17 @@ class PokerArenaClient {
 
             if (!isInitial) {
                 if (state.round_name.includes('플랍')) {
-                    window.arenaAudio.playDealerVoice('flop', 80);
-                    window.arenaAudio.playSfx('card_flip', 260);
+                    window.arenaAudio.playDealerVoice('flop', state.hand_number);
+                    window.arenaAudio.playSfx('card_flip');
                 } else if (state.round_name.includes('턴')) {
-                    window.arenaAudio.playDealerVoice('turn', 80);
-                    window.arenaAudio.playSfx('card_flip', 260);
+                    window.arenaAudio.playDealerVoice('turn', state.hand_number);
+                    window.arenaAudio.playSfx('card_flip');
                 } else if (state.round_name.includes('리버')) {
-                    window.arenaAudio.playDealerVoice('river', 80);
-                    window.arenaAudio.playSfx('card_flip', 260);
+                    window.arenaAudio.playDealerVoice('river', state.hand_number);
+                    window.arenaAudio.playSfx('card_flip');
                 } else if (state.round_name.includes('쇼다운')) {
-                    window.arenaAudio.playDealerVoice('showdown', 80);
-                    window.arenaAudio.playSfx('card_flip', 300);
+                    window.arenaAudio.playDealerVoice('showdown', state.hand_number);
+                    window.arenaAudio.playSfx('card_flip');
                 }
             }
         }
@@ -495,8 +614,14 @@ class PokerArenaClient {
                     }, 1400);
                 }
 
-                // 음성 및 물리 효과음 동시 트리거
-                window.arenaAudio.handleActionSound(ev.seat, ev.char_id, ev.action_key, ev.amount);
+                // 음성 및 물리 효과음 동시 트리거 (현재 핸드 번호 바인딩)
+                window.arenaAudio.handleActionSound(ev.seat, ev.char_id, ev.action_key, state.hand_number);
+            }
+        } else if (ev && ev.type === 'street_deal') {
+            const dealKey = `deal_${state.hand_number}_${ev.round_name}`;
+            if (!this.processedActionKeys.has(dealKey)) {
+                this.processedActionKeys.add(dealKey);
+                window.arenaAudio.playSfx('card_flip');
             }
         } else if (ev && ev.type === 'terminal') {
             const termKey = `term_${state.hand_number}`;
@@ -504,12 +629,12 @@ class PokerArenaClient {
                 this.processedActionKeys.add(termKey);
                 
                 if (ev.hero_win) {
-                    window.arenaAudio.playDealerVoice('hero_win', 200);
-                    window.arenaAudio.playSfx('victory', 650);
-                    window.arenaAudio.playSfx('pot_win', 950);
+                    window.arenaAudio.playDealerVoice('hero_win', state.hand_number);
+                    window.arenaAudio.playSfx('victory');
+                    window.arenaAudio.playSfx('pot_win');
                 } else {
-                    window.arenaAudio.playDealerVoice('winner', 200);
-                    window.arenaAudio.playSfx('defeat', 500);
+                    window.arenaAudio.playDealerVoice('winner', state.hand_number);
+                    window.arenaAudio.playSfx('defeat');
                 }
             }
         }

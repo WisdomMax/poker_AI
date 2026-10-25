@@ -956,3 +956,528 @@ body {
     transition: all 0.4s ease-out;
 }
 
+/* ==========================================================================
+   DIRECTIVE 028: UX REBUILD (공용 카드 5구 슬롯, 3D 플립, 초보자 가이드, 가로모드 핏)
+   ========================================================================== */
+
+/* 상단 가이드 및 속도 컨트롤 그룹 */
+.ux-control-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.btn-guide-toggle, .btn-speed-toggle {
+    background: #1f2937;
+    color: #e2e8f0;
+    border: 1px solid #374151;
+    padding: 5px 10px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-guide-toggle:hover, .btn-speed-toggle:hover {
+    background: #374151;
+    border-color: #60a5fa;
+}
+
+.btn-guide-toggle.active {
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    border-color: #38bdf8;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+.btn-speed-toggle.fast {
+    background: linear-gradient(135deg, #d97706, #b45309);
+    border-color: #f59e0b;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+/* 단계 안내 래퍼 */
+.street-badge-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.street-help-tip {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: opacity 0.2s ease;
+}
+
+body.guide-mode-off .street-help-tip {
+    display: none;
+}
+
+/* 공용 카드 5구 전용 프레임 (모두의 공용 카드) */
+.community-board-frame {
+    background: rgba(10, 20, 15, 0.65);
+    border: 1.5px solid rgba(251, 191, 36, 0.35);
+    border-radius: 14px;
+    padding: 6px 14px 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    margin-top: 2px;
+}
+
+.community-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 3px;
+}
+
+.comm-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--accent-gold);
+    letter-spacing: 0.5px;
+}
+
+.comm-sub {
+    font-size: 11px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+body.guide-mode-off .community-header {
+    display: none;
+}
+
+/* 5구 슬롯 컨테이너 */
+.board-cards {
+    display: flex;
+    gap: 10px;
+    min-height: 96px;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+/* 빈 카드 슬롯 플레이스홀더 */
+.card-slot-placeholder {
+    width: 62px;
+    height: 88px;
+    border: 2px dashed rgba(255, 255, 255, 0.22);
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.placeholder-icon {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 1;
+}
+
+.placeholder-text {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* 슬롯 하단 뱃지 (플랍 1, 턴, 리버 등) */
+.slot-badge {
+    font-size: 9px;
+    font-weight: 800;
+    color: #94a3b8;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1px 5px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+}
+
+body.guide-mode-off .slot-badge {
+    display: none;
+}
+
+/* 3D 카드 플립 애니메이션 */
+.animate-card-flip {
+    animation: cardFlip3D 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform-style: preserve-3d;
+}
+
+@keyframes cardFlip3D {
+    0% {
+        transform: perspective(600px) rotateY(180deg) scale(0.7);
+        opacity: 0.3;
+    }
+    60% {
+        transform: perspective(600px) rotateY(15deg) scale(1.08);
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.8);
+    }
+    100% {
+        transform: perspective(600px) rotateY(0deg) scale(1.0);
+        opacity: 1;
+    }
+}
+
+/* 초보자 액션 버튼 힌트 텍스트 */
+.btn-guide-hint {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-top: 2px;
+    letter-spacing: 0.2px;
+}
+
+body.guide-mode-off .btn-guide-hint {
+    display: none;
+}
+
+/* Hero(내 좌석) 개인 카드 강조 뱃지 */
+.hero-hand-badge {
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+    letter-spacing: 0.5px;
+}
+
+body.guide-mode-off .hero-hand-badge {
+    display: none;
+}
+
+/* ==========================================================================
+   모바일 가로모드 (Landscape Mode) 전면 리뉴얼: 100vw x 100vh 무스크롤 핏
+   (스마트폰 가로 파지 시 화면 스크롤 없이 테이블, 카드, 조작계가 완벽히 들어옴)
+   ========================================================================== */
+
+@media (orientation: landscape) and (max-height: 520px) {
+    html, body {
+        height: 100vh;
+        overflow: hidden !important;
+    }
+
+    .app-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* 상단 헤더 극도로 슬림화 */
+    .arena-header {
+        padding: 4px 10px;
+        min-height: 38px;
+        gap: 6px;
+        border-bottom-width: 1px;
+    }
+
+    .logo-area h1 {
+        font-size: 14px;
+    }
+
+    .logo-badge {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+
+    .sub-title {
+        display: none;
+    }
+
+    .header-stats {
+        gap: 4px;
+    }
+
+    .stat-pill {
+        padding: 2px 8px;
+        font-size: 11px;
+    }
+
+    .stat-pill .lbl {
+        font-size: 10px;
+    }
+
+    .stat-pill strong, .stat-pill .balance-val {
+        font-size: 13px !important;
+    }
+
+    .btn-reset {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+
+    .ux-control-group {
+        padding: 2px 6px;
+        gap: 4px;
+    }
+
+    .btn-guide-toggle, .btn-speed-toggle {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+
+    .audio-volume-slider {
+        display: none; /* 가로모드에서는 슬라이더 숨기고 뮤트 버튼만 유지 */
+    }
+
+    /* 승자 및 턴 배너 슬림화 */
+    .winner-banner {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .turn-banner {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+
+    /* 메인 컨테이너 가로모드 핏 */
+    .arena-main {
+        padding: 2px 8px;
+        gap: 6px;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* 사이드바는 가로모드에서 기본 숨김 */
+    .arena-sidebar {
+        display: none;
+    }
+
+    .table-container {
+        flex: 1;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* 포커 테이블 가로 높이 최적화 */
+    .poker-table {
+        height: calc(100vh - 138px);
+        max-height: 290px;
+        border-width: 10px;
+        outline-width: 4px;
+        border-radius: 150px;
+    }
+
+    /* 중앙 팟 및 공용 카드 */
+    .table-center {
+        gap: 2px;
+        transform: scale(0.76);
+        margin-top: 14px;
+        z-index: 10;
+    }
+
+    .pot-box {
+        padding: 2px 12px;
+        border-radius: 20px;
+    }
+
+    .pot-coin {
+        font-size: 15px;
+    }
+
+    .pot-title {
+        font-size: 9px;
+    }
+
+    .pot-value {
+        font-size: 15px;
+    }
+
+    .street-badge {
+        font-size: 10px;
+        padding: 1px 8px;
+    }
+
+    .street-help-tip {
+        font-size: 9px;
+    }
+
+    .community-board-frame {
+        padding: 3px 8px 5px 8px;
+        gap: 2px;
+    }
+
+    .comm-title, .comm-sub {
+        font-size: 9px;
+    }
+
+    .board-cards {
+        gap: 4px;
+        min-height: 56px;
+    }
+
+    /* 가로모드 카드 크기 (공용 및 플레이어 카드) */
+    .card, .card-slot-placeholder {
+        width: 40px;
+        height: 56px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .card-rank {
+        font-size: 13px;
+    }
+
+    .card-suit {
+        font-size: 14px;
+    }
+
+    .placeholder-icon {
+        font-size: 12px;
+    }
+
+    .placeholder-text {
+        font-size: 7.5px;
+    }
+
+    .slot-badge {
+        font-size: 7.5px;
+        padding: 0 2px;
+    }
+
+    /* 가로모드 좌석 배치 콤팩트화 */
+    .player-seat {
+        width: 100px;
+        padding: 3px 5px;
+        border-radius: 9px;
+        border-width: 1.5px;
+    }
+
+    .player-seat.active {
+        transform: scale(1.03);
+    }
+
+    .seat-0 {
+        bottom: -6px;
+        width: 125px;
+        padding: 3px 6px;
+        transform: translateX(-50%) scale(0.84);
+        z-index: 12;
+    }
+    .seat-0.active {
+        transform: translateX(-50%) scale(0.88);
+    }
+
+    .seat-1 { top: 4px; left: 10px; transform: scale(0.80); }
+    .seat-2 { top: -6px; left: 50%; transform: translateX(-50%) scale(0.80); z-index: 5; }
+    .seat-2.active { transform: translateX(-50%) scale(0.84); }
+    .seat-3 { top: 4px; right: 10px; transform: scale(0.80); }
+    .seat-4 { bottom: 14px; right: 10px; transform: scale(0.80); }
+
+    .player-header {
+        font-size: 10px;
+    }
+
+    .dealer-button {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+    .player-stack {
+        font-size: 12px;
+        margin: 1px 0 2px 0;
+    }
+
+    .player-bet-badge {
+        font-size: 10px;
+        padding: 1px 6px;
+        margin-bottom: 2px;
+    }
+
+    .hero-hand-badge {
+        font-size: 8px;
+        padding: 1px 5px;
+        margin-bottom: 2px;
+    }
+
+    /* 하단 조작 패널 콤팩트화 */
+    .control-panel {
+        padding: 4px 10px;
+        gap: 4px;
+        border-radius: 10px;
+        max-width: 100%;
+        min-height: 84px;
+    }
+
+    .action-buttons-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 6px;
+    }
+
+    .btn-action {
+        min-height: 42px;
+        padding: 3px 2px;
+        border-radius: 6px;
+        gap: 1px;
+    }
+
+    .btn-icon {
+        font-size: 13px;
+    }
+
+    .btn-text {
+        font-size: 11px;
+    }
+
+    .btn-guide-hint {
+        font-size: 8px;
+        padding: 0 3px;
+    }
+
+    .btn-next-hand {
+        min-height: 34px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+
+    .table-notice-bar {
+        display: none; /* 가로모드 화면 확보를 위해 숨김 */
+    }
+
+    .arena-footer {
+        display: none; /* 가로모드 화면 확보를 위해 숨김 */
+    }
+}
+
+

@@ -103,9 +103,9 @@ class PokerArenaSession:
         }
         self.winner_announcement = None
 
-    def start_new_hand(self):
+    def start_new_hand(self, seed: int = None):
         self.hands_played += 1
-        self.hand_seed = random.randint(100000, 999999)
+        self.hand_seed = seed if seed is not None else random.randint(100000, 999999)
         self.chance_rng = np.random.RandomState(self.hand_seed)
         self.button_seat = (self.hands_played - 1) % 5
         self.folded_seats = set()
@@ -207,7 +207,9 @@ class PokerArenaSession:
         self.current_state.apply_action(raw_act)
         self.hand_dec_idx += 1
         
-        self._advance_chance_if_needed()
+        # 챈스 노드는 app.py의 process_game_flow() -> advance_one_chance_street()에서 단계별로 진행
+        if self.current_state.is_terminal():
+            self._handle_terminal()
         return self.get_client_state()
 
     def step_ai_single(self):
@@ -215,8 +217,7 @@ class PokerArenaSession:
             return False, self.get_client_state()
             
         if self.current_state.is_chance_node():
-            self._advance_chance_if_needed()
-            return True, self.get_client_state()
+            return False, self.get_client_state()
             
         cp = self.current_state.current_player()
         if cp == 0:
@@ -255,7 +256,40 @@ class PokerArenaSession:
         self.current_state.apply_action(raw_act)
         self.hand_dec_idx += 1
         
-        self._advance_chance_if_needed()
+        # 챈스 노드는 app.py의 process_game_flow() -> advance_one_chance_street()에서 단계별로 진행
+        if self.current_state.is_terminal():
+            self._handle_terminal()
+            
+        return True, self.get_client_state()
+
+    def advance_one_chance_street(self):
+        """챈스 노드가 있을 때 다음 1개 스트리트(플랍 3장, 턴 1장, 리버 1장)까지만 전진"""
+        if not self.is_hand_active or self.current_state.is_terminal():
+            return False, self.get_client_state()
+            
+        if not self.current_state.is_chance_node():
+            return False, self.get_client_state()
+            
+        self._update_board_cards()
+        initial_board_count = len(self.board_cards)
+        target_count = 3 if initial_board_count == 0 else (4 if initial_board_count == 3 else 5)
+        
+        while not self.current_state.is_terminal() and self.current_state.is_chance_node():
+            from v48.poker_environment import sample_chance_action
+            act = sample_chance_action(self.current_state, self.chance_rng)
+            self.current_state.apply_action(act)
+            self._update_board_cards()
+            if len(self.board_cards) >= target_count:
+                break
+                
+        curr_round_name = STREET_NAMES_KO.get(get_round_from_state(self.current_state), "쇼다운")
+        
+        self.last_action_event = {
+            "type": "street_deal",
+            "round_name": curr_round_name,
+            "board_cards": list(self.board_cards)
+        }
+        
         if self.current_state.is_terminal():
             self._handle_terminal()
             

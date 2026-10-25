@@ -104,34 +104,66 @@ async def websocket_endpoint(
     # 초기 상태 전송
     await websocket.send_json(session.get_client_state())
     
-    async def process_ai_turns():
+    # 세션별 게임 진행 속도 (1.0 = 보통/정석 템포, 2.0 = 빠름)
+    game_speed = 1.0
+
+    async def sleep_paced(base_sec: float):
+        actual_delay = max(0.2, base_sec / game_speed)
+        await asyncio.sleep(actual_delay)
+
+    async def process_game_flow():
+        """인간 플레이어가 행동할 때까지 챈스 노드(공용 카드)와 AI 턴을 인간 템포로 순차 전개"""
         while session.is_hand_active and not session.current_state.is_terminal():
+            # 1. 공용 카드 챈스 노드 전개 (플랍 3장 -> 턴 1장 -> 리버 1장)
+            if session.current_state.is_chance_node():
+                prev_board_cnt = len(session.board_cards)
+                advanced, state = session.advance_one_chance_street()
+                if advanced:
+                    new_board_cnt = len(session.board_cards)
+                    await websocket.send_json(state)
+                    # 플랍(3장 공개)은 2.0초, 턴/리버(4~5장 공개)는 1.5초 감상 딜레이
+                    if new_board_cnt == 3 and prev_board_cnt < 3:
+                        await sleep_paced(2.0)
+                    elif new_board_cnt > 3:
+                        await sleep_paced(1.5)
+                    continue
+
             cp = session.current_state.current_player()
-            if cp == 0:  # Human turn
+            if cp == 0:  # 인간 차례: 무한 대기
                 break
-            await asyncio.sleep(0.35)
+
+            # 2. AI 플레이어의 차례: 약 1.2초 생각하는 템포
+            await sleep_paced(1.2)
             ai_acted, state = session.step_ai_single()
             await websocket.send_json(state)
             if not ai_acted:
                 break
+
+        # 3. 쇼다운 및 핸드 종료 처리
         if session.current_state and session.current_state.is_terminal():
-            await websocket.send_json(session.get_client_state())
+            term_state = session.get_client_state()
+            await websocket.send_json(term_state)
+            await sleep_paced(3.0)
 
     try:
         while True:
             data = await websocket.receive_json()
             msg_type = data.get("type")
             
-            if msg_type == "start_hand":
+            if msg_type == "set_speed":
+                game_speed = float(data.get("speed", 1.0))
+                print(f"[Arena WS] Game speed updated: {game_speed}x for session {session_id}")
+                
+            elif msg_type == "start_hand":
                 state = session.start_new_hand()
                 await websocket.send_json(state)
-                await process_ai_turns()
+                await process_game_flow()
                 
             elif msg_type == "human_action":
                 action_id = int(data.get("action_id", 1))
                 state = session.step_human(action_id)
                 await websocket.send_json(state)
-                await process_ai_turns()
+                await process_game_flow()
                 
             elif msg_type == "reset_stacks":
                 session.reset_stacks()

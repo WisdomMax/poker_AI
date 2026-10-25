@@ -22,10 +22,14 @@
                 <div class="stat-pill"><span class="lbl">승률</span> <strong id="stat-winrate">0.0%</strong></div>
                 <button id="btn-reset" class="btn-reset" title="게임머니($10,000) 및 전적 통계를 초기화합니다">처음부터</button>
                 
-                <!-- 사운드 & 볼륨 컨트롤 (DIRECTIVE 025) -->
-                <div class="audio-control-bar">
-                    <button id="btn-audio-mute" class="btn-audio-mute" title="소리 켜기/끄기">🔊</button>
-                    <input type="range" id="audio-volume" class="audio-volume-slider" min="0" max="1" step="0.05" value="0.75" title="효과음 및 음성 볼륨 조절">
+                <!-- 초보자 안내 & 속도 토글 & 사운드 컨트롤 (DIRECTIVE 028) -->
+                <div class="ux-control-group">
+                    <button id="btn-guide-toggle" class="btn-guide-toggle active" title="초보자용 한글 쉬운 설명 표시 켜기/끄기">💡 가이드 ON</button>
+                    <button id="btn-speed-toggle" class="btn-speed-toggle" title="게임 진행 템포 변경 (보통 1.0x / 빠름 2.0x)">⚡ 속도: 보통</button>
+                    <div class="audio-control-bar">
+                        <button id="btn-audio-mute" class="btn-audio-mute" title="소리 켜기/끄기">🔊</button>
+                        <input type="range" id="audio-volume" class="audio-volume-slider" min="0" max="1" step="0.05" value="0.75" title="효과음 및 음성 볼륨 조절">
+                    </div>
                 </div>
             </div>
         </header>
@@ -69,9 +73,20 @@
                                 <span class="pot-value" id="pot-display">$150</span>
                             </div>
                         </div>
-                        <div class="street-badge" id="street-display">프리플랍 (Preflop)</div>
-                        <div class="board-cards" id="board-cards">
-                            <!-- 커뮤니티 카드 5장 (JS 렌더링) -->
+                        <div class="street-badge-wrap">
+                            <div class="street-badge" id="street-display">프리플랍 (Preflop)</div>
+                            <div class="street-help-tip" id="street-help-tip">개인 카드 2장을 받았습니다.</div>
+                        </div>
+                        
+                        <!-- 공용 카드 5구 전용 프레임 (DIRECTIVE 028) -->
+                        <div class="community-board-frame">
+                            <div class="community-header">
+                                <span class="comm-title">모두의 공용 카드 (Community Cards)</span>
+                                <span class="comm-sub" id="comm-stage-text">플랍 3장 오픈 대기</span>
+                            </div>
+                            <div class="board-cards" id="board-cards">
+                                <!-- 5장의 슬롯 (플랍 3장, 턴 1장, 리버 1장) JS 렌더링 -->
+                            </div>
                         </div>
                     </div>
 
@@ -97,26 +112,32 @@
                         <button id="btn-fold" class="btn-action btn-fold" disabled>
                             <span class="btn-icon">❌</span>
                             <span class="btn-text">다이 (폴드)</span>
+                            <span class="btn-guide-hint">이번 판 포기</span>
                         </button>
                         <button id="btn-call" class="btn-action btn-call" disabled>
                             <span class="btn-icon">✔️</span>
                             <span class="btn-text" id="lbl-call">체크 (Check)</span>
+                            <span class="btn-guide-hint" id="hint-call">차례 넘기기</span>
                         </button>
                         <button id="btn-raise-50" class="btn-action btn-raise" disabled>
                             <span class="btn-icon">📈</span>
                             <span class="btn-text" id="lbl-raise-50">50% 팟 레이즈</span>
+                            <span class="btn-guide-hint" id="hint-raise-50">판돈 올리기</span>
                         </button>
                         <button id="btn-raise-100" class="btn-action btn-raise" disabled>
                             <span class="btn-icon">🚀</span>
                             <span class="btn-text" id="lbl-raise-100">100% 팟 레이즈</span>
+                            <span class="btn-guide-hint" id="hint-raise-100">판돈 2배 올리기</span>
                         </button>
                         <button id="btn-raise-200" class="btn-action btn-raise" disabled>
                             <span class="btn-icon">💥</span>
                             <span class="btn-text" id="lbl-raise-200">200% 팟 레이즈</span>
+                            <span class="btn-guide-hint" id="hint-raise-200">판돈 3배 올리기</span>
                         </button>
                         <button id="btn-allin" class="btn-action btn-allin" disabled>
                             <span class="btn-icon">🔥</span>
                             <span class="btn-text" id="lbl-allin">올인 (All-In)</span>
+                            <span class="btn-guide-hint" id="hint-allin">전부 걸기</span>
                         </button>
                     </div>
 
