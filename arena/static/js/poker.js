@@ -1,4 +1,4 @@
-// POKER AI HUMAN ARENA - CLIENT CONTROLLER (DIRECTIVE 020)
+// POKER AI HUMAN ARENA - CLIENT CONTROLLER WITH PIN AUTH (DIRECTIVE 022)
 
 const SUIT_SYMBOLS = {
     's': '♠',
@@ -17,21 +17,39 @@ const SUIT_COLORS = {
 class PokerArenaClient {
     constructor() {
         this.sessionId = this.getOrCreateSessionId();
+        this.pin = this.getInitialPin();
         this.ws = null;
         this.state = null;
         
         this.initDOMElements();
-        this.connectWebSocket();
         this.attachEventListeners();
+        
+        if (this.pin) {
+            this.verifyAndConnect(this.pin);
+        } else {
+            this.showPinModal();
+        }
     }
 
     getOrCreateSessionId() {
         let sid = localStorage.getItem('arena_session_id');
         if (!sid) {
-            sid = 'session_' + Math.random().toString(36).substring(2, 10);
+            sid = 'user_' + Math.random().toString(36).substring(2, 10);
             localStorage.setItem('arena_session_id', sid);
         }
         return sid;
+    }
+
+    getInitialPin() {
+        // 1. URL 쿼리 파라미터 우선 (?pin=7777)
+        const params = new URLSearchParams(window.location.search);
+        const urlPin = params.get('pin');
+        if (urlPin) {
+            sessionStorage.setItem('arena_pin', urlPin);
+            return urlPin;
+        }
+        // 2. 세션스토리지
+        return sessionStorage.getItem('arena_pin') || '';
     }
 
     initDOMElements() {
@@ -47,6 +65,11 @@ class PokerArenaClient {
         this.winnerBanner = document.getElementById('winner-banner');
         this.winnerText = document.getElementById('winner-text');
         this.turnBanner = document.getElementById('turn-banner');
+        
+        this.pinModal = document.getElementById('pin-modal');
+        this.pinForm = document.getElementById('pin-form');
+        this.pinInput = document.getElementById('pin-input');
+        this.pinError = document.getElementById('pin-error');
         
         this.actionLog = document.getElementById('action-log');
         this.btnNewHand = document.getElementById('btn-new-hand');
@@ -75,9 +98,50 @@ class PokerArenaClient {
         this.sidebarArrow = document.getElementById('sidebar-arrow');
     }
 
+    showPinModal() {
+        if (this.pinModal) {
+            this.pinModal.classList.remove('hidden');
+            this.pinInput.focus();
+        }
+    }
+
+    hidePinModal() {
+        if (this.pinModal) {
+            this.pinModal.classList.add('hidden');
+        }
+    }
+
+    async verifyAndConnect(pin) {
+        try {
+            const res = await fetch('/api/verify-pin', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pin: pin })
+            });
+            const data = await res.json();
+            if (data.valid) {
+                this.pin = pin;
+                sessionStorage.setItem('arena_pin', pin);
+                this.hidePinModal();
+                this.connectWebSocket();
+            } else {
+                this.showPinModal();
+                if (this.pinError) this.pinError.innerText = data.message || '입장 번호가 올바르지 않습니다.';
+            }
+        } catch (e) {
+            console.error('PIN verification error:', e);
+            // 오프라인/로컬 fallback
+            this.connectWebSocket();
+        }
+    }
+
     connectWebSocket() {
+        if (this.ws && (this.ws.readyState === WebSocket.OPEN || this.ws.readyState === WebSocket.CONNECTING)) {
+            return;
+        }
+        
         const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        const wsUrl = `${protocol}//${window.location.host}/ws/${this.sessionId}`;
+        const wsUrl = `${protocol}//${window.location.host}/ws/${this.sessionId}?pin=${encodeURIComponent(this.pin)}`;
         
         console.log(`Connecting to WebSocket: ${wsUrl}`);
         this.ws = new WebSocket(wsUrl);
@@ -92,9 +156,19 @@ class PokerArenaClient {
             this.onStateUpdate(data);
         };
         
-        this.ws.onclose = () => {
-            console.log('WebSocket closed, reconnecting in 2s...');
-            setTimeout(() => this.connectWebSocket(), 2000);
+        this.ws.onclose = (e) => {
+            console.log(`WebSocket closed (code: ${e.code})`);
+            if (e.code === 1008) {
+                // PIN 오류로 거절됨
+                sessionStorage.removeItem('arena_pin');
+                this.pin = '';
+                this.showPinModal();
+                if (this.pinError) this.pinError.innerText = '인증에 실패했습니다. 올바른 입장 번호를 입력하세요.';
+            } else {
+                setTimeout(() => {
+                    if (this.pin) this.connectWebSocket();
+                }, 2500);
+            }
         };
         
         this.ws.onerror = (err) => {
@@ -103,6 +177,15 @@ class PokerArenaClient {
     }
 
     attachEventListeners() {
+        // PIN 폼 제출
+        if (this.pinForm) {
+            this.pinForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const inputVal = this.pinInput.value.trim();
+                await this.verifyAndConnect(inputVal);
+            });
+        }
+        
         this.btnNewHand.addEventListener('click', () => {
             if (this.ws && this.ws.readyState === WebSocket.OPEN) {
                 this.ws.send(JSON.stringify({ type: 'start_hand' }));
@@ -128,7 +211,6 @@ class PokerArenaClient {
             });
         });
         
-        // 모바일 사이드바 토글
         if (this.btnToggleSidebar) {
             this.btnToggleSidebar.addEventListener('click', () => {
                 this.sidebarContent.classList.toggle('collapsed');
@@ -137,7 +219,6 @@ class PokerArenaClient {
             });
         }
         
-        // 피드백 폼 제출
         this.feedbackForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const comment = document.getElementById('fb-comment').value;
@@ -148,6 +229,7 @@ class PokerArenaClient {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         session_id: this.sessionId,
+                        pin: this.pin,
                         hand_number: this.state ? this.state.hand_number : 0,
                         category: "User_Feedback",
                         comment: comment
@@ -157,6 +239,8 @@ class PokerArenaClient {
                     this.fbStatus.innerText = '소중한 의견이 전송되었습니다. 감사합니다!';
                     document.getElementById('fb-comment').value = '';
                     setTimeout(() => { this.fbStatus.innerText = ''; }, 4000);
+                } else {
+                    this.fbStatus.innerText = '전송 실패 (인증 오류)';
                 }
             } catch (err) {
                 this.fbStatus.innerText = '전송 실패: ' + err.message;
@@ -189,7 +273,6 @@ class PokerArenaClient {
         this.statHands.innerText = (stats.hands || 0) + '판';
         const net = stats.total_profit_bb || 0.0;
         this.statNet.innerText = (net >= 0 ? '+' : '') + net.toFixed(1) + ' BB';
-        this.statNet.className = 'profit-val ' + (net >= 0 ? 'profit-pos' : 'profit-neg');
         this.statNet.style.color = net >= 0 ? '#10b981' : '#ef4444';
         this.statBb100.innerText = (stats.bb100 >= 0 ? '+' : '') + (stats.bb100 || 0.0).toFixed(1);
         this.statWinrate.innerText = (stats.win_rate_pct || 0.0).toFixed(1) + '%';
@@ -249,7 +332,6 @@ class PokerArenaClient {
             const isLegal = isHumanTurn && legal.includes(aNum);
             btn.disabled = !isLegal;
             
-            // 콜/체크 라벨
             if (aNum === 1) {
                 if (state.call_cost_bb > 0) {
                     this.lblCall.innerText = `콜 (Call ${state.call_cost_bb.toFixed(1)} BB)`;
@@ -257,7 +339,6 @@ class PokerArenaClient {
                     this.lblCall.innerText = `체크 (Check)`;
                 }
             }
-            // 레이즈 라벨
             if (aNum === 2) {
                 const amt = raises['2'] ? ` (${raises['2']} BB)` : '';
                 this.lblRaise50.innerText = `50% 팟 레이즈${amt}`;

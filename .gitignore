@@ -9,3 +9,7 @@ npm-debug.log*
 *.pth
 __pycache__/
 *.log
+*.pid
+arena/server.pid
+arena/tunnel.pid
+arena/tunnel.log
