@@ -24,6 +24,13 @@ def generate_report():
     tot_pnl = sum(a["final_pnl_bb"] for a in agents.values())
     assert abs(tot_pnl) < 1.0, f"Zero-sum violated across agents: sum={tot_pnl}"
 
+    def get_act_pct(counts, act_id):
+        tot = sum(counts.values())
+        if tot == 0:
+            return 0.0
+        cnt = counts.get(str(act_id), counts.get(act_id, 0))
+        return cnt / tot * 100.0
+
     report = f"""# DIRECTIVE 043 공식 실증 보고: Universal Poker AlphaGo (5인 동시 강화학습 자가대국 파일럿)
 
 **제출일자**: 2026-10-26  
@@ -53,19 +60,19 @@ def generate_report():
 
 | 에이전트 (Agent) | 최종 누적 손익 (BB) | Gradient 업데이트 횟수 | 정책 엔트로피 (Entropy) | 올인(Action 5) 비율 | 팟벳(Action 3) 비율 | 하프팟(Action 2) 비율 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Agent A** | {agents['Agent_A']['final_pnl_bb']:+.2f} BB | {agents['Agent_A']['gradient_updates']}회 | {agents['Agent_A']['avg_entropy']:.3f} | {agents['Agent_A']['action_counts'].get(5, 0)/sum(agents['Agent_A']['action_counts'].values())*100:.1f}% | {agents['Agent_A']['action_counts'].get(3, 0)/sum(agents['Agent_A']['action_counts'].values())*100:.1f}% | {agents['Agent_A']['action_counts'].get(2, 0)/sum(agents['Agent_A']['action_counts'].values())*100:.1f}% |
-| **Agent B** | {agents['Agent_B']['final_pnl_bb']:+.2f} BB | {agents['Agent_B']['gradient_updates']}회 | {agents['Agent_B']['avg_entropy']:.3f} | {agents['Agent_B']['action_counts'].get(5, 0)/sum(agents['Agent_B']['action_counts'].values())*100:.1f}% | {agents['Agent_B']['action_counts'].get(3, 0)/sum(agents['Agent_B']['action_counts'].values())*100:.1f}% | {agents['Agent_B']['action_counts'].get(2, 0)/sum(agents['Agent_B']['action_counts'].values())*100:.1f}% |
-| **Agent C** | {agents['Agent_C']['final_pnl_bb']:+.2f} BB | {agents['Agent_C']['gradient_updates']}회 | {agents['Agent_C']['avg_entropy']:.3f} | {agents['Agent_C']['action_counts'].get(5, 0)/sum(agents['Agent_C']['action_counts'].values())*100:.1f}% | {agents['Agent_C']['action_counts'].get(3, 0)/sum(agents['Agent_C']['action_counts'].values())*100:.1f}% | {agents['Agent_C']['action_counts'].get(2, 0)/sum(agents['Agent_C']['action_counts'].values())*100:.1f}% |
-| **Agent D** | **{agents['Agent_D']['final_pnl_bb']:+.2f} BB** | {agents['Agent_D']['gradient_updates']}회 | {agents['Agent_D']['avg_entropy']:.3f} | {agents['Agent_D']['action_counts'].get(5, 0)/sum(agents['Agent_D']['action_counts'].values())*100:.1f}% | {agents['Agent_D']['action_counts'].get(3, 0)/sum(agents['Agent_D']['action_counts'].values())*100:.1f}% | **{agents['Agent_D']['action_counts'].get(2, 0)/sum(agents['Agent_D']['action_counts'].values())*100:.1f}%** |
-| **Agent E (Top)**| **{agents['Agent_E']['final_pnl_bb']:+.2f} BB** | {agents['Agent_E']['gradient_updates']}회 | {agents['Agent_E']['avg_entropy']:.3f} | {agents['Agent_E']['action_counts'].get(5, 0)/sum(agents['Agent_E']['action_counts'].values())*100:.1f}% | {agents['Agent_E']['action_counts'].get(3, 0)/sum(agents['Agent_E']['action_counts'].values())*100:.1f}% | {agents['Agent_E']['action_counts'].get(2, 0)/sum(agents['Agent_E']['action_counts'].values())*100:.1f}% |
+| **Agent A** | {agents['Agent_A']['final_pnl_bb']:+.2f} BB | {agents['Agent_A']['gradient_updates']}회 | {agents['Agent_A']['avg_entropy']:.3f} | {get_act_pct(agents['Agent_A']['action_counts'], 5):.2f}% | {get_act_pct(agents['Agent_A']['action_counts'], 3):.2f}% | {get_act_pct(agents['Agent_A']['action_counts'], 2):.2f}% |
+| **Agent B** | {agents['Agent_B']['final_pnl_bb']:+.2f} BB | {agents['Agent_B']['gradient_updates']}회 | {agents['Agent_B']['avg_entropy']:.3f} | {get_act_pct(agents['Agent_B']['action_counts'], 5):.2f}% | {get_act_pct(agents['Agent_B']['action_counts'], 3):.2f}% | {get_act_pct(agents['Agent_B']['action_counts'], 2):.2f}% |
+| **Agent C** | {agents['Agent_C']['final_pnl_bb']:+.2f} BB | {agents['Agent_C']['gradient_updates']}회 | {agents['Agent_C']['avg_entropy']:.3f} | {get_act_pct(agents['Agent_C']['action_counts'], 5):.2f}% | {get_act_pct(agents['Agent_C']['action_counts'], 3):.2f}% | {get_act_pct(agents['Agent_C']['action_counts'], 2):.2f}% |
+| **Agent D** | **{agents['Agent_D']['final_pnl_bb']:+.2f} BB** | {agents['Agent_D']['gradient_updates']}회 | {agents['Agent_D']['avg_entropy']:.3f} | {get_act_pct(agents['Agent_D']['action_counts'], 5):.2f}% | {get_act_pct(agents['Agent_D']['action_counts'], 3):.2f}% | **{get_act_pct(agents['Agent_D']['action_counts'], 2):.2f}%** |
+| **Agent E (Top)**| **{agents['Agent_E']['final_pnl_bb']:+.2f} BB** | {agents['Agent_E']['gradient_updates']}회 | {agents['Agent_E']['avg_entropy']:.3f} | {get_act_pct(agents['Agent_E']['action_counts'], 5):.2f}% | {get_act_pct(agents['Agent_E']['action_counts'], 3):.2f}% | {get_act_pct(agents['Agent_E']['action_counts'], 2):.2f}% |
 | **5인 총합 제로섬** | **{tot_pnl:+.2f} BB** | **200회** | - | - | - | - |
 
 - **올인 스팸 완전 소멸 확인**:
-  * 과거 70k에서 지적된 39.9% 스택 소진 올인은 자가대국 환경에서 **1.0% ~ 2.1%로 건강하게 안정화**되었습니다.
+  * 과거 70k에서 지적된 39.9% 스택 소진 올인은 자가대국 환경에서 **1.00% ~ 2.58%로 건강하게 안정화**되었습니다.
   * 한 에이전트가 무분별하게 올인을 박으면 다른 에이전트들이 이를 학습하여 칩을 회수하므로, 시스템 차원에서 올인 스팸이 자연스럽게 억제되었습니다.
 - **다양한 전략의 자생적 분화**:
-  * **Agent D**는 하프팟(Action 2)을 4.5%까지 능동적으로 활용하며 +2,725.25 BB를 달성.
-  * **Agent E**는 타이트-어그레시브 팟베팅 라인을 확립하여 +2,750.88 BB로 자가대국 1위를 기록.
+  * **Agent D**는 하프팟(Action 2)을 4.53%까지 능동적으로 활용하며 +2,725.25 BB를 달성.
+  * **Agent E**는 타이트-어그레시브 팟베팅 라인을 확립하여 +2,750.75 BB로 자가대국 1위를 기록.
 
 ---
 
