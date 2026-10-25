@@ -1,0 +1,123 @@
+{
+  "directive": "049-A",
+  "timestamp": "2026-10-26 07:10:29",
+  "total_elapsed_sec": 8.5,
+  "047_agent_e_reproduction": {
+    "summary": {
+      "Converted_Allin_Called": {
+        "count": 36,
+        "pct": 7.2,
+        "avg_ev_bb": -7.42,
+        "total_pnl_bb": -267.0
+      },
+      "Direct_Act5_Called": {
+        "count": 18,
+        "pct": 3.6,
+        "avg_ev_bb": -27.68,
+        "total_pnl_bb": -498.25
+      },
+      "Direct_Act5_Uncalled": {
+        "count": 5,
+        "pct": 1.0,
+        "avg_ev_bb": 2.6,
+        "total_pnl_bb": 13.0
+      },
+      "Hero_Called_Opp_Allin": {
+        "count": 57,
+        "pct": 11.4,
+        "avg_ev_bb": 21.22,
+        "total_pnl_bb": 1209.5
+      },
+      "Hero_Folded_Opp_Allin": {
+        "count": 7,
+        "pct": 1.4,
+        "avg_ev_bb": -26.39,
+        "total_pnl_bb": -184.75
+      },
+      "Normal_NonAllin_Hand": {
+        "count": 377,
+        "pct": 75.4,
+        "avg_ev_bb": -0.36,
+        "total_pnl_bb": -134.5
+      }
+    },
+    "old_047_called_count_reproduced": 111,
+    "total_hands": 500
+  },
+  "factorial_crossplay": {
+    "policy_summary": {
+      "Agent_A_2000h": {
+        "bb100": -10.8,
+        "ci95": 676.9,
+        "hands": 250
+      },
+      "Agent_A_7000h": {
+        "bb100": 179.8,
+        "ci95": 645.05,
+        "hands": 250
+      },
+      "Agent_B_2000h": {
+        "bb100": 370.7,
+        "ci95": 776.24,
+        "hands": 250
+      },
+      "Agent_B_7000h": {
+        "bb100": 642.0,
+        "ci95": 651.42,
+        "hands": 250
+      },
+      "Agent_C_2000h": {
+        "bb100": 29.9,
+        "ci95": 697.05,
+        "hands": 250
+      },
+      "Agent_C_7000h": {
+        "bb100": -79.1,
+        "ci95": 708.41,
+        "hands": 250
+      },
+      "Agent_D_2000h": {
+        "bb100": -321.2,
+        "ci95": 692.8,
+        "hands": 250
+      },
+      "Agent_D_7000h": {
+        "bb100": -9.8,
+        "ci95": 692.66,
+        "hands": 250
+      },
+      "Agent_E_2000h": {
+        "bb100": -530.5,
+        "ci95": 708.62,
+        "hands": 250
+      },
+      "Agent_E_7000h": {
+        "bb100": -271.0,
+        "ci95": 726.1,
+        "hands": 250
+      }
+    },
+    "hand_level_paired_test": {
+      "mean_delta_bb100": 192.46,
+      "ci95_bb": 473.82,
+      "ci95_interval": [
+        -281.36,
+        666.28
+      ],
+      "paired_p_value": 0.4263,
+      "t_statistic": 0.796,
+      "hands_evaluated": 500
+    },
+    "zero_sum_errors": 0
+  },
+  "pfsp_sampler_test": {
+    "chosen_opponent": "Agent_Agent_D_2000h",
+    "sampling_probability": 0.1,
+    "reproducibility": "PASS"
+  },
+  "checkpoint_immutability": {
+    "verified_count": 50,
+    "mismatches": [],
+    "frozen_status": "ALL_IMMUTABLE"
+  }
+}

@@ -1,0 +1,500 @@
+{"hand_id": 1, "seed": 80001, "hero_seat": 0, "category": "Converted_Allin_Called", "pnl_bb": 201.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 5200.0]]}
+{"hand_id": 2, "seed": 80002, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1800.0]]}
+{"hand_id": 3, "seed": 80003, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 4, "seed": 80004, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 5, "seed": 80005, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 6, "seed": 80006, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 7, "seed": 80007, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 2, 0.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0], [3, 1, 3275.0]]}
+{"hand_id": 8, "seed": 80008, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 9, "seed": 80009, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 10, "seed": 80010, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 1.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0]]}
+{"hand_id": 11, "seed": 80011, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": 124.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 2000.0], [0, 1, 3400.0]]}
+{"hand_id": 12, "seed": 80012, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 13, "seed": 80013, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 14, "seed": 80014, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 1, 9650.0]]}
+{"hand_id": 15, "seed": 80015, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 600.0]]}
+{"hand_id": 16, "seed": 80016, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 17, "seed": 80017, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 0.0], [1, 3, 2250.0]]}
+{"hand_id": 18, "seed": 80018, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 19, "seed": 80019, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 20, "seed": 80020, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -15.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 350.0], [1, 0, 3600.0]]}
+{"hand_id": 21, "seed": 80021, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 22, "seed": 80022, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.25, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 250.0]]}
+{"hand_id": 23, "seed": 80023, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 24, "seed": 80024, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 25, "seed": 80025, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 26, "seed": 80026, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 27, "seed": 80027, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 500.0]]}
+{"hand_id": 28, "seed": 80028, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 29, "seed": 80029, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 1400.0]]}
+{"hand_id": 30, "seed": 80030, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 850.0], [1, 1, 6250.0]]}
+{"hand_id": 31, "seed": 80031, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 32, "seed": 80032, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 6500.0]]}
+{"hand_id": 33, "seed": 80033, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 34, "seed": 80034, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 35, "seed": 80035, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [0, 0, 1150.0]]}
+{"hand_id": 36, "seed": 80036, "hero_seat": 0, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 5200.0]]}
+{"hand_id": 37, "seed": 80037, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 9900.0]]}
+{"hand_id": 38, "seed": 80038, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 39, "seed": 80039, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 40, "seed": 80040, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 41, "seed": 80041, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 42, "seed": 80042, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1950.0]]}
+{"hand_id": 43, "seed": 80043, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 44, "seed": 80044, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 45, "seed": 80045, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 46, "seed": 80046, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 1200.0], [0, 1, 3100.0]]}
+{"hand_id": 47, "seed": 80047, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [1, 0, 400.0]]}
+{"hand_id": 48, "seed": 80048, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 49, "seed": 80049, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 50, "seed": 80050, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 51, "seed": 80051, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 52, "seed": 80052, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 53, "seed": 80053, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 54, "seed": 80054, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [1, 3, 250.0], [1, 3, 2250.0]]}
+{"hand_id": 55, "seed": 80055, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 56, "seed": 80056, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 57, "seed": 80057, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 58, "seed": 80058, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 59, "seed": 80059, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 300.0], [1, 1, 900.0], [2, 1, 2700.0], [3, 1, 6000.0]]}
+{"hand_id": 60, "seed": 80060, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 61, "seed": 80061, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1150.0]]}
+{"hand_id": 62, "seed": 80062, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 63, "seed": 80063, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 3, 750.0], [0, 1, 6650.0]]}
+{"hand_id": 64, "seed": 80064, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 400.0], [0, 1, 8300.0]]}
+{"hand_id": 65, "seed": 80065, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 66, "seed": 80066, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 400.0], [1, 3, 0.0], [1, 1, 7300.0]]}
+{"hand_id": 67, "seed": 80067, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 0.0], [0, 0, 1050.0]]}
+{"hand_id": 68, "seed": 80068, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 69, "seed": 80069, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 104.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 2, 350.0], [1, 2, 0.0], [2, 3, 3900.0]]}
+{"hand_id": 70, "seed": 80070, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 71, "seed": 80071, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 72, "seed": 80072, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 73, "seed": 80073, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 74, "seed": 80074, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 1, 850.0], [2, 3, 2550.0]]}
+{"hand_id": 75, "seed": 80075, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 76, "seed": 80076, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 77, "seed": 80077, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 0.0], [2, 3, 1800.0], [3, 1, 1900.0]]}
+{"hand_id": 78, "seed": 80078, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 79, "seed": 80079, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 50.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 3, 4600.0]]}
+{"hand_id": 80, "seed": 80080, "hero_seat": 4, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 2, 600.0], [1, 2, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 81, "seed": 80081, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 900.0], [0, 1, 6000.0]]}
+{"hand_id": 82, "seed": 80082, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 83, "seed": 80083, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 84, "seed": 80084, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 11.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0]]}
+{"hand_id": 85, "seed": 80085, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 86, "seed": 80086, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 87, "seed": 80087, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 88, "seed": 80088, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 89, "seed": 80089, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 201.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 3, 4600.0]]}
+{"hand_id": 90, "seed": 80090, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 91, "seed": 80091, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 92, "seed": 80092, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 93, "seed": 80093, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 94, "seed": 80094, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 250.0]]}
+{"hand_id": 95, "seed": 80095, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 600.0]]}
+{"hand_id": 96, "seed": 80096, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 97, "seed": 80097, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 0.0], [1, 3, 2250.0]]}
+{"hand_id": 98, "seed": 80098, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 3, 850.0], [1, 3, 0.0]]}
+{"hand_id": 99, "seed": 80099, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 100, "seed": 80100, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 101, "seed": 80101, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 300.0], [0, 1, 8500.0]]}
+{"hand_id": 102, "seed": 80102, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 500.0]]}
+{"hand_id": 103, "seed": 80103, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 104, "seed": 80104, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [0, 0, 1150.0]]}
+{"hand_id": 105, "seed": 80105, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 400.0]]}
+{"hand_id": 106, "seed": 80106, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 107, "seed": 80107, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1400.0]]}
+{"hand_id": 108, "seed": 80108, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 109, "seed": 80109, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 110, "seed": 80110, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 111, "seed": 80111, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 112, "seed": 80112, "hero_seat": 1, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 9900.0]]}
+{"hand_id": 113, "seed": 80113, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 114, "seed": 80114, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 115, "seed": 80115, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 2.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0]]}
+{"hand_id": 116, "seed": 80116, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 117, "seed": 80117, "hero_seat": 1, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -67.25, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0], [3, 0, 3275.0]]}
+{"hand_id": 118, "seed": 80118, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 119, "seed": 80119, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 1, 850.0], [2, 1, 2550.0], [3, 1, 6250.0]]}
+{"hand_id": 120, "seed": 80120, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": 104.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 3, 1150.0], [0, 1, 5050.0]]}
+{"hand_id": 121, "seed": 80121, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 122, "seed": 80122, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1050.0]]}
+{"hand_id": 123, "seed": 80123, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 124, "seed": 80124, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 125, "seed": 80125, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 126, "seed": 80126, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 127, "seed": 80127, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 128, "seed": 80128, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 3, 750.0], [0, 1, 6650.0]]}
+{"hand_id": 129, "seed": 80129, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 250.0]]}
+{"hand_id": 130, "seed": 80130, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 131, "seed": 80131, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 132, "seed": 80132, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 300.0], [0, 1, 8700.0]]}
+{"hand_id": 133, "seed": 80133, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 134, "seed": 80134, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 135, "seed": 80135, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 136, "seed": 80136, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 137, "seed": 80137, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [0, 3, 4550.0]]}
+{"hand_id": 138, "seed": 80138, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 139, "seed": 80139, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 350.0], [0, 3, 2550.0]]}
+{"hand_id": 140, "seed": 80140, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 141, "seed": 80141, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 142, "seed": 80142, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 143, "seed": 80143, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 144, "seed": 80144, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 145, "seed": 80145, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 146, "seed": 80146, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 147, "seed": 80147, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 148, "seed": 80148, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 149, "seed": 80149, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 400.0], [1, 3, 8000.0]]}
+{"hand_id": 150, "seed": 80150, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 151, "seed": 80151, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 152, "seed": 80152, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 153, "seed": 80153, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 154, "seed": 80154, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 155, "seed": 80155, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 156, "seed": 80156, "hero_seat": 0, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 50.0]]}
+{"hand_id": 157, "seed": 80157, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1400.0]]}
+{"hand_id": 158, "seed": 80158, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 159, "seed": 80159, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 160, "seed": 80160, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 9.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 225.0], [1, 3, 600.0]]}
+{"hand_id": 161, "seed": 80161, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 162, "seed": 80162, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 163, "seed": 80163, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 164, "seed": 80164, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 350.0], [0, 3, 1400.0], [1, 3, 0.0]]}
+{"hand_id": 165, "seed": 80165, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1400.0]]}
+{"hand_id": 166, "seed": 80166, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 550.0]]}
+{"hand_id": 167, "seed": 80167, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 168, "seed": 80168, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 169, "seed": 80169, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 200.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 1200.0], [0, 1, 5700.0]]}
+{"hand_id": 170, "seed": 80170, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 171, "seed": 80171, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 172, "seed": 80172, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 600.0]]}
+{"hand_id": 173, "seed": 80173, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1150.0]]}
+{"hand_id": 174, "seed": 80174, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 200.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 1200.0], [0, 1, 8700.0]]}
+{"hand_id": 175, "seed": 80175, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 1400.0]]}
+{"hand_id": 176, "seed": 80176, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 177, "seed": 80177, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 178, "seed": 80178, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": 50.75, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 179, "seed": 80179, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 180, "seed": 80180, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 181, "seed": 80181, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 182, "seed": 80182, "hero_seat": 1, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 1050.0]]}
+{"hand_id": 183, "seed": 80183, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 184, "seed": 80184, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 104.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 300.0], [1, 3, 0.0], [1, 1, 5700.0]]}
+{"hand_id": 185, "seed": 80185, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 186, "seed": 80186, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 187, "seed": 80187, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 0.25, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [0, 3, 750.0], [0, 1, 6650.0]]}
+{"hand_id": 188, "seed": 80188, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 189, "seed": 80189, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 190, "seed": 80190, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": 201.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 1150.0], [1, 1, 5050.0]]}
+{"hand_id": 191, "seed": 80191, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 192, "seed": 80192, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 700.0]]}
+{"hand_id": 193, "seed": 80193, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 194, "seed": 80194, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 300.0], [1, 3, 3000.0]]}
+{"hand_id": 195, "seed": 80195, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 3, 1150.0], [0, 1, 5050.0]]}
+{"hand_id": 196, "seed": 80196, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 197, "seed": 80197, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1050.0]]}
+{"hand_id": 198, "seed": 80198, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 199, "seed": 80199, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 200, "seed": 80200, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 1400.0]]}
+{"hand_id": 201, "seed": 80201, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 202, "seed": 80202, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 203, "seed": 80203, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 3, 1150.0], [0, 1, 5050.0]]}
+{"hand_id": 204, "seed": 80204, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 205, "seed": 80205, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 206, "seed": 80206, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 207, "seed": 80207, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 208, "seed": 80208, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 209, "seed": 80209, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 350.0], [0, 1, 8500.0]]}
+{"hand_id": 210, "seed": 80210, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 211, "seed": 80211, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 212, "seed": 80212, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1400.0]]}
+{"hand_id": 213, "seed": 80213, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 214, "seed": 80214, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 201.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 1150.0], [1, 1, 5050.0]]}
+{"hand_id": 215, "seed": 80215, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 11.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0]]}
+{"hand_id": 216, "seed": 80216, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 217, "seed": 80217, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 8800.0]]}
+{"hand_id": 218, "seed": 80218, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 219, "seed": 80219, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 220, "seed": 80220, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 221, "seed": 80221, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 222, "seed": 80222, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 223, "seed": 80223, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 224, "seed": 80224, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 225, "seed": 80225, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 226, "seed": 80226, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": 2.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 50.0]]}
+{"hand_id": 227, "seed": 80227, "hero_seat": 1, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -44.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [1, 2, 0.0], [2, 3, 0.0], [3, 3, 0.0], [3, 0, 5525.0]]}
+{"hand_id": 228, "seed": 80228, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 229, "seed": 80229, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 105.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 350.0], [0, 3, 1400.0], [0, 1, 3950.0]]}
+{"hand_id": 230, "seed": 80230, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 231, "seed": 80231, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 232, "seed": 80232, "hero_seat": 1, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 600.0], [1, 5, 5400.0]]}
+{"hand_id": 233, "seed": 80233, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 234, "seed": 80234, "hero_seat": 3, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -41.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 350.0], [1, 3, 0.0], [1, 0, 5900.0]]}
+{"hand_id": 235, "seed": 80235, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 236, "seed": 80236, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 900.0], [0, 1, 6000.0]]}
+{"hand_id": 237, "seed": 80237, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1100.0]]}
+{"hand_id": 238, "seed": 80238, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 239, "seed": 80239, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 1800.0]]}
+{"hand_id": 240, "seed": 80240, "hero_seat": 4, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 5600.0]]}
+{"hand_id": 241, "seed": 80241, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 242, "seed": 80242, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1800.0]]}
+{"hand_id": 243, "seed": 80243, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 244, "seed": 80244, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0], [1, 1, 6650.0]]}
+{"hand_id": 245, "seed": 80245, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 1.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0]]}
+{"hand_id": 246, "seed": 80246, "hero_seat": 0, "category": "Converted_Allin_Called", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [1, 3, 0.0], [1, 3, 2700.0]]}
+{"hand_id": 247, "seed": 80247, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 250.0], [1, 3, 0.0], [1, 1, 8550.0]]}
+{"hand_id": 248, "seed": 80248, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 249, "seed": 80249, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 250, "seed": 80250, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 251, "seed": 80251, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 252, "seed": 80252, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [1, 3, 0.0], [1, 3, 2250.0]]}
+{"hand_id": 253, "seed": 80253, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 850.0]]}
+{"hand_id": 254, "seed": 80254, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 400.0]]}
+{"hand_id": 255, "seed": 80255, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 256, "seed": 80256, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": 0.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 900.0], [0, 1, 6000.0]]}
+{"hand_id": 257, "seed": 80257, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 258, "seed": 80258, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 259, "seed": 80259, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 260, "seed": 80260, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [1, 0, 850.0]]}
+{"hand_id": 261, "seed": 80261, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1150.0]]}
+{"hand_id": 262, "seed": 80262, "hero_seat": 1, "category": "Direct_Act5_Uncalled", "pnl_bb": 4.0, "hero_is_allin": true, "was_called": false, "actions": [[0, 1, 250.0], [1, 5, 0.0]]}
+{"hand_id": 263, "seed": 80263, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 264, "seed": 80264, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 300.0], [1, 3, 1200.0], [1, 1, 4800.0]]}
+{"hand_id": 265, "seed": 80265, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 600.0]]}
+{"hand_id": 266, "seed": 80266, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": 3.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 50.0], [0, 3, 200.0]]}
+{"hand_id": 267, "seed": 80267, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 268, "seed": 80268, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 269, "seed": 80269, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 270, "seed": 80270, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 271, "seed": 80271, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 272, "seed": 80272, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 273, "seed": 80273, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [1, 1, 8450.0]]}
+{"hand_id": 274, "seed": 80274, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 50.75, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 1200.0], [1, 1, 4850.0]]}
+{"hand_id": 275, "seed": 80275, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 276, "seed": 80276, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 277, "seed": 80277, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 0.0], [0, 1, 6800.0], [1, 1, 2700.0]]}
+{"hand_id": 278, "seed": 80278, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 279, "seed": 80279, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 280, "seed": 80280, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 281, "seed": 80281, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 282, "seed": 80282, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 250.0], [1, 3, 0.0], [1, 1, 2250.0], [2, 1, 0.0], [2, 1, 6650.0]]}
+{"hand_id": 283, "seed": 80283, "hero_seat": 2, "category": "Direct_Act5_Uncalled", "pnl_bb": 1.5, "hero_is_allin": true, "was_called": false, "actions": [[0, 5, 100.0]]}
+{"hand_id": 284, "seed": 80284, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 285, "seed": 80285, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 11.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0]]}
+{"hand_id": 286, "seed": 80286, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 287, "seed": 80287, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 288, "seed": 80288, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": 200.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 289, "seed": 80289, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 200.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [1, 3, 0.0], [1, 3, 1400.0], [2, 1, 3950.0]]}
+{"hand_id": 290, "seed": 80290, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 291, "seed": 80291, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 292, "seed": 80292, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 293, "seed": 80293, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 294, "seed": 80294, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 295, "seed": 80295, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 296, "seed": 80296, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 297, "seed": 80297, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 298, "seed": 80298, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 299, "seed": 80299, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 300, "seed": 80300, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 301, "seed": 80301, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 302, "seed": 80302, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 300.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 400.0], [0, 1, 8300.0]]}
+{"hand_id": 303, "seed": 80303, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 304, "seed": 80304, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 400.0]]}
+{"hand_id": 305, "seed": 80305, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 306, "seed": 80306, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 307, "seed": 80307, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": 148.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 250.0], [0, 3, 3300.0]]}
+{"hand_id": 308, "seed": 80308, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 5, 1100.0]]}
+{"hand_id": 309, "seed": 80309, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 310, "seed": 80310, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 311, "seed": 80311, "hero_seat": 0, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 5, 3900.0]]}
+{"hand_id": 312, "seed": 80312, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 313, "seed": 80313, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": 200.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 314, "seed": 80314, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [1, 3, 350.0], [1, 3, 4550.0]]}
+{"hand_id": 315, "seed": 80315, "hero_seat": 4, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 250.0], [0, 3, 2250.0]]}
+{"hand_id": 316, "seed": 80316, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 317, "seed": 80317, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [1, 2, 0.0], [1, 0, 1000.0]]}
+{"hand_id": 318, "seed": 80318, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 319, "seed": 80319, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 320, "seed": 80320, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 321, "seed": 80321, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 322, "seed": 80322, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 323, "seed": 80323, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 324, "seed": 80324, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 325, "seed": 80325, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 13.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [1, 3, 850.0]]}
+{"hand_id": 326, "seed": 80326, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 327, "seed": 80327, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": 200.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 1050.0], [0, 1, 8850.0]]}
+{"hand_id": 328, "seed": 80328, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 329, "seed": 80329, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 104.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 350.0], [1, 3, 0.0], [2, 3, 0.0]]}
+{"hand_id": 330, "seed": 80330, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 331, "seed": 80331, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": 7.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 550.0], [1, 3, 0.0]]}
+{"hand_id": 332, "seed": 80332, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1100.0]]}
+{"hand_id": 333, "seed": 80333, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 334, "seed": 80334, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 335, "seed": 80335, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 336, "seed": 80336, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 337, "seed": 80337, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 200.0]]}
+{"hand_id": 338, "seed": 80338, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": 50.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 5, 1050.0]]}
+{"hand_id": 339, "seed": 80339, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 340, "seed": 80340, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 341, "seed": 80341, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 300.0], [0, 1, 4200.0], [0, 1, 5450.0]]}
+{"hand_id": 342, "seed": 80342, "hero_seat": 1, "category": "Direct_Act5_Called", "pnl_bb": 200.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 300.0]]}
+{"hand_id": 343, "seed": 80343, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 344, "seed": 80344, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 345, "seed": 80345, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 250.0]]}
+{"hand_id": 346, "seed": 80346, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 347, "seed": 80347, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 348, "seed": 80348, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 349, "seed": 80349, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 350, "seed": 80350, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1050.0]]}
+{"hand_id": 351, "seed": 80351, "hero_seat": 0, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 50.0], [0, 3, 900.0], [0, 1, 6000.0]]}
+{"hand_id": 352, "seed": 80352, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 353, "seed": 80353, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 5, 0.0]]}
+{"hand_id": 354, "seed": 80354, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 200.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 350.0], [0, 1, 8500.0]]}
+{"hand_id": 355, "seed": 80355, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1200.0]]}
+{"hand_id": 356, "seed": 80356, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 357, "seed": 80357, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 358, "seed": 80358, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1150.0]]}
+{"hand_id": 359, "seed": 80359, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 360, "seed": 80360, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 361, "seed": 80361, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 362, "seed": 80362, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 2, 0.0], [1, 3, 0.0], [1, 3, 2625.0]]}
+{"hand_id": 363, "seed": 80363, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": 112.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [0, 3, 3650.0]]}
+{"hand_id": 364, "seed": 80364, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 365, "seed": 80365, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 366, "seed": 80366, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 367, "seed": 80367, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 368, "seed": 80368, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 369, "seed": 80369, "hero_seat": 3, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -12.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 350.0], [0, 0, 8800.0]]}
+{"hand_id": 370, "seed": 80370, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": 100.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0], [1, 1, 6650.0]]}
+{"hand_id": 371, "seed": 80371, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 372, "seed": 80372, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 700.0]]}
+{"hand_id": 373, "seed": 80373, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 374, "seed": 80374, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 375, "seed": 80375, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 376, "seed": 80376, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 377, "seed": 80377, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1100.0]]}
+{"hand_id": 378, "seed": 80378, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 379, "seed": 80379, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 350.0]]}
+{"hand_id": 380, "seed": 80380, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 381, "seed": 80381, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1150.0]]}
+{"hand_id": 382, "seed": 80382, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 383, "seed": 80383, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": 205.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 400.0], [0, 3, 2000.0], [0, 1, 1500.0]]}
+{"hand_id": 384, "seed": 80384, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 101.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 300.0], [0, 3, 2700.0]]}
+{"hand_id": 385, "seed": 80385, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 800.0]]}
+{"hand_id": 386, "seed": 80386, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 387, "seed": 80387, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1100.0]]}
+{"hand_id": 388, "seed": 80388, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 389, "seed": 80389, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 1200.0]]}
+{"hand_id": 390, "seed": 80390, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 391, "seed": 80391, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": 1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 50.0]]}
+{"hand_id": 392, "seed": 80392, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 393, "seed": 80393, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 394, "seed": 80394, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 350.0], [0, 1, 8800.0]]}
+{"hand_id": 395, "seed": 80395, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 396, "seed": 80396, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 397, "seed": 80397, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 700.0]]}
+{"hand_id": 398, "seed": 80398, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 399, "seed": 80399, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 850.0], [1, 1, 6250.0]]}
+{"hand_id": 400, "seed": 80400, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 401, "seed": 80401, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": 1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 50.0]]}
+{"hand_id": 402, "seed": 80402, "hero_seat": 1, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 300.0], [0, 3, 3900.0]]}
+{"hand_id": 403, "seed": 80403, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 404, "seed": 80404, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 10000.0]]}
+{"hand_id": 405, "seed": 80405, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 406, "seed": 80406, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 175.0]]}
+{"hand_id": 407, "seed": 80407, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 408, "seed": 80408, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 409, "seed": 80409, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 4.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 3, 250.0]]}
+{"hand_id": 410, "seed": 80410, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 411, "seed": 80411, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 412, "seed": 80412, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 1400.0], [0, 1, 4800.0]]}
+{"hand_id": 413, "seed": 80413, "hero_seat": 2, "category": "Direct_Act5_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 100.0]]}
+{"hand_id": 414, "seed": 80414, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [0, 3, 4600.0]]}
+{"hand_id": 415, "seed": 80415, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 416, "seed": 80416, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 417, "seed": 80417, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1450.0]]}
+{"hand_id": 418, "seed": 80418, "hero_seat": 2, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [2, 3, 0.0], [2, 1, 3900.0]]}
+{"hand_id": 419, "seed": 80419, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 420, "seed": 80420, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 421, "seed": 80421, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 422, "seed": 80422, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 1400.0], [0, 1, 4800.0]]}
+{"hand_id": 423, "seed": 80423, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 424, "seed": 80424, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 425, "seed": 80425, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 426, "seed": 80426, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 427, "seed": 80427, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1400.0]]}
+{"hand_id": 428, "seed": 80428, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 429, "seed": 80429, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [1, 1, 0.0], [2, 1, 0.0], [3, 1, 250.0]]}
+{"hand_id": 430, "seed": 80430, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 1200.0], [0, 1, 5700.0]]}
+{"hand_id": 431, "seed": 80431, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 432, "seed": 80432, "hero_seat": 1, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 250.0], [1, 3, 0.0], [1, 1, 6650.0]]}
+{"hand_id": 433, "seed": 80433, "hero_seat": 2, "category": "Direct_Act5_Uncalled", "pnl_bb": 1.5, "hero_is_allin": true, "was_called": false, "actions": [[0, 5, 100.0]]}
+{"hand_id": 434, "seed": 80434, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 435, "seed": 80435, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 436, "seed": 80436, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 437, "seed": 80437, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 438, "seed": 80438, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 439, "seed": 80439, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 350.0], [1, 3, 850.0], [1, 1, 6250.0]]}
+{"hand_id": 440, "seed": 80440, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 441, "seed": 80441, "hero_seat": 0, "category": "Direct_Act5_Called", "pnl_bb": 0.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 5, 50.0]]}
+{"hand_id": 442, "seed": 80442, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 443, "seed": 80443, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 444, "seed": 80444, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 350.0], [0, 3, 3500.0]]}
+{"hand_id": 445, "seed": 80445, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 17.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 1200.0]]}
+{"hand_id": 446, "seed": 80446, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 447, "seed": 80447, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.25, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 500.0]]}
+{"hand_id": 448, "seed": 80448, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1500.0]]}
+{"hand_id": 449, "seed": 80449, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 450, "seed": 80450, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 7.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 600.0]]}
+{"hand_id": 451, "seed": 80451, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 452, "seed": 80452, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 453, "seed": 80453, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 454, "seed": 80454, "hero_seat": 3, "category": "Converted_Allin_Called", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [1, 3, 2550.0]]}
+{"hand_id": 455, "seed": 80455, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": 0.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 300.0], [1, 3, 900.0], [1, 1, 6000.0]]}
+{"hand_id": 456, "seed": 80456, "hero_seat": 0, "category": "Converted_Allin_Called", "pnl_bb": 3.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 50.0], [0, 3, 400.0], [1, 3, 0.0], [2, 3, 0.0]]}
+{"hand_id": 457, "seed": 80457, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 458, "seed": 80458, "hero_seat": 2, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -15.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [1, 3, 0.0], [1, 0, 8450.0]]}
+{"hand_id": 459, "seed": 80459, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 460, "seed": 80460, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": 102.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 400.0], [0, 1, 3600.0], [1, 1, 4700.0]]}
+{"hand_id": 461, "seed": 80461, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 462, "seed": 80462, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 1100.0]]}
+{"hand_id": 463, "seed": 80463, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 464, "seed": 80464, "hero_seat": 3, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 1, 250.0], [1, 3, 750.0], [1, 1, 6650.0]]}
+{"hand_id": 465, "seed": 80465, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [1, 0, 5800.0]]}
+{"hand_id": 466, "seed": 80466, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 467, "seed": 80467, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -7.25, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [1, 3, 0.0], [1, 0, 1500.0]]}
+{"hand_id": 468, "seed": 80468, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 469, "seed": 80469, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 470, "seed": 80470, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 2.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0]]}
+{"hand_id": 471, "seed": 80471, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 472, "seed": 80472, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 473, "seed": 80473, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 474, "seed": 80474, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [0, 0, 1200.0]]}
+{"hand_id": 475, "seed": 80475, "hero_seat": 4, "category": "Hero_Called_Opp_Allin", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 1, 100.0], [0, 3, 1800.0], [0, 1, 3600.0]]}
+{"hand_id": 476, "seed": 80476, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 400.0]]}
+{"hand_id": 477, "seed": 80477, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -2.75, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 2975.0]]}
+{"hand_id": 478, "seed": 80478, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": 101.5, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 479, "seed": 80479, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 350.0], [0, 0, 1500.0]]}
+{"hand_id": 480, "seed": 80480, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": -4.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1100.0]]}
+{"hand_id": 481, "seed": 80481, "hero_seat": 0, "category": "Direct_Act5_Uncalled", "pnl_bb": 4.5, "hero_is_allin": true, "was_called": false, "actions": [[0, 5, 300.0]]}
+{"hand_id": 482, "seed": 80482, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 483, "seed": 80483, "hero_seat": 2, "category": "Direct_Act5_Uncalled", "pnl_bb": 1.5, "hero_is_allin": true, "was_called": false, "actions": [[0, 5, 100.0]]}
+{"hand_id": 484, "seed": 80484, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 485, "seed": 80485, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 486, "seed": 80486, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 50.0]]}
+{"hand_id": 487, "seed": 80487, "hero_seat": 1, "category": "Hero_Folded_Opp_Allin", "pnl_bb": -3.25, "hero_is_allin": false, "was_called": false, "actions": [[0, 2, 0.0], [0, 0, 9675.0]]}
+{"hand_id": 488, "seed": 80488, "hero_seat": 2, "category": "Converted_Allin_Called", "pnl_bb": -100.0, "hero_is_allin": true, "was_called": true, "actions": [[0, 3, 100.0], [1, 3, 0.0], [2, 3, 0.0], [3, 3, 0.0]]}
+{"hand_id": 489, "seed": 80489, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 490, "seed": 80490, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 491, "seed": 80491, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -0.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 300.0]]}
+{"hand_id": 492, "seed": 80492, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.5, "hero_is_allin": false, "was_called": false, "actions": []}
+{"hand_id": 493, "seed": 80493, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": -3.5, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 100.0], [0, 0, 1100.0]]}
+{"hand_id": 494, "seed": 80494, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 1, 100.0], [0, 0, 300.0]]}
+{"hand_id": 495, "seed": 80495, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 350.0]]}
+{"hand_id": 496, "seed": 80496, "hero_seat": 0, "category": "Normal_NonAllin_Hand", "pnl_bb": -13.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 3, 50.0], [1, 3, 0.0], [1, 0, 2700.0]]}
+{"hand_id": 497, "seed": 80497, "hero_seat": 1, "category": "Normal_NonAllin_Hand", "pnl_bb": -1.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 250.0]]}
+{"hand_id": 498, "seed": 80498, "hero_seat": 2, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 499, "seed": 80499, "hero_seat": 3, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
+{"hand_id": 500, "seed": 80500, "hero_seat": 4, "category": "Normal_NonAllin_Hand", "pnl_bb": 0.0, "hero_is_allin": false, "was_called": false, "actions": [[0, 0, 100.0]]}
