@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-10-26 06:26:50",
+  "total_elapsed_sec": 59.2,
+  "pilot_base_seed": 430000,
+  "part1_catcher_benchmark": {
+    "Agent_A": {
+      "bb_per_100": 148.2,
+      "ci95_bb": 20.46,
+      "per_decision_allin_pct": 0.0,
+      "per_hand_allin_pct": 0.0,
+      "called_allin_count": 0,
+      "called_allin_ev": "N/A",
+      "uncalled_allin_count": 0,
+      "uncalled_allin_ev": "N/A",
+      "false_positive_calls": 0
+    },
+    "Agent_B": {
+      "bb_per_100": 174.35,
+      "ci95_bb": 23.42,
+      "per_decision_allin_pct": 3.13,
+      "per_hand_allin_pct": 4.6,
+      "called_allin_count": 0,
+      "called_allin_ev": "N/A",
+      "uncalled_allin_count": 23,
+      "uncalled_allin_ev": "+3.15 BB",
+      "false_positive_calls": 0
+    },
+    "Agent_C": {
+      "bb_per_100": 117.1,
+      "ci95_bb": 43.74,
+      "per_decision_allin_pct": 3.25,
+      "per_hand_allin_pct": 4.4,
+      "called_allin_count": 1,
+      "called_allin_ev": "-100.00 BB",
+      "uncalled_allin_count": 21,
+      "uncalled_allin_ev": "+1.98 BB",
+      "false_positive_calls": 0
+    },
+    "Agent_D": {
+      "bb_per_100": 43.5,
+      "ci95_bb": 90.73,
+      "per_decision_allin_pct": 4.06,
+      "per_hand_allin_pct": 5.6,
+      "called_allin_count": 5,
+      "called_allin_ev": "-100.00 BB",
+      "uncalled_allin_count": 23,
+      "uncalled_allin_ev": "+2.75 BB",
+      "false_positive_calls": 0
+    },
+    "Agent_E": {
+      "bb_per_100": 147.65,
+      "ci95_bb": 18.22,
+      "per_decision_allin_pct": 3.23,
+      "per_hand_allin_pct": 4.8,
+      "called_allin_count": 0,
+      "called_allin_ev": "N/A",
+      "uncalled_allin_count": 24,
+      "uncalled_allin_ev": "+1.77 BB",
+      "false_positive_calls": 0
+    }
+  },
+  "part2_paired_evaluation": {
+    "Agent_A": {
+      "num_hands": 500,
+      "0h_true_noisy": {
+        "bb_per_100": -349.25,
+        "ci95_bb": 612.49,
+        "per_hand_allin_pct": 0.8,
+        "per_hand_full_stack_pct": 34.2
+      },
+      "2000h_trained": {
+        "bb_per_100": -323.8,
+        "ci95_bb": 561.97,
+        "per_hand_allin_pct": 2.0,
+        "per_hand_full_stack_pct": 28.6
+      },
+      "7000h_extended": {
+        "bb_per_100": -126.5,
+        "ci95_bb": 468.56,
+        "per_decision_allin_pct": 0.0,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 18.6,
+        "halfpot_pct": 17.63,
+        "pot_pct": 9.99,
+        "called_allin_count": 93,
+        "called_allin_ev": "-2.65 BB",
+        "uncalled_allin_count": 0,
+        "uncalled_allin_ev": "N/A"
+      },
+      "paired_diff_0h_to_7000h": {
+        "delta_bb_per_100": 222.75,
+        "ci95": [
+          -191.48,
+          636.99
+        ],
+        "raw_p_value": 0.2912,
+        "holm_p_value": 1.0
+      },
+      "paired_diff_2000h_to_7000h": {
+        "delta_bb_per_100": 197.3,
+        "ci95": [
+          -123.74,
+          518.34
+        ],
+        "raw_p_value": 0.2278
+      }
+    },
+    "Agent_B": {
+      "num_hands": 500,
+      "0h_true_noisy": {
+        "bb_per_100": -9.1,
+        "ci95_bb": 583.45,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 30.6
+      },
+      "2000h_trained": {
+        "bb_per_100": 208.15,
+        "ci95_bb": 511.32,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 23.4
+      },
+      "7000h_extended": {
+        "bb_per_100": 141.65,
+        "ci95_bb": 446.34,
+        "per_decision_allin_pct": 1.45,
+        "per_hand_allin_pct": 2.2,
+        "per_hand_full_stack_pct": 16.6,
+        "halfpot_pct": 28.89,
+        "pot_pct": 5.54,
+        "called_allin_count": 83,
+        "called_allin_ev": "+11.83 BB",
+        "uncalled_allin_count": 0,
+        "uncalled_allin_ev": "N/A"
+      },
+      "paired_diff_0h_to_7000h": {
+        "delta_bb_per_100": 150.75,
+        "ci95": [
+          -270.24,
+          571.74
+        ],
+        "raw_p_value": 0.4821,
+        "holm_p_value": 1.0
+      },
+      "paired_diff_2000h_to_7000h": {
+        "delta_bb_per_100": -66.5,
+        "ci95": [
+          -386.73,
+          253.73
+        ],
+        "raw_p_value": 0.6834
+      }
+    },
+    "Agent_C": {
+      "num_hands": 500,
+      "0h_true_noisy": {
+        "bb_per_100": 230.52,
+        "ci95_bb": 631.32,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 32.4
+      },
+      "2000h_trained": {
+        "bb_per_100": 425.77,
+        "ci95_bb": 585.5,
+        "per_hand_allin_pct": 2.4,
+        "per_hand_full_stack_pct": 29.6
+      },
+      "7000h_extended": {
+        "bb_per_100": 310.02,
+        "ci95_bb": 519.82,
+        "per_decision_allin_pct": 1.82,
+        "per_hand_allin_pct": 3.0,
+        "per_hand_full_stack_pct": 23.6,
+        "halfpot_pct": 4.98,
+        "pot_pct": 24.06,
+        "called_allin_count": 113,
+        "called_allin_ev": "+14.81 BB",
+        "uncalled_allin_count": 5,
+        "uncalled_allin_ev": "+27.50 BB"
+      },
+      "paired_diff_0h_to_7000h": {
+        "delta_bb_per_100": 79.5,
+        "ci95": [
+          -303.63,
+          462.63
+        ],
+        "raw_p_value": 0.6837,
+        "holm_p_value": 1.0
+      },
+      "paired_diff_2000h_to_7000h": {
+        "delta_bb_per_100": -115.75,
+        "ci95": [
+          -443.72,
+          212.22
+        ],
+        "raw_p_value": 0.4884
+      }
+    },
+    "Agent_D": {
+      "num_hands": 500,
+      "0h_true_noisy": {
+        "bb_per_100": 534.67,
+        "ci95_bb": 582.29,
+        "per_hand_allin_pct": 0.6,
+        "per_hand_full_stack_pct": 27.0
+      },
+      "2000h_trained": {
+        "bb_per_100": 208.8,
+        "ci95_bb": 493.76,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 21.8
+      },
+      "7000h_extended": {
+        "bb_per_100": 248.12,
+        "ci95_bb": 459.42,
+        "per_decision_allin_pct": 3.57,
+        "per_hand_allin_pct": 5.4,
+        "per_hand_full_stack_pct": 19.8,
+        "halfpot_pct": 17.72,
+        "pot_pct": 16.67,
+        "called_allin_count": 93,
+        "called_allin_ev": "+15.75 BB",
+        "uncalled_allin_count": 6,
+        "uncalled_allin_ev": "+15.92 BB"
+      },
+      "paired_diff_0h_to_7000h": {
+        "delta_bb_per_100": -286.55,
+        "ci95": [
+          -687.36,
+          114.26
+        ],
+        "raw_p_value": 0.1607,
+        "holm_p_value": 0.8037
+      },
+      "paired_diff_2000h_to_7000h": {
+        "delta_bb_per_100": 39.31,
+        "ci95": [
+          -293.71,
+          372.33
+        ],
+        "raw_p_value": 0.8167
+      }
+    },
+    "Agent_E": {
+      "num_hands": 500,
+      "0h_true_noisy": {
+        "bb_per_100": -162.15,
+        "ci95_bb": 586.26,
+        "per_hand_allin_pct": 0.0,
+        "per_hand_full_stack_pct": 30.2
+      },
+      "2000h_trained": {
+        "bb_per_100": -165.95,
+        "ci95_bb": 549.63,
+        "per_hand_allin_pct": 5.0,
+        "per_hand_full_stack_pct": 27.0
+      },
+      "7000h_extended": {
+        "bb_per_100": -230.45,
+        "ci95_bb": 511.72,
+        "per_decision_allin_pct": 3.6,
+        "per_hand_allin_pct": 5.6,
+        "per_hand_full_stack_pct": 23.4,
+        "halfpot_pct": 3.35,
+        "pot_pct": 25.61,
+        "called_allin_count": 113,
+        "called_allin_ev": "-8.82 BB",
+        "uncalled_allin_count": 4,
+        "uncalled_allin_ev": "+2.25 BB"
+      },
+      "paired_diff_0h_to_7000h": {
+        "delta_bb_per_100": -68.3,
+        "ci95": [
+          -386.36,
+          249.76
+        ],
+        "raw_p_value": 0.6733,
+        "holm_p_value": 1.0
+      },
+      "paired_diff_2000h_to_7000h": {
+        "delta_bb_per_100": -64.5,
+        "ci95": [
+          -281.42,
+          152.42
+        ],
+        "raw_p_value": 0.5593
+      }
+    }
+  },
+  "part3_league_results": {
+    "Agent_A": {
+      "league_bb_per_100": 304.21,
+      "ci95_bb": 323.11,
+      "allin_pct": 0.1,
+      "halfpot_pct": 17.02,
+      "pot_pct": 8.6
+    },
+    "Agent_B": {
+      "league_bb_per_100": 49.47,
+      "ci95_bb": 277.28,
+      "allin_pct": 2.2,
+      "halfpot_pct": 29.14,
+      "pot_pct": 3.7
+    },
+    "Agent_C": {
+      "league_bb_per_100": -291.11,
+      "ci95_bb": 334.54,
+      "allin_pct": 5.4,
+      "halfpot_pct": 4.04,
+      "pot_pct": 27.59
+    },
+    "Agent_D": {
+      "league_bb_per_100": 82.7,
+      "ci95_bb": 317.1,
+      "allin_pct": 4.3,
+      "halfpot_pct": 16.63,
+      "pot_pct": 15.02
+    },
+    "Agent_E": {
+      "league_bb_per_100": -145.26,
+      "ci95_bb": 326.17,
+      "allin_pct": 5.8,
+      "halfpot_pct": 2.34,
+      "pot_pct": 24.57
+    }
+  },
+  "checkpoint_sha256": {
+    "Agent_A_2000h": "af434b5e44ecf75aec37c120152a4250b210534f1ef3d65beac2f7d1cfbc1166",
+    "Agent_A_3000h": "9b3dfe011292e1bcd4a9cc760ea54ae9b72d1f0599720937c706105787cbcd40",
+    "Agent_A_4000h": "a6cd12bb56e79ed989a06d4dd4bfe0f3787315dd967e3b9a9953799c4d4e0dec",
+    "Agent_A_5000h": "2e07e6a4e246f7111751da7a8db3f7684f6d8027cad393406fa1232278a5f122",
+    "Agent_A_6000h": "ffe467cfd6ad3d0bfb2ea6fcc55bac5010caacce0f0f8996f0c4918f67badd39",
+    "Agent_A_7000h": "e1d6a178bb8ae6fde967f9de577462e35372a1cf3756f4028f3eeab649ba02e4",
+    "Agent_B_2000h": "a754ffda8fa7947cd7e461b76fd015ccff512818ce9a5e9fe3d902c7219ba5f2",
+    "Agent_B_3000h": "263974046a0a398525a611e8a26b79ca5e3efb9aedbcb80e57a1e99ecdbf78fe",
+    "Agent_B_4000h": "b92e44ebccf3ed824bac6c7321e9c2e63c73779322d36fa1a950f3e47e6aca40",
+    "Agent_B_5000h": "d0a592e312396a46830974a9b51b9567c5e58fa5a09303da773e86c952767588",
+    "Agent_B_6000h": "c80a54d872acc3dcb57b39ed932364e1909394e052483fae11112f07f55138f9",
+    "Agent_B_7000h": "98fe5c596031d9a9a93d2e3fe955aa83ab3ea947e8d07da275b00d69c623c0ea",
+    "Agent_C_2000h": "7763b5ab879f11e7c810ba434a2d54758d61a4a8eb9d1fc0dd670e2faefb3743",
+    "Agent_C_3000h": "990767df649ea136b86ed2084cb79ea344c54e5fa0258c71f9be081626da753d",
+    "Agent_C_4000h": "f83d955ab2b3fe33362da5f8276228827319f9a4402ad876b7e4468c9a8ae2fd",
+    "Agent_C_5000h": "a99d56485b899c86085f119d9eef98e7cb46d63b24bf5796bb804cd44cc744d6",
+    "Agent_C_6000h": "924a14aa604b3c22a45b806a116a2dd1ca5ef67b110e42fe1c37fdf22d7c1b8a",
+    "Agent_C_7000h": "fb8136e11bfd0e7b29bbccf69448ef4ba333f27b4d62d270e0228aea1fde90a7",
+    "Agent_D_2000h": "a1882c978f074385b12e3047741ea231ae9f077e248d1bcc648502084f3335ac",
+    "Agent_D_3000h": "9e1fd25aa95ecfde30dbb469e469851d8862a5ce2c40d2f346a6085c48cc63fd",
+    "Agent_D_4000h": "ff006e843acdd78f51ab01d087640a59aa4c95bbcc82ca4d2b2afc21426d48c6",
+    "Agent_D_5000h": "215a17990163c31a02dba3688d1677b7a27286f03660f2dc4ba44e447007289d",
+    "Agent_D_6000h": "f2ef6dcdc0fb9701ef95b61fe1536a432689995600be03c99e688edd6d66bf7d",
+    "Agent_D_7000h": "9daf28be21637b9d4f7bfef511f2bda25f4e30691e4cffd7c02b09b28a95ad4c",
+    "Agent_E_2000h": "f785547138b66dfd50ae06f5a5e3b5cfa68c35d1d9c783c19a1505fca55aece5",
+    "Agent_E_3000h": "47944b2d512bcc8426f72e191686623f02f5a1329726a38a01af14eeb42e29eb",
+    "Agent_E_4000h": "ba93b05252c6ff5c99bb9d52ea48a12056f288be3d061124387edd220b7fc585",
+    "Agent_E_5000h": "d10cb563656d85e1534c55069f630e89ccb0f8fb28e706ac05871c83c8f0a79f",
+    "Agent_E_6000h": "d84c8f598e93e06d7be52f315fe39dfb9f25e2cbfea0e2457ac9b1a301b9c655",
+    "Agent_E_7000h": "3b928f690771acc2dd54010bb3802390d55e9d64525d832de0477953e276989e"
+  }
+}
