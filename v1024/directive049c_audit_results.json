@@ -1,0 +1,176 @@
+{
+  "directive": "049-C",
+  "timestamp": "2026-10-26 07:27:08",
+  "total_elapsed_sec": 5.0,
+  "task1_holm_unit_test": {
+    "raw_p": [
+      0.0006,
+      0.0236,
+      0.4346,
+      0.4648,
+      0.7912
+    ],
+    "expected_p": [
+      0.003,
+      0.0944,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "actual_p": [
+      0.003,
+      0.0944,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "status": "PASS"
+  },
+  "task2_111_vs_113_delta_investigation": {
+    "count_047": 113,
+    "count_049b": 111,
+    "delta_count": 6,
+    "delta_hand_ids": [
+      215,
+      260,
+      325,
+      429,
+      465,
+      496
+    ],
+    "delta_details": [
+      {
+        "hand_id": 215,
+        "seed": 80215,
+        "seat": 4,
+        "actions_047": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "pnl_047": -100.0,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      },
+      {
+        "hand_id": 260,
+        "seed": 80260,
+        "seat": 4,
+        "actions_047": [
+          1,
+          3,
+          1
+        ],
+        "pnl_047": 101.5,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      },
+      {
+        "hand_id": 325,
+        "seed": 80325,
+        "seat": 4,
+        "actions_047": [
+          1,
+          1,
+          3
+        ],
+        "pnl_047": -100.0,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      },
+      {
+        "hand_id": 429,
+        "seed": 80429,
+        "seat": 3,
+        "actions_047": [
+          1,
+          1,
+          1,
+          3,
+          3
+        ],
+        "pnl_047": -100.0,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      },
+      {
+        "hand_id": 465,
+        "seed": 80465,
+        "seat": 4,
+        "actions_047": [
+          3,
+          5
+        ],
+        "pnl_047": 201.0,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      },
+      {
+        "hand_id": 496,
+        "seed": 80496,
+        "seat": 0,
+        "actions_047": [
+          3,
+          3,
+          5
+        ],
+        "pnl_047": 101.0,
+        "explanation": "Hero reached 99.8% stack investment via multiple preflop/flop bets; in 047 floating point tracker detected as allin, while in 049-B strict exact stack cap was within 0.1 BB boundary."
+      }
+    ]
+  },
+  "task3_pfsp_dynamic_test": {
+    "initial_uniform": {
+      "Agent_A_2000h": 0.25,
+      "Agent_B_2000h": 0.25,
+      "Agent_C_2000h": 0.25,
+      "Agent_D_2000h": 0.25
+    },
+    "after_loss": {
+      "Agent_A_2000h": 0.116594098571226,
+      "Agent_B_2000h": 0.03307258968912216,
+      "Agent_C_2000h": 0.7337392131684259,
+      "Agent_D_2000h": 0.116594098571226
+    },
+    "after_inversion": {
+      "Agent_A_2000h": 0.40350392525078826,
+      "Agent_B_2000h": 0.07190161234616817,
+      "Agent_C_2000h": 0.12109053715225536,
+      "Agent_D_2000h": 0.40350392525078826
+    },
+    "status": "PASS"
+  },
+  "task4_same_deck_factorial_crossplay": {
+    "mean_delta_bb100": -108.08,
+    "ci95_bb": 472.86,
+    "ci95_interval": [
+      -580.94,
+      364.78
+    ],
+    "p_value": 0.6543,
+    "t_stat": -0.448,
+    "verdict": "NOT_PROVEN",
+    "zero_sum_violations": 0
+  },
+  "task5_non_transitivity_audit": {
+    "cycle_observed_tendency": "Agent C exploits Agent A's tight-control in specific spots, but A wins overall league",
+    "verdict": "NON_TRANSITIVITY_NOT_PROVEN"
+  },
+  "task6_main_learner_experience_audit": {
+    "experience_stats": {
+      "Agent_C": {
+        "hands_participated": 50,
+        "decisions_made": 63,
+        "pnl_bb": 229.5
+      },
+      "Agent_A": {
+        "hands_participated": 50,
+        "decisions_made": 63,
+        "pnl_bb": -19.25
+      },
+      "Agent_B": {
+        "hands_participated": 50,
+        "decisions_made": 106,
+        "pnl_bb": 291.0
+      }
+    },
+    "zero_sum_violations": 0,
+    "frozen_immutability": "PASS"
+  }
+}
