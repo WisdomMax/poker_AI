@@ -1,124 +1,722 @@
-/* Landscape-first table: seats never share the community-card lane. */
-:root { --accent-gold:#e4c58a; --felt-color-center:#125953; --felt-color-edge:#062d30; }
-body { background:#090f18; }
-.arena-header { background:#101923; border-bottom:1px solid #34414a; gap:8px; }
-.logo-badge { background:#253b3c; color:#e4c58a; }
-.arena-header h1 { font-size:17px; letter-spacing:1px; }
-.sub-title { font-size:11px; color:#9baeb3; }
-.stat-pill { border:0; background:transparent; border-radius:0; padding:4px 10px; }
-.arena-main { padding:22px; gap:24px; }
-.poker-table { height:570px; border:12px solid #263039; outline:2px solid #9a8055; background:radial-gradient(ellipse,#145a55,#062c30); box-shadow:inset 0 0 0 2px #49766b,inset 0 0 80px #021c25,0 20px 60px #0009; }
-.table-center { position:absolute; top:31%; left:50%; transform:translateX(-50%); width:55%; gap:8px; pointer-events:none; }
-.pot-box { border:0; background:transparent; box-shadow:none; padding:0; }
-.pot-title { font-size:10px; letter-spacing:2px; color:#a3c1b8; }
-.pot-value { font-size:27px; color:#f1d8a5; }
-.pot-coin { display:none; }
-.street-help-tip { display:none; }
-.community-board-frame { padding:8px 10px; background:#061e2580; border:1px solid #73998c55; width:max-content; max-width:100%; }
-.community-header { justify-content:center; margin-bottom:8px; }
-.comm-title { font-size:10px; letter-spacing:1px; color:#b4ccc5; }
-.comm-sub { display:none; }
-.board-cards { gap:8px; min-height:0; }
-.card,.card-slot-placeholder { width:55px; height:77px; border-radius:6px; }
-.card-back { background:repeating-linear-gradient(45deg,#183e57 0 4px,#102a40 4px 8px); border:2px solid #88a3ac; box-shadow:inset 0 0 0 3px #102a40; }
-.card-slot-placeholder { border:1px dashed #96b7aa66; background:#ffffff04; }
-.ph-text { font-size:10px; color:#8fabaa; }
-.ph-icon { display:none; }
-.slot-badge { font-size:9px; }
-.player-seat { width:145px; padding:8px; background:linear-gradient(145deg,#1d2c39,#111a26); border:1px solid #4b606d; border-radius:12px; }
-.player-header { font-size:11px; white-space:nowrap; }
-.player-stack { font-size:18px; color:#dbe9e9; }
-.player-cards { gap:5px; margin-top:5px; }
-.player-seat:not(.seat-0) .card { width:32px; height:43px; }
-.player-seat:not(.seat-0) .card-center-suit { font-size:18px; }
-.player-seat:not(.seat-0) .corner-rank,.player-seat:not(.seat-0) .corner-suit { font-size:10px; }
-.player-seat:not(.seat-0) .card-corner-bottom { display:none; }
-.seat-0,.seat-0.active { bottom:12px; left:50%; transform:translateX(-50%); width:175px; }
-.seat-1 { top:18%; left:3%; }
-.seat-2,.seat-2.active { top:10px; left:50%; transform:translateX(-50%); }
-.seat-3 { top:18%; right:3%; }
-.seat-4 { bottom:12%; right:3%; }
-.player-seat.active { transform:none; border-color:#e4c58a; box-shadow:0 0 0 2px #e4c58a44,0 0 24px #e4c58a22; }
-.seat-0.active,.seat-2.active { transform:translateX(-50%); }
-.hero-hand-badge { font-size:9px; background:transparent; color:#89c9c5; padding:1px; }
-.player-bet-badge { position:absolute; top:100%; margin-top:3px; background:#10252d; border:1px solid #c0a16a; color:#ead4a6; font-size:10px; }
-.control-panel { background:#111c28; border:1px solid #354754; padding:10px; }
-.btn-action { border-radius:9px; min-height:60px; padding:8px 4px; }
-.btn-action .btn-icon { display:none; }
-.btn-text { font-size:12px; }
-.btn-action:disabled { opacity:.36; }
-.btn-call { background:#207e79; }
-.btn-raise { background:#263f56; }
-.btn-fold { background:#543446; }
-.btn-allin { background:#a67a35; }
-.btn-next-hand { background:#d9be87; color:#18252a; min-height:42px; font-size:13px; }
-.winner-banner { position:fixed; top:12%; left:50%; transform:translateX(-50%); width:min(540px,85vw); z-index:30; background:#102c2af5; border:1px solid #e4c58a; border-radius:16px; box-shadow:0 12px 45px #0009; }
-.turn-banner { position:fixed; bottom:12px; left:20px; z-index:20; padding:6px 12px; font-size:11px; background:#133c3e; border:1px solid #5d9c94; }
-.action-call,.action-raise,.action-allin,.action-check,.action-fold { animation:seat-action 1.1s ease-out; }
-.action-caption { position:absolute; top:-25px; padding:4px 10px; border-radius:20px; background:#e4c58a; color:#13292f; font-size:11px; font-weight:800; white-space:nowrap; }
-.chip-flight { position:absolute; left:50%; top:75%; width:18px; height:18px; border:3px dashed #fff2ce; background:#c29350; border-radius:50%; z-index:22; animation:chip-flight .85s ease-in forwards; pointer-events:none; }
-.pot-award { animation:pot-award 1.5s ease-out; }
-@keyframes chip-flight { to { left:var(--chip-x); top:var(--chip-y); opacity:0; transform:scale(.6) rotate(220deg); } }
-@keyframes seat-action { 30% { box-shadow:0 0 0 4px #e4c58a77,0 0 35px #e4c58a55; } }
-@keyframes pot-award { 30% { filter:brightness(1.7); } }
-@media (orientation:landscape) and (max-height:600px) {
- body,.app-container { height:100dvh; min-height:0; overflow:hidden; }
- .arena-header { height:48px; min-height:48px; padding:4px 12px; flex-wrap:nowrap; }
- .logo-area { display:none; }
- .header-stats { width:100%; gap:4px; flex-wrap:nowrap; justify-content:space-between; }
- .stat-pill { font-size:10px; padding:2px 4px; }
- .stat-pill strong { font-size:13px; }
- .stat-pill:nth-child(3),.stat-pill:nth-child(5) { display:none; }
- .ux-control-group { padding:0; gap:4px; }
- .ux-control-group button,.btn-reset { font-size:10px; padding:5px 7px; min-height:32px; }
- .audio-volume-slider { width:44px; }
- .arena-main { flex:1; min-height:0; padding:7px 14px; display:flex; }
- .arena-sidebar,.arena-footer { display:none; }
- .table-container { flex:1; min-height:0; gap:7px; display:flex; flex-direction:column; }
- .poker-table { flex:1; height:auto; min-height:0; max-height:none; border-width:7px; border-radius:140px; }
- .table-center { top:26%; width:50%; gap:2px; }
- .pot-value { font-size:20px; }
- .pot-title { font-size:8px; }
- .street-badge { font-size:10px; padding:2px 8px; }
- .community-board-frame { padding:4px 7px; }
- .community-header { display:none; }
- .board-cards { gap:6px; }
- .card,.card-slot-placeholder { width:38px; height:53px; }
- .card-center-suit { font-size:25px; }
- .corner-rank,.corner-suit { font-size:12px; }
- .card-corner-bottom { display:none; }
- .slot-badge { font-size:8px; padding:0; margin-bottom:2px; }
- .player-seat { width:117px; padding:4px; }
- .player-header { font-size:9px; }
- .player-stack { font-size:13px; }
- .player-seat:not(.seat-0) .card { width:23px; height:30px; }
- .player-seat:not(.seat-0) .card-corner { display:none; }
- .player-seat:not(.seat-0) .card-center-suit { font-size:18px; }
- .seat-1 { top:13%; left:2%; transform:none; }
- .seat-2,.seat-2.active { top:1px; left:50%; transform:translateX(-50%); }
- .seat-3 { top:13%; right:2%; transform:none; }
- .seat-4 { bottom:6%; right:2%; transform:none; }
- .seat-0,.seat-0.active { bottom:0; left:21%; width:149px; transform:translateX(-50%); flex-direction:row; flex-wrap:wrap; justify-content:center; gap:2px 6px; }
- .seat-0 .player-cards { margin:0; }
- .seat-0 .player-header { width:100%; }
- .seat-0 .hero-hand-badge { display:none; }
- .seat-0 .card { width:31px; height:42px; }
- .control-panel { padding:5px; min-height:0; display:grid; grid-template-columns:1fr 106px; gap:6px; width:100%; }
- .action-buttons-grid { gap:5px; grid-template-columns:repeat(6,minmax(0,1fr)); }
- .btn-action { min-height:44px; height:44px; padding:3px; }
- .btn-text { font-size:10px; line-height:1.25; }
- .btn-guide-hint { display:none; }
- .next-hand-bar { margin:0; }
- .btn-next-hand { height:44px; min-height:44px; padding:4px; font-size:10px; }
- .table-notice-bar { grid-column:1/-1; font-size:8px; padding:0; margin:0; }
- .turn-banner { bottom:80px; left:15px; font-size:9px; padding:3px 8px; max-width:220px; }
- .winner-banner { top:55px; padding:10px; font-size:13px; }
+/* ==========================================================================
+   POKER AI HUMAN ARENA: PREMIUM RESPONSIVE CASINO SUITE
+   - PC 대화면 (min-width: 1025px): 풀 와이드 웅장한 테이블 & 큼직한 정통 카지노 카드
+   - 모바일 가로모드 (landscape & max-height: 600px): 100% 무스크롤 핏 & 겹침 없는 독립 레인
+   - 카드 그래픽: 절대좌표 기반 무결점 포커 카드 (뭉개짐/깨짐 원천 차단)
+   ========================================================================== */
+
+:root {
+    --accent-gold: #e4c58a;
+    --felt-color-center: #125953;
+    --felt-color-edge: #062d30;
+    --card-border-radius: 8px;
 }
-@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
-@media (orientation:landscape) and (max-height:600px) {
- .seat-0,.seat-0.active { left:18%; }
- .pot-title { visibility:hidden; }
+
+body {
+    background: #090f18;
+    color: #f8fafc;
 }
-@media (min-height:601px) { .table-center { top:24%; } }
-.winner-banner { animation:winner-reveal .4s ease-out; }
-@keyframes winner-reveal { from { opacity:0; } to { opacity:1; } }
+
+/* ==========================================================================
+   1. 정통 카지노 포커 카드 무결점 그래픽 (글자·수트 겹침 100% 방지)
+   ========================================================================== */
+
+.card {
+    position: relative;
+    background: #ffffff;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+    border: 1px solid #cbd5e1;
+    overflow: hidden;
+    user-select: none;
+    box-sizing: border-box;
+    display: block;
+}
+
+.card.red {
+    color: #dc2626;
+}
+
+.card.black {
+    color: #0f172a;
+}
+
+.card-back, .card.hidden {
+    background: repeating-linear-gradient(45deg, #183e57 0 4px, #102a40 4px 8px) !important;
+    border: 2px solid #88a3ac !important;
+    box-shadow: inset 0 0 0 3px #102a40 !important;
+}
+
+.card-slot-placeholder {
+    border: 1.5px dashed rgba(150, 183, 170, 0.45);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.ph-text, .placeholder-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8fabaa;
+}
+
+.ph-icon, .placeholder-icon {
+    display: none;
+}
+
+/* 좌상단 코너 */
+.card .card-corner-top {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* 우하단 코너 */
+.card .card-corner-bottom {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    transform: rotate(180deg);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.card .corner-rank {
+    font-weight: 900;
+    line-height: 1;
+}
+
+.card .corner-suit {
+    line-height: 1;
+}
+
+/* 정중앙 메인 수트 */
+.card .card-center-suit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 플레이어 좌석의 카드는 우하단 코너를 숨겨서 내부 겹침을 원천 차단 */
+.player-seat .card .card-corner-bottom {
+    display: none !important;
+}
+
+/* ==========================================================================
+   2. 상단 헤더 & 애니메이션 효과
+   ========================================================================== */
+
+.arena-header {
+    background: #101923;
+    border-bottom: 1px solid #34414a;
+    gap: 8px;
+}
+
+.logo-badge {
+    background: #253b3c;
+    color: #e4c58a;
+}
+
+.arena-header h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.sub-title {
+    font-size: 12px;
+    color: #9baeb3;
+}
+
+.stat-pill {
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 4px 12px;
+}
+
+.action-call, .action-raise, .action-allin, .action-check, .action-fold {
+    animation: seat-action 1.1s ease-out;
+}
+
+.action-caption {
+    position: absolute;
+    top: -26px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #e4c58a;
+    color: #13292f;
+    font-size: 11px;
+    font-weight: 900;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.chip-flight {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px dashed #fff2ce;
+    background: #c29350;
+    border-radius: 50%;
+    z-index: 25;
+    animation: chip-flight 0.85s ease-in forwards;
+    pointer-events: none;
+}
+
+.pot-award {
+    animation: pot-award 1.5s ease-out;
+}
+
+@keyframes chip-flight {
+    to {
+        left: var(--chip-x);
+        top: var(--chip-y);
+        opacity: 0;
+        transform: scale(0.6) rotate(220deg);
+    }
+}
+
+@keyframes seat-action {
+    30% {
+        box-shadow: 0 0 0 4px #e4c58a77, 0 0 35px #e4c58a55;
+    }
+}
+
+@keyframes pot-award {
+    30% {
+        filter: brightness(1.7);
+    }
+}
+
+.winner-banner {
+    position: fixed;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(580px, 90vw);
+    z-index: 30;
+    background: rgba(16, 44, 42, 0.96);
+    border: 2px solid #e4c58a;
+    border-radius: 16px;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.8);
+    animation: winner-reveal 0.4s ease-out;
+}
+
+@keyframes winner-reveal {
+    from { opacity: 0; transform: translate(-50%, -10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.turn-banner {
+    position: fixed;
+    bottom: 14px;
+    left: 20px;
+    z-index: 20;
+    padding: 6px 14px;
+    font-size: 12px;
+    background: #133c3e;
+    border: 1px solid #5d9c94;
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+   3. PC / 데스크톱 대화면 전용 스타일 (min-width: 1025px)
+   - 시원하고 웅장한 카지노 테이블 풀 와이드
+   - 큼직한 공용 카드(76x108px) & Hero 카드(72x102px)
+   ========================================================================== */
+
+@media (min-width: 1025px) {
+    .app-container {
+        width: 100%;
+        max-width: 1720px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arena-main {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        padding: 16px 24px;
+        flex: 1;
+        align-items: stretch;
+    }
+
+    .table-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* 웅장한 대형 포커 테이블 (PC 풀화면) */
+    .poker-table {
+        width: 100%;
+        height: 720px;
+        max-height: calc(100vh - 190px);
+        background: radial-gradient(ellipse at center, #145a55 0%, #062c30 80%);
+        border: 16px solid #263039;
+        outline: 3px solid #9a8055;
+        border-radius: 360px;
+        box-shadow: inset 0 0 0 3px #49766b, inset 0 0 100px #021c25, 0 20px 60px rgba(0,0,0,0.7);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 테이블 중앙 공용 카드 & 팟 (PC) - 웅장하고 넓은 중앙 레인 */
+    .table-center {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .pot-box {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    .pot-title {
+        font-size: 11px;
+        letter-spacing: 2px;
+        color: #a3c1b8;
+        font-weight: 700;
+    }
+
+    .pot-value {
+        font-size: 28px;
+        font-weight: 900;
+        color: #f1d8a5;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .street-badge {
+        font-size: 12px;
+        background: rgba(6, 30, 37, 0.85);
+        border: 1px solid rgba(115, 153, 140, 0.4);
+        padding: 2px 12px;
+        border-radius: 10px;
+        color: #e2e8f0;
+    }
+
+    .community-board-frame {
+        padding: 8px 14px 10px 14px;
+        background: rgba(6, 30, 37, 0.85);
+        border: 1px solid rgba(115, 153, 140, 0.45);
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .community-header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+
+    .comm-title {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: #b4ccc5;
+        font-weight: 800;
+    }
+
+    .board-cards {
+        gap: 8px;
+    }
+
+    /* PC 공용 카드 크기: 68px x 96px */
+    .board-cards .card, .board-cards .card-slot-placeholder {
+        width: 68px;
+        height: 96px;
+        border-radius: 7px;
+    }
+
+    .board-cards .card .corner-rank { font-size: 19px; }
+    .board-cards .card .corner-suit { font-size: 15px; }
+    .board-cards .card .card-center-suit { font-size: 30px; }
+    .board-cards .slot-badge { font-size: 10px; padding: 1px 5px; }
+
+    /* 플레이어 좌석 (PC) */
+    .player-seat {
+        position: absolute;
+        width: 155px;
+        padding: 6px 8px;
+        background: linear-gradient(145deg, #1d2c39, #111a26);
+        border: 1.5px solid #4b606d;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .player-header { font-size: 12px; font-weight: 800; }
+    .player-stack { font-size: 18px; font-weight: 900; color: #dbe9e9; margin: 1px 0 3px 0; }
+    .player-cards { display: flex; gap: 6px; }
+
+    /* Hero(나) 좌석 (PC): 하단 중앙 넉넉한 배치 */
+    .seat-0 {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 185px;
+        padding: 6px 12px;
+        border-color: #38bdf8;
+        z-index: 12;
+    }
+    .seat-0.active {
+        transform: translateX(-50%) scale(1.03);
+        box-shadow: 0 0 30px rgba(56, 189, 248, 0.7);
+    }
+    .seat-0 .hero-hand-badge {
+        font-size: 10px;
+        font-weight: 800;
+        background: #0284c7;
+        color: #fff;
+        padding: 1px 8px;
+        border-radius: 6px;
+        margin-bottom: 2px;
+    }
+
+    /* Hero 카드 크기 (PC): 64px x 90px */
+    .seat-0 .card {
+        width: 64px;
+        height: 90px;
+    }
+    .seat-0 .card .corner-rank { font-size: 18px; }
+    .seat-0 .card .corner-suit { font-size: 14px; }
+    .seat-0 .card .card-center-suit { font-size: 28px; }
+
+    /* AI 좌석 카드 (PC): 44px x 62px */
+    .player-seat:not(.seat-0) .card {
+        width: 44px;
+        height: 62px;
+    }
+    .player-seat:not(.seat-0) .card .corner-rank { font-size: 15px; }
+    .player-seat:not(.seat-0) .card .corner-suit { font-size: 12px; }
+    .player-seat:not(.seat-0) .card .card-center-suit { font-size: 20px; }
+
+    /* PC 좌석 위치 (정통 5인 포커스타즈 스타일: 좌측 2명 / 우측 2명 / 하단 나 1명) */
+    .seat-1 {
+        top: 40px;
+        bottom: auto;
+        left: 45px;
+        right: auto;
+        transform: none;
+    }
+    .seat-2 {
+        top: auto;
+        bottom: 50px;
+        left: 45px;
+        right: auto;
+        transform: none;
+    }
+    .seat-3 {
+        top: 40px;
+        bottom: auto;
+        right: 45px;
+        left: auto;
+        transform: none;
+    }
+    .seat-4 {
+        top: auto;
+        bottom: 50px;
+        right: 45px;
+        left: auto;
+        transform: none;
+    }
+
+    .seat-1.active, .seat-2.active, .seat-3.active, .seat-4.active {
+        transform: scale(1.04);
+    }
+
+    .seat-1.active, .seat-2.active, .seat-3.active, .seat-4.active {
+        transform: scale(1.04);
+    }
+
+    .player-seat.active {
+        border-color: #e4c58a;
+        box-shadow: 0 0 0 2px rgba(228, 197, 138, 0.4), 0 0 25px rgba(228, 197, 138, 0.3);
+    }
+
+    /* 우측 사이드바 상시 노출 (PC) */
+    .arena-sidebar {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* 하단 컨트롤 패널 (PC) */
+    .control-panel {
+        width: 100%;
+        max-width: 1080px;
+        background: #111c28;
+        border: 1px solid #354754;
+        border-radius: 16px;
+        padding: 14px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-buttons-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    .btn-action {
+        min-height: 62px;
+        padding: 8px 6px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .btn-text { font-size: 13px; font-weight: 800; }
+    .btn-guide-hint { font-size: 11px; }
+
+    .btn-call { background: #207e79; }
+    .btn-raise { background: #263f56; }
+    .btn-fold { background: #543446; }
+    .btn-allin { background: #a67a35; }
+    .btn-next-hand { background: #d9be87; color: #18252a; min-height: 48px; font-size: 16px; font-weight: 900; }
+}
+
+/* ==========================================================================
+   4. 모바일 가로모드 전용 스타일 (landscape & max-height: 600px)
+   - 100vw x 100vh 무스크롤 핏 (390px 높이)
+   - 공용 카드와 Hero 좌석 독립 레인 확보 (겹침 0건)
+   - 카드 글자 겹침 원천 차단
+   ========================================================================== */
+
+@media (orientation: landscape) and (max-height: 600px) {
+    html, body, .app-container {
+        height: 100dvh;
+        min-height: 0;
+        overflow: hidden !important;
+    }
+
+    .arena-header {
+        height: 44px;
+        min-height: 44px;
+        padding: 3px 12px;
+        flex-wrap: nowrap;
+    }
+
+    .logo-area { display: none; }
+    .header-stats { width: 100%; gap: 4px; flex-wrap: nowrap; justify-content: space-between; }
+    .stat-pill { font-size: 10px; padding: 2px 6px; }
+    .stat-pill strong { font-size: 13px; }
+    .stat-pill:nth-child(3), .stat-pill:nth-child(5) { display: none; }
+    .ux-control-group { padding: 0; gap: 4px; }
+    .ux-control-group button, .btn-reset { font-size: 10px; padding: 4px 7px; min-height: 30px; }
+    .audio-volume-slider { width: 40px; }
+
+    .arena-main {
+        flex: 1;
+        min-height: 0;
+        padding: 6px 12px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .arena-sidebar, .arena-footer {
+        display: none !important;
+    }
+
+    .table-container {
+        flex: 1;
+        min-height: 0;
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* 모바일 테이블 */
+    .poker-table {
+        flex: 1;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        border-width: 8px;
+        border-radius: 140px;
+        border-color: #263039;
+        outline: 2px solid #9a8055;
+        background: radial-gradient(ellipse, #145a55, #062c30);
+        position: relative;
+    }
+
+    /* 테이블 중앙 */
+    .table-center {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        gap: 3px;
+        pointer-events: none;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pot-box { border: none; background: transparent; box-shadow: none; padding: 0; }
+    .pot-title { visibility: hidden; height: 0; margin: 0; }
+    .pot-value { font-size: 20px; font-weight: 900; color: #f1d8a5; }
+    .street-badge { font-size: 10px; padding: 1px 8px; }
+    .community-board-frame { padding: 4px 8px; background: rgba(6, 30, 37, 0.8); border: 1px solid rgba(115, 153, 140, 0.4); border-radius: 10px; }
+    .community-header { display: none; }
+    .board-cards { gap: 6px; min-height: 0; }
+
+    /* 모바일 공용 카드: 40px x 56px */
+    .board-cards .card, .board-cards .card-slot-placeholder {
+        width: 40px;
+        height: 56px;
+        border-radius: 5px;
+    }
+    .board-cards .card .corner-rank { font-size: 13px; font-weight: 900; }
+    .board-cards .card .corner-suit { font-size: 11px; }
+    .board-cards .card .card-center-suit { font-size: 20px; }
+    .board-cards .slot-badge { font-size: 8px; padding: 0 2px; }
+
+    /* 모바일 좌석 배치 (중앙과 겹침 0건 보장) */
+    .player-seat {
+        position: absolute;
+        width: 116px;
+        padding: 4px;
+        border-radius: 10px;
+        background: linear-gradient(145deg, #1d2c39, #111a26);
+        border: 1px solid #4b606d;
+        z-index: 5;
+    }
+
+    .player-header { font-size: 9px; font-weight: 800; white-space: nowrap; }
+    .player-stack { font-size: 13px; font-weight: 900; color: #dbe9e9; margin: 1px 0; }
+    .player-cards { display: flex; gap: 4px; }
+
+    /* 모바일 AI 카드: 28px x 40px (글자 겹침 0% 차단) */
+    .player-seat:not(.seat-0) .card {
+        width: 28px;
+        height: 40px;
+        border-radius: 4px;
+    }
+    .player-seat:not(.seat-0) .card .card-corner-top { top: 2px; left: 2px; }
+    .player-seat:not(.seat-0) .card .corner-rank { font-size: 11px; font-weight: 900; }
+    .player-seat:not(.seat-0) .card .corner-suit { font-size: 9px; }
+    .player-seat:not(.seat-0) .card .card-center-suit { font-size: 14px; top: 54%; left: 56%; }
+
+    /* Hero(나) 좌석 (모바일): 좌측 하단 배치로 중앙 공용 카드와 겹침 원천 차단 */
+    .seat-0, .seat-0.active {
+        bottom: 2px;
+        left: 19%;
+        width: 146px;
+        transform: translateX(-50%);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px 6px;
+        padding: 3px 6px;
+        z-index: 12;
+    }
+    .seat-0 .player-header { width: 100%; text-align: center; font-size: 9px; }
+    .seat-0 .hero-hand-badge { display: none; }
+    .seat-0 .player-cards { margin: 0; }
+
+    /* Hero 카드 (모바일): 32px x 45px (또렷한 시인성) */
+    .seat-0 .card {
+        width: 32px;
+        height: 45px;
+        border-radius: 4px;
+    }
+    .seat-0 .card .card-corner-top { top: 2px; left: 3px; }
+    .seat-0 .card .corner-rank { font-size: 13px; font-weight: 900; }
+    .seat-0 .card .corner-suit { font-size: 10px; }
+    .seat-0 .card .card-center-suit { font-size: 16px; top: 54%; left: 56%; }
+
+    /* 좌석 위치 (모바일) */
+    .seat-1 { top: 12%; left: 2%; }
+    .seat-2, .seat-2.active { top: 1px; left: 50%; transform: translateX(-50%); }
+    .seat-3 { top: 12%; right: 2%; }
+    .seat-4 { bottom: 6%; right: 2%; }
+
+    /* 하단 조작 패널 (모바일 핏) */
+    .control-panel {
+        padding: 4px 6px;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 1fr 108px;
+        gap: 5px;
+        width: 100%;
+        background: #111c28;
+        border: 1px solid #354754;
+        border-radius: 8px;
+    }
+
+    .action-buttons-grid {
+        gap: 4px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .btn-action {
+        min-height: 44px;
+        height: 44px;
+        padding: 2px;
+        border-radius: 6px;
+    }
+
+    .btn-text { font-size: 10px; line-height: 1.2; font-weight: 800; }
+    .btn-guide-hint { display: none; }
+    .next-hand-bar { margin: 0; }
+    .btn-next-hand { height: 44px; min-height: 44px; padding: 4px; font-size: 10px; font-weight: 900; }
+    .table-notice-bar { grid-column: 1 / -1; font-size: 8px; padding: 0; margin: 0; }
+    .turn-banner { bottom: 75px; left: 12px; font-size: 9px; padding: 3px 8px; max-width: 210px; }
+    .winner-banner { top: 48px; padding: 8px; font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
