@@ -208,7 +208,7 @@ ChatGPT가 지적했던 Agent E 232번째 평가 핸드 (Seed 80232) 원시 JSON
 - **전액 투자율**: 2000h 22.8% ~ 29.6% (과거 70k 39.9% 대비 10.3%p ~ 17.1%p 대폭 격감).
 
 ### ⑥ 재현용 코드 및 GitHub 커밋
-- **최신 커밋**: `4fe5f9a` (https://github.com/WisdomMax/poker_AI/commit/4fe5f9a)
+- **최신 커밋**: `8366232` (https://github.com/WisdomMax/poker_AI/commit/8366232)
 - **회귀 테스트**: `v1024/tests/test_directive046_evaluator_integrity.py`
 - **평가기 실행 스크립트**: `v1024/audit_directive046_flawless_evaluator.py`
 - **원시 데이터**: `v1024/data/directive046_raw_audit_hands.jsonl`
