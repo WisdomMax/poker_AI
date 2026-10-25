@@ -1,0 +1,279 @@
+{
+  "directive": "DIRECTIVE_040",
+  "opponent": "Symmetric_Top20_Heuristic (262 combos, 19.76%, bias 0.0%)",
+  "num_hands": 1000,
+  "base_seed": 999000,
+  "Jenny_Cycle13": {
+    "model_name": "Jenny_Cycle13",
+    "num_hands": 1000,
+    "bb_per_100": 201.2,
+    "ci95": 396.24,
+    "mean_bb_per_hand": 2.012,
+    "std_bb_per_hand": 63.929,
+    "total_pnl_bb": 2012.0,
+    "max_drawdown_bb": 1081.0,
+    "vpip_pct": 53.6,
+    "pfr_pct": 42.9,
+    "three_bet_pct": 9.7,
+    "allin_total": 458,
+    "preflop_allin": 332,
+    "postflop_allin": 126,
+    "showdown_count": 285,
+    "wsd_pct": 40.35,
+    "called_allin_count": 247,
+    "called_allin_ev_bb": -9.93,
+    "called_allin_records": [
+      {
+        "hand_idx": 0,
+        "seed": 999000,
+        "seat": 0,
+        "callers": [
+          "P2:Qd+Td(call $1100.0)",
+          "P3:Kc+8c(call $1100.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 16,
+        "seed": 999016,
+        "seat": 1,
+        "callers": [
+          "P3:Ah+Ac(call $9775.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 17,
+        "seed": 999017,
+        "seat": 2,
+        "callers": [
+          "P3:Jc+9c(call $10000.0)"
+        ],
+        "pnl_bb": 101.5
+      },
+      {
+        "hand_idx": 18,
+        "seed": 999018,
+        "seat": 3,
+        "callers": [
+          "P0:Kd+Qs(call $9950.0)"
+        ],
+        "pnl_bb": 101.0
+      },
+      {
+        "hand_idx": 20,
+        "seed": 999020,
+        "seat": 0,
+        "callers": [
+          "P2:9s+9c(call $9775.0)",
+          "P3:Ah+3h(call $9475.0)",
+          "P4:Kd+Js(call $9475.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 23,
+        "seed": 999023,
+        "seat": 3,
+        "callers": [
+          "P4:Ad+Ks(call $10000.0)",
+          "P1:Qc+Jd(call $9900.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 26,
+        "seed": 999026,
+        "seat": 1,
+        "callers": [
+          "P2:Js+Jh(call $9775.0)",
+          "P0:8s+8h(call $9775.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 30,
+        "seed": 999030,
+        "seat": 0,
+        "callers": [
+          "P1:Td+9d(call $9900.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 33,
+        "seed": 999033,
+        "seat": 3,
+        "callers": [
+          "P4:Jh+Jd(call $10000.0)"
+        ],
+        "pnl_bb": 102.5
+      },
+      {
+        "hand_idx": 40,
+        "seed": 999040,
+        "seat": 0,
+        "callers": [
+          "P3:8d+7d(call $9725.0)"
+        ],
+        "pnl_bb": 102.0
+      }
+    ],
+    "uncalled_allin_count": 211,
+    "uncalled_allin_ev_bb": 22.87,
+    "street_reach_counts": {
+      "Preflop": 1000,
+      "Flop": 508,
+      "Turn": 436,
+      "River": 392
+    },
+    "action_counts": {
+      "1": 203,
+      "3": 129,
+      "0": 494,
+      "5": 398,
+      "4": 207
+    },
+    "avg_entropy": 0.0659
+  },
+  "E2E_PPO_50k": {
+    "model_name": "E2E_PPO_50k",
+    "num_hands": 1000,
+    "bb_per_100": 934.07,
+    "ci95": 446.58,
+    "mean_bb_per_hand": 9.3407,
+    "std_bb_per_hand": 72.0509,
+    "total_pnl_bb": 9340.72,
+    "max_drawdown_bb": 734.75,
+    "vpip_pct": 47.0,
+    "pfr_pct": 29.3,
+    "three_bet_pct": 9.8,
+    "allin_total": 286,
+    "preflop_allin": 63,
+    "postflop_allin": 223,
+    "showdown_count": 352,
+    "wsd_pct": 42.9,
+    "called_allin_count": 146,
+    "called_allin_ev_bb": 17.52,
+    "called_allin_records": [
+      {
+        "hand_idx": 10,
+        "seed": 999010,
+        "seat": 0,
+        "callers": [
+          "P2:9s+7s(call $1950.0)"
+        ],
+        "pnl_bb": 101.0
+      },
+      {
+        "hand_idx": 16,
+        "seed": 999016,
+        "seat": 1,
+        "callers": [
+          "P3:Ah+Ac(call $1025.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 20,
+        "seed": 999020,
+        "seat": 0,
+        "callers": [
+          "P2:9s+9c(call $4575.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 23,
+        "seed": 999023,
+        "seat": 3,
+        "callers": [
+          "P4:Ad+Ks(call $3950.0)",
+          "P1:Qc+Jd(call $3950.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 26,
+        "seed": 999026,
+        "seat": 1,
+        "callers": [
+          "P2:Js+Jh(call $6175.0)",
+          "P0:8s+8h(call $6175.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 30,
+        "seed": 999030,
+        "seat": 0,
+        "callers": [
+          "P1:Td+9d(call $2775.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 50,
+        "seed": 999050,
+        "seat": 0,
+        "callers": [
+          "P2:Ac+2c(call $8100.0)",
+          "P3:As+Ad(call $5200.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 51,
+        "seed": 999051,
+        "seat": 1,
+        "callers": [
+          "P3:Ah+8h(call $3275.0)"
+        ],
+        "pnl_bb": -100.0
+      },
+      {
+        "hand_idx": 58,
+        "seed": 999058,
+        "seat": 3,
+        "callers": [
+          "P2:As+5s(call $5650.0)"
+        ],
+        "pnl_bb": 145.0
+      },
+      {
+        "hand_idx": 67,
+        "seed": 999067,
+        "seat": 2,
+        "callers": [
+          "P1:8c+7c(call $4150.0)"
+        ],
+        "pnl_bb": 159.0
+      }
+    ],
+    "uncalled_allin_count": 140,
+    "uncalled_allin_ev_bb": 51.33,
+    "street_reach_counts": {
+      "Preflop": 1000,
+      "Flop": 761,
+      "Turn": 707,
+      "River": 651
+    },
+    "action_counts": {
+      "1": 504,
+      "3": 1265,
+      "0": 521,
+      "4": 13,
+      "2": 2,
+      "5": 5
+    },
+    "avg_entropy": 0.1674
+  },
+  "paired_difference": {
+    "mean_diff_bb_per_hand": 7.3287,
+    "std_diff_bb_per_hand": 57.9616,
+    "paired_diff_bb_per_100": 732.87,
+    "paired_ci95_bb_per_100": 359.25,
+    "ci95_lower_bb_per_100": 373.62,
+    "ci95_upper_bb_per_100": 1092.12
+  }
+}
