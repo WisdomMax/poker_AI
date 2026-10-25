@@ -1,0 +1,362 @@
+{
+  "directive": "DIRECTIVE 045: MULTI-AGENT EVALUATOR INTEGRITY RECOVERY",
+  "timestamp": "2026-10-26 05:28:52",
+  "total_elapsed_sec": 72.23,
+  "pilot_base_seed": 430000,
+  "base_50k_path": "v1024/models_e2e/PPO_E2E_Final_50k.pt",
+  "part1_true_0h_disentanglement": {
+    "Agent_A": {
+      "num_hands": 500,
+      "true_0h_noisy": {
+        "bb_per_100": -97.25,
+        "ci95_bb": 611.59,
+        "per_decision_act5_pct": 0.22,
+        "per_hand_direct_act5_pct": 0.4,
+        "per_hand_full_stack_pct": 34.4,
+        "hand_breakdown": {
+          "push_allin_hands": 2,
+          "called_allin_hands": 89,
+          "commit_allin_hands": 81
+        }
+      },
+      "trained_2000h": {
+        "bb_per_100": 184.0,
+        "ci95_bb": 571.57,
+        "per_decision_act5_pct": 0.9,
+        "per_hand_direct_act5_pct": 1.6,
+        "per_hand_full_stack_pct": 28.6,
+        "hand_breakdown": {
+          "push_allin_hands": 8,
+          "called_allin_hands": 82,
+          "commit_allin_hands": 53
+        },
+        "allin_showdown_stats": {
+          "called_allin_count": 7,
+          "called_allin_ev": "-13.64 BB",
+          "uncalled_push_count": 1,
+          "uncalled_push_ev": "+1.50 BB"
+        }
+      },
+      "paired_difference": {
+        "delta_bb_per_100": 281.25,
+        "ci95": [
+          42.14,
+          520.36
+        ],
+        "raw_p_value": 0.0212,
+        "holm_adjusted_p_value": 0.1062,
+        "is_statistically_significant_holm": false
+      }
+    },
+    "Agent_B": {
+      "num_hands": 500,
+      "true_0h_noisy": {
+        "bb_per_100": -93.9,
+        "ci95_bb": 615.82,
+        "per_decision_act5_pct": 0.0,
+        "per_hand_direct_act5_pct": 0.0,
+        "per_hand_full_stack_pct": 31.4,
+        "hand_breakdown": {
+          "push_allin_hands": 0,
+          "called_allin_hands": 87,
+          "commit_allin_hands": 70
+        }
+      },
+      "trained_2000h": {
+        "bb_per_100": 13.5,
+        "ci95_bb": 552.53,
+        "per_decision_act5_pct": 0.0,
+        "per_hand_direct_act5_pct": 0.0,
+        "per_hand_full_stack_pct": 24.4,
+        "hand_breakdown": {
+          "push_allin_hands": 0,
+          "called_allin_hands": 53,
+          "commit_allin_hands": 69
+        },
+        "allin_showdown_stats": {
+          "called_allin_count": 0,
+          "called_allin_ev": "N/A",
+          "uncalled_push_count": 0,
+          "uncalled_push_ev": "N/A"
+        }
+      },
+      "paired_difference": {
+        "delta_bb_per_100": 107.4,
+        "ci95": [
+          -186.39,
+          401.19
+        ],
+        "raw_p_value": 0.4729,
+        "holm_adjusted_p_value": 1.0,
+        "is_statistically_significant_holm": false
+      }
+    },
+    "Agent_C": {
+      "num_hands": 500,
+      "true_0h_noisy": {
+        "bb_per_100": 191.45,
+        "ci95_bb": 643.08,
+        "per_decision_act5_pct": 0.0,
+        "per_hand_direct_act5_pct": 0.0,
+        "per_hand_full_stack_pct": 33.2,
+        "hand_breakdown": {
+          "push_allin_hands": 0,
+          "called_allin_hands": 92,
+          "commit_allin_hands": 74
+        }
+      },
+      "trained_2000h": {
+        "bb_per_100": 130.2,
+        "ci95_bb": 588.66,
+        "per_decision_act5_pct": 1.27,
+        "per_hand_direct_act5_pct": 2.2,
+        "per_hand_full_stack_pct": 29.6,
+        "hand_breakdown": {
+          "push_allin_hands": 11,
+          "called_allin_hands": 66,
+          "commit_allin_hands": 71
+        },
+        "allin_showdown_stats": {
+          "called_allin_count": 10,
+          "called_allin_ev": "+40.45 BB",
+          "uncalled_push_count": 1,
+          "uncalled_push_ev": "+4.00 BB"
+        }
+      },
+      "paired_difference": {
+        "delta_bb_per_100": -61.25,
+        "ci95": [
+          -325.08,
+          202.58
+        ],
+        "raw_p_value": 0.6485,
+        "holm_adjusted_p_value": 1.0,
+        "is_statistically_significant_holm": false
+      }
+    },
+    "Agent_D": {
+      "num_hands": 500,
+      "true_0h_noisy": {
+        "bb_per_100": 385.45,
+        "ci95_bb": 614.46,
+        "per_decision_act5_pct": 0.11,
+        "per_hand_direct_act5_pct": 0.2,
+        "per_hand_full_stack_pct": 29.8,
+        "hand_breakdown": {
+          "push_allin_hands": 1,
+          "called_allin_hands": 84,
+          "commit_allin_hands": 64
+        }
+      },
+      "trained_2000h": {
+        "bb_per_100": 182.64,
+        "ci95_bb": 513.14,
+        "per_decision_act5_pct": 0.0,
+        "per_hand_direct_act5_pct": 0.0,
+        "per_hand_full_stack_pct": 22.8,
+        "hand_breakdown": {
+          "push_allin_hands": 0,
+          "called_allin_hands": 60,
+          "commit_allin_hands": 54
+        },
+        "allin_showdown_stats": {
+          "called_allin_count": 0,
+          "called_allin_ev": "N/A",
+          "uncalled_push_count": 0,
+          "uncalled_push_ev": "N/A"
+        }
+      },
+      "paired_difference": {
+        "delta_bb_per_100": -202.81,
+        "ci95": [
+          -573.03,
+          167.41
+        ],
+        "raw_p_value": 0.2823,
+        "holm_adjusted_p_value": 1.0,
+        "is_statistically_significant_holm": false
+      }
+    },
+    "Agent_E": {
+      "num_hands": 500,
+      "true_0h_noisy": {
+        "bb_per_100": 76.6,
+        "ci95_bb": 609.53,
+        "per_decision_act5_pct": 0.11,
+        "per_hand_direct_act5_pct": 0.2,
+        "per_hand_full_stack_pct": 31.4,
+        "hand_breakdown": {
+          "push_allin_hands": 1,
+          "called_allin_hands": 93,
+          "commit_allin_hands": 63
+        }
+      },
+      "trained_2000h": {
+        "bb_per_100": 112.5,
+        "ci95_bb": 555.67,
+        "per_decision_act5_pct": 2.6,
+        "per_hand_direct_act5_pct": 4.4,
+        "per_hand_full_stack_pct": 25.6,
+        "hand_breakdown": {
+          "push_allin_hands": 22,
+          "called_allin_hands": 67,
+          "commit_allin_hands": 39
+        },
+        "allin_showdown_stats": {
+          "called_allin_count": 17,
+          "called_allin_ev": "-41.00 BB",
+          "uncalled_push_count": 5,
+          "uncalled_push_ev": "-18.20 BB"
+        }
+      },
+      "paired_difference": {
+        "delta_bb_per_100": 35.9,
+        "ci95": [
+          -265.64,
+          337.44
+        ],
+        "raw_p_value": 0.8151,
+        "holm_adjusted_p_value": 1.0,
+        "is_statistically_significant_holm": false
+      }
+    }
+  },
+  "part2_true_allin_catcher_benchmark": {
+    "Agent_A": {
+      "bb_per_100": 265.7,
+      "ci95_bb": 363.84,
+      "per_decision_allin_pct": 0.25,
+      "per_hand_allin_pct": 0.4,
+      "called_allin_count": 1,
+      "called_allin_ev": 200.0,
+      "uncalled_allin_count": 1,
+      "uncalled_allin_ev": 1.5
+    },
+    "Agent_B": {
+      "bb_per_100": 304.7,
+      "ci95_bb": 166.37,
+      "per_decision_allin_pct": 0.16,
+      "per_hand_allin_pct": 0.2,
+      "called_allin_count": 0,
+      "called_allin_ev": "N/A",
+      "uncalled_allin_count": 1,
+      "uncalled_allin_ev": 1.5
+    },
+    "Agent_C": {
+      "bb_per_100": 153.7,
+      "ci95_bb": 120.0,
+      "per_decision_allin_pct": 2.05,
+      "per_hand_allin_pct": 2.6,
+      "called_allin_count": 2,
+      "called_allin_ev": 50.0,
+      "uncalled_allin_count": 11,
+      "uncalled_allin_ev": 2.0
+    },
+    "Agent_D": {
+      "bb_per_100": 278.0,
+      "ci95_bb": 356.04,
+      "per_decision_allin_pct": 0.0,
+      "per_hand_allin_pct": 0.0,
+      "called_allin_count": 0,
+      "called_allin_ev": "N/A",
+      "uncalled_allin_count": 0,
+      "uncalled_allin_ev": "N/A"
+    },
+    "Agent_E": {
+      "bb_per_100": 141.3,
+      "ci95_bb": 71.61,
+      "per_decision_allin_pct": 3.29,
+      "per_hand_allin_pct": 4.4,
+      "called_allin_count": 2,
+      "called_allin_ev": -100.0,
+      "uncalled_allin_count": 20,
+      "uncalled_allin_ev": 2.85
+    }
+  },
+  "part3_correct_lineage_evolution": {
+    "Agent_E": {
+      "0h": {
+        "bb_per_100": -29.6,
+        "ci95_bb": 637.49,
+        "per_decision_allin_pct": 0.45,
+        "per_hand_allin_pct": 0.8,
+        "pot_pct": 34.39,
+        "halfpot_pct": 0.23
+      },
+      "500h": {
+        "bb_per_100": 229.7,
+        "ci95_bb": 601.25,
+        "per_decision_allin_pct": 1.06,
+        "per_hand_allin_pct": 1.8,
+        "pot_pct": 30.63,
+        "halfpot_pct": 0.23
+      },
+      "1000h": {
+        "bb_per_100": 168.3,
+        "ci95_bb": 574.19,
+        "per_decision_allin_pct": 1.44,
+        "per_hand_allin_pct": 2.4,
+        "pot_pct": 27.4,
+        "halfpot_pct": 0.48
+      },
+      "1500h": {
+        "bb_per_100": 236.65,
+        "ci95_bb": 556.42,
+        "per_decision_allin_pct": 4.02,
+        "per_hand_allin_pct": 6.4,
+        "pot_pct": 22.08,
+        "halfpot_pct": 0.63
+      },
+      "2000h": {
+        "bb_per_100": 259.4,
+        "ci95_bb": 562.27,
+        "per_decision_allin_pct": 3.58,
+        "per_hand_allin_pct": 5.8,
+        "pot_pct": 21.11,
+        "halfpot_pct": 0.37
+      }
+    },
+    "Agent_D": {
+      "0h": {
+        "bb_per_100": 411.33,
+        "ci95_bb": 625.29,
+        "per_decision_allin_pct": 0.11,
+        "per_hand_allin_pct": 0.2,
+        "pot_pct": 35.71,
+        "halfpot_pct": 0.0
+      },
+      "500h": {
+        "bb_per_100": 463.08,
+        "ci95_bb": 610.58,
+        "per_decision_allin_pct": 0.0,
+        "per_hand_allin_pct": 0.0,
+        "pot_pct": 33.76,
+        "halfpot_pct": 1.06
+      },
+      "1000h": {
+        "bb_per_100": 489.43,
+        "ci95_bb": 602.51,
+        "per_decision_allin_pct": 0.0,
+        "per_hand_allin_pct": 0.0,
+        "pot_pct": 33.15,
+        "halfpot_pct": 1.95
+      },
+      "1500h": {
+        "bb_per_100": 452.36,
+        "ci95_bb": 590.21,
+        "per_decision_allin_pct": 0.0,
+        "per_hand_allin_pct": 0.0,
+        "pot_pct": 30.98,
+        "halfpot_pct": 6.06
+      },
+      "2000h": {
+        "bb_per_100": 465.58,
+        "ci95_bb": 574.7,
+        "per_decision_allin_pct": 0.0,
+        "per_hand_allin_pct": 0.0,
+        "pot_pct": 29.26,
+        "halfpot_pct": 8.41
+      }
+    }
+  }
+}
