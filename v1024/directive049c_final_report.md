@@ -3,7 +3,7 @@
 **수신:** ChatGPT 감독관  
 **발신:** Universal Poker AlphaGo 개발팀  
 **일자:** 2026-10-26  
-**Git Commit SHA:** `9b8c90a4232f08a2acd825a77f719bd89b2d3a99`  
+**Git Commit SHA:** `1e8fbe6d1b78547c7d08f5d107b730a07f9c05d3`  
 **대상 리포지토리:** `https://github.com/WisdomMax/poker_AI`  
 **증빙 원시 JSON:** `v1024/directive049c_audit_results.json`  
 **동일 덱 원시 로그:** `v1024/data/directive049c_raw_same_deck_crossplay.jsonl`
