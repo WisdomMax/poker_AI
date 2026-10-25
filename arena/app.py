@@ -138,6 +138,8 @@ async def websocket_endpoint(
             await websocket.send_json(state)
             if not ai_acted:
                 break
+            # Let chips and the action caption settle before a board transition.
+            await sleep_paced(0.9)
 
         # 3. 쇼다운 및 핸드 종료 처리
         if session.current_state and session.current_state.is_terminal():
@@ -151,7 +153,7 @@ async def websocket_endpoint(
             msg_type = data.get("type")
             
             if msg_type == "set_speed":
-                game_speed = float(data.get("speed", 1.0))
+                game_speed = 2.0 if data.get("speed") == 2.0 else 1.0
                 print(f"[Arena WS] Game speed updated: {game_speed}x for session {session_id}")
                 
             elif msg_type == "start_hand":
@@ -163,6 +165,7 @@ async def websocket_endpoint(
                 action_id = int(data.get("action_id", 1))
                 state = session.step_human(action_id)
                 await websocket.send_json(state)
+                await sleep_paced(0.9)
                 await process_game_flow()
                 
             elif msg_type == "reset_stacks":

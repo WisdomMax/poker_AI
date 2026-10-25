@@ -190,6 +190,9 @@ class PokerArenaClient {
         
         this.ws.onclose = (e) => {
             console.log(`WebSocket closed (code: ${e.code})`);
+            Object.values(this.buttons).forEach(button => { button.disabled = true; });
+            this.btnNewHand.disabled = true;
+            window.arenaAudio?.stopAllAndClear();
             if (e.code === 1008) {
                 // PIN 오류로 거절됨
                 sessionStorage.removeItem('arena_pin');
@@ -220,6 +223,8 @@ class PokerArenaClient {
         
         this.btnNewHand.addEventListener('click', () => {
             if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+                if (this.btnNewHand.disabled) return;
+                this.btnNewHand.disabled = true;
                 this.ws.send(JSON.stringify({ type: 'start_hand' }));
             }
         });
@@ -235,6 +240,9 @@ class PokerArenaClient {
         Object.entries(this.buttons).forEach(([actId, btn]) => {
             btn.addEventListener('click', () => {
                 if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+                    if (this.actionPending || btn.disabled) return;
+                    this.actionPending = true;
+                    Object.values(this.buttons).forEach(button => { button.disabled = true; });
                     this.ws.send(JSON.stringify({
                         type: 'human_action',
                         action_id: parseInt(actId)
@@ -279,6 +287,8 @@ class PokerArenaClient {
             }
         });
 
+        this.audioVolume?.addEventListener('input', () => window.arenaAudio?.setVolume(Number(this.audioVolume.value)));
+
         // 사운드 음소거 토글
         if (this.btnAudioMute) {
             this.btnAudioMute.addEventListener('click', () => {
@@ -316,13 +326,14 @@ class PokerArenaClient {
         if (!cardStr || cardStr === '??') {
             return `<div class="card card-back ${extraClass}"></div>`;
         }
-        const rank = cardStr[0];
-        const suitChar = cardStr[1];
+        if (!/^(10|[2-9TJQKA])[shdc]$/.test(cardStr)) return this.renderCard('??', extraClass);
+        const rank = cardStr.slice(0, -1).replace('T', '10');
+        const suitChar = cardStr.slice(-1);
         const suitSymbol = SUIT_SYMBOLS[suitChar] || suitChar;
         const colorClass = SUIT_COLORS[suitChar] || 'black';
         
         return `
-            <div class="card ${colorClass} ${extraClass}">
+            <div class="card ${colorClass} ${extraClass}" role="img" aria-label="${rank}${suitSymbol}">
                 <div class="card-corner card-corner-top">
                     <span class="corner-rank">${rank}</span>
                     <span class="corner-suit">${suitSymbol}</span>
@@ -341,6 +352,13 @@ class PokerArenaClient {
         
         const slotLabels = ["플랍 1", "플랍 2", "플랍 3", "턴 4", "리버 5"];
         const cards = boardCards || [];
+        const boardKey = `${this.state?.hand_number || 0}:${cards.join(',')}`;
+        if (boardKey === this.boardKey) return;
+        if (![0, 3, 4, 5].includes(cards.length) || new Set(cards).size !== cards.length) {
+            console.error('Invalid community board', cards);
+            return;
+        }
+        this.boardKey = boardKey;
         
         let html = '';
         for (let i = 0; i < 5; i++) {
@@ -396,9 +414,14 @@ class PokerArenaClient {
 
     onStateUpdate(state) {
         this.state = state;
+        this.actionPending = false;
         
+        if (state.hand_number !== this.prevHandNumber) {
+            this.renderedBoardCards = [];
+            this.boardKey = null;
+        }
         // 0. 실감형 음성 및 효과음 디스패치 (DIRECTIVE 028)
-        this.handleGameAudioAndAnimations(state);
+
         
         // 1. 헤더 통계 (가상 달러 $ 단위, BB 노출 금지)
         const stats = state.hero_stats || {};
@@ -458,6 +481,7 @@ class PokerArenaClient {
             if (p.is_active) seatEl.classList.add('active');
             if (p.is_folded) seatEl.classList.add('folded');
             
+            if (state.is_terminal && state.last_event?.winners?.includes(p.seat)) seatEl.classList.add('pot-award');
             const isHero = (p.seat === 0);
             const handLabel = isHero ? `<div class="hero-hand-badge">내 개인 카드 2장</div>` : '';
             const cardsHtml = (p.cards || []).map(c => this.renderCard(c)).join('');
@@ -548,6 +572,8 @@ class PokerArenaClient {
             `).join('');
         }
         
+        this.handleGameAudioAndAnimations(state);
+
         // 7. 최근 로그 렌더링
         if (state.recent_logs && state.recent_logs.length > 0) {
             this.actionLog.innerHTML = state.recent_logs.map(line => `<div class="log-entry">${line}</div>`).join('');
@@ -567,7 +593,6 @@ class PokerArenaClient {
         if (state.hand_number !== this.prevHandNumber && state.hand_number > 0) {
             this.prevHandNumber = state.hand_number;
             this.prevRoundName = null;
-            this.renderedBoardCards = [];
             this.processedActionKeys.clear();
             
             window.arenaAudio.playSfx('card_shuffle');
@@ -600,14 +625,30 @@ class PokerArenaClient {
         // C. 마지막 액션 이벤트 (AI 및 인간) 처리 & 캐릭터 강조 애니메이션
         const ev = state.last_event;
         if (ev && ev.type === 'action') {
-            const evKey = `${state.hand_number}_${ev.seat}_${ev.action_id}_${ev.amount}_${state.recent_logs ? state.recent_logs.length : 0}`;
+            const evKey = `${state.hand_number}_${state.event_sequence ?? JSON.stringify(state.recent_logs)}_${ev.seat}_${ev.action_id}`;
             if (!this.processedActionKeys.has(evKey)) {
                 this.processedActionKeys.add(evKey);
 
                 // 좌석 하이라이트 애니메이션
                 const seatEl = document.getElementById(`seat-${ev.seat}`);
                 if (seatEl) {
-                    const animClass = `action-highlight-${ev.action_key}`;
+                    const animClass = `action-${ev.action_key}`;
+                    const caption = document.createElement('div');
+                    caption.className = 'action-caption';
+                    caption.textContent = ev.desc || ev.action_key;
+                    seatEl.appendChild(caption);
+                    setTimeout(() => caption.remove(), 1400);
+                    if (['call', 'raise', 'allin'].includes(ev.action_key)) {
+                        const table = seatEl.closest('.poker-table');
+                        const chip = document.createElement('div');
+                        chip.className = 'chip-flight';
+                        chip.style.left = `${seatEl.offsetLeft + seatEl.offsetWidth / 2}px`;
+                        chip.style.top = `${seatEl.offsetTop + seatEl.offsetHeight / 2}px`;
+                        chip.style.setProperty('--chip-x', `${table.clientWidth / 2}px`);
+                        chip.style.setProperty('--chip-y', `${table.clientHeight * .38}px`);
+                        table.appendChild(chip);
+                        setTimeout(() => chip.remove(), 900);
+                    }
                     seatEl.classList.add(animClass);
                     setTimeout(() => {
                         seatEl.classList.remove(animClass);

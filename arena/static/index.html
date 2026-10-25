@@ -2,9 +2,10 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>POKER AI HUMAN ARENA - 5인 홀덤 대전</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/arena-premium.css">
 </head>
 <body>
     <div class="app-container">
@@ -36,7 +37,7 @@
 
         <!-- 승자 안내 대형 배너 (쇼다운 시 표시) -->
         <div id="winner-banner" class="winner-banner hidden">
-            <div class="banner-content" id="winner-text">축하합니다! 당신이 승리했습니다!</div>
+            <div class="banner-content" id="winner-text" role="status">축하합니다! 당신이 승리했습니다!</div>
         </div>
 
         <!-- 턴 안내 배너 -->
@@ -84,7 +85,7 @@
                                 <span class="comm-title">모두의 공용 카드 (Community Cards)</span>
                                 <span class="comm-sub" id="comm-stage-text">플랍 3장 오픈 대기</span>
                             </div>
-                            <div class="board-cards" id="board-cards">
+                            <div class="board-cards" id="board-cards" role="group" aria-label="공용 카드">
                                 <!-- 5장의 슬롯 (플랍 3장, 턴 1장, 리버 1장) JS 렌더링 -->
                             </div>
                         </div>

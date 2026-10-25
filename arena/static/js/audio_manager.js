@@ -14,12 +14,17 @@ class AudioManager {
         this.volume = parseFloat(localStorage.getItem('arena_audio_volume') || '0.75');
         
         this.audioQueue = [];
+        this.generation = 0;
+        this.effects = new Set();
         this.isPlaying = false;
         this.currentAudio = null;
         this.currentHand = 0;
         this.unlocked = false;
         
         this.initAudioContext();
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) this.stopAllAndClear();
+        });
     }
 
     initAudioContext() {
@@ -52,6 +57,7 @@ class AudioManager {
     setVolume(vol) {
         this.volume = Math.max(0.0, Math.min(1.0, vol));
         localStorage.setItem('arena_audio_volume', this.volume.toString());
+        this.effects.forEach(audio => { audio.volume = this.volume; });
         if (this.currentAudio) {
             this.currentAudio.volume = this.volume;
         }
@@ -79,86 +85,61 @@ class AudioManager {
     }
 
     stopAllAndClear() {
+        this.generation++;
         this.audioQueue = [];
-        if (this.currentAudio) {
-            try {
-                this.currentAudio.pause();
-                this.currentAudio.currentTime = 0;
-            } catch (e) {}
-            this.currentAudio = null;
-        }
+        if (this.cancelPlayback) this.cancelPlayback();
+        this.cancelPlayback = null;
+        if (this.currentAudio) this.currentAudio.pause();
+        this.currentAudio = null;
+        this.effects.forEach(audio => audio.pause());
+        this.effects.clear();
         this.isPlaying = false;
     }
 
-    // 오디오 항목 큐에 인큐
     enqueue(url, type = 'sfx', handNum = 0) {
-        if (this.muted) return;
-        
-        const timestamp = Date.now();
-        this.audioQueue.push({
-            url,
-            type,
-            handNum: handNum || this.currentHand,
-            timestamp
-        });
-
-        if (!this.isPlaying) {
-            this.playNext();
-        }
+        if (this.muted || !this.unlocked) return;
+        // Only one pending voice: narration always stays close to the table.
+        this.audioQueue = [{url, type, handNum: handNum || this.currentHand, timestamp: Date.now()}];
+        if (!this.isPlaying) this.playNext();
     }
 
     async playNext() {
-        if (this.muted || this.audioQueue.length === 0) {
+        if (this.muted || !this.audioQueue.length) {
             this.isPlaying = false;
             return;
         }
-
-        this.isPlaying = true;
+        const generation = this.generation;
         const item = this.audioQueue.shift();
-        const now = Date.now();
-
-        // 1. 오래된 이벤트(2.5초 이상 지연되었거나 이전 핸드 것) 자동 폐기
-        if ((now - item.timestamp > 2500) || (item.handNum > 0 && item.handNum < this.currentHand)) {
-            console.debug('[AudioManager] Dropped stale audio:', item.url);
+        if (Date.now() - item.timestamp > 1500 || item.handNum !== this.currentHand) {
             this.playNext();
             return;
         }
-
-        try {
-            const audio = new Audio(item.url);
-            audio.volume = this.volume;
-            this.currentAudio = audio;
-
-            // 2. 실제 audio.onended 이벤트 기반 순차 재생
-            await new Promise((resolve) => {
-                let resolved = false;
-                const finish = () => {
-                    if (!resolved) {
-                        resolved = true;
-                        resolve();
-                    }
-                };
-
-                audio.onended = finish;
-                audio.onerror = finish;
-                
-                // 최대 타임아웃 방어 (음성 3초, SFX 1.5초 이상 걸리면 강제 통과)
-                const maxSafetyMs = item.type === 'voice' ? 3000 : 1500;
-                setTimeout(finish, maxSafetyMs);
-
-                audio.play().catch(err => {
-                    console.debug('[AudioManager] Play failed/blocked:', item.url, err);
-                    finish();
-                });
-            });
-
-            this.currentAudio = null;
-        } catch (e) {
-            console.warn('[AudioManager] Error playing:', item.url, e);
-        }
-
-        // 약간의 자연스러운 호흡(100ms) 후 다음 큐 처리
-        setTimeout(() => this.playNext(), 100);
+        this.isPlaying = true;
+        const audio = new Audio(item.url);
+        this.currentAudio = audio;
+        audio.volume = this.volume;
+        await new Promise(resolve => {
+            let done = false;
+            let timer;
+            const finish = () => {
+                if (done) return;
+                done = true;
+                clearTimeout(timer);
+                audio.pause();
+                audio.onended = audio.onerror = null;
+                resolve();
+            };
+            this.cancelPlayback = finish;
+            audio.onended = audio.onerror = finish;
+            timer = setTimeout(finish, item.type === 'voice' ? 2200 : 1200);
+            audio.play().catch(finish);
+        });
+        // A cancelled hand must never resume or clear the new hand's player.
+        if (generation !== this.generation) return;
+        this.currentAudio = null;
+        this.cancelPlayback = null;
+        this.isPlaying = false;
+        this.playNext();
     }
 
     // 캐릭터별 음성 재생 (김프로, 제니, 잭, 미스터 K)
@@ -180,11 +161,14 @@ class AudioManager {
 
     // 효과음(SFX) 재생 (물리 효과음은 큐를 막지 않고 오버랩 재생 허용)
     playSfx(sfxKey) {
-        if (this.muted) return;
+        if (this.muted || !this.unlocked) return;
         try {
             const audio = new Audio(`/audio/sfx/${sfxKey}.mp3`);
+            this.effects.add(audio);
+            const clear = () => this.effects.delete(audio);
+            audio.onended = audio.onerror = clear;
             audio.volume = this.volume;
-            audio.play().catch(() => {});
+            audio.play().catch(clear);
         } catch (e) {}
     }
 

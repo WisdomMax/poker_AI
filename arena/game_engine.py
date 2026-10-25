@@ -137,12 +137,16 @@ class PokerArenaSession:
 
     def _update_board_cards(self):
         s = self.current_state.to_string()
+        previous = self.board_cards
         self.board_cards = []
         for line in s.splitlines():
             if 'BoardCards' in line:
                 b_str = line.replace('BoardCards', '').strip()
                 if b_str:
-                    self.board_cards = [b_str[i:i+2] for i in range(0, len(b_str), 2)]
+                    parsed = [b_str[i:i+2] for i in range(0, len(b_str), 2)]
+                    # The engine serializes a sorted board. Keep revealed slots stable.
+                    self.board_cards = [c for c in previous if c in parsed]
+                    self.board_cards.extend(c for c in parsed if c not in self.board_cards)
                 break
 
     def _format_action_desc(self, cp: int, act_id: int, raw_act: int) -> str:
@@ -468,6 +472,7 @@ class PokerArenaSession:
             "raise_amounts_dollars": raise_amounts_dollars,
             "winner_announcement": self.winner_announcement,
             "last_event": self.last_action_event,
+            "event_sequence": self.hand_dec_idx,
             "hero_stats": {
                 "hands": self.hands_played,
                 "initial_bankroll": int(self.initial_stack),
