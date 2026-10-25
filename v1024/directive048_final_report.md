@@ -2,7 +2,7 @@
 
 **감사 일자**: 2026-10-26 06:54:09  
 **총 감사 소요시간**: 29.9초  
-**GitHub 커밋 SHA**: `TBD`  
+**GitHub 커밋 SHA**: `b49c515`  
 **원시 데이터 전수 기록**: [`v1024/data/directive048_raw_generational_audit.jsonl`](file:///Volumes/NVME/7.AI_vibe_coding/hangame/v1024/data/directive048_raw_generational_audit.jsonl)  
 **정밀 감사 JSON**: [`v1024/directive048_audit_results.json`](file:///Volumes/NVME/7.AI_vibe_coding/hangame/v1024/directive048_audit_results.json)  
 

@@ -183,4 +183,4 @@ def generate_report(commit_hash: str = "TBD"):
     print(f"DIRECTIVE 047 Report successfully generated at {REPORT_PATH}!")
 
 if __name__ == "__main__":
-    generate_report()
+    generate_report(commit_hash="800066d")
