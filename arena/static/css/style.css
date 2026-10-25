@@ -891,3 +891,68 @@ body {
         line-height: 1.4;
     }
 }
+
+/* ==========================================================================
+   DIRECTIVE 025: 오디오 컨트롤 바 및 캐릭터 액션 애니메이션 스타일
+   ========================================================================== */
+
+.audio-control-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.btn-audio-mute {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.15s ease;
+}
+
+.btn-audio-mute:hover {
+    transform: scale(1.15);
+}
+
+.audio-volume-slider {
+    width: 65px;
+    height: 4px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+
+/* 액션 하이라이트 애니메이션 */
+.player-seat.action-highlight-call {
+    box-shadow: 0 0 20px #3b82f6 !important;
+    border-color: #60a5fa !important;
+    transition: all 0.2s ease-out;
+}
+
+.player-seat.action-highlight-raise {
+    box-shadow: 0 0 22px #10b981 !important;
+    border-color: #34d399 !important;
+    transition: all 0.2s ease-out;
+}
+
+.player-seat.action-highlight-allin {
+    box-shadow: 0 0 30px #f97316 !important;
+    border-color: #fb923c !important;
+    animation: allinPulse 0.5s infinite alternate;
+}
+
+@keyframes allinPulse {
+    0% { transform: scale(1.0); box-shadow: 0 0 20px #f97316; }
+    100% { transform: scale(1.04); box-shadow: 0 0 35px #ef4444; }
+}
+
+.player-seat.action-highlight-fold {
+    opacity: 0.45;
+    filter: grayscale(80%);
+    transition: all 0.4s ease-out;
+}
+

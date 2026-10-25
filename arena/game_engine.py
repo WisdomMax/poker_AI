@@ -57,11 +57,11 @@ class PokerArenaSession:
         self.model_mgr = ArenaModelManager.get_instance()
         
         self.player_profiles = [
-            {"seat": 0, "name": "Hero (나)", "type": "human", "role": "인간 도전자", "avatar": "👤"},
-            {"seat": 1, "name": "AI Cycle 4", "type": "ai", "key": "cycle4", "role": "기본 주력 챔피언 (121만)", "avatar": "🏆"},
-            {"seat": 2, "name": "AI Cycle 13", "type": "ai", "key": "cycle13", "role": "신규 풀 1위 도전자 (289만)", "avatar": "⚡"},
-            {"seat": 3, "name": "AI Cycle 10+MC", "type": "ai", "key": "cycle10_mc", "role": "적응형 하이브리드 (228만)", "avatar": "🧠"},
-            {"seat": 4, "name": "AI Baseline", "type": "ai", "key": "baseline", "role": "V10.22 사전학습 기준선 (10만)", "avatar": "🤖"}
+            {"seat": 0, "name": "Hero (나)", "type": "human", "role": "인간 도전자", "avatar": "👤", "char_id": "hero"},
+            {"seat": 1, "name": "김프로 (Cycle 4)", "type": "ai", "key": "cycle4", "role": "중후한 챔피언 (121만)", "avatar": "🏆", "char_id": "kim"},
+            {"seat": 2, "name": "제니 (Cycle 13)", "type": "ai", "key": "cycle13", "role": "차분한 도전자 (289만)", "avatar": "⚡", "char_id": "jenny"},
+            {"seat": 3, "name": "잭 (Cycle 10+MC)", "type": "ai", "key": "cycle10_mc", "role": "자신감 넘치는 전략가 (228만)", "avatar": "🧠", "char_id": "jack"},
+            {"seat": 4, "name": "미스터 K (Baseline)", "type": "ai", "key": "baseline", "role": "냉철한 기준선 (10만)", "avatar": "🤖", "char_id": "mr_k"}
         ]
         
         self.initial_stack = 10000.0  # 가상 $10,000 (100 BB)
@@ -71,6 +71,8 @@ class PokerArenaSession:
         self.hands_played = 0
         self.hero_wins = 0
         self.last_hand_profit_dollars = 0.0
+        self.last_action_event = None
+        self.last_street = 0
         
         # AI 상대별 전적 기록 (Seat 1, 2, 3, 4)
         self.ai_head_to_head = {
@@ -110,6 +112,8 @@ class PokerArenaSession:
         self.hand_action_log = []
         self.hand_dec_idx = 0
         self.winner_announcement = None
+        self.last_action_event = {"type": "new_hand", "hand": self.hands_played}
+        self.last_street = 0
         
         self.current_state = self.game.new_initial_state()
         advance_chance_nodes(self.current_state, self.chance_rng)
@@ -154,6 +158,19 @@ class PokerArenaSession:
         base_name = ACTION_NAMES.get(act_id, f"Action_{act_id}")
         return f"{base_name} (${int(raw_act):,})"
 
+    def _get_action_key(self, cp: int, act_id: int) -> str:
+        if act_id == 0:
+            return "fold"
+        if act_id == 1:
+            spent = extract_player_spent(self.current_state)
+            diff = max(spent) - spent[cp]
+            return "check" if diff <= 0 else "call"
+        if act_id in [2, 3, 4]:
+            return "raise"
+        if act_id == 5:
+            return "allin"
+        return "call"
+
     def step_human(self, action_id: int):
         if not self.is_hand_active or self.current_state.is_terminal():
             return self.get_client_state()
@@ -169,7 +186,20 @@ class PokerArenaSession:
         rnd = get_round_from_state(self.current_state)
         raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, action_id)
         act_desc = self._format_action_desc(cp, action_id, raw_act)
+        act_key = self._get_action_key(cp, action_id)
+        
         self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] Hero (나): {act_desc}")
+        
+        self.last_action_event = {
+            "type": "action",
+            "seat": cp,
+            "char_id": "hero",
+            "name": "Hero (나)",
+            "action_id": action_id,
+            "action_key": act_key,
+            "amount": int(raw_act),
+            "desc": act_desc
+        }
         
         if action_id == 0:
             self.folded_seats.add(cp)
@@ -204,8 +234,20 @@ class PokerArenaSession:
         
         raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, act)
         act_desc = self._format_action_desc(cp, act, raw_act)
+        act_key = self._get_action_key(cp, act)
         tag = " [MC수정]" if mc_used else ""
         self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] {profile['name']}: {act_desc}{tag} ({lat_ms:.1f}ms)")
+        
+        self.last_action_event = {
+            "type": "action",
+            "seat": cp,
+            "char_id": profile.get("char_id", f"seat{cp}"),
+            "name": profile["name"],
+            "action_id": act,
+            "action_key": act_key,
+            "amount": int(raw_act),
+            "desc": act_desc
+        }
         
         if act == 0:
             self.folded_seats.add(cp)
@@ -266,6 +308,14 @@ class PokerArenaSession:
                 self.winner_announcement = f"🏆 승자: {w_names} ({loss_str})"
         else:
             self.winner_announcement = "핸드가 무승부(Chop)로 종료되었습니다."
+
+        self.last_action_event = {
+            "type": "terminal",
+            "winners": [w[0] for w in winners],
+            "winner_names": [w[1] for w in winners],
+            "hero_win": hero_net_chips > 0,
+            "hero_profit": int(hero_net_chips)
+        }
 
         self.hand_action_log.append("=== 쇼다운 및 최종 정산 ===")
         for i, prof in enumerate(self.player_profiles):
@@ -330,6 +380,7 @@ class PokerArenaSession:
                 "name": prof["name"],
                 "role": prof["role"],
                 "avatar": prof["avatar"],
+                "char_id": prof.get("char_id", f"seat{i}"),
                 "stack_bb": round(self.stacks[i] / 100.0, 1),
                 "stack_dollars": int(self.stacks[i]),
                 "current_bet_bb": round(spent[i] / 100.0, 1),
@@ -382,6 +433,7 @@ class PokerArenaSession:
             "raise_amounts": raise_amounts,
             "raise_amounts_dollars": raise_amounts_dollars,
             "winner_announcement": self.winner_announcement,
+            "last_event": self.last_action_event,
             "hero_stats": {
                 "hands": self.hands_played,
                 "initial_bankroll": int(self.initial_stack),

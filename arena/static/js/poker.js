@@ -98,6 +98,20 @@ class PokerArenaClient {
         this.btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
         this.sidebarContent = document.getElementById('sidebar-content');
         this.sidebarArrow = document.getElementById('sidebar-arrow');
+        
+        // 오디오 컨트롤러 (DIRECTIVE 025)
+        this.btnAudioMute = document.getElementById('btn-audio-mute');
+        this.audioVolume = document.getElementById('audio-volume');
+        if (this.btnAudioMute && window.arenaAudio) {
+            this.btnAudioMute.innerText = window.arenaAudio.isMuted() ? '🔇' : '🔊';
+        }
+        if (this.audioVolume && window.arenaAudio) {
+            this.audioVolume.value = window.arenaAudio.volume;
+        }
+        
+        this.prevRoundName = null;
+        this.prevHandNumber = 0;
+        this.processedActionKeys = new Set();
     }
 
     showPinModal() {
@@ -248,6 +262,25 @@ class PokerArenaClient {
                 this.fbStatus.innerText = '전송 실패: ' + err.message;
             }
         });
+
+        // 사운드 음소거 토글
+        if (this.btnAudioMute) {
+            this.btnAudioMute.addEventListener('click', () => {
+                if (window.arenaAudio) {
+                    const isMuted = window.arenaAudio.toggleMute();
+                    this.btnAudioMute.innerText = isMuted ? '🔇' : '🔊';
+                }
+            });
+        }
+
+        // 볼륨 슬라이더 조절
+        if (this.audioVolume) {
+            this.audioVolume.addEventListener('input', (e) => {
+                if (window.arenaAudio) {
+                    window.arenaAudio.setVolume(parseFloat(e.target.value));
+                }
+            });
+        }
     }
 
     renderCard(cardStr) {
@@ -275,6 +308,9 @@ class PokerArenaClient {
 
     onStateUpdate(state) {
         this.state = state;
+        
+        // 0. 실감형 음성 및 효과음 디스패치 (DIRECTIVE 025)
+        this.handleGameAudioAndAnimations(state);
         
         // 1. 헤더 통계 (가상 달러 $ 단위, BB 노출 금지)
         const stats = state.hero_stats || {};
@@ -403,6 +439,79 @@ class PokerArenaClient {
         if (state.recent_logs && state.recent_logs.length > 0) {
             this.actionLog.innerHTML = state.recent_logs.map(line => `<div class="log-entry">${line}</div>`).join('');
             this.actionLog.scrollTop = this.actionLog.scrollHeight;
+        }
+    }
+
+    handleGameAudioAndAnimations(state) {
+        if (!window.arenaAudio) return;
+
+        // A. 새 핸드 시작 감지
+        if (state.hand_number !== this.prevHandNumber && state.hand_number > 0) {
+            this.prevHandNumber = state.hand_number;
+            this.prevRoundName = null;
+            this.processedActionKeys.clear();
+            
+            window.arenaAudio.playSfx('card_shuffle');
+            window.arenaAudio.playDealerVoice('start', 250);
+            window.arenaAudio.playSfx('card_deal', 600);
+        }
+
+        // B. 스트리트 전환 감지 (플랍, 턴, 리버, 쇼다운)
+        if (state.round_name && state.round_name !== this.prevRoundName) {
+            const isInitial = (this.prevRoundName === null);
+            this.prevRoundName = state.round_name;
+
+            if (!isInitial) {
+                if (state.round_name.includes('플랍')) {
+                    window.arenaAudio.playDealerVoice('flop', 80);
+                    window.arenaAudio.playSfx('card_flip', 260);
+                } else if (state.round_name.includes('턴')) {
+                    window.arenaAudio.playDealerVoice('turn', 80);
+                    window.arenaAudio.playSfx('card_flip', 260);
+                } else if (state.round_name.includes('리버')) {
+                    window.arenaAudio.playDealerVoice('river', 80);
+                    window.arenaAudio.playSfx('card_flip', 260);
+                } else if (state.round_name.includes('쇼다운')) {
+                    window.arenaAudio.playDealerVoice('showdown', 80);
+                    window.arenaAudio.playSfx('card_flip', 300);
+                }
+            }
+        }
+
+        // C. 마지막 액션 이벤트 (AI 및 인간) 처리 & 캐릭터 강조 애니메이션
+        const ev = state.last_event;
+        if (ev && ev.type === 'action') {
+            const evKey = `${state.hand_number}_${ev.seat}_${ev.action_id}_${ev.amount}_${state.recent_logs ? state.recent_logs.length : 0}`;
+            if (!this.processedActionKeys.has(evKey)) {
+                this.processedActionKeys.add(evKey);
+
+                // 좌석 하이라이트 애니메이션
+                const seatEl = document.getElementById(`seat-${ev.seat}`);
+                if (seatEl) {
+                    const animClass = `action-highlight-${ev.action_key}`;
+                    seatEl.classList.add(animClass);
+                    setTimeout(() => {
+                        seatEl.classList.remove(animClass);
+                    }, 1400);
+                }
+
+                // 음성 및 물리 효과음 동시 트리거
+                window.arenaAudio.handleActionSound(ev.seat, ev.char_id, ev.action_key, ev.amount);
+            }
+        } else if (ev && ev.type === 'terminal') {
+            const termKey = `term_${state.hand_number}`;
+            if (!this.processedActionKeys.has(termKey)) {
+                this.processedActionKeys.add(termKey);
+                
+                if (ev.hero_win) {
+                    window.arenaAudio.playDealerVoice('hero_win', 200);
+                    window.arenaAudio.playSfx('victory', 650);
+                    window.arenaAudio.playSfx('pot_win', 950);
+                } else {
+                    window.arenaAudio.playDealerVoice('winner', 200);
+                    window.arenaAudio.playSfx('defeat', 500);
+                }
+            }
         }
     }
 

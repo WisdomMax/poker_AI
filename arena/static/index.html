@@ -21,6 +21,12 @@
                 <div class="stat-pill"><span class="lbl">진행 판수</span> <strong id="stat-hands">0판</strong></div>
                 <div class="stat-pill"><span class="lbl">승률</span> <strong id="stat-winrate">0.0%</strong></div>
                 <button id="btn-reset" class="btn-reset" title="게임머니($10,000) 및 전적 통계를 초기화합니다">처음부터</button>
+                
+                <!-- 사운드 & 볼륨 컨트롤 (DIRECTIVE 025) -->
+                <div class="audio-control-bar">
+                    <button id="btn-audio-mute" class="btn-audio-mute" title="소리 켜기/끄기">🔊</button>
+                    <input type="range" id="audio-volume" class="audio-volume-slider" min="0" max="1" step="0.05" value="0.75" title="효과음 및 음성 볼륨 조절">
+                </div>
             </div>
         </header>
 
@@ -138,10 +144,10 @@
                         <h3>🏆 테이블 AI 봇 라인업 (5인 구성)</h3>
                         <div class="ai-list">
                             <div class="ai-item"><span class="avatar">👤</span> <div><strong>Hero (나):</strong> 인간 도전자</div></div>
-                            <div class="ai-item"><span class="avatar">🏆</span> <div><strong>AI Cycle 4:</strong> 기본 주력 챔피언 (121만)</div></div>
-                            <div class="ai-item"><span class="avatar">⚡</span> <div><strong>AI Cycle 13:</strong> 극단 풀 1위 도전자 (289만)</div></div>
-                            <div class="ai-item"><span class="avatar">🧠</span> <div><strong>AI Cycle 10+MC:</strong> 적응형 몬테카를로 (228만)</div></div>
-                            <div class="ai-item"><span class="avatar">🤖</span> <div><strong>AI Baseline:</strong> V10.22 사전학습 기준선 (10만)</div></div>
+                            <div class="ai-item"><span class="avatar">🏆</span> <div><strong>김프로 (Cycle 4):</strong> 중후한 남성 보이스 (주력 챔피언)</div></div>
+                            <div class="ai-item"><span class="avatar">⚡</span> <div><strong>제니 (Cycle 13):</strong> 차분한 여성 보이스 (신규 풀 1위)</div></div>
+                            <div class="ai-item"><span class="avatar">🧠</span> <div><strong>잭 (Cycle 10+MC):</strong> 자신감 넘치는 남성 보이스 (몬테카를로)</div></div>
+                            <div class="ai-item"><span class="avatar">🤖</span> <div><strong>미스터 K (Baseline):</strong> 낮고 냉철한 남성 보이스 (사전학습 기준선)</div></div>
                         </div>
                     </div>
 
@@ -187,6 +193,7 @@
         </footer>
     </div>
 
+    <script src="/js/audio_manager.js"></script>
     <script src="/js/poker.js"></script>
 </body>
 </html>
