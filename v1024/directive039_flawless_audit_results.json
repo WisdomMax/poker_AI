@@ -1,0 +1,245 @@
+{
+  "Top20_Rational_Holdout": {
+    "Jenny_Cycle13": {
+      "num_hands": 1000,
+      "bb_per_100": -453.58,
+      "ci95": 391.16,
+      "total_pnl_bb": -4535.75,
+      "max_drawdown_bb": 4893.5,
+      "vpip_pct": 53.2,
+      "pfr_pct": 42.5,
+      "allin_total": 398,
+      "preflop_allin": 332,
+      "postflop_allin": 66,
+      "showdown_count": 325,
+      "wsd_pct": 37.54,
+      "called_allin_count": 232,
+      "called_allin_ev_bb": -8.28,
+      "sample_caller_hands": [
+        "P3:Td+9s",
+        "P3:Ah+Ac",
+        "P3:Jc+9c",
+        "P0:Kd+Qs",
+        "P2:9s+9c",
+        "P3:Ah+3h",
+        "P4:Kd+Js",
+        "P4:Ad+Ks",
+        "P1:Qc+Jd",
+        "P2:Js+Jh"
+      ],
+      "uncalled_allin_count": 166,
+      "uncalled_allin_ev_bb": 4.97,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 505,
+        "Turn": 436,
+        "River": 391
+      },
+      "action_counts": {
+        "1": 198,
+        "3": 126,
+        "0": 496,
+        "5": 398,
+        "4": 201
+      },
+      "avg_entropy": 0.0636
+    },
+    "E2E_PPO_50k": {
+      "num_hands": 1000,
+      "bb_per_100": -122.87,
+      "ci95": 480.22,
+      "total_pnl_bb": -1228.67,
+      "max_drawdown_bb": 2473.75,
+      "vpip_pct": 48.6,
+      "pfr_pct": 28.6,
+      "allin_total": 5,
+      "preflop_allin": 5,
+      "postflop_allin": 0,
+      "showdown_count": 443,
+      "wsd_pct": 39.28,
+      "called_allin_count": 4,
+      "called_allin_ev_bb": 75.25,
+      "sample_caller_hands": [
+        "P3:9h+9c",
+        "P1:Ac+3c",
+        "P1:Jd+8d",
+        "P1:Kh+Jh",
+        "P0:Kh+Qc",
+        "P1:Qd+Js"
+      ],
+      "uncalled_allin_count": 1,
+      "uncalled_allin_ev_bb": 1.5,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 756,
+        "Turn": 702,
+        "River": 647
+      },
+      "action_counts": {
+        "1": 499,
+        "3": 1253,
+        "0": 524,
+        "4": 13,
+        "5": 5,
+        "2": 1
+      },
+      "avg_entropy": 0.1683
+    },
+    "diff_bb_per_100": 330.71,
+    "allin_reduction_pct": 98.7
+  },
+  "Strict_Tight_Passive": {
+    "Jenny_Cycle13": {
+      "num_hands": 1000,
+      "bb_per_100": -455.52,
+      "ci95": 251.37,
+      "total_pnl_bb": -4555.25,
+      "max_drawdown_bb": 4680.0,
+      "vpip_pct": 46.6,
+      "pfr_pct": 35.7,
+      "allin_total": 325,
+      "preflop_allin": 258,
+      "postflop_allin": 67,
+      "showdown_count": 211,
+      "wsd_pct": 32.23,
+      "called_allin_count": 96,
+      "called_allin_ev_bb": -24.69,
+      "sample_caller_hands": [
+        "P2:Qs+Js",
+        "P3:Jh+Jc",
+        "P3:Ah+Ac",
+        "P2:9s+9c",
+        "P4:Ad+Ks",
+        "P2:Js+Jh",
+        "P4:Jh+Jd",
+        "P2:Qc+Jc",
+        "P1:Ac+Qc",
+        "P3:As+Ad"
+      ],
+      "uncalled_allin_count": 229,
+      "uncalled_allin_ev_bb": 2.71,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 302,
+        "Turn": 258,
+        "River": 223
+      },
+      "action_counts": {
+        "1": 225,
+        "3": 138,
+        "4": 205,
+        "0": 407,
+        "5": 325
+      },
+      "avg_entropy": 0.077
+    },
+    "E2E_PPO_50k": {
+      "num_hands": 1000,
+      "bb_per_100": -374.88,
+      "ci95": 262.39,
+      "total_pnl_bb": -3748.75,
+      "max_drawdown_bb": 3984.0,
+      "vpip_pct": 44.3,
+      "pfr_pct": 22.4,
+      "allin_total": 2,
+      "preflop_allin": 2,
+      "postflop_allin": 0,
+      "showdown_count": 349,
+      "wsd_pct": 42.98,
+      "called_allin_count": 0,
+      "called_allin_ev_bb": 0.0,
+      "sample_caller_hands": [],
+      "uncalled_allin_count": 2,
+      "uncalled_allin_ev_bb": 1.5,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 483,
+        "Turn": 483,
+        "River": 480
+      },
+      "action_counts": {
+        "1": 368,
+        "3": 1121,
+        "0": 416,
+        "4": 12,
+        "5": 2,
+        "2": 2
+      },
+      "avg_entropy": 0.1886
+    },
+    "diff_bb_per_100": 80.64,
+    "allin_reduction_pct": 99.4
+  },
+  "Loose_Limper_Benchmark": {
+    "Jenny_Cycle13": {
+      "num_hands": 1000,
+      "bb_per_100": 214.35,
+      "ci95": 590.17,
+      "total_pnl_bb": 2143.5,
+      "max_drawdown_bb": 2609.83,
+      "vpip_pct": 70.2,
+      "pfr_pct": 48.0,
+      "allin_total": 386,
+      "preflop_allin": 253,
+      "postflop_allin": 133,
+      "showdown_count": 316,
+      "wsd_pct": 20.57,
+      "called_allin_count": 0,
+      "called_allin_ev_bb": 0.0,
+      "sample_caller_hands": [],
+      "uncalled_allin_count": 386,
+      "uncalled_allin_ev_bb": 10.4,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 747,
+        "Turn": 517,
+        "River": 409
+      },
+      "action_counts": {
+        "0": 298,
+        "4": 505,
+        "5": 386,
+        "1": 399,
+        "3": 182,
+        "2": 9
+      },
+      "avg_entropy": 0.0868
+    },
+    "E2E_PPO_50k": {
+      "num_hands": 1000,
+      "bb_per_100": 791.58,
+      "ci95": 949.92,
+      "total_pnl_bb": 7915.83,
+      "max_drawdown_bb": 2384.0,
+      "vpip_pct": 55.8,
+      "pfr_pct": 33.4,
+      "allin_total": 2,
+      "preflop_allin": 2,
+      "postflop_allin": 0,
+      "showdown_count": 584,
+      "wsd_pct": 24.32,
+      "called_allin_count": 0,
+      "called_allin_ev_bb": 0.0,
+      "sample_caller_hands": [],
+      "uncalled_allin_count": 2,
+      "uncalled_allin_ev_bb": 1.5,
+      "street_reach_counts": {
+        "Preflop": 1000,
+        "Flop": 998,
+        "Turn": 998,
+        "River": 667
+      },
+      "action_counts": {
+        "0": 414,
+        "3": 1702,
+        "1": 281,
+        "4": 18,
+        "2": 4,
+        "5": 2
+      },
+      "avg_entropy": 0.0816
+    },
+    "diff_bb_per_100": 577.23,
+    "allin_reduction_pct": 99.5
+  }
+}
