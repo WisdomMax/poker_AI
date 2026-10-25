@@ -1,4 +1,4 @@
-// POKER AI HUMAN ARENA LITE - WEBSOCKET & UI CONTROLLER
+// POKER AI HUMAN ARENA - CLIENT CONTROLLER (DIRECTIVE 020)
 
 const SUIT_SYMBOLS = {
     's': '♠',
@@ -44,6 +44,10 @@ class PokerArenaClient {
         this.statBb100 = document.getElementById('stat-bb100');
         this.statWinrate = document.getElementById('stat-winrate');
         
+        this.winnerBanner = document.getElementById('winner-banner');
+        this.winnerText = document.getElementById('winner-text');
+        this.turnBanner = document.getElementById('turn-banner');
+        
         this.actionLog = document.getElementById('action-log');
         this.btnNewHand = document.getElementById('btn-new-hand');
         this.btnReset = document.getElementById('btn-reset');
@@ -57,8 +61,18 @@ class PokerArenaClient {
             5: document.getElementById('btn-allin')
         };
         
+        this.lblCall = document.getElementById('lbl-call');
+        this.lblRaise50 = document.getElementById('lbl-raise-50');
+        this.lblRaise100 = document.getElementById('lbl-raise-100');
+        this.lblRaise200 = document.getElementById('lbl-raise-200');
+        this.lblAllin = document.getElementById('lbl-allin');
+        
         this.feedbackForm = document.getElementById('feedback-form');
         this.fbStatus = document.getElementById('fb-status');
+        
+        this.btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+        this.sidebarContent = document.getElementById('sidebar-content');
+        this.sidebarArrow = document.getElementById('sidebar-arrow');
     }
 
     connectWebSocket() {
@@ -70,7 +84,7 @@ class PokerArenaClient {
         
         this.ws.onopen = () => {
             console.log('WebSocket connected!');
-            this.addLog('아레나 서버와 실시간 연결되었습니다.');
+            this.addLog('아레나 게임 서버와 실시간으로 연결되었습니다.');
         };
         
         this.ws.onmessage = (event) => {
@@ -79,7 +93,7 @@ class PokerArenaClient {
         };
         
         this.ws.onclose = () => {
-            console.log('WebSocket closed, attempting reconnect in 2s...');
+            console.log('WebSocket closed, reconnecting in 2s...');
             setTimeout(() => this.connectWebSocket(), 2000);
         };
         
@@ -96,14 +110,13 @@ class PokerArenaClient {
         });
         
         this.btnReset.addEventListener('click', () => {
-            if (confirm('스택과 세션 통계를 초기화하시겠습니까?')) {
+            if (confirm('스택과 세션 통계를 초기화하시겠습니까? (초기 100BB로 리셋)')) {
                 if (this.ws && this.ws.readyState === WebSocket.OPEN) {
                     this.ws.send(JSON.stringify({ type: 'reset_stacks' }));
                 }
             }
         });
         
-        // 6개 액션 버튼 클릭
         Object.entries(this.buttons).forEach(([actId, btn]) => {
             btn.addEventListener('click', () => {
                 if (this.ws && this.ws.readyState === WebSocket.OPEN) {
@@ -115,10 +128,18 @@ class PokerArenaClient {
             });
         });
         
+        // 모바일 사이드바 토글
+        if (this.btnToggleSidebar) {
+            this.btnToggleSidebar.addEventListener('click', () => {
+                this.sidebarContent.classList.toggle('collapsed');
+                const isCollapsed = this.sidebarContent.classList.contains('collapsed');
+                this.sidebarArrow.innerText = isCollapsed ? '▲' : '▼';
+            });
+        }
+        
         // 피드백 폼 제출
         this.feedbackForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const cat = document.getElementById('fb-category').value;
             const comment = document.getElementById('fb-comment').value;
             
             try {
@@ -128,12 +149,12 @@ class PokerArenaClient {
                     body: JSON.stringify({
                         session_id: this.sessionId,
                         hand_number: this.state ? this.state.hand_number : 0,
-                        category: cat,
+                        category: "User_Feedback",
                         comment: comment
                     })
                 });
                 if (res.ok) {
-                    this.fbStatus.innerText = '피드백이 성공적으로 기록되었습니다. 감사합니다!';
+                    this.fbStatus.innerText = '소중한 의견이 전송되었습니다. 감사합니다!';
                     document.getElementById('fb-comment').value = '';
                     setTimeout(() => { this.fbStatus.innerText = ''; }, 4000);
                 }
@@ -165,16 +186,17 @@ class PokerArenaClient {
         
         // 1. 헤더 통계
         const stats = state.hero_stats || {};
-        this.statHands.innerText = stats.hands || 0;
+        this.statHands.innerText = (stats.hands || 0) + '판';
         const net = stats.total_profit_bb || 0.0;
         this.statNet.innerText = (net >= 0 ? '+' : '') + net.toFixed(1) + ' BB';
+        this.statNet.className = 'profit-val ' + (net >= 0 ? 'profit-pos' : 'profit-neg');
         this.statNet.style.color = net >= 0 ? '#10b981' : '#ef4444';
         this.statBb100.innerText = (stats.bb100 >= 0 ? '+' : '') + (stats.bb100 || 0.0).toFixed(1);
         this.statWinrate.innerText = (stats.win_rate_pct || 0.0).toFixed(1) + '%';
         
-        // 2. 테이블 중앙 (팟 & 커뮤니티 카드)
+        // 2. 테이블 중앙 (팟 & 스트리트 & 커뮤니티 카드)
         this.potDisplay.innerText = (state.pot_bb || 0.0).toFixed(1) + ' BB';
-        this.streetDisplay.innerText = state.round_name || 'Preflop';
+        this.streetDisplay.innerText = state.round_name || '프리플랍 (Preflop)';
         
         const boardHtml = (state.board_cards || []).map(c => this.renderCard(c)).join('');
         this.boardCardsContainer.innerHTML = boardHtml;
@@ -189,8 +211,8 @@ class PokerArenaClient {
             if (p.is_folded) seatEl.classList.add('folded');
             
             const cardsHtml = (p.cards || []).map(c => this.renderCard(c)).join('');
-            const dealerBadge = p.is_dealer ? `<span class="dealer-button">D</span>` : '';
-            const betBadge = p.current_bet_bb > 0 ? `<div class="player-bet-badge">Bet: ${p.current_bet_bb.toFixed(1)} BB</div>` : '';
+            const dealerBadge = p.is_dealer ? `<span class="dealer-button" title="딜러 버튼">D</span>` : '';
+            const betBadge = p.current_bet_bb > 0 ? `<div class="player-bet-badge">베팅: ${p.current_bet_bb.toFixed(1)} BB</div>` : '';
             
             seatEl.innerHTML = `
                 <div class="player-header">
@@ -203,34 +225,61 @@ class PokerArenaClient {
             `;
         });
         
-        // 4. 인간(Hero) 액션 버튼 제어
+        // 4. 승자 배너 & 턴 배너
+        if (state.winner_announcement && state.is_terminal) {
+            this.winnerBanner.classList.remove('hidden');
+            this.winnerText.innerText = state.winner_announcement;
+        } else {
+            this.winnerBanner.classList.add('hidden');
+        }
+        
         const isHumanTurn = (state.current_player === 0 && !state.is_terminal);
+        if (isHumanTurn) {
+            this.turnBanner.classList.remove('hidden');
+        } else {
+            this.turnBanner.classList.add('hidden');
+        }
+        
+        // 5. 인간(Hero) 액션 버튼 제어 및 금액 업데이트
         const legal = state.legal_actions || [];
+        const raises = state.raise_amounts || {};
         
         Object.entries(this.buttons).forEach(([actId, btn]) => {
             const aNum = parseInt(actId);
             const isLegal = isHumanTurn && legal.includes(aNum);
             btn.disabled = !isLegal;
             
-            // 체크 vs 콜 텍스트 업데이트
+            // 콜/체크 라벨
             if (aNum === 1) {
                 if (state.call_cost_bb > 0) {
-                    btn.innerText = `Call (${state.call_cost_bb.toFixed(1)} BB)`;
+                    this.lblCall.innerText = `콜 (Call ${state.call_cost_bb.toFixed(1)} BB)`;
                 } else {
-                    btn.innerText = `Check (체크)`;
+                    this.lblCall.innerText = `체크 (Check)`;
                 }
+            }
+            // 레이즈 라벨
+            if (aNum === 2) {
+                const amt = raises['2'] ? ` (${raises['2']} BB)` : '';
+                this.lblRaise50.innerText = `50% 팟 레이즈${amt}`;
+            }
+            if (aNum === 3) {
+                const amt = raises['3'] ? ` (${raises['3']} BB)` : '';
+                this.lblRaise100.innerText = `100% 팟 레이즈${amt}`;
+            }
+            if (aNum === 4) {
+                const amt = raises['4'] ? ` (${raises['4']} BB)` : '';
+                this.lblRaise200.innerText = `200% 팟 레이즈${amt}`;
+            }
+            if (aNum === 5) {
+                const amt = raises['5'] ? ` (${raises['5']} BB)` : '';
+                this.lblAllin.innerText = `올인 (All-In${amt})`;
             }
         });
         
-        // 새 핸드 버튼 제어
+        // 새 핸드 버튼
         this.btnNewHand.disabled = !state.is_terminal;
-        if (state.is_terminal) {
-            this.btnNewHand.style.animation = 'pulse 1.5s infinite';
-        } else {
-            this.btnNewHand.style.animation = 'none';
-        }
         
-        // 5. 최근 로그 렌더링
+        // 6. 최근 로그 렌더링
         if (state.recent_logs && state.recent_logs.length > 0) {
             this.actionLog.innerHTML = state.recent_logs.map(line => `<div class="log-entry">${line}</div>`).join('');
             this.actionLog.scrollTop = this.actionLog.scrollHeight;
