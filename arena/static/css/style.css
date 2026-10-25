@@ -484,6 +484,18 @@ body {
     box-shadow: none;
 }
 
+.table-notice-bar {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
 /* 사이드바 */
 .arena-sidebar {
     width: 340px;
@@ -739,4 +751,143 @@ body {
     font-size: 12px;
     color: #64748b;
     margin-top: 14px;
+}
+
+/* ==========================================================================
+   DIRECTIVE 024: 가상 달러 통계, 맞대결 전적표 및 무료 게임 고지 스타일
+   ========================================================================== */
+
+/* 상단 전광판 가상 달러 강조 */
+.stat-pill .balance-val {
+    color: var(--accent-gold);
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.profit-val.positive, .last-hand-val.positive {
+    color: #10b981 !important;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.profit-val.negative, .last-hand-val.negative {
+    color: #ef4444 !important;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.profit-val.neutral, .last-hand-val.neutral {
+    color: #94a3b8 !important;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* AI 상대별 맞대결 전적표 */
+.h2h-card {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 14px;
+}
+
+.h2h-table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.h2h-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.h2h-header {
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.h2h-name {
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.h2h-score {
+    display: flex;
+    gap: 4px;
+}
+
+.badge-win {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.badge-loss {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.badge-tie {
+    background: rgba(148, 163, 184, 0.15);
+    color: #cbd5e1;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.h2h-empty {
+    color: var(--text-muted);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 무료 테스트 게임 고지 푸터 */
+.arena-footer {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #090d16;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.footer-notice {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.notice-icon {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .stat-pill .balance-val {
+        font-size: 15px;
+    }
+    .footer-notice {
+        font-size: 11px;
+        line-height: 1.4;
+    }
 }

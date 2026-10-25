@@ -41,6 +41,15 @@ STREET_NAMES_KO = {
     4: "쇼다운 (Showdown)"
 }
 
+def format_dollar(amount: float, show_sign: bool = False) -> str:
+    """가상 달러 포맷팅 (예: +$1,500, -$500, $10,000)"""
+    amt_int = int(round(amount))
+    sign = "+" if amt_int > 0 and show_sign else ("-" if amt_int < 0 else "")
+    abs_str = f"{abs(amt_int):,}"
+    if show_sign:
+        return f"{sign}${abs_str}"
+    return f"-${abs_str}" if amt_int < 0 else f"${abs_str}"
+
 class PokerArenaSession:
     def __init__(self, session_id: str):
         self.session_id = session_id
@@ -55,10 +64,18 @@ class PokerArenaSession:
             {"seat": 4, "name": "AI Baseline", "type": "ai", "key": "baseline", "role": "V10.22 사전학습 기준선 (10만)", "avatar": "🤖"}
         ]
         
-        self.stacks = [10000.0] * 5  # 100 BB each
+        self.initial_stack = 10000.0  # 가상 $10,000 (100 BB)
+        self.stacks = [self.initial_stack] * 5
+        self.cumulative_returns_chips = [0.0] * 5
         self.cumulative_returns_bb = [0.0] * 5
         self.hands_played = 0
         self.hero_wins = 0
+        self.last_hand_profit_dollars = 0.0
+        
+        # AI 상대별 전적 기록 (Seat 1, 2, 3, 4)
+        self.ai_head_to_head = {
+            i: {"wins": 0, "losses": 0, "ties": 0} for i in range(1, 5)
+        }
         
         self.current_state = None
         self.chance_rng = None
@@ -73,10 +90,15 @@ class PokerArenaSession:
         self.winner_announcement = None
 
     def reset_stacks(self):
-        self.stacks = [10000.0] * 5
+        self.stacks = [self.initial_stack] * 5
+        self.cumulative_returns_chips = [0.0] * 5
         self.cumulative_returns_bb = [0.0] * 5
         self.hands_played = 0
         self.hero_wins = 0
+        self.last_hand_profit_dollars = 0.0
+        self.ai_head_to_head = {
+            i: {"wins": 0, "losses": 0, "ties": 0} for i in range(1, 5)
+        }
         self.winner_announcement = None
 
     def start_new_hand(self):
@@ -119,6 +141,19 @@ class PokerArenaSession:
                     self.board_cards = [b_str[i:i+2] for i in range(0, len(b_str), 2)]
                 break
 
+    def _format_action_desc(self, cp: int, act_id: int, raw_act: int) -> str:
+        if act_id == 0:
+            return "다이 (폴드)"
+        spent = extract_player_spent(self.current_state)
+        max_spent = max(spent)
+        if act_id == 1:
+            diff = max_spent - spent[cp]
+            if diff <= 0:
+                return "체크 (Check)"
+            return f"콜 (${int(diff):,})"
+        base_name = ACTION_NAMES.get(act_id, f"Action_{act_id}")
+        return f"{base_name} (${int(raw_act):,})"
+
     def step_human(self, action_id: int):
         if not self.is_hand_active or self.current_state.is_terminal():
             return self.get_client_state()
@@ -132,13 +167,13 @@ class PokerArenaSession:
             action_id = 1
             
         rnd = get_round_from_state(self.current_state)
-        act_name = ACTION_NAMES.get(action_id, f"Action_{action_id}")
-        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] Hero (나): {act_name}")
+        raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, action_id)
+        act_desc = self._format_action_desc(cp, action_id, raw_act)
+        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] Hero (나): {act_desc}")
         
         if action_id == 0:
             self.folded_seats.add(cp)
             
-        raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, action_id)
         self.current_state.apply_action(raw_act)
         self.hand_dec_idx += 1
         
@@ -167,19 +202,18 @@ class PokerArenaSession:
             self.folded_seats, self.hand_seed, self.hand_dec_idx, rnd
         )
         
-        act_name = ACTION_NAMES.get(act, f"Action_{act}")
+        raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, act)
+        act_desc = self._format_action_desc(cp, act, raw_act)
         tag = " [MC수정]" if mc_used else ""
-        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] {profile['name']}: {act_name}{tag} ({lat_ms:.1f}ms)")
+        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] {profile['name']}: {act_desc}{tag} ({lat_ms:.1f}ms)")
         
         if act == 0:
             self.folded_seats.add(cp)
             
-        raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, act)
         self.current_state.apply_action(raw_act)
         self.hand_dec_idx += 1
         
         self._advance_chance_if_needed()
-        
         if self.current_state.is_terminal():
             self._handle_terminal()
             
@@ -193,35 +227,53 @@ class PokerArenaSession:
             self._handle_terminal()
 
     def _handle_terminal(self):
+        if not self.is_hand_active:
+            return
         self.is_hand_active = False
         returns_chips = self.current_state.returns()
         returns_bb = [r / 100.0 for r in returns_chips]
+        hero_net_chips = returns_chips[0]
+        self.last_hand_profit_dollars = float(hero_net_chips)
         
         winners = []
         for i in range(5):
             self.stacks[i] += returns_chips[i]
+            self.cumulative_returns_chips[i] += returns_chips[i]
             self.cumulative_returns_bb[i] += returns_bb[i]
-            if returns_bb[i] > 0:
-                winners.append((i, self.player_profiles[i]["name"], returns_bb[i]))
+            if returns_chips[i] > 0:
+                winners.append((i, self.player_profiles[i]["name"], returns_chips[i]))
                 
-        if returns_bb[0] > 0:
+        if returns_chips[0] > 0:
             self.hero_wins += 1
             
-        # 승자 안내 배너 작성
-        if winners:
-            w_names = ", ".join([f"{w[1]} (+{w[2]:.1f} BB)" for w in winners])
-            if returns_bb[0] > 0:
-                self.winner_announcement = f"🎉 축하합니다! 당신이 승리했습니다! (+{returns_bb[0]:.1f} BB)"
+        # AI 상대별 전적 집계 (Seat 1~4와 Hero의 상대적 핸드 손익 비교)
+        for ai_seat in range(1, 5):
+            ai_net = returns_chips[ai_seat]
+            if hero_net_chips > ai_net:
+                self.ai_head_to_head[ai_seat]["wins"] += 1
+            elif hero_net_chips < ai_net:
+                self.ai_head_to_head[ai_seat]["losses"] += 1
             else:
-                self.winner_announcement = f"🏆 핸드 종료! 승자: {w_names}"
+                self.ai_head_to_head[ai_seat]["ties"] += 1
+            
+        # 승자 안내 배너 작성 (가상 달러 $ 단위)
+        if winners:
+            w_names = ", ".join([f"{w[1]} (+${int(w[2]):,})" for w in winners])
+            if hero_net_chips > 0:
+                self.winner_announcement = f"🎉 축하합니다! 당신이 승리했습니다! (+${int(hero_net_chips):,})"
+            else:
+                loss_str = f"이번 판 -${abs(int(hero_net_chips)):,}" if hero_net_chips < 0 else "이번 판 $0"
+                self.winner_announcement = f"🏆 승자: {w_names} ({loss_str})"
         else:
             self.winner_announcement = "핸드가 무승부(Chop)로 종료되었습니다."
 
         self.hand_action_log.append("=== 쇼다운 및 최종 정산 ===")
         for i, prof in enumerate(self.player_profiles):
-            net = returns_bb[i]
-            sign = "+" if net > 0 else ""
-            self.hand_action_log.append(f"  좌석 {i} ({prof['name']}): {sign}{net:.1f} BB (현재 스택: {self.stacks[i]/100.0:.1f} BB)")
+            net_c = int(returns_chips[i])
+            sign = "+" if net_c > 0 else ""
+            self.hand_action_log.append(
+                f"  좌석 {i} ({prof['name']}): {sign}${abs(net_c):,} (현재 보유: ${int(self.stacks[i]):,})"
+            )
             
         self._save_hand_log(returns_chips, returns_bb)
 
@@ -254,12 +306,14 @@ class PokerArenaSession:
         
         legal_actions = []
         call_cost_bb = 0.0
+        call_cost_chips = 0
         raise_amounts = {}
+        raise_amounts_dollars = {}
         
         if curr_player == 0 and not is_term:
             legal_actions = True6ActionAdapter.get_legal_6actions(self.current_state, 0)
             max_spent = max(spent)
-            call_cost_chips = max_spent - spent[0]
+            call_cost_chips = int(max_spent - spent[0])
             call_cost_bb = call_cost_chips / 100.0
             
             # 레이즈 금액 산출
@@ -267,6 +321,7 @@ class PokerArenaSession:
                 if a_id in legal_actions:
                     raw = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, 0, a_id)
                     raise_amounts[str(a_id)] = round(raw / 100.0, 1)
+                    raise_amounts_dollars[str(a_id)] = int(raw)
             
         players_view = []
         for i, prof in enumerate(self.player_profiles):
@@ -276,7 +331,9 @@ class PokerArenaSession:
                 "role": prof["role"],
                 "avatar": prof["avatar"],
                 "stack_bb": round(self.stacks[i] / 100.0, 1),
+                "stack_dollars": int(self.stacks[i]),
                 "current_bet_bb": round(spent[i] / 100.0, 1),
+                "current_bet_dollars": int(spent[i]),
                 "is_folded": i in self.folded_seats,
                 "is_active": (i == curr_player),
                 "is_dealer": (i == self.button_seat),
@@ -294,6 +351,20 @@ class PokerArenaSession:
             
         hero_bb100 = (self.cumulative_returns_bb[0] / self.hands_played * 100.0) if self.hands_played > 0 else 0.0
         hero_win_pct = (self.hero_wins / self.hands_played * 100.0) if self.hands_played > 0 else 0.0
+        hero_net_dollars = int(round(self.stacks[0] - self.initial_stack))
+        
+        ai_records_view = [
+            {
+                "seat": i,
+                "name": self.player_profiles[i]["name"],
+                "role": self.player_profiles[i]["role"],
+                "avatar": self.player_profiles[i]["avatar"],
+                "wins": self.ai_head_to_head[i]["wins"],
+                "losses": self.ai_head_to_head[i]["losses"],
+                "ties": self.ai_head_to_head[i]["ties"]
+            }
+            for i in range(1, 5)
+        ]
         
         return {
             "session_id": self.session_id,
@@ -302,17 +373,26 @@ class PokerArenaSession:
             "round_name": STREET_NAMES_KO.get(curr_round, "쇼다운 (Showdown)") if not is_term else "쇼다운 (Showdown)",
             "current_player": curr_player,
             "pot_bb": round(pot_chips / 100.0, 1),
+            "pot_dollars": int(pot_chips),
             "board_cards": self.board_cards,
             "players": players_view,
             "legal_actions": legal_actions,
             "call_cost_bb": call_cost_bb,
+            "call_cost_dollars": call_cost_chips,
             "raise_amounts": raise_amounts,
+            "raise_amounts_dollars": raise_amounts_dollars,
             "winner_announcement": self.winner_announcement,
             "hero_stats": {
                 "hands": self.hands_played,
+                "initial_bankroll": int(self.initial_stack),
+                "current_balance": int(self.stacks[0]),
+                "total_profit_dollars": hero_net_dollars,
+                "last_hand_profit_dollars": int(self.last_hand_profit_dollars),
+                "win_rate_pct": round(hero_win_pct, 1),
+                "ai_records": ai_records_view,
+                # 내부 연구용 지표
                 "total_profit_bb": round(self.cumulative_returns_bb[0], 1),
-                "bb100": round(hero_bb100, 1),
-                "win_rate_pct": round(hero_win_pct, 1)
+                "bb100": round(hero_bb100, 1)
             },
             "recent_logs": self.hand_action_log[-12:]
         }

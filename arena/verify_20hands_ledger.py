@@ -43,12 +43,24 @@ def main():
         while session.is_hand_active and not session.current_state.is_terminal():
             cp = session.current_state.current_player()
             if cp == 0:  # Human turn
-                legal = session.current_state.legal_actions(0)
-                legal_6 = [0, 1, 2, 3, 4, 5]
-                # 가능한 액션 중 타겟 액션 선택 시도
-                chosen_act = target_action_policy
-                if chosen_act not in session.get_client_state()["legal_actions"]:
-                    chosen_act = 1  # Fallback to Check/Call
+                legal_acts = session.get_client_state()["legal_actions"]
+                
+                # 미실행 액션을 우선 선택하여 100% 커버리지 보장
+                cost = session.get_client_state()["call_cost_bb"]
+                if 1 in legal_acts and cost == 0 and action_type_counts["Check"] == 0:
+                    chosen_act = 1
+                else:
+                    priority_order = [4, 3, 2, 5, 0, 1]
+                    chosen_act = 1
+                    for cand in priority_order:
+                        if cand in legal_acts:
+                            act_key = {0: "Fold", 1: "Call" if cost > 0 else "Check",
+                                       2: "50% Raise", 3: "100% Raise", 4: "200% Raise", 5: "All-in"}.get(cand, "")
+                            if action_type_counts.get(act_key, 0) == 0:
+                                chosen_act = cand
+                                break
+                            elif cand == target_action_policy:
+                                chosen_act = cand
                     
                 # 액션 통계
                 if chosen_act == 0:

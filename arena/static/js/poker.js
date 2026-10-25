@@ -58,9 +58,11 @@ class PokerArenaClient {
         this.boardCardsContainer = document.getElementById('board-cards');
         
         this.statHands = document.getElementById('stat-hands');
+        this.statBalance = document.getElementById('stat-balance');
         this.statNet = document.getElementById('stat-net');
-        this.statBb100 = document.getElementById('stat-bb100');
+        this.statLastHand = document.getElementById('stat-last-hand');
         this.statWinrate = document.getElementById('stat-winrate');
+        this.h2hRows = document.getElementById('h2h-rows');
         
         this.winnerBanner = document.getElementById('winner-banner');
         this.winnerText = document.getElementById('winner-text');
@@ -193,7 +195,7 @@ class PokerArenaClient {
         });
         
         this.btnReset.addEventListener('click', () => {
-            if (confirm('스택과 세션 통계를 초기화하시겠습니까? (초기 100BB로 리셋)')) {
+            if (confirm('게임머니($10,000)와 모든 대전 기록을 처음으로 초기화하시겠습니까?')) {
                 if (this.ws && this.ws.readyState === WebSocket.OPEN) {
                     this.ws.send(JSON.stringify({ type: 'reset_stacks' }));
                 }
@@ -265,26 +267,49 @@ class PokerArenaClient {
         `;
     }
 
+    formatMoney(amount, showSign = false) {
+        const val = Math.round(amount || 0);
+        const sign = val > 0 && showSign ? '+' : (val < 0 ? '-' : '');
+        return `${sign}$${Math.abs(val).toLocaleString()}`;
+    }
+
     onStateUpdate(state) {
         this.state = state;
         
-        // 1. 헤더 통계
+        // 1. 헤더 통계 (가상 달러 $ 단위, BB 노출 금지)
         const stats = state.hero_stats || {};
-        this.statHands.innerText = (stats.hands || 0) + '판';
-        const net = stats.total_profit_bb || 0.0;
-        this.statNet.innerText = (net >= 0 ? '+' : '') + net.toFixed(1) + ' BB';
-        this.statNet.style.color = net >= 0 ? '#10b981' : '#ef4444';
-        this.statBb100.innerText = (stats.bb100 >= 0 ? '+' : '') + (stats.bb100 || 0.0).toFixed(1);
-        this.statWinrate.innerText = (stats.win_rate_pct || 0.0).toFixed(1) + '%';
+        if (this.statHands) this.statHands.innerText = (stats.hands || 0) + '판';
+        
+        const balance = stats.current_balance !== undefined ? stats.current_balance : 10000;
+        if (this.statBalance) this.statBalance.innerText = this.formatMoney(balance);
+        
+        const net = stats.total_profit_dollars !== undefined ? stats.total_profit_dollars : 0;
+        if (this.statNet) {
+            const prefix = net > 0 ? '이익 ' : (net < 0 ? '손실 ' : '');
+            this.statNet.innerText = prefix + this.formatMoney(net, true);
+            this.statNet.className = 'profit-val ' + (net > 0 ? 'positive' : (net < 0 ? 'negative' : 'neutral'));
+        }
+        
+        const lastProfit = stats.last_hand_profit_dollars !== undefined ? stats.last_hand_profit_dollars : 0;
+        if (this.statLastHand) {
+            const lastPrefix = lastProfit > 0 ? '획득 ' : (lastProfit < 0 ? '손실 ' : '');
+            this.statLastHand.innerText = lastPrefix + this.formatMoney(lastProfit, true);
+            this.statLastHand.className = 'last-hand-val ' + (lastProfit > 0 ? 'positive' : (lastProfit < 0 ? 'negative' : 'neutral'));
+        }
+        
+        if (this.statWinrate) {
+            this.statWinrate.innerText = (stats.win_rate_pct || 0.0).toFixed(1) + '%';
+        }
         
         // 2. 테이블 중앙 (팟 & 스트리트 & 커뮤니티 카드)
-        this.potDisplay.innerText = (state.pot_bb || 0.0).toFixed(1) + ' BB';
+        const pot = state.pot_dollars !== undefined ? state.pot_dollars : Math.round((state.pot_bb || 0) * 100);
+        this.potDisplay.innerText = `팟 ${this.formatMoney(pot)}`;
         this.streetDisplay.innerText = state.round_name || '프리플랍 (Preflop)';
         
         const boardHtml = (state.board_cards || []).map(c => this.renderCard(c)).join('');
         this.boardCardsContainer.innerHTML = boardHtml;
         
-        // 3. 5인 좌석 렌더링
+        // 3. 5인 좌석 렌더링 ($ 단위 표시)
         (state.players || []).forEach(p => {
             const seatEl = document.getElementById(`seat-${p.seat}`);
             if (!seatEl) return;
@@ -295,14 +320,17 @@ class PokerArenaClient {
             
             const cardsHtml = (p.cards || []).map(c => this.renderCard(c)).join('');
             const dealerBadge = p.is_dealer ? `<span class="dealer-button" title="딜러 버튼">D</span>` : '';
-            const betBadge = p.current_bet_bb > 0 ? `<div class="player-bet-badge">베팅: ${p.current_bet_bb.toFixed(1)} BB</div>` : '';
+            
+            const stackVal = p.stack_dollars !== undefined ? p.stack_dollars : Math.round(p.stack_bb * 100);
+            const betVal = p.current_bet_dollars !== undefined ? p.current_bet_dollars : Math.round(p.current_bet_bb * 100);
+            const betBadge = betVal > 0 ? `<div class="player-bet-badge">베팅: ${this.formatMoney(betVal)}</div>` : '';
             
             seatEl.innerHTML = `
                 <div class="player-header">
                     <span>${p.avatar} ${p.name}</span>
                     ${dealerBadge}
                 </div>
-                <div class="player-stack">${p.stack_bb.toFixed(1)} BB</div>
+                <div class="player-stack">${this.formatMoney(stackVal)}</div>
                 ${betBadge}
                 <div class="player-cards">${cardsHtml}</div>
             `;
@@ -323,9 +351,10 @@ class PokerArenaClient {
             this.turnBanner.classList.add('hidden');
         }
         
-        // 5. 인간(Hero) 액션 버튼 제어 및 금액 업데이트
+        // 5. 인간(Hero) 액션 버튼 제어 및 금액 업데이트 ($ 단위)
         const legal = state.legal_actions || [];
-        const raises = state.raise_amounts || {};
+        const raises = state.raise_amounts_dollars || {};
+        const callCost = state.call_cost_dollars !== undefined ? state.call_cost_dollars : Math.round((state.call_cost_bb || 0) * 100);
         
         Object.entries(this.buttons).forEach(([actId, btn]) => {
             const aNum = parseInt(actId);
@@ -333,34 +362,44 @@ class PokerArenaClient {
             btn.disabled = !isLegal;
             
             if (aNum === 1) {
-                if (state.call_cost_bb > 0) {
-                    this.lblCall.innerText = `콜 (Call ${state.call_cost_bb.toFixed(1)} BB)`;
+                if (callCost > 0) {
+                    this.lblCall.innerText = `콜 ${this.formatMoney(callCost)}`;
                 } else {
                     this.lblCall.innerText = `체크 (Check)`;
                 }
             }
             if (aNum === 2) {
-                const amt = raises['2'] ? ` (${raises['2']} BB)` : '';
-                this.lblRaise50.innerText = `50% 팟 레이즈${amt}`;
+                const amt = raises['2'] !== undefined ? raises['2'] : null;
+                this.lblRaise50.innerText = amt ? `50% 레이즈 (${this.formatMoney(amt)})` : `50% 팟 레이즈`;
             }
             if (aNum === 3) {
-                const amt = raises['3'] ? ` (${raises['3']} BB)` : '';
-                this.lblRaise100.innerText = `100% 팟 레이즈${amt}`;
+                const amt = raises['3'] !== undefined ? raises['3'] : null;
+                this.lblRaise100.innerText = amt ? `100% 레이즈 (${this.formatMoney(amt)})` : `100% 팟 레이즈`;
             }
             if (aNum === 4) {
-                const amt = raises['4'] ? ` (${raises['4']} BB)` : '';
-                this.lblRaise200.innerText = `200% 팟 레이즈${amt}`;
+                const amt = raises['4'] !== undefined ? raises['4'] : null;
+                this.lblRaise200.innerText = amt ? `200% 레이즈 (${this.formatMoney(amt)})` : `200% 팟 레이즈`;
             }
             if (aNum === 5) {
-                const amt = raises['5'] ? ` (${raises['5']} BB)` : '';
-                this.lblAllin.innerText = `올인 (All-In${amt})`;
+                const amt = raises['5'] !== undefined ? raises['5'] : null;
+                this.lblAllin.innerText = amt ? `올인 (${this.formatMoney(amt)})` : `올인 (All-In)`;
             }
         });
         
         // 새 핸드 버튼
         this.btnNewHand.disabled = !state.is_terminal;
         
-        // 6. 최근 로그 렌더링
+        // 6. AI 상대별 전적 렌더링
+        if (this.h2hRows && stats.ai_records) {
+            this.h2hRows.innerHTML = stats.ai_records.map(r => `
+                <div class="h2h-row">
+                    <span class="h2h-name">${r.avatar} ${r.name}</span>
+                    <span class="h2h-score"><span class="badge-win">${r.wins}승</span> <span class="badge-loss">${r.losses}패</span> <span class="badge-tie">${r.ties}무</span></span>
+                </div>
+            `).join('');
+        }
+        
+        // 7. 최근 로그 렌더링
         if (state.recent_logs && state.recent_logs.length > 0) {
             this.actionLog.innerHTML = state.recent_logs.map(line => `<div class="log-entry">${line}</div>`).join('');
             this.actionLog.scrollTop = this.actionLog.scrollHeight;

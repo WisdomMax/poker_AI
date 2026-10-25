@@ -15,11 +15,12 @@
                 <h1>POKER AI HUMAN ARENA <span class="sub-title">| 5인 홀덤 AI 대전</span></h1>
             </div>
             <div class="header-stats">
+                <div class="stat-pill"><span class="lbl">보유 머니</span> <strong id="stat-balance" class="balance-val">$10,000</strong></div>
+                <div class="stat-pill"><span class="lbl">총 손익</span> <strong id="stat-net" class="profit-val">+$0</strong></div>
+                <div class="stat-pill"><span class="lbl">이번 판</span> <strong id="stat-last-hand" class="last-hand-val">$0</strong></div>
                 <div class="stat-pill"><span class="lbl">진행 판수</span> <strong id="stat-hands">0판</strong></div>
-                <div class="stat-pill"><span class="lbl">나의 손익</span> <strong id="stat-net" class="profit-val">+0.0 BB</strong></div>
-                <div class="stat-pill"><span class="lbl">평균 실력(bb/100)</span> <strong id="stat-bb100">0.0</strong></div>
                 <div class="stat-pill"><span class="lbl">승률</span> <strong id="stat-winrate">0.0%</strong></div>
-                <button id="btn-reset" class="btn-reset" title="스택 및 세션 기록을 처음(100BB)으로 되돌립니다">초기화</button>
+                <button id="btn-reset" class="btn-reset" title="게임머니($10,000) 및 전적 통계를 초기화합니다">처음부터</button>
             </div>
         </header>
 
@@ -59,7 +60,7 @@
                             <span class="pot-coin">🪙</span>
                             <div class="pot-info">
                                 <span class="pot-title">누적 팟 (Total Pot)</span>
-                                <span class="pot-value" id="pot-display">1.5 BB</span>
+                                <span class="pot-value" id="pot-display">$150</span>
                             </div>
                         </div>
                         <div class="street-badge" id="street-display">프리플랍 (Preflop)</div>
@@ -117,6 +118,11 @@
                     <div class="next-hand-bar">
                         <button id="btn-new-hand" class="btn-next-hand">다음 판 시작 (Deal Next Hand) ➔</button>
                     </div>
+
+                    <!-- 무료 게임 고지 문구 (DIRECTIVE 024) -->
+                    <div class="table-notice-bar">
+                        <span>🛡️ 무료 테스트 게임 · 모든 금액은 가상 게임머니($)이며 실제 현금 가치가 없습니다. (충전·환전·출금 불가)</span>
+                    </div>
                 </div>
             </div>
 
@@ -139,6 +145,20 @@
                         </div>
                     </div>
 
+                    <!-- AI 상대별 전적 (DIRECTIVE 024) -->
+                    <div class="sidebar-card h2h-card">
+                        <h3>🥊 AI 상대별 맞대결 전적</h3>
+                        <div class="h2h-table" id="h2h-table">
+                            <div class="h2h-row h2h-header">
+                                <span>상대 AI</span>
+                                <span>전적 (승/패/무)</span>
+                            </div>
+                            <div id="h2h-rows">
+                                <div class="h2h-empty">핸드를 진행하면 전적이 집계됩니다.</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="sidebar-card log-card">
                         <h3>📜 실시간 게임 중계 로그</h3>
                         <div class="log-stream" id="action-log">
@@ -157,6 +177,14 @@
                 </div>
             </aside>
         </main>
+
+        <!-- 무료 테스트 게임 고지 푸터 (DIRECTIVE 024) -->
+        <footer class="arena-footer">
+            <div class="footer-notice">
+                <span class="notice-icon">🛡️</span>
+                <span>무료 테스트 게임 · 모든 금액은 가상 게임머니($)이며 실제 현금 가치가 없습니다. (충전·환전·출금 불가)</span>
+            </div>
+        </footer>
     </div>
 
     <script src="/js/poker.js"></script>
