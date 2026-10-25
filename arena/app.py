@@ -1,8 +1,10 @@
 """
-POKER AI HUMAN ARENA Lite: FastAPI Application with Secure External Access (DIRECTIVE 022)
+POKER AI HUMAN ARENA Lite: FastAPI Application with Secure External Access (DIRECTIVE 029)
 ==========================================================================================
 Enhanced with:
-- PIN Access Gatekeeper (Blocks unauthorized access, default PIN: 7777)
+- Token-based Session Authentication (Zero plaintext PIN leakage in URLs)
+- Brute-force Protection (Rate limiting on PIN verification attempts)
+- Environment-controlled confidential PIN (No hardcoded credentials)
 - Independent multi-session management (Supports 1~3 concurrent human players)
 - Strict WebSocket & API security (Zero model leak, zero card leak)
 - Health & Resource Monitoring
@@ -12,18 +14,46 @@ import os
 import sys
 import json
 import time
+import secrets
+import hmac
 import asyncio
+from collections import defaultdict
 import psutil
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query, HTTPException, status
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query, HTTPException, Request, status
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# .env 파일에서 보안 설정 로드
+def _load_env():
+    env_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+    if os.path.exists(env_file):
+        with open(env_file, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ[k.strip()] = v.strip()
+
+_load_env()
+
+# 비밀 PIN 로드 (하드코딩 제거)
+ACCESS_PIN = os.environ.get("ARENA_ACCESS_PIN")
+if not ACCESS_PIN:
+    # 환경변수 부재 시 보안 난수 생성 후 .env에 안전 저장
+    generated = ''.join(secrets.choice('0123456789') for _ in range(6))
+    env_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+    with open(env_file, "a", encoding="utf-8") as f:
+        f.write(f"\nARENA_ACCESS_PIN={generated}\n")
+    os.chmod(env_file, 0o600)
+    ACCESS_PIN = generated
+    os.environ["ARENA_ACCESS_PIN"] = ACCESS_PIN
+
 from arena.game_engine import PokerArenaSession
 
-app = FastAPI(title="Poker AI Human Arena Lite (Secure External)", version="2.0.0")
+app = FastAPI(title="Poker AI Human Arena Lite (Secure External)", version="2.1.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -33,29 +63,77 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 보안 PIN 설정 (환경 변수 또는 기본값 7777)
-ACCESS_PIN = os.environ.get("ARENA_ACCESS_PIN", "7777")
-
 # 세션 딕셔너리: session_id -> PokerArenaSession
 sessions = {}
 
+# Rate Limiting & Auth State
+FAILED_ATTEMPTS = defaultdict(list)
+MAX_FAILED_ATTEMPTS = 5
+LOCKOUT_SECONDS = 600  # 10분 잠금
+
+VALID_TOKENS = {}  # token -> {"session_id": str, "created_at": float}
+TOKEN_TTL_SECONDS = 86400  # 24시간
+
+def is_ip_locked(ip: str) -> bool:
+    now = time.time()
+    recent = [t for t in FAILED_ATTEMPTS[ip] if now - t < LOCKOUT_SECONDS]
+    FAILED_ATTEMPTS[ip] = recent
+    return len(recent) >= MAX_FAILED_ATTEMPTS
+
+def record_failed_attempt(ip: str):
+    FAILED_ATTEMPTS[ip].append(time.time())
+
+def reset_failed_attempts(ip: str):
+    FAILED_ATTEMPTS.pop(ip, None)
+
+def is_token_valid(token: str) -> bool:
+    if not token or token not in VALID_TOKENS:
+        return False
+    created = VALID_TOKENS[token]["created_at"]
+    if time.time() - created > TOKEN_TTL_SECONDS:
+        VALID_TOKENS.pop(token, None)
+        return False
+    return True
+
 class FeedbackModel(BaseModel):
     session_id: str
-    pin: str
+    token: str
     hand_number: int
     category: str
     comment: str
 
 @app.post("/api/verify-pin")
-async def verify_pin(data: dict):
+async def verify_pin(request: Request, data: dict):
+    client_ip = request.client.host if request.client else "unknown"
+    if is_ip_locked(client_ip):
+        raise HTTPException(
+            status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+            detail="인증 시도 횟수를 초과했습니다. 10분 후 다시 시도해 주세요."
+        )
+        
     input_pin = str(data.get("pin", "")).strip()
-    if input_pin == ACCESS_PIN:
-        return {"status": "ok", "valid": True}
-    return {"status": "error", "valid": False, "message": "입장 번호가 일치하지 않습니다."}
+    session_id = str(data.get("session_id", "")).strip()
+    
+    # hmac.compare_digest로 타이밍 공격 방지 (비밀값 로깅 절대 금지)
+    if input_pin and hmac.compare_digest(input_pin, ACCESS_PIN):
+        reset_failed_attempts(client_ip)
+        token = secrets.token_urlsafe(32)
+        VALID_TOKENS[token] = {"session_id": session_id, "created_at": time.time()}
+        return {"status": "ok", "valid": True, "token": token}
+    else:
+        record_failed_attempt(client_ip)
+        recent_count = len(FAILED_ATTEMPTS[client_ip])
+        remaining = max(0, MAX_FAILED_ATTEMPTS - recent_count)
+        print(f"[Arena Auth] Failed verification attempt from {client_ip} (Remaining: {remaining})", flush=True)
+        return {
+            "status": "error",
+            "valid": False,
+            "message": f"입장 번호가 올바르지 않습니다. (남은 시도: {remaining}회)"
+        }
 
 @app.post("/api/feedback")
 async def save_feedback(item: FeedbackModel):
-    if item.pin != ACCESS_PIN:
+    if not is_token_valid(item.token):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="인증되지 않은 접근입니다.")
         
     log_dir = "arena/data"
@@ -88,11 +166,11 @@ async def health_check():
 async def websocket_endpoint(
     websocket: WebSocket, 
     session_id: str,
-    pin: str = Query(default="")
+    token: str = Query(default="")
 ):
-    # PIN 인증 검증
-    if pin != ACCESS_PIN:
-        print(f"[Arena WS] Rejected connection from {session_id} - Invalid PIN: '{pin}'", flush=True)
+    # 토큰 기반 인증 검증 (URL 평문 PIN 노출 원천 차단)
+    if not is_token_valid(token):
+        print(f"[Arena WS] Rejected unauthorized connection from session {session_id}", flush=True)
         await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
         return
 

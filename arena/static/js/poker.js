@@ -17,15 +17,15 @@ const SUIT_COLORS = {
 class PokerArenaClient {
     constructor() {
         this.sessionId = this.getOrCreateSessionId();
-        this.pin = this.getInitialPin();
+        this.token = sessionStorage.getItem('arena_auth_token') || '';
         this.ws = null;
         this.state = null;
         
         this.initDOMElements();
         this.attachEventListeners();
         
-        if (this.pin) {
-            this.verifyAndConnect(this.pin);
+        if (this.token) {
+            this.connectWebSocket();
         } else {
             this.showPinModal();
         }
@@ -38,18 +38,6 @@ class PokerArenaClient {
             localStorage.setItem('arena_session_id', sid);
         }
         return sid;
-    }
-
-    getInitialPin() {
-        // 1. URL 쿼리 파라미터 우선 (?pin=7777)
-        const params = new URLSearchParams(window.location.search);
-        const urlPin = params.get('pin');
-        if (urlPin) {
-            sessionStorage.setItem('arena_pin', urlPin);
-            return urlPin;
-        }
-        // 2. 세션스토리지
-        return sessionStorage.getItem('arena_pin') || '';
     }
 
     initDOMElements() {
@@ -145,15 +133,16 @@ class PokerArenaClient {
 
     async verifyAndConnect(pin) {
         try {
+            if (this.pinError) this.pinError.innerText = '';
             const res = await fetch('/api/verify-pin', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ pin: pin })
+                body: JSON.stringify({ pin: pin, session_id: this.sessionId })
             });
             const data = await res.json();
-            if (data.valid) {
-                this.pin = pin;
-                sessionStorage.setItem('arena_pin', pin);
+            if (data.valid && data.token) {
+                this.token = data.token;
+                sessionStorage.setItem('arena_auth_token', data.token);
                 this.hidePinModal();
                 this.connectWebSocket();
             } else {
@@ -162,8 +151,7 @@ class PokerArenaClient {
             }
         } catch (e) {
             console.error('PIN verification error:', e);
-            // 오프라인/로컬 fallback
-            this.connectWebSocket();
+            if (this.pinError) this.pinError.innerText = '서버 통신 오류가 발생했습니다.';
         }
     }
 
@@ -172,15 +160,20 @@ class PokerArenaClient {
             return;
         }
         
-        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        const wsUrl = `${protocol}//${window.location.host}/ws/${this.sessionId}?pin=${encodeURIComponent(this.pin)}`;
+        if (!this.token) {
+            this.showPinModal();
+            return;
+        }
         
-        console.log(`Connecting to WebSocket: ${wsUrl}`);
+        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const wsUrl = `${protocol}//${window.location.host}/ws/${this.sessionId}?token=${encodeURIComponent(this.token)}`;
+        
+        console.log(`Connecting to secure WebSocket session...`);
         this.ws = new WebSocket(wsUrl);
         
         this.ws.onopen = () => {
-            console.log('WebSocket connected!');
-            this.addLog('아레나 게임 서버와 실시간으로 연결되었습니다.');
+            console.log('Secure WebSocket connected!');
+            this.addLog('아레나 보안 세션이 정상 연결되었습니다.');
         };
         
         this.ws.onmessage = (event) => {
@@ -194,14 +187,14 @@ class PokerArenaClient {
             this.btnNewHand.disabled = true;
             window.arenaAudio?.stopAllAndClear();
             if (e.code === 1008) {
-                // PIN 오류로 거절됨
-                sessionStorage.removeItem('arena_pin');
-                this.pin = '';
+                // 토큰 인증 실패
+                sessionStorage.removeItem('arena_auth_token');
+                this.token = '';
                 this.showPinModal();
-                if (this.pinError) this.pinError.innerText = '인증에 실패했습니다. 올바른 입장 번호를 입력하세요.';
+                if (this.pinError) this.pinError.innerText = '인증이 만료되었습니다. 입장 번호를 다시 입력하세요.';
             } else {
                 setTimeout(() => {
-                    if (this.pin) this.connectWebSocket();
+                    if (this.token) this.connectWebSocket();
                 }, 2500);
             }
         };
@@ -269,7 +262,7 @@ class PokerArenaClient {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         session_id: this.sessionId,
-                        pin: this.pin,
+                        token: this.token,
                         hand_number: this.state ? this.state.hand_number : 0,
                         category: "User_Feedback",
                         comment: comment
