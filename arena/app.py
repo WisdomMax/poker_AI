@@ -234,6 +234,12 @@ async def websocket_endpoint(
                 game_speed = 2.0 if data.get("speed") == 2.0 else 1.0
                 print(f"[Arena WS] Game speed updated: {game_speed}x for session {session_id}")
                 
+            elif msg_type == "set_ai_mode":
+                mode = data.get("mode", "human_friendly")
+                session.set_ai_mode(mode)
+                print(f"[Arena WS] AI mode updated: {mode} for session {session_id}")
+                await websocket.send_json(session.get_client_state())
+                
             elif msg_type == "start_hand":
                 state = session.start_new_hand()
                 await websocket.send_json(state)

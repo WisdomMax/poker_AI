@@ -23,6 +23,7 @@ from v79.run_v79_controlled_causal_study import (
 )
 from v71.run_v71_ledger_and_street_audit import get_round_from_state
 from arena.models_manager import ArenaModelManager
+from arena.human_friendly_policy import HumanFriendlyPolicyAdapter
 
 ACTION_NAMES = {
     0: "폴드 (Fold)",
@@ -73,6 +74,7 @@ class PokerArenaSession:
         self.last_hand_profit_dollars = 0.0
         self.last_action_event = None
         self.last_street = 0
+        self.ai_mode = "human_friendly"  # 기본: 휴먼 프렌들리 모드 ('human_friendly' or 'original')
         
         # AI 상대별 전적 기록 (Seat 1, 2, 3, 4)
         self.ai_head_to_head = {
@@ -102,6 +104,11 @@ class PokerArenaSession:
             i: {"wins": 0, "losses": 0, "ties": 0} for i in range(1, 5)
         }
         self.winner_announcement = None
+
+    def set_ai_mode(self, mode: str):
+        """'human_friendly' (합리적 사이징 거버넌스) 또는 'original' (순수 원본 PPO)"""
+        if mode in ["human_friendly", "original"]:
+            self.ai_mode = mode
 
     def start_new_hand(self, seed: int = None):
         self.hands_played += 1
@@ -232,16 +239,34 @@ class PokerArenaSession:
         legal_6 = True6ActionAdapter.get_legal_6actions(self.current_state, cp)
         rnd = get_round_from_state(self.current_state)
         
-        act, lat_ms, mc_used = self.model_mgr.select_action(
+        act_raw, lat_ms, mc_used, probs = self.model_mgr.select_action(
             ai_key, self.current_state, cp, legal_6,
             self.folded_seats, self.hand_seed, self.hand_dec_idx, rnd
+        )
+        
+        spent = extract_player_spent(self.current_state)
+        pot = sum(spent)
+        facing_bet = max(spent) - spent[cp]
+        priv_cards = self.all_private_cards.get(cp, ["??", "??"])
+        
+        # Human-Friendly 정책 계층 적용 (치팅 없음, 합리적 사이징 거버넌스)
+        act, reason = HumanFriendlyPolicyAdapter.filter_action(
+            raw_act=act_raw,
+            model_probs=probs,
+            private_cards=priv_cards,
+            street=rnd,
+            pot=pot,
+            facing_bet=facing_bet,
+            legal_actions=legal_6,
+            mode=self.ai_mode
         )
         
         raw_act = True6ActionAdapter.map_6action_to_engine_amount(self.current_state, cp, act)
         act_desc = self._format_action_desc(cp, act, raw_act)
         act_key = self._get_action_key(cp, act)
-        tag = " [MC수정]" if mc_used else ""
-        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] {profile['name']}: {act_desc}{tag} ({lat_ms:.1f}ms)")
+        mc_tag = " [MC수정]" if mc_used else ""
+        adj_tag = " [사이징조정]" if (act != act_raw) else ""
+        self.hand_action_log.append(f"[{STREET_NAMES_KO.get(rnd, '')}] {profile['name']}: {act_desc}{mc_tag}{adj_tag} ({lat_ms:.1f}ms)")
         
         self.last_action_event = {
             "type": "action",
@@ -322,6 +347,13 @@ class PokerArenaSession:
             self.cumulative_returns_bb[i] += returns_bb[i]
             if returns_chips[i] > 0:
                 winners.append((i, self.player_profiles[i]["name"], returns_chips[i]))
+            
+            # 스택 무결성 룰 (DIRECTIVE 030):
+            # 잔액이 10 BB ($1,000) 미만 또는 파산($0 이하) 시 무료 $10,000 리바이 지원
+            if self.stacks[i] < 1000.0:
+                self.stacks[i] = 10000.0
+                if i == 0:
+                    self.hand_action_log.append("  💡 [무료 지원금 충전] 잔액 부족으로 가상 달러 $10,000이 무료 리필되었습니다.")
                 
         if returns_chips[0] > 0:
             self.hero_wins += 1
@@ -457,6 +489,7 @@ class PokerArenaSession:
         
         return {
             "session_id": self.session_id,
+            "ai_mode": self.ai_mode,
             "hand_number": self.hands_played,
             "is_terminal": is_term,
             "round_name": STREET_NAMES_KO.get(curr_round, "쇼다운 (Showdown)") if not is_term else "쇼다운 (Showdown)",

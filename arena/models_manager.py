@@ -63,20 +63,22 @@ class ArenaModelManager:
         """
         AI 플레이어의 의사결정 수행:
         - key: 'cycle4', 'cycle13', 'cycle10_mc', 'baseline'
-        - 반환: (선택 액션 ID 0~5, 추론 소요시간 ms, MC 개입 여부 bool)
+        - 반환: (선택 액션 ID 0~5, 추론 소요시간 ms, MC 개입 여부 bool, 정책 확률 리스트)
         """
         t0 = time.perf_counter()
         wrapper = self.wrappers.get(key)
         if not wrapper:
-            return 1, 0.1, False  # Fallback Check/Call
+            return 1, 0.1, False, [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]  # Fallback Check/Call
+
+        inf = np.array(st.information_state_tensor(cp), dtype=np.float32)
+        probs = wrapper.get_action_probs(inf, legal_6)
 
         mc_used = False
         if key == "cycle10_mc" and round_num > 0:
             act = self.adaptive_guard.act(st, cp, legal_6, folded_set, sim_seed, dec_idx)
             mc_used = True
         else:
-            inf = np.array(st.information_state_tensor(cp), dtype=np.float32)
             act = wrapper.act(inf, legal_6)
 
         latency_ms = (time.perf_counter() - t0) * 1000.0
-        return act, latency_ms, mc_used
+        return act, latency_ms, mc_used, probs

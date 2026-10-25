@@ -92,6 +92,7 @@ class PokerArenaClient {
         this.audioVolume = document.getElementById('audio-volume');
         this.btnSpeedToggle = document.getElementById('btn-speed-toggle');
         this.btnGuideToggle = document.getElementById('btn-guide-toggle');
+        this.btnAiMode = document.getElementById('btn-ai-mode');
         
         this.streetHelpTip = document.getElementById('street-help-tip');
         this.commStageText = document.getElementById('comm-stage-text');
@@ -104,6 +105,7 @@ class PokerArenaClient {
         
         this.gameSpeed = 1.0;
         this.guideEnabled = true;
+        this.aiMode = 'human_friendly';
         this.renderedBoardCards = [];
         
         if (this.btnAudioMute && window.arenaAudio) {
@@ -313,6 +315,32 @@ class PokerArenaClient {
                 }
             });
         }
+
+        // AI 플레이 모드 토글 (DIRECTIVE 030: 휴먼 프렌들리 매너 AI vs 연구용 원본 PPO)
+        if (this.btnAiMode) {
+            this.btnAiMode.addEventListener('click', () => {
+                this.aiMode = (this.aiMode === 'human_friendly' ? 'original' : 'human_friendly');
+                this.updateAiModeUI(this.aiMode);
+                if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+                    this.ws.send(JSON.stringify({ type: 'set_ai_mode', mode: this.aiMode }));
+                }
+            });
+        }
+    }
+
+    updateAiModeUI(mode) {
+        if (!this.btnAiMode) return;
+        if (mode === 'human_friendly') {
+            this.btnAiMode.innerText = '🛡️ 매너 AI';
+            this.btnAiMode.classList.add('active');
+            this.btnAiMode.classList.remove('original-mode');
+            this.btnAiMode.title = '현재 매너 AI 모드: 비이성적인 무차별 올인을 방지하고 합리적인 사이징을 적용합니다.';
+        } else {
+            this.btnAiMode.innerText = '⚡ 원본 AI';
+            this.btnAiMode.classList.add('original-mode');
+            this.btnAiMode.classList.remove('active');
+            this.btnAiMode.title = '현재 연구용 원본 AI 모드: 순수 무제한 PPO 원본 체크포인트 그대로 작동합니다.';
+        }
     }
 
     renderCard(cardStr, extraClass = '') {
@@ -408,6 +436,11 @@ class PokerArenaClient {
     onStateUpdate(state) {
         this.state = state;
         this.actionPending = false;
+        
+        if (state.ai_mode && state.ai_mode !== this.aiMode) {
+            this.aiMode = state.ai_mode;
+            this.updateAiModeUI(this.aiMode);
+        }
         
         if (state.hand_number !== this.prevHandNumber) {
             this.renderedBoardCards = [];
