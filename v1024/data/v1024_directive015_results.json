@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "title": "POKER AI V10.24 DIRECTIVE 015 Final Checkpoint Qualification",
+    "timestamp": "2026-10-25 09:22:46",
+    "total_hands": 20000,
+    "seed_range": [
+      400000,
+      419999
+    ],
+    "baseline_identity": {
+      "name": "StrictAntiLimper_R2_100K.pt",
+      "origin": "Pre-trained V10.22 Anti-Limper Baseline Policy (100,000 hands trained in V10.22)",
+      "note": "Confirmed pre-trained policy baseline, NOT random untrained weights"
+    },
+    "sha256_hashes": {
+      "Baseline": {
+        "path": "v1022/models/StrictAntiLimper_R2_100K.pt",
+        "sha256": "42f0f6b9ff0fefaaab9e3214a0e97e22179b22560de844131aa8a3bba34b76f7"
+      },
+      "Cycle_2_725k": {
+        "path": "v1024/models/V1024_PPO_Cycle_2_725353hands.pt",
+        "sha256": "90d24dafd401b94311955fa3f0201eb42e319fe881cb4c4e2122985d959d722c"
+      },
+      "Cycle_4_1211k": {
+        "path": "v1024/models/V1024_PPO_Cycle_4_1211670hands.pt",
+        "sha256": "0cd55d064c2042f8284a4f0cd85acd7aefc75c09f2e48ad02ab629a9e58e38ba"
+      },
+      "Cycle_10_2289k": {
+        "path": "v1024/models/V1024_PPO_Cycle_10_2289023hands.pt",
+        "sha256": "1791c8873dee355704555864a05595bc9a8e8f1c07903cde0ba7ee6dba21812c"
+      },
+      "Cycle_13_2890k": {
+        "path": "v1024/models/V1024_PPO_Cycle_13_2890003hands.pt",
+        "sha256": "7c61431dfce3708529413ef22b9697742debf4aec6e6b42d2d1f3d2fbdea0ea0"
+      }
+    },
+    "reproducibility_audit": {
+      "status": "PASS",
+      "order_invariance": true,
+      "bit_exact": true,
+      "details": "Verified 100% bit-exact across all permutation orders and duplicate runs"
+    }
+  },
+  "overall_summary": {
+    "Cycle_4_PurePPO": {
+      "mean_bb100": 715.2717416666667,
+      "std_bb100": 7808.072444333355,
+      "sem": 55.21140973383937,
+      "ci_95": [
+        607.0573785883415,
+        823.4861047449918
+      ],
+      "positive_return_rate_pct": 13.669999999999998,
+      "diff_vs_baseline_mean": 239.62195,
+      "diff_vs_baseline_sem": 46.785814439367,
+      "diff_vs_baseline_ci95": [
+        147.9217536988407,
+        331.3221463011593
+      ],
+      "t_stat_vs_baseline": 5.121551526839428,
+      "p_val_vs_baseline": 3.058446187789207e-07,
+      "max_loss_single_hand_bb": -100.0,
+      "var_95_bb": -100.0,
+      "quartiles_bb100": {
+        "q25": -100.0,
+        "q50": -50.0,
+        "q75": 0.0
+      },
+      "preflop_action_pct": {
+        "fold": 61.54355893267361,
+        "call": 32.71337692171762,
+        "raise": 5.743064145608765
+      },
+      "postflop_action_pct": {
+        "fold": 11.497450162262401,
+        "call": 82.84654612888271,
+        "raise": 5.656003708854891
+      },
+      "mc_interventions_total": 0
+    },
+    "Cycle_10_AdaptiveMC": {
+      "mean_bb100": 716.706325,
+      "std_bb100": 7516.579597838534,
+      "sem": 53.15024404960079,
+      "ci_95": [
+        612.5318466627824,
+        820.8808033372176
+      ],
+      "positive_return_rate_pct": 13.51,
+      "diff_vs_baseline_mean": 241.05653333333336,
+      "diff_vs_baseline_sem": 44.91735542166338,
+      "diff_vs_baseline_ci95": [
+        153.01851670687313,
+        329.0945499597936
+      ],
+      "t_stat_vs_baseline": 5.366533817091349,
+      "p_val_vs_baseline": 8.115746371557487e-08,
+      "max_loss_single_hand_bb": -100.0,
+      "var_95_bb": -100.0,
+      "quartiles_bb100": {
+        "q25": -100.0,
+        "q50": -50.0,
+        "q75": 0.0
+      },
+      "preflop_action_pct": {
+        "fold": 61.14784448558582,
+        "call": 27.192982456140353,
+        "raise": 11.659173058273826
+      },
+      "postflop_action_pct": {
+        "fold": 40.79710144927537,
+        "call": 37.826086956521735,
+        "raise": 21.3768115942029
+      },
+      "mc_interventions_total": 1380
+    },
+    "Cycle_2_AdaptiveMC": {
+      "mean_bb100": 566.7245833333334,
+      "std_bb100": 7140.014664174841,
+      "sem": 50.4875278680942,
+      "ci_95": [
+        467.76902871186877,
+        665.680137954798
+      ],
+      "positive_return_rate_pct": 12.76,
+      "diff_vs_baseline_mean": 91.07479166666666,
+      "diff_vs_baseline_sem": 42.199938314218564,
+      "diff_vs_baseline_ci95": [
+        8.362912570798272,
+        173.78667076253504
+      ],
+      "t_stat_vs_baseline": 2.1581196183343248,
+      "p_val_vs_baseline": 0.03093039683312406,
+      "max_loss_single_hand_bb": -100.0,
+      "var_95_bb": -100.0,
+      "quartiles_bb100": {
+        "q25": -100.0,
+        "q50": -50.0,
+        "q75": 0.0
+      },
+      "preflop_action_pct": {
+        "fold": 67.3737467508355,
+        "call": 23.533234311177125,
+        "raise": 9.093018937987376
+      },
+      "postflop_action_pct": {
+        "fold": 33.686440677966104,
+        "call": 53.17796610169492,
+        "raise": 13.135593220338984
+      },
+      "mc_interventions_total": 472
+    },
+    "Baseline_PurePPO": {
+      "mean_bb100": 475.6497916666667,
+      "std_bb100": 7984.108320512376,
+      "sem": 56.45617135162238,
+      "ci_95": [
+        364.9956958174869,
+        586.3038875158466
+      ],
+      "positive_return_rate_pct": 15.61,
+      "diff_vs_baseline_mean": 0.0,
+      "diff_vs_baseline_sem": 0.0,
+      "diff_vs_baseline_ci95": [
+        0.0,
+        0.0
+      ],
+      "t_stat_vs_baseline": 0.0,
+      "p_val_vs_baseline": 1.0,
+      "max_loss_single_hand_bb": -100.0,
+      "var_95_bb": -100.0,
+      "quartiles_bb100": {
+        "q25": -100.0,
+        "q50": -50.0,
+        "q75": 0.0
+      },
+      "preflop_action_pct": {
+        "fold": 60.54748913345047,
+        "call": 17.229261074632387,
+        "raise": 22.223249791917137
+      },
+      "postflop_action_pct": {
+        "fold": 2.307692307692308,
+        "call": 34.61538461538461,
+        "raise": 63.07692307692307
+      },
+      "mc_interventions_total": 0
+    },
+    "Cycle_13_PurePPO": {
+      "mean_bb100": 675.8922916666668,
+      "std_bb100": 7486.293275613979,
+      "sem": 52.936087411378956,
+      "ci_95": [
+        572.1375603403641,
+        779.6470229929695
+      ],
+      "positive_return_rate_pct": 13.26,
+      "diff_vs_baseline_mean": 200.2425,
+      "diff_vs_baseline_sem": 45.63401259731202,
+      "diff_vs_baseline_ci95": [
+        110.79983530926845,
+        289.68516469073154
+      ],
+      "t_stat_vs_baseline": 4.387900219116766,
+      "p_val_vs_baseline": 1.1503583947548387e-05,
+      "max_loss_single_hand_bb": -100.0,
+      "var_95_bb": -100.0,
+      "quartiles_bb100": {
+        "q25": -100.0,
+        "q50": -50.0,
+        "q75": 0.0
+      },
+      "preflop_action_pct": {
+        "fold": 63.15271816881259,
+        "call": 22.147711015736768,
+        "raise": 14.699570815450643
+      },
+      "postflop_action_pct": {
+        "fold": 53.333333333333336,
+        "call": 25.555555555555554,
+        "raise": 21.11111111111111
+      },
+      "mc_interventions_total": 0
+    }
+  },
+  "head_to_head_c10_vs_c4": {
+    "description": "Cycle_10_AdaptiveMC minus Cycle_4_PurePPO",
+    "diff_mean_bb100": 1.4345833333333358,
+    "diff_sem": 32.255226230545524,
+    "ci_95": [
+      -61.78566007853589,
+      64.65482674520256
+    ],
+    "t_stat": 0.04447488472250042,
+    "p_value": 0.9645263152806934,
+    "c10_win_frequency_pct": 5.445,
+    "tie_frequency_pct": 86.81,
+    "c4_win_frequency_pct": 7.745
+  },
+  "pool_summary": {
+    "Standard": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 749.3835666666666,
+        "sem": 78.67877950697094,
+        "ci_95": [
+          595.1731588330036,
+          903.5939745003296
+        ],
+        "positive_return_rate_pct": 18.52
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 791.2717166666666,
+        "sem": 73.8329468004446,
+        "ci_95": [
+          646.5591409377952,
+          935.9842923955381
+        ],
+        "positive_return_rate_pct": 18.34
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 647.92625,
+        "sem": 75.98109700037047,
+        "ci_95": [
+          499.00329987927387,
+          796.8492001207261
+        ],
+        "positive_return_rate_pct": 18.98
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 550.2704166666667,
+        "sem": 80.5732908975148,
+        "ci_95": [
+          392.3467665075377,
+          708.1940668257957
+        ],
+        "positive_return_rate_pct": 22.24
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 673.915,
+        "sem": 71.59799586192456,
+        "ci_95": [
+          533.5829281106278,
+          814.2470718893721
+        ],
+        "positive_return_rate_pct": 17.61
+      }
+    },
+    "Unseen": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 681.1599166666667,
+        "sem": 77.47655123431899,
+        "ci_95": [
+          529.3058762474016,
+          833.0139570859319
+        ],
+        "positive_return_rate_pct": 8.82
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 642.1409333333334,
+        "sem": 76.46814851534157,
+        "ci_95": [
+          492.2633622432639,
+          792.0185044234029
+        ],
+        "positive_return_rate_pct": 8.68
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 485.5229166666666,
+        "sem": 66.4944812553099,
+        "ci_95": [
+          355.1937334062592,
+          615.852099927074
+        ],
+        "positive_return_rate_pct": 6.54
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 401.0291666666667,
+        "sem": 79.09505851280709,
+        "ci_95": [
+          246.00285198156482,
+          556.0554813517685
+        ],
+        "positive_return_rate_pct": 8.98
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 677.8695833333333,
+        "sem": 77.99130469686979,
+        "ci_95": [
+          525.0066261274685,
+          830.732540539198
+        ],
+        "positive_return_rate_pct": 8.91
+      }
+    }
+  },
+  "seat_summary": {
+    "Seat_0": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 801.6937916666667,
+        "sem": 103.97273615054235
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 745.553125,
+        "sem": 98.33936279244769
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 703.5197916666666,
+        "sem": 95.64696299720048
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 691.9632916666667,
+        "sem": 109.59244832572168
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 731.203125,
+        "sem": 96.46464182199878
+      }
+    },
+    "Seat_1": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 395.44825,
+        "sem": 105.65565499456469
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 330.9139166666667,
+        "sem": 99.08133550958371
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 121.01666666666667,
+        "sem": 104.57748705571811
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 249.940875,
+        "sem": 114.3546245326779
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 269.4354166666667,
+        "sem": 94.06617447233637
+      }
+    },
+    "Seat_2": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 737.18125,
+        "sem": 125.79272744645874
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 859.1041666666667,
+        "sem": 135.8260337023617
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 630.9145833333333,
+        "sem": 117.57189441353955
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 370.1802083333333,
+        "sem": 136.28730742702845
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 851.31875,
+        "sem": 131.91633605105295
+      }
+    },
+    "Seat_3": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 705.7145833333334,
+        "sem": 121.02180280188796
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 595.8041666666667,
+        "sem": 105.35372714402668
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 485.2947916666667,
+        "sem": 109.91048294229964
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 160.48125000000002,
+        "sem": 132.77182581843977
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 640.9197916666666,
+        "sem": 116.02778984799912
+      }
+    },
+    "Seat_4": {
+      "Cycle_4_PurePPO": {
+        "mean_bb100": 936.3208333333333,
+        "sem": 154.02649875044895
+      },
+      "Cycle_10_AdaptiveMC": {
+        "mean_bb100": 1052.15625,
+        "sem": 146.67507704333178
+      },
+      "Cycle_2_AdaptiveMC": {
+        "mean_bb100": 892.8770833333333,
+        "sem": 132.86414503406328
+      },
+      "Baseline_PurePPO": {
+        "mean_bb100": 905.6833333333333,
+        "sem": 135.25579222142187
+      },
+      "Cycle_13_PurePPO": {
+        "mean_bb100": 886.584375,
+        "sem": 144.8320749588712
+      }
+    }
+  }
+}
