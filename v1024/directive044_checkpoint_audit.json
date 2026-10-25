@@ -1,0 +1,355 @@
+{
+  "base_50k_sha256": "fc1961160e2edc9ac17a48b51dc5a0eb1e43bf819758192ba8989c11131e2b8d",
+  "total_checkpoints": 25,
+  "checkpoint_catalog": {
+    "Agent_A_200h.pt": {
+      "agent": "Agent_A",
+      "milestone": "200h",
+      "path": "v1024/models_alphago/Agent_A_200h.pt",
+      "sha256": "9f30486b94c56b71059facf9804dedcb3de5441f65eae33c80e9687c7be2089f",
+      "size_mb": 3.28
+    },
+    "Agent_A_500h.pt": {
+      "agent": "Agent_A",
+      "milestone": "500h",
+      "path": "v1024/models_alphago/Agent_A_500h.pt",
+      "sha256": "fa75f1de32b1cb4bd461ef9b0a9eef0c6084531243af6f7a4b5244ea6a825acb",
+      "size_mb": 3.28
+    },
+    "Agent_A_1000h.pt": {
+      "agent": "Agent_A",
+      "milestone": "1000h",
+      "path": "v1024/models_alphago/Agent_A_1000h.pt",
+      "sha256": "948abd8c2cb7a0afbb64f0115ea601d9dc70d1e2bdb923b505d70acd3504ce5c",
+      "size_mb": 3.28
+    },
+    "Agent_A_1500h.pt": {
+      "agent": "Agent_A",
+      "milestone": "1500h",
+      "path": "v1024/models_alphago/Agent_A_1500h.pt",
+      "sha256": "4d6d89e1df0c7ff17aff591b14bb0ae1920caad4a9c6baf16773a3dc1a0d1424",
+      "size_mb": 3.28
+    },
+    "Agent_A_2000h.pt": {
+      "agent": "Agent_A",
+      "milestone": "2000h",
+      "path": "v1024/models_alphago/Agent_A_2000h.pt",
+      "sha256": "af434b5e44ecf75aec37c120152a4250b210534f1ef3d65beac2f7d1cfbc1166",
+      "size_mb": 3.28
+    },
+    "Agent_B_200h.pt": {
+      "agent": "Agent_B",
+      "milestone": "200h",
+      "path": "v1024/models_alphago/Agent_B_200h.pt",
+      "sha256": "4ef450de18b9648aa6d4a374ab94f96ccd33f22d8635b0dc7c4ee1dfec884c25",
+      "size_mb": 3.28
+    },
+    "Agent_B_500h.pt": {
+      "agent": "Agent_B",
+      "milestone": "500h",
+      "path": "v1024/models_alphago/Agent_B_500h.pt",
+      "sha256": "7011ca477439ce48aba41b70ddc1711e2b4efafcdefb05443efe2ca98c321c7a",
+      "size_mb": 3.28
+    },
+    "Agent_B_1000h.pt": {
+      "agent": "Agent_B",
+      "milestone": "1000h",
+      "path": "v1024/models_alphago/Agent_B_1000h.pt",
+      "sha256": "ab86cdc5fd132bd3e213d0a83785a67c00c8d77c91636115f856208634486112",
+      "size_mb": 3.28
+    },
+    "Agent_B_1500h.pt": {
+      "agent": "Agent_B",
+      "milestone": "1500h",
+      "path": "v1024/models_alphago/Agent_B_1500h.pt",
+      "sha256": "6935fbab7012de548c2339b8b01a805da6104e2ca18e46b40765ea4aff80a0fa",
+      "size_mb": 3.28
+    },
+    "Agent_B_2000h.pt": {
+      "agent": "Agent_B",
+      "milestone": "2000h",
+      "path": "v1024/models_alphago/Agent_B_2000h.pt",
+      "sha256": "a754ffda8fa7947cd7e461b76fd015ccff512818ce9a5e9fe3d902c7219ba5f2",
+      "size_mb": 3.28
+    },
+    "Agent_C_200h.pt": {
+      "agent": "Agent_C",
+      "milestone": "200h",
+      "path": "v1024/models_alphago/Agent_C_200h.pt",
+      "sha256": "cac63ac49ced097c92c647dcfdfe6774023ebe9b32bb0e43270e5356474323ff",
+      "size_mb": 3.28
+    },
+    "Agent_C_500h.pt": {
+      "agent": "Agent_C",
+      "milestone": "500h",
+      "path": "v1024/models_alphago/Agent_C_500h.pt",
+      "sha256": "876cbd6d85890c8c1dc73dc21e9d79401d9644b10dab8ccc5ee817c4a73e8c07",
+      "size_mb": 3.28
+    },
+    "Agent_C_1000h.pt": {
+      "agent": "Agent_C",
+      "milestone": "1000h",
+      "path": "v1024/models_alphago/Agent_C_1000h.pt",
+      "sha256": "9507dc61e35c59178763c9ebbfccba62763d2e663387539fd6a8a1f175d65702",
+      "size_mb": 3.28
+    },
+    "Agent_C_1500h.pt": {
+      "agent": "Agent_C",
+      "milestone": "1500h",
+      "path": "v1024/models_alphago/Agent_C_1500h.pt",
+      "sha256": "b7cf2489713877a7bbe30bb6624918125cd957658f3e66c961a474e8d4c79188",
+      "size_mb": 3.28
+    },
+    "Agent_C_2000h.pt": {
+      "agent": "Agent_C",
+      "milestone": "2000h",
+      "path": "v1024/models_alphago/Agent_C_2000h.pt",
+      "sha256": "7763b5ab879f11e7c810ba434a2d54758d61a4a8eb9d1fc0dd670e2faefb3743",
+      "size_mb": 3.28
+    },
+    "Agent_D_200h.pt": {
+      "agent": "Agent_D",
+      "milestone": "200h",
+      "path": "v1024/models_alphago/Agent_D_200h.pt",
+      "sha256": "3543dd6197968710d4e49d18e1dcb9e523f63ca7e8c5fe5ac0d346b2a239fa7a",
+      "size_mb": 3.28
+    },
+    "Agent_D_500h.pt": {
+      "agent": "Agent_D",
+      "milestone": "500h",
+      "path": "v1024/models_alphago/Agent_D_500h.pt",
+      "sha256": "999c78ec78c7c91c62700ec796c47c8830efe9c3f7959835f032d13056577784",
+      "size_mb": 3.28
+    },
+    "Agent_D_1000h.pt": {
+      "agent": "Agent_D",
+      "milestone": "1000h",
+      "path": "v1024/models_alphago/Agent_D_1000h.pt",
+      "sha256": "4758949a02b47ec542dd58d33cf851259ece748d68815ff6746e0c08de07b2b3",
+      "size_mb": 3.28
+    },
+    "Agent_D_1500h.pt": {
+      "agent": "Agent_D",
+      "milestone": "1500h",
+      "path": "v1024/models_alphago/Agent_D_1500h.pt",
+      "sha256": "0307971e736b12a91a837c0bdc799d9bfaf9b640c2f9a3fd88dc9fa4d6624e6b",
+      "size_mb": 3.28
+    },
+    "Agent_D_2000h.pt": {
+      "agent": "Agent_D",
+      "milestone": "2000h",
+      "path": "v1024/models_alphago/Agent_D_2000h.pt",
+      "sha256": "a1882c978f074385b12e3047741ea231ae9f077e248d1bcc648502084f3335ac",
+      "size_mb": 3.28
+    },
+    "Agent_E_200h.pt": {
+      "agent": "Agent_E",
+      "milestone": "200h",
+      "path": "v1024/models_alphago/Agent_E_200h.pt",
+      "sha256": "1de253b5c4669022abdb81e4524687a9cf9ed6cf986a2e5bbb50f6e9a90d2083",
+      "size_mb": 3.28
+    },
+    "Agent_E_500h.pt": {
+      "agent": "Agent_E",
+      "milestone": "500h",
+      "path": "v1024/models_alphago/Agent_E_500h.pt",
+      "sha256": "be13f1b3fd95e131810a7670c6509c11f83b7484860617cb4606d0f4fb787414",
+      "size_mb": 3.28
+    },
+    "Agent_E_1000h.pt": {
+      "agent": "Agent_E",
+      "milestone": "1000h",
+      "path": "v1024/models_alphago/Agent_E_1000h.pt",
+      "sha256": "80f7e3c8134682fd49d18326685b766a536a8a09dfdaa606cf35847c908da83c",
+      "size_mb": 3.28
+    },
+    "Agent_E_1500h.pt": {
+      "agent": "Agent_E",
+      "milestone": "1500h",
+      "path": "v1024/models_alphago/Agent_E_1500h.pt",
+      "sha256": "1964a141834cf5b5a848aecfaa1da95506c823a6ab0280959c8691ee54daf66b",
+      "size_mb": 3.28
+    },
+    "Agent_E_2000h.pt": {
+      "agent": "Agent_E",
+      "milestone": "2000h",
+      "path": "v1024/models_alphago/Agent_E_2000h.pt",
+      "sha256": "f785547138b66dfd50ae06f5a5e3b5cfa68c35d1d9c783c19a1505fca55aece5",
+      "size_mb": 3.28
+    }
+  },
+  "step_evolution": {
+    "Agent_A": {
+      "total_dist_from_50k": 5.1944,
+      "final_cos_sim_with_50k": 0.99376,
+      "step_deltas": [
+        {
+          "milestone": "200h",
+          "delta_from_prev": 4.6778
+        },
+        {
+          "milestone": "500h",
+          "delta_from_prev": 6.6696
+        },
+        {
+          "milestone": "1000h",
+          "delta_from_prev": 1.0376
+        },
+        {
+          "milestone": "1500h",
+          "delta_from_prev": 1.0157
+        },
+        {
+          "milestone": "2000h",
+          "delta_from_prev": 1.009
+        }
+      ]
+    },
+    "Agent_B": {
+      "total_dist_from_50k": 9.59,
+      "final_cos_sim_with_50k": 0.97923,
+      "step_deltas": [
+        {
+          "milestone": "200h",
+          "delta_from_prev": 9.2899
+        },
+        {
+          "milestone": "500h",
+          "delta_from_prev": 13.1734
+        },
+        {
+          "milestone": "1000h",
+          "delta_from_prev": 1.0495
+        },
+        {
+          "milestone": "1500h",
+          "delta_from_prev": 1.0607
+        },
+        {
+          "milestone": "2000h",
+          "delta_from_prev": 1.0271
+        }
+      ]
+    },
+    "Agent_C": {
+      "total_dist_from_50k": 14.1106,
+      "final_cos_sim_with_50k": 0.95654,
+      "step_deltas": [
+        {
+          "milestone": "200h",
+          "delta_from_prev": 13.9066
+        },
+        {
+          "milestone": "500h",
+          "delta_from_prev": 19.683
+        },
+        {
+          "milestone": "1000h",
+          "delta_from_prev": 1.0097
+        },
+        {
+          "milestone": "1500h",
+          "delta_from_prev": 1.0648
+        },
+        {
+          "milestone": "2000h",
+          "delta_from_prev": 1.1072
+        }
+      ]
+    },
+    "Agent_D": {
+      "total_dist_from_50k": 18.6659,
+      "final_cos_sim_with_50k": 0.92753,
+      "step_deltas": [
+        {
+          "milestone": "200h",
+          "delta_from_prev": 18.5575
+        },
+        {
+          "milestone": "500h",
+          "delta_from_prev": 26.2466
+        },
+        {
+          "milestone": "1000h",
+          "delta_from_prev": 1.0443
+        },
+        {
+          "milestone": "1500h",
+          "delta_from_prev": 0.9863
+        },
+        {
+          "milestone": "2000h",
+          "delta_from_prev": 1.0849
+        }
+      ]
+    },
+    "Agent_E": {
+      "total_dist_from_50k": 23.3097,
+      "final_cos_sim_with_50k": 0.89334,
+      "step_deltas": [
+        {
+          "milestone": "200h",
+          "delta_from_prev": 23.1863
+        },
+        {
+          "milestone": "500h",
+          "delta_from_prev": 32.8283
+        },
+        {
+          "milestone": "1000h",
+          "delta_from_prev": 1.0009
+        },
+        {
+          "milestone": "1500h",
+          "delta_from_prev": 1.125
+        },
+        {
+          "milestone": "2000h",
+          "delta_from_prev": 1.0356
+        }
+      ]
+    }
+  },
+  "inter_agent_at_2000h": {
+    "Agent_A_vs_Agent_B": {
+      "euclidean_distance": 10.8407,
+      "cosine_similarity": 0.97345
+    },
+    "Agent_A_vs_Agent_C": {
+      "euclidean_distance": 15.0365,
+      "cosine_similarity": 0.95057
+    },
+    "Agent_A_vs_Agent_D": {
+      "euclidean_distance": 19.3431,
+      "cosine_similarity": 0.92201
+    },
+    "Agent_A_vs_Agent_E": {
+      "euclidean_distance": 23.8529,
+      "cosine_similarity": 0.88805
+    },
+    "Agent_B_vs_Agent_C": {
+      "euclidean_distance": 17.024,
+      "cosine_similarity": 0.93695
+    },
+    "Agent_B_vs_Agent_D": {
+      "euclidean_distance": 20.933,
+      "cosine_similarity": 0.90873
+    },
+    "Agent_B_vs_Agent_E": {
+      "euclidean_distance": 25.193,
+      "cosine_similarity": 0.87492
+    },
+    "Agent_C_vs_Agent_D": {
+      "euclidean_distance": 23.4107,
+      "cosine_similarity": 0.88711
+    },
+    "Agent_C_vs_Agent_E": {
+      "euclidean_distance": 27.2276,
+      "cosine_similarity": 0.85474
+    },
+    "Agent_D_vs_Agent_E": {
+      "euclidean_distance": 29.8633,
+      "cosine_similarity": 0.82859
+    }
+  }
+}
