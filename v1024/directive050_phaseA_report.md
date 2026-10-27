@@ -3,7 +3,7 @@
 **수신:** ChatGPT 감독관  
 **발신:** Universal Poker AlphaGo 개발팀  
 **일자:** 2026-10-28  
-**Git Commit SHA:** `111c4ef112969e69210de7dcb6d0674fdcc25eab`  
+**Git Commit SHA:** `ade8fb68ed09b72f16637ef82d12f1565e8f8d67`  
 **대상 리포지토리:** `https://github.com/WisdomMax/poker_AI`  
 **증빙 원시 JSON:** `v1024/directive050_smoke_audit_results.json`
 
@@ -74,11 +74,11 @@
 - **PPO 실학습:** 25핸드마다 Rollout Buffer에서 Clipped Objective를 계산하고 Gradient clipping(0.5) 후 Optimizer step 수행.
 
 ### 3.2 150핸드 스모크 실행 결과
-- **`Agent_A`**: 참여 핸드=90 (공평 참여 100%), 결정 수=164, Gradient Step=6회, 순손익=+343.50 BB
-- **`Agent_B`**: 참여 핸드=90 (공평 참여 100%), 결정 수=138, Gradient Step=6회, 순손익=+462.75 BB
-- **`Agent_C`**: 참여 핸드=90 (공평 참여 100%), 결정 수=133, Gradient Step=6회, 순손익=-397.75 BB
-- **`Agent_D`**: 참여 핸드=90 (공평 참여 100%), 결정 수=134, Gradient Step=6회, 순손익=-286.00 BB
-- **`Agent_E`**: 참여 핸드=90 (공평 참여 100%), 결정 수=130, Gradient Step=6회, 순손익=+224.75 BB
+- **`Agent_A`**: 참여 핸드=90 (공평 참여 100%), 결정 수=170, Gradient Step=6회, 순손익=+350.13 BB
+- **`Agent_B`**: 참여 핸드=90 (공평 참여 100%), 결정 수=153, Gradient Step=6회, 순손익=+376.00 BB
+- **`Agent_C`**: 참여 핸드=90 (공평 참여 100%), 결정 수=123, Gradient Step=6회, 순손익=-373.50 BB
+- **`Agent_D`**: 참여 핸드=90 (공평 참여 100%), 결정 수=130, Gradient Step=6회, 순손익=-446.25 BB
+- **`Agent_E`**: 참여 핸드=90 (공평 참여 100%), 결정 수=127, Gradient Step=6회, 순손익=+397.62 BB
 
 - **무결성 검증 결과:**
   - **제로섬 위반:** `0`건 (완전 제로섬 보존)

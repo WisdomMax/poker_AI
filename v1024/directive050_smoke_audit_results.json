@@ -1,7 +1,7 @@
 {
   "directive": "050-PhaseA",
-  "timestamp": "2026-10-28 02:48:41",
-  "total_elapsed_sec": 1.62,
+  "timestamp": "2026-10-28 02:51:55",
+  "total_elapsed_sec": 1.64,
   "task1_branching_analysis": {
     "excluded_hands_in_049b": [
       {
@@ -102,11 +102,11 @@
     "zero_sum_violations": 0,
     "frozen_mutated": false,
     "pnl_per_agent": {
-      "Agent_B": 462.75,
-      "Agent_C": -397.75,
-      "Agent_D": -286.0,
-      "Agent_E": 224.75,
-      "Agent_A": 343.5
+      "Agent_B": 376.0,
+      "Agent_C": -373.5,
+      "Agent_D": -446.25,
+      "Agent_E": 397.62,
+      "Agent_A": 350.13
     },
     "gradient_steps": {
       "Agent_A": 6,
@@ -116,11 +116,11 @@
       "Agent_E": 6
     },
     "decisions_count": {
-      "Agent_A": 164,
-      "Agent_B": 138,
-      "Agent_C": 133,
-      "Agent_D": 134,
-      "Agent_E": 130
+      "Agent_A": 170,
+      "Agent_B": 153,
+      "Agent_C": 123,
+      "Agent_D": 130,
+      "Agent_E": 127
     },
     "checkpoint_saved_and_verified": true
   }

@@ -3,7 +3,7 @@
 **수신:** ChatGPT 감독관  
 **발신:** Universal Poker AlphaGo 개발팀  
 **일자:** 2026-10-28  
-**Git Commit SHA:** `111c4ef112969e69210de7dcb6d0674fdcc25eab`  
+**Git Commit SHA:** `ade8fb68ed09b72f16637ef82d12f1565e8f8d67`  
 **대상 리포지토리:** `https://github.com/WisdomMax/poker_AI`  
 **증빙 원시 JSON:** `v1024/directive050_pilot_results.json`
 
@@ -31,11 +31,11 @@
 
 - **설정:** A, B, C, D, E 5명 모두 학습형 에이전트로 500핸드 동안 자가대국 및 독립 PPO 업데이트(25핸드 주기) 수행.
 - **실행 결과:**
-- **`Agent_A`**: 참여 핸드=500, 결정 수=805, Gradient Step=20회, 순손익=+47.25 BB
-- **`Agent_B`**: 참여 핸드=500, 결정 수=830, Gradient Step=20회, 순손익=-586.66 BB
-- **`Agent_C`**: 참여 핸드=500, 결정 수=663, Gradient Step=20회, 순손익=+547.66 BB
-- **`Agent_D`**: 참여 핸드=500, 결정 수=969, Gradient Step=20회, 순손익=-496.62 BB
-- **`Agent_E`**: 참여 핸드=500, 결정 수=716, Gradient Step=20회, 순손익=+488.38 BB
+- **`Agent_A`**: 참여 핸드=500, 결정 수=786, Gradient Step=20회, 순손익=-731.12 BB
+- **`Agent_B`**: 참여 핸드=500, 결정 수=815, Gradient Step=20회, 순손익=-734.14 BB
+- **`Agent_C`**: 참여 핸드=500, 결정 수=662, Gradient Step=20회, 순손익=+318.76 BB
+- **`Agent_D`**: 참여 핸드=500, 결정 수=960, Gradient Step=20회, 순손익=+77.63 BB
+- **`Agent_E`**: 참여 핸드=500, 결정 수=719, Gradient Step=20회, 순손익=+1068.88 BB
 - **체크포인트 저장:** `v1024/models_alphago/pilot_full_main/Agent_A~E_pilot.pt` 전수 보존.
 
 ---
@@ -44,11 +44,11 @@
 
 - **설정:** 3명의 Main Learner(균형 순환) + 2명의 Frozen 과거 상대(2000h 체크포인트 풀에서 PFSP 샘플러로 선택).
 - **실행 결과:**
-- **`Agent_A`**: 참여 핸드=300 (공평 참여 100%), 결정 수=545, Gradient Step=20회, 순손익=+723.63 BB
-- **`Agent_B`**: 참여 핸드=300 (공평 참여 100%), 결정 수=451, Gradient Step=20회, 순손익=+844.50 BB
-- **`Agent_C`**: 참여 핸드=300 (공평 참여 100%), 결정 수=434, Gradient Step=20회, 순손익=-334.50 BB
-- **`Agent_D`**: 참여 핸드=300 (공평 참여 100%), 결정 수=405, Gradient Step=20회, 순손익=+92.25 BB
-- **`Agent_E`**: 참여 핸드=300 (공평 참여 100%), 결정 수=458, Gradient Step=20회, 순손익=-376.00 BB
+- **`Agent_A`**: 참여 핸드=300 (공평 참여 100%), 결정 수=529, Gradient Step=20회, 순손익=+948.13 BB
+- **`Agent_B`**: 참여 핸드=300 (공평 참여 100%), 결정 수=438, Gradient Step=20회, 순손익=+777.62 BB
+- **`Agent_C`**: 참여 핸드=300 (공평 참여 100%), 결정 수=424, Gradient Step=20회, 순손익=-414.12 BB
+- **`Agent_D`**: 참여 핸드=300 (공평 참여 100%), 결정 수=423, Gradient Step=20회, 순손익=+295.75 BB
+- **`Agent_E`**: 참여 핸드=300 (공평 참여 100%), 결정 수=447, Gradient Step=20회, 순손익=-52.62 BB
 - **무결성 확인:**
   - 5명 학습자 참여 핸드 수 표준편차: **0.00 (완전 동일한 300핸드 배분 달성)**.
   - Frozen 모델 SHA256 불변성 100% 검증 통과.

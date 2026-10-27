@@ -24,34 +24,29 @@ def aside_repl(js_code: str, timeout: int = 45) -> str:
 
 def send_message_to_holdem(text: str) -> bool:
     print(f"[Bridge] Sending {len(text)} chars to Holdem room...")
-    # Put text into clipboard via pbcopy for large text reliability
     subprocess.run(["pbcopy"], input=text, text=True)
 
     js = f"""
     async function sendMsg() {{
         let p;
         try {{
+            // openTab brings the page directly to focus and avoids background CDP attach timeout
+            p = await openTab('{TARGET_URL}');
+            await sleep(3500);
+        }} catch(e) {{
+            console.log('Open tab error:', e.message);
             const tabs = await listBrowserTabs();
             const holdem = tabs.find(t => (t.url || '').includes('{SESSION_ID}'));
-            if (holdem) {{
-                console.log('Attaching to tab:', holdem.targetId);
-                p = await attachBrowserTab(holdem.targetId);
-            }}
-        }} catch(e) {{
-            console.log('Attach failed, opening fresh tab:', e.message);
+            if (holdem) p = await attachBrowserTab(holdem.targetId);
         }}
         
-        if (!p) {{
-            console.log('Opening tab directly...');
-            p = await openTab('{TARGET_URL}');
-            await sleep(4000);
-        }}
+        if (!p) return false;
         
         console.log('Target page URL:', p.url());
         
-        // Target ProseMirror or contenteditable input
+        // Target input
         let inputLoc = null;
-        for (let i = 0; i < 10; i++) {{
+        for (let i = 0; i < 12; i++) {{
             const loc = p.locator('div.ProseMirror[contenteditable="true"], div#prompt-textarea, textarea[data-id="root"]');
             if (await loc.count() > 0) {{
                 inputLoc = loc.last();
@@ -66,14 +61,14 @@ def send_message_to_holdem(text: str) -> bool:
         }}
         
         await inputLoc.click();
-        await sleep(500);
+        await sleep(600);
         
         // Paste from clipboard
         await p.keyboard.down('Meta');
         await p.keyboard.press('KeyV');
         await p.keyboard.up('Meta');
         console.log('Pasted text from clipboard');
-        await sleep(2000);
+        await sleep(2500);
         
         // Submit
         const sendBtn = p.locator('button[data-testid="send-button"], button[aria-label*="보내기"], button[aria-label*="전송"]').first();
@@ -85,7 +80,7 @@ def send_message_to_holdem(text: str) -> bool:
             await p.keyboard.press('Enter');
         }}
         
-        await sleep(2000);
+        await sleep(3000);
         console.log('BRIDGE_SEND_SUCCESS');
         return true;
     }}
@@ -97,20 +92,21 @@ def send_message_to_holdem(text: str) -> bool:
 
 def wait_for_chatgpt_response(poll_interval: int = 10, max_wait: int = 300) -> str:
     print(f"[Bridge] Waiting for ChatGPT response (max {max_wait}s)...")
-    time.sleep(15) # initial grace period
+    time.sleep(15)
     t0 = time.time()
     
     poll_js = f"""
     async function poll() {{
         let p;
-        const tabs = await listBrowserTabs();
-        const holdem = tabs.find(t => (t.url || '').includes('{SESSION_ID}'));
-        if (holdem) {{
-            p = await attachBrowserTab(holdem.targetId);
-        }} else {{
+        try {{
             p = await openTab('{TARGET_URL}');
-            await sleep(3000);
+            await sleep(2000);
+        }} catch(e) {{
+            const tabs = await listBrowserTabs();
+            const holdem = tabs.find(t => (t.url || '').includes('{SESSION_ID}'));
+            if (holdem) p = await attachBrowserTab(holdem.targetId);
         }}
+        if (!p) return;
         const stopBtn = await p.locator('button[aria-label="중지"], button[aria-label="생성 중지"]').count();
         const main = document.querySelector('main');
         const text = main ? main.innerText : document.body.innerText;
