@@ -1,22 +1,22 @@
 {
   "directive": "050-PhaseB",
-  "timestamp": "2026-10-28 04:38:21",
-  "total_elapsed_sec": 9.26,
+  "timestamp": "2026-10-28 04:39:04",
+  "total_elapsed_sec": 9.2,
   "full_main_pilot": {
     "num_hands": 500,
     "decisions": {
-      "Agent_C": 676,
-      "Agent_D": 955,
-      "Agent_E": 734,
-      "Agent_A": 787,
-      "Agent_B": 832
+      "Agent_C": 658,
+      "Agent_D": 950,
+      "Agent_E": 719,
+      "Agent_A": 817,
+      "Agent_B": 820
     },
     "pnl_bb": {
-      "Agent_A": -709.125,
-      "Agent_B": 11.600000000000023,
-      "Agent_C": 527.9399999999999,
-      "Agent_D": -75.03999999999996,
-      "Agent_E": 244.625
+      "Agent_A": -199.25,
+      "Agent_B": 191.36000000000013,
+      "Agent_C": 263.01,
+      "Agent_D": -782.1199999999999,
+      "Agent_E": 527.0
     },
     "grad_steps": {
       "Agent_A": 20,
@@ -36,18 +36,18 @@
       "Agent_A": 300
     },
     "decisions": {
-      "Agent_D": 403,
-      "Agent_B": 431,
-      "Agent_C": 438,
-      "Agent_E": 434,
+      "Agent_D": 404,
+      "Agent_B": 448,
+      "Agent_C": 415,
+      "Agent_E": 440,
       "Agent_A": 532
     },
     "pnl_bb": {
-      "Agent_B": 522.5,
-      "Agent_C": 224.0,
-      "Agent_D": 9.670000000000016,
-      "Agent_E": -307.5,
-      "Agent_A": 547.13
+      "Agent_B": 587.0,
+      "Agent_C": 239.25,
+      "Agent_D": 114.17000000000002,
+      "Agent_E": -379.0,
+      "Agent_A": 795.2600000000001
     },
     "grad_steps": {
       "Agent_A": 20,
@@ -60,7 +60,7 @@
   "holdout_benchmark": {
     "eval_hands": 200,
     "baseline_7k_bb": 0.0,
-    "pilot_full_main_bb": 5.551115123125783e-17,
+    "pilot_full_main_bb": 0.0,
     "pilot_pfsp_league_bb": 0.0,
     "scientific_verdict": "PERFORMANCE_NOT_YET_PROVEN"
   }
