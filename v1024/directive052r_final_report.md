@@ -55,7 +55,7 @@
 
 ## 4. 최종 결론 및 10만 핸드급 대규모 학습 진입 제안
 
-- **GitHub 커밋:** 최신 코드 및 결과 전수 등재
+- **GitHub 커밋:** `9788e24` (https://github.com/WisdomMax/poker_AI/commit/9788e24)
 - **GAE 경계 단위 테스트:** `v1024/test_gae_boundary_separation.py`
 - **통제 매트릭스 결과 JSON:** `v1024/directive052r_task5_results.json`
 - **학습 요약:** `v1024/exp_directive052r/task5_matrix_summary.json`
