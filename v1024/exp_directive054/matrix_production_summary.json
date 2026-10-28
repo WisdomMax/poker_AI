@@ -1,0 +1,75 @@
+{
+  "directive": "DIRECTIVE_054",
+  "timestamp": "2026-10-28 22:04:30",
+  "total_hands_all_arms": 20000,
+  "seeds": [
+    702000,
+    703000
+  ],
+  "arms": {
+    "Uniform_GAE_Seed_702000": {
+      "arm_name": "Uniform_GAE_Seed_702000",
+      "league_type": "uniform",
+      "seed_base": 702000,
+      "total_hands": 5000,
+      "runtime_s": 80.83,
+      "total_updates": 3995,
+      "total_learners_pnl_bb": 1158.51,
+      "agent_pnl": {
+        "Agent_A": -23451.03,
+        "Agent_B": 1496.88,
+        "Agent_C": 13732.49,
+        "Agent_D": 9380.17,
+        "Agent_E": 0.0
+      }
+    },
+    "PFSP_GAE_Seed_702000": {
+      "arm_name": "PFSP_GAE_Seed_702000",
+      "league_type": "pfsp",
+      "seed_base": 702000,
+      "total_hands": 5000,
+      "runtime_s": 71.5,
+      "total_updates": 3996,
+      "total_learners_pnl_bb": 852.83,
+      "agent_pnl": {
+        "Agent_A": -26055.2,
+        "Agent_B": 9842.21,
+        "Agent_C": 11096.47,
+        "Agent_D": 5969.34,
+        "Agent_E": 0.0
+      }
+    },
+    "Uniform_GAE_Seed_703000": {
+      "arm_name": "Uniform_GAE_Seed_703000",
+      "league_type": "uniform",
+      "seed_base": 703000,
+      "total_hands": 5000,
+      "runtime_s": 66.03,
+      "total_updates": 3992,
+      "total_learners_pnl_bb": -1631.84,
+      "agent_pnl": {
+        "Agent_A": -19263.46,
+        "Agent_B": 1122.98,
+        "Agent_C": 11904.06,
+        "Agent_D": 4604.59,
+        "Agent_E": 0.0
+      }
+    },
+    "PFSP_GAE_Seed_703000": {
+      "arm_name": "PFSP_GAE_Seed_703000",
+      "league_type": "pfsp",
+      "seed_base": 703000,
+      "total_hands": 5000,
+      "runtime_s": 71.62,
+      "total_updates": 3993,
+      "total_learners_pnl_bb": -3084.7,
+      "agent_pnl": {
+        "Agent_A": -21967.1,
+        "Agent_B": -2019.74,
+        "Agent_C": 10629.27,
+        "Agent_D": 10272.87,
+        "Agent_E": 0.0
+      }
+    }
+  }
+}
