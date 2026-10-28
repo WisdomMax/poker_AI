@@ -1,22 +1,22 @@
 {
   "directive": "050-PhaseB",
-  "timestamp": "2026-10-28 11:44:05",
-  "total_elapsed_sec": 9.09,
+  "timestamp": "2026-10-28 11:44:47",
+  "total_elapsed_sec": 8.95,
   "full_main_pilot": {
     "num_hands": 500,
     "decisions": {
-      "Agent_C": 668,
-      "Agent_D": 958,
-      "Agent_E": 725,
-      "Agent_A": 779,
-      "Agent_B": 819
+      "Agent_C": 655,
+      "Agent_D": 945,
+      "Agent_E": 709,
+      "Agent_A": 806,
+      "Agent_B": 812
     },
     "pnl_bb": {
-      "Agent_A": -981.25,
-      "Agent_B": 440.8600000000001,
-      "Agent_C": -642.37,
-      "Agent_D": -47.49000000000001,
-      "Agent_E": 1230.25
+      "Agent_A": -1041.25,
+      "Agent_B": 279.865,
+      "Agent_C": 90.38,
+      "Agent_D": -367.8699999999999,
+      "Agent_E": 1038.875
     },
     "grad_steps": {
       "Agent_A": 20,
@@ -36,18 +36,18 @@
       "Agent_A": 300
     },
     "decisions": {
-      "Agent_D": 414,
-      "Agent_B": 445,
-      "Agent_C": 427,
-      "Agent_E": 451,
-      "Agent_A": 535
+      "Agent_D": 408,
+      "Agent_B": 465,
+      "Agent_C": 422,
+      "Agent_E": 448,
+      "Agent_A": 515
     },
     "pnl_bb": {
-      "Agent_B": 345.25,
-      "Agent_C": 275.25,
-      "Agent_D": -7.5,
-      "Agent_E": -877.5,
-      "Agent_A": 437.63
+      "Agent_B": 452.6199999999999,
+      "Agent_C": 82.88,
+      "Agent_D": -121.82999999999998,
+      "Agent_E": -107.5,
+      "Agent_A": 667.3800000000001
     },
     "grad_steps": {
       "Agent_A": 20,
