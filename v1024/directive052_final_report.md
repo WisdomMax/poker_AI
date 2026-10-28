@@ -76,7 +76,7 @@ $$\Delta_{\text{PFSP} - \text{Uniform}} = +33.77\text{ BB/100} \quad (95\%\text{
 
 ## 5. 최종 산출물 및 커밋
 
-- **GitHub 커밋:** 최신 학습 및 평가 코드 등재 완료
+- **GitHub 커밋:** `6b900e0` (https://github.com/WisdomMax/poker_AI/commit/6b900e0)
 - **감사 및 벤치마크 JSON:** `v1024/directive052_benchmark_results.json`
 - **반복 학습 요약:** `v1024/exp_directive052/replicated_study_summary.json`
 - **원시 15,000핸드 로그:** `v1024/data/directive052_raw_extended_holdout.jsonl`
