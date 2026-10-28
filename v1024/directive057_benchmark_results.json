@@ -1,0 +1,1191 @@
+{
+  "development_evaluation": {
+    "arm_pfsp_dynamic_seed_1001000_500h": {
+      "eval_name": "arm_pfsp_dynamic_seed_1001000_500h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 43.79,
+      "std_bb100": 555.47,
+      "ci_95": [
+        -65.08,
+        152.67
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -738.96,
+        "Agent_B": 162.24,
+        "Agent_C": 178.41,
+        "Agent_D": 154.66,
+        "Agent_E": 462.62
+      },
+      "seat_means_bb100": {
+        "0": 86.57,
+        "1": 254.13,
+        "2": -499.53,
+        "3": 178.21,
+        "4": -19.38
+      },
+      "action_counts": {
+        "fold": 1321,
+        "call": 619,
+        "raise": 1077,
+        "allin": 109
+      },
+      "action_pcts": {
+        "fold": 42.26,
+        "call": 19.8,
+        "raise": 34.45,
+        "allin": 3.49
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_pfsp_dynamic_seed_1001000_1000h": {
+      "eval_name": "arm_pfsp_dynamic_seed_1001000_1000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 5.34,
+      "std_bb100": 572.13,
+      "ci_95": [
+        -106.8,
+        117.48
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1505.68,
+        "Agent_B": 394.39,
+        "Agent_C": 198.0,
+        "Agent_D": 151.24,
+        "Agent_E": 788.76
+      },
+      "seat_means_bb100": {
+        "0": 310.43,
+        "1": 342.89,
+        "2": -667.05,
+        "3": 320.61,
+        "4": -306.88
+      },
+      "action_counts": {
+        "fold": 1254,
+        "call": 639,
+        "raise": 1228,
+        "allin": 148
+      },
+      "action_pcts": {
+        "fold": 38.36,
+        "call": 19.55,
+        "raise": 37.57,
+        "allin": 4.53
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_pfsp_dynamic_seed_1001000_1500h": {
+      "eval_name": "arm_pfsp_dynamic_seed_1001000_1500h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 9.56,
+      "std_bb100": 617.02,
+      "ci_95": [
+        -111.37,
+        130.5
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1049.82,
+        "Agent_B": 464.83,
+        "Agent_C": 129.72,
+        "Agent_D": -163.22,
+        "Agent_E": 666.31
+      },
+      "seat_means_bb100": {
+        "0": 251.2,
+        "1": 30.12,
+        "2": -825.72,
+        "3": 564.37,
+        "4": -19.97
+      },
+      "action_counts": {
+        "fold": 1165,
+        "call": 677,
+        "raise": 1091,
+        "allin": 229
+      },
+      "action_pcts": {
+        "fold": 36.84,
+        "call": 21.41,
+        "raise": 34.5,
+        "allin": 7.24
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_pfsp_dynamic_seed_1001000_2000h": {
+      "eval_name": "arm_pfsp_dynamic_seed_1001000_2000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 7.66,
+      "std_bb100": 553.73,
+      "ci_95": [
+        -100.87,
+        116.19
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -726.51,
+        "Agent_B": 142.72,
+        "Agent_C": 173.5,
+        "Agent_D": -362.75,
+        "Agent_E": 811.34
+      },
+      "seat_means_bb100": {
+        "0": 261.75,
+        "1": -227.67,
+        "2": -604.73,
+        "3": 478.33,
+        "4": 92.33
+      },
+      "action_counts": {
+        "fold": 1176,
+        "call": 539,
+        "raise": 841,
+        "allin": 248
+      },
+      "action_pcts": {
+        "fold": 41.94,
+        "call": 19.22,
+        "raise": 29.99,
+        "allin": 8.84
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_dynamic_seed_1001000_500h": {
+      "eval_name": "arm_uniform_dynamic_seed_1001000_500h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 74.53,
+      "std_bb100": 556.74,
+      "ci_95": [
+        -34.59,
+        183.65
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -178.29,
+        "Agent_B": 38.38,
+        "Agent_C": 115.51,
+        "Agent_D": 117.81,
+        "Agent_E": 279.25
+      },
+      "seat_means_bb100": {
+        "0": -14.51,
+        "1": 48.95,
+        "2": -355.25,
+        "3": 163.46,
+        "4": 157.35
+      },
+      "action_counts": {
+        "fold": 1331,
+        "call": 671,
+        "raise": 983,
+        "allin": 97
+      },
+      "action_pcts": {
+        "fold": 43.19,
+        "call": 21.77,
+        "raise": 31.89,
+        "allin": 3.15
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_dynamic_seed_1001000_1000h": {
+      "eval_name": "arm_uniform_dynamic_seed_1001000_1000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 109.41,
+      "std_bb100": 471.85,
+      "ci_95": [
+        16.93,
+        201.9
+      ],
+      "agent_means_bb100": {
+        "Agent_A": 112.22,
+        "Agent_B": -15.99,
+        "Agent_C": 95.96,
+        "Agent_D": -6.72,
+        "Agent_E": 361.59
+      },
+      "seat_means_bb100": {
+        "0": 265.27,
+        "1": 10.15,
+        "2": -534.0,
+        "3": 228.97,
+        "4": 29.6
+      },
+      "action_counts": {
+        "fold": 1299,
+        "call": 590,
+        "raise": 924,
+        "allin": 157
+      },
+      "action_pcts": {
+        "fold": 43.74,
+        "call": 19.87,
+        "raise": 31.11,
+        "allin": 5.29
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_dynamic_seed_1001000_1500h": {
+      "eval_name": "arm_uniform_dynamic_seed_1001000_1500h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 78.11,
+      "std_bb100": 565.71,
+      "ci_95": [
+        -32.77,
+        188.99
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -81.32,
+        "Agent_B": -538.56,
+        "Agent_C": 395.72,
+        "Agent_D": 130.6,
+        "Agent_E": 484.12
+      },
+      "seat_means_bb100": {
+        "0": 274.3,
+        "1": -115.92,
+        "2": -472.8,
+        "3": 390.87,
+        "4": -76.45
+      },
+      "action_counts": {
+        "fold": 1251,
+        "call": 657,
+        "raise": 858,
+        "allin": 208
+      },
+      "action_pcts": {
+        "fold": 42.06,
+        "call": 22.09,
+        "raise": 28.85,
+        "allin": 6.99
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_dynamic_seed_1001000_2000h": {
+      "eval_name": "arm_uniform_dynamic_seed_1001000_2000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": -13.64,
+      "std_bb100": 616.76,
+      "ci_95": [
+        -134.53,
+        107.24
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1158.1,
+        "Agent_B": -419.69,
+        "Agent_C": 379.43,
+        "Agent_D": 263.28,
+        "Agent_E": 866.85
+      },
+      "seat_means_bb100": {
+        "0": 275.08,
+        "1": 425.12,
+        "2": -930.98,
+        "3": 312.08,
+        "4": -81.3
+      },
+      "action_counts": {
+        "fold": 1172,
+        "call": 684,
+        "raise": 1074,
+        "allin": 228
+      },
+      "action_pcts": {
+        "fold": 37.11,
+        "call": 21.66,
+        "raise": 34.01,
+        "allin": 7.22
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_pfsp_static_seed_1001000_1000h": {
+      "eval_name": "arm_pfsp_static_seed_1001000_1000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 16.38,
+      "std_bb100": 573.72,
+      "ci_95": [
+        -96.07,
+        128.83
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1537.37,
+        "Agent_B": 501.2,
+        "Agent_C": 400.31,
+        "Agent_D": 201.94,
+        "Agent_E": 515.81
+      },
+      "seat_means_bb100": {
+        "0": 230.18,
+        "1": 550.1,
+        "2": -694.42,
+        "3": -187.17,
+        "4": 101.31
+      },
+      "action_counts": {
+        "fold": 1222,
+        "call": 652,
+        "raise": 1321,
+        "allin": 129
+      },
+      "action_pcts": {
+        "fold": 36.76,
+        "call": 19.61,
+        "raise": 39.74,
+        "allin": 3.88
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_pfsp_static_seed_1001000_2000h": {
+      "eval_name": "arm_pfsp_static_seed_1001000_2000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": -5.41,
+      "std_bb100": 635.38,
+      "ci_95": [
+        -129.94,
+        119.13
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1032.81,
+        "Agent_B": 228.28,
+        "Agent_C": 193.5,
+        "Agent_D": 42.81,
+        "Agent_E": 541.19
+      },
+      "seat_means_bb100": {
+        "0": 455.65,
+        "1": 233.35,
+        "2": -933.8,
+        "3": 164.05,
+        "4": 80.75
+      },
+      "action_counts": {
+        "fold": 1153,
+        "call": 622,
+        "raise": 1266,
+        "allin": 152
+      },
+      "action_pcts": {
+        "fold": 36.11,
+        "call": 19.48,
+        "raise": 39.65,
+        "allin": 4.76
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_static_seed_1001000_1000h": {
+      "eval_name": "arm_uniform_static_seed_1001000_1000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": 38.25,
+      "std_bb100": 534.49,
+      "ci_95": [
+        -66.51,
+        143.01
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -394.72,
+        "Agent_B": 135.63,
+        "Agent_C": 168.72,
+        "Agent_D": -22.06,
+        "Agent_E": 303.69
+      },
+      "seat_means_bb100": {
+        "0": 94.92,
+        "1": 116.4,
+        "2": -525.55,
+        "3": 114.37,
+        "4": 199.85
+      },
+      "action_counts": {
+        "fold": 1293,
+        "call": 665,
+        "raise": 1077,
+        "allin": 98
+      },
+      "action_pcts": {
+        "fold": 41.27,
+        "call": 21.23,
+        "raise": 34.38,
+        "allin": 3.13
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    },
+    "arm_uniform_static_seed_1001000_2000h": {
+      "eval_name": "arm_uniform_static_seed_1001000_2000h_dev",
+      "total_hands": 500,
+      "num_seeds": 100,
+      "mean_bb100": -18.17,
+      "std_bb100": 572.12,
+      "ci_95": [
+        -130.31,
+        93.96
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1555.56,
+        "Agent_B": 234.75,
+        "Agent_C": 617.16,
+        "Agent_D": 94.84,
+        "Agent_E": 517.94
+      },
+      "seat_means_bb100": {
+        "0": 342.35,
+        "1": 375.27,
+        "2": -877.36,
+        "3": 266.48,
+        "4": -106.75
+      },
+      "action_counts": {
+        "fold": 1219,
+        "call": 349,
+        "raise": 1492,
+        "allin": 81
+      },
+      "action_pcts": {
+        "fold": 38.81,
+        "call": 11.11,
+        "raise": 47.5,
+        "allin": 2.58
+      },
+      "opp_encounters": {
+        "Agent_A": 100,
+        "Agent_B": 100,
+        "Agent_C": 100,
+        "Agent_D": 100,
+        "Agent_E": 100
+      }
+    }
+  },
+  "final_holdout_evaluation": {
+    "Baseline_7000h_vs_7k": {
+      "eval_name": "Baseline_7000h_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -0.06,
+      "std_bb100": 576.24,
+      "ci_95": [
+        -65.27,
+        65.15
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -138.84,
+        "Agent_B": -99.12,
+        "Agent_C": -7.11,
+        "Agent_D": 204.67,
+        "Agent_E": 40.11
+      },
+      "seat_means_bb100": {
+        "0": 80.02,
+        "1": -167.49,
+        "2": 126.74,
+        "3": -226.69,
+        "4": 187.43
+      },
+      "action_counts": {
+        "fold": 4132,
+        "call": 2135,
+        "raise": 2820,
+        "allin": 227
+      },
+      "action_pcts": {
+        "fold": 44.36,
+        "call": 22.92,
+        "raise": 30.28,
+        "allin": 2.44
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "Baseline_7000h_vs_2k": {
+      "eval_name": "Baseline_7000h_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": 15.34,
+      "std_bb100": 628.51,
+      "ci_95": [
+        -55.78,
+        86.47
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -165.86,
+        "Agent_B": -24.65,
+        "Agent_C": 105.18,
+        "Agent_D": 151.33,
+        "Agent_E": 10.72
+      },
+      "seat_means_bb100": {
+        "0": 97.85,
+        "1": -289.65,
+        "2": 106.36,
+        "3": -146.33,
+        "4": 231.78
+      },
+      "action_counts": {
+        "fold": 4127,
+        "call": 2141,
+        "raise": 2915,
+        "allin": 234
+      },
+      "action_pcts": {
+        "fold": 43.82,
+        "call": 22.74,
+        "raise": 30.95,
+        "allin": 2.48
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "Uniform_Static_2000h_s1_vs_7k": {
+      "eval_name": "Uniform_Static_2000h_s1_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -93.57,
+      "std_bb100": 681.56,
+      "ci_95": [
+        -170.69,
+        -16.44
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1628.06,
+        "Agent_B": -285.58,
+        "Agent_C": 554.61,
+        "Agent_D": 641.61,
+        "Agent_E": 249.6
+      },
+      "seat_means_bb100": {
+        "0": 157.7,
+        "1": -2.62,
+        "2": -161.43,
+        "3": -235.55,
+        "4": 241.91
+      },
+      "action_counts": {
+        "fold": 3616,
+        "call": 1121,
+        "raise": 4388,
+        "allin": 247
+      },
+      "action_pcts": {
+        "fold": 38.58,
+        "call": 11.96,
+        "raise": 46.82,
+        "allin": 2.64
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "Uniform_Static_2000h_s1_vs_2k": {
+      "eval_name": "Uniform_Static_2000h_s1_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -109.42,
+      "std_bb100": 756.31,
+      "ci_95": [
+        -195.0,
+        -23.83
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1646.22,
+        "Agent_B": -359.21,
+        "Agent_C": 520.26,
+        "Agent_D": 689.83,
+        "Agent_E": 248.26
+      },
+      "seat_means_bb100": {
+        "0": 75.39,
+        "1": 2.49,
+        "2": -87.77,
+        "3": -232.67,
+        "4": 242.57
+      },
+      "action_counts": {
+        "fold": 3601,
+        "call": 1109,
+        "raise": 4502,
+        "allin": 255
+      },
+      "action_pcts": {
+        "fold": 38.04,
+        "call": 11.71,
+        "raise": 47.55,
+        "allin": 2.69
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Static_2000h_s1_vs_7k": {
+      "eval_name": "PFSP_Static_2000h_s1_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -95.47,
+      "std_bb100": 707.78,
+      "ci_95": [
+        -175.56,
+        -15.38
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1245.4,
+        "Agent_B": -224.03,
+        "Agent_C": 125.02,
+        "Agent_D": 455.73,
+        "Agent_E": 411.32
+      },
+      "seat_means_bb100": {
+        "0": 409.95,
+        "1": -52.69,
+        "2": -241.75,
+        "3": -322.11,
+        "4": 206.6
+      },
+      "action_counts": {
+        "fold": 3474,
+        "call": 1857,
+        "raise": 3658,
+        "allin": 459
+      },
+      "action_pcts": {
+        "fold": 36.77,
+        "call": 19.65,
+        "raise": 38.72,
+        "allin": 4.86
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Static_2000h_s1_vs_2k": {
+      "eval_name": "PFSP_Static_2000h_s1_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -95.7,
+      "std_bb100": 753.83,
+      "ci_95": [
+        -181.0,
+        -10.4
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1258.95,
+        "Agent_B": -298.46,
+        "Agent_C": 97.8,
+        "Agent_D": 527.9,
+        "Agent_E": 453.2
+      },
+      "seat_means_bb100": {
+        "0": 293.73,
+        "1": -16.63,
+        "2": -106.81,
+        "3": -360.06,
+        "4": 189.78
+      },
+      "action_counts": {
+        "fold": 3477,
+        "call": 1833,
+        "raise": 3729,
+        "allin": 469
+      },
+      "action_pcts": {
+        "fold": 36.57,
+        "call": 19.28,
+        "raise": 39.22,
+        "allin": 4.93
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "Uniform_Dynamic_2000h_s1_vs_7k": {
+      "eval_name": "Uniform_Dynamic_2000h_s1_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -105.18,
+      "std_bb100": 652.49,
+      "ci_95": [
+        -179.01,
+        -31.34
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1150.8,
+        "Agent_B": -431.31,
+        "Agent_C": 448.67,
+        "Agent_D": 578.91,
+        "Agent_E": 28.64
+      },
+      "seat_means_bb100": {
+        "0": 218.29,
+        "1": -146.52,
+        "2": -155.89,
+        "3": -220.88,
+        "4": 305.0
+      },
+      "action_counts": {
+        "fold": 3575,
+        "call": 2089,
+        "raise": 3290,
+        "allin": 620
+      },
+      "action_pcts": {
+        "fold": 37.34,
+        "call": 21.82,
+        "raise": 34.36,
+        "allin": 6.48
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "Uniform_Dynamic_2000h_s1_vs_2k": {
+      "eval_name": "Uniform_Dynamic_2000h_s1_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -135.23,
+      "std_bb100": 714.62,
+      "ci_95": [
+        -216.09,
+        -54.36
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1255.82,
+        "Agent_B": -395.05,
+        "Agent_C": 397.5,
+        "Agent_D": 579.28,
+        "Agent_E": -2.03
+      },
+      "seat_means_bb100": {
+        "0": 175.98,
+        "1": -212.51,
+        "2": -85.24,
+        "3": -211.75,
+        "4": 333.51
+      },
+      "action_counts": {
+        "fold": 3567,
+        "call": 2068,
+        "raise": 3344,
+        "allin": 650
+      },
+      "action_pcts": {
+        "fold": 37.04,
+        "call": 21.48,
+        "raise": 34.73,
+        "allin": 6.75
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Dynamic_2000h_s1_vs_7k": {
+      "eval_name": "PFSP_Dynamic_2000h_s1_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -60.24,
+      "std_bb100": 659.55,
+      "ci_95": [
+        -134.87,
+        14.4
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -752.73,
+        "Agent_B": -294.82,
+        "Agent_C": 72.8,
+        "Agent_D": 387.6,
+        "Agent_E": 285.97
+      },
+      "seat_means_bb100": {
+        "0": 224.06,
+        "1": -55.22,
+        "2": -108.09,
+        "3": -274.57,
+        "4": 213.83
+      },
+      "action_counts": {
+        "fold": 3551,
+        "call": 1613,
+        "raise": 2566,
+        "allin": 706
+      },
+      "action_pcts": {
+        "fold": 42.09,
+        "call": 19.12,
+        "raise": 30.42,
+        "allin": 8.37
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Dynamic_2000h_s1_vs_2k": {
+      "eval_name": "PFSP_Dynamic_2000h_s1_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -69.52,
+      "std_bb100": 685.18,
+      "ci_95": [
+        -147.06,
+        8.01
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -772.4,
+        "Agent_B": -217.57,
+        "Agent_C": 41.7,
+        "Agent_D": 312.83,
+        "Agent_E": 287.83
+      },
+      "seat_means_bb100": {
+        "0": 243.5,
+        "1": -100.72,
+        "2": -138.63,
+        "3": -236.07,
+        "4": 231.91
+      },
+      "action_counts": {
+        "fold": 3555,
+        "call": 1597,
+        "raise": 2631,
+        "allin": 729
+      },
+      "action_pcts": {
+        "fold": 41.76,
+        "call": 18.76,
+        "raise": 30.91,
+        "allin": 8.56
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Dynamic_2000h_s2_vs_7k": {
+      "eval_name": "PFSP_Dynamic_2000h_s2_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -74.99,
+      "std_bb100": 676.03,
+      "ci_95": [
+        -151.49,
+        1.51
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1553.33,
+        "Agent_B": -137.33,
+        "Agent_C": 64.39,
+        "Agent_D": 785.26,
+        "Agent_E": 466.08
+      },
+      "seat_means_bb100": {
+        "0": 280.85,
+        "1": -154.12,
+        "2": -130.67,
+        "3": -307.03,
+        "4": 310.97
+      },
+      "action_counts": {
+        "fold": 3462,
+        "call": 1365,
+        "raise": 3571,
+        "allin": 479
+      },
+      "action_pcts": {
+        "fold": 39.0,
+        "call": 15.38,
+        "raise": 40.23,
+        "allin": 5.4
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Dynamic_2000h_s2_vs_2k": {
+      "eval_name": "PFSP_Dynamic_2000h_s2_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -84.42,
+      "std_bb100": 748.65,
+      "ci_95": [
+        -169.14,
+        0.3
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -1632.86,
+        "Agent_B": -96.92,
+        "Agent_C": 117.25,
+        "Agent_D": 721.16,
+        "Agent_E": 469.27
+      },
+      "seat_means_bb100": {
+        "0": 286.43,
+        "1": -127.3,
+        "2": -157.25,
+        "3": -399.93,
+        "4": 398.05
+      },
+      "action_counts": {
+        "fold": 3454,
+        "call": 1357,
+        "raise": 3633,
+        "allin": 490
+      },
+      "action_pcts": {
+        "fold": 38.66,
+        "call": 15.19,
+        "raise": 40.66,
+        "allin": 5.48
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Static_2000h_s2_vs_7k": {
+      "eval_name": "PFSP_Static_2000h_s2_vs_7k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -85.28,
+      "std_bb100": 695.27,
+      "ci_95": [
+        -163.96,
+        -6.6
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -788.5,
+        "Agent_B": -279.77,
+        "Agent_C": -94.59,
+        "Agent_D": 386.38,
+        "Agent_E": 350.08
+      },
+      "seat_means_bb100": {
+        "0": 256.66,
+        "1": 3.9,
+        "2": -114.87,
+        "3": -245.45,
+        "4": 99.77
+      },
+      "action_counts": {
+        "fold": 3687,
+        "call": 1146,
+        "raise": 3239,
+        "allin": 456
+      },
+      "action_pcts": {
+        "fold": 43.23,
+        "call": 13.44,
+        "raise": 37.98,
+        "allin": 5.35
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    },
+    "PFSP_Static_2000h_s2_vs_2k": {
+      "eval_name": "PFSP_Static_2000h_s2_vs_2k_final",
+      "total_hands": 1500,
+      "num_seeds": 300,
+      "mean_bb100": -101.05,
+      "std_bb100": 775.77,
+      "ci_95": [
+        -188.83,
+        -13.26
+      ],
+      "agent_means_bb100": {
+        "Agent_A": -810.73,
+        "Agent_B": -265.78,
+        "Agent_C": -93.97,
+        "Agent_D": 365.6,
+        "Agent_E": 299.67
+      },
+      "seat_means_bb100": {
+        "0": 183.03,
+        "1": 20.17,
+        "2": -21.73,
+        "3": -369.67,
+        "4": 188.21
+      },
+      "action_counts": {
+        "fold": 3677,
+        "call": 1148,
+        "raise": 3331,
+        "allin": 466
+      },
+      "action_pcts": {
+        "fold": 42.65,
+        "call": 13.31,
+        "raise": 38.63,
+        "allin": 5.4
+      },
+      "opp_encounters": {
+        "Agent_A": 300,
+        "Agent_B": 300,
+        "Agent_C": 300,
+        "Agent_D": 300,
+        "Agent_E": 300
+      }
+    }
+  },
+  "paired_hypotheses_tests": {
+    "Dynamic_vs_Static_PFSP_s1_vs_7k": {
+      "test_label": "Dynamic_vs_Static_PFSP_s1_vs_7k",
+      "arm_A": "PFSP_Dynamic_2000h_s1_vs_7k",
+      "arm_B": "PFSP_Static_2000h_s1_vs_7k",
+      "mean_delta_bb100": 35.23,
+      "std_delta": 469.76,
+      "ci_95": [
+        -17.92,
+        88.39
+      ],
+      "zero_included": true,
+      "verdict": "NOT_PROVEN"
+    },
+    "PFSP_vs_Uniform_Dynamic_s1_vs_7k": {
+      "test_label": "PFSP_vs_Uniform_Dynamic_s1_vs_7k",
+      "arm_A": "PFSP_Dynamic_2000h_s1_vs_7k",
+      "arm_B": "Uniform_Dynamic_2000h_s1_vs_7k",
+      "mean_delta_bb100": 44.94,
+      "std_delta": 448.52,
+      "ci_95": [
+        -5.81,
+        95.69
+      ],
+      "zero_included": true,
+      "verdict": "NOT_PROVEN"
+    },
+    "PFSP_Dynamic_vs_Baseline_7k": {
+      "test_label": "PFSP_Dynamic_vs_Baseline_7k",
+      "arm_A": "PFSP_Dynamic_2000h_s1_vs_7k",
+      "arm_B": "Baseline_7000h_vs_7k",
+      "mean_delta_bb100": -60.18,
+      "std_delta": 471.1,
+      "ci_95": [
+        -113.49,
+        -6.87
+      ],
+      "zero_included": false,
+      "verdict": "PROVEN_SIGNIFICANT"
+    }
+  }
+}
