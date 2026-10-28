@@ -1,0 +1,9 @@
+{
+  "agent_name": "Agent_E",
+  "step_count": 2167,
+  "gradient_steps": 1572,
+  "total_pnl_bb": 1633.0499999999997,
+  "sha256": "02591dc853905f3b729d00a6e2b67454cff72035fd1c573d3ea73a77fff04978",
+  "timestamp": 1793201638.4977338,
+  "extra": {}
+}
