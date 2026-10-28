@@ -1,0 +1,143 @@
+{
+  "directive": "050-R",
+  "timestamp": "2026-10-28 10:06:13",
+  "total_elapsed_sec": 5.91,
+  "task1_holdout_benchmark": {
+    "Baseline_7000h": {
+      "mean_bb100": 41.17,
+      "ci95": [
+        -567.19,
+        649.52
+      ],
+      "se_bb100": 310.39,
+      "per_agent_bb100": {
+        "Agent_A": -290.42,
+        "Agent_B": 622.08,
+        "Agent_C": 250.0,
+        "Agent_D": -618.33,
+        "Agent_E": 242.5
+      }
+    },
+    "Pilot_Full_Main": {
+      "mean_bb100": -19.58,
+      "ci95": [
+        -641.91,
+        602.74
+      ],
+      "se_bb100": 317.51,
+      "per_agent_bb100": {
+        "Agent_A": -605.0,
+        "Agent_B": 461.25,
+        "Agent_C": 250.0,
+        "Agent_D": -449.17,
+        "Agent_E": 245.0
+      }
+    },
+    "Pilot_PFSP_League": {
+      "mean_bb100": 41.17,
+      "ci95": [
+        -537.3,
+        619.64
+      ],
+      "se_bb100": 295.14,
+      "per_agent_bb100": {
+        "Agent_A": -290.42,
+        "Agent_B": 622.08,
+        "Agent_C": -68.75,
+        "Agent_D": -299.58,
+        "Agent_E": 242.5
+      }
+    }
+  },
+  "task2_hand_forensics": {
+    "disputed_hands_replay": [
+      {
+        "hand_id": 215,
+        "seed": 80215,
+        "category": "EXCLUDED",
+        "root_cause": "Stack-Cap Boundary (Hero invested 99.8 BB via multiple calls/bets; exact ledger requires 100.0 BB)",
+        "replay_pnl_bb": 5.25,
+        "num_actions": 9
+      },
+      {
+        "hand_id": 260,
+        "seed": 80260,
+        "category": "EXCLUDED",
+        "root_cause": "Stack-Cap Boundary (Hero had 0.2 BB uncommitted chips on river)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 5
+      },
+      {
+        "hand_id": 325,
+        "seed": 80325,
+        "category": "EXCLUDED",
+        "root_cause": "Stack-Cap Boundary (Hero bet pot leaving 0.15 BB behind)",
+        "replay_pnl_bb": 5.25,
+        "num_actions": 9
+      },
+      {
+        "hand_id": 429,
+        "seed": 80429,
+        "category": "EXCLUDED",
+        "root_cause": "Stack-Cap Boundary (Hero invested 99.85 BB, classified as deep bet in strict ledger)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 11
+      },
+      {
+        "hand_id": 465,
+        "seed": 80465,
+        "category": "EXCLUDED",
+        "root_cause": "Preflop Action Adaptation (Opponent shove faced; logit tie-break caused fold in single inference)",
+        "replay_pnl_bb": -4.5,
+        "num_actions": 12
+      },
+      {
+        "hand_id": 496,
+        "seed": 80496,
+        "category": "EXCLUDED",
+        "root_cause": "Preflop Action Adaptation (Borderline logit between Pot (3) and Allin (5); executed action 3)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 12
+      },
+      {
+        "hand_id": 69,
+        "seed": 80069,
+        "category": "INCLUDED",
+        "root_cause": "Converted All-in Discovery (Hero turn pot bet committed 100% of stack; missed in legacy tracker)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 4
+      },
+      {
+        "hand_id": 119,
+        "seed": 80119,
+        "category": "INCLUDED",
+        "root_cause": "Hero Called Opp Allin Discovery (Hero called opponent allin on river; captured by event tracker)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 5
+      },
+      {
+        "hand_id": 274,
+        "seed": 80274,
+        "category": "INCLUDED",
+        "root_cause": "Converted All-in Discovery (Preflop 3-bet pot committed remaining chips)",
+        "replay_pnl_bb": 4.25,
+        "num_actions": 8
+      },
+      {
+        "hand_id": 399,
+        "seed": 80399,
+        "category": "INCLUDED",
+        "root_cause": "Converted All-in Discovery (Hero called pot shove on flop committing entire stack)",
+        "replay_pnl_bb": 0.0,
+        "num_actions": 4
+      }
+    ]
+  },
+  "task3_checkpoint_architecture": {
+    "checkpoint_file": "v1024/models_alphago/Agent_A_directive050r_complete_test.pt",
+    "contains_optimizer": true,
+    "contains_sampler": true,
+    "contains_rng": true,
+    "bitwise_reload_pass": true
+  }
+}
