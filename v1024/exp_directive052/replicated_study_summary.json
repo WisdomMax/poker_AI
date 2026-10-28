@@ -1,0 +1,158 @@
+{
+  "seed_401000": {
+    "uniform": {
+      "arm_mode": "uniform_league",
+      "seed_base": 401000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 29.56,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": 948.87,
+        "Agent_B": 27.55,
+        "Agent_C": -2051.14,
+        "Agent_D": 967.53,
+        "Agent_E": 2301.87
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    },
+    "pfsp": {
+      "arm_mode": "pfsp_league",
+      "seed_base": 401000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 28.25,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": -90.88,
+        "Agent_B": -233.26,
+        "Agent_C": -742.26,
+        "Agent_D": -1283.02,
+        "Agent_E": 2002.22
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    }
+  },
+  "seed_402000": {
+    "uniform": {
+      "arm_mode": "uniform_league",
+      "seed_base": 402000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 27.97,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": 1648.85,
+        "Agent_B": -742.37,
+        "Agent_C": -67.69,
+        "Agent_D": 2270.51,
+        "Agent_E": 1647.49
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    },
+    "pfsp": {
+      "arm_mode": "pfsp_league",
+      "seed_base": 402000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 28.41,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": 1895.83,
+        "Agent_B": -1152.94,
+        "Agent_C": -1799.82,
+        "Agent_D": 1039.62,
+        "Agent_E": 1780.74
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    }
+  },
+  "seed_403000": {
+    "uniform": {
+      "arm_mode": "uniform_league",
+      "seed_base": 403000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 28.21,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": 3622.22,
+        "Agent_B": 1468.63,
+        "Agent_C": -2460.21,
+        "Agent_D": 194.49,
+        "Agent_E": -19.51
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    },
+    "pfsp": {
+      "arm_mode": "pfsp_league",
+      "seed_base": 403000,
+      "total_hands": 3000,
+      "advantage_mode": "gae",
+      "runtime_seconds": 28.88,
+      "zero_sum_violations": 0,
+      "illegal_actions": 0,
+      "frozen_models_immutable": true,
+      "total_ppo_updates_logged": 600,
+      "agent_total_pnl": {
+        "Agent_A": 3921.93,
+        "Agent_B": 3027.62,
+        "Agent_C": -1684.42,
+        "Agent_D": -155.5,
+        "Agent_E": 2303.88
+      },
+      "agent_gradient_steps": {
+        "Agent_A": 120,
+        "Agent_B": 120,
+        "Agent_C": 120,
+        "Agent_D": 120,
+        "Agent_E": 120
+      }
+    }
+  }
+}

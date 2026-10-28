@@ -1,0 +1,25 @@
+{
+  "arm_mode": "pfsp_league",
+  "seed_base": 401000,
+  "total_hands": 3000,
+  "advantage_mode": "gae",
+  "runtime_seconds": 28.25,
+  "zero_sum_violations": 0,
+  "illegal_actions": 0,
+  "frozen_models_immutable": true,
+  "total_ppo_updates_logged": 600,
+  "agent_total_pnl": {
+    "Agent_A": -90.88,
+    "Agent_B": -233.26,
+    "Agent_C": -742.26,
+    "Agent_D": -1283.02,
+    "Agent_E": 2002.22
+  },
+  "agent_gradient_steps": {
+    "Agent_A": 120,
+    "Agent_B": 120,
+    "Agent_C": 120,
+    "Agent_D": 120,
+    "Agent_E": 120
+  }
+}

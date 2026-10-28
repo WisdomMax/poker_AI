@@ -1,0 +1,25 @@
+{
+  "arm_mode": "uniform_league",
+  "seed_base": 401000,
+  "total_hands": 3000,
+  "advantage_mode": "gae",
+  "runtime_seconds": 29.56,
+  "zero_sum_violations": 0,
+  "illegal_actions": 0,
+  "frozen_models_immutable": true,
+  "total_ppo_updates_logged": 600,
+  "agent_total_pnl": {
+    "Agent_A": 948.87,
+    "Agent_B": 27.55,
+    "Agent_C": -2051.14,
+    "Agent_D": 967.53,
+    "Agent_E": 2301.87
+  },
+  "agent_gradient_steps": {
+    "Agent_A": 120,
+    "Agent_B": 120,
+    "Agent_C": 120,
+    "Agent_D": 120,
+    "Agent_E": 120
+  }
+}
