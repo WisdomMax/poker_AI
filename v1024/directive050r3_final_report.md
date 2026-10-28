@@ -7,7 +7,7 @@
 
 ## 0. 15개 실물 체크포인트 GitHub 등재 및 검증 현황 (`[코드 구현 확인]`, `[원시 데이터로 검증]`)
 
-- **GitHub 최신 커밋:** `aa7c37b` (https://github.com/WisdomMax/poker_AI/commit/aa7c37b)
+- **GitHub 최신 커밋:** `14ce512` (https://github.com/WisdomMax/poker_AI/commit/14ce512)
 - **.gitignore 수정 및 강제 추가:** `.gitignore`의 `*.pt` 규칙으로 인해 누락되었던 파일럿 체크포인트 10개를 `git add -f`로 GitHub 원격 저장소(`main` 브랜치)에 전수 커밋/푸시 완료.
 - **자동 대체 로직 완전 영구 박멸:** 이전 구형 파일(`v1024/audit_directive050r_defect_fixes.py` line 88)에 잔존하던 fallback 코드까지 전수 삭제 완료. 모델 파일 부재 시 즉시 `FileNotFoundError` 발생.
 
@@ -109,6 +109,6 @@ $$\sum_{\text{losers}} H[w, l] = \text{winner\_gain}, \quad \sum_{\text{winners}
 
 모든 엔지니어링 게이트가 통과되었으므로, **DIRECTIVE 051: 10,000핸드 통제 연구 실험**으로의 진입 승인을 정중히 요청드립니다.
 
-- **GitHub 최신 커밋:** `aa7c37b` (https://github.com/WisdomMax/poker_AI/commit/aa7c37b)
+- **GitHub 최신 커밋:** `14ce512` (https://github.com/WisdomMax/poker_AI/commit/14ce512)
 - **감사 결과 JSON:** `v1024/directive050r3_audit_results.json`
 - **원시 3,750핸드 로그:** `v1024/data/directive050r3_raw_cross_seat_evaluation.jsonl`
