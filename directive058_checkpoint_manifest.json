@@ -1,0 +1,1455 @@
+{
+  "manifest_version": "DIRECTIVE_058_V1",
+  "generated_at": "2026-10-29T02:30:00+09:00",
+  "classification_summary": {
+    "total_files": 240,
+    "policy_model_weights_count": 200,
+    "meta_state_files_count": 40,
+    "policy_weights_gigabytes": 1.924,
+    "meta_state_megabytes": 0.504
+  },
+  "policy_model_weights": {
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "1afa012ce4c6d70dba6a643e6a8e7a1debb219146e903ca29f34c2e6df2c6475"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "39e74623c2d8793821ec0b388b87df617b08421c691be7613bb407fd2bb63b05"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "29c45ff6d50b00428254ce987ff63c2a5e332453bc18b776f8ddbf42039ab23a"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "0b4b51d63e73e3d888d9d497d87d89aaade0f7adf1b35962383f1082e6cba85a"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "820ca5a988eeb6af262cb488622de6c7bd5c37d9589f247888a8ea1703b15d11"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "cdb8134f60ec40b097cb7761aef933f61b51fec0da1516fa5f64d171b9891f0c"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "7014eba40e2d40a42fc3632ead46572b6451f93bfb31a9a9cfa3e6f009a87655"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "96835c6181a5a496bce3c493c572a187f98115e63df2f7e3c434f48dacc741cb"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "a8acbcecf7f528629aac3230f4e867cdf9f8aa2aa4f560f182b4d82cd2a73d56"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "6de290bc479f169a36acfde48f563e38e46b1302712e38ad57b61682e678f595"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "915c1129919ba60f376e3effc47ef25e34e403fdc5d1712df45733d6f7576b96"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "9108272a987ed187fffca0e52b19dfda8863c199e7584c874ee8157ec69bbb63"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "7f2bd2cda597ef0b2733dff44ae1e37b63f488a3428031f46ac9414208e15e86"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "506df93f6c5b4c3bb008efe2f5311f389a6cac7b8b7989a0f18c7c47ad0348bd"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "509d8b8d8ecf4207e870d435260aca6af68c0babac18882ca707709f3407f989"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "66184a3380e9275213169c0feef0d4d3460ea96166f440cb5cc28615442089b0"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "11927521ce4884cb5803ec769a252f1daad556cf4e5323c46b3d6e7c2350533f"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "ed7424b79b1bc65de000ac0f671be3b6d303e173f5338264cd00633d06b373c7"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "59a6cbbec96d505c5543e1ebc6bad19b93721fd4562adacb03d5b91b8453eac8"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "6d9ce646d2c147dd21ae432537256c2d38b8c1ef675f0889c6082dd19a2ae37a"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "e5a005364139b55f80f496b75345bac0d349ef2386c293d42d449a8ae7d0ac6d"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "3c905d87ffa4460000ca41fbafe3d09c993e063b849db743d14ff8a75fd9c2d8"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "ec1d8422837091acaf232c481c85b25dcef1b722248f1d1d0b46c4a3ba3e15fc"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "b3f8f7df05af0e30dbdb16cb14622fd92621cebb247ee4f8c34e2738c5493d9d"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "9d1a9cd3f21f7b37319494bf7c55760ee618d00c48d2dc9bc5aab9daade1f737"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "30c39a206c5b6240a2ad4932567f6078a50854916870d6fcf78a29f7ff20600a"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "daed141b6902c549c073fa595f827d906426178f09d3939019ca9deff1d4ca68"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "c436afd5955cab5e47a86fe1ddaa2274273e3e930dd62963938a3fbd1bf64969"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "85f6424add3588d1b79e1e9a4513bbd40aa6cb918602580bf0e32459cf25c6c3"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "5f2cc6085cbaa7c94a7c663a54e8fe0ff02ea08885010ebfe2ac223d2f41477e"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "3800dc0bc0c635d8d2e1d195da3d40b9b989f351c27ae7226d2e048b038702ed"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "c2b0c89bd43f8af6b5c6411165de45c7f61256484866890d2fea7fdc1fe94f12"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "ace1b25344d7634bd488bb8b62843fd7d1d50a0b89713eba06718dbf2ff5b6dd"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "44e87493de0bf94fe1b0489946f2d0d5af7389f9043b1a447c9c52f5ddfd7a08"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "115eb707122aecb70eddd63d5aa8cdf0a228e162ca72fe5ad2efe66c1eb613e2"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "08575fb9d0de8bf7189a5783a25b113affbf501599da2d0443d38d9860a53cff"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "f5884bae7ce3852591c4e78257ed70b30e248ba10d232529b5e7084beb5d95c9"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "88508f30fb0be1884d929030a66899069f4ebfc42ea16d36b5a084c81537ef08"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "2d53f03192132c48b4c97289589f791ee24418bdc8169580a8042d8328b7620a"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "c7610cc7e060cb260783be4d7d7f79354e0330a1afbd8d19dcb0be023480065c"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "f31d90e8b2559a98080154906717129c08ca487d572a2e146bdca492f1247be0"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "dbf65fadb81880db130a32cdf6b82d0bd8bb6adf7ed8871c746aa5f8da435be1"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "5314c8bddbecd92e4de8b928e32a1696b55feeead8770ba306d782b1544430ef"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "470898113887808ef0bad9876091dec27d08d44672df2ac0582662a44a4c35e7"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "bf201fc6ea310aca435b48f800ea95667c9713a9002db86d952ea912b5d9e499"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "c9c0705825b541338959dc42221f6d9334e359553f4f03a61b2f3f295107b9a7"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "6ea80e77314cbc0b549d0f6d0dae2554b764e5d7ca8960517445c610d8a6fb5f"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "16a7a78276663f8b319e46e387cdadf7298e7ea5eac5b57c656777f7f46fdccd"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "15347ebd9bb5194bcf5e584a78cd25cce1e86e968e50e9eb1e60437f97ca4024"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "ce9c8d730bb5dfd314a28337f3e2df83aa0bb9a68fb933327a634d360ae823e0"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "c0c49c5b7aac05e78ca0f4824f695ade10a3c5dd3d285ce76c000dea1ee4a8d1"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "16258ccf81c03e9d927e1b10d0d6e480eceb37f1e160652f703b4c3af9774d39"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "9633c7158f26f4b34bddda6662b3cf506c3a804bc30e8901b34fd38da33b8e28"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "820201e86d41424839a79fa74c1dbafeb89546123913b5b91f7f6b28aa6ee432"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "eac5a8153da3deef66d76ebba700123c99060e8c1c4f102681d6b33aae54235b"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "b77e54d38babf9b4c3b5260d41f0176300142fedd8d0b8c2a09f6d48750253f5"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "ff39db1464e4ed5d54f712edaa5b8b03246394a81ce962f628727b26133520ad"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "00b787a52903ced0795b510753add8e3b41d562a3b32a3b74338dc094fff4e21"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "6f20c917fb921c5ffdd675fd4426688f512f622b2fd561146e7f15a9133b9b18"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "968c7d711d5e19ff8024b13753f5e38d306991b57e6ece3c6950504179951d9a"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "d17a18273ab7fd79bd0db61c7590fb80c899aed814db693428954135b1ed94b2"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "afd2429b0142cf582825f8d79ff7dcb04d81ec93ff810f26910844957b352d52"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "c9247beb5d581d2c41bf9085715f520665569cfbb9ee5e7f90ed39d3684b31ce"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "4ef086bb1b604bda726309235a9cce405d878b9518af11b88e3b5f3886f1fb91"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "c6f21cd2d610dc3e014ae3df995bd6a20a04eea50f6645a904d22961e8fa0a41"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "66184a3380e9275213169c0feef0d4d3460ea96166f440cb5cc28615442089b0"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "11927521ce4884cb5803ec769a252f1daad556cf4e5323c46b3d6e7c2350533f"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "ed7424b79b1bc65de000ac0f671be3b6d303e173f5338264cd00633d06b373c7"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "59a6cbbec96d505c5543e1ebc6bad19b93721fd4562adacb03d5b91b8453eac8"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "6d9ce646d2c147dd21ae432537256c2d38b8c1ef675f0889c6082dd19a2ae37a"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "e5a005364139b55f80f496b75345bac0d349ef2386c293d42d449a8ae7d0ac6d"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "3c905d87ffa4460000ca41fbafe3d09c993e063b849db743d14ff8a75fd9c2d8"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "ec1d8422837091acaf232c481c85b25dcef1b722248f1d1d0b46c4a3ba3e15fc"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "b3f8f7df05af0e30dbdb16cb14622fd92621cebb247ee4f8c34e2738c5493d9d"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "9d1a9cd3f21f7b37319494bf7c55760ee618d00c48d2dc9bc5aab9daade1f737"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "58e28c214f3559a13b8d22ea90dee9698d723a5c45147243d819036f4edf51df"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "59b5bea27fffd5095794eceb2e877734970f807a564c134e8d10aea896f841f1"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "012ae303568af0438966d59d0dbd71958b69d2b51f0c372298af1cc1a021be22"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "fa4ff102fa64293c78ae876ea7e976fee31c1b563bd737657977a4be7f58375d"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "7dcba1306eb4de526754ca03e2895b9ef13b86d9c6930730a7209666e364fe4b"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "8941f555099f29968646408fdd12525c6f8e9c7f23a6abd60830c5c37247498a"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "d99816e0b7f03f6e9852d9254b5a48cb7803b7eddbfc565727bd044e9802f840"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "ce557f2709699ce6e5f50daa00db2f51d73b5e0fdf6cb6f17bdd6dfb65e103da"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "6388734b52372188c6da68d0a47c21eee59465960bc2168b5e8237d68a30f3a1"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "b92a3977136c2be9612be9f6a2fa4fcc1d42371a7ebf513eca7fb1bf75e4d64b"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "a40a5ff5dc48503cd59d82aa78433b17cbec969403e307e884cc2d5a598d13e4"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "b10aae044b4baa27b4db26100e0fc3f4084d2e41c175f0c639d8e3ec2b61b5a2"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "c3c8f3e267daded733b3111a072de207f166ca724a61759cf7e441efeabc28c4"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "1fcc930a7374c66ab1431397c4c3f305bcf930117c79302fae76091e9bfec3cd"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "fa5a6c50e324a85cf56b527fc863508eff3a48eb0d8fadab1c0a97f69396c791"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "f31d90e8b2559a98080154906717129c08ca487d572a2e146bdca492f1247be0"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "dbf65fadb81880db130a32cdf6b82d0bd8bb6adf7ed8871c746aa5f8da435be1"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "5314c8bddbecd92e4de8b928e32a1696b55feeead8770ba306d782b1544430ef"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "470898113887808ef0bad9876091dec27d08d44672df2ac0582662a44a4c35e7"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "bf201fc6ea310aca435b48f800ea95667c9713a9002db86d952ea912b5d9e499"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "c9c0705825b541338959dc42221f6d9334e359553f4f03a61b2f3f295107b9a7"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "6ea80e77314cbc0b549d0f6d0dae2554b764e5d7ca8960517445c610d8a6fb5f"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "16a7a78276663f8b319e46e387cdadf7298e7ea5eac5b57c656777f7f46fdccd"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "15347ebd9bb5194bcf5e584a78cd25cce1e86e968e50e9eb1e60437f97ca4024"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "ce9c8d730bb5dfd314a28337f3e2df83aa0bb9a68fb933327a634d360ae823e0"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "7ae1dbfe920c7cfc2af38462aa535efdd14cf5a3e54c85289a8dd630a44c8675"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "af1f289640f62d3a305eac163b67d24cc2d71a88092971c391c65bb2c15ce754"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "aecb86b08e2429c32c11636e3a3ee17d400bc16018cb16ceea02cc7a64ef0ff0"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "bf8c087735fb0b7621d648c7dbd4789d01b4d2d67467152591aa18acfd26040c"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "1eccb68555474f7e40f927a0319e61fb5dd3245be0f4d31bae70c5f352430e0f"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "558ade19561b5817eace01a2e1b67ccf2c1ba1bf2febfd6a57f4b11d0b81d0c4"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "670fe7c92c37cdf3c8c4cbf17c5f49aa3a21998b9dfa02498691c80294f6775c"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "db75b1761dd0aa564deaa4029059efdfca53a189ab93d18e0ac7d522cb9104c5"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "07d78a2d8e4df3707f63c26005e01fe5d59b1457b9d70fe1be4e3c10b6f707df"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "ffe126418e813678effec5649a95cc4f051b17d6f4ed65895ba45548fe4610b7"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "bfaabd38c23b6e0e76d8268845c43ce019c9afd2c35e84dfe3855457bcd88d76"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "4ff0dcf2d9c5784ad35c37aad248255687952682a070c082562675f249ea77ba"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "e685e4a9beeccdf15fb02caf64adfc6e6563d08e320cd80b85512b9538dac8b3"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "b8741a16aa2435487ce05334fd95593cb4b476a4736a212fc9e9ac21d4ceb034"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "02591dc853905f3b729d00a6e2b67454cff72035fd1c573d3ea73a77fff04978"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "83ea501853570ef1c524aa3a2d7bc5de61867b6d76cdca79b72be2e23358a04b"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "161cca2f3d2e6c44d8ca76074432c97342daac5f8b2db5306501450820ffac76"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "8c09253270133042672064f2dca5f29a83cfbcf6bdf8d1a00e1c228f3b5f4eee"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "5a207a9bc052c78f91bc5c2514d7ec86e35c0ce9c0db22c1fbf2d2a2aa857a62"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "0faf717297b0ea49e21b21a7e66850bdf5a8f251f8a36d7b141be316db00ab99"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "1e0913c4821b608d1fee82422e5b1478b988afafaf78624c8c12ce27a3c76475"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "4883a01f456deece9ada7a65609869156e4ff3d14cd7d65a3e9873e35f1a9215"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "c8e5257bee97f0f8a51fed0cb2f67fd802d2feed6d6c7b0469924b03841c90c1"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "4be36378e86f2eeda1f0113e88ea93da35665755bc169239fac55d7c8833a7e1"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "122648b4510e61e7de115acbd1fa6bacd3e4b66bc581e8c4a6c434abefbe35f2"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "36f7a63ed768330116ff3246eadbf21ce1a13a9de095715a5dae353f838643ce"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "4a66fd72a3e322859d21965ccb59ab9914fbcaefcf40c8793bb9e6b952cdef6e"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "7840af87f65f338298be63ab6bad3cb7deb3de26408aa27506155cd1e29644b3"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "81304aff186b4c9bbaf9bd7db9bb2db6d70e608c1cce28bbac811ac9d73a0c03"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "cb5a58457d6162c71fb934d9577dd1999a55ed1d6a10e6e80d5d1eead0a5034b"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "2c650077399ef683768f709200e8ef8d02486c88ea6dc8534b4908ef7e6adbe3"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "6430ae097231cd7f62d1dd05067901fbe289daf34f6bbd08a1ee26723413bb9c"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "1d2eab04175561c5b096f2aea63385cad719b588a01010285a6faa45f8d51609"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "a2b64d80e8c35fa8e7d989a61c8cce59fdb14744d96ab50290fb655bb48e482e"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "d54992fd606fea7f2240e853cff611303a67061bcdce99b1a99252878ff6cad8"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "2a9156a0aa8930f7fdc65a99a194d6a56ee87e933de747c017461cefea686f82"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "8c618d9be2d4be7e37d5aba98ba62c1b81d554c1fc7f31e43882b852b872a96f"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "5bc05ec0c3e3c4c50147ac325178068905df0e5d2350ee85408526be407f8e0d"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "1a4455fcbf8c8d86dfc8dfe0a13f030fcd6ddfc1064b80efa25b5ab207bae556"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "9c5397deb60e2b52d907de067ad11edaf7164128fa29791031a750aae00ed184"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "ec201464981245bdff02021debccf7319f4372205aa7db10a416e02459139b52"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "c4613f015087f3f3dbd9cb1d1a614ad1c263908d3915810ff66cf07fb71784e4"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "b1f444240e6e9980c62a52b72471d172da8268b195665dbfeb1a57b62956dc0b"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "c59eb7a158b7877f782933f4a737f623f2feaa0e660ca730ed1e72c9efc2dcd2"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "5779483543a12f74cbccc29d6c304c85c16f4677dd0fa6036bb0d1b690982e26"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "eae491e9166399237aea6f5567f382170fdc85cb89c9e06a2b535c4f79d5dde7"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "89b1cfd2afd12a0f47f925f92f4f969620e9742e9d8523d7e05ac6078b134ae7"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "8f7de055bda62e634d4564d19daed9c6ff02a1dd55500a78227ba88e580e2857"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "a44d3083c1ac60117f403b7b7ba09099403e5c5e7137bd779f87c3fbaba05609"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "0b21a0c0240f1715fdeae6e20d8fcdebc78bb7dc39f98a023f1bdb23510fff11"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "cbd882a62614d5a319a9c6620660654fac85e0327cc8ed3ad505a6f63cc824f9"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "1e18f49a1f401071e5bb4508bb74972e4320a2f97ca0d4b5cd3dd6de1e670724"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "beb2d7a9d178bd3b124c16f6f87c45384f67da366d3bab0b108f1116f4fdba93"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "a37938bd0a332632c86e2d32d254cecb6fa3eb580d729ed5726f4d520634bda6"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "7a02f8e314866bda37e72486ddace8ee118bc63e08cfba0e0d452e8fca8818ce"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "bf3e763328bfabc2afb6e7bb48e235a29c15b32d41e31f66e77d0bca87d6419e"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "af9777e40ad4d48b61d63a2bcefd92f44fa463356ba3a9ab38e7377d694d3881"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "5e6b8df02f0f60425d4a1622a3e1429b10d8ede4c16f5c4ce920ecdf9047b134"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "e2a6a27714d164b268faf8f444a1017351b55b8b18f62c03338b5f384554466a"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "a6e2b426bcb6ed38135ea795affb4dee73afea9286aa7822a8f11b9ebf5d18aa"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "66c64116bf34a0b5d544708fb3de49eab6369a77e9f8131d69dc5772515ad8ff"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "05aba7c8b214415ff7b743fdb13f0f9153f60cc8e9ba5debabea7e16f80318df"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "de38cdc122931cfaa07bba86980883432762047a7c61000411eae2b27d3cf086"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "3d759a45ca6e6535034ea2719affd948fbcc6e66554be1878312fb6ef9bca7f9"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "971edf930deeb0e9dca29a6f293ad9bdacdf542cf4d8f068d15f244024fed1e2"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "83ea501853570ef1c524aa3a2d7bc5de61867b6d76cdca79b72be2e23358a04b"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "161cca2f3d2e6c44d8ca76074432c97342daac5f8b2db5306501450820ffac76"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "8c09253270133042672064f2dca5f29a83cfbcf6bdf8d1a00e1c228f3b5f4eee"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "5a207a9bc052c78f91bc5c2514d7ec86e35c0ce9c0db22c1fbf2d2a2aa857a62"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "0faf717297b0ea49e21b21a7e66850bdf5a8f251f8a36d7b141be316db00ab99"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "1e0913c4821b608d1fee82422e5b1478b988afafaf78624c8c12ce27a3c76475"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "4883a01f456deece9ada7a65609869156e4ff3d14cd7d65a3e9873e35f1a9215"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "c8e5257bee97f0f8a51fed0cb2f67fd802d2feed6d6c7b0469924b03841c90c1"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "4be36378e86f2eeda1f0113e88ea93da35665755bc169239fac55d7c8833a7e1"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "122648b4510e61e7de115acbd1fa6bacd3e4b66bc581e8c4a6c434abefbe35f2"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "1c77f1fafc023af679507c80ad30f7f4b775dc0d7bb7e3aaa9f58ab8669a0539"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "f8fae68f75ba3faff2144f2b6dc8e760aabaaf6254246fd4c223a341560f662d"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "51c6a2a85c942c995ea0d7b158e1b65b93921dc58bd8701c73bf18381f1969f5"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "2d288fe8244d6128bd4e746f27a27f6e53f5a5a8e7a1d56338ab14dabe70a85f"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "9c1d79180eec8c390c56f83e644caddabfac14898811b8c7070a803a88ef1d4a"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "e6aee0e8f0abbd97cda8f9fe74fef013fb0a36bbd1987a89f95f8fac3126bb2e"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "949db5b4b8acc7d7e90c963fe8b676b8be25b051f683ae52928f8f0af9d0a30e"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "ff866ef46aa5ea289ff07808f5158bf25703451d49beb84a668562a6f29fa64f"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "e80d1d0e4b78b05e0e6ea2cf1189e58b396f2aeb63f2cce31844fe9911bfc3eb"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "8eeaf388d46e7909353e4fb2540bde9eeba91ee2f732232116711a77a3b76ee4"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "3fefef9cc9991778724cfe991fe5967d1fbbb78ab92f774735856f569cd7a39e"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "3d191488ef843289b88eaa4f956eea1c1ecdc37c85cbec67e98685a8b666c67c"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "4c414f72debd8e230d67b9fcaaec7308c744406ecd67d13eaf477efefbe82830"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "1e117398e1c38da2c4cb8c88f6487586b25a214cd6fb2cda0f810d92f89debd6"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "2ebf482c50d37247188c2bb69e6073a2d865631485f9b699c776bfaa73a3dbdf"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326739,
+      "sha256": "ec201464981245bdff02021debccf7319f4372205aa7db10a416e02459139b52"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326739,
+      "sha256": "c4613f015087f3f3dbd9cb1d1a614ad1c263908d3915810ff66cf07fb71784e4"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326739,
+      "sha256": "b1f444240e6e9980c62a52b72471d172da8268b195665dbfeb1a57b62956dc0b"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326739,
+      "sha256": "c59eb7a158b7877f782933f4a737f623f2feaa0e660ca730ed1e72c9efc2dcd2"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326739,
+      "sha256": "5779483543a12f74cbccc29d6c304c85c16f4677dd0fa6036bb0d1b690982e26"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_A.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_A.pt",
+      "file_name": "Agent_A.pt",
+      "size_bytes": 10326803,
+      "sha256": "eae491e9166399237aea6f5567f382170fdc85cb89c9e06a2b535c4f79d5dde7"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_B.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_B.pt",
+      "file_name": "Agent_B.pt",
+      "size_bytes": 10326803,
+      "sha256": "89b1cfd2afd12a0f47f925f92f4f969620e9742e9d8523d7e05ac6078b134ae7"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_C.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_C.pt",
+      "file_name": "Agent_C.pt",
+      "size_bytes": 10326803,
+      "sha256": "8f7de055bda62e634d4564d19daed9c6ff02a1dd55500a78227ba88e580e2857"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_D.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_D.pt",
+      "file_name": "Agent_D.pt",
+      "size_bytes": 10326803,
+      "sha256": "a44d3083c1ac60117f403b7b7ba09099403e5c5e7137bd779f87c3fbaba05609"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_E.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/Agent_E.pt",
+      "file_name": "Agent_E.pt",
+      "size_bytes": 10326803,
+      "sha256": "0b21a0c0240f1715fdeae6e20d8fcdebc78bb7dc39f98a023f1bdb23510fff11"
+    }
+  },
+  "meta_states": {
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 14590,
+      "sha256": "01c30fcc8bdebd0d70178aa1add50cb513ae9cac7e15b4a3a8d45fd84cca2343"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15870,
+      "sha256": "fb0a89466b665c5b9d3aa481b6394157f5ba87192f9803767fe21e6a3135b27f"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15870,
+      "sha256": "959f4311bb4fd0a8b973344198536ec210332c6f2babdee66c4132f5dd61de9e"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "e6574f7cd6cfbbf9822ecd5aa93b77a728315891362fcc7946bb93f9113fa427"
+    },
+    "arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1001000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 13374,
+      "sha256": "e3de38997482693de3cc20ec5dafdcdf3fa9d95200139d5f6665ecd1ce127085"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 14654,
+      "sha256": "3315199cb17c81165c6b9f0f8a8b87c4ba98a811211189fcd6aaab994954bb00"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15870,
+      "sha256": "82db3593d97ea75bfa680883cc3149bef36e677f2f4806232a903c899c41a77d"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15806,
+      "sha256": "fe56c9b6bf4478051064340410fda036642daccb83f0dd0ebb76c8e432bf2600"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "058fa4234f085bc3d91465ece6053dba518718c6b0275b236ba798bb1b850a14"
+    },
+    "arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_dynamic_seed_1002000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 13310,
+      "sha256": "fbfb08e001503fa6837e90543b103680bb6888625abcf9273f6c84bc1877e7cd"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "7dfb21cb3468ef0eab532939f8f3ee587a26e724594f35582c9ae93490866786"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "1e4bdaef43d72a410823df7dbe56a3fab56ae6c01e64fe02a599279e1f0eed89"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "81c8756ac0050bbf88999fa83527779d1a9cf844bc62c254a98f723e42a88087"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "e6574f7cd6cfbbf9822ecd5aa93b77a728315891362fcc7946bb93f9113fa427"
+    },
+    "arm_pfsp_static_seed_1001000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1001000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "9fff40c2e0a38e74fe41d10287dd449f298c26980c05483c4070153ffc316718"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "0fc739eef45dfb85c1fe3ef167f04d3d1627b211fb49c201e5bf5af9c4a95115"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "fad0bdc8e1dff8d5341d8457c0831f3ffb43f98f1b0a9797b728ce788e771209"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "0c65fabaedda147f2009d7c087f41c761a3d21fe6d9173a2447467ca36781ef8"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "058fa4234f085bc3d91465ece6053dba518718c6b0275b236ba798bb1b850a14"
+    },
+    "arm_pfsp_static_seed_1002000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_pfsp_static_seed_1002000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 11966,
+      "sha256": "102a129a35b8e45d71bf06fbe665639d83a9d0c0b4d69aacc3d9739a8b8caba8"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 14590,
+      "sha256": "b4a6893bc3cc534a68473ba6946e336efcb47898b55e197955347a208e8ec562"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15870,
+      "sha256": "31c3c03050e5f73eb221016c6f655fd8d56fe9cdec0070b7b1efaca27263877c"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15934,
+      "sha256": "1d4b1175fa9b0097416f69cef479783feaba02867a223fbc364138eb845e4cb2"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "71148b719996b91f907a9f8df0b92b5cf1d2f6dbede226bd03d117d02a98e6ae"
+    },
+    "arm_uniform_dynamic_seed_1001000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1001000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 13374,
+      "sha256": "57466e5578c782d804465a301d0661102562fa90ed14530bf8d07f7055feac22"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 14654,
+      "sha256": "1d28396a64c78f43e5e25f9b2c3b2302f23dd7f11b1db30be1eedb5ed624f30b"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15934,
+      "sha256": "40968a68770b655167d14f55f84b9e856279492a70b4e09c6410d63612cafa6b"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 15870,
+      "sha256": "24e7c97b536008226a1b5f16ec80606b380de33ddc5abb93324fc48e8a63c225"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "b1e2cad719cb8ade57cd8729505be0bd19da5add46f79f7acb9059855b392e61"
+    },
+    "arm_uniform_dynamic_seed_1002000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_dynamic_seed_1002000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 13310,
+      "sha256": "f5da0aabb5897d215ad449d80dbd3fc63cfd1edb6771813e9a8b9f3f67c127b9"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "aaf1371fc0c452efd183298b189c82ef51a85520c3cfa1be0c430b9e9c5a4393"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "d652e7f0f316e31cfdd13ac139d78d14bf7143634f89ee20aa8a14de3f10b57f"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "937becc8ca171b6efa03840194fd0d423ce81e1481f81f59825e941f6e9ddf01"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "71148b719996b91f907a9f8df0b92b5cf1d2f6dbede226bd03d117d02a98e6ae"
+    },
+    "arm_uniform_static_seed_1001000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1001000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "bce0de18eda7ef533af7770e54c36c4c66f82cd7969660528e7fe4c824e70f46"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "67fe21d69879535b960255c7f9375ba7f927168c54620cf6130469167f473dc6"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_1500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_1500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "2e6aed61f518137b11e2a2a71f30fb75deda5dda46fc33dbe231ef5081fc9b7c"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_2000/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_2000/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12030,
+      "sha256": "a3039d10859b5c94fe9b1ae4bd130b57e53e9363ad308ead249d747a6ba419eb"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_25/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_25/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 12094,
+      "sha256": "b1e2cad719cb8ade57cd8729505be0bd19da5add46f79f7acb9059855b392e61"
+    },
+    "arm_uniform_static_seed_1002000/ckpt_hand_500/meta_state.pt": {
+      "file_path": "v1024/exp_directive057/arm_uniform_static_seed_1002000/ckpt_hand_500/meta_state.pt",
+      "file_name": "meta_state.pt",
+      "size_bytes": 11966,
+      "sha256": "851fc71fd4654f376c21e30151b6319a162553a3beee1f4728cd92a3701af8df"
+    }
+  }
+}

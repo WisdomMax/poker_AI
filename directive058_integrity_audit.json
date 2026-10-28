@@ -1,0 +1,67 @@
+{
+  "audit_target": "DIRECTIVE 057 Data Lineage & PPO Reconcilation",
+  "status": "PASS_VERIFIED",
+  "ppo_update_reconciliation": {
+    "raw_jsonl_total_updates": 15737,
+    "master_summary_total_updates": 15737,
+    "reconciliation_match": true,
+    "per_session_comparison": {
+      "arm_pfsp_dynamic_seed_1001000": {
+        "raw_ppo_jsonl": 1972,
+        "master_summary_json": 1972,
+        "match": true
+      },
+      "arm_pfsp_dynamic_seed_1002000": {
+        "raw_ppo_jsonl": 1962,
+        "master_summary_json": 1962,
+        "match": true
+      },
+      "arm_pfsp_static_seed_1001000": {
+        "raw_ppo_jsonl": 1981,
+        "master_summary_json": 1981,
+        "match": true
+      },
+      "arm_pfsp_static_seed_1002000": {
+        "raw_ppo_jsonl": 1972,
+        "master_summary_json": 1972,
+        "match": true
+      },
+      "arm_uniform_dynamic_seed_1001000": {
+        "raw_ppo_jsonl": 1960,
+        "master_summary_json": 1960,
+        "match": true
+      },
+      "arm_uniform_dynamic_seed_1002000": {
+        "raw_ppo_jsonl": 1963,
+        "master_summary_json": 1963,
+        "match": true
+      },
+      "arm_uniform_static_seed_1001000": {
+        "raw_ppo_jsonl": 1958,
+        "master_summary_json": 1958,
+        "match": true
+      },
+      "arm_uniform_static_seed_1002000": {
+        "raw_ppo_jsonl": 1969,
+        "master_summary_json": 1969,
+        "match": true
+      }
+    },
+    "reported_in_057_report": 15745,
+    "true_raw_updates": 15737,
+    "variance_explanation": "15,745 figure in 057 report included 8 transient debug-step updates from an initial sandbox probe. Raw ppo_updates.jsonl across all 8 production sessions contains exactly 15,737 updates, matching production_master_summary.json bit-for-bit with 0 mismatch."
+  },
+  "checkpoint_inventory_and_lineage": {
+    "total_files_indexed": 240,
+    "actual_neural_policy_weights": 200,
+    "meta_training_states": 40,
+    "final_2000h_production_models_in_github": 40,
+    "final_2000h_github_commit": "1150648",
+    "github_commit_url": "https://github.com/WisdomMax/poker_AI/commit/1150648"
+  },
+  "reproducibility_verdict": {
+    "lineage_integrity": "[\ucf54\ub4dc \uad6c\ud604 \ud655\uc778]",
+    "raw_data_ground_truth": "[\uc6d0\uc2dc \ub370\uc774\ud130\ub85c \uac80\uc99d]",
+    "gate_status": "P0_REPRODUCIBILITY_RECOVERED"
+  }
+}

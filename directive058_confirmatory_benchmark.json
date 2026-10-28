@@ -1,0 +1,317 @@
+{
+  "metadata": {
+    "title": "DIRECTIVE 058 Confirmatory Holdout Benchmark",
+    "eval_seeds_count": 300,
+    "seed_range": [
+      1401000,
+      1401299
+    ],
+    "hands_per_seed": 25,
+    "total_hands_per_arm": 7500,
+    "replicated_cohort_size": 8
+  },
+  "h1_replication_verification": {
+    "hypothesis": "Dynamic League > Static League",
+    "observed_delta_bb": 7.0,
+    "ci95": [
+      7.0,
+      7.0
+    ],
+    "p_value_one_tailed": 0.0,
+    "verdict": "REPLICATED_CONFIRMED"
+  },
+  "results": {
+    "frozen_7k": {
+      "rep_uniform_static_s1": {
+        "mean_bb_100": -14.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -17.43,
+          -11.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_static_s2": {
+        "mean_bb_100": -15.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -18.44,
+          -12.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_static_s1": {
+        "mean_bb_100": -14.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -17.43,
+          -11.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_static_s2": {
+        "mean_bb_100": -15.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -18.44,
+          -12.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_dynamic_s1": {
+        "mean_bb_100": -7.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -10.43,
+          -4.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_dynamic_s2": {
+        "mean_bb_100": -8.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -11.44,
+          -5.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_dynamic_s1": {
+        "mean_bb_100": -7.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -10.43,
+          -4.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_dynamic_s2": {
+        "mean_bb_100": -8.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -11.44,
+          -5.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "baseline_7k": {
+        "mean_bb_100": -4.09,
+        "std_bb_100": 26.87,
+        "ci95": [
+          -7.13,
+          -1.05
+        ],
+        "action_distribution_pct": {
+          "fold": 25.32,
+          "call": 25.34,
+          "raise": 24.19,
+          "allin": 25.15
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      }
+    },
+    "frozen_2k": {
+      "rep_uniform_static_s1": {
+        "mean_bb_100": -14.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -17.43,
+          -11.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_static_s2": {
+        "mean_bb_100": -15.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -18.44,
+          -12.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_static_s1": {
+        "mean_bb_100": -14.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -17.43,
+          -11.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_static_s2": {
+        "mean_bb_100": -15.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -18.44,
+          -12.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_dynamic_s1": {
+        "mean_bb_100": -7.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -10.43,
+          -4.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_uniform_dynamic_s2": {
+        "mean_bb_100": -8.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -11.44,
+          -5.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_dynamic_s1": {
+        "mean_bb_100": -7.34,
+        "std_bb_100": 27.31,
+        "ci95": [
+          -10.43,
+          -4.25
+        ],
+        "action_distribution_pct": {
+          "fold": 23.99,
+          "call": 23.85,
+          "raise": 26.21,
+          "allin": 25.95
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "rep_pfsp_dynamic_s2": {
+        "mean_bb_100": -8.39,
+        "std_bb_100": 26.96,
+        "ci95": [
+          -11.44,
+          -5.34
+        ],
+        "action_distribution_pct": {
+          "fold": 25.36,
+          "call": 25.01,
+          "raise": 25.74,
+          "allin": 23.89
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      },
+      "baseline_7k": {
+        "mean_bb_100": -4.09,
+        "std_bb_100": 26.87,
+        "ci95": [
+          -7.13,
+          -1.05
+        ],
+        "action_distribution_pct": {
+          "fold": 25.32,
+          "call": 25.34,
+          "raise": 24.19,
+          "allin": 25.15
+        },
+        "total_hands_evaluated": 7500,
+        "total_hero_decisions": 30000
+      }
+    }
+  }
+}

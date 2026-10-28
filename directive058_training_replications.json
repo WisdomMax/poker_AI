@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "DIRECTIVE 058 Replicated Production Training Master Suite",
+    "total_sessions": 8,
+    "hands_per_session": 2000,
+    "total_hands": 16000,
+    "seeds": [
+      1101000,
+      1102000
+    ],
+    "total_elapsed_seconds": 45.66
+  },
+  "sessions": {
+    "arm_uniform_static_seed_1101000": {
+      "arm_name": "arm_uniform_static_seed_1101000",
+      "league_mode": "static",
+      "sampler_type": "uniform",
+      "total_hands": 2000,
+      "seed_base": 1101000,
+      "elapsed_seconds": 5.47,
+      "final_cpu_ratio_pct": 70.08,
+      "learners_pnl": {
+        "Agent_A": -22.03,
+        "Agent_B": -30.01,
+        "Agent_C": 26.42,
+        "Agent_D": 9.27,
+        "Agent_E": 17.72
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "f9725c4553c370e1b21155b78ea233de4dd7de095ef61347c729e8e5b1fdcc2a",
+        "Agent_B": "3dfc71a48625bc10ddd32c3812af7238047f2d6b3d4f94255b74c86496e3aa85",
+        "Agent_C": "c68c4abc5a45381a69593402cd888f938b81fffc68911c0c139a3e4735f58dfb",
+        "Agent_D": "fbd1d37c7598c97725375c056490cc58e31c14e172f0164714f90726f9a821af",
+        "Agent_E": "58092ca7e65fdea16e9a061d9660f1470b4e7f4649b32bcb763c378e300e61cd"
+      }
+    },
+    "arm_uniform_static_seed_1102000": {
+      "arm_name": "arm_uniform_static_seed_1102000",
+      "league_mode": "static",
+      "sampler_type": "uniform",
+      "total_hands": 2000,
+      "seed_base": 1102000,
+      "elapsed_seconds": 5.5,
+      "final_cpu_ratio_pct": 70.1,
+      "learners_pnl": {
+        "Agent_A": -27.9,
+        "Agent_B": -0.54,
+        "Agent_C": -4.46,
+        "Agent_D": -50.91,
+        "Agent_E": 31.83
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "6ba7695540baef269af2782aca19e19edf3b7c008048e2cf661fb3b8663ec6dc",
+        "Agent_B": "b9a72d7db1480381d73ba321b60547bf685db1382a939a2171e824ac8a6874d6",
+        "Agent_C": "6e37c4ed6c0ed623e6cc1aa676983c0d215723004453da68634843b61f3d2a4d",
+        "Agent_D": "8b37867d749a7b57db64709eb0414d64607e4e7b13ba9094a22b57a2c1aeb130",
+        "Agent_E": "c3baddadb9c0705d2ac2093f0bc601a3ce412f5f432a3197977a99f30ebb1369"
+      }
+    },
+    "arm_pfsp_static_seed_1101000": {
+      "arm_name": "arm_pfsp_static_seed_1101000",
+      "league_mode": "static",
+      "sampler_type": "pfsp",
+      "total_hands": 2000,
+      "seed_base": 1101000,
+      "elapsed_seconds": 5.48,
+      "final_cpu_ratio_pct": 70.09,
+      "learners_pnl": {
+        "Agent_A": -22.03,
+        "Agent_B": -30.01,
+        "Agent_C": 26.42,
+        "Agent_D": 9.27,
+        "Agent_E": 17.72
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "f9725c4553c370e1b21155b78ea233de4dd7de095ef61347c729e8e5b1fdcc2a",
+        "Agent_B": "3dfc71a48625bc10ddd32c3812af7238047f2d6b3d4f94255b74c86496e3aa85",
+        "Agent_C": "c68c4abc5a45381a69593402cd888f938b81fffc68911c0c139a3e4735f58dfb",
+        "Agent_D": "fbd1d37c7598c97725375c056490cc58e31c14e172f0164714f90726f9a821af",
+        "Agent_E": "58092ca7e65fdea16e9a061d9660f1470b4e7f4649b32bcb763c378e300e61cd"
+      }
+    },
+    "arm_pfsp_static_seed_1102000": {
+      "arm_name": "arm_pfsp_static_seed_1102000",
+      "league_mode": "static",
+      "sampler_type": "pfsp",
+      "total_hands": 2000,
+      "seed_base": 1102000,
+      "elapsed_seconds": 5.64,
+      "final_cpu_ratio_pct": 70.1,
+      "learners_pnl": {
+        "Agent_A": -27.9,
+        "Agent_B": -0.54,
+        "Agent_C": -4.46,
+        "Agent_D": -50.91,
+        "Agent_E": 31.83
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "6ba7695540baef269af2782aca19e19edf3b7c008048e2cf661fb3b8663ec6dc",
+        "Agent_B": "b9a72d7db1480381d73ba321b60547bf685db1382a939a2171e824ac8a6874d6",
+        "Agent_C": "6e37c4ed6c0ed623e6cc1aa676983c0d215723004453da68634843b61f3d2a4d",
+        "Agent_D": "8b37867d749a7b57db64709eb0414d64607e4e7b13ba9094a22b57a2c1aeb130",
+        "Agent_E": "c3baddadb9c0705d2ac2093f0bc601a3ce412f5f432a3197977a99f30ebb1369"
+      }
+    },
+    "arm_uniform_dynamic_seed_1101000": {
+      "arm_name": "arm_uniform_dynamic_seed_1101000",
+      "league_mode": "dynamic",
+      "sampler_type": "uniform",
+      "total_hands": 2000,
+      "seed_base": 1101000,
+      "elapsed_seconds": 5.64,
+      "final_cpu_ratio_pct": 70.1,
+      "learners_pnl": {
+        "Agent_A": -22.03,
+        "Agent_B": -30.01,
+        "Agent_C": 26.42,
+        "Agent_D": 9.27,
+        "Agent_E": 17.72
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "f9725c4553c370e1b21155b78ea233de4dd7de095ef61347c729e8e5b1fdcc2a",
+        "Agent_B": "3dfc71a48625bc10ddd32c3812af7238047f2d6b3d4f94255b74c86496e3aa85",
+        "Agent_C": "c68c4abc5a45381a69593402cd888f938b81fffc68911c0c139a3e4735f58dfb",
+        "Agent_D": "fbd1d37c7598c97725375c056490cc58e31c14e172f0164714f90726f9a821af",
+        "Agent_E": "58092ca7e65fdea16e9a061d9660f1470b4e7f4649b32bcb763c378e300e61cd"
+      }
+    },
+    "arm_uniform_dynamic_seed_1102000": {
+      "arm_name": "arm_uniform_dynamic_seed_1102000",
+      "league_mode": "dynamic",
+      "sampler_type": "uniform",
+      "total_hands": 2000,
+      "seed_base": 1102000,
+      "elapsed_seconds": 5.74,
+      "final_cpu_ratio_pct": 70.09,
+      "learners_pnl": {
+        "Agent_A": -27.9,
+        "Agent_B": -0.54,
+        "Agent_C": -4.46,
+        "Agent_D": -50.91,
+        "Agent_E": 31.83
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "6ba7695540baef269af2782aca19e19edf3b7c008048e2cf661fb3b8663ec6dc",
+        "Agent_B": "b9a72d7db1480381d73ba321b60547bf685db1382a939a2171e824ac8a6874d6",
+        "Agent_C": "6e37c4ed6c0ed623e6cc1aa676983c0d215723004453da68634843b61f3d2a4d",
+        "Agent_D": "8b37867d749a7b57db64709eb0414d64607e4e7b13ba9094a22b57a2c1aeb130",
+        "Agent_E": "c3baddadb9c0705d2ac2093f0bc601a3ce412f5f432a3197977a99f30ebb1369"
+      }
+    },
+    "arm_pfsp_dynamic_seed_1101000": {
+      "arm_name": "arm_pfsp_dynamic_seed_1101000",
+      "league_mode": "dynamic",
+      "sampler_type": "pfsp",
+      "total_hands": 2000,
+      "seed_base": 1101000,
+      "elapsed_seconds": 5.73,
+      "final_cpu_ratio_pct": 70.09,
+      "learners_pnl": {
+        "Agent_A": -22.03,
+        "Agent_B": -30.01,
+        "Agent_C": 26.42,
+        "Agent_D": 9.27,
+        "Agent_E": 17.72
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "f9725c4553c370e1b21155b78ea233de4dd7de095ef61347c729e8e5b1fdcc2a",
+        "Agent_B": "3dfc71a48625bc10ddd32c3812af7238047f2d6b3d4f94255b74c86496e3aa85",
+        "Agent_C": "c68c4abc5a45381a69593402cd888f938b81fffc68911c0c139a3e4735f58dfb",
+        "Agent_D": "fbd1d37c7598c97725375c056490cc58e31c14e172f0164714f90726f9a821af",
+        "Agent_E": "58092ca7e65fdea16e9a061d9660f1470b4e7f4649b32bcb763c378e300e61cd"
+      }
+    },
+    "arm_pfsp_dynamic_seed_1102000": {
+      "arm_name": "arm_pfsp_dynamic_seed_1102000",
+      "league_mode": "dynamic",
+      "sampler_type": "pfsp",
+      "total_hands": 2000,
+      "seed_base": 1102000,
+      "elapsed_seconds": 5.85,
+      "final_cpu_ratio_pct": 70.1,
+      "learners_pnl": {
+        "Agent_A": -27.9,
+        "Agent_B": -0.54,
+        "Agent_C": -4.46,
+        "Agent_D": -50.91,
+        "Agent_E": 31.83
+      },
+      "checkpoints_2000h_sha256": {
+        "Agent_A": "6ba7695540baef269af2782aca19e19edf3b7c008048e2cf661fb3b8663ec6dc",
+        "Agent_B": "b9a72d7db1480381d73ba321b60547bf685db1382a939a2171e824ac8a6874d6",
+        "Agent_C": "6e37c4ed6c0ed623e6cc1aa676983c0d215723004453da68634843b61f3d2a4d",
+        "Agent_D": "8b37867d749a7b57db64709eb0414d64607e4e7b13ba9094a22b57a2c1aeb130",
+        "Agent_E": "c3baddadb9c0705d2ac2093f0bc601a3ce412f5f432a3197977a99f30ebb1369"
+      }
+    }
+  }
+}
