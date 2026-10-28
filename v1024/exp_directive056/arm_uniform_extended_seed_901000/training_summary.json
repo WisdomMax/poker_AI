@@ -1,0 +1,30 @@
+{
+  "arm_name": "arm_uniform_extended_seed_901000",
+  "league_type": "uniform",
+  "opponent_pool_type": "extended",
+  "total_hands": 2000,
+  "seed_base": 901000,
+  "elapsed_seconds": 25.45,
+  "cumulative_cpu_ratio_pct": 69.64,
+  "total_ppo_updates": 2000,
+  "learners_pnl": {
+    "Agent_A": 1889.83,
+    "Agent_B": 147.92,
+    "Agent_C": -4819.67,
+    "Agent_D": 899.09,
+    "Agent_E": -1249.5
+  },
+  "sum_learners_pnl": -3132.32,
+  "sampler_final_probs": {
+    "Agent_A_2000h": 0.1,
+    "Agent_B_2000h": 0.1,
+    "Agent_C_2000h": 0.1,
+    "Agent_D_2000h": 0.1,
+    "Agent_E_2000h": 0.1,
+    "Agent_A_7000h": 0.1,
+    "Agent_B_7000h": 0.1,
+    "Agent_C_7000h": 0.1,
+    "Agent_D_7000h": 0.1,
+    "Agent_E_7000h": 0.1
+  }
+}

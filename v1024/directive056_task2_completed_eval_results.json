@@ -1,0 +1,335 @@
+{
+  "benchmark_results": {
+    "Baseline_7000h": {
+      "name": "Baseline 7000h",
+      "hands": 2500,
+      "mean_bb100": 212.13,
+      "std_bb100": 5542.5,
+      "ci_95": [
+        11.82,
+        412.43
+      ],
+      "act_dist": {
+        "Fold": 46.14,
+        "Call": 34.61,
+        "Raise": 16.72,
+        "AllIn": 2.53
+      },
+      "seat_stats": {
+        "0": 278.9,
+        "1": -10.4,
+        "2": 837.08,
+        "3": -255.7,
+        "4": 210.75
+      },
+      "agent_stats": {
+        "Agent_A": 39.25,
+        "Agent_B": -4.1,
+        "Agent_C": 335.93,
+        "Agent_D": 370.2,
+        "Agent_E": 319.35
+      },
+      "elapsed": 13.3
+    },
+    "Uniform_Ext_s802_500h": {
+      "name": "Uniform Extended s802 (500h)",
+      "hands": 2500,
+      "mean_bb100": 120.0,
+      "std_bb100": 5518.83,
+      "ci_95": [
+        -92.01,
+        332.0
+      ],
+      "act_dist": {
+        "Fold": 47.82,
+        "Call": 30.37,
+        "Raise": 18.38,
+        "AllIn": 3.43
+      },
+      "seat_stats": {
+        "0": 256.15,
+        "1": -59.35,
+        "2": 502.48,
+        "3": -38.9,
+        "4": -60.4
+      },
+      "agent_stats": {
+        "Agent_A": 41.75,
+        "Agent_B": 12.03,
+        "Agent_C": 155.12,
+        "Agent_D": 223.08,
+        "Agent_E": 168.0
+      },
+      "elapsed": 13.3
+    },
+    "Uniform_Ext_s802_1k": {
+      "name": "Uniform Extended s802 (1000h)",
+      "hands": 2500,
+      "mean_bb100": 55.68,
+      "std_bb100": 5607.65,
+      "ci_95": [
+        -160.21,
+        271.57
+      ],
+      "act_dist": {
+        "Fold": 46.76,
+        "Call": 31.54,
+        "Raise": 18.89,
+        "AllIn": 2.8
+      },
+      "seat_stats": {
+        "0": 177.9,
+        "1": 99.83,
+        "2": 281.25,
+        "3": -274.02,
+        "4": -6.55
+      },
+      "agent_stats": {
+        "Agent_A": -41.65,
+        "Agent_B": -101.77,
+        "Agent_C": -0.03,
+        "Agent_D": 483.4,
+        "Agent_E": -61.55
+      },
+      "elapsed": 13.8
+    },
+    "PFSP_Ext_s802_500h": {
+      "name": "PFSP Extended s802 (500h)",
+      "hands": 2500,
+      "mean_bb100": 156.79,
+      "std_bb100": 5546.34,
+      "ci_95": [
+        -65.55,
+        379.13
+      ],
+      "act_dist": {
+        "Fold": 47.16,
+        "Call": 31.41,
+        "Raise": 18.79,
+        "AllIn": 2.64
+      },
+      "seat_stats": {
+        "0": 127.5,
+        "1": 101.83,
+        "2": 358.13,
+        "3": 104.1,
+        "4": 92.4
+      },
+      "agent_stats": {
+        "Agent_A": 15.8,
+        "Agent_B": -103.27,
+        "Agent_C": 165.07,
+        "Agent_D": 305.3,
+        "Agent_E": 401.05
+      },
+      "elapsed": 13.7
+    },
+    "PFSP_Ext_s802_1k": {
+      "name": "PFSP Extended s802 (1000h)",
+      "hands": 2500,
+      "mean_bb100": 182.22,
+      "std_bb100": 5676.51,
+      "ci_95": [
+        -19.15,
+        383.59
+      ],
+      "act_dist": {
+        "Fold": 46.28,
+        "Call": 34.79,
+        "Raise": 16.53,
+        "AllIn": 2.4
+      },
+      "seat_stats": {
+        "0": 416.2,
+        "1": 163.57,
+        "2": 535.04,
+        "3": -68.22,
+        "4": -135.5
+      },
+      "agent_stats": {
+        "Agent_A": 116.52,
+        "Agent_B": -158.27,
+        "Agent_C": 335.23,
+        "Agent_D": 513.46,
+        "Agent_E": 104.15
+      },
+      "elapsed": 13.0
+    },
+    "PFSP_Ext_s801_500h": {
+      "name": "PFSP Extended s801 (500h)",
+      "hands": 2500,
+      "mean_bb100": 24.76,
+      "std_bb100": 5550.73,
+      "ci_95": [
+        -186.42,
+        235.94
+      ],
+      "act_dist": {
+        "Fold": 46.23,
+        "Call": 33.39,
+        "Raise": 18.3,
+        "AllIn": 2.08
+      },
+      "seat_stats": {
+        "0": 348.35,
+        "1": -3.15,
+        "2": 176.28,
+        "3": -133.9,
+        "4": -263.77
+      },
+      "agent_stats": {
+        "Agent_A": 76.83,
+        "Agent_B": -11.82,
+        "Agent_C": 37.55,
+        "Agent_D": 88.3,
+        "Agent_E": -67.05
+      },
+      "elapsed": 14.7
+    },
+    "PFSP_Ext_s801_1k": {
+      "name": "PFSP Extended s801 (1000h)",
+      "hands": 2500,
+      "mean_bb100": 14.48,
+      "std_bb100": 5694.1,
+      "ci_95": [
+        -198.39,
+        227.36
+      ],
+      "act_dist": {
+        "Fold": 44.29,
+        "Call": 33.17,
+        "Raise": 20.51,
+        "AllIn": 2.03
+      },
+      "seat_stats": {
+        "0": 216.05,
+        "1": -137.3,
+        "2": 340.25,
+        "3": 11.6,
+        "4": -358.18
+      },
+      "agent_stats": {
+        "Agent_A": 256.48,
+        "Agent_B": -70.77,
+        "Agent_C": 275.55,
+        "Agent_D": -291.38,
+        "Agent_E": -97.45
+      },
+      "elapsed": 14.9
+    },
+    "Uniform_2k_s801_500h": {
+      "name": "Uniform 2k s801 (500h)",
+      "hands": 2500,
+      "mean_bb100": 1.73,
+      "std_bb100": 5421.2,
+      "ci_95": [
+        -222.24,
+        225.71
+      ],
+      "act_dist": {
+        "Fold": 46.99,
+        "Call": 31.12,
+        "Raise": 19.24,
+        "AllIn": 2.65
+      },
+      "seat_stats": {
+        "0": 276.3,
+        "1": -42.32,
+        "2": 83.91,
+        "3": -217.05,
+        "4": -92.17
+      },
+      "agent_stats": {
+        "Agent_A": 99.03,
+        "Agent_B": -227.7,
+        "Agent_C": 102.45,
+        "Agent_D": 348.09,
+        "Agent_E": -313.2
+      },
+      "elapsed": 14.3
+    },
+    "PFSP_2k_s802_500h": {
+      "name": "PFSP 2k s802 (500h)",
+      "hands": 2500,
+      "mean_bb100": 239.98,
+      "std_bb100": 5622.99,
+      "ci_95": [
+        17.46,
+        462.5
+      ],
+      "act_dist": {
+        "Fold": 47.54,
+        "Call": 31.13,
+        "Raise": 18.57,
+        "AllIn": 2.76
+      },
+      "seat_stats": {
+        "0": 181.55,
+        "1": 154.12,
+        "2": 419.03,
+        "3": 290.25,
+        "4": 154.95
+      },
+      "agent_stats": {
+        "Agent_A": 140.75,
+        "Agent_B": -196.47,
+        "Agent_C": 318.07,
+        "Agent_D": 699.35,
+        "Agent_E": 238.2
+      },
+      "elapsed": 13.3
+    }
+  },
+  "exact_paired_comparisons": {
+    "PFSP_Ext_s801_1k_vs_500h": {
+      "arm_a": "PFSP_Ext_s801_1k",
+      "arm_b": "PFSP_Ext_s801_500h",
+      "mean_diff": -10.28,
+      "ci_95": [
+        -174.47,
+        153.92
+      ],
+      "includes_zero": true
+    },
+    "PFSP_Ext_s802_1k_vs_500h": {
+      "arm_a": "PFSP_Ext_s802_1k",
+      "arm_b": "PFSP_Ext_s802_500h",
+      "mean_diff": 25.43,
+      "ci_95": [
+        -149.38,
+        200.24
+      ],
+      "includes_zero": true
+    },
+    "Uniform_Ext_s802_1k_vs_500h": {
+      "arm_a": "Uniform_Ext_s802_1k",
+      "arm_b": "Uniform_Ext_s802_500h",
+      "mean_diff": -64.31,
+      "ci_95": [
+        -251.36,
+        122.73
+      ],
+      "includes_zero": true
+    },
+    "PFSP_vs_Uniform_Ext_s802_500h": {
+      "arm_a": "PFSP_Ext_s802_500h",
+      "arm_b": "Uniform_Ext_s802_500h",
+      "mean_diff": 36.79,
+      "ci_95": [
+        -134.28,
+        207.87
+      ],
+      "includes_zero": true
+    },
+    "PFSP_vs_Uniform_Ext_s802_1k": {
+      "arm_a": "PFSP_Ext_s802_1k",
+      "arm_b": "Uniform_Ext_s802_1k",
+      "mean_diff": 126.54,
+      "ci_95": [
+        -48.78,
+        301.86
+      ],
+      "includes_zero": true
+    }
+  }
+}

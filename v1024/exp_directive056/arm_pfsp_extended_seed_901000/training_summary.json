@@ -1,0 +1,30 @@
+{
+  "arm_name": "arm_pfsp_extended_seed_901000",
+  "league_type": "pfsp",
+  "opponent_pool_type": "extended",
+  "total_hands": 2000,
+  "seed_base": 901000,
+  "elapsed_seconds": 29.5,
+  "cumulative_cpu_ratio_pct": 66.77,
+  "total_ppo_updates": 2000,
+  "learners_pnl": {
+    "Agent_A": 588.83,
+    "Agent_B": 1003.43,
+    "Agent_C": -3825.43,
+    "Agent_D": 125.48,
+    "Agent_E": -210.75
+  },
+  "sum_learners_pnl": -2318.44,
+  "sampler_final_probs": {
+    "Agent_A_2000h": 0.05527913666078196,
+    "Agent_B_2000h": 0.13923047925582743,
+    "Agent_C_2000h": 0.10747626127166096,
+    "Agent_D_2000h": 0.08143095921455853,
+    "Agent_E_2000h": 0.07732748438856382,
+    "Agent_A_7000h": 0.08306870802355254,
+    "Agent_B_7000h": 0.0739613559038545,
+    "Agent_C_7000h": 0.11986642238785611,
+    "Agent_D_7000h": 0.14241140450645995,
+    "Agent_E_7000h": 0.11994778838688427
+  }
+}
