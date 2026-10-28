@@ -1,0 +1,34 @@
+{
+  "directive": "DIRECTIVE_053",
+  "timestamp": "2026-10-28 16:03:12",
+  "uniform_scaleup": {
+    "arm_name": "Uniform_GAE_5000h",
+    "league_type": "uniform",
+    "seed_base": 701000,
+    "total_hands": 5000,
+    "runtime_s": 46.85,
+    "total_updates": 1000,
+    "agent_pnl": {
+      "Agent_A": 1439.59,
+      "Agent_B": 6321.39,
+      "Agent_C": -1694.4,
+      "Agent_D": -453.27,
+      "Agent_E": -4974.75
+    }
+  },
+  "pfsp_scaleup": {
+    "arm_name": "PFSP_GAE_5000h",
+    "league_type": "pfsp",
+    "seed_base": 701000,
+    "total_hands": 5000,
+    "runtime_s": 47.24,
+    "total_updates": 1000,
+    "agent_pnl": {
+      "Agent_A": 3621.38,
+      "Agent_B": 6053.77,
+      "Agent_C": -609.7,
+      "Agent_D": -2334.91,
+      "Agent_E": -2611.93
+    }
+  }
+}

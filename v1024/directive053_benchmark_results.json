@@ -1,0 +1,178 @@
+{
+  "directive": "DIRECTIVE_053",
+  "timestamp": "2026-10-28 16:06:14",
+  "total_eval_time_seconds": 109.28,
+  "results": {
+    "Baseline_7000h": {
+      "total_hands": 5000,
+      "mean_bb100": 76.33019999999998,
+      "std_bb100": 5370.021160662959,
+      "seed_mean_bb100": 76.33019999999999,
+      "seed_ci95": [
+        -46.60864976448204,
+        199.26904976448202
+      ],
+      "action_distribution_pct": {
+        "action_0": 44.20677361853833,
+        "action_1": 22.243442831678127,
+        "action_2": 14.858670741023683,
+        "action_3": 15.3170359052712,
+        "action_4": 1.0058568882098293,
+        "action_5": 2.3682200152788386
+      },
+      "seat_mean_bb100": {
+        "seat_0": 813.9,
+        "seat_1": 34.01,
+        "seat_2": 219.99,
+        "seat_3": -258.98,
+        "seat_4": -427.28
+      },
+      "agent_mean_bb100": {
+        "Agent_A": 78.36,
+        "Agent_B": 75.43,
+        "Agent_C": 78.04,
+        "Agent_D": 56.64,
+        "Agent_E": 93.19
+      }
+    },
+    "Directive052_PFSP_3000h": {
+      "total_hands": 5000,
+      "mean_bb100": 106.01339999999999,
+      "std_bb100": 5389.289629739753,
+      "seed_mean_bb100": 106.0134,
+      "seed_ci95": [
+        -21.229021108684407,
+        233.25582110868442
+      ],
+      "action_distribution_pct": {
+        "action_0": 44.58188377786368,
+        "action_1": 22.741914701713696,
+        "action_2": 14.508439634067773,
+        "action_3": 13.142636258214146,
+        "action_4": 1.0823347506764593,
+        "action_5": 3.9427908774642444
+      },
+      "seat_mean_bb100": {
+        "seat_0": 922.69,
+        "seat_1": 42.55,
+        "seat_2": 170.71,
+        "seat_3": -259.85,
+        "seat_4": -346.02
+      },
+      "agent_mean_bb100": {
+        "Agent_A": 46.12,
+        "Agent_B": 129.03,
+        "Agent_C": 59.54,
+        "Agent_D": 74.17,
+        "Agent_E": 221.21
+      }
+    },
+    "Directive053_Uniform_GAE_5000h": {
+      "total_hands": 5000,
+      "mean_bb100": 90.74019999999999,
+      "std_bb100": 5364.205430583728,
+      "seed_mean_bb100": 90.74019999999999,
+      "seed_ci95": [
+        -40.37257850987274,
+        221.8529785098727
+      ],
+      "action_distribution_pct": {
+        "action_0": 45.080593165699554,
+        "action_1": 24.20373952288846,
+        "action_2": 11.295938104448743,
+        "action_3": 13.849129593810444,
+        "action_4": 1.3023855577047068,
+        "action_5": 4.268214055448098
+      },
+      "seat_mean_bb100": {
+        "seat_0": 868.06,
+        "seat_1": 35.63,
+        "seat_2": 110.23,
+        "seat_3": -294.15,
+        "seat_4": -266.08
+      },
+      "agent_mean_bb100": {
+        "Agent_A": 88.64,
+        "Agent_B": 131.41,
+        "Agent_C": 54.76,
+        "Agent_D": 9.43,
+        "Agent_E": 169.46
+      }
+    },
+    "Directive053_PFSP_GAE_5000h": {
+      "total_hands": 5000,
+      "mean_bb100": 83.7426,
+      "std_bb100": 5252.193900756639,
+      "seed_mean_bb100": 83.7426,
+      "seed_ci95": [
+        -42.236559190721294,
+        209.7217591907213
+      ],
+      "action_distribution_pct": {
+        "action_0": 45.69920164821015,
+        "action_1": 23.396858099407673,
+        "action_2": 15.220190574298224,
+        "action_3": 11.254184908575843,
+        "action_4": 1.249034251867113,
+        "action_5": 3.180530517640999
+      },
+      "seat_mean_bb100": {
+        "seat_0": 828.34,
+        "seat_1": 41.61,
+        "seat_2": 202.07,
+        "seat_3": -278.43,
+        "seat_4": -374.88
+      },
+      "agent_mean_bb100": {
+        "Agent_A": 89.69,
+        "Agent_B": 115.1,
+        "Agent_C": 123.41,
+        "Agent_D": 55.62,
+        "Agent_E": 34.89
+      }
+    }
+  },
+  "paired_diffs": {
+    "Directive052_PFSP_3000h_vs_Baseline": {
+      "mean_diff_bb100": 29.683200000000006,
+      "seed_ci95": [
+        -18.933153761171162,
+        78.29955376117118
+      ],
+      "identical_hands": 4734,
+      "identical_ratio": 0.9468
+    },
+    "Directive053_Uniform_GAE_5000h_vs_Baseline": {
+      "mean_diff_bb100": 14.41,
+      "seed_ci95": [
+        -36.98491093614713,
+        65.80491093614712
+      ],
+      "identical_hands": 4640,
+      "identical_ratio": 0.928
+    },
+    "Directive053_PFSP_GAE_5000h_vs_Baseline": {
+      "mean_diff_bb100": 7.412400000000003,
+      "seed_ci95": [
+        -47.04841822163557,
+        61.87321822163558
+      ],
+      "identical_hands": 4630,
+      "identical_ratio": 0.926
+    },
+    "PFSP_5000h_vs_Uniform_5000h": {
+      "mean_diff_bb100": -6.99759999999999,
+      "seed_ci95": [
+        -67.57231006518347,
+        53.5771100651835
+      ]
+    },
+    "PFSP_5000h_vs_PFSP_3000h": {
+      "mean_diff_bb100": -22.270799999999994,
+      "seed_ci95": [
+        -84.87095341114974,
+        40.32935341114975
+      ]
+    }
+  }
+}
