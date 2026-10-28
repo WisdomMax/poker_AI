@@ -1,0 +1,200 @@
+{
+  "seed_401000": {
+    "u_flat": {
+      "arm_name": "Uniform_Flat",
+      "league_type": "uniform",
+      "reward_mode": "flat",
+      "seed_base": 401000,
+      "total_hands": 500,
+      "runtime_s": 4.84,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -233.62,
+        "Agent_B": 105.99,
+        "Agent_C": -294.0,
+        "Agent_D": 454.75,
+        "Agent_E": -891.0
+      }
+    },
+    "u_gae": {
+      "arm_name": "Uniform_GAE",
+      "league_type": "uniform",
+      "reward_mode": "corrected_gae",
+      "seed_base": 401000,
+      "total_hands": 500,
+      "runtime_s": 5.11,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -627.62,
+        "Agent_B": -420.62,
+        "Agent_C": -97.0,
+        "Agent_D": 438.0,
+        "Agent_E": -341.5
+      }
+    },
+    "p_flat": {
+      "arm_name": "PFSP_Flat",
+      "league_type": "pfsp",
+      "reward_mode": "flat",
+      "seed_base": 401000,
+      "total_hands": 500,
+      "runtime_s": 4.64,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -637.75,
+        "Agent_B": 133.89,
+        "Agent_C": -412.25,
+        "Agent_D": 851.5,
+        "Agent_E": -1067.88
+      }
+    },
+    "p_gae": {
+      "arm_name": "PFSP_GAE",
+      "league_type": "pfsp",
+      "reward_mode": "corrected_gae",
+      "seed_base": 401000,
+      "total_hands": 500,
+      "runtime_s": 4.77,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -885.75,
+        "Agent_B": -112.62,
+        "Agent_C": -658.5,
+        "Agent_D": 334.75,
+        "Agent_E": -506.38
+      }
+    }
+  },
+  "seed_402000": {
+    "u_flat": {
+      "arm_name": "Uniform_Flat",
+      "league_type": "uniform",
+      "reward_mode": "flat",
+      "seed_base": 402000,
+      "total_hands": 500,
+      "runtime_s": 5.48,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -18.04,
+        "Agent_B": 214.13,
+        "Agent_C": 23.75,
+        "Agent_D": -210.62,
+        "Agent_E": -213.8
+      }
+    },
+    "u_gae": {
+      "arm_name": "Uniform_GAE",
+      "league_type": "uniform",
+      "reward_mode": "corrected_gae",
+      "seed_base": 402000,
+      "total_hands": 500,
+      "runtime_s": 4.72,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -230.0,
+        "Agent_B": 208.01,
+        "Agent_C": 437.0,
+        "Agent_D": -91.49,
+        "Agent_E": 532.99
+      }
+    },
+    "p_flat": {
+      "arm_name": "PFSP_Flat",
+      "league_type": "pfsp",
+      "reward_mode": "flat",
+      "seed_base": 402000,
+      "total_hands": 500,
+      "runtime_s": 4.51,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": 369.42,
+        "Agent_B": 519.5,
+        "Agent_C": 163.25,
+        "Agent_D": 41.75,
+        "Agent_E": -905.05
+      }
+    },
+    "p_gae": {
+      "arm_name": "PFSP_GAE",
+      "league_type": "pfsp",
+      "reward_mode": "corrected_gae",
+      "seed_base": 402000,
+      "total_hands": 500,
+      "runtime_s": 4.94,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -52.45,
+        "Agent_B": 856.5,
+        "Agent_C": 144.75,
+        "Agent_D": 11.0,
+        "Agent_E": -587.38
+      }
+    }
+  },
+  "seed_403000": {
+    "u_flat": {
+      "arm_name": "Uniform_Flat",
+      "league_type": "uniform",
+      "reward_mode": "flat",
+      "seed_base": 403000,
+      "total_hands": 500,
+      "runtime_s": 5.45,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -655.17,
+        "Agent_B": 396.38,
+        "Agent_C": -1462.25,
+        "Agent_D": -579.38,
+        "Agent_E": 2805.0
+      }
+    },
+    "u_gae": {
+      "arm_name": "Uniform_GAE",
+      "league_type": "uniform",
+      "reward_mode": "corrected_gae",
+      "seed_base": 403000,
+      "total_hands": 500,
+      "runtime_s": 4.68,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -671.17,
+        "Agent_B": 7.12,
+        "Agent_C": -563.63,
+        "Agent_D": -1301.38,
+        "Agent_E": 3074.0
+      }
+    },
+    "p_flat": {
+      "arm_name": "PFSP_Flat",
+      "league_type": "pfsp",
+      "reward_mode": "flat",
+      "seed_base": 403000,
+      "total_hands": 500,
+      "runtime_s": 4.5,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -1028.55,
+        "Agent_B": 1059.38,
+        "Agent_C": -937.75,
+        "Agent_D": -1032.46,
+        "Agent_E": 2334.5
+      }
+    },
+    "p_gae": {
+      "arm_name": "PFSP_GAE",
+      "league_type": "pfsp",
+      "reward_mode": "corrected_gae",
+      "seed_base": 403000,
+      "total_hands": 500,
+      "runtime_s": 5.24,
+      "total_updates": 100,
+      "agent_pnl": {
+        "Agent_A": -853.93,
+        "Agent_B": 642.76,
+        "Agent_C": -721.63,
+        "Agent_D": -1254.88,
+        "Agent_E": 3092.0
+      }
+    }
+  }
+}
