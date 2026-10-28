@@ -1,0 +1,353 @@
+{
+  "benchmark_results": {
+    "Baseline_7000h": {
+      "name": "Baseline 7000h",
+      "hands": 2500,
+      "mean_bb100": 78.75,
+      "std_bb100": 5486.97,
+      "ci_95": [
+        -142.06,
+        299.56
+      ],
+      "act_dist": {
+        "Fold": 45.67,
+        "Call": 35.57,
+        "Raise": 15.95,
+        "AllIn": 2.81
+      },
+      "allin_rate_pct": 2.81,
+      "allin_mean_pnl": -1377.08,
+      "seat_stats": {
+        "0": -141.15,
+        "1": 313.02,
+        "2": 137.62,
+        "3": -72.0,
+        "4": 156.25
+      },
+      "agent_stats": {
+        "Agent_A": 260.13,
+        "Agent_B": 52.36,
+        "Agent_C": 85.55,
+        "Agent_D": 143.2,
+        "Agent_E": -147.5
+      },
+      "elapsed": 14.2
+    },
+    "Uniform_Pool2k_1k_s801": {
+      "name": "Uniform 2k 1000h (Seed 801000)",
+      "hands": 2500,
+      "mean_bb100": 74.58,
+      "std_bb100": 5612.57,
+      "ci_95": [
+        -159.46,
+        308.62
+      ],
+      "act_dist": {
+        "Fold": 45.51,
+        "Call": 29.2,
+        "Raise": 22.58,
+        "AllIn": 2.71
+      },
+      "allin_rate_pct": 2.71,
+      "allin_mean_pnl": 757.67,
+      "seat_stats": {
+        "0": -50.5,
+        "1": 40.85,
+        "2": 460.0,
+        "3": -149.35,
+        "4": 71.9
+      },
+      "agent_stats": {
+        "Agent_A": 36.9,
+        "Agent_B": 188.65,
+        "Agent_C": 40.05,
+        "Agent_D": 85.15,
+        "Agent_E": 22.15
+      },
+      "elapsed": 15.2
+    },
+    "Uniform_Pool2k_1k_s802": {
+      "name": "Uniform 2k 1000h (Seed 802000)",
+      "hands": 2500,
+      "mean_bb100": 58.05,
+      "std_bb100": 5422.26,
+      "ci_95": [
+        -137.79,
+        253.9
+      ],
+      "act_dist": {
+        "Fold": 46.72,
+        "Call": 32.12,
+        "Raise": 17.76,
+        "AllIn": 3.4
+      },
+      "allin_rate_pct": 3.4,
+      "allin_mean_pnl": 303.77,
+      "seat_stats": {
+        "0": -51.3,
+        "1": 52.75,
+        "2": 447.27,
+        "3": 60.05,
+        "4": -218.5
+      },
+      "agent_stats": {
+        "Agent_A": 207.83,
+        "Agent_B": -94.89,
+        "Agent_C": -208.4,
+        "Agent_D": 112.98,
+        "Agent_E": 272.75
+      },
+      "elapsed": 15.0
+    },
+    "PFSP_Pool2k_1k_s801": {
+      "name": "Corrected PFSP 2k 1000h (Seed 801000)",
+      "hands": 2500,
+      "mean_bb100": 87.74,
+      "std_bb100": 5507.0,
+      "ci_95": [
+        -128.3,
+        303.79
+      ],
+      "act_dist": {
+        "Fold": 45.74,
+        "Call": 31.41,
+        "Raise": 20.47,
+        "AllIn": 2.38
+      },
+      "allin_rate_pct": 2.38,
+      "allin_mean_pnl": -389.72,
+      "seat_stats": {
+        "0": -24.75,
+        "1": 123.0,
+        "2": 313.25,
+        "3": -61.4,
+        "4": 88.62
+      },
+      "agent_stats": {
+        "Agent_A": 141.68,
+        "Agent_B": 152.5,
+        "Agent_C": 129.55,
+        "Agent_D": 69.35,
+        "Agent_E": -54.35
+      },
+      "elapsed": 13.8
+    },
+    "PFSP_Pool2k_1k_s802": {
+      "name": "Corrected PFSP 2k 1000h (Seed 802000)",
+      "hands": 2500,
+      "mean_bb100": 137.95,
+      "std_bb100": 5411.54,
+      "ci_95": [
+        -42.23,
+        318.14
+      ],
+      "act_dist": {
+        "Fold": 46.75,
+        "Call": 31.76,
+        "Raise": 18.1,
+        "AllIn": 3.38
+      },
+      "allin_rate_pct": 3.38,
+      "allin_mean_pnl": 808.13,
+      "seat_stats": {
+        "0": -44.45,
+        "1": 89.57,
+        "2": 450.38,
+        "3": 211.85,
+        "4": -17.57
+      },
+      "agent_stats": {
+        "Agent_A": 222.93,
+        "Agent_B": 2.39,
+        "Agent_C": 51.95,
+        "Agent_D": 256.73,
+        "Agent_E": 155.78
+      },
+      "elapsed": 14.3
+    },
+    "Uniform_ExtPool_1k_s801": {
+      "name": "Uniform ExtendedPool 1000h (Seed 801000)",
+      "hands": 2500,
+      "mean_bb100": 94.81,
+      "std_bb100": 5603.82,
+      "ci_95": [
+        -134.15,
+        323.76
+      ],
+      "act_dist": {
+        "Fold": 45.46,
+        "Call": 29.48,
+        "Raise": 22.03,
+        "AllIn": 3.03
+      },
+      "allin_rate_pct": 3.03,
+      "allin_mean_pnl": 262.5,
+      "seat_stats": {
+        "0": -65.9,
+        "1": -52.75,
+        "2": 317.23,
+        "3": 151.2,
+        "4": 124.25
+      },
+      "agent_stats": {
+        "Agent_A": 120.15,
+        "Agent_B": 65.33,
+        "Agent_C": 176.7,
+        "Agent_D": 66.3,
+        "Agent_E": 45.55
+      },
+      "elapsed": 15.0
+    },
+    "PFSP_ExtPool_1k_s801": {
+      "name": "Corrected PFSP ExtendedPool 1000h (Seed 801000)",
+      "hands": 2500,
+      "mean_bb100": -20.79,
+      "std_bb100": 5465.98,
+      "ci_95": [
+        -244.01,
+        202.43
+      ],
+      "act_dist": {
+        "Fold": 44.69,
+        "Call": 33.66,
+        "Raise": 19.51,
+        "AllIn": 2.14
+      },
+      "allin_rate_pct": 2.14,
+      "allin_mean_pnl": -2194.72,
+      "seat_stats": {
+        "0": -122.85,
+        "1": 17.75,
+        "2": -116.46,
+        "3": 126.7,
+        "4": -9.1
+      },
+      "agent_stats": {
+        "Agent_A": 169.1,
+        "Agent_B": -45.08,
+        "Agent_C": 91.1,
+        "Agent_D": 69.7,
+        "Agent_E": -388.78
+      },
+      "elapsed": 15.3
+    },
+    "PFSP_Pool2k_500h_Canary": {
+      "name": "Corrected PFSP 2k 500h Canary",
+      "hands": 2500,
+      "mean_bb100": 172.03,
+      "std_bb100": 5442.43,
+      "ci_95": [
+        -37.43,
+        381.48
+      ],
+      "act_dist": {
+        "Fold": 46.95,
+        "Call": 34.05,
+        "Raise": 16.23,
+        "AllIn": 2.77
+      },
+      "allin_rate_pct": 2.77,
+      "allin_mean_pnl": -1113.7,
+      "seat_stats": {
+        "0": -28.4,
+        "1": 358.17,
+        "2": 132.6,
+        "3": 320.5,
+        "4": 77.25
+      },
+      "agent_stats": {
+        "Agent_A": 253.03,
+        "Agent_B": 172.85,
+        "Agent_C": 260.05,
+        "Agent_D": 238.3,
+        "Agent_E": -64.1
+      },
+      "elapsed": 14.5
+    },
+    "PFSP_ExtPool_500h_Canary": {
+      "name": "Corrected PFSP ExtendedPool 500h Canary",
+      "hands": 2500,
+      "mean_bb100": 213.39,
+      "std_bb100": 5489.14,
+      "ci_95": [
+        7.42,
+        419.36
+      ],
+      "act_dist": {
+        "Fold": 45.89,
+        "Call": 33.74,
+        "Raise": 18.26,
+        "AllIn": 2.12
+      },
+      "allin_rate_pct": 2.12,
+      "allin_mean_pnl": -485.8,
+      "seat_stats": {
+        "0": -82.95,
+        "1": 379.17,
+        "2": 308.32,
+        "3": 459.35,
+        "4": 3.05
+      },
+      "agent_stats": {
+        "Agent_A": 207.33,
+        "Agent_B": 385.01,
+        "Agent_C": 278.4,
+        "Agent_D": 345.75,
+        "Agent_E": -149.55
+      },
+      "elapsed": 14.1
+    }
+  },
+  "paired_comparisons": {
+    "PFSP_vs_Uniform_Pool2k_s801": {
+      "arm_a": "PFSP_Pool2k_1k_s801",
+      "arm_b": "Uniform_Pool2k_1k_s801",
+      "mean_diff": 13.16,
+      "ci_95": [
+        -305.35,
+        331.67
+      ],
+      "includes_zero": true
+    },
+    "PFSP_vs_Uniform_Pool2k_s802": {
+      "arm_a": "PFSP_Pool2k_1k_s802",
+      "arm_b": "Uniform_Pool2k_1k_s802",
+      "mean_diff": 79.9,
+      "ci_95": [
+        -186.22,
+        346.02
+      ],
+      "includes_zero": true
+    },
+    "ExtPool_vs_Pool2k_PFSP_s801": {
+      "arm_a": "PFSP_ExtPool_1k_s801",
+      "arm_b": "PFSP_Pool2k_1k_s801",
+      "mean_diff": -108.53,
+      "ci_95": [
+        -419.18,
+        202.12
+      ],
+      "includes_zero": true
+    },
+    "ExtPool_vs_Pool2k_Uniform_s801": {
+      "arm_a": "Uniform_ExtPool_1k_s801",
+      "arm_b": "Uniform_Pool2k_1k_s801",
+      "mean_diff": 20.23,
+      "ci_95": [
+        -307.18,
+        347.64
+      ],
+      "includes_zero": true
+    },
+    "PFSP_ExtPool_1k_vs_Baseline": {
+      "arm_a": "PFSP_ExtPool_1k_s801",
+      "arm_b": "Baseline_7000h",
+      "mean_diff": -99.54,
+      "ci_95": [
+        -413.52,
+        214.44
+      ],
+      "includes_zero": true
+    }
+  }
+}

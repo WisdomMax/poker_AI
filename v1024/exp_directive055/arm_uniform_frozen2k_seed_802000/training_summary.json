@@ -1,0 +1,24 @@
+{
+  "arm_name": "arm_uniform_frozen2k_seed_802000",
+  "league_type": "uniform",
+  "opponent_pool_type": "frozen2k",
+  "total_hands": 1000,
+  "seed_base": 802000,
+  "elapsed_seconds": 14.64,
+  "total_ppo_updates": 979,
+  "learners_pnl": {
+    "Agent_A": -998.24,
+    "Agent_B": -815.37,
+    "Agent_C": 216.62,
+    "Agent_D": 2765.74,
+    "Agent_E": -1198.5
+  },
+  "sum_learners_pnl": -29.75,
+  "sampler_final_probs": {
+    "Agent_A_2000h": 0.2,
+    "Agent_B_2000h": 0.2,
+    "Agent_C_2000h": 0.2,
+    "Agent_D_2000h": 0.2,
+    "Agent_E_2000h": 0.2
+  }
+}

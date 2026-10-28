@@ -1,0 +1,219 @@
+{
+  "total_hands": 8000,
+  "sessions": 8,
+  "total_elapsed_seconds": 127.63,
+  "matrix": {
+    "arm_uniform_frozen2k_seed_801000": {
+      "arm_name": "arm_uniform_frozen2k_seed_801000",
+      "league_type": "uniform",
+      "opponent_pool_type": "frozen2k",
+      "total_hands": 1000,
+      "seed_base": 801000,
+      "elapsed_seconds": 16.04,
+      "total_ppo_updates": 981,
+      "learners_pnl": {
+        "Agent_A": 55.38,
+        "Agent_B": 91.75,
+        "Agent_C": -516.12,
+        "Agent_D": -614.88,
+        "Agent_E": 1293.24
+      },
+      "sum_learners_pnl": 309.38,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.2,
+        "Agent_B_2000h": 0.2,
+        "Agent_C_2000h": 0.2,
+        "Agent_D_2000h": 0.2,
+        "Agent_E_2000h": 0.2
+      }
+    },
+    "arm_uniform_frozen2k_seed_802000": {
+      "arm_name": "arm_uniform_frozen2k_seed_802000",
+      "league_type": "uniform",
+      "opponent_pool_type": "frozen2k",
+      "total_hands": 1000,
+      "seed_base": 802000,
+      "elapsed_seconds": 14.64,
+      "total_ppo_updates": 979,
+      "learners_pnl": {
+        "Agent_A": -998.24,
+        "Agent_B": -815.37,
+        "Agent_C": 216.62,
+        "Agent_D": 2765.74,
+        "Agent_E": -1198.5
+      },
+      "sum_learners_pnl": -29.75,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.2,
+        "Agent_B_2000h": 0.2,
+        "Agent_C_2000h": 0.2,
+        "Agent_D_2000h": 0.2,
+        "Agent_E_2000h": 0.2
+      }
+    },
+    "arm_pfsp_frozen2k_seed_801000": {
+      "arm_name": "arm_pfsp_frozen2k_seed_801000",
+      "league_type": "pfsp",
+      "opponent_pool_type": "frozen2k",
+      "total_hands": 1000,
+      "seed_base": 801000,
+      "elapsed_seconds": 15.11,
+      "total_ppo_updates": 981,
+      "learners_pnl": {
+        "Agent_A": -458.37,
+        "Agent_B": 227.12,
+        "Agent_C": -475.88,
+        "Agent_D": -318.62,
+        "Agent_E": 1630.37
+      },
+      "sum_learners_pnl": 604.62,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.20238056720251724,
+        "Agent_B_2000h": 0.17937984854601052,
+        "Agent_C_2000h": 0.15028199607781872,
+        "Agent_D_2000h": 0.22795845144318294,
+        "Agent_E_2000h": 0.23999913673047057
+      }
+    },
+    "arm_pfsp_frozen2k_seed_802000": {
+      "arm_name": "arm_pfsp_frozen2k_seed_802000",
+      "league_type": "pfsp",
+      "opponent_pool_type": "frozen2k",
+      "total_hands": 1000,
+      "seed_base": 802000,
+      "elapsed_seconds": 16.18,
+      "total_ppo_updates": 980,
+      "learners_pnl": {
+        "Agent_A": -1117.99,
+        "Agent_B": -193.87,
+        "Agent_C": -768.13,
+        "Agent_D": 2580.74,
+        "Agent_E": -1462.5
+      },
+      "sum_learners_pnl": -961.75,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.33274325264250076,
+        "Agent_B_2000h": 0.1836795563833088,
+        "Agent_C_2000h": 0.0811774871601532,
+        "Agent_D_2000h": 0.1645791454824299,
+        "Agent_E_2000h": 0.23782055833160742
+      }
+    },
+    "arm_uniform_extended_seed_801000": {
+      "arm_name": "arm_uniform_extended_seed_801000",
+      "league_type": "uniform",
+      "opponent_pool_type": "extended",
+      "total_hands": 1000,
+      "seed_base": 801000,
+      "elapsed_seconds": 17.0,
+      "total_ppo_updates": 983,
+      "learners_pnl": {
+        "Agent_A": -861.12,
+        "Agent_B": 731.75,
+        "Agent_C": -943.62,
+        "Agent_D": -1280.38,
+        "Agent_E": 2049.74
+      },
+      "sum_learners_pnl": -303.62,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.1,
+        "Agent_B_2000h": 0.1,
+        "Agent_C_2000h": 0.1,
+        "Agent_D_2000h": 0.1,
+        "Agent_E_2000h": 0.1,
+        "Agent_A_7000h": 0.1,
+        "Agent_B_7000h": 0.1,
+        "Agent_C_7000h": 0.1,
+        "Agent_D_7000h": 0.1,
+        "Agent_E_7000h": 0.1
+      }
+    },
+    "arm_uniform_extended_seed_802000": {
+      "arm_name": "arm_uniform_extended_seed_802000",
+      "league_type": "uniform",
+      "opponent_pool_type": "extended",
+      "total_hands": 1000,
+      "seed_base": 802000,
+      "elapsed_seconds": 16.56,
+      "total_ppo_updates": 977,
+      "learners_pnl": {
+        "Agent_A": -664.11,
+        "Agent_B": -1259.0,
+        "Agent_C": -986.88,
+        "Agent_D": 3442.01,
+        "Agent_E": -589.25
+      },
+      "sum_learners_pnl": -57.24,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.1,
+        "Agent_B_2000h": 0.1,
+        "Agent_C_2000h": 0.1,
+        "Agent_D_2000h": 0.1,
+        "Agent_E_2000h": 0.1,
+        "Agent_A_7000h": 0.1,
+        "Agent_B_7000h": 0.1,
+        "Agent_C_7000h": 0.1,
+        "Agent_D_7000h": 0.1,
+        "Agent_E_7000h": 0.1
+      }
+    },
+    "arm_pfsp_extended_seed_801000": {
+      "arm_name": "arm_pfsp_extended_seed_801000",
+      "league_type": "pfsp",
+      "opponent_pool_type": "extended",
+      "total_hands": 1000,
+      "seed_base": 801000,
+      "elapsed_seconds": 15.94,
+      "total_ppo_updates": 980,
+      "learners_pnl": {
+        "Agent_A": -623.14,
+        "Agent_B": 307.5,
+        "Agent_C": -413.38,
+        "Agent_D": -1441.62,
+        "Agent_E": 1391.01
+      },
+      "sum_learners_pnl": -779.62,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.12030143769051538,
+        "Agent_B_2000h": 0.07078286729474809,
+        "Agent_C_2000h": 0.05574661290835706,
+        "Agent_D_2000h": 0.1779384765960334,
+        "Agent_E_2000h": 0.06373921958268441,
+        "Agent_A_7000h": 0.03589346887878542,
+        "Agent_B_7000h": 0.168838178652426,
+        "Agent_C_7000h": 0.08121149869462148,
+        "Agent_D_7000h": 0.16924302856419204,
+        "Agent_E_7000h": 0.056305211137636674
+      }
+    },
+    "arm_pfsp_extended_seed_802000": {
+      "arm_name": "arm_pfsp_extended_seed_802000",
+      "league_type": "pfsp",
+      "opponent_pool_type": "extended",
+      "total_hands": 1000,
+      "seed_base": 802000,
+      "elapsed_seconds": 15.07,
+      "total_ppo_updates": 979,
+      "learners_pnl": {
+        "Agent_A": -1291.23,
+        "Agent_B": -781.37,
+        "Agent_C": -655.75,
+        "Agent_D": 3084.61,
+        "Agent_E": -1075.75
+      },
+      "sum_learners_pnl": -719.49,
+      "sampler_final_probs": {
+        "Agent_A_2000h": 0.07621636926316236,
+        "Agent_B_2000h": 0.21816605585415857,
+        "Agent_C_2000h": 0.08181551829088332,
+        "Agent_D_2000h": 0.06496548704482727,
+        "Agent_E_2000h": 0.10656576596084244,
+        "Agent_A_7000h": 0.09055620924925639,
+        "Agent_B_7000h": 0.1094856647378856,
+        "Agent_C_7000h": 0.032421793322521784,
+        "Agent_D_7000h": 0.10963614483493705,
+        "Agent_E_7000h": 0.11017099144152523
+      }
+    }
+  }
+}

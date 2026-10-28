@@ -1,0 +1,24 @@
+{
+  "arm_name": "arm_pfsp_frozen2k_seed_802000",
+  "league_type": "pfsp",
+  "opponent_pool_type": "frozen2k",
+  "total_hands": 1000,
+  "seed_base": 802000,
+  "elapsed_seconds": 16.18,
+  "total_ppo_updates": 980,
+  "learners_pnl": {
+    "Agent_A": -1117.99,
+    "Agent_B": -193.87,
+    "Agent_C": -768.13,
+    "Agent_D": 2580.74,
+    "Agent_E": -1462.5
+  },
+  "sum_learners_pnl": -961.75,
+  "sampler_final_probs": {
+    "Agent_A_2000h": 0.33274325264250076,
+    "Agent_B_2000h": 0.1836795563833088,
+    "Agent_C_2000h": 0.0811774871601532,
+    "Agent_D_2000h": 0.1645791454824299,
+    "Agent_E_2000h": 0.23782055833160742
+  }
+}
