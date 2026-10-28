@@ -1,0 +1,31 @@
+{
+  "arm_name": "arm_uniform_static_seed_1001000",
+  "league_mode": "static",
+  "sampler_type": "uniform",
+  "total_hands": 2000,
+  "seed_base": 1001000,
+  "elapsed_seconds": 49.95,
+  "final_cpu_ratio_pct": 66.95,
+  "total_ppo_updates": 1958,
+  "total_opponents_in_pool": 10,
+  "learners_pnl": {
+    "Agent_A": 2136.41,
+    "Agent_B": -5998.61,
+    "Agent_C": 636.13,
+    "Agent_D": 1563.95,
+    "Agent_E": 1561.25
+  },
+  "sum_learners_pnl": -100.88,
+  "final_probabilities": {
+    "frozen_2k_Agent_A": 0.1,
+    "frozen_2k_Agent_B": 0.1,
+    "frozen_2k_Agent_C": 0.1,
+    "frozen_2k_Agent_D": 0.1,
+    "frozen_2k_Agent_E": 0.1,
+    "frozen_7k_Agent_A": 0.1,
+    "frozen_7k_Agent_B": 0.1,
+    "frozen_7k_Agent_C": 0.1,
+    "frozen_7k_Agent_D": 0.1,
+    "frozen_7k_Agent_E": 0.1
+  }
+}
