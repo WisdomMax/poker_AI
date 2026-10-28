@@ -1,0 +1,139 @@
+{
+  "directive": "DIRECTIVE_051",
+  "eval_timestamp": "2026-10-28 15:22:58",
+  "total_eval_time_seconds": 26.37,
+  "evaluation_results": {
+    "Baseline_7000h": {
+      "total_hands": 1250,
+      "mean_bb100": -95.3408,
+      "std_bb100": 4679.231195683257,
+      "seed_level_ci95": [
+        -292.27232854781573,
+        101.59072854781573
+      ],
+      "allin_rate_pct": 2.6395939086294415,
+      "seat_breakdown": {
+        "Seat_0": -264.5,
+        "Seat_1": 688.744,
+        "Seat_2": 346.952,
+        "Seat_3": -1199.6000000000001,
+        "Seat_4": -48.3
+      },
+      "agent_breakdown": {
+        "Agent_A": -123.0,
+        "Agent_B": -180.30200000000002,
+        "Agent_C": -55.052,
+        "Agent_D": -51.349999999999994,
+        "Agent_E": -67.0
+      }
+    },
+    "Full_Main_2000h": {
+      "total_hands": 1250,
+      "mean_bb100": -82.43159999999999,
+      "std_bb100": 4639.46170768996,
+      "seed_level_ci95": [
+        -298.18747890654606,
+        133.32427890654608
+      ],
+      "allin_rate_pct": 3.2494758909853245,
+      "seat_breakdown": {
+        "Seat_0": -193.2,
+        "Seat_1": 637.2919999999999,
+        "Seat_2": 291.95000000000005,
+        "Seat_3": -1203.2,
+        "Seat_4": 55.00000000000001
+      },
+      "agent_breakdown": {
+        "Agent_A": -59.251999999999995,
+        "Agent_B": -93.80199999999999,
+        "Agent_C": -143.75199999999998,
+        "Agent_D": -46.9,
+        "Agent_E": -68.452
+      }
+    },
+    "Uniform_League_3300h": {
+      "total_hands": 1250,
+      "mean_bb100": -69.3704,
+      "std_bb100": 4630.066313089245,
+      "seed_level_ci95": [
+        -278.98727239912523,
+        140.24647239912525
+      ],
+      "allin_rate_pct": 2.561526870919136,
+      "seat_breakdown": {
+        "Seat_0": -175.8,
+        "Seat_1": 749.1440000000001,
+        "Seat_2": 247.60399999999998,
+        "Seat_3": -1158.3,
+        "Seat_4": -9.5
+      },
+      "agent_breakdown": {
+        "Agent_A": -62.2,
+        "Agent_B": -176.1,
+        "Agent_C": 72.94800000000001,
+        "Agent_D": -90.10000000000001,
+        "Agent_E": -91.4
+      }
+    },
+    "PFSP_League_3300h": {
+      "total_hands": 1250,
+      "mean_bb100": -120.9908,
+      "std_bb100": 4628.295102099191,
+      "seed_level_ci95": [
+        -329.5379268020202,
+        87.55632680202022
+      ],
+      "allin_rate_pct": 1.9289340101522845,
+      "seat_breakdown": {
+        "Seat_0": -253.79999999999998,
+        "Seat_1": 583.044,
+        "Seat_2": 412.802,
+        "Seat_3": -1220.5,
+        "Seat_4": -126.49999999999999
+      },
+      "agent_breakdown": {
+        "Agent_A": -208.70000000000002,
+        "Agent_B": -103.152,
+        "Agent_C": -166.2,
+        "Agent_D": -46.702,
+        "Agent_E": -80.2
+      }
+    }
+  },
+  "paired_comparisons": {
+    "Full_Main_2000h_vs_Baseline": {
+      "mean_diff_bb100": 12.909200000000004,
+      "seed_ci95": [
+        -37.55822123736789,
+        63.3766212373679
+      ],
+      "identical_hands": 1205,
+      "identical_ratio": 0.964
+    },
+    "Uniform_League_3300h_vs_Baseline": {
+      "mean_diff_bb100": 25.970400000000005,
+      "seed_ci95": [
+        -40.719640840784685,
+        92.6604408407847
+      ],
+      "identical_hands": 1199,
+      "identical_ratio": 0.9592
+    },
+    "PFSP_League_3300h_vs_Baseline": {
+      "mean_diff_bb100": -25.65000000000001,
+      "seed_ci95": [
+        -91.46300742497641,
+        40.1630074249764
+      ],
+      "identical_hands": 1175,
+      "identical_ratio": 0.94
+    },
+    "PFSP_vs_Uniform": {
+      "mean_diff_bb100": -51.62040000000001,
+      "seed_ci95": [
+        -141.59414358111866,
+        38.35334358111863
+      ]
+    }
+  }
+}

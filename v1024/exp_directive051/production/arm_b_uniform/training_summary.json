@@ -1,0 +1,24 @@
+{
+  "arm_mode": "uniform_league",
+  "total_hands": 3300,
+  "runtime_seconds": 31.96,
+  "zero_sum_violations": 0,
+  "illegal_actions": 0,
+  "nan_inf_violations": 0,
+  "frozen_models_immutable": true,
+  "total_ppo_updates": 660,
+  "agent_total_pnl": {
+    "Agent_A": -518.45,
+    "Agent_B": 1013.73,
+    "Agent_C": -3245.7,
+    "Agent_D": 1663.92,
+    "Agent_E": 3371.92
+  },
+  "agent_gradient_steps": {
+    "Agent_A": 132,
+    "Agent_B": 132,
+    "Agent_C": 132,
+    "Agent_D": 132,
+    "Agent_E": 132
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "arm_mode": "full_main",
+  "total_hands": 2000,
+  "runtime_seconds": 18.52,
+  "zero_sum_violations": 0,
+  "illegal_actions": 0,
+  "nan_inf_violations": 0,
+  "frozen_models_immutable": true,
+  "total_ppo_updates": 400,
+  "agent_total_pnl": {
+    "Agent_A": -1594.12,
+    "Agent_B": 1042.94,
+    "Agent_C": -936.24,
+    "Agent_D": 1391.3,
+    "Agent_E": 96.12
+  },
+  "agent_gradient_steps": {
+    "Agent_A": 80,
+    "Agent_B": 80,
+    "Agent_C": 80,
+    "Agent_D": 80,
+    "Agent_E": 80
+  }
+}
