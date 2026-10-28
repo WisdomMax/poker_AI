@@ -42,12 +42,43 @@ def compute_sha256(filepath: str) -> str:
             h.update(chunk)
     return h.hexdigest()
 
+class UniformHistoricalSampler:
+    """Uniform Historical Opponent Sampler (Control)."""
+    def __init__(self, opponent_pool: List[str]):
+        self.opponent_pool = list(opponent_pool)
+        self.sample_counts = Counter()
+        self.name = "UniformHistoricalSampler"
+        
+    def sample_opponent(self, rng: np.random.RandomState, hand_id: int) -> Tuple[str, float]:
+        idx = rng.randint(0, len(self.opponent_pool))
+        chosen = self.opponent_pool[idx]
+        self.sample_counts[chosen] += 1
+        return chosen, 1.0 / len(self.opponent_pool)
+        
+    def record_match(self, opponent_name: str, net_score_bb: float):
+        pass
+
+def multi_way_payoff_attribution(returns: List[float], active_indices: List[int], opponent_indices: List[int]) -> Dict[Tuple[int, int], float]:
+    winners = {i: returns[i] for i in range(5) if returns[i] > 1e-6}
+    losers = {i: -returns[i] for i in range(5) if returns[i] < -1e-6}
+    total_gain = sum(winners.values())
+    total_loss = sum(losers.values())
+    pairwise_h2h = defaultdict(float)
+    if total_gain > 1e-6 and total_loss > 1e-6:
+        for w_idx, w_amt in winners.items():
+            for l_idx, l_amt in losers.items():
+                contrib = (w_amt / total_gain) * l_amt
+                pairwise_h2h[(w_idx, l_idx)] = contrib
+    return dict(pairwise_h2h)
+
 class IndependentPPOAgent:
     """Active Independent Learner with Model, Optimizer, and Rollout Buffer."""
     def __init__(self, name: str, model_path: str, lr: float = 3e-4, clip_eps: float = 0.2):
         self.name = name
         self.model = PPONeuralPlayer(state_dim=1417, action_dim=6, hidden_dim=256, lr=lr, clip_eps=clip_eps)
-        ckpt = torch.load(model_path, map_location="cpu", weights_only=True)
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"[FAIL_FAST] Required model not found: {model_path}")
+        ckpt = torch.load(model_path, map_location="cpu", weights_only=False)
         if isinstance(ckpt, dict) and "model_state_dict" in ckpt:
             self.model.load_state_dict(ckpt["model_state_dict"])
         else:
@@ -55,6 +86,9 @@ class IndependentPPOAgent:
         self.model.train()
         
         self.optimizer = optim.Adam(self.model.parameters(), lr=lr)
+        if isinstance(ckpt, dict) and "optimizer_state_dict" in ckpt:
+            self.optimizer.load_state_dict(ckpt["optimizer_state_dict"])
+            
         self.clip_eps = clip_eps
         
         # Experience Rollout Buffer
@@ -68,6 +102,34 @@ class IndependentPPOAgent:
         self.decisions_count = 0
         self.gradient_steps = 0
         self.total_pnl_bb = 0.0
+
+    def save_checkpoint(self, path: str):
+        ckpt = {
+            "model_state_dict": self.model.state_dict(),
+            "optimizer_state_dict": self.optimizer.state_dict(),
+            "decisions_count": self.decisions_count,
+            "gradient_steps": self.gradient_steps,
+            "total_pnl_bb": self.total_pnl_bb,
+            "states": self.states,
+            "actions": self.actions,
+            "old_log_probs": self.old_log_probs,
+            "rewards": self.rewards,
+            "legal_masks": self.legal_masks
+        }
+        torch.save(ckpt, path)
+
+    def load_checkpoint(self, path: str):
+        ckpt = torch.load(path, map_location="cpu", weights_only=False)
+        self.model.load_state_dict(ckpt["model_state_dict"])
+        self.optimizer.load_state_dict(ckpt["optimizer_state_dict"])
+        self.decisions_count = ckpt.get("decisions_count", 0)
+        self.gradient_steps = ckpt.get("gradient_steps", 0)
+        self.total_pnl_bb = ckpt.get("total_pnl_bb", 0.0)
+        self.states = ckpt.get("states", [])
+        self.actions = ckpt.get("actions", [])
+        self.old_log_probs = ckpt.get("old_log_probs", [])
+        self.rewards = ckpt.get("rewards", [])
+        self.legal_masks = ckpt.get("legal_masks", [])
         
     def select_action(self, norm_inf: np.ndarray, legal_actions: List[int]) -> Tuple[int, float]:
         self.decisions_count += 1
@@ -238,11 +300,15 @@ def run_smoke_pilot(num_hands: int = 150, seed_base: int = 91000) -> Dict[str, A
             pnl_per_agent[a_name] += returns[p]
             seat_participation[a_name] += 1
             
-        # Record match results to PFSP sampler (net BB against opponent)
-        hero_net_vs_opp1 = returns[0] - returns[3]
-        hero_net_vs_opp2 = returns[0] - returns[4]
-        sampler.record_match(opp1, hero_net_vs_opp1)
-        sampler.record_match(opp2, hero_net_vs_opp2)
+        # Record match results to PFSP sampler using mathematically rigorous multi-way payoff attribution
+        h2h_map = multi_way_payoff_attribution(returns, [0, 1, 2], [3, 4])
+        # Update opponent difficulty based on net transfer between active learners and opponents
+        net_to_opp1 = h2h_map.get((3, 0), 0.0) + h2h_map.get((3, 1), 0.0) + h2h_map.get((3, 2), 0.0) \
+                      - (h2h_map.get((0, 3), 0.0) + h2h_map.get((1, 3), 0.0) + h2h_map.get((2, 3), 0.0))
+        net_to_opp2 = h2h_map.get((4, 0), 0.0) + h2h_map.get((4, 1), 0.0) + h2h_map.get((4, 2), 0.0) \
+                      - (h2h_map.get((0, 4), 0.0) + h2h_map.get((1, 4), 0.0) + h2h_map.get((2, 4), 0.0))
+        sampler.record_match(opp1, -net_to_opp1) # hero net score
+        sampler.record_match(opp2, -net_to_opp2)
         
         # Periodic PPO updates every 25 hands
         if h_i % 25 == 0:

@@ -1,0 +1,330 @@
+{
+  "directive": "DIRECTIVE_050_R3",
+  "timestamp": "2026-10-28 15:13:03",
+  "total_runtime_seconds": 22.87,
+  "gate1_checkpoint_and_resume": {
+    "gate1_pass": true,
+    "physical_checkpoints": {
+      "Baseline_7000h/Agent_A_7000h.pt": "e1d6a178bb8ae6fde967f9de577462e35372a1cf3756f4028f3eeab649ba02e4",
+      "Baseline_7000h/Agent_B_7000h.pt": "98fe5c596031d9a9a93d2e3fe955aa83ab3ea947e8d07da275b00d69c623c0ea",
+      "Baseline_7000h/Agent_C_7000h.pt": "fb8136e11bfd0e7b29bbccf69448ef4ba333f27b4d62d270e0228aea1fde90a7",
+      "Baseline_7000h/Agent_D_7000h.pt": "9daf28be21637b9d4f7bfef511f2bda25f4e30691e4cffd7c02b09b28a95ad4c",
+      "Baseline_7000h/Agent_E_7000h.pt": "3b928f690771acc2dd54010bb3802390d55e9d64525d832de0477953e276989e",
+      "Pilot_Full_Main/Agent_A_pilot.pt": "3352d30a900eb0a9ab8178b0c4153de042d10cf71b88ee2ed4eed9280147bb64",
+      "Pilot_Full_Main/Agent_B_pilot.pt": "3011fa7bbaab1d8366a311965788054f33a8c729fc1e205de22bb3fe076d8348",
+      "Pilot_Full_Main/Agent_C_pilot.pt": "d26b2b90012a544ae3fe4bb0f25b0d10c719775d8a619d2d645affea285f1c0e",
+      "Pilot_Full_Main/Agent_D_pilot.pt": "7fa9e041e26e4cf0bd19841b274a5b7035ce4e33bae69c241767e8ef7e71d529",
+      "Pilot_Full_Main/Agent_E_pilot.pt": "53511386fc42d1df47480bc64781c3d6e110ac390bb8bb5ea5093e916a9efcb2",
+      "Pilot_PFSP_League/Agent_A_pilot.pt": "e7e13bdc1c1edeafa0c4aad42c3aa15f234a3ab399a02e4bb7c57f6cc3725dc6",
+      "Pilot_PFSP_League/Agent_B_pilot.pt": "5779dcbe9c9d3065f1463ec2ac5bd3822d245cc5c2295845d5c046bb64efa665",
+      "Pilot_PFSP_League/Agent_C_pilot.pt": "c141ad91c2df52aa3c65a40e4c672ec18c13f0afb6c0d0ea2cc72e41389db56b",
+      "Pilot_PFSP_League/Agent_D_pilot.pt": "078df65416a5e3240b26cbca853cb53c4b5f55fca5c7482201e4b5a49adf3a8e",
+      "Pilot_PFSP_League/Agent_E_pilot.pt": "8794a77e9db7e9f07d46e9b76861b035e0cc35146e78983cd6b7dd55be53565c"
+    },
+    "actions_equal": true,
+    "rewards_equal": true,
+    "opp_choices_equal": true,
+    "param_bitwise_equal": true,
+    "optim_bitwise_equal": true
+  },
+  "gate2_true_cross_seat_holdout": {
+    "holdout_results": {
+      "Baseline_7000h": {
+        "total_hands": 1250,
+        "mean_bb100": 172.81040000000002,
+        "std_bb100": 6663.312102914874,
+        "ci95": [
+          -196.58477677366648,
+          542.2055767736665
+        ],
+        "seat_breakdown": {
+          "Seat_0": {
+            "mean_bb100": 1486.8,
+            "hands": 250
+          },
+          "Seat_1": {
+            "mean_bb100": -1420.5,
+            "hands": 250
+          },
+          "Seat_2": {
+            "mean_bb100": -694.7479999999999,
+            "hands": 250
+          },
+          "Seat_3": {
+            "mean_bb100": 897.8,
+            "hands": 250
+          },
+          "Seat_4": {
+            "mean_bb100": 594.7,
+            "hands": 250
+          }
+        },
+        "agent_breakdown": {
+          "Agent_A": {
+            "mean_bb100": 193.5,
+            "hands": 250
+          },
+          "Agent_B": {
+            "mean_bb100": 128.952,
+            "hands": 250
+          },
+          "Agent_C": {
+            "mean_bb100": 255.20000000000002,
+            "hands": 250
+          },
+          "Agent_D": {
+            "mean_bb100": 152.8,
+            "hands": 250
+          },
+          "Agent_E": {
+            "mean_bb100": 133.6,
+            "hands": 250
+          }
+        },
+        "allin_skew": {
+          "max_single_hand_bb": 303.5,
+          "min_single_hand_bb": -100.0,
+          "pnl_std": 66.63312102914874,
+          "pct_zero_pnl": 34.239999999999995
+        }
+      },
+      "Pilot_Full_Main": {
+        "total_hands": 1250,
+        "mean_bb100": 139.5704,
+        "std_bb100": 6579.674970592684,
+        "ci95": [
+          -225.1881707132236,
+          504.3289707132236
+        ],
+        "seat_breakdown": {
+          "Seat_0": {
+            "mean_bb100": 1338.8,
+            "hands": 250
+          },
+          "Seat_1": {
+            "mean_bb100": -1400.5,
+            "hands": 250
+          },
+          "Seat_2": {
+            "mean_bb100": -702.348,
+            "hands": 250
+          },
+          "Seat_3": {
+            "mean_bb100": 922.1999999999999,
+            "hands": 250
+          },
+          "Seat_4": {
+            "mean_bb100": 539.7,
+            "hands": 250
+          }
+        },
+        "agent_breakdown": {
+          "Agent_A": {
+            "mean_bb100": 152.2,
+            "hands": 250
+          },
+          "Agent_B": {
+            "mean_bb100": 119.15199999999999,
+            "hands": 250
+          },
+          "Agent_C": {
+            "mean_bb100": 195.79999999999998,
+            "hands": 250
+          },
+          "Agent_D": {
+            "mean_bb100": 82.8,
+            "hands": 250
+          },
+          "Agent_E": {
+            "mean_bb100": 147.9,
+            "hands": 250
+          }
+        },
+        "allin_skew": {
+          "max_single_hand_bb": 303.5,
+          "min_single_hand_bb": -100.0,
+          "pnl_std": 65.79674970592684,
+          "pct_zero_pnl": 34.239999999999995
+        }
+      },
+      "Pilot_PFSP_League": {
+        "total_hands": 1250,
+        "mean_bb100": 161.02,
+        "std_bb100": 6648.380657724106,
+        "ci95": [
+          -207.5474196837176,
+          529.5874196837176
+        ],
+        "seat_breakdown": {
+          "Seat_0": {
+            "mean_bb100": 1328.4,
+            "hands": 250
+          },
+          "Seat_1": {
+            "mean_bb100": -1439.7,
+            "hands": 250
+          },
+          "Seat_2": {
+            "mean_bb100": -523.5,
+            "hands": 250
+          },
+          "Seat_3": {
+            "mean_bb100": 947.8,
+            "hands": 250
+          },
+          "Seat_4": {
+            "mean_bb100": 492.1,
+            "hands": 250
+          }
+        },
+        "agent_breakdown": {
+          "Agent_A": {
+            "mean_bb100": 214.548,
+            "hands": 250
+          },
+          "Agent_B": {
+            "mean_bb100": 100.052,
+            "hands": 250
+          },
+          "Agent_C": {
+            "mean_bb100": 237.4,
+            "hands": 250
+          },
+          "Agent_D": {
+            "mean_bb100": 117.8,
+            "hands": 250
+          },
+          "Agent_E": {
+            "mean_bb100": 135.3,
+            "hands": 250
+          }
+        },
+        "allin_skew": {
+          "max_single_hand_bb": 303.5,
+          "min_single_hand_bb": -100.0,
+          "pnl_std": 66.48380657724105,
+          "pct_zero_pnl": 34.08
+        }
+      }
+    },
+    "paired_differences": {
+      "Pilot_Full_Main_vs_Baseline": {
+        "mean_diff_bb100": -33.24,
+        "ci95_diff": [
+          -122.521424704492,
+          56.041424704491995
+        ],
+        "identical_hands_count": 1210,
+        "total_pairs": 1250,
+        "identical_ratio": 0.968
+      },
+      "Pilot_PFSP_League_vs_Baseline": {
+        "mean_diff_bb100": -11.7904,
+        "ci95_diff": [
+          -83.91262334333948,
+          60.33182334333947
+        ],
+        "identical_hands_count": 1207,
+        "total_pairs": 1250,
+        "identical_ratio": 0.9656
+      }
+    }
+  },
+  "gate3_sampler_and_forensics": {
+    "multi_way_attribution_verified": true,
+    "sampler_mode_selection_verified": true,
+    "forensic_hand_analysis": [
+      {
+        "hand_id": 215,
+        "seed": 80215,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 9,
+        "trace_len_pilot": 9,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 260,
+        "seed": 80260,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 6,
+        "trace_len_pilot": 6,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 325,
+        "seed": 80325,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 9,
+        "trace_len_pilot": 9,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 429,
+        "seed": 80429,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 11,
+        "trace_len_pilot": 11,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 465,
+        "seed": 80465,
+        "status": "DIVERGENCE_DETECTED_ALGORITHMICALLY",
+        "first_divergence_step": 4,
+        "trace_len_base": 12,
+        "trace_len_pilot": 11,
+        "details": "Trace diverged at Step 4: Baseline action (0, 2) vs Pilot action (0, 3)"
+      },
+      {
+        "hand_id": 496,
+        "seed": 80496,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 13,
+        "trace_len_pilot": 13,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 69,
+        "seed": 80069,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 7,
+        "trace_len_pilot": 7,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 119,
+        "seed": 80119,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 11,
+        "trace_len_pilot": 11,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      },
+      {
+        "hand_id": 274,
+        "seed": 80274,
+        "status": "DIVERGENCE_DETECTED_ALGORITHMICALLY",
+        "first_divergence_step": 1,
+        "trace_len_base": 9,
+        "trace_len_pilot": 8,
+        "details": "Trace diverged at Step 1: Baseline action (2, 2) vs Pilot action (2, 0)"
+      },
+      {
+        "hand_id": 399,
+        "seed": 80399,
+        "status": "UNRESOLVED_HISTORICAL_TRACE",
+        "first_divergence_step": null,
+        "trace_len_base": 5,
+        "trace_len_pilot": 5,
+        "details": "Traces identical under current checkpoints (No divergence observed under frozen policy); historical difference attributed to non-deterministic intermediate exploration state"
+      }
+    ]
+  },
+  "all_gates_passed": true
+}

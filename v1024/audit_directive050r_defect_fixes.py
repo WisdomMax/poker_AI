@@ -85,7 +85,7 @@ def run_fixed_benchmark_evaluation(num_hands: int = 300, eval_seed: int = 777000
             else:
                 m_path = os.path.join(model_dir, f"{a_name}_pilot.pt")
                 if not os.path.exists(m_path):
-                    m_path = os.path.join(CHECKPOINT_DIR, f"{a_name}_7000h.pt")
+                    raise FileNotFoundError(f"[FAIL_FAST] Required pilot checkpoint not found: {m_path}")
                     
             hero_model = load_ppo_model(m_path)
             
