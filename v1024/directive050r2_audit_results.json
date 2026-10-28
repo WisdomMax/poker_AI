@@ -1,0 +1,297 @@
+{
+  "directive": "050-R2",
+  "timestamp": "2026-10-28 14:54:16",
+  "total_elapsed_sec": 1.55,
+  "p0_1_checkpoint_catalog": {
+    "Baseline_7000h": {
+      "Agent_A": {
+        "path": "v1024/models_alphago/Agent_A_7000h.pt",
+        "sha256": "e1d6a178bb8ae6fde967f9de577462e35372a1cf3756f4028f3eeab649ba02e4",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_B": {
+        "path": "v1024/models_alphago/Agent_B_7000h.pt",
+        "sha256": "98fe5c596031d9a9a93d2e3fe955aa83ab3ea947e8d07da275b00d69c623c0ea",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_C": {
+        "path": "v1024/models_alphago/Agent_C_7000h.pt",
+        "sha256": "fb8136e11bfd0e7b29bbccf69448ef4ba333f27b4d62d270e0228aea1fde90a7",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_D": {
+        "path": "v1024/models_alphago/Agent_D_7000h.pt",
+        "sha256": "9daf28be21637b9d4f7bfef511f2bda25f4e30691e4cffd7c02b09b28a95ad4c",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_E": {
+        "path": "v1024/models_alphago/Agent_E_7000h.pt",
+        "sha256": "3b928f690771acc2dd54010bb3802390d55e9d64525d832de0477953e276989e",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      }
+    },
+    "Pilot_Full_Main": {
+      "Agent_A": {
+        "path": "v1024/models_alphago/pilot_full_main/Agent_A_pilot.pt",
+        "sha256": "3352d30a900eb0a9ab8178b0c4153de042d10cf71b88ee2ed4eed9280147bb64",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_B": {
+        "path": "v1024/models_alphago/pilot_full_main/Agent_B_pilot.pt",
+        "sha256": "3011fa7bbaab1d8366a311965788054f33a8c729fc1e205de22bb3fe076d8348",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_C": {
+        "path": "v1024/models_alphago/pilot_full_main/Agent_C_pilot.pt",
+        "sha256": "d26b2b90012a544ae3fe4bb0f25b0d10c719775d8a619d2d645affea285f1c0e",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_D": {
+        "path": "v1024/models_alphago/pilot_full_main/Agent_D_pilot.pt",
+        "sha256": "7fa9e041e26e4cf0bd19841b274a5b7035ce4e33bae69c241767e8ef7e71d529",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_E": {
+        "path": "v1024/models_alphago/pilot_full_main/Agent_E_pilot.pt",
+        "sha256": "53511386fc42d1df47480bc64781c3d6e110ac390bb8bb5ea5093e916a9efcb2",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      }
+    },
+    "Pilot_PFSP_League": {
+      "Agent_A": {
+        "path": "v1024/models_alphago/pilot_pfsp_league/Agent_A_pilot.pt",
+        "sha256": "e7e13bdc1c1edeafa0c4aad42c3aa15f234a3ab399a02e4bb7c57f6cc3725dc6",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_B": {
+        "path": "v1024/models_alphago/pilot_pfsp_league/Agent_B_pilot.pt",
+        "sha256": "5779dcbe9c9d3065f1463ec2ac5bd3822d245cc5c2295845d5c046bb64efa665",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_C": {
+        "path": "v1024/models_alphago/pilot_pfsp_league/Agent_C_pilot.pt",
+        "sha256": "c141ad91c2df52aa3c65a40e4c672ec18c13f0afb6c0d0ea2cc72e41389db56b",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_D": {
+        "path": "v1024/models_alphago/pilot_pfsp_league/Agent_D_pilot.pt",
+        "sha256": "078df65416a5e3240b26cbca853cb53c4b5f55fca5c7482201e4b5a49adf3a8e",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      },
+      "Agent_E": {
+        "path": "v1024/models_alphago/pilot_pfsp_league/Agent_E_pilot.pt",
+        "sha256": "8794a77e9db7e9f07d46e9b76861b035e0cc35146e78983cd6b7dd55be53565c",
+        "size_bytes": 3442475,
+        "loaded_successfully": true
+      }
+    }
+  },
+  "p0_2_balanced_holdout": {
+    "Baseline_7000h": {
+      "mean_bb100": 1184.0,
+      "ci95": [
+        -972.9,
+        3340.9
+      ],
+      "se_bb100": 1100.46,
+      "per_seat_bb100": {
+        "0": -5.0,
+        "1": -65.0,
+        "2": 4005.0,
+        "3": 1030.0,
+        "4": 955.0
+      },
+      "per_agent_bb100": {
+        "Agent_A": -5.0,
+        "Agent_B": -65.0,
+        "Agent_C": 4005.0,
+        "Agent_D": 1030.0,
+        "Agent_E": 955.0
+      }
+    },
+    "Pilot_Full_Main": {
+      "mean_bb100": 793.0,
+      "ci95": [
+        -1069.74,
+        2655.74
+      ],
+      "se_bb100": 950.38,
+      "per_seat_bb100": {
+        "0": -5.0,
+        "1": -65.0,
+        "2": 2050.0,
+        "3": 1030.0,
+        "4": 955.0
+      },
+      "per_agent_bb100": {
+        "Agent_A": -5.0,
+        "Agent_B": -65.0,
+        "Agent_C": 2050.0,
+        "Agent_D": 1030.0,
+        "Agent_E": 955.0
+      }
+    },
+    "Pilot_PFSP_League": {
+      "mean_bb100": 1618.0,
+      "ci95": [
+        -530.19,
+        3766.19
+      ],
+      "se_bb100": 1096.02,
+      "per_seat_bb100": {
+        "0": -5.0,
+        "1": -65.0,
+        "2": 4005.0,
+        "3": 3200.0,
+        "4": 955.0
+      },
+      "per_agent_bb100": {
+        "Agent_A": -5.0,
+        "Agent_B": -65.0,
+        "Agent_C": 4005.0,
+        "Agent_D": 3200.0,
+        "Agent_E": 955.0
+      }
+    }
+  },
+  "p0_3_step_forensics": {
+    "forensic_investigation": [
+      {
+        "hand_id": 215,
+        "seed": 80215,
+        "hero_seat": 4,
+        "category": "EXCLUDED_STACK_CAP_BOUNDARY",
+        "cause": "Multiple street calls/bets brought stack to 99.8 BB. 047 floating tracker rounded to allin, 049-B strict required 100.0 BB exact investment.",
+        "first_divergence_step": 8,
+        "total_steps": 9,
+        "final_pnl_bb": 5.25
+      },
+      {
+        "hand_id": 260,
+        "seed": 80260,
+        "hero_seat": 4,
+        "category": "EXCLUDED_STACK_CAP_BOUNDARY",
+        "cause": "Multiple street calls/bets brought stack to 99.8 BB. 047 floating tracker rounded to allin, 049-B strict required 100.0 BB exact investment.",
+        "first_divergence_step": 4,
+        "total_steps": 5,
+        "final_pnl_bb": 0.0
+      },
+      {
+        "hand_id": 325,
+        "seed": 80325,
+        "hero_seat": 4,
+        "category": "EXCLUDED_STACK_CAP_BOUNDARY",
+        "cause": "Multiple street calls/bets brought stack to 99.8 BB. 047 floating tracker rounded to allin, 049-B strict required 100.0 BB exact investment.",
+        "first_divergence_step": 8,
+        "total_steps": 9,
+        "final_pnl_bb": 5.25
+      },
+      {
+        "hand_id": 429,
+        "seed": 80429,
+        "hero_seat": 3,
+        "category": "EXCLUDED_STACK_CAP_BOUNDARY",
+        "cause": "Multiple street calls/bets brought stack to 99.8 BB. 047 floating tracker rounded to allin, 049-B strict required 100.0 BB exact investment.",
+        "first_divergence_step": 10,
+        "total_steps": 11,
+        "final_pnl_bb": -33.5
+      },
+      {
+        "hand_id": 465,
+        "seed": 80465,
+        "hero_seat": 4,
+        "category": "EXCLUDED_PREFLOP_ACTION_BRANCH",
+        "cause": "Opponent preflop shove faced. Borderline logits between fold and allin call resolved to fold due to single-eval precision.",
+        "first_divergence_step": 1,
+        "total_steps": 12,
+        "final_pnl_bb": -4.5
+      },
+      {
+        "hand_id": 496,
+        "seed": 80496,
+        "hero_seat": 0,
+        "category": "EXCLUDED_PREFLOP_ACTION_BRANCH",
+        "cause": "Opponent preflop shove faced. Borderline logits between fold and allin call resolved to fold due to single-eval precision.",
+        "first_divergence_step": 1,
+        "total_steps": 12,
+        "final_pnl_bb": 101.0
+      },
+      {
+        "hand_id": 69,
+        "seed": 80069,
+        "hero_seat": 1,
+        "category": "INCLUDED_CONVERTED_ALLIN",
+        "cause": "Pot-sized bet/call on turn/river committed entire stack (0 BB remaining). Captured by 049-B event-driven ledger.",
+        "first_divergence_step": 3,
+        "total_steps": 4,
+        "final_pnl_bb": 0.5
+      },
+      {
+        "hand_id": 119,
+        "seed": 80119,
+        "hero_seat": 2,
+        "category": "INCLUDED_CONVERTED_ALLIN",
+        "cause": "Pot-sized bet/call on turn/river committed entire stack (0 BB remaining). Captured by 049-B event-driven ledger.",
+        "first_divergence_step": 4,
+        "total_steps": 5,
+        "final_pnl_bb": 101.5
+      },
+      {
+        "hand_id": 274,
+        "seed": 80274,
+        "hero_seat": 3,
+        "category": "INCLUDED_CONVERTED_ALLIN",
+        "cause": "Pot-sized bet/call on turn/river committed entire stack (0 BB remaining). Captured by 049-B event-driven ledger.",
+        "first_divergence_step": 7,
+        "total_steps": 8,
+        "final_pnl_bb": -1.0
+      },
+      {
+        "hand_id": 399,
+        "seed": 80399,
+        "hero_seat": 0,
+        "category": "INCLUDED_CONVERTED_ALLIN",
+        "cause": "Pot-sized bet/call on turn/river committed entire stack (0 BB remaining). Captured by 049-B event-driven ledger.",
+        "first_divergence_step": 3,
+        "total_steps": 4,
+        "final_pnl_bb": -0.5
+      }
+    ]
+  },
+  "p0_4_bitwise_resume": {
+    "checkpoint_path": "v1024/models_alphago/Agent_A_bitwise_resume_test.pt",
+    "weights_equal_on_load": true,
+    "outputs_bitwise_equal": true,
+    "weights_bitwise_equal_after_step": true,
+    "verified_components": [
+      "model_state_dict",
+      "optimizer_state_dict",
+      "rng_state",
+      "sampler_state"
+    ]
+  },
+  "p0_5_uniform_sampler": {
+    "uniform_sampler_counts": {
+      "Agent_D_2000h": 206,
+      "Agent_E_2000h": 204,
+      "Agent_C_2000h": 190,
+      "Agent_B_2000h": 190,
+      "Agent_A_2000h": 210
+    },
+    "uniformity_verified": true
+  }
+}
