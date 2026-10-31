@@ -1,0 +1,51 @@
+{
+  "directive": "DIRECTIVE_062",
+  "lead_scientist": "Dr. Max",
+  "total_table_hands": 3000,
+  "total_hero_hands": 12000,
+  "total_showdowns": 1728,
+  "total_foldouts": 1272,
+  "final_league_pool_size": 40,
+  "learners_summary": {
+    "Agent_A": {
+      "hands_played": 2400,
+      "total_chips": -241887.1666666667,
+      "hero_bb100": -100.79,
+      "final_entropy": 0.0983,
+      "final_value_loss": 136.0276,
+      "final_beta_entropy": 0.0401
+    },
+    "Agent_B": {
+      "hands_played": 2400,
+      "total_chips": 142040.5,
+      "hero_bb100": 59.18,
+      "final_entropy": 0.3729,
+      "final_value_loss": 343.1926,
+      "final_beta_entropy": 0.0359
+    },
+    "Agent_C": {
+      "hands_played": 2400,
+      "total_chips": -241347.66666666663,
+      "hero_bb100": -100.56,
+      "final_entropy": 0.0646,
+      "final_value_loss": 163.8122,
+      "final_beta_entropy": 0.0416
+    },
+    "Agent_D": {
+      "hands_played": 2400,
+      "total_chips": 285749.0,
+      "hero_bb100": 119.06,
+      "final_entropy": 0.282,
+      "final_value_loss": 307.3159,
+      "final_beta_entropy": 0.0314
+    },
+    "Agent_E": {
+      "hands_played": 2400,
+      "total_chips": -281859.8333333334,
+      "hero_bb100": -117.44,
+      "final_entropy": 0.4995,
+      "final_value_loss": 255.3283,
+      "final_beta_entropy": 0.0376
+    }
+  }
+}
