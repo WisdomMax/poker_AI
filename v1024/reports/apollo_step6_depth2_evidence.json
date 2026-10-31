@@ -1,0 +1,16 @@
+{
+  "benchmark": "100_sealed_seeds_depth1_vs_depth2",
+  "num_seeds": 100,
+  "hands_per_seed": 50,
+  "depth1_search_bb100": -555.0323,
+  "depth1_se": 77.58671248454007,
+  "depth2_search_bb100": -250.3946,
+  "depth2_se": 72.77301263718104,
+  "delta_gain": 304.6377,
+  "ci95": [
+    138.21971665440333,
+    471.05568334559666
+  ],
+  "p_value": 0.00044795245067551324,
+  "statistical_significance": true
+}

@@ -1,0 +1,17 @@
+{
+  "benchmark": "100_sealed_seeds_step6_vs_step7_river_solver",
+  "num_seeds": 100,
+  "hands_per_seed": 50,
+  "step6_depth2_bb100": -272.2767,
+  "step6_se": 76.93691724085626,
+  "step7_hybrid_river_bb100": -269.4767,
+  "step7_se": 77.02300874506606,
+  "river_solver_delta": 2.8,
+  "ci95": [
+    -0.24392990428856987,
+    5.8439299042885695
+  ],
+  "p_value": 0.07101508949400462,
+  "statistical_significance": false,
+  "breakeven_achieved": false
+}

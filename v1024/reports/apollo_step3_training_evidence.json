@@ -1,0 +1,22 @@
+{
+  "directive": "APOLLO_STEP3_SCALEUP",
+  "lead_scientist": "Dr. Max",
+  "total_table_hands": 20000,
+  "pot_audit_passes": 20000,
+  "max_zero_sum_error": 1.8189894035458565e-12,
+  "train_elapsed_sec": 184.39,
+  "final_entropies": {
+    "Agent_A": 1.08,
+    "Agent_B": 0.994,
+    "Agent_C": 1.108,
+    "Agent_D": 1.006,
+    "Agent_E": 1.063
+  },
+  "final_vlosses": {
+    "Agent_A": 348257.06,
+    "Agent_B": 171953.52,
+    "Agent_C": 345440.09,
+    "Agent_D": 265212.28,
+    "Agent_E": 116483.69
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "benchmark": "100_sealed_seeds_vs_7k_anchors",
+  "num_seeds": 100,
+  "hands_per_seed": 50,
+  "total_hands_evaluated": 5000,
+  "apollo_main_champion_bb100": -1274.0468666666666,
+  "apollo_main_champion_se": 137.66282321173665,
+  "baseline_bb100": -93.09803333333333,
+  "baseline_se": 72.17258499174591,
+  "delta_bb100": -1180.9488333333334,
+  "ci95": [
+    -1429.9757000803188,
+    -931.9219665863479
+  ],
+  "p_value": 2.133800216403812e-15,
+  "statistical_significance": false,
+  "target_exceeded_100bb": false
+}
