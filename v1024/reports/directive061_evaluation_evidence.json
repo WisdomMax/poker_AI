@@ -1,0 +1,166 @@
+{
+  "directive": "DIRECTIVE_061",
+  "lead_scientist": "Dr. Max",
+  "total_eval_table_hands": 1000,
+  "sealed_seeds_count": 200,
+  "candidate_summary": {
+    "mean_hero_bb100": 26.54,
+    "se_bb100": 40.26,
+    "agents": {
+      "Agent_A": {
+        "hands": 800,
+        "chips": 91450.0,
+        "bb100": 114.31
+      },
+      "Agent_B": {
+        "hands": 800,
+        "chips": -266625.5,
+        "bb100": -333.28
+      },
+      "Agent_C": {
+        "hands": 800,
+        "chips": -101925.0,
+        "bb100": -127.41
+      },
+      "Agent_D": {
+        "hands": 800,
+        "chips": 154513.0,
+        "bb100": 193.14
+      },
+      "Agent_E": {
+        "hands": 800,
+        "chips": 228737.5,
+        "bb100": 285.92
+      }
+    }
+  },
+  "baseline_summary": {
+    "mean_hero_bb100": 40.33,
+    "se_bb100": 40.43,
+    "agents": {
+      "Agent_A": {
+        "hands": 800,
+        "chips": 78778.66666666667,
+        "bb100": 98.47
+      },
+      "Agent_B": {
+        "hands": 800,
+        "chips": -113876.0,
+        "bb100": -142.34
+      },
+      "Agent_C": {
+        "hands": 800,
+        "chips": -157508.33333333334,
+        "bb100": -196.89
+      },
+      "Agent_D": {
+        "hands": 800,
+        "chips": 69800.0,
+        "bb100": 87.25
+      },
+      "Agent_E": {
+        "hands": 800,
+        "chips": 284141.6666666666,
+        "bb100": 355.18
+      }
+    }
+  },
+  "paired_comparison": {
+    "delta_bb100": -13.8,
+    "paired_se_bb100": 26.65,
+    "ci95": [
+      -66.02,
+      38.43
+    ],
+    "t_statistic": -0.5178,
+    "p_value": 0.6047427449439668,
+    "statistically_significant_improvement": false,
+    "statistically_significant_degradation": false
+  },
+  "action_distributions": {
+    "Candidate_061_1000h": {
+      "Agent_A": {
+        "Fold": 47.11,
+        "Check/Call": 17.85,
+        "Raise_Min": 2.93,
+        "Raise_HalfPot": 30.81,
+        "Raise_Pot": 0.81,
+        "All_In": 0.49
+      },
+      "Agent_B": {
+        "Fold": 37.99,
+        "Check/Call": 21.35,
+        "Raise_Min": 2.28,
+        "Raise_HalfPot": 32.81,
+        "Raise_Pot": 1.26,
+        "All_In": 4.32
+      },
+      "Agent_C": {
+        "Fold": 35.59,
+        "Check/Call": 28.52,
+        "Raise_Min": 1.09,
+        "Raise_HalfPot": 30.56,
+        "Raise_Pot": 1.39,
+        "All_In": 2.84
+      },
+      "Agent_D": {
+        "Fold": 36.2,
+        "Check/Call": 35.13,
+        "Raise_Min": 4.23,
+        "Raise_HalfPot": 23.87,
+        "Raise_Pot": 0.43,
+        "All_In": 0.14
+      },
+      "Agent_E": {
+        "Fold": 29.5,
+        "Check/Call": 47.51,
+        "Raise_Min": 6.0,
+        "Raise_HalfPot": 9.51,
+        "Raise_Pot": 1.47,
+        "All_In": 6.0
+      }
+    },
+    "Baseline_2000h": {
+      "Agent_A": {
+        "Fold": 40.09,
+        "Check/Call": 34.42,
+        "Raise_Min": 3.27,
+        "Raise_HalfPot": 20.04,
+        "Raise_Pot": 0.36,
+        "All_In": 1.82
+      },
+      "Agent_B": {
+        "Fold": 39.89,
+        "Check/Call": 20.14,
+        "Raise_Min": 1.91,
+        "Raise_HalfPot": 36.52,
+        "Raise_Pot": 0.77,
+        "All_In": 0.77
+      },
+      "Agent_C": {
+        "Fold": 35.96,
+        "Check/Call": 21.95,
+        "Raise_Min": 0.67,
+        "Raise_HalfPot": 38.58,
+        "Raise_Pot": 0.45,
+        "All_In": 2.4
+      },
+      "Agent_D": {
+        "Fold": 33.94,
+        "Check/Call": 29.15,
+        "Raise_Min": 9.44,
+        "Raise_HalfPot": 26.55,
+        "Raise_Pot": 0.7,
+        "All_In": 0.21
+      },
+      "Agent_E": {
+        "Fold": 35.57,
+        "Check/Call": 40.26,
+        "Raise_Min": 1.04,
+        "Raise_HalfPot": 19.89,
+        "Raise_Pot": 0.21,
+        "All_In": 3.04
+      }
+    }
+  }
+}

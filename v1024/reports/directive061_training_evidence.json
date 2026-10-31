@@ -1,0 +1,67 @@
+{
+  "directive": "DIRECTIVE_061",
+  "lead_scientist": "Dr. Max",
+  "total_table_hands": 1000,
+  "total_hero_hands": 4000,
+  "total_showdowns": 569,
+  "total_foldouts": 431,
+  "max_pot_discrepancy": 0.0,
+  "max_zero_sum_error": 0.0,
+  "learners_summary": {
+    "Agent_A": {
+      "hands_played": 800,
+      "total_chips": -130555.5,
+      "hero_bb100": -163.194375,
+      "final_entropy": 0.1049928143620491,
+      "entropy_floor_preserved": false,
+      "final_beta_entropy": 0.04077751738229395,
+      "final_policy_loss": 0.0022918800823390484,
+      "final_value_loss": 3183.095947265625,
+      "final_clip_frac": 0.0
+    },
+    "Agent_B": {
+      "hands_played": 800,
+      "total_chips": -100162.5,
+      "hero_bb100": -125.203125,
+      "final_entropy": 0.29740896821022034,
+      "entropy_floor_preserved": false,
+      "final_beta_entropy": 0.042754777092625304,
+      "final_policy_loss": -0.07287655025720596,
+      "final_value_loss": 1043.793701171875,
+      "final_clip_frac": 0.25
+    },
+    "Agent_C": {
+      "hands_played": 800,
+      "total_chips": -15150.0,
+      "hero_bb100": -18.9375,
+      "final_entropy": 0.12919685244560242,
+      "entropy_floor_preserved": false,
+      "final_beta_entropy": 0.03853399885817217,
+      "final_policy_loss": -0.0029538392554968596,
+      "final_value_loss": 898.49609375,
+      "final_clip_frac": 0.0
+    },
+    "Agent_D": {
+      "hands_played": 800,
+      "total_chips": 23068.0,
+      "hero_bb100": 28.835,
+      "final_entropy": 0.1132744774222374,
+      "entropy_floor_preserved": false,
+      "final_beta_entropy": 0.030615510704157547,
+      "final_policy_loss": -0.030182495713233948,
+      "final_value_loss": 206.20677185058594,
+      "final_clip_frac": 0.1304347813129425
+    },
+    "Agent_E": {
+      "hands_played": 800,
+      "total_chips": -233606.0,
+      "hero_bb100": -292.0075,
+      "final_entropy": 0.17665863037109375,
+      "entropy_floor_preserved": false,
+      "final_beta_entropy": 0.03138830670078309,
+      "final_policy_loss": -0.03251717984676361,
+      "final_value_loss": 56.040069580078125,
+      "final_clip_frac": 0.1764705926179886
+    }
+  }
+}
