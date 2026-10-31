@@ -1,0 +1,45 @@
+{
+  "directive": "APOLLO_STEP2_NFSP",
+  "lead_scientist": "Dr. Max",
+  "total_hands": 1000,
+  "pot_audit_passes": 1000,
+  "max_zero_sum_error": 5.684341886080802e-14,
+  "train_elapsed_sec": 10.59,
+  "agents": {
+    "Agent_A": {
+      "hands": 800,
+      "net_chips": 57693.5,
+      "bb100": 72.12,
+      "final_entropy": 1.23,
+      "final_vloss": 105165.83
+    },
+    "Agent_B": {
+      "hands": 800,
+      "net_chips": 44449.166666666686,
+      "bb100": 55.56,
+      "final_entropy": 1.24,
+      "final_vloss": 50008.33
+    },
+    "Agent_C": {
+      "hands": 800,
+      "net_chips": -325802.8333333334,
+      "bb100": -407.25,
+      "final_entropy": 1.185,
+      "final_vloss": 116412.45
+    },
+    "Agent_D": {
+      "hands": 800,
+      "net_chips": -225140.83333333326,
+      "bb100": -281.43,
+      "final_entropy": 1.048,
+      "final_vloss": 83542.07
+    },
+    "Agent_E": {
+      "hands": 800,
+      "net_chips": 144596.5,
+      "bb100": 180.75,
+      "final_entropy": 1.215,
+      "final_vloss": 82237.96
+    }
+  }
+}
