@@ -1,0 +1,32 @@
+{
+  "title": "FINAL_ALPHA_CHAMPION_ROSTER_MANIFEST",
+  "lead_scientist": "Dr. Max",
+  "timestamp": "2026-11-01T00:10:45+0900",
+  "roster": {
+    "Agent_A": {
+      "source_path": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1024/exp_directive065/Agent_A.pt",
+      "sha256": "a27fcfaf304c8cfe8e73a584f005196086af9d4ede2089db6bc5faa9511ca918",
+      "role": "Alpha Champion"
+    },
+    "Agent_B": {
+      "source_path": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1024/exp_directive065/Agent_B.pt",
+      "sha256": "08b5aaf7ed80cc5c06e55e479fc8d8ee69453ff903c623b0d45828db846f869e",
+      "role": "Alpha Champion"
+    },
+    "Agent_C": {
+      "source_path": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1024/exp_directive065/Agent_C.pt",
+      "sha256": "86ce1d5374d7a650d58285d811c285e9567ff0f4f3335386f977bbd7356b290b",
+      "role": "Alpha Champion"
+    },
+    "Agent_D": {
+      "source_path": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1024/exp_directive065/Agent_D.pt",
+      "sha256": "025bff26c374f146e958f66440b0e3dae4739778a73949d8e4d17a60c001631f",
+      "role": "Alpha Champion"
+    },
+    "Agent_E": {
+      "source_path": "/Volumes/NVME/7.AI_vibe_coding/hangame/v1024/models_alphago/Agent_E_2000h.pt",
+      "sha256": "f785547138b66dfd50ae06f5a5e3b5cfa68c35d1d9c783c19a1505fca55aece5",
+      "role": "Alpha Champion"
+    }
+  }
+}
