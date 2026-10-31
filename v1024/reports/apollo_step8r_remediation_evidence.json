@@ -1,0 +1,23 @@
+{
+  "benchmark": "step8r_information_safe_evaluation",
+  "new_sealed_seed_range": [
+    3501000,
+    3501099
+  ],
+  "num_seeds": 100,
+  "hands_per_seed": 50,
+  "total_hands_evaluated": 5000,
+  "information_leakage": "100% ELIMINATED (Belief Card Reshuffling)",
+  "crn_pollution": "100% ELIMINATED (Independent Search RNG)",
+  "raw_policy_bb100": -550.2974,
+  "raw_policy_se": 78.44410132829901,
+  "safe_search_bb100": -610.0223333333333,
+  "safe_search_se": 88.85170111547937,
+  "pure_search_gain": -59.72493333333334,
+  "ci95": [
+    -246.27582427285722,
+    126.82595760619053
+  ],
+  "p_value": 0.5267733637816546,
+  "statistical_significance": false
+}
