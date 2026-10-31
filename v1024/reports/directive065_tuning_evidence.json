@@ -1,0 +1,10 @@
+{
+  "directive": "DIRECTIVE_065_TUNING",
+  "lead_scientist": "Dr. Max",
+  "total_tuning_hands": 500,
+  "pot_audit_passes": 500,
+  "max_zero_sum_error": 0.0,
+  "final_entropy": 0.2607627213001251,
+  "final_value_loss": 44478.84765625,
+  "tuning_net_chips": 62863.0
+}
