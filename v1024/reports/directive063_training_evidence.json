@@ -1,0 +1,29 @@
+{
+  "directive": "DIRECTIVE_063",
+  "lead_scientist": "Dr. Max",
+  "total_table_hands": 5000,
+  "active_hero_hands": 20000,
+  "seed": 5040000,
+  "learning_rate": 0.0003,
+  "target_entropy": 0.75,
+  "total_foldouts": 2364,
+  "total_showdowns": 2636,
+  "pot_audit_passes": 5000,
+  "max_zero_sum_error": 1.4210854715202004e-14,
+  "final_entropies": {
+    "Agent_A": 0.18808872997760773,
+    "Agent_B": 0.218794584274292,
+    "Agent_C": 0.11204046756029129,
+    "Agent_D": 0.2351769506931305,
+    "Agent_E": 0.2455219030380249
+  },
+  "final_value_losses": {
+    "Agent_A": 23711.88671875,
+    "Agent_B": 20078.861328125,
+    "Agent_C": 38872.45703125,
+    "Agent_D": 11076.546875,
+    "Agent_E": 73387.984375
+  },
+  "archive_pool_size": 40,
+  "elite_pool_size": 5
+}

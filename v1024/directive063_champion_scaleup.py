@@ -131,20 +131,20 @@ def run_directive063_pipeline(total_hands: int = 5000, seed: int = 5040000):
         elite_pool[f"elite_062_{e_name}"] = m
 
     for b_name in ["Agent_A", "Agent_D", "Agent_E"]:
-        p_base = os.path.join(BASE_2000_DIR, f"{b_name}.pt")
+        p_base = os.path.join(BASE_2000_DIR, f"{b_name}_2000h.pt")
         m = PPONeuralPlayer(state_dim=1417, action_dim=6, hidden_dim=256)
         ckpt = torch.load(p_base, map_location="cpu", weights_only=False)
-        m.load_state_dict(ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt)
+        m.load_state_dict(ckpt["model_state_dict"] if isinstance(ckpt, dict) and "model_state_dict" in ckpt else ckpt)
         m.eval()
         elite_pool[f"elite_base_{b_name}"] = m
 
     # General Archive & Anchors
     archive_pool = {}
     for name in AGENT_NAMES:
-        p_base = os.path.join(BASE_2000_DIR, f"{name}.pt")
+        p_base = os.path.join(BASE_2000_DIR, f"{name}_2000h.pt")
         m = PPONeuralPlayer(state_dim=1417, action_dim=6, hidden_dim=256)
         ckpt = torch.load(p_base, map_location="cpu", weights_only=False)
-        m.load_state_dict(ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt)
+        m.load_state_dict(ckpt["model_state_dict"] if isinstance(ckpt, dict) and "model_state_dict" in ckpt else ckpt)
         m.eval()
         archive_pool[f"archive_base_{name}"] = m
 
@@ -333,7 +333,7 @@ def run_directive063_pipeline(total_hands: int = 5000, seed: int = 5040000):
                 b_act = torch.tensor(learner.act_buf, dtype=torch.long)
                 b_old_logp = torch.tensor(learner.logp_buf, dtype=torch.float32)
                 b_old_val = torch.tensor(learner.val_buf, dtype=torch.float32)
-                b_rew = np.array(learner.rew_buf, dtype=torch.float32)
+                b_rew = np.array(learner.rew_buf, dtype=np.float32)
                 b_masks = torch.tensor(np.array(learner.legal_masks), dtype=torch.float32)
 
                 # Return calculation
@@ -441,10 +441,10 @@ def run_directive063_sealed_eval(candidate_learners: dict, num_seeds: int = 200,
     # Load Baseline Models (Base 2000h)
     baseline_models = {}
     for name in AGENT_NAMES:
-        p = os.path.join(BASE_2000_DIR, f"{name}.pt")
+        p = os.path.join(BASE_2000_DIR, f"{name}_2000h.pt")
         m = PPONeuralPlayer(state_dim=1417, action_dim=6, hidden_dim=256)
         ckpt = torch.load(p, map_location="cpu", weights_only=False)
-        m.load_state_dict(ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt)
+        m.load_state_dict(ckpt["model_state_dict"] if isinstance(ckpt, dict) and "model_state_dict" in ckpt else ckpt)
         m.eval()
         baseline_models[name] = m
 
@@ -452,10 +452,10 @@ def run_directive063_sealed_eval(candidate_learners: dict, num_seeds: int = 200,
     bench_models = {}
     bench_dir = os.path.join(ROOT_DIR, "v1024/models_alphago")
     for name in AGENT_NAMES:
-        p = os.path.join(bench_dir, f"{name}.pt")
+        p = os.path.join(bench_dir, f"{name}_7000h.pt")
         m = PPONeuralPlayer(state_dim=1417, action_dim=6, hidden_dim=256)
         ckpt = torch.load(p, map_location="cpu", weights_only=False)
-        m.load_state_dict(ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt)
+        m.load_state_dict(ckpt["model_state_dict"] if isinstance(ckpt, dict) and "model_state_dict" in ckpt else ckpt)
         m.eval()
         bench_models[name] = m
 
