@@ -1,0 +1,118 @@
+{
+  "directive": "059-O",
+  "eval_table_hands_per_arm": 500,
+  "total_eval_table_hands": 4500,
+  "dev_seeds_count": 20,
+  "showdown_count": 2728,
+  "foldout_count": 1772,
+  "max_pot_discrepancy": 6.110667527536862e-13,
+  "max_zero_sum_error": 1.4210854715202004e-14,
+  "arms_results": {
+    "Base_2000h_Initial": {
+      "hero_bb100": -23.0565,
+      "opp_bb100": 92.226,
+      "within_eval_se_bb100": 56.15213596384942,
+      "within_eval_sd_bb100": 251.11998619395595,
+      "table_hands": 500
+    },
+    "J_Static_1000h_s4008000": {
+      "hero_bb100": -23.9255,
+      "opp_bb100": 95.702,
+      "within_eval_se_bb100": 50.15666758675156,
+      "within_eval_sd_bb100": 224.30743649767365,
+      "table_hands": 500
+    },
+    "J_Dynamic_1000h_s4008000": {
+      "hero_bb100": -60.763,
+      "opp_bb100": 243.052,
+      "within_eval_se_bb100": 52.65381641138855,
+      "within_eval_sd_bb100": 235.47502554131765,
+      "table_hands": 500
+    },
+    "J_Static_1000h_s4009000": {
+      "hero_bb100": -46.44583333333334,
+      "opp_bb100": 185.78333333333336,
+      "within_eval_se_bb100": 53.429067133251834,
+      "within_eval_sd_bb100": 238.94205216870185,
+      "table_hands": 500
+    },
+    "J_Dynamic_1000h_s4009000": {
+      "hero_bb100": -27.0695,
+      "opp_bb100": 108.278,
+      "within_eval_se_bb100": 45.513171005620364,
+      "within_eval_sd_bb100": 203.5410884802792,
+      "table_hands": 500
+    },
+    "M_Static_1000h_s4010000": {
+      "hero_bb100": -29.563,
+      "opp_bb100": 118.252,
+      "within_eval_se_bb100": 46.04895576906226,
+      "within_eval_sd_bb100": 205.93719078500865,
+      "table_hands": 500
+    },
+    "M_Dynamic_1000h_s4010000": {
+      "hero_bb100": -24.7005,
+      "opp_bb100": 98.802,
+      "within_eval_se_bb100": 55.574928612189865,
+      "within_eval_sd_bb100": 248.5386364431092,
+      "table_hands": 500
+    },
+    "M_Static_1000h_s4011000": {
+      "hero_bb100": -57.919,
+      "opp_bb100": 231.676,
+      "within_eval_se_bb100": 57.14212309717439,
+      "within_eval_sd_bb100": 255.54734324788552,
+      "table_hands": 500
+    },
+    "M_Dynamic_1000h_s4011000": {
+      "hero_bb100": -22.15,
+      "opp_bb100": 88.6,
+      "within_eval_se_bb100": 57.93114504124249,
+      "within_eval_sd_bb100": 259.0759566532361,
+      "table_hands": 500
+    }
+  },
+  "comparisons": {
+    "cohort_j_seed_4008000": {
+      "cohort": "cohort_j",
+      "seed": 4008000,
+      "delta_dynamic_minus_static": -36.8375,
+      "paired_se_dynamic_minus_static": 24.149018416087355,
+      "progress_static_vs_base": -0.8689999999999969,
+      "paired_se_static_vs_base": 30.22203279501823,
+      "progress_dynamic_vs_base": -37.70649999999999,
+      "paired_se_dynamic_vs_base": 22.828516565160104
+    },
+    "cohort_j_seed_4009000": {
+      "cohort": "cohort_j",
+      "seed": 4009000,
+      "delta_dynamic_minus_static": 19.37633333333334,
+      "paired_se_dynamic_minus_static": 26.58085993432028,
+      "progress_static_vs_base": -23.389333333333333,
+      "paired_se_static_vs_base": 21.841186309168577,
+      "progress_dynamic_vs_base": -4.012999999999993,
+      "paired_se_dynamic_vs_base": 27.184138448928746
+    },
+    "cohort_m_seed_4010000": {
+      "cohort": "cohort_m",
+      "seed": 4010000,
+      "delta_dynamic_minus_static": 4.862500000000006,
+      "paired_se_dynamic_minus_static": 42.97853926441232,
+      "progress_static_vs_base": -6.506499999999991,
+      "paired_se_static_vs_base": 29.22810566340304,
+      "progress_dynamic_vs_base": -1.6439999999999941,
+      "paired_se_dynamic_vs_base": 47.39918660416909
+    },
+    "cohort_m_seed_4011000": {
+      "cohort": "cohort_m",
+      "seed": 4011000,
+      "delta_dynamic_minus_static": 35.76899999999999,
+      "paired_se_dynamic_minus_static": 26.84061544219486,
+      "progress_static_vs_base": -34.86249999999999,
+      "paired_se_static_vs_base": 37.34905720556727,
+      "progress_dynamic_vs_base": 0.9065000000000054,
+      "paired_se_dynamic_vs_base": 25.53022026906235
+    }
+  },
+  "all_records": []
+}

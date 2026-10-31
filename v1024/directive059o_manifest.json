@@ -1,0 +1,26 @@
+{
+  "v1024/test_directive059o_integrity.py": {
+    "sha256": "2ed8c0be238ac040e844578866742a94754caef011677f31a087b751cb14de8a",
+    "size": 6295
+  },
+  "v1024/directive059o_comparative_eval.py": {
+    "sha256": "5feac524d093f2303c17fcad62013f750b63a543570ed5d8bae8006b4ea22465",
+    "size": 18059
+  },
+  "v1024/reports/directive059o_comparative_evidence.json": {
+    "sha256": "993e17a256cf2791b22c75031d605aeb75b7ac34af270b4aa5e5cd9a690258b0",
+    "size": 4004
+  },
+  "v1024/data/directive059o_comparative_raw.jsonl": {
+    "sha256": "fb7fd80a94f9db50a86e160d6e3bcd3dd162d636adff789b7e121cc17b1f34d0",
+    "size": 2060156
+  },
+  "v1024/directives/DIRECTIVE_059O_FREEZE_RESEARCH_BASELINE.md": {
+    "sha256": "0be1cd0a9e390a02e6b1823240bb1dffac79047918100e7efd8273ae937612a5",
+    "size": 5001
+  },
+  "v1024/directive059n_models_manifest.json": {
+    "sha256": "13d66221649e44f62cd723e30a57a0daba1f69c0f41a5068f659837f39caccd0",
+    "size": 11492
+  }
+}

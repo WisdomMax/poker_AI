@@ -1,0 +1,228 @@
+{
+  "directive": "059-N",
+  "total_policy_models": 45,
+  "opponents_7k": {
+    "Agent_A": {
+      "path": "v1024/models_alphago/Agent_A_7000h.pt",
+      "sha256": "e1d6a178bb8ae6fde967f9de577462e35372a1cf3756f4028f3eeab649ba02e4"
+    },
+    "Agent_B": {
+      "path": "v1024/models_alphago/Agent_B_7000h.pt",
+      "sha256": "98fe5c596031d9a9a93d2e3fe955aa83ab3ea947e8d07da275b00d69c623c0ea"
+    },
+    "Agent_C": {
+      "path": "v1024/models_alphago/Agent_C_7000h.pt",
+      "sha256": "fb8136e11bfd0e7b29bbccf69448ef4ba333f27b4d62d270e0228aea1fde90a7"
+    },
+    "Agent_D": {
+      "path": "v1024/models_alphago/Agent_D_7000h.pt",
+      "sha256": "9daf28be21637b9d4f7bfef511f2bda25f4e30691e4cffd7c02b09b28a95ad4c"
+    },
+    "Agent_E": {
+      "path": "v1024/models_alphago/Agent_E_7000h.pt",
+      "sha256": "3b928f690771acc2dd54010bb3802390d55e9d64525d832de0477953e276989e"
+    }
+  },
+  "base_2k": {
+    "Agent_A": {
+      "path": "v1024/models_alphago/Agent_A_2000h.pt",
+      "sha256": "af434b5e44ecf75aec37c120152a4250b210534f1ef3d65beac2f7d1cfbc1166"
+    },
+    "Agent_B": {
+      "path": "v1024/models_alphago/Agent_B_2000h.pt",
+      "sha256": "a754ffda8fa7947cd7e461b76fd015ccff512818ce9a5e9fe3d902c7219ba5f2"
+    },
+    "Agent_C": {
+      "path": "v1024/models_alphago/Agent_C_2000h.pt",
+      "sha256": "7763b5ab879f11e7c810ba434a2d54758d61a4a8eb9d1fc0dd670e2faefb3743"
+    },
+    "Agent_D": {
+      "path": "v1024/models_alphago/Agent_D_2000h.pt",
+      "sha256": "a1882c978f074385b12e3047741ea231ae9f077e248d1bcc648502084f3335ac"
+    },
+    "Agent_E": {
+      "path": "v1024/models_alphago/Agent_E_2000h.pt",
+      "sha256": "f785547138b66dfd50ae06f5a5e3b5cfa68c35d1d9c783c19a1505fca55aece5"
+    }
+  },
+  "cohort_j_models": {
+    "Static_1000h_s4008000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "d3a7f71ac369d57a438c2713037dfe62896c8400c843133e7a1458ab60c88038"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "08738f3e3230a6fdcb302fea8fa59d7f3ccbcf35d5238aa19c8d3cbd31cf9d4b"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "43dce0750a6649c5041c9cd6b99582d992bb7cb1895abb7243df25a977c41d5c"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "6284f6684547cd0f67a6a1f718342cc695436e6a7a2f6cfe1796fb8432cfc09f"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "937dc4f5854b9b81b44c11ad76e3bca55c03f10d0de167b14fdee8744f929e39"
+      }
+    },
+    "Dynamic_1000h_s4008000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "57bc5f5e83b5e3fb23db4d50d109fdb0985ab79fc858606ecad1230d31443a40"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "332a0ab5a6380b7cf3e1318a327a74ed76ee3d8b0aa232366b4c5e485ba0d223"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "0a853666f6f4c243806ce6c52b9da1aebb09137638f675b41fc56f1fc4298cc7"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "faf6d55d39dc83f9b8623319dd07caa845a95c54caaa62c1edf34f1e96055201"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4008000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "47aa6b267e26f067f1f9fef29578e7afcbb46639150f538358239b266545b50d"
+      }
+    },
+    "Static_1000h_s4009000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "56afe2a989ddca9715f8e69663a5b938b959ed99735df629242e77f659850cea"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "eb4721edb94fc7cd28a6c1eccc5982f38dae5dd45253dc3c2ac703314236c678"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "2d1651d17c7043af0bc6ae0f82d6b52690cae147841020346f11e5feca55bc4e"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "f3493056854088d35177029d72885067b79ebf8fe25fd0d882872b91d6c98916"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_static_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "7ffb044218e019e157ae50a48e3a4af6ac46637062daab86357dce1a2163cde2"
+      }
+    },
+    "Dynamic_1000h_s4009000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "7546c735efe4b4a2ac5a4024ffc7205ab273286213cc55a9b1b6685d64980f97"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "a50241105c15e3d22147bd4b97626a4a987f874f98254db45cb8d4c85610e524"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "27078264c1f77344c9eac6ae22239ffe2d98920f101f66e2ba65ffe5f5a23c1c"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "cc52c5b1bbfcfa5924188270e26785e686c6fe7e0e292b797379b42ae66c89dc"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059j/training_1000h/arm_dynamic_uniform_1000h_seed_4009000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "32e5ad203d6b01e2f2a9259ab8342ff335f25b7024277eaeaa10c94bff8f0f03"
+      }
+    }
+  },
+  "cohort_m_models": {
+    "Static_1000h_s4010000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "5de4fe858b7426debe318c35d3ecf40d7c30ce1ff933bd41e23c9ae20e39c4ed"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "94972e6ad5ea1a90eeca8a40e102cec3c69e3dc648a119ea05e6f001a75a9781"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "f69aa391a2b7ba69e8b5eefba5aa621f8c0f7464a72c75c1e65329f90ceeca7f"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "58a4103444a8ebc8f1a4dea1492d8dc7983a49018d7dde17e0e73982b8978a66"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "be5331c3cef9fc54d5731e6b82c69fdfb7d4cb68d6b925544e665868cb862af4"
+      }
+    },
+    "Dynamic_1000h_s4010000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "96a628d7edd649e32a112ae6fcbcc5a8c62f28d149048cbf29141cfd9a579b01"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "875c24224ebc0dc8f48e626f1b3ac225a1a85d8a54877bda2049df6254f1e592"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "88757c93c557fdaa5181dd530fa77ced5e88db83f82c986e31925e8790a43d59"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "3e7c5c42a0aca2988900f413001272bfeccd4542fc38474ecbe901da0550b02c"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4010000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "3adea5838aa910973440ae78ac41ba1783ffdea5823c9c81062aec584abb63f5"
+      }
+    },
+    "Static_1000h_s4011000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "76286cafa3d4452b98fdb93758e1a3bff9940f040f056f1afaa07ae93ef2fe37"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "293723579c18662b1ff8bd37ba29cb117a9a39d59f683061b3605ccc52a4820c"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "d1d280d83299eac5d9300d0363183e9b3a0a0685e5ca001b4ffa71c0c864de75"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "f47ef2270476255c1f3edf09dec5e728f0804d5bc9c7def45fc64c419b5945d8"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_static_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "0a006e0dff8d5a6baf9eacb46c408fe29a4241de3e0c529639725cfe71a26913"
+      }
+    },
+    "Dynamic_1000h_s4011000": {
+      "Agent_A": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_A.pt",
+        "sha256": "e6b70d7f40eb324056396624e640d1b0b68b8fe6f88f49ce35b67f408f4d4c09"
+      },
+      "Agent_B": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_B.pt",
+        "sha256": "5f2b72d1ebee220f9caaffcc0c9835ba8ff788f461bd787aba9e6b6597d60105"
+      },
+      "Agent_C": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_C.pt",
+        "sha256": "4c5eb071819ff5349f6a4c35cb77ae7120772f35da576b4d906865675dbfbf76"
+      },
+      "Agent_D": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_D.pt",
+        "sha256": "32de62eb46433c1b75cf51bb9e5a793fca78138c949c2edaac0e01d964c930c9"
+      },
+      "Agent_E": {
+        "path": "v1024/exp_directive059m/training_1000h/arm_dynamic_uniform_1000h_seed_4011000/ckpt_hand_1000/Agent_E.pt",
+        "sha256": "fbc093333cef3972ceb34169bea359d70a86f368f0b4587d2208fee0d44f642b"
+      }
+    }
+  }
+}
