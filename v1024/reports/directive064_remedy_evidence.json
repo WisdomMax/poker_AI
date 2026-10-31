@@ -1,0 +1,37 @@
+{
+  "directive": "DIRECTIVE_064",
+  "lead_scientist": "Dr. Max",
+  "initial_peak_checkpoint": "ckpt_hand_1000",
+  "total_remedy_table_hands": 1500,
+  "active_hero_hands": 6000,
+  "pot_audit_passes": 1500,
+  "max_zero_sum_error": 7.105427357601002e-15,
+  "final_evaluation": {
+    "candidate_bb100": -30.48,
+    "candidate_se": 41.09,
+    "baseline_bb100": -16.16,
+    "baseline_se": 44.39,
+    "delta_bb100": -14.32,
+    "paired_se": 29.96,
+    "ci95": [
+      -73.04,
+      44.39
+    ],
+    "t_statistic": -0.4781,
+    "p_value": 0.6331065323304679,
+    "agents_candidate": {
+      "Agent_A": 62.34,
+      "Agent_B": -287.36,
+      "Agent_C": 140.39,
+      "Agent_D": 91.0,
+      "Agent_E": -158.8
+    },
+    "agents_baseline": {
+      "Agent_A": 49.67,
+      "Agent_B": -539.34,
+      "Agent_C": 35.52,
+      "Agent_D": 327.16,
+      "Agent_E": 46.2
+    }
+  }
+}
